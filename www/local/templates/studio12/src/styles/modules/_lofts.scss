@@ -1,0 +1,378 @@
+.lofts {
+  position: relative;
+
+  &__scheme {
+
+    @include below-bp(md-lg) {
+      display: none;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item {
+
+  }
+
+  &__path {
+    stroke: $yellow;
+    stroke-width: 0;
+    fill: transparent;
+    transition: all 0.15s ease-in;
+  }
+
+  &__link:hover &__path {
+    stroke-width: 4;
+  }
+}
+
+.loft {
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &:before {
+    position: absolute;
+    //z-index: 50;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: background 0.35s ease-in;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  @include below-bp(md-lg) {
+    position: relative;
+    height: 400px;
+    top: auto !important;
+    left: auto !important;
+
+    &:before {
+      content: "";
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(62);
+    height: rem(62);
+    border-radius: 50%;
+    background-color: #010002;
+    color: $yellow;
+    font-size: rem(28);
+    //font-weight: 500;
+    line-height: rem(62);
+    text-align: center;
+    pointer-events: none;
+
+    @include below-bp(md-lg) {
+      top: rem(70);
+      left: rem(50);
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: rem(50);
+    top: rem(-135);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease-in;
+    pointer-events: none;
+
+    @include below-bp(md-lg) {
+      top: rem(190) !important;
+      left: rem(50) !important;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &.active &__info {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--3  &__info  {
+    left: rem(-65);
+  }
+
+  &__detail {
+    @include clearfix;
+    font-size: rem(24);
+    line-height: 1.2;
+
+    & + & {
+      margin-top: rem(3);
+    }
+  }
+
+  &__label {
+    float: left;
+    background: #010002;
+    color: $yellow;
+    padding: rem(8) rem(10);
+  }
+
+  &__value {
+    float: left;
+    color: #ffffff;
+    padding: rem(8) rem(15);
+
+    .level-1 & {
+      background-color: $dark-gray;
+    }
+
+    .level-2 & {
+      background-color: $green;
+    }
+
+    .level-3 & {
+      background-color: $purple;
+    }
+  }
+
+  &--2-2 {
+    top: 27%;
+    left: 26%;
+  }
+
+  &--2-3 {
+    top: 50%;
+    left: 8%;
+  }
+
+  &--1 {
+    top: 65%;
+    left: 39%;
+  }
+
+  &--3{
+    top: 55%;
+    left: 84%;
+
+  }
+}
+
+.lots {
+  padding-bottom: rem(160);
+  background: $dark;
+  color: #000;
+
+  &__inner {
+    padding: 0 rem(100);
+
+    @include below-bp(md-lg) {
+      padding: 0;
+    }
+  }
+
+  &__list {
+    padding: 0 rem(20);
+
+    @include below-bp(md-lg) {
+      padding-left: rem(70);
+    }
+  }
+
+  &__info {
+    @include clearfix;
+    background: #ffffff;
+    margin-bottom: rem(35);
+  }
+
+  &__info-col {
+    width: 33.33%;
+    float: left;
+    padding: rem(22) 0;
+
+    @include below-bp(md-lg) {
+      width: 100%;
+      float: none;
+    }
+
+    &:first-child {
+      background: #000;
+      color: #ffffff;
+    }
+  }
+
+  &__info-wrap {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include below-bp(md-lg) {
+      text-align: center;
+    }
+  }
+
+  &__info-num {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: rem(54);
+    margin-right: rem(18);
+    line-height: 1;
+  }
+
+  &__info-desc {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: rem(18);
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__control {
+    margin-top: rem(30);
+  }
+}
+
+.lot {
+  @include clearfix;
+  display: block;
+  color: #ffffff;
+  padding: rem(15) 0;
+  line-height: 1;
+  border-bottom: 1px solid #383838;
+
+  @include below-bp(md-lg) {
+    font-size: rem(16);
+    margin-bottom: rem(15);
+    padding: 0;
+    //white-space: nowrap;
+  }
+
+  @include below-bp(tablet) {
+    padding-bottom: rem(15);
+  }
+
+  &:hover:not(.lot--header) {
+    background: #000;
+
+    @include below-bp(md-lg) {
+      background: transparent;
+    }
+  }
+
+  [class^="lot__value-"] {
+    float: left;
+
+    @include below-bp(tablet) {
+      float: none;
+      width: 100%;
+      padding: rem(5) 0;
+      font-size: rem(14);
+
+      &:before {
+        content: attr(data-lot-value);
+        //display: inline-block;
+        float: left;
+        width: 50%;
+        color: $yellow;
+      }
+    }
+  }
+
+  [class^="lot__style-"] {
+    display: block;
+  }
+
+  &__style-1 {
+    margin-bottom: rem(10);
+  }
+
+  &__styles {
+    display: inline-block;
+    vertical-align: top;
+
+    @include below-bp(tablet) {
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  &--header {
+    color: $yellow;
+
+    @include below-bp(tablet) {
+      display: none;
+    }
+  }
+
+  &--disabled {
+    color: #5c5c5c !important;
+  }
+
+  &__value-1 {
+    width: 9%;
+    padding-left: rem(20);
+
+    @include below-bp(md-lg) {
+      padding-left: 0;
+    }
+  }
+
+  &__value-2 {
+    width: 18%;
+  }
+
+  &__value-3 {
+    width: 7%;
+  }
+
+  &__value-4 {
+    width: 15%;
+  }
+
+  &__value-5 {
+    width: 15%;
+  }
+
+  &__value-6 {
+    width: 18%;
+  }
+
+  &__value-7 {
+    width: 18%;
+  }
+}
+
+.more-items {
+  line-height: 1;
+  color: #000000 !important;
+  display: inline-block;
+  padding: rem(13) rem(10);
+  background: #fff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: rem(7) rem(7.5) 0 rem(7.5);
+    margin-right: rem(8);
+    border-color: #e7364d transparent transparent transparent;
+
+    .is-open & {
+      border-width: 0 rem(7.5) rem(7) rem(7.5);
+      border-color: transparent transparent #e7364d transparent;
+    }
+  }
+}

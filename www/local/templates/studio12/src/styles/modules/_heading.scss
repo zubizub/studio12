@@ -1,0 +1,33 @@
+.heading {
+  @include linear-switch(font-size, bp(sm), bp(lg), 0.36 * 16px, 16px);
+  //@include clearfix;
+  font-size: rem(16);
+  //margin-bottom: em(35, 16);
+  margin-bottom: rem(35);
+
+  &__line {
+    display: inline-block;
+    position: relative;
+    color: #000;
+
+    & + & {
+      margin-top: em(-48, 16);
+    }
+
+    &:last-child {
+      margin-right: rem(50);
+    }
+  }
+
+  &__word {
+    font-size: em(190, 16);
+    line-height: 1;
+  }
+
+  /*&__line:not(:last-child) &__word {
+    &:after {
+      content: '\00a0';
+      font-size: rem(150);
+    }
+  }*/
+}

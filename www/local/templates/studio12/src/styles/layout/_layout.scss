@@ -1,0 +1,119 @@
+.container {
+  overflow: hidden;
+
+  &__inner {
+    min-width: $width;
+    margin: 0 auto;
+    position: relative;
+    //max-width: bp(xxl) + 1;
+  }
+}
+
+
+.quarter-page {
+  background-color: $purple;
+}
+
+.job-page {
+  background-color: $green;
+}
+
+
+
+
+
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 700px,
+        md: 1000px,
+        lg: 1600px,
+        xl: 1900px
+);
+
+@mixin element-query($eq) {
+  @if map-has-key($grid-breakpoints, $eq) {
+    &[min-width~="#{inspect(map-get($grid-breakpoints, $eq))}"] {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$grid-breakpoints}`. "
+    + "Please make sure it is defined in `$grid-breakpoints` map.";
+  }
+}
+
+
+
+.main {
+  @include open-sidebar-shrink;
+  position: relative;
+
+  @include above-bp(xl) {
+    margin-left: $sidebar-width;
+  }
+
+  @include element-query(sm) {
+
+    .nav__item-text {
+      font-size: rem(14);
+    }
+  }
+
+  @include element-query(md) {
+
+    .nav__item-text {
+      font-size: rem(18);
+    }
+  }
+
+  @include element-query(lg) {
+
+    .nav__item-text {
+      font-size: rem(22);
+    }
+  }
+
+  @include element-query(xl) {
+
+    .nav__item-text {
+      font-size: rem(26);
+    }
+  }
+}
+
+.wrapper {
+  @include linear-switch(padding, bp(sm), bp(lg), $site-gutter-sm-px, $site-gutter-px, "0 $");
+  @include clearfix;
+  padding: 0 $site-gutter;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner {
+  @include linear-switch(margin, bp(md), bp(lg), 0px, $inner-offset-px, "0 $");
+  margin: 0 $inner-offset;
+  position: relative;
+}
+
+.head {
+  @include linear-switch(padding-left, bp(sm), 590px, 0px, $col-padding-left-px);
+  padding-top: rem(61);
+  padding-left: $col-padding-left;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  &--start {
+    width: auto;
+    max-width: none;
+  }
+}

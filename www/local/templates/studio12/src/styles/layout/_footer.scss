@@ -1,0 +1,175 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  //
+  //.section--main &,
+  //.section--about & {
+  //
+  //  @include below-height($height-breakpoint) {
+  //    position: static;
+  //  }
+  //}
+
+  .section--about & {
+
+    @include below-bp(md-lg) {
+      display: none;
+    }
+  }
+
+  @include below-bp(md-lg) {
+    position: relative;
+    margin-bottom: rem(20);
+  }
+
+  &__inner {
+    //@include clearfix;
+    padding-bottom: rem(25);
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+    @include below-bp(md-lg) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__row {
+    @include clearfix;
+  }
+
+  &__main {
+    //float: left;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 100%;
+
+    @include below-bp(md-lg) {
+      //display: block;
+      //width: 100%;
+      //margin: rem(40) 0;
+      display: none;
+    }
+
+    @include below-bp(sm-md) {
+      margin: rem(21) 0 rem(28);
+    }
+  }
+
+  &__bar {
+    margin: 0 rem(-15);
+  }
+
+  &__content {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+    @include below-bp(sm-md) {
+      direction: rtl;
+    }
+  }
+
+  &__lead {
+    display: table-header-group;
+    //width: rem(165) - $site-gutter;
+    width: rem(116);
+    vertical-align: bottom;
+    direction: ltr;
+
+    @include below-bp(lg-xl) {
+      display: table-cell;
+    }
+
+    @include below-bp(md-lg) {
+      width: 1%;
+    }
+
+    @include below-bp(sm-md) {
+      max-width: 90%;
+      padding-left: rem(20);
+    }
+  }
+
+  /*&__contact {
+    display: table-cell;
+    width: 100%;
+  }*/
+
+  &__info {
+    display: table-cell;
+    width: 50%;
+    vertical-align: bottom;
+    line-height: 1.33;
+    direction: ltr;
+
+    @include below-bp(md-lg) {
+      width: 1%;
+    }
+
+    @include below-bp(sm-md) {
+      max-width: 90%;
+    }
+
+    &:last-child {
+      @include below-bp(sm-md) {
+        display: none;
+      }
+    }
+  }
+
+  &__cell {
+    padding: 0 rem(15);
+    float: left;
+    position: relative;
+    z-index: 400;
+  }
+
+  &__side {
+    //float: left;
+    display: table-cell;
+    vertical-align: bottom;
+    width: $footer-side-width;
+    padding-left: rem(40); // rem(20)
+
+    @include below-bp(md-lg) {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &--clear {
+
+    @include below-bp(md-lg) {
+      display: none;
+    }
+
+    .metro__icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: rem(15);
+      position: relative;
+      top: rem(6);
+    }
+
+    .metro__caption{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &--clear &__inner {
+    padding-bottom: rem(15);
+  }
+
+  .nav__inner {
+    height: auto;
+  }
+
+  .nav__item:before {
+    content: none;
+  }
+}

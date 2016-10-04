@@ -1,0 +1,90 @@
+.title {
+  @include linear-switch(margin-left, bp(lg), bp(xl), 20px, 163px);
+  @include linear-switch(margin-left, bp(md), bp(lg), 0px, 20px);
+  @include linear-switch(font-size, bp(sm), bp(lg), 0.302px, 1px);
+  @include clearfix;
+  white-space: nowrap;
+  //margin-left: rem(163);
+  font-size: rem(1);
+
+  &__line {
+    float: left;
+
+    & + & {
+      margin-top: 43em;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+
+    &--S + &--T {
+      margin-left: 24em;
+    }
+
+    &--T + &--U {
+      margin-left: 43em;
+    }
+
+    &--U + &--D {
+      margin-left: 52em;
+    }
+
+    &--D + &--I {
+      margin-left: 28em;
+    }
+
+    &--I + &--O {
+      margin-left: 27em;
+    }
+
+    &--N + &--1 {
+      margin-left: 29em;
+    }
+
+    &--1 + &--2 {
+      margin-left: 35em;
+    }
+  }
+
+  &__letter {
+    height: auto;
+  }
+
+  &__item--S &__letter {
+    width: 159em;
+  }
+
+  &__item--T &__letter {
+    width: 150em;
+  }
+
+  &__item--U &__letter {
+    width: 167em;
+  }
+
+  &__item--D &__letter {
+    width: 177em;
+  }
+
+  &__item--I &__letter {
+    width: 97em;
+  }
+
+  &__item--O &__letter {
+    width: 240em;
+  }
+
+  &__item--N &__letter {
+    width: 219em;
+  }
+
+  &__item--1 &__letter {
+    width: 98em;
+  }
+
+  &__item--2 &__letter {
+    width: 168em;
+  }
+}

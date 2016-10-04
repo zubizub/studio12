@@ -1,0 +1,24 @@
+.reason {
+  //display: inline-block;
+  //vertical-align: top;
+  //text-align: left;
+  //width: rem(150);
+  //margin: 0 rem(30) rem(30);
+
+  &__icon {
+    @include s(shoowroom-white);
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 17px;
+  }
+
+  &__explain {
+    font-size: 14px;
+    line-height: (18/14);
+  }
+
+}

@@ -1,0 +1,165 @@
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin btn() {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  border: none;
+
+  @at-root a#{&}, a#{&}:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin below($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin above($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin between($min-screen, $max-screen) {
+  @media screen and (min-width: $min-screen) and (max-width: $max-screen) {
+    @content;
+  }
+}
+
+@mixin below-height($height) {
+  @media screen and (max-height: $height) {
+    @content;
+  }
+}
+
+@mixin below-bp($bp, $breakpoints: $breakpoints) {
+  $width: map-get($breakpoints, $bp);
+  @include below($width) {
+    @content;
+  };
+}
+
+@mixin above-bp($bp, $breakpoints: $breakpoints) {
+  $width: map-get($breakpoints, $bp) + 1px;
+  @include above($width) {
+    @content;
+  };
+}
+
+@mixin between-bp($min-bp, $max-bp) {
+  $min-screen: map-get($breakpoints, $min-bp) + 1px;
+  $max-screen: map-get($breakpoints, $max-bp);
+  @include between($min-screen, $max-screen) {
+    @content;
+  };
+}
+
+@mixin open-sidebar {
+  @include below-bp(xxl) {
+    transition: transform $layout-transition;
+
+    .sidebar-open & {
+      transform: translateX($sidebar-width);
+    }
+  }
+}
+
+@mixin open-sidebar-shrink {
+  @include below-bp(xxl) {
+    transition: margin $layout-transition;
+
+    .sidebar-open & {
+      margin-left: $sidebar-width;
+    }
+  }
+
+  @include below-bp(md-lg) {
+    transition: transform $layout-transition;
+
+    .sidebar-open & {
+      transform: translateX($sidebar-width);
+      margin-left: 0;
+    }
+  }
+}
+
+@mixin sidebar-open {
+  @include below-bp(xxl) {
+    .sidebar-open & {
+      @content;
+    }
+  }
+}
+
+@mixin query-elements($property, $width-start, $width-end, $value-start, $value-end, $template: null) {
+
+  #{$property}: calc(#{$value-start} + (100vw - #{$width-start}) * #{($value-end - $value-start) / ($width-end - $width-start)});
+}
+
+@mixin linear-switch($property, $width-start, $width-end, $value-start, $value-end, $template: null) {
+
+  $value: calc(#{$value-start} + (100vw - #{$width-start}) * #{($value-end - $value-start) / ($width-end - $width-start)});
+
+  @media screen and (min-width: $width-start) and (max-width: $width-end) {
+    $val: $value;
+    #{$property}: if($template, unquote(str-replace($template, "$", $val)), $val);
+  }
+
+  @media screen and (max-width: $width-start) {
+    $val: $value-start;
+    #{$property}: if($template, unquote(str-replace($template, "$", $val)), $val);
+  }
+}
+
+
+@mixin stepwise-switch($property, $width-start, $width-end, $value-start, $value-end, $template: null, $steps: 10) {
+
+  $width-step: ($width-end - $width-start) / $steps;
+  $value-step: ($value-end - $value-start) / $steps;
+
+  @for $i from $steps through 1 {
+    @media screen and (max-width: #{$width-start + $width-step * $i}) {
+      $val: $value-start + $value-step * $i;
+      #{$property}: if($template, unquote(str-replace($template, "$", $val)), $val);
+    }
+  }
+
+  @media screen and (max-width: $width-start) {
+    $val: $value-start;
+    #{$property}: if($template, unquote(str-replace($template, "$", $val)), $val);
+  }
+}
+
+@mixin rel-to-win($width-start, $width-end, $value-start) {
+  @include between($width-start, $width-end) {
+    font-size: vw($value-start, $width-start);
+  }
+
+  @include above($width-end) {
+    font-size: $width-end / $width-start * $value-start;
+  }
+}
+
+
+
+$icons: sprite-map("icons/*.png", $spacing: 10px); //$layout: smart, horizontal, $position: 50%
+
+@mixin s($sprite, $map: $icons) {
+  background: sprite($map, $sprite) no-repeat;
+  width: rem(image-width(sprite-file($map, $sprite)));
+  height: rem(image-height(sprite-file($map, $sprite)));
+  background-size: rem(sprite-width($icons)) rem(sprite-height($icons));
+  //background-position: rem(nth(sprite-position($map, $sprite), 1)) rem(nth(sprite-position($map, $sprite), 2));
+  background-position: sprite-position($map, $sprite, 0, 0, true);
+  //background-image: inline-image('icons/'+$sprite+'.png','image/png'); // to switches sprites to base64, elegant
+}

@@ -1,0 +1,125 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+html {
+  font-size: 16px;
+
+  @include between-bp(xl, xxl) {
+    font-size: vw(16px, bp(xl));
+  }
+
+  @include above-bp(xxl) {
+    font-size: bp(xxl) / bp(xl) * 16px;
+  }
+}
+
+body {
+  @include linear-switch(font-size, bp(lg), bp(xl), 18px, 20px);
+  font-size: rem(20);
+  font-family: $font-family;
+  line-height: $line-height;
+  min-width: $width;
+  color: $text-color;
+  background-color: $body-bg;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  border: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
+
+sub, sup {
+  font-size: 62%;
+}

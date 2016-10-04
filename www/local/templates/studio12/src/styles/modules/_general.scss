@@ -1,0 +1,58 @@
+.general {
+  display: none;
+
+  @include below-bp(md-lg) {
+    display: block;
+  }
+
+  &__inner {
+    @include clearfix;
+  }
+
+  &__item {
+    width: 50%;
+    float: left;
+    color: #ffffff;
+    padding: rem(30) 0 rem(40) rem(68);
+
+    @include below-bp(tablet) {
+      width: 100%;
+      float: none;
+    }
+
+    &--quarter {
+      background: $purple url('../img/general-quarter.png') no-repeat 100% 40px;
+    }
+
+
+    &--job {
+      background: $green url('../img/general-job.png') no-repeat 100% 7px;
+    }
+  }
+
+  &__title {
+    @include linear-switch(font-size, bp(sm), bp(lg), 55px, 80px);
+    line-height: 0.9;
+    margin-bottom: rem(17);
+  }
+
+  &__desc {
+    padding-right: rem(80);
+
+    &:after {
+      content: '';
+      display: block;
+      margin-top: rem(20);
+      width: rem(30);
+      height: rem(16);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url(../img/arrow-right-yellow.png);
+    }
+  }
+
+  &__desc-text {
+    height: rem(84);
+    overflow: hidden;
+  }
+}

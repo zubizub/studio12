@@ -1,0 +1,40 @@
+.menu {
+  text-transform: uppercase;
+
+  &__item {
+
+  }
+
+  &__link {
+    font-size: rem(30);
+    color: #ffffff;
+    line-height: 1;
+    //transition: color 0.1s ease;
+
+    &:hover {
+      color: #949494;
+    }
+  }
+
+  &__item.active &__link {
+    color: #949494;
+  }
+
+  &__sub {
+    margin: rem(21) 0 rem(27);
+  }
+
+  &__sub-item {
+
+  }
+
+  &__sub-link {
+    color: #fff;
+    font-size: rem(18);
+    line-height: 1.67;
+
+    &:hover {
+      color: #949494;
+    }
+  }
+}

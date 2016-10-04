@@ -1,0 +1,11 @@
+.phone {
+  @include linear-switch(font-size, bp(sm), bp(sm-md), 37px, 45px);
+  font-size: rem(45);
+  line-height: 1;
+  text-align: center;
+  margin-top: em(20, 37);
+
+  &__value {
+
+  }
+}

@@ -1,0 +1,74 @@
+.photo-gallery {
+  position: relative;
+
+  &__item {
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      box-shadow: inset 0 0 rem(30) 0 rgba(50,50,50,0.92);
+    }
+  }
+
+  &__prev,
+  &__next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(60);
+    height: rem(60);
+    background-color: rgba(255,255,255,0.8);
+    font-size: rem(30);
+    color: $dark;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:before {
+      content: '';
+      width: rem(30);
+      height: rem(16);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &__prev {
+    left: rem(20);
+
+    &:before {
+      background: url("../img/arrow-left.png") center center no-repeat;
+    }
+  }
+
+  &__next {
+    right: rem(20);
+
+
+    &:before {
+      background: url("../img/arrow-right.png") center center no-repeat;
+    }
+  }
+
+  .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: rem(600);
+
+    @include below($tablet) {
+      height: rem(300);
+    }
+  }
+}

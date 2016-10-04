@@ -1,0 +1,75 @@
+{
+  "name": "studio12",
+  "description": "studio12",
+  "main": "gulpfile.js",
+  "authors": [
+    "Rinaz Shakir"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~3.1.0",
+    "normalize-scss": "^3.0.3",
+    "slick-carousel": "^1.6.0",
+    "typeit": "^4.2.3",
+    "fullpage.js": "^2.8.6",
+    "gsap": "^1.19.0",
+    "perfect-scrollbar": "^0.6.12",
+    "rmodal": "^1.0.22",
+    "bPopup": "bpopup#^0.11.0",
+    "css-element-queries": "https://github.com/marcj/css-element-queries.git#^0.3.2",
+    "jquery.maskedinput": "^1.4.1",
+    "select2": "^4.0.3"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.js"
+      ]
+    },
+    "gsap": {
+      "main": [
+        "src/minified/TweenMax.min.js"
+      ]
+    },
+    "fullpage.js": {
+      "main": [
+        "vendors/scrolloverflow.min.js",
+        "dist/jquery.fullpage.min.js"
+      ]
+    },
+    "bPopup": {
+      "main": [
+        "jquery.bpopup.min.js"
+      ]
+    },
+    "css-element-queries": {
+      "main": [
+        "src/ResizeSensor.js",
+        "src/ElementQueries.js"
+      ]
+    },
+    "perfect-scrollbar": {
+      "main": [
+        "js/perfect-scrollbar.jquery.js"
+      ]
+    },
+    "select2": {
+      "main": [
+        "dist/js/select2.min.js"
+      ]
+    }
+  }
+}

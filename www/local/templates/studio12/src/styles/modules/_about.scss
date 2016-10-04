@@ -1,0 +1,124 @@
+.about {
+
+  @include below-bp(md-lg) {
+
+    padding: rem(60) 0 rem(125) rem(52);
+  }
+
+  &__items {
+    @include rel-to-win(1200px, 1400px, 16px);
+    @include clearfix;
+    margin: 0 em(-15, 16);
+    text-align: center;
+    font-size: 16px;
+
+    @include below-bp(md-lg) {
+      display: none;
+    }
+  }
+
+  &__item {
+    padding: 0 em(15, 16);
+    display: inline-block;
+    width: percentage(1/3);
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: em(41, 16);
+
+    & + & {
+      margin-left: -0.4em;
+    }
+
+    @include below-bp(md-lg) {
+      width: 50%;
+      text-align: center;
+    }
+
+    @include below(670px) {
+      width: 100%;
+    }
+  }
+
+
+  $zippers-width: em(557, 48);
+  $zippers-height: em(266, 48);
+  $zipper-width: em(179, 48);
+  $zippers-length: 3;
+
+  &__link {
+    font-size: em(48, 16);
+    line-height: 0.92;
+    display: inline-block;
+    text-align: left;
+    width: $zipper-width;
+    height: $zippers-height;
+    padding: em(45, 48) 0 0 em(20, 48);
+    background: url("../img/zippers.svg") no-repeat 0 0 / #{$zippers-width} #{$zippers-height};
+    //background-size: $zippers-width $zippers-height;
+    background-clip: padding-box;
+    //background-attachment: fixed;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    //animation-name: zipper;
+    animation-play-state: paused;
+    animation-timing-function: steps($zippers-length, end);
+
+    &:hover {
+      animation-play-state: running;
+    }
+
+    &.inited {
+      animation-name: zipper;
+    }
+
+    @keyframes zipper {
+      from {
+        background-position: 0 0;
+        background-position-x: 0%;
+        background-position-y: 0%;
+      }
+      to {
+        background-position: -$zippers-width 0;
+        background-position-x: 150%;
+        background-position-y: 0%;
+      }
+    }
+  }
+
+  @for $i from 1 through $zippers-length {
+    &__item:nth-child(#{$i}) &__link {
+      animation-delay: -600ms / $zippers-length * $i;
+      background-position: -($zipper-width + em(10, 48)) * ($i - 1) 0;
+    }
+  }
+
+  &__caption {
+    //@include linear-switch(margin-left, bp(lg), bp(xl), 20px, 163px);
+    //@include linear-switch(margin-left, bp(md), bp(lg), 0px, 20px);
+    //margin-left: rem(163);
+
+    padding-left: rem(22);
+    max-width: rem(575);
+
+    @include below-bp(md-lg) {
+
+      padding-left: 0;
+      max-width: none;
+    }
+  }
+
+  &__desc {
+    @include linear-switch(font-size, bp(sm), bp(md-lg), 30px, 38px);
+    font-size: rem(38);
+    line-height: 1.2;
+    margin-bottom: rem(21);
+  }
+
+  &__note {
+    @include linear-switch(font-size, bp(sm), bp(md-lg), 18px, 22px);
+    font-size: rem(22);
+    line-height: 1.33;
+  }
+}

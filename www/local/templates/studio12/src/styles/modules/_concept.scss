@@ -1,0 +1,52 @@
+.concept {
+  color: #fff;
+  line-height: 1.33;
+  margin-bottom: rem(44);
+
+  &__col {
+    @include linear-switch(padding-left, bp(sm), 590px, 0px, $col-padding-left-px);
+
+    @include below-bp(md-lg) {
+      width: 50%;
+
+      &:nth-child(2n + 1) {
+        clear: none;
+      }
+
+      &:nth-child(n + 3) {
+        margin-top: 0;
+      }
+
+      &:first-child {
+        width: 100%;
+        margin-bottom: rem(30);
+      }
+    }
+
+    @include below(590px) {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-top: rem(30);
+      }
+    }
+  }
+
+  &__head {
+    @include linear-switch(font-size, bp(sm), 590px, 28px, 36px);
+    font-size: rem(36);
+    line-height: 1.11;
+
+    .link {
+      color: $green;
+
+      .job-page & {
+        color: $purple;
+      }
+    }
+  }
+}

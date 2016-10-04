@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// 1. Utilities
+@import "compass/utilities/sprites";
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+
+// 2. Vendors
+@import "normalize-scss/normalize";
+@import "slick-carousel/slick/slick";
+@import "fullpage.js/jquery.fullPage";
+@import "vendor/perfect-scrollbar-custom";
+@import "select2/src/scss/core";
+
+// 3. Base
+@import "base/base";
+@import "base/fonts";
+@import "base/helpers";
+@import "base/dynamics";
+
+// 4. Layout
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/nav";
+@import "layout/sidebar";
+@import "layout/section";
+@import "layout/grid";
+
+// 5. Modules
+@import "modules/*.*";
+
+// 6. Page-specific styles
+@import "pages/home";
+@import "pages/quarter";
+@import "pages/job";

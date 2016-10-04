@@ -1,0 +1,42 @@
+.scrollme {
+  position: absolute;
+  top: 50%;
+  left: rem(35);
+  width: rem(33);
+  transform: translateY(-75%);
+
+  &__icon {
+    width: rem(15);
+    height: rem(21);
+    margin: 0 auto;
+    background: url("../img/scrollme.png") center center no-repeat;
+
+    & + & {
+      margin-top: rem(10);
+    }
+
+    &--anim {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: rem(10);
+      background-image: url("../img/scrollme-anim.png");
+    }
+  }
+
+  &__bubble {
+    position: relative;
+    height: rem(61);
+    margin-top: rem(15);
+    background-color: #ffe500;
+    border-radius: rem(17);
+  }
+
+  &__desc {
+    text-transform: uppercase;
+    font-size: rem(14);
+    white-space: nowrap;
+    transform: rotate(90deg);
+    margin-top: rem(22);
+  }
+}

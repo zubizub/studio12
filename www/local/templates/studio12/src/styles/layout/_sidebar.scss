@@ -1,0 +1,38 @@
+.sidebar {
+  @include open-sidebar;
+  position: fixed;
+  top: 0;
+  left: -$sidebar-width;
+  height: 100%;
+  width: $sidebar-width;
+  background-color: #000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #fff;
+  z-index: 1000;
+
+  /*&:hover {
+    overflow-y: auto;
+  }*/
+
+  @include above-bp(xl) {
+    left: auto;
+  }
+
+  &__inner {
+    padding: rem(30) rem(20) rem(30) rem(25);
+    width: $sidebar-width;
+  }
+
+  &__header {
+    margin-bottom: rem(63);
+  }
+
+  &__body {
+    margin-bottom: rem(98);
+  }
+
+  &__footer {
+
+  }
+}

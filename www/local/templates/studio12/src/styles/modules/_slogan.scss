@@ -1,0 +1,64 @@
+.slogan {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    @include linear-switch(font-size, bp(sm), bp(tablet), 75px, 100px);
+    @include rel-to-win(bp(lg), bp(xxl), 100px);
+    max-width: em(595, 100);
+    font-family: $font-tertiary;
+    font-weight: 800;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: em(-2, 100);
+    line-height: 1;
+    color: #18a383;
+    overflow: hidden;
+
+    .ti-placeholder {
+      display: none !important;
+    }
+  }
+
+  &__line {
+    display: block;
+
+    & + & {
+      margin-top: em(-20, 100);
+    }
+
+    &--emphasis {
+      color: #63469c;
+    }
+  }
+
+  &__translation {
+    @include linear-switch(font-size, bp(sm), bp(tablet), 16px, 24px);
+    max-width: rem(180);
+    font-size: rem(24);
+    text-align: left;
+
+    &:before {
+      content: '*';
+      position: absolute;
+      top: 0;
+      right: 100%;
+    }
+
+    @include above-bp(md) {
+      position: absolute;
+      top: 50%;
+      right: rem(-230);
+      transform: translateY(-50%);
+    }
+
+    @include below-bp(md) {
+      display: inline-block;
+      position: relative;
+      margin: rem(21) 0 0 rem(78);
+    }
+  }
+}

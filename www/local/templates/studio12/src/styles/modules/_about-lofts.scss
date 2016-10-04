@@ -1,0 +1,139 @@
+.about-lofts {
+  color: #fff;
+  padding: rem(30) 0;
+
+  .col-1-3 {
+    @include below-bp(md-lg) {
+      width: 50%;
+
+      &:nth-child(2n + 1) {
+        clear: none;
+      }
+
+      &:nth-child(n + 3) {
+        margin-top: 0;
+      }
+
+      &:first-child {
+        width: 100%;
+        margin-bottom: rem(30);
+      }
+    }
+
+    @include below(590px) {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-top: rem(30);
+      }
+    }
+  }
+
+  &__row {
+    small {
+      font-size: rem(14);
+    }
+  }
+
+  &__p {
+    font-size: rem(18);
+    line-height: (24/18);
+
+    & + & {
+      margin-top: rem(20);
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(24);
+    line-height: 1;
+    margin-bottom: rem(18);
+  }
+
+  &__pos {
+    color: #b5b5b5;
+    font-size: 12px;
+    margin-bottom: rem(10);
+
+    .job-page & {
+      color: #000;
+    }
+  }
+
+  &__in {
+    font-size: rem(14);
+    margin-top: rem(6);
+  }
+
+  &__demo {
+    position: relative;
+    //left: rem(-35);
+    margin-bottom: rem(29);
+  }
+
+  &__access {
+    font-size: rem(36);
+    line-height: (30 / 36);
+  }
+
+  &__list {
+    font-size: rem(18);
+    line-height: (24/18);
+    font-family: "HelveticaNeue", sans-serif;
+  }
+
+  &__more {
+    display: block;
+    line-height: rem(36);
+    background-color: #ffe500;
+    font-size: rem(18);
+    padding: 0 rem(10);
+    margin-top: rem(58);
+  }
+
+  &__slider {
+
+  }
+
+  &__slider-list {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 0;
+  }
+
+  &__slider-item {
+    display: inline-block;
+    white-space: normal;
+  }
+
+  &__slider-dots {
+    .slick-dots {
+      margin-top: rem(20);
+      text-align: center;
+
+      li {
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid #fff;
+        width: rem(10);
+        height: rem(10);
+        margin: 0 rem(5) rem(10);
+        border-radius: 50%;
+        transition: all 0.1s ease;
+
+        &.slick-active {
+          background-color: #fff;
+        }
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.lot-page {
+  background-color: #f3f3f3;
+  padding: 0 !important;
+
+  &__inner {
+    position: relative;
+  }
+
+  .header,
+  .footer {
+    position: static;
+  }
+
+  .header {
+    position: static;
+    margin-bottom: rem(27);
+  }
+
+  .footer {
+    position: static;
+    margin-top: rem(27);
+  }
+
+  .detail {
+
+    &__inner {
+      overflow: hidden;
+    }
+  }
+
+  .nav {
+
+    &__inner:nth-child(n) {
+      margin: 0 $inner-offset !important;
+    }
+
+    &__item {
+      vertical-align: bottom;
+    }
+  }
+
+  .detail__hidden {
+    margin-bottom: rem(30);
+  }
+}

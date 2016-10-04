@@ -1,0 +1,111 @@
+$nav-toggle-height: 28em;
+$nav-toggle-width: 35em;
+$nav-toggle-bar-height: rem(4);
+$nav-toggle-bar-offset: calc((#{$nav-toggle-height} - #{$nav-toggle-bar-height}) / -2);
+$nav-toggle-transition: $layout-transition;
+
+.nav-toggle {
+  @include open-sidebar;
+  width: $nav-toggle-width;
+  height: $nav-toggle-height;
+  position: fixed;
+  top: rem(25);
+  left: rem(34);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: rem(1);
+  transition-property: transform, left, top !important;
+  z-index: 1500;
+
+  @include sidebar-open {
+    left: -3.875rem;
+    top: 1.8rem;
+    font-size: rem(0.86);
+  }
+
+  @include above-bp(xl) {
+    display: none;
+  }
+
+  @include below-bp(md-lg) {
+    top: rem(20);
+    left: $site-gutter-sm;
+    font-size: rem(0.86);
+  }
+
+  @include below-bp(tablet) {
+    left: rem(10);
+  }
+
+  &__bar {
+    height: $nav-toggle-bar-height;
+    //border-radius: 2em;
+    background-color: $purple;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: $nav-toggle-transition;
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-color: $yellow;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      background-color: $purple;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: $nav-toggle-transition;
+
+      .fp-viewing-s-about &,
+      .fp-viewing-s-lofts & {
+        background-color: $yellow;
+      }
+    }
+
+    &:before {
+      top: $nav-toggle-bar-offset;
+    }
+
+    &:after {
+      bottom: $nav-toggle-bar-offset;
+    }
+  }
+  //
+  //.home-page &__bar,
+  //.home-page &__bar:before,
+  //.home-page &__bar:after {
+  //  background-color: #662d91;
+  //}
+
+  .sidebar-open &__bar {
+    background: transparent;
+    height: $nav-toggle-bar-height + rem(1);
+
+    &:before,
+    &:after {
+      width: 37em;
+    }
+
+    &:before {
+      top: 0;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    &:after {
+      bottom: 0;
+      transform: translateX(-50%) rotate(-45deg);
+    }
+  }
+
+  .section--about.active &__bar {
+    background: transparent;
+  }
+}

@@ -1,0 +1,46 @@
+.reasons {
+  padding: rem(24) 0 rem(30);
+  background-color: #ffe500;
+
+  &--dark {
+    background: #343434;
+    color: #ffffff;
+  }
+
+  &__content {
+    @include above-bp(xxl) {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(24);
+    font-size: rem(36);
+    line-height: 1.11;
+    margin-left: $col-padding-left;
+
+    @include above-bp(xxl) {
+      display: table-cell;
+      vertical-align: top;
+      width: rem(228);
+      margin: 0;
+      line-height: 0.9;
+      //padding-top: rem(10);
+      font-size: rem(38);
+    }
+  }
+
+  &--dark &__title {
+    color: $yellow;
+  }
+
+  &__row {
+    @include above-bp(xxl) {
+      display: table-cell;
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+}

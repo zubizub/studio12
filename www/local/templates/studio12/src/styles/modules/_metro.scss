@@ -1,0 +1,70 @@
+.metro {
+  &__caption {
+    @include linear-switch(font-size, bp(lg), bp(xl), 0.857px, 1px);
+    font-size: rem(1);
+    margin-bottom: rem(31);
+
+    @include below-bp(lg-xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    @include s(metro);
+  }
+
+  &__hint {
+    line-height: 1;
+    font-family: "GothamPro", sans-serif;
+    font-size: 14em;
+    font-weight: 500;
+    margin: em(10, 14) 0 rem(3);
+  }
+
+  &__station {
+    line-height: 1.33;
+    font-size: 21em;
+
+    @include below-bp(sm-md) {
+      color: #7cc642;
+    }
+  }
+
+  &__map {
+    @include linear-switch(width, bp(lg), bp(xl), 100px, 223px);
+    margin: 0 0 rem(27);
+    position: relative;
+    width: rem(223);
+    display: none;
+
+    //@include above-bp(lg-xl) {
+    //  display: block !important;
+    //}
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: rem(33);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: rem(19) rem(11) 0 rem(11);
+      border-color: #edeef3 transparent transparent transparent;
+
+    }
+  }
+
+  &__loc {
+    border-radius: rem(20);
+    overflow: hidden;
+
+    .section--about & {
+      height: rem(261);
+    }
+  }
+
+  &__location {
+    width: 100%;
+  }
+}

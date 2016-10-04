@@ -1,0 +1,204 @@
+.section {
+
+  @include below-bp(md-lg) {
+    height: auto !important;
+
+    &:not(.section--lofts, .section--start, .section--intro) {
+      padding: rem(30) 0;
+    }
+
+    .fp-scroller {
+      transform: none !important;
+    }
+
+    .fp-scrollable {
+      height: inherit !important;
+    }
+
+    .iScrollVerticalScrollbar {
+      display: none !important;
+    }
+  }
+
+  @include below-height($height-breakpoint) {
+   // height: auto !important;
+
+    &:not(.section--lofts, .section--start, .section--intro) {
+      padding: rem(30) 0;
+    }
+  }
+
+  .fp-scroller {
+    overflow: hidden !important;
+  }
+
+  .wrapper {
+    height: 100%;
+  }
+
+  &__inner {
+    height: 100%;
+    position: relative;
+  }
+
+  &--main &__inner {
+
+  }
+
+  &__content {
+    @include linear-switch(margin, bp(md), bp(lg), 0px, $inner-offset-px, "0 $");
+    margin: 0 $inner-offset;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+
+    @include below-bp(md-lg) {
+      top: auto;
+      transform: none;
+    }
+
+    //@include below-height($height-breakpoint) {
+    //  top: auto;
+    //  transform: none;
+    //}
+  }
+
+  &--main &__content {
+    margin: 0;
+  }
+
+  &--about &__content {
+    //top: 46%;
+  }
+
+  &.is-colored {
+    color: #ffe500;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &--main {
+
+    .box {
+      position: relative;
+      //margin-left: -$site-gutter;
+      //margin-right: -$site-gutter;
+    }
+
+    .dynamic {
+      position: absolute;
+      z-index: 10;
+    }
+
+    .fp-scroller {
+      height: 100% !important;
+      overflow: hidden !important;
+    }
+  }
+
+  &--about {
+
+    .wrapper {
+      background: url("../img/about-bg.png") center top no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--start {
+
+    //@include linear-switch(margin-top, bp(sm), bp(lg), -12px, 12px);
+    //padding: 0;
+    height: 500px !important;
+    overflow: hidden;
+
+    @include below-bp(md-lg) {
+      height: 300px !important;
+    }
+
+    @include below-bp(tablet) {
+      height: 200px !important;
+    }
+
+    .box {
+      position: relative;
+    }
+  }
+
+  &--intro {
+    //min-height: auto;
+    //padding: 0;
+    //height: rem(650);
+      height: 1000px !important;
+      overflow: hidden;
+    //min-height: 700px !important;
+
+    @include below-bp(md-lg) {
+      height: 500px !important;
+    }
+
+    @include below-bp(tablet) {
+      height: 400px !important;
+    }
+
+    .box {
+      position: relative;
+    }
+  }
+
+  &--start,
+  &--intro,
+  &--slogan {
+
+    .fp-scrollable,
+    .fp-scroller {
+      height: inherit !important;
+    }
+  }
+
+  &--slogan {
+    //position: absolute;
+    //right: 0;
+    //left: 0;
+    //
+    //@include below-bp(md-lg) {
+    //  position: static;
+    //  min-height: 700px;
+    //}
+    //
+    //@include below-height($height-breakpoint) {
+    //  position: static;
+    //  min-height: 700px;
+    //}
+
+
+    @include below-bp(md-lg) {
+      height: rem(700) !important;
+    }
+
+    .dynamic {
+     // position: relative;
+      //top: 50%;
+      //transform: translateY(-50%);
+    }
+  }
+
+  &--slogan &__content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  &--lofts {
+
+    .header__inner,
+    .footer__inner {
+      padding-left: $site-gutter;
+      padding-right: $site-gutter;
+    }
+  }
+}

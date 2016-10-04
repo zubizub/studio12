@@ -1,0 +1,91 @@
+$feature-scale-down-bp: 650px;
+
+.feature {
+  @include linear-switch(margin-left, bp(sm), bp(lg), -70px, -23px);
+  @include linear-switch(margin-bottom, bp(sm), bp(lg), 74px, 111px);
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  margin-bottom: em(111, 16);
+  margin-left: em(-23, 16);
+  border-radius: 50%;
+  background-clip: padding-box;
+  text-align: center;
+  background-color: #fff;
+
+  &--down {
+    margin-bottom: em(-20, 16);
+  }
+
+  &__inner {
+    overflow: hidden;
+    border-radius: inherit;
+    width: em(199, 16);
+    height: em(199, 16);
+
+    @include below($feature-scale-down-bp) {
+      font-size: $feature-scale-down-bp / bp(lg) * 16px;
+    }
+  }
+
+  &__top {
+    height: 46.7%;
+    background-color: $yellow;
+    padding: em(31, 16) em(35, 16) 0;
+  }
+
+  &__term {
+    font-size: em(18, 16);
+    line-height: 1.1;
+  }
+
+  &__top &__term {
+    margin-bottom: em(5, 18);
+  }
+
+  &__bottom &__term {
+    margin-bottom: em(1, 18);
+  }
+
+  &__def {
+    font-size: em(30, 16);
+    line-height: 0.8;
+  }
+
+  &__bottom {
+    height: 53.3%;
+    padding: em(15, 16) em(35, 16) 0;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__pointer {
+    @include stepwise-switch(transform, bp(sm), bp(lg), -22deg, 45deg, $template: "rotate($)", $steps: 10);
+    position: absolute;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform-origin: center top;
+    transform: rotate(45deg);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, em(-5, 16));
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: em(34, 16) em(20, 16) 0 em(20, 16);
+      border-color: #fff transparent transparent transparent;
+    }
+  }
+
+  &--down &__pointer {
+    transform: rotate(75deg);
+  }
+}

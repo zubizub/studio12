@@ -1,0 +1,83 @@
+.bubble {
+  @include linear-switch(font-size, bp(lg), bp(xl), 0.77px, 1px);
+  @include linear-switch(font-size, bp(sm), bp(tablet), 0.57px, 1px);
+  @include linear-switch(right, bp(lg), bp(xl), 103px, -40px);
+  @include linear-switch(top, bp(lg), bp(xl), -209px, -238px);
+  @include linear-switch(width, bp(sm), bp(tablet), 187px, 244px);
+  @include linear-switch(height, bp(sm), bp(tablet), 187px, 244px);
+  position: absolute;
+  right: rem(-40);
+  top: rem(-238);
+  width: 244em;
+  height: 244em;
+  border-radius: 50%;
+  background-clip: padding-box;
+  background-color: #17a383;
+  text-align: center;
+  padding: 34em 20em 0;
+  line-height: $line-height;
+  font-size: rem(1);
+
+  @include below-bp(md-lg) {
+    position: relative;
+    top: auto;
+    right: rem(-10);
+    margin-bottom: rem(30);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__label {
+    color: #ffe500;
+    font-size: 23em;
+
+    @include below-bp(tablet) {
+      @include linear-switch(font-size, bp(sm), bp(tablet), 18px, 24px);
+    }
+  }
+
+  &__value {
+    color: #fff;
+    font-size: 77em;
+    line-height: 1;
+    margin: em(11, 77) 0 0;
+
+    @include below-bp(tablet) {
+      @include linear-switch(font-size, bp(sm), bp(tablet), 60px, 70px);
+    }
+  }
+
+  &__explain {
+    color: #fff;
+    font-size: 29em;
+    line-height: 1;
+
+    @include below-bp(tablet) {
+      @include linear-switch(font-size, bp(sm), bp(tablet), 22px, 28px);
+    }
+  }
+
+  &__pointer {
+    @include stepwise-switch(transform, bp(lg), bp(xl), -45deg, 45deg, $template: "rotate($)", $steps: 10);
+    position: absolute;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform-origin: center top;
+    transform: rotate(45deg);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -5em);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 37em 20em 0 20em;
+      border-color: #17a382 transparent transparent transparent;
+    }
+  }
+}

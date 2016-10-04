@@ -1,0 +1,15 @@
+.copyright {
+  opacity: 0.5;
+
+  &__legend {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: rem(13);
+    line-height: 1.5;
+  }
+
+  &__name {
+    font-size: rem(15);
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,53 @@
+.fl {
+  float: left !important;
+}
+
+.fr {
+  float: right !important;
+}
+
+.cf {
+  @include clearfix;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.center {
+  display: table !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.ovh {
+  overflow: hidden !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+@each $bp, $width in $breakpoints {
+  @if $width != 0 {
+    .hidden-#{$bp}-down {
+      @include below($width) {
+        display: none !important;
+      }
+    }
+  }
+
+  .hidden-#{$bp}-up {
+    @include above($width + 1px) {
+      display: none !important;
+    }
+  }
+}
+
+.yellow {
+  color: $yellow;
+}

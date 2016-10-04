@@ -1,0 +1,7 @@
+.mobile-br {
+  display: none;
+
+  @include below-bp(md-lg) {
+    display: block;
+  }
+}

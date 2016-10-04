@@ -1,0 +1,67 @@
+@function rem($px, $root: 16) {
+  @return $px / ($px * 0 + 1) / $root * 1rem;
+}
+
+$site-gutter-px: 28px;
+$site-gutter: rem($site-gutter-px);
+$site-gutter-sm-px: 18px;
+$site-gutter-sm: rem($site-gutter-sm-px);
+$grid-gutter: rem(30);
+$width: 320px;
+$sidebar-width: rem(300); //293
+$col-padding-left-px: 19px;
+$col-padding-left: rem($col-padding-left-px);
+
+$xs: 0;
+$sm: 320px;
+$md: 800px;
+$lg: 1200px;
+$xl: 1600px;
+$tablet: 767px;
+$xxl: 1899px;
+
+$breakpoints: (
+  xs:     $xs,               // 0
+  sm:     $sm,               // 320
+  mobile: 540px,              // 540
+  sm-md: 640px,              // 640
+  tablet:     $tablet,       // 767
+  md:     $md,               // 800
+  md-lg: ($md + $lg) / 2,    // 1000
+  lg:     $lg,               // 1200
+  lg-xl: ($lg + $xl) / 2,    // 1400
+  xl:     $xl,               // 1600
+  xxl:    $xxl               // 1899
+);
+
+$height-breakpoint: 720px;
+$popup-breakpoint: 880px;
+
+$loft-types-bp: 1100px;
+
+$font-family: "Luga", sans-serif;
+$font-tertiary: "Neutraface2Display", "Arial", sans-serif;
+$line-height: 1.2;
+
+$body-bg: #fff;
+
+$text-color: #000;
+$link-color: #000;
+
+$inner-offset-px: 120px - $site-gutter-px;
+$inner-offset: rem($inner-offset-px);
+$footer-side-width-px: 420px - $site-gutter-px;
+$footer-side-width: rem($footer-side-width-px);
+
+$layout-transition: 0.3s ease;
+
+$yellow: #ffe500;
+$purple: #63469c;
+$green: #18a585;
+$dark-gray: #545359;
+$dark: #343434;
+
+
+$loft-types-desc-width: rem(320);
+
+$form-grid: rem(20);

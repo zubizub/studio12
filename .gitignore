@@ -1,0 +1,8 @@
+.idea
+.sass-cache
+node_modules
+bower_components
+build
+www/bitrix
+www/upload
+www/lib

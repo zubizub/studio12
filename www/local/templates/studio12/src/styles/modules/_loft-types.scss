@@ -1,0 +1,240 @@
+.loft-types {
+  background: #fff;
+
+  &__inner {
+    @include clearfix;
+    //min-height: rem(618);
+    //height: rem(1);
+    position: relative;
+    margin-left: calc((100vw - 100%) / -2 - 1px);
+
+    @include above-bp(xxl) {
+      margin-left: calc((100vw - 100% - #{$sidebar-width}) / -2  - 1px);
+    }
+
+    @include below($loft-types-bp) {
+      width: 100vw;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+
+    .slick-list,
+    .slick-track {
+      height: 100% !important;
+    }
+
+    @include below($loft-types-bp) {
+      height: rem(400);
+      position: relative;
+    }
+  }
+
+  &__slide {
+    display: inline-block;
+    white-space: normal;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    font-size: 0;
+    height: 100%;
+
+    .slick-list,
+    .slick-track {
+      height: 100% !important;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    white-space: normal;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__row {
+    position: relative;
+    z-index: 200;
+    height: 100%;
+  }
+
+  &__caption {
+    @include linear-switch(left, bp(md), bp(lg), 0px, $inner-offset-px);
+    @include linear-switch(margin-left, bp(sm), bp(lg), $site-gutter-sm-px, $site-gutter-px);
+    left: $inner-offset;
+    margin-left: $site-gutter;
+    border-left: $col-padding-left solid transparent;
+    position: absolute;
+    top: 0;
+    //left: $inner-offset + $site-gutter + $col-padding-left;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__title {
+    font-size: rem(36);
+    line-height: 1.11;
+    //color: $yellow;
+    color: #fff;
+    margin-top: rem(34);
+    position: relative;
+    z-index: 100;
+    max-width: rem(450);
+  }
+
+  &__page {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: rem(34);
+    color: #fff;
+    font-size: rem(60);
+    z-index: 100;
+  }
+
+  &__desc {
+    width: $loft-types-desc-width;
+    min-height: rem(666); // 618
+    padding: rem(33) rem(15) rem(120) $grid-gutter / 2 + $col-padding-left;
+    background: #fff;
+    float: right;
+    position: relative;
+    z-index: 500;
+
+    @include below($loft-types-bp) {
+      float: none;
+      width: auto;
+      min-height: 0;
+    }
+  }
+
+  &__tabs {
+    font-size: rem(24);
+    line-height: 1.25;
+    color: $purple;
+
+    .job-page & {
+      color: $green;
+    }
+
+    &.slick-vertical {
+      .slick-list,
+      .slick-track {
+        height: auto !important;
+      }
+
+      .slick-slide {
+        width: auto !important;
+      }
+    }
+  }
+
+  &__tab {
+    position: relative;
+    padding-left: rem(30);
+    cursor: pointer;
+    transition: 150ms ease;
+    clear: both;
+
+    & + & {
+      margin-top: rem(29);
+    }
+
+    &:before {
+      content: '\2014';
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: inherit;
+      //transform-origin: left center;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &.active,
+    &.slick-current {
+      padding-left: 0;
+      font-size: rem(30);
+      color: #000;
+
+      &:before {
+        //transform: scaleX(0);
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    @include below($loft-types-bp) {
+      max-width: rem(200);
+      margin: 0 rem(20);
+
+      & + & {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__act {
+    min-height: rem(36);
+    background-color: #e51737;
+    position: absolute;
+    left: $grid-gutter / 2 + $col-padding-left;
+    right: rem(15);
+    bottom: rem(38);
+    display: block;
+    //margin-top: rem(52);
+  }
+
+  &__label {
+    color: #fff;
+    font-size: rem(18);
+    padding: rem(7) rem(10);
+
+    &:after {
+      @include s(arrow-right);
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: rem(13);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    right: rem(11);
+    width: rem(109);
+  }
+}
+
+.lofts-temp {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: rem(1362);
+}

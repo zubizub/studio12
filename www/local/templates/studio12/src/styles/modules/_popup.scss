@@ -1,0 +1,200 @@
+.popup {
+  display: none;
+  width: rem(880);
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: auto !important;
+  float: left;
+  background-color: #fff;
+  //border: rem(10) solid #f6f6f7;
+  //box-shadow: rem(20) rem(20) rem(60) rgba(0,0,0,0.4);
+
+  &--loft {
+    overflow: hidden;
+  }
+
+  &--page {
+    transform: none !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    float: none;
+    display: block;
+
+    .detail {
+
+      &__link {
+        display: none;
+      }
+    }
+  }
+
+  @include below($popup-breakpoint) {
+    width: 100% !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  &__inner {
+    padding: rem(30);
+  }
+
+  &--loft &__inner,
+  &--page &__inner {
+    padding: 0;
+  }
+
+  &__title {
+    font-size: rem(48);
+    color: $yellow;
+    margin-bottom: rem(10);
+  }
+
+  &__desc {
+    margin-bottom: rem(25);
+  }
+
+  &__footer {
+    display: table;
+    width: 100%;
+  }
+
+  &__cell {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    background: #535359;
+
+    @include below($tablet) {
+      display: block;
+      //padding: 0 rem(30);
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      //text-transform: uppercase;
+
+      @include below($tablet) {
+        display: block;
+
+        &:first-child {
+          border-bottom: rem(1) solid #353539;
+        }
+      }
+
+      a {
+        position: relative;
+        display: block;
+        padding: rem(35) rem(40);
+
+        @include below($popup-breakpoint) {
+          padding-left: rem(15);
+          padding-right: rem(15);
+        }
+
+        @include below($tablet) {
+          padding: rem(20) rem(30);
+          padding-left: rem(70);
+        }
+      }
+
+      &:first-child a:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: rem(10) 0;
+        width: rem(1);
+        background: #000;
+
+        @include below($tablet) {
+          content: none;
+        }
+      }
+    }
+
+    a {
+      color: #ffffff;
+      //font-size: rem(14);
+    }
+
+    &--callback {
+      background: $yellow;
+      //max-width: rem(280);
+      padding: 0 rem(20);
+      text-align: center;
+      white-space: nowrap;
+
+      @include below($tablet) {
+        display: table-header-group;
+        text-align: left;
+      }
+
+      p {
+        display: inline-block;
+        vertical-align: middle;
+
+        @include below($tablet) {
+          display: block;
+        }
+      }
+
+      a {
+        color: #000000;
+
+        @include below($tablet) {
+          display: block;
+          padding: rem(20) rem(30);
+          padding-left: rem(70);
+
+          p & {
+            border-bottom: none;
+          }
+
+          &:first-child {
+            border-bottom: rem(1) solid #fae000;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__cell--callback &__number {
+    font-size: rem(24);
+    vertical-align: middle;
+    margin-right: rem(20);
+  }
+
+  &__close {
+    width: rem(55);
+    height: rem(55);
+    top: 0;
+    right: 0;
+    background: $yellow;
+    position: absolute;
+
+    &:before {
+      content: '';
+      width: rem(24);
+      height: rem(24);
+      background: url("../img/close.png") center center no-repeat;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+    }
+  }
+
+  &--page &__close {
+    display: none;
+  }
+}

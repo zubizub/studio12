@@ -1,0 +1,68 @@
+.controls {
+  @include open-sidebar;
+  position: fixed;
+  top: rem(63);
+  left: $site-gutter-sm;
+  width: rem(35);
+  display: none;
+
+
+  @include below-bp(md-lg) {
+    display: block;
+  }
+
+  @include below-bp(tablet) {
+    left: rem(10);
+  }
+
+  a {
+    display: block;
+    margin: rem(20) auto 0 auto;
+    transition: $layout-transition;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__phone,
+  &__place,
+  &__metro-nav {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__phone {
+    background-image: url('../img/phone.png');
+    width: rem(22);
+    height: rem(30);
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-image: url('../img/phone-yellow.png');
+    }
+  }
+
+  &__place {
+    background-image: url('../img/place.png');
+    width: rem(23);
+    height: rem(34);
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-image: url('../img/place-yellow.png');
+    }
+  }
+
+  &__metro-nav {
+    background-image: url('../img/metro-nav.png');
+    width: rem(32);
+    height: rem(24);
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-image: url('../img/metro-nav-yellow.png');
+    }
+  }
+}

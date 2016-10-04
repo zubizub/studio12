@@ -1,0 +1,32 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+
+  body:not(.home-page) & {
+    @include below(1150px) {
+      display: none;
+    }
+  }
+
+  body.home-page & {
+    @include below-bp(md-lg) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding-top: rem(23);
+  }
+
+  //.section--main &,
+  //.section--about & {
+  //
+  //  @include below-height($height-breakpoint) {
+  //    position: static;
+  //    margin-bottom: rem(80);
+  //  }
+  //}
+}

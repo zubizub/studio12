@@ -1,0 +1,91 @@
+.nav {
+  &__inner {
+    margin: 0 $inner-offset;
+    text-align: justify;
+    height: rem(32);
+    transition: all $layout-transition;
+
+    @include above-bp(xxl) {
+      margin: 0;
+    }
+
+    .sidebar-open & {
+      margin: 0;
+    }
+
+    body:not(.home-page) & {
+      margin: 0 !important;
+    }
+
+    @include below-bp(lg) {
+      margin-left: rem(80);
+      margin-right: rem(10);
+    }
+
+    /*@include sidebar-open {
+      margin: 0 0.75rem;
+    }*/
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: rem(15);
+      position: relative;
+      top: rem(-1);
+    }
+  }
+
+  &__item-text {
+    transition: all $layout-transition;
+  }
+
+  &__inner &__item {
+
+    .section--lofts & {
+      color: $yellow;
+    }
+  }
+
+  &--light &__item {
+    color: #fff;
+  }
+
+  @each $icon in (photos, queue, shoowroom) {
+    &__item--#{$icon}:before {
+      @include s($icon);
+    }
+
+    &--light &__item--#{$icon}:before {
+      @include s(#{$icon}-white);
+
+      .section--lofts & {
+        @include s($icon);
+      }
+    }
+  }
+
+  &__item-text {
+    vertical-align: middle;
+  }
+
+  &__link {}
+
+  &--light &__link {
+    color: $yellow;
+  }
+}
