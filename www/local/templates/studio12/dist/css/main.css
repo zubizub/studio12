@@ -1583,7 +1583,8 @@ body {
   line-height: 1.2;
   min-width: 320px;
   color: #000;
-  background-color: #fff;
+  /*background-color: $body-bg;*/
+  background-color: red;
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   body {
