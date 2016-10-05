@@ -1,0 +1,75 @@
+.popup.popup--callback
+    .popup__inner
+        .popup__title Обратный звонок
+        .popup__desc Укажите свой контактный телефон, и наш специалист свяжется с вами в удобное для вас время.
+        form.form#callbackForm(action='#')
+            .form__group
+                .form__col
+                    .form__field
+                        input.form__input(type='text', name='name', placeholder='Как Вас зовут', required)
+                    .form__field
+                        input.form__input.js-phone-mask(type='text', name='phone', placeholder='+7 (___) ___-__-__', required)
+                    .form__group.form__group--inner
+                        .form__col
+                            .form__field.form__select-wrap
+                                select.form__select(name='fromClock', data-placeholder='С', required)
+                                    option(value='')
+                                    option(value='0:00') 0:00
+                                    option(value='1:00') 1:00
+                                    option(value='2:00') 2:00
+                                    option(value='3:00') 3:00
+                                    option(value='4:00') 4:00
+                                    option(value='5:00') 5:00
+                                    option(value='6:00') 6:00
+                                    option(value='7:00') 7:00
+                                    option(value='8:00') 8:00
+                                    option(value='9:00') 9:00
+                                    option(value='10:00') 10:00
+                                    option(value='11:00') 11:00
+                                    option(value='12:00') 12:00
+                                    option(value='13:00') 13:00
+                                    option(value='14:00') 14:00
+                                    option(value='15:00') 15:00
+                                    option(value='16:00') 16:00
+                                    option(value='17:00') 17:00
+                                    option(value='18:00') 18:00
+                                    option(value='19:00') 19:00
+                                    option(value='20:00') 20:00
+                                    option(value='21:00') 21:00
+                                    option(value='22:00') 22:00
+                                    option(value='23:00') 23:00
+                        .form__col
+                            .form__field.form__select-wrap
+                                select.form__select(name='toClock', data-placeholder='До', required)
+                                    option(value='')
+                                    option(value='0:00') 0:00
+                                    option(value='1:00') 1:00
+                                    option(value='2:00') 2:00
+                                    option(value='3:00') 3:00
+                                    option(value='4:00') 4:00
+                                    option(value='5:00') 5:00
+                                    option(value='6:00') 6:00
+                                    option(value='7:00') 7:00
+                                    option(value='8:00') 8:00
+                                    option(value='9:00') 9:00
+                                    option(value='10:00') 10:00
+                                    option(value='11:00') 11:00
+                                    option(value='12:00') 12:00
+                                    option(value='13:00') 13:00
+                                    option(value='14:00') 14:00
+                                    option(value='15:00') 15:00
+                                    option(value='16:00') 16:00
+                                    option(value='17:00') 17:00
+                                    option(value='18:00') 18:00
+                                    option(value='19:00') 19:00
+                                    option(value='20:00') 20:00
+                                    option(value='21:00') 21:00
+                                    option(value='22:00') 22:00
+                                    option(value='23:00') 23:00
+                .form__col
+                    .form__field
+                        textarea.form__textarea(name='comments', placeholder='Комментарий', required)
+                    .form__field
+                        input.form__submit.btn.btn--md.btn--yellow(type='submit', value='Отправить')
+
+    button.popup__close

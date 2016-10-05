@@ -1,0 +1,119 @@
+﻿extends extends/layout
+
+block vars
+    - var navMod = 'light';
+
+    - var title = 'Работа в лофте';
+
+block content
+    .wrapper.job-page
+        .inner
+            include includes/header
+            .head
+                h1.heading
+                    span.heading__line
+                        span.heading__word.invisible Работа
+                    span.heading__line
+                        span.heading__word.invisible В лофте
+                        .feature.invisible
+                            .feature__inner
+                                .feature__top
+                                    .feature__item
+                                        .feature__term Свой лофт
+                                        .feature__def
+                                            | от 30 м
+                                            sup 2
+                                .feature__bottom
+                                    .feature__item
+                                        .feature__term Окупаемость
+                                        .feature__def менее <br> 7 лет!
+                            .feature__pointer
+            .concept
+                .row
+                    .concept__col.col-1-3
+                        .concept__head
+                            | Концепция  квартала  #{''}
+                            br
+                            a.link(href='#') #Живи
+                            | #{''} и #Работай
+                    .concept__col.col-1-3 Описываем в 3 предложения, что мы хотим расскзать  про наш Квартал покупателям, которые в поисках недвижимости в центре, по привлекательной
+                    .concept__col.col-1-3 Описываем в 3 предложения, что мы хотим расскзать  про наш Квартал покупателям, которые в поисках недвижимости.
+
+    include includes/loft-types-job
+
+    .reasons.reasons--dark
+        .wrapper
+            .inner
+                .reasons__content
+                    .reasons__title 5 причин #жить в&nbsp;своем лофте:
+                    .reasons__row
+                        .row
+                             .col-1-5
+                                .reason
+                                    .reason__name Креативный лофт- квартал
+                                    .reason__explain лучший вариант для ритейла, место притяжения людей со всего города.
+                             .col-1-5
+                                .reason
+                                    .reason__name Лофт — идеальное место
+                                    .reason__explain для креативного бизнеса: креаторов, музыкантов, художников, архитекторов, пиарщиков и гениев IT.
+                             .col-1-5
+                                .reason
+                                    .reason__name Лофт — отличный повод
+                                    .reason__explain сменить серые коробки унылых бизнес-центров на непринужденную атмосферу креативного квартала, способствующую заключению многообещающих сделок.
+                             .col-1-5
+                                .reason
+                                    .reason__name Лофт — привлечения сотрудников
+                                    .reason__explain ведь лофт-квартал — это офисы, бары, кафе и развлечения в одном месте.
+                             .col-1-5
+                                .reason
+                                    .reason__name Лофт — свободные планировки
+                                    .reason__explain позволяют воплотить в нем все, что угодно: модный шоурум, отделение банка, креативную студию, стильный бар, перспективное адвокатское бюро, трушный барбершоп или салон мотоциклов.
+
+    .metro-place
+        .metro-place__item
+            .metro-place__slider
+                .metro-place__slider-item
+                    img.metro-place__img(src='img/job-apartment.jpg', alt='#')
+                .metro-place__slider-item
+                    img.metro-place__img(src='img/metro-street.png', alt='#')
+        .metro-place__item
+            img.metro-place__img(src='img/metro-loc.png', alt='#')
+            
+    .about-lofts.job-page
+        .wrapper
+            .inner
+                .about-lofts__row.row
+                    .col-1-3
+                        .about-lofts__subtitle Лофты <br> с внутренним  двориком:
+                        img.about-lofts__demo(src='img/loft-demo.png')
+                        .about-lofts__access Быстрый  доступ  в свой лофт.
+                    .col-1-3
+                        .about-lofts__subtitle Характеристики <br> лофтов:
+                        ul.about-lofts__list
+                            li — площадь от 40 до 160 кв. м2
+                            li — отдельный вход
+                            li — свободная планировка
+                            li — высота потолков: от 3,5 м
+                            li — большие окна
+                            li — эл. мощность: от 190 Вт/кв. м
+                            li — cистема вентиляции
+                            li — лифты OTIS
+                            li — хол. и гор. водоснабжение
+                            li — механизированная парковка.
+                        a.about-lofts__more(href='#') Презентация Studio#12
+                    .col-1-3
+                        .about-lofts__subtitle Месторасположение <br> квартала:
+                        .about-lofts__p Москва, СВАО, <br>
+                            a.link.yellow(href='#') 12-й пр. Марьиной Рощи 8 <br>
+                            small 10 мин. от метро “Марьина Роща”
+                        .about-lofts__p
+                            .about-lofts__pos Комплекс апартаментов «Studio 12»  находится вблизи:
+                            .about-lofts__in →  1,5 км от ТТК
+                            .about-lofts__in →  ближайшие крупные автомагистрали Сущевский вал и Проспект Мира.
+                        .about-lofts__p
+                            .about-lofts__pos Пассажиры общественного транспорта доедут от квартала:
+                            .about-lofts__in →  5-7 минут до станции  метро «Марьина Роща»
+                            .about-lofts__in →  за 20-25 минут – до Рижского или Савёловского вокзалов.
+
+
+    include includes/lofts-section

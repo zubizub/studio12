@@ -1,0 +1,41 @@
+.footer
+    .footer__inner
+        .footer__main
+            .footer__bar
+                .footer__content
+                    .footer__lead
+                        .footer__cell
+                            .metro
+                                .metro__caption
+                                    .metro__icon
+                                    .metro__hint 10 мин. от метро:
+                                    a.metro__station.link(href='#') Марьина Роща
+                                .metro__map
+                                    .metro__loc
+                                        img.metro__location(src='img/metro-map.png', alt='#')
+                    .footer__info
+                        .footer__cell
+                            | Москва, СВАО, #{''}
+                            br
+                            a.link(href='#') 12-й пр. Марьиной Рощи&nbsp;8
+                    .footer__info
+                        .footer__cell
+                            | +7 495 780-40-40
+                            span.hidden-lg-xl-down  | #{''}
+                            br
+                            a.link(href='#') Заказать обратный звонок
+        .footer__side
+            .offer
+                .offer__title
+                    span.offer__title-desktop Супер-маркет лофтов
+                    span.offer__title-mobile Креативный <br>лофт-квартал
+                    if showBubble
+                        .bubble
+                            .bubble__label Акция
+                            .bubble__value -10%
+                            .bubble__explain от цены <br> лофта
+                            .bubble__pointer
+                a.offer__act(href='#')
+                    .offer__label.offer__label--desktop Выбрать лофт
+                    .offer__label.offer__label--mobile Супер-маркет лофтов
+                    img.offer__img(src='img/intro-offer.png', alt='#')
