@@ -37,7 +37,7 @@
 
   &__item {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     text-align: left;
 
     &:before {
@@ -53,6 +53,12 @@
 	    display: inline-block;
 		vertical-align: middle;
 	}
+	
+			.fp-viewing-s-about &,
+			.fp-viewing-s-lofts &{
+				color: #fff;
+				
+			}
   }
 
   &__item-text {
@@ -88,7 +94,12 @@
     vertical-align: middle;
   }
 
-  &__link {}
+  &__link {
+		.fp-viewing-s-about &,
+		.fp-viewing-s-lofts &{
+			color: #fff;
+		}
+  }
 
   &--light &__link {
     color: $yellow;

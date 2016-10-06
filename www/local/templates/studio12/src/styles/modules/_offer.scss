@@ -33,6 +33,10 @@
     @include below-bp(md-lg) {
       display: none;
     }
+			.fp-viewing-s-about &,
+		.fp-viewing-s-lofts &{
+			color: #fff;
+		}
   }
 
   &__title-mobile {

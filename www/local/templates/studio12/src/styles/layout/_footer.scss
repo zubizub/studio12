@@ -1,3 +1,8 @@
+.fp-viewing-s-start, .fp-viewing-s-intro, .fp-viewing-s-lofts{
+	.footer_fixed{
+	display: none;}
+}
+
 .footer {
   position: absolute;
   left: 0;
@@ -34,6 +39,11 @@
     @include below-bp(md-lg) {
       padding-bottom: 0;
     }
+	
+	  .section--lofts & {
+		padding-right: 0!important;
+      padding-left: 0!important;
+  }
   }
 
   &__row {
@@ -142,6 +152,18 @@
 	@include below-bp(lg) {
       padding: 0;
     }
+	
+		.fp-viewing-s-about &,
+		.fp-viewing-s-lofts &{
+			color: #fff;
+		}
+		
+		a{
+		.fp-viewing-s-about &,
+		.fp-viewing-s-lofts &{
+			color: #fff;
+		}
+		}
   }
 
   &__side {
@@ -193,5 +215,8 @@
  /*.nav__item:before {
   content: none;
   }*/
-  
+  &_fixed{
+	display: fixed;
+  }
+ 
 }

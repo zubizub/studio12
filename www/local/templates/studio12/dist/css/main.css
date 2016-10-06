@@ -2129,8 +2129,12 @@ sub, sup {
   max-width: none;
 }
 
+.fp-viewing-s-start .header, .fp-viewing-s-intro .header {
+  display: none;
+}
+
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -2148,6 +2152,10 @@ sub, sup {
 }
 .header__inner {
   padding-top: 1.4375rem;
+}
+
+.fp-viewing-s-start .footer_fixed, .fp-viewing-s-intro .footer_fixed, .fp-viewing-s-lofts .footer_fixed {
+  display: none;
 }
 
 .footer {
@@ -2184,6 +2192,10 @@ sub, sup {
   .footer__inner {
     padding-bottom: 0;
   }
+}
+.section--lofts .footer__inner {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 .footer__row:after {
   content: "";
@@ -2286,6 +2298,12 @@ sub, sup {
     padding: 0;
   }
 }
+.fp-viewing-s-about .footer__cell, .fp-viewing-s-lofts .footer__cell {
+  color: #fff;
+}
+.fp-viewing-s-about .footer__cell a, .fp-viewing-s-lofts .footer__cell a {
+  color: #fff;
+}
 .footer__side {
   display: table-cell;
   vertical-align: bottom;
@@ -2326,6 +2344,9 @@ sub, sup {
 .footer .nav__inner {
   height: auto;
 }
+.footer_fixed {
+  display: fixed;
+}
 
 .nav__inner {
   margin: 0 7.625rem;
@@ -2365,7 +2386,7 @@ body:not(.home-page) .nav__inner {
 }
 .nav__item {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   text-align: left;
 }
 .nav__item:before {
@@ -2379,6 +2400,9 @@ body:not(.home-page) .nav__inner {
 .nav__item > span {
   display: inline-block;
   vertical-align: middle;
+}
+.fp-viewing-s-about .nav__item, .fp-viewing-s-lofts .nav__item {
+  color: #fff;
 }
 .nav__item-text {
   -webkit-transition: all 0.3s ease;
@@ -2529,6 +2553,9 @@ body:not(.home-page) .nav__inner {
 }
 .nav__item-text {
   vertical-align: middle;
+}
+.fp-viewing-s-about .nav__link, .fp-viewing-s-lofts .nav__link {
+  color: #fff;
 }
 .nav--light .nav__link {
   color: #ffe500;
@@ -5375,6 +5402,9 @@ a.btn, a.btn:hover {
   .offer__title-desktop {
     display: none;
   }
+}
+.fp-viewing-s-about .offer__title-desktop, .fp-viewing-s-lofts .offer__title-desktop {
+  color: #fff;
 }
 .offer__title-mobile {
   display: none;

@@ -1,5 +1,11 @@
+.fp-viewing-s-start, .fp-viewing-s-intro{
+	.header{
+	display: none;}
+}
+
 .header {
-  position: absolute;
+  //position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
