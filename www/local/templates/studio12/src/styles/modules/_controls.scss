@@ -27,7 +27,11 @@
 
   &__phone,
   &__place,
-  &__metro-nav {
+  &__metro-nav,
+  &__photos,
+  &__queue,
+  &__shoowroom,
+  {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,6 +67,36 @@
     .fp-viewing-s-about &,
     .fp-viewing-s-lofts & {
       background-image: url('../img/metro-nav-yellow.png');
+    }
+  }
+  &__photos {
+    background-image: url('../img/photos-purple.png');
+    width: 38px;
+    height: 29px;
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-image: url('../img/photos.png');
+    }
+  }
+  &__shoowroom {
+    background-image: url('../img/shoowroom-purple.png');
+    width: 36px;
+    height: 31px;
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-image: url('../img/shoowroom.png');
+    }
+  }
+    &__queue {
+    background-image: url('../img/queue-purple.png');
+    width: 33px;
+    height: 32px;
+
+    .fp-viewing-s-about &,
+    .fp-viewing-s-lofts & {
+      background-image: url('../img/queue.png');
     }
   }
 }

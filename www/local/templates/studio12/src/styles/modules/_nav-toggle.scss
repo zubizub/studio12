@@ -29,12 +29,13 @@ $nav-toggle-transition: $layout-transition;
 
   @include below-bp(md-lg) {
     top: rem(20);
-    left: $site-gutter-sm;
+    //left: $site-gutter-sm;
+	left: 22px;
     font-size: rem(0.86);
   }
 
   @include below-bp(tablet) {
-    left: rem(10);
+    left: rem(14);
   }
 
   &__bar {

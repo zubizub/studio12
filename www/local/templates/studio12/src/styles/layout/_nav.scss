@@ -37,7 +37,7 @@
 
   &__item {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     text-align: left;
 
     &:before {
@@ -48,6 +48,11 @@
       position: relative;
       top: rem(-1);
     }
+	
+	&>span{
+	    display: inline-block;
+		vertical-align: middle;
+	}
   }
 
   &__item-text {
@@ -65,7 +70,7 @@
     color: #fff;
   }
 
-  @each $icon in (photos, queue, shoowroom) {
+  @each $icon in (photos, queue, shoowroom, place-yellow, phone-yellow) {
     &__item--#{$icon}:before {
       @include s($icon);
     }
