@@ -1,14 +1,20 @@
 .controls {
   @include open-sidebar;
   position: fixed;
-  top: rem(63);
-  left: $site-gutter-sm;
+  top: rem(75);
+  //left: $site-gutter-sm;
+  left: rem(32);
   width: rem(35);
   display: none;
-
+  
+  @include above-bp(xl) {
+    margin-left: 18.75rem;
+	display: none;
+  }
 
   @include below-bp(md-lg) {
     display: block;
+	left: rem(18);
   }
 
   @include below-bp(tablet) {
@@ -98,5 +104,28 @@
     .fp-viewing-s-lofts & {
       background-image: url('../img/queue.png');
     }
+  }
+  &_test{
+  
+	.controls__phone {
+		background-image: url('../img/phone-yellow.png');
+  }
+
+  .controls__place {
+		background-image: url('../img/place-yellow.png');
+  }
+
+  .controls__metro-nav {
+	background-image: url('../img/metro-nav-yellow.png');
+  }
+  .controls__photos {
+		background-image: url('../img/photos.png');
+  }
+  .controls__shoowroom {
+		background-image: url('../img/shoowroom.png');
+  }
+    .controls__queue {
+		background-image: url('../img/queue.png');
+  }
   }
 }

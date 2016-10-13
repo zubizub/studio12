@@ -1,6 +1,6 @@
 .fp-viewing-s-start, .fp-viewing-s-intro, .fp-viewing-s-lofts{
 	.footer_fixed{
-	display: none;}
+	display: none!important;}
 }
 
 .footer {
@@ -40,10 +40,10 @@
       padding-bottom: 0;
     }
 	
-	  .section--lofts & {
+	.section--lofts & {
 		padding-right: 0!important;
-      padding-left: 0!important;
-  }
+		padding-left: 0!important;
+	}
   }
 
   &__row {
@@ -80,13 +80,26 @@
     @include below-bp(sm-md) {
       direction: rtl;
     }
-	padding-left: 7.7rem;
+	//padding-left: 7.7rem;
+	//padding-left: 22.7rem;
+	//padding-right: 1rem;
+	
+		@include below-bp(xl) {
+        //padding-left: 8rem;
+    }
 	
 	@include below-bp(lg) {
-      padding-left: rem(0);
-      padding-right: rem(0);
-	  margin-left: rem(95);
+        //margin-left: 7.5rem;
+		//padding-right: 4.5rem;
+		        //margin-left: 8rem;
+				//padding-right: 6.8rem;
+			//padding-left: 0;
     }
+	   .sidebar-open & {
+     		//padding-left: 23rem;
+			//padding-right: 0.5rem;
+    }
+
   }
 
   &__lead {
@@ -155,14 +168,14 @@
 	
 		.fp-viewing-s-about &,
 		.fp-viewing-s-lofts &{
-			color: #fff;
+			color: #ffe500;
 		}
 		
 		a{
-		.fp-viewing-s-about &,
-		.fp-viewing-s-lofts &{
-			color: #fff;
-		}
+			.fp-viewing-s-about &,
+			.fp-viewing-s-lofts &{
+				color: #fff;
+			}
 		}
   }
 
@@ -171,7 +184,7 @@
     display: table-cell;
     vertical-align: bottom;
     width: $footer-side-width;
-    padding-left: rem(40); // rem(20)
+    //padding-left: rem(40); // rem(20)
 
     @include below-bp(md-lg) {
       display: block;
@@ -181,6 +194,7 @@
 	
 	@include below-bp(lg) {
 		width: 20.5rem;
+		padding-left: 0;
     }
   }
 
@@ -189,7 +203,7 @@
     @include below-bp(md-lg) {
       display: none;
     }
-
+	
     .metro__icon {
       display: inline-block;
       vertical-align: middle;
@@ -210,13 +224,44 @@
 
   .nav__inner {
     height: auto;
+	//margin: 0 5rem;
+	
+	    .sidebar-open & {
+			//margin: 0 5rem;
+		}
   }
 
- /*.nav__item:before {
+ .nav__item:last-child:before {
   content: none;
-  }*/
-  &_fixed{
-	display: fixed;
   }
- 
+  &_fixed{
+	position: fixed;
+	@include below-bp(md-lg) {
+      display: none;
+    }
+  }
+	&_stable{
+		.nav__inner {	
+		margin: 0 0rem 0 9.5rem;
+					@include above-bp(xl) {
+						margin: 0 3rem 0 9.5rem;
+					}
+			.sidebar-open & {
+				margin: 0px 3rem 0 8.8rem;	
+			}	
+		}
+		.nav__item{
+				&:first-child{
+					width: 31%;
+				}
+				
+				&:nth-child(2n){
+					width: 34%;
+				}
+				
+				&:last-child{
+					width: 34%;
+				}
+		}
+	}
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="fp-responsive" lang="ru">
   <head>
     <meta charset="utf-8">
@@ -8,6 +8,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link(rel='apple-touch-icon', href='apple-touch-icon.png')-->
     <link rel="stylesheet" href="css/main.css">
+	    <style>
+        .metro-place__text {
+            position: absolute;
+            bottom: 2rem;
+            //width: 50%;
+            color: #ffe500;
+            font-size: 150%;
+        }
+
+        .metro-place__title {
+            text-align: left;
+            //width: 65%;
+            //margin: 0 auto 0 9.33rem;
+        }
+	.reasons__title{
+		padding-left: 1.1875rem;
+	}		
+		@media screen and (max-width: 1900px) {
+			.metro-place__title {
+				//margin: 0px auto 0 10.5rem;
+			}
+			.reasons__title{
+				padding-left:0;
+			}
+        }
+
+        @media screen and (max-width: 768px) {
+            .metro-place__text {
+                bottom: 60%;
+                width: 80%;
+            }
+        }
+	.metro-place__slider-item:after {
+		content: ' ';
+		background-color: #000;
+		height: 100%;
+		left: 0;
+		opacity: 0.10;
+		position: absolute;
+		top: 0;
+		-webkit-transition: opacity 0.3s;
+		-moz-transition: opacity 0.3s;
+		-o-transition: opacity 0.3s;
+		-ms-transition: opacity 0.3s;
+		transition: opacity 0.3s;
+		width: 100%;
+	}
+
+	    
+		
+    </style>
   </head>
   <body>
     <div class="container">
@@ -16,21 +67,16 @@
           <div class="sidebar__inner">
             <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="img/side-logo.png"></a></div>
             <div class="sidebar__body">
-              <div class="menu">
-                <div class="menu__item active"><a class="menu__link" href="#">#интро</a></div>
-                <div class="menu__item"><a class="menu__link" href="/">#Главная</a></div>
-                <div class="menu__item"><a class="menu__link" href="quarter.html">#лофтквартал</a></div>
-                <div class="menu__item"><a class="menu__link" href="job.html">#работавлофте</a></div>
-                <div class="menu__item"><a class="menu__link" href="#">#картарайона</a></div>
-                <div class="menu__item"><a class="menu__link" href="#">#фотолофтов</a>
-                  <div class="menu__sub">
-                    <div class="menu__sub-item"><a class="menu__sub-link" href="#">разделфото</a></div>
-                    <div class="menu__sub-item"><a class="menu__sub-link" href="#">разделфото</a></div>
-                    <div class="menu__sub-item"><a class="menu__sub-link" href="#">разделфото</a></div>
-                  </div>
-                </div>
-                <div class="menu__item"><a class="menu__link" href="#">#блог</a></div>
-              </div>
+                        <div class="menu">
+                            <div class="menu__item active"><a class="menu__link" href="#">#интро</a></div>
+                            <div class="menu__item"><a class="menu__link" href="index.html">#Главная</a></div>
+                            <div class="menu__item"><a class="menu__link" href="index.html">#выбрать лофт</a></div>
+                            <div class="menu__item"><a class="menu__link" href="quarter.html">#лофтквартал</a></div>
+                            <div class="menu__item"><a class="menu__link" href="job.html">#работавлофте</a></div>
+                            <div class="menu__item">
+                                <a class="menu__link" href="#">#галерея</a>
+                            </div>
+                        </div>
               <div class="note">
                 <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="#">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="#">#РАБОТЫ</a>.</div>
                 <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
@@ -50,7 +96,7 @@
               <div class="header">
                 <div class="header__inner">
                   <div class="nav nav--light">
-                    <div class="nav__inner">
+                    <div class="nav__inner nav__inner_inside">
                       <div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link" href="#">Фотографии</a> лофтов</span></div>
                       <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a class="link nav__link" href="#">Январь/2017 г.</a></span></div>
                       <div class="nav__item nav__item--shoowroom"><span class="nav__item-text">Shoowroom: <a class="link nav__link" href="#">Studio#8</a></span></div>
@@ -188,7 +234,7 @@
                       <div class="loft-types__tab">Лофты с личным  входоми двориком</div>
                       <div class="loft-types__tab">Залитые солнцем мансарды</div>
                     </div><a class="loft-types__act" href="#">
-                      <div class="loft-types__label">Выбрать</div><img class="loft-types__icon" src="img/intro-offer.png" alt="#"></a>
+                      <div class="loft-types__label">Супер-маркет лофтов</div><img class="loft-types__icon" src="img/intro-offer.png" alt="#"></a>
                   </div>
                 </div>
               </div>
@@ -209,7 +255,7 @@
                       </div>
                       <div class="col-1-5">
                         <div class="reason">
-                          <div class="reason__name">Большие окна</div>
+                          <div class="reason__name">Большие<br>окна</div>
                           <div class="reason__explain">Дают возможность на мир посмотреть и себя показать.</div>
                         </div>
                       </div>
@@ -237,15 +283,27 @@
               </div>
             </div>
           </div>
-          <div class="metro-place">
-            <div class="metro-place__item">
-              <div class="metro-place__slider">
-                <div class="metro-place__slider-item"><img class="metro-place__img" src="img/metro-street.png" alt="#"></div>
-                <div class="metro-place__slider-item"><img class="metro-place__img" src="img/job-apartment.jpg" alt="#"></div>
-              </div>
-            </div>
-            <div class="metro-place__item"><img class="metro-place__img" src="img/metro-loc.png" alt="#"></div>
-          </div>
+                <div class="metro-place" style="position: relative;">
+                    <div class="metro-place__item">
+                        <div class="metro-place__slider">
+                            <div class="metro-place__slider-item"><a href="quarter.html"><img class="metro-place__img" src="img/job-apartment.jpg" alt="#"></a></div>
+                            <!--<div class="metro-place__slider-item"><a href="quarter.html"><img class="metro-place__img" src="img/metro-street.png" alt="#"></a></div>-->
+                            <div class="metro-place__slider-item"><a href="quarter.html"><img class="metro-place__img" src="img/cam11.jpg" alt="#"></a></div>
+                            <div class="metro-place__slider-item"><a href="quarter.html"><img class="metro-place__img" src="img/cam09.jpg" alt="#"></a></div>
+                            <div class="metro-place__slider-item"><a href="quarter.html"><img class="metro-place__img" src="img/cam12.jpg" alt="#"></a></div>
+                        </div>
+                        <div class="wrapper metro-place__text">
+                        <div class="inner">
+                            <div class="about-lofts__row row">
+                                <div class="col-1">
+                                    <div class=""><div class="metro-place__title">Все виды лофтов<br>в одном вдохновляющем<br>пространстве!</div></div>
+                                </div>
+                            </div>
+                        </div>
+						</div>
+                    </div>
+                    <div class="metro-place__item"><img class="metro-place__img" src="img/metro-loc.png" alt="#"></div>
+                </div>
           <div class="about-lofts quarter-page">
             <div class="wrapper">
               <div class="inner">
@@ -257,10 +315,10 @@
                           <div class="about-lofts__subtitle">Лофты с внутренним  двориком:</div><img class="about-lofts__demo" src="img/loft-demo-1.png">
                           <div class="about-lofts__access">Быстрый  доступ  в свой лофт.</div>
                         </div>
-                        <div class="about-lofts__slider-item">
+                        <!--<div class="about-lofts__slider-item">
                           <div class="about-lofts__subtitle">Просторные уютные студии:</div><img class="about-lofts__demo" src="img/loft-demo-2.png">
                           <div class="about-lofts__access">Быстрый  доступ  в свой лофт.</div>
-                        </div>
+                        </div>-->
                       </div>
                       <div class="about-lofts__slider-dots"></div>
                     </div>
@@ -300,15 +358,19 @@
           </div>
           <div class="section section--lofts is-colored" data-anchor="s-lofts">
             <div class="section__inner">
+			<div class="wrapper quarter-page">
+			<div class="inner">
               <div class="header">
                 <div class="header__inner">
                   <div class="nav nav--light">
-                    <div class="nav__inner">
+                    <div class="nav__inner nav__inner_inside">
                       <div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link" href="#">Фотографии</a> лофтов</span></div>
                       <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a class="link nav__link" href="#">Январь/2017 г.</a></span></div>
                       <div class="nav__item nav__item--shoowroom"><span class="nav__item-text">Shoowroom: <a class="link nav__link" href="#">Studio#8</a></span></div>
                     </div>
                   </div>
+				  </div>
+              </div>
                 </div>
               </div>
               <div class="offers-loft">
@@ -685,8 +747,10 @@
               </div>
               <div class="footer footer--clear">
                 <div class="footer__inner">
+							<div class="wrapper">
+			<div class="inner">
                   <div class="nav nav--light">
-                    <div class="nav__inner">
+                    <div class="nav__inner nav__inner_inside">
                       <div class="nav__item">
                         <div class="metro">
                           <div class="metro__icon"></div>
@@ -703,18 +767,73 @@
                     </div>
                   </div>
                 </div>
+				                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <button class="nav-toggle" type="button">
-        <div class="nav-toggle__bar"></div>
+        <div class="nav-toggle__bar nav-toggle__bar_test"></div>
       </button>
-      <div class="controls"><a class="controls__phone" href="#"></a><a class="controls__place" href="#"></a><a class="controls__metro-nav" href="#"></a></div>
+	  <div class="controls controls_test"><a class="controls__photos" href="#"></a><a class="controls__queue" href="#"></a><a class="controls__shoowroom" href="#"></a><a class="controls__phone" href="#"></a><a class="controls__place" href="#"></a><a class="controls__metro-nav" href="#"></a></div>
     </div>
     <script src="js/vendor.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <!--script(src='js/_main.js', type='text/javascript')-->
+      <script>
+      $(window).resize(function () {
+      var height = $('body').innerHeight();
+      var width = $('body').innerWidth();
+
+      if (height < 750) {
+      $('.header_fixed').css('display', 'none');
+      $('.header_stable').css('display', 'none');
+      $('.footer_fixed').css('display', 'none');
+      $('.mouse').css('display', 'none');
+      $('.controls').css('display', 'inline-block');
+      }
+      else if (width < 1000) {
+      $('.header_fixed').css('display', 'none');
+      $('.header_stable').css('display', 'none');
+      $('.footer_fixed').css('display', 'none');
+      $('.mouse').css('display', 'none');
+      $('.controls').css('display', 'inline-block');
+      }
+      else {
+      $('.header_fixed').css('display', '');
+      $('.header_stable').css('display', '');
+      $('.footer_fixed').css('display', '');
+      $('.mouse').css('display', '');
+      $('.controls').css('display', '');
+      }
+      });
+      $(document).ready(function () {
+      var height = $('body').innerHeight();
+      var width = $('body').innerWidth();
+      if (height < 750) {
+      $('.header_fixed').css('display', 'none');
+      $('.header_stable').css('display', 'none');
+      $('.footer_fixed').css('display', 'none');
+      $('.mouse').css('display', 'none');
+      $('.controls').css('display', 'inline-block');
+      }
+      else if (width < 1000) {
+      $('.header_fixed').css('display', 'none');
+      $('.header_stable').css('display', 'none');
+      $('.footer_fixed').css('display', 'none');
+      $('.mouse').css('display', 'none');
+      $('.controls').css('display', 'inline-block');
+      }
+      else {
+      $('.header_fixed').css('display', '');
+      $('.header_stable').css('display', '');
+      $('.footer_fixed').css('display', '');
+      $('.mouse').css('display', '');
+      $('.controls').css('display', '');
+      }
+      });
+      </script>
   </body>
-</html>
+</html> 

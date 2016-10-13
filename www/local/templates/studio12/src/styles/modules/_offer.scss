@@ -63,12 +63,26 @@
     color: #fff;
     font-size: rem(18);
     padding: rem(7) rem(10);
+	position: relative;
+    z-index: 1;
 
     &--desktop {
 
       @include below-bp(md-lg) {
         display: none;
       }
+	  
+	  &:after {
+      content: '';
+      display: inline-block;
+      width: rem(30);
+      height: rem(16);
+	  vertical-align: middle;
+	  margin-left: 0.5rem;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url(../img/arrow-right-yellow.png);
+		}
     }
 
     &--mobile {

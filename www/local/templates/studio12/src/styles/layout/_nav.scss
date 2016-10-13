@@ -1,26 +1,28 @@
 .nav {
   &__inner {
-    margin: 0 $inner-offset;
+    //margin: 0 $inner-offset;
+	//margin: 0 5.7rem 0 7rem;
+	margin: 0 0rem 0 9.5rem;
     text-align: justify;
     height: rem(32);
     transition: all $layout-transition;
-
-    @include above-bp(xxl) {
-      margin: 0;
+	
+   @include above-bp(xl) {
+	  margin: 0 4rem 0 28.2rem;
     }
 
     .sidebar-open & {
-      margin: 0;
+        margin: 0 4rem 0 27.6rem;
     }
 
     body:not(.home-page) & {
-      margin: 0 !important;
+      //margin: 0 !important;
     }
 
-    @include below-bp(lg) {
-      margin-left: rem(80);
-      margin-right: rem(10);
-    }
+  //  @include below-bp(lg) {
+          //margin-left: 6.7rem;
+		  //margin-right: 3.4rem;
+   // }
 
     /*@include sidebar-open {
       margin: 0 0.75rem;
@@ -33,12 +35,30 @@
       font-size: 0;
       line-height: 0;
     }
+	
+	&_stable{
+		   @include above-bp(xl) {
+				//margin: 0px 6rem 0 4rem;
+				    margin: 0 3rem 0 9.5rem;
+			}
+			.sidebar-open & {
+				margin: 0 5rem;;
+			}
+	}
+	
+	&_inside{
+		margin: 0;
+		.sidebar-open &{
+		margin: 0;
+		}
+	}
   }
 
   &__item {
     display: inline-block;
     vertical-align: bottom;
     text-align: left;
+	margin-left: -4px;
 
     &:before {
       content: '';
@@ -56,9 +76,29 @@
 	
 			.fp-viewing-s-about &,
 			.fp-viewing-s-lofts &{
-				color: #fff;
+				color: #ffe500;
 				
 			}
+			
+	&--place-yellow, &--phone-yellow{
+		span{
+			padding-left: 0.7em;
+		}
+		
+	}
+	
+	&:first-child{
+		width: 33%;
+	}
+	
+	&:nth-child(2n){
+		width: 36%;
+	}
+	
+	&:last-child{
+		width: 30%;
+	}
+	
   }
 
   &__item-text {

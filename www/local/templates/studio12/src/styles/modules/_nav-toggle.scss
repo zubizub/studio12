@@ -78,6 +78,15 @@ $nav-toggle-transition: $layout-transition;
     &:after {
       bottom: $nav-toggle-bar-offset;
     }
+	&_test{
+		background-color: #ffe500;
+		
+		    &:before,
+			&:after {
+			background-color: #ffe500;
+			}
+	}
+	
   }
   //
   //.home-page &__bar,
@@ -109,4 +118,5 @@ $nav-toggle-transition: $layout-transition;
   .section--about.active &__bar {
     background: transparent;
   }
+ 
 }

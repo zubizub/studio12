@@ -89,6 +89,10 @@ $grid-breakpoints: (
   padding: 0 $site-gutter;
   margin: 0 auto;
   position: relative;
+  
+  .section--about & {
+	padding: 0;
+  }
 }
 
 .inner {

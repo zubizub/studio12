@@ -1,0 +1,30 @@
+.infographics{
+display: none;
+				@include below-bp(md-lg) {
+					margin: 0 auto;
+					width: 80%;
+					display: block;
+				}
+	&__item{
+		//padding-left: 2em;
+			
+			&:nth-child(1n){
+				@include below-bp(md-lg) {
+					width: 100%;
+				}
+			}
+		span{
+			font-size: 1.5em;
+			
+			.number{
+				font-size: 2em;
+				color: #ffffff;
+			}
+		}
+	}
+	&__list{
+		    @include below-bp(md-lg) {
+				display: block
+			}
+	}
+}

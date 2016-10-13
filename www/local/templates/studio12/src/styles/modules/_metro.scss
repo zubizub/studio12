@@ -2,7 +2,7 @@
   &__caption {
     @include linear-switch(font-size, bp(lg), bp(xl), 0.857px, 1px);
     font-size: rem(1);
-    margin-bottom: rem(31);
+    //margin-bottom: rem(31);
 
     @include below-bp(lg-xl) {
       margin-bottom: 0;

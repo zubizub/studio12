@@ -6,10 +6,12 @@
     //min-height: rem(618);
     //height: rem(1);
     position: relative;
-    margin-left: calc((100vw - 100%) / -2 - 1px);
+    //margin-left: calc((100vw - 100%) / -2 - 1px);
+	margin-left: calc((99vw - 100%) / -2 - 1px);
 
-    @include above-bp(xxl) {
-      margin-left: calc((100vw - 100% - #{$sidebar-width}) / -2  - 1px);
+    @include above-bp(xl) {
+     // margin-left: calc((100vw - 100% - #{$sidebar-width}) / -2  - 1px);
+	  margin-left: calc((100vw - 100% - 19rem) / -2  - 1px);
     }
 
     @include below($loft-types-bp) {
@@ -88,7 +90,8 @@
     @include linear-switch(margin-left, bp(sm), bp(lg), $site-gutter-sm-px, $site-gutter-px);
     left: $inner-offset;
     margin-left: $site-gutter;
-    border-left: $col-padding-left solid transparent;
+    //border-left: $col-padding-left solid transparent;
+	border-left: 1.5rem solid transparent;
     position: absolute;
     top: 0;
     //left: $inner-offset + $site-gutter + $col-padding-left;
@@ -115,16 +118,19 @@
     color: #fff;
     font-size: rem(60);
     z-index: 100;
+	margin-left: -6px;
   }
 
   &__desc {
     width: $loft-types-desc-width;
-    min-height: rem(666); // 618
+    //min-height: rem(666); // 618
+	min-height: rem(660); // 618
     padding: rem(33) rem(15) rem(120) $grid-gutter / 2 + $col-padding-left;
     background: #fff;
     float: right;
     position: relative;
     z-index: 500;
+	z-index: 0;
 
     @include below($loft-types-bp) {
       float: none;
@@ -214,9 +220,11 @@
     color: #fff;
     font-size: rem(18);
     padding: rem(7) rem(10);
+	position: relative;
+	z-index: 1;
 
     &:after {
-      @include s(arrow-right);
+      @include s(arrow-right-yellow);
       content: '';
       display: inline-block;
       vertical-align: middle;
