@@ -56,8 +56,6 @@
 		width: 100%;
 	}
 
-	    
-		
     </style>
 </head>
 <body>
@@ -324,6 +322,21 @@
                         </div>
                     </div>
                 </div>
+				<div class="section section--slogan" id="counter" data-anchor="s-slogan2" style="height: 1000px; position: relative;">
+                        <div class="section__content">
+                            <div class="slogan">
+                                <div class="slogan__title"><span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">win</span></div>
+                                <div class="slogan__translation">Меняй правила и выигрывай!</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
+                                <path class="path" id="tagline4"></path>
+								<path class="path" id="tagline5"></path>
+								<path class="path" id="tagline6"></path>
+                            </svg>
+                        </div>
+                    </div>
                 <div class="section section--lofts is-colored" data-anchor="s-lofts">
                     <div class="section__inner">
                         <div class="wrapper job-page">
@@ -763,7 +776,37 @@
     <script src="js/vendor.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <!--script(src='js/_main.js', type='text/javascript')-->
-    <script>
+   <script>
+        var wh = window.outerHeight,
+                ww = window.innerWidth,
+                wIh = window.innerHeight / 4,
+                wIh1 = window.innerHeight,
+                bw = $('.box').width() / 2,
+                sectionHeight = $('.section--slogan .box').height(),
+                shStart = 1500,
+                shIntro = 1500,
+                sh = 1500,
+                speed = 1,
+				$tagline4 = $("#tagline4");
+				$tagline5 = $("#tagline5");
+				$tagline6 = $("#tagline6");
+				$tagline4.attr({ 'd': 'M742.5,0 742.5,' + wIh + ' 419.5,500 419.5,' + (wIh + 500 + 145) });
+				$tagline5.attr({ 'd': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 -1500.5,2000' });
+				$tagline6.attr({ 'd': 'M2042.5,1200 1130.5,70 950.5,250 950.5,400 5019.5,5000' });
+			function pathPrepare($el) {
+            var lineLength = $el[0].getTotalLength();
+            $el.css("stroke-dasharray", lineLength);
+            $el.css("stroke-dashoffset", lineLength);
+            $(window).on('resize', function () {
+                var lineLength = $el[0].getTotalLength();
+                $el.css("stroke-dasharray", lineLength);
+                $el.css("stroke-dashoffset", lineLength);
+            });
+        }
+
+		pathPrepare($tagline4);
+		pathPrepare($tagline5);
+		pathPrepare($tagline6);
         $(window).resize(function () {
             var height = $('body').innerHeight();
             var width = $('body').innerWidth();
@@ -815,6 +858,36 @@
                 $('.controls').css('display', '');
             }
         });
+
+
+
+var d = document,
+    counterLabel = d.getElementById("counter"),
+    scrollTop = getScrollTop(),
+    posTop = counterLabel.offsetTop,
+    counerH = counterLabel.offsetHeight,
+    winH = window.innerHeight,
+    counting = false;
+
+if(scrollTop + winH - counerH >  posTop && scrollTop < posTop + counerH) setCounter();
+
+d.addEventListener('scroll', function(){
+    if(counting) return false;
+    var currentScroll = getScrollTop();
+    currentScroll + winH - counerH >  posTop 
+    && currentScroll < posTop + counerH 
+    && setCounter();
+}, false);
+
+function setCounter() {
+					TweenLite.to($tagline4, 5, { strokeDashoffset: 0, ease: Linear.easeNone });
+					TweenLite.to($tagline5, 10, { strokeDashoffset: 0, ease: Linear.easeNone });
+					TweenLite.to($tagline6, 5, { strokeDashoffset: 0, ease: Linear.easeNone });
+}
+
+function getScrollTop(){
+    return window.pageYOffset || d.documentElement.scrollTop;
+}
     </script>
 </body>
 </html>

@@ -264,4 +264,13 @@
 				}
 		}
 	}
+	&_mobile{
+		@include above-bp(md-lg) {
+			display: none;
+		}
+		.offer__act{
+			margin-left: calc(27px + (100vw - 320px) * 0.06324);
+		}
+		
+	}
 }

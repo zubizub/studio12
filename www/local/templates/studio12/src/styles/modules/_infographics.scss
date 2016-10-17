@@ -1,5 +1,5 @@
 .infographics{
-display: none;
+	display: none;
 				@include below-bp(md-lg) {
 					margin: 0 auto;
 					width: 80%;
@@ -26,5 +26,40 @@ display: none;
 		    @include below-bp(md-lg) {
 				display: block
 			}
+	}
+}
+/*-- переписать --*/
+@media screen and (max-width: 1000px){
+	.infographics__list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.infographics__item:nth-child(1n) {
+        width: auto;
+    margin-right: 2rem;
+}
+
+
+	.infographics {
+		margin: 0 auto;
+		width: 97%;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.infographics {
+		margin-left: calc(27px + (100vw - 320px) * 0.06324);
+		width: 93.5%;
+		display: block;
+	}
+	
+	.infographics__list{
+		width: 92.5%;
+	}
+	
+	.infographics__item{
+		margin-left: 0;
 	}
 }

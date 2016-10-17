@@ -96,6 +96,45 @@
     transform: translate3d(0, 100%, 0);
   }
 }
+
+.fp-slidesContainer {
+	width: 100%!important;
+	transform: none!important;
+}
+
+.fp-slide {
+	width: 100%!important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	transition: all .7s ease-in-out;
+}
+
+.fp-slide.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+
+.slide{
+    background: url(../img/about-bg.png) center top no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.section--about .wrapper {
+	position: absolute;
+	top: 0;
+}
+
+.fp-controlArrow{
+	display: none;
+}
     </style>
 	
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -202,11 +241,58 @@
                       </g>
                     </svg>
                   </div>
+				  <div class="footer footer_mobile">
+                    <div class="footer__inner">
+                      <div class="footer__main">
+                        <div class="footer__bar">
+                          <div class="footer__content">
+                            <div class="footer__lead">
+                              <div class="footer__cell">
+                                <div class="metro">
+                                  <div class="metro__caption">
+                                    <div class="metro__icon"></div>
+                                    <div class="metro__hint">10 мин. от метро:</div><a class="metro__station link" href="#">Марьина Роща</a>
+                                  </div>
+                                  <div class="metro__map">
+                                    <div class="metro__loc"><img class="metro__location" src="img/metro-map.png" alt="#"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="footer__info">
+                              <div class="footer__cell">Москва, СВАО, <br><a class="link" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></div>
+                            </div>
+                            <div class="footer__info">
+                              <div class="footer__cell">+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br><a class="link" href="#">Заказать обратный звонок</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer__side">
+                        <div class="offer">
+                          <div class="offer__title"><span class="offer__title-desktop">Супер-маркет лофтов</span><span class="offer__title-mobile">Креативный <br>лофт-квартал</span>
+                            <div class="bubble">
+                              <div class="bubble__label">Акция</div>
+                              <div class="bubble__value">-10%</div>
+                              <div class="bubble__explain">от цены <br> лофта</div>
+                              <div class="bubble__pointer"></div>
+                            </div>
+                          </div><a class="offer__act" href="#">
+                            <div class="offer__label offer__label--desktop">Выбрать лофт</div>
+                            <div class="offer__label offer__label--mobile">Супер-маркет лофтов</div><img class="offer__img" src="img/intro-offer.png" alt="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section section--about is-colored" data-anchor="s-about">
-                        <div class="wrapper">
+                    <div class="section section--about is-colored" data-anchor="s-about" style="position: relative;">
+					          <div class="slide">Slide 1</div>
+          <div class="slide">Slide 2</div>
+          <div class="slide">Slide</div>
+          <div class="slide">Slide 4</div>
+                        <div class="wrapper" style="position: absolute;">
                             <div class="section__inner">
                                 <div class="section__content">
                                     <div class="about">
@@ -223,6 +309,49 @@
                                             <div class="about__item infographics__item"><div class="infographics__text"><span>от <span class="number number40">0</span> до <span class="number number300">0</span> м2</span><br>Площадь лотов</div></div>
                                             <div class="about__item infographics__item"><div class="infographics__text"><span>от <span class="number number6">0</span> млн. руб.</span><br>Стоимость лотов</div></div>
                                         </div>
+				  <div class="footer footer_mobile">
+                    <div class="footer__inner">
+                      <div class="footer__main">
+                        <div class="footer__bar">
+                          <div class="footer__content">
+                            <div class="footer__lead">
+                              <div class="footer__cell">
+                                <div class="metro">
+                                  <div class="metro__caption">
+                                    <div class="metro__icon"></div>
+                                    <div class="metro__hint">10 мин. от метро:</div><a class="metro__station link" href="#">Марьина Роща</a>
+                                  </div>
+                                  <div class="metro__map">
+                                    <div class="metro__loc"><img class="metro__location" src="img/metro-map.png" alt="#"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="footer__info">
+                              <div class="footer__cell">Москва, СВАО, <br><a class="link" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></div>
+                            </div>
+                            <div class="footer__info">
+                              <div class="footer__cell">+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br><a class="link" href="#">Заказать обратный звонок</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer__side">
+                        <div class="offer">
+                          <div class="offer__title"><span class="offer__title-desktop">Супер-маркет лофтов</span><span class="offer__title-mobile">Креативный <br>лофт-квартал</span>
+                            <div class="bubble">
+                              <div class="bubble__label">Акция</div>
+                              <div class="bubble__value">-10%</div>
+                              <div class="bubble__explain">от цены <br> лофта</div>
+                              <div class="bubble__pointer"></div>
+                            </div>
+                          </div><a class="offer__act" href="#">
+                            <div class="offer__label offer__label--desktop">Выбрать лофт</div>
+                            <div class="offer__label offer__label--mobile">Супер-маркет лофтов</div><img class="offer__img" src="img/intro-offer.png" alt="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                                     </div>
                                 </div>
                             </div>
@@ -254,6 +383,8 @@
                         <div class="box">
                             <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
                                 <path class="path" id="tagline"></path>
+								<path class="path" id="tagline2"></path>
+								<path class="path" id="tagline3"></path>
                             </svg>
                         </div>
                     </div>
@@ -678,6 +809,21 @@
                             </div>
                         </div>
                     </div>
+					<div class="section section--slogan" data-anchor="s-slogan2">
+                        <div class="section__content">
+                            <div class="slogan">
+                                <div class="slogan__title"><span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">win</span></div>
+                                <div class="slogan__translation">Меняй правила и выигрывай!</div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
+                                <path class="path" id="tagline4"></path>
+								<path class="path" id="tagline5"></path>
+								<path class="path" id="tagline6"></path>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -759,10 +905,20 @@
                 $intro = $("#intro"),
                 $head = $("#head"),
                 $tagline = $("#tagline");
+				$tagline2 = $("#tagline2");
+				$tagline3 = $("#tagline3");
+				$tagline4 = $("#tagline4");
+				$tagline5 = $("#tagline5");
+				$tagline6 = $("#tagline6");
         $start.attr({ 'd': 'M0,16 H582.5 V5000' });
         $intro.attr({ 'd': 'M582.5,0 582.5,80 742.5,250 742.5,290 387.5,290 387.5,370 582.5,560 582.5,5000' });
         $head.attr({ 'd': 'M582.5,0 V5000' });
         $tagline.attr({ 'd': 'M742.5,0 742.5,' + wIh + ' 419.5,500 419.5,' + (wIh + 500 + 145) });
+		$tagline2.attr({ 'd': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 -1500.5,2000' });
+		$tagline3.attr({ 'd': 'M2042.5,1200 1130.5,70 950.5,250 950.5,400 5019.5,5000' });
+		$tagline4.attr({ 'd': 'M742.5,0 742.5,' + wIh + ' 419.5,500 419.5,' + (wIh + 500 + 145) });
+		$tagline5.attr({ 'd': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 -1500.5,2000' });
+		$tagline6.attr({ 'd': 'M2042.5,1200 1130.5,70 950.5,250 950.5,400 5019.5,5000' });
         function pathPrepare($el) {
             var lineLength = $el[0].getTotalLength();
             $el.css("stroke-dasharray", lineLength);
@@ -777,6 +933,11 @@
         pathPrepare($intro);
         pathPrepare($head);
         pathPrepare($tagline);
+		pathPrepare($tagline2);
+		pathPrepare($tagline3);
+		        pathPrepare($tagline4);
+		pathPrepare($tagline5);
+		pathPrepare($tagline6);
         $('.fullpage').fullpage({
             autoplay: false,
             navigation: true,
@@ -785,8 +946,14 @@
             scrollingSpeed: 700,
             verticalCentered: false,
             responsiveWidth: 1001,
+			slidesNavigation: false,
             //responsiveHeight: 720,
-            anchors: ['s-start', 's-intro', 's-main', 's-about', 's-slogan', 's-lofts'],
+			afterRender: function () {
+            setInterval(function () {
+                $.fn.fullpage.moveSlideRight();
+            }, 1000);
+			},
+            anchors: ['s-start', 's-intro', 's-main', 's-about', 's-slogan', 's-lofts', 's-slogan2'],
             scrollOverflow: true,
             scrollOverflowOptions: [
                 {
@@ -801,8 +968,15 @@
                     TweenLite.to($head, 1, { strokeDashoffset: 0, ease: Linear.easeNone });
                 }
                 else if (index == 4 && direction == 'down') {
-                    TweenLite.to($tagline, 1, { strokeDashoffset: 0, ease: Linear.easeNone });
+                    TweenLite.to($tagline, 5, { strokeDashoffset: 0, ease: Linear.easeNone });
+					TweenLite.to($tagline2, 10, { strokeDashoffset: 0, ease: Linear.easeNone });
+					TweenLite.to($tagline3, 5, { strokeDashoffset: 0, ease: Linear.easeNone });
                 }
+				else if (index == 6 && direction == 'down') {
+					TweenLite.to($tagline4, 5, { strokeDashoffset: 0, ease: Linear.easeNone });
+					TweenLite.to($tagline5, 10, { strokeDashoffset: 0, ease: Linear.easeNone });
+					TweenLite.to($tagline6, 5, { strokeDashoffset: 0, ease: Linear.easeNone });
+				}
                 else if (nextIndex == 2 && direction == 'up') {
                     return false;
                 }
@@ -958,6 +1132,11 @@ document.documentElement.className += (supportsInlineSvg ? ' inline-svg' : '') +
     delay: 1
 });
 */
+$('.more-items').click(function(){
+
+	setTimeout(function(){$.fn.fullpage.reBuild()},200);
+});
+
 setTimeout(function(){$('.webo4ka').fadeIn(1000)},2400); //10000 = 10 секунд 
     </script>
 </body>

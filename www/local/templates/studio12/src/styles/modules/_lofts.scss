@@ -213,6 +213,10 @@
     @include below-bp(md-lg) {
       text-align: center;
     }
+	
+	@include below-bp(mobile) {
+		width: rem(160);
+	}
   }
 
   &__info-num {
