@@ -10,7 +10,7 @@ IncludeTemplateLangFile(__FILE__);
         <div class="nav-toggle__bar"></div>
       </button>
 	
-    <!--script(src='js/_main.js', type='text/javascript')-->
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/sasha.js" type="text/javascript"></script>
   </body>
 </html>
 
