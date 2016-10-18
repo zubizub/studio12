@@ -17,6 +17,7 @@ IncludeTemplateLangFile(__FILE__);
     <?$APPLICATION->ShowHead()?>
     <!--[if (gt IE 9)|!(IE)]><!-->
     <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/sasha.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script>
@@ -30,15 +31,15 @@ IncludeTemplateLangFile(__FILE__);
 
 
 
- <body class="home-page">
-    <?$APPLICATION->ShowPanel();?>
-    
+ 
+  <body class="home-page">
+        <?$APPLICATION->ShowPanel();?>
     <div class="container">
-      <div class="container__inner">
-        <div class="sidebar">
-          <div class="sidebar__inner">
-            <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
-            <div class="sidebar__body">
+        <div class="container__inner">
+            <div class="sidebar">
+                <div class="sidebar__inner">
+                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="img/side-logo.png"></a></div>
+                    <div class="sidebar__body">
               <!--.component menu-->
                <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
@@ -59,18 +60,18 @@ IncludeTemplateLangFile(__FILE__);
 	),
 	false
 );?>
-              <div class="note">
-                <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="#">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="#">#РАБОТЫ</a>.</div>
-                <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
-              </div>
+                <div class="note">
+                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="#">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="#">#РАБОТЫ</a>.</div>
+                            <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
+                        </div>
+                    </div>
+                    <div class="sidebar__footer">
+                        <div class="copyright">
+                            <div class="copyright__legend">Дизайн и разработка сайта:</div>
+                            <div class="copyright__name">Korovets studio</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sidebar__footer">
-              <div class="copyright">
-                <div class="copyright__legend">Дизайн и разработка сайта:</div>
-                <div class="copyright__name">Korovets studio</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+            
         <div class="main">
