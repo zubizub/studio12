@@ -23,8 +23,9 @@ IncludeTemplateLangFile(__FILE__);
     <script>
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
-    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
-    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/main.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <!--<script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/main.js" type="text/javascript"></script>-->
     <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
     
 </head>
@@ -38,7 +39,7 @@ IncludeTemplateLangFile(__FILE__);
         <div class="container__inner">
             <div class="sidebar">
                 <div class="sidebar__inner">
-                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="img/side-logo.png"></a></div>
+                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src=""<?=SITE_TEMPLATE_PATH?>/dist/imgside-logo.png"></a></div>
                     <div class="sidebar__body">
               <!--.component menu-->
                <?$APPLICATION->IncludeComponent(
@@ -73,5 +74,5 @@ IncludeTemplateLangFile(__FILE__);
                     </div>
                 </div>
             </div>
-            
+
         <div class="main">
