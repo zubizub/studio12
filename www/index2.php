@@ -5,8 +5,6 @@ $APPLICATION->SetTitle("Studio12");
 
  
           <div class="fullpage">
-
-                <div class="fullpage">
                     <div class="section section--start" data-anchor="s-start">
                         <div class="box box--start">
                             <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
@@ -655,9 +653,7 @@ $APPLICATION->SetTitle("Studio12");
                             </svg>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+      
                
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
