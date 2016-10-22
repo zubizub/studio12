@@ -109,6 +109,8 @@
     .dynamic {
       position: absolute;
       z-index: 10;
+	  width: 100%;
+		height: auto
     }
 
     .fp-scroller {
@@ -118,13 +120,13 @@
   }
 
   &--about {
-
+  
+	position: relative;
+	
     .wrapper {
       background: url("../img/about-bg.png") center top no-repeat;
       background-size: cover;
     }
-	
-	
   }
 
   &--start {
@@ -144,6 +146,11 @@
 
     .box {
       position: relative;
+	  
+	  svg{
+		width: 100%;
+		height: auto
+	  }
     }
   }
 
@@ -165,6 +172,11 @@
 
     .box {
       position: relative;
+	  
+	  svg{
+		width: 100%;
+		height: auto
+	  }
     }
   }
 
@@ -221,5 +233,76 @@
       padding-right: $site-gutter;
     }
 	
+	background: #343434;
+	
   }
 }
+
+
+.s-lofts .header_fixed, .s-lofts .footer_fixed {
+	display: none;
+}
+
+.section--lofts .fp-scrollable, .section--lofts .fp-scroller {
+	overflow: visible !important;
+}
+
+.logo {
+	margin: 0 auto;
+	display: block;
+}
+
+        .fp-viewing-s-about .bubble, .fp-viewing-s-lofts .bubble {
+            display: none;
+        }
+
+        .house {
+            display: none;
+        }
+
+        path {
+            stroke: #000;
+            stroke-width: 1;
+            //fill: transparent;
+        }
+
+        #tagline2, #building2 {
+            stroke: #18a383;
+        }
+
+        #tagline3, #building3 {
+            stroke: #63469c;
+        }
+
+
+/*-- забыл уже что это --*/
+        .slideInUp {
+            -webkit-animation-name: slideInUp;
+            animation-name: slideInUp;
+        }
+
+        @-webkit-keyframes slideOutDown {
+            from {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                visibility: hidden;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+        }
+
+        @keyframes slideOutDown {
+            from {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                visibility: hidden;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+        }

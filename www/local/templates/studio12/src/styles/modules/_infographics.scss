@@ -28,7 +28,7 @@
 			}
 	}
 }
-/*-- переписать --*/
+/*-- переписать --
 @media screen and (max-width: 1000px){
 	.infographics__list {
     width: 80%;
@@ -63,3 +63,38 @@
 		margin-left: 0;
 	}
 }
+*/
+        @media screen and (max-width: 1000px) {
+			.infographics__list {
+                width: 80%;
+                margin: 0 auto;
+            }
+			
+            .infographics {
+                margin: 0 auto;
+                width: 97%;
+                display: block;
+            }
+			
+			.infographics__item:nth-child(1n) {
+                width: auto;
+                margin-right: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .infographics {
+                margin: 0 auto;
+                width: 93.5%;
+                display: block;
+				margin-left: calc(27px + (100vw - 320px) * 0.06324);
+            }
+
+            .infographics__list {
+                width: 92.5%;
+            }
+			
+			.infographics__item {
+                margin-left: 0;
+            }
+        }

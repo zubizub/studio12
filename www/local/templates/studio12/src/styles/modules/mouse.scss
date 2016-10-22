@@ -1,0 +1,54 @@
+        .mouse {
+            position: fixed;
+            left: 35px;
+            height: 300px;
+            top: 50%;
+            margin-top: -150px;
+            text-align: center;
+        }
+
+        .mouse__item-img {
+            background-color: #ffe500;
+            width: 33px;
+            height: 61px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .mouse__item {
+            width: 33px;
+            border-radius: 20px;
+			
+			&-arrows{
+				&:first-child{
+					margin-bottom: 9px;
+				}
+				&:last-child{
+					margin-bottom: 13px;
+				}
+			}
+        }
+
+        .mouse__item-img img {
+            margin-top: 25px;
+        }
+
+        .mouse__item-text {
+            white-space: nowrap;
+            margin-top: 1.5rem;
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+		
+		.fp-viewing-s-about .mouse__item-text, .fp-viewing-s-lofts .mouse__item-text {
+            color: #fff;
+        }
+		
+		@media screen and (max-width: 1000px) {
+            .mouse {
+                display: none;
+            }
+        }

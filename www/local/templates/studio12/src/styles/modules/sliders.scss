@@ -1,0 +1,32 @@
+.fp-slidesContainer {
+	width: 100% !important;
+	transform: none !important;
+}
+
+.fp-slide {
+	width: 100% !important;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+	transition: all .7s ease-in-out;
+}
+
+	.fp-slide.active {
+		visibility: visible;
+		opacity: 1;
+		z-index: 1;
+	}
+
+.slide {
+	background: url(../img/about-bg.png) center top no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.fp-controlArrow {
+	display: none;
+}

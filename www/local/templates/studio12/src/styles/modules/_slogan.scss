@@ -16,11 +16,13 @@
     letter-spacing: em(-2, 100);
     line-height: 1;
     color: #18a383;
-    overflow: hidden;
+    //overflow: hidden;
 
     .ti-placeholder {
       display: none !important;
     }
+	
+	font-family: 'intro_regular';
   }
 
   &__line {

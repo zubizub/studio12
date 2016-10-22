@@ -10,7 +10,7 @@ $nav-toggle-transition: $layout-transition;
   height: $nav-toggle-height;
   position: fixed;
   top: rem(25);
-  left: rem(34);
+  left: 32px;
   background-color: transparent;
   cursor: pointer;
   font-size: rem(1);
@@ -31,7 +31,7 @@ $nav-toggle-transition: $layout-transition;
     top: rem(20);
     //left: $site-gutter-sm;
 	left: 22px;
-    font-size: rem(0.86);
+    font-size: rem(0.96);
   }
 
   @include below-bp(tablet) {

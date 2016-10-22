@@ -1,20 +1,23 @@
 .controls {
+  left: 30px;
   @include open-sidebar;
   position: fixed;
   top: rem(75);
   //left: $site-gutter-sm;
-  left: rem(32);
+  left: 30px;
   width: rem(35);
   display: none;
+  transition-property: transform, left, top !important;
   
   @include above-bp(xl) {
     margin-left: 18.75rem;
 	display: none;
+	
   }
 
   @include below-bp(md-lg) {
     display: block;
-	left: rem(18);
+	left: 19px;
   }
 
   @include below-bp(tablet) {

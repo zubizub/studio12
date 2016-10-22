@@ -107,6 +107,13 @@
         background-position-y: 0%;
       }
     }
+	
+	span{
+		font-size: 36%;
+		white-space: normal;
+		display: inline-table;
+		line-height: 1.2;
+	}
   }
 
   @for $i from 1 through $zippers-length {
@@ -133,9 +140,17 @@
 
   &__desc {
     @include linear-switch(font-size, bp(sm), bp(md-lg), 30px, 38px);
-    font-size: rem(38);
+    //font-size: rem(38);
     line-height: 1.2;
     margin-bottom: rem(21);
+	position: relative;
+	vertical-align: top;
+	font-size: 2rem;
+	
+	span{
+		white-space: normal;
+		display: inline-block;
+	}
   }
 
   &__note {
@@ -144,3 +159,8 @@
     line-height: 1.33;
   }
 }
+
+        //.section--about .wrapper {
+        //    position: absolute;
+        //    top: 0;
+       // }
