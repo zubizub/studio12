@@ -7,7 +7,8 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
 <div class="section section--lofts is-colored">
     <div class="box" style="">
-        <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
+        <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"
+             style="width: 100%; height: auto">
             <path class="path" id="building"></path>
             <path class="path" id="building2"></path>
             <path class="path" id="building3"></path>
@@ -22,6 +23,43 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
 <polygon display="none" fill="none" stroke="#FFF200" stroke-width="9" stroke-miterlimit="10" points="133.875,224.625
 	62.25,152.75 50.5,164.5 21.874,135.876 69.991,88.312 147.272,88.264 179.201,56.201 241.125,117.875 "></polygon>
+
+
+
+
+                                        <g class="house house3">
+                                            <text transform="matrix(0.7071 -0.7071 0.7071 0.7071 168.0303 208.2432)" class="st3 st2 st0">12-й проезд Марьиной Рощи</text>
+                                            <polygon class="st3" points="205.43,121.42 212.07,114.75 212.07,121.42 "/>
+                                            <polygon class="st3" points="208.18,125.17 201.54,131.83 201.54,125.17 "/>
+                                            <g>
+                                                <g>
+                                                    <polygon class="st1" points="164.37,216.16 161.08,212.89 164.37,212.89 		"/>
+                                                    <rect x="158.21" y="215.83" transform="matrix(0.707 -0.7072 0.7072 0.707 -105.6904 177.2696)" class="st1" width="5.79" height="0.72"/>
+                                                </g>
+                                                <g>
+                                                    <polygon class="st1" points="155.47,211.88 158.76,215.16 155.47,215.16 		"/>
+                                                    <rect x="155.84" y="211.5" transform="matrix(-0.7069 0.7073 -0.7073 -0.7069 420.7883 249.3559)" class="st1" width="5.79" height="0.72"/>
+                                                </g>
+                                            </g>
+                                        </g>
+
+                                        <g class="house house4">
+                                            <text transform="matrix(0.7071 0.7071 -0.7071 0.7071 224.6914 58.4053)"><tspan x="0" y="0" class="st3 st2 st0">у</tspan><tspan x="2.43" y="0" class="st3 st2 st0">л. В</tspan><tspan x="14.08" y="0" class="st3 st2 st0">е</tspan><tspan x="17.42" y="0" class="st3 st2 st0">ткина</tspan></text>
+                                            <g>
+                                                <g>
+                                                    <polygon class="st1" points="217.17,55.21 220.45,51.92 220.45,55.21 		"/>
+                                                    <rect x="214.25" y="51.58" transform="matrix(0.7072 0.707 -0.707 0.7072 100.3062 -138.3177)" class="st1" width="5.79" height="0.72"/>
+                                                </g>
+                                                <g>
+                                                    <polygon class="st1" points="221.46,46.31 218.18,49.6 218.18,46.31 		"/>
+                                                    <rect x="218.59" y="49.21" transform="matrix(-0.7073 -0.7069 0.7069 -0.7073 343.088 241.2102)" class="st1" width="5.79" height="0.72"/>
+                                                </g>
+                                            </g>
+                                        </g>
+
+
+
+                                        <ellipse class="st0 house house1" fill="#4B4745" cx="104.38" cy="59.25" rx="34.38" ry="9.25"></ellipse>
 <g class="house house3">
                                         <polygon fill="#2D2E2E" points="150.089,177.459 139.792,156.792 129.495,158.292 129.495,169.334 150.089,189.923 	"></polygon>
                                         <polygon fill="#1E1F1F" points="150.089,189.923 200.014,139.801 200.014,127.529 150.089,177.459 	"></polygon>
@@ -491,15 +529,21 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             <div class="metro">
                                 <div class="metro__icon"></div>
                                 <div class="metro__caption">
-                                    <div class="metro__hint">10 мин. от метро:</div><a class="metro__station link btn-map-get" href="#">Марьина Роща</a>
+                                    <div class="metro__hint">10 мин. от метро:</div>
+                                    <a class="metro__station link btn-map-get" href="#">Марьина Роща</a>
                                 </div>
                                 <div class="metro__map">
-                                    <div class="metro__loc"><img class="metro__location" src="img/metro-map.png" alt="#"></div>
+                                    <div class="metro__loc"><img class="metro__location" src="img/metro-map.png"
+                                                                 alt="#"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br class="hidden-lg-xl-up"><a class="link btn-map-get" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
-                        <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a class="link btn-callback" href="#">Заказать обратный звонок</a></span></div>
+                        <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br
+                                class="hidden-lg-xl-up"><a class="link btn-map-get" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span>
+                        </div>
+                        <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span
+                                class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a
+                                class="link btn-callback" href="#">Заказать обратный звонок</a></span></div>
                     </div>
                 </div>
             </div>
