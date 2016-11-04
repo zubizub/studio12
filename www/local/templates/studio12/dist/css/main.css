@@ -2881,9 +2881,6 @@ sub, sup {
   display: none;
 }
 
-.house {
-  display: none;
-}
 
 path {
   stroke: #000;
@@ -6593,4 +6590,8 @@ a.btn, a.btn:hover {
   margin: auto !important;
   float: left;
   background-color: #fff;
+}
+
+.lofts--main .house {
+  display: none;
 }

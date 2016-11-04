@@ -15,14 +15,14 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
     </div>
     <div class="section__inner">
         <div class="offers-loft">
-            <div class="lofts">
+            <div class="lofts <?if ($APPLICATION->GetCurPage()== '/'): ?>lofts--main<? endif; ?>">
                 <div class="lofts__scheme">
 
                     <svg version="1.1" id="Layer_2" class="dynamic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 255.12 255.12" enable-background="new 0 0 255.12 255.12" xml:space="preserve">
 
 <polygon display="none" fill="none" stroke="#FFF200" stroke-width="9" stroke-miterlimit="10" points="133.875,224.625
 	62.25,152.75 50.5,164.5 21.874,135.876 69.991,88.312 147.272,88.264 179.201,56.201 241.125,117.875 "></polygon>
-<g class="house house3" style="display: inline;">
+<g class="house house3">
                                         <polygon fill="#2D2E2E" points="150.089,177.459 139.792,156.792 129.495,158.292 129.495,169.334 150.089,189.923 	"></polygon>
                                         <polygon fill="#1E1F1F" points="150.089,189.923 200.014,139.801 200.014,127.529 150.089,177.459 	"></polygon>
                                         <polygon fill="#444444" points="150.089,177.459 200.014,127.529 189.717,106.696 139.792,156.792 	"></polygon>
@@ -109,7 +109,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                         <polygon fill="#1E1F1F" points="185.393,102.842 166.685,84.187 166.685,75.07 185.393,93.725 		"></polygon>
 	</g>
 </g>
-<g class="house house1" style="display: inline;">
+<g class="house house1">
                                         <g>
                                         <polygon fill="#8E8F8F" points="128.477,129.727 138.773,109.061 149.07,110.561 149.07,121.602 128.477,142.191 		"></polygon>
                                         <polygon fill="#757777" points="128.477,142.191 99.791,113.307 99.791,101.036 128.477,129.727 		"></polygon>
@@ -148,7 +148,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                         <polygon display="inline" fill="#444444" points="150.089,177.459 200.014,127.529 189.717,106.696 139.792,156.792 	"></polygon>
                                         <polygon display="inline" fill="#606060" points="139.792,156.792 189.718,106.696 179.421,108.196 129.495,158.292 	"></polygon>
 </g>
-<g class="house house2" style="display: inline;">
+<g class="house house2">
                                         <polygon fill="#2D2E2E" points="113.542,214.084 103.245,193.417 92.948,194.917 92.948,205.959 113.542,226.549 	"></polygon>
                                         <polygon fill="#1E1F1F" points="113.542,226.549 142.227,197.664 142.227,185.393 113.542,214.084 	"></polygon>
                                         <polygon fill="#444444" points="113.542,214.084 142.227,185.393 131.93,164.56 103.245,193.417 	"></polygon>
@@ -214,7 +214,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                         <polygon display="inline" fill="#444444" points="113.542,214.084 142.227,185.393 131.93,164.56 103.245,193.417 	"></polygon>
                                         <polygon display="inline" fill="#606060" points="103.245,193.417 131.93,164.56 121.633,166.06 92.948,194.917 	"></polygon>
 </g>
-<g class="house house4" style="display: inline;">
+<g class="house house4">
                                         <g>
                                         <polygon fill="#2D2E2E" points="220.061,107.479 230.357,86.812 240.653,88.312 240.653,99.354 220.061,119.943 		"></polygon>
                                         <polygon fill="#1E1F1F" points="220.061,119.943 157.731,57.417 157.731,45.146 220.061,107.479 		"></polygon>
