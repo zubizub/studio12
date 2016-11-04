@@ -42,7 +42,7 @@ IncludeTemplateLangFile(__FILE__);
                     <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a
                             class="link nav__link" href="#">Январь/2017 г.</a></span></div>
                     <div class="nav__item nav__item--shoowroom"><span class="nav__item-text">Shoowroom: <a
-                            class="link nav__link" href="#">Studio#8</a></span></div>
+                            class="link nav__link btn-callback-room" href="#">Studio#8</a></span></div>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ IncludeTemplateLangFile(__FILE__);
             <div class="nav">
                 <div class="nav__inner">
                     <div class="nav__item nav__item--place-yellow"><span class="nav__item-text">Москва, СВАО, <br><a
-                            class="link nav__link" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
+                            class="link nav__link btn-map-get" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
                     <div class="nav__item nav__item--phone-yellow"><span class="nav__item-text">+7 495 780-40-40<span
                             class="hidden-lg-xl-down"> | </span><br><a class="link nav__link btn-callback" href="#">Заказать обратный
                         звонок</a></span></div>
@@ -87,8 +87,16 @@ IncludeTemplateLangFile(__FILE__);
     </div>
 <? endif; ?>
 
+<div class="modal popup--map">
+    <div class="popup__inner">
+        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/test-map.jpg" alt="#">
+    </div>
+    <button class="popup__close"></button>
+</div>
+
 </div>
 <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.backstretch.min.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
 </body>

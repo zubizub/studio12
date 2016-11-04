@@ -491,7 +491,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             <div class="metro">
                                 <div class="metro__icon"></div>
                                 <div class="metro__caption">
-                                    <div class="metro__hint">10 мин. от метро:</div><a class="metro__station link" href="#">Марьина Роща</a>
+                                    <div class="metro__hint">10 мин. от метро:</div><a class="metro__station link btn-map-get" href="#">Марьина Роща</a>
                                 </div>
                                 <div class="metro__map">
                                     <div class="metro__loc"><img class="metro__location" src="img/metro-map.png" alt="#"></div>

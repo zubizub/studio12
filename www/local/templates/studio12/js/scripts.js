@@ -321,13 +321,17 @@ $(function () {
     //           //});
     //}());
         $('.section--lofts').each(function () {
-            var self = this, $box = $('.lots', self), $hidden = $('.lots__hidden', self), $more = $('.more-items', self);
+            var self = this,
+                $box = $('.lots', self),
+                $hidden = $('.lots__hidden', self),
+                $more = $('.more-items', self);
             $more.on('click', function () {
                 var offers = $('.ajaxLotItem ').length;
                 var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
                 $box.toggleClass('is-open');
                 $hidden.slideToggle(300);
                 $(this).text(moreText);
+                $.fn.fullpage.reBuild();
                 return false;
             });
         });    //
@@ -411,7 +415,7 @@ $(function () {
     }());
 
 
-    $('.btn-callback').on('click', function () {
+    $('.btn-callback').add('.btn-callback-room').on('click', function () {
 
         $('.popup--callback').bPopup({
             closeClass: 'popup__close',
@@ -445,6 +449,29 @@ $(function () {
         $.fn.fullpage.moveTo('s-lofts');
         return false;
     });
+
+    $(".section--about .wrapper").backstretch([
+        "http://dev12.korovets.ru/local/templates/studio12/dist/img/about-bg.png",
+        "http://dl.dropbox.com/u/515046/www/outside.jpg",
+        "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg",
+        "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+    ], {duration: 5000, fade: 750});
+
+    $('.btn-map-get').on('click', function() {
+       $('.popup--map').bPopup({
+           closeClass: 'popup__close'
+       });
+       return false;
+    });
+
+    //$('.more-items').click(function () {
+    //    setTimeout(function () {
+    //
+    //    }, 200);
+    //});
+    setTimeout(function () {
+        $('.line-house').fadeIn(1000);
+    }, 2400);    //10000 = 10 секунд
 
 
     (function () {
@@ -668,14 +695,7 @@ $(function () {
             //        $('.controls').css('display', '');
             //    }
             //});
-            $('.more-items').click(function () {
-                setTimeout(function () {
-                    $.fn.fullpage.reBuild();
-                }, 200);
-            });
-            setTimeout(function () {
-                $('.line-house').fadeIn(1000);
-            }, 2400);    //10000 = 10 секунд
+
         }());
     }());
 

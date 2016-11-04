@@ -2787,7 +2787,7 @@ sub, sup {
   position: relative;
 }
 .section--about .wrapper {
-  background: url("../img/about-bg.png") center top no-repeat;
+  /*background: url("../img/about-bg.png") center top no-repeat;*/
   -moz-background-size: cover;
     -o-background-size: cover;
        background-size: cover;
@@ -6579,4 +6579,18 @@ a.btn, a.btn:hover {
 .slogan-page {
   position: relative;
   height: 900px;
+}
+
+.modal {
+  display: none;
+  position: fixed !important;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+  -moz-transform: translateY(-50%) !important;
+  -ms-transform: translateY(-50%) !important;
+  -o-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
+  margin: auto !important;
+  float: left;
+  background-color: #fff;
 }
