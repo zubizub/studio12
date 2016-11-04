@@ -5,13 +5,13 @@ $(document).ready(function () {
         var action = $(this).attr('id');
         var data = $(this).serialize();
 
-        $.post("/quarters/ajax.php", {
+         $.post("/quarters/ajax.php", {
 
                 data: data,
                 action: action
             })
             .done(function (data) {
-                // console.log(data);
+               // console.log(data);
                 $('.loft-types__content').html(data);
 
             });
@@ -133,11 +133,11 @@ $(document).ready(function () {
                                 onOpen: function () {
                                     console.log(el);
                                     var action = 'send_me_email';
-                                    $.post("/quarters/ajax.php", {ELEMENT_ID: el, action: action})
+                                    $.post("/quarters/ajax.php", {  ELEMENT_ID: el, action: action})
                                         .done(function (data) {
                                             $('.popup--email').html(data);
-                                        });
-                                }
+                                });
+                            }
                             });
                             return false;
                         });

@@ -320,10 +320,23 @@ $(function () {
     //           //    return false;
     //           //});
     //}());
+        $('.section--lofts').each(function () {
+            var self = this, $box = $('.lots', self), $hidden = $('.lots__hidden', self), $more = $('.more-items', self);
+            $more.on('click', function () {
+                var offers = $('.ajaxLotItem ').length;
+                var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
+                $box.toggleClass('is-open');
+                $hidden.slideToggle(300);
+                $(this).text(moreText);
+                return false;
+            });
+        });    //
     (function () {
         $('.nav-toggle').on('click', function () {
             var timer;
-            $('body').toggleClass('sidebar-open');    //timer = setInterval( function() {
+            $('body').toggleClass('sidebar-open');
+            $.fn.fullpage.reBuild();
+            //timer = setInterval( function() {
                                                       //    $(window).trigger('resize');
                                                       //}, 1);
                                                       //$('.sidebar').one('transitionend', function() {
@@ -379,6 +392,61 @@ $(function () {
             breakDelay: 300
         });
     }());
+
+    (function () {
+        $('.slogan__title').typeIt({
+            cursor: false,
+            speed: 150,
+            lifeLike: false,
+            autoStart: true,
+            loop: true
+        }).tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Set</span><span class="slogan__line">Trends</span>').tiPause(1500).tiDelete().tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Fly</span>').tiPause(1500).tiDelete().tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Create</span>').tiPause(1500).tiDelete().tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Earn</span>').tiPause(1500).tiDelete();
+        $('.slogan__translation').typeIt({
+            cursor: false,
+            speed: 150,
+            lifeLike: false,
+            autoStart: true,
+            loop: true
+        }).tiType('Меняй правила <br/> и устанавливай тенденции!').tiPause(1300).tiDelete().tiType('Меняй правила <br/> и взлетай!').tiPause(1500).tiDelete().tiType('Меняй правила <br/> и твори').tiPause(3000).tiDelete().tiType('Меняй правила <br/> и зарабатывай').tiPause(1500).tiDelete();
+    }());
+
+
+    $('.btn-callback').on('click', function () {
+
+        $('.popup--callback').bPopup({
+            closeClass: 'popup__close',
+            onOpen: function () {
+                //console.log('callback-me');
+                var action = 'feedbackForm';
+                $.post("/quarters/ajax.php", {action: action})
+                    .done(function (data) {
+                        $('.popup--callback').html(data);
+                        $(".js-phone-mask").mask("+7 (999) 999-99-99");
+
+                        $('.form__select').each(function () {
+                            var $cont = $(this).closest('.form__select-wrap');
+
+                            $(this).select2({
+                                placeholder: 'Не выбран',
+                                dropdownParent: $cont,
+                                minimumResultsForSearch: Infinity
+                            });
+                        });
+                    });
+            }
+
+
+        });
+        return false;
+    });
+
+
+    $('.offer__act').on('click', function() {
+        $.fn.fullpage.moveTo('s-lofts');
+        return false;
+    });
+
+
     (function () {
         (function () {
             var wh = window.outerHeight, ww = window.innerWidth, wIh = window.innerHeight / 4, wIh1 = window.innerHeight, bw = $('.box').width() / 2, sectionHeight = $('.section--slogan .box').height(), shStart = 1500, shIntro = 1500, sh = 1500, speed = 0, $start = $('#start'), $intro = $('#intro'), $head = $('#head'), $tagline = $('#tagline'), $tagline2 = $('#tagline2'), $tagline3 = $('#tagline3'), $building = $('#building'), $building2 = $('#building2'), $building3 = $('#building3');
@@ -524,6 +592,8 @@ $(function () {
                     }
                     if (index == 5) {
                         setTimeout(function () {
+                            //var offers = $('.ajaxLotItem ').length;
+
                             $('.lots-infographics__number').animateNumber({ number: 72 });
                         }, 2000);
                     } else {
@@ -531,8 +601,6 @@ $(function () {
                     }
                 },
                 afterLoad: function (anchorLink, index) {
-                    var loadedSection = $(this);
-                    //using index
                     if (index == 4) {
                         $('.number72').animateNumber({ number: 72 });
                         $('.number142').animateNumber({ number: 142 });
@@ -610,56 +678,6 @@ $(function () {
             }, 2400);    //10000 = 10 секунд
         }());
     }());
-	    (function () {
-        $('.slogan__title').typeIt({
-            cursor: false,
-            speed: 150,
-            lifeLike: false,
-            autoStart: true,
-            loop: true
-        }).tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Set</span><span class="slogan__line">Trends</span>').tiPause(1500).tiDelete().tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Fly</span>').tiPause(1500).tiDelete().tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Create</span>').tiPause(1500).tiDelete().tiType('<span class="slogan__line">Cha</span><span class="slogan__line">nge</span><span class="slogan__line slogan__line--emphasis">Rules</span><span class="slogan__line">and</span><span class="slogan__line">Earn</span>').tiPause(1500).tiDelete();
-        $('.slogan__translation').typeIt({
-            cursor: false,
-            speed: 150,
-            lifeLike: false,
-            autoStart: true,
-            loop: true
-        }).tiType('Меняй правила <br/> и устанавливай тенденции!').tiPause(1300).tiDelete().tiType('Меняй правила <br/> и взлетай!').tiPause(1500).tiDelete().tiType('Меняй правила <br/> и твори').tiPause(3000).tiDelete().tiType('Меняй правила <br/> и зарабатывай').tiPause(1500).tiDelete();
-    }());
 
 
-    $('.btn-callback').on('click', function () {
-
-        $('.popup--callback').bPopup({
-            closeClass: 'popup__close',
-            onOpen: function () {
-                //console.log('callback-me');
-                var action = 'feedbackForm';
-                $.post("/quarters/ajax.php", {action: action})
-                    .done(function (data) {
-                        $('.popup--callback').html(data);
-                        $(".js-phone-mask").mask("+7 (999) 999-99-99");
-
-                        $('.form__select').each(function () {
-                            var $cont = $(this).closest('.form__select-wrap');
-
-                            $(this).select2({
-                                placeholder: 'Не выбран',
-                                dropdownParent: $cont,
-                                minimumResultsForSearch: Infinity
-                            });
-                        });
-                    });
-            }
-
-
-        });
-        return false;
-    });
-
-
-    $('.offer__act').on('click', function() {
-        $.fn.fullpage.moveTo('s-lofts');
-        return false;
-    });
 });

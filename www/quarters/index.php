@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?><div class="wrapper quarter-page">
 	<div class="inner">
-		<div class="header">
+		<div class="header header_stabled">
 			<div class="header__inner">
 				<div class="nav nav--light">
 					<div class="nav__inner">

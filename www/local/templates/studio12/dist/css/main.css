@@ -1953,8 +1953,42 @@ sub, sup {
   background-color: #63469c;
 }
 
+.quarter-page .nav__inner {
+  margin-left: 0;
+}
+
+.sidebar-open .header_stabled .nav__inner {
+  margin: 0 0 0 0;
+}
+
 .job-page {
   background-color: #18a585;
+}
+
+.inner {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar-open .inner {
+  margin: 0;
+}
+
+.lots__inner {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar-open .lots__inner {
+  padding: 0;
+}
+
+.header_fixed {
+  position: fixed !important;
 }
 
 .main {
@@ -2093,7 +2127,7 @@ sub, sup {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 5;
@@ -6537,4 +6571,6 @@ a.btn, a.btn:hover {
   display: none;
 }
 
-.section--lofts .box {}
+.section--lofts {
+  position: relative;
+}
