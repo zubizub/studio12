@@ -5,9 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<button class="nav-toggle" type="button">
-    <div class="nav-toggle__bar"></div>
-</button>
+
 
 <div class="controls">
     <a class="controls__photos" href="#"></a>

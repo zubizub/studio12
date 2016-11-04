@@ -3,6 +3,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
 
+<button class="nav-toggle" type="button">
+    <div class="nav-toggle__bar"></div>
+</button>
 
 <div class="fullpage">
 

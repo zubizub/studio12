@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Studio12");
 <button class="nav-toggle" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
 </button>
-  <div class="wrapper quarter-page">
+  <div class="wrapper job-page">
 	<div class="inner">
 		<div class="header header_stabled">
 			<div class="header__inner">
@@ -25,7 +25,7 @@ $APPLICATION->SetTitle("Studio12");
 			</div>
 		</div>
 		<div class="head">
-			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Лофт</span></span><span class="heading__line"><span class="heading__word invisible">квартал</span>
+			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Работа </span></span><span class="heading__line"><span class="heading__word invisible"> в лофте</span>
 			<div class="feature invisible">
 				<div class="feature__inner">
 					<div class="feature__top">
@@ -392,7 +392,7 @@ $APPLICATION->SetTitle("Studio12");
 		</div>
 	</div>
 </div>
-          <div class="reasons">
+          <div class="reasons reasons--dark">
             <div class="wrapper">
               <div class="inner">
                 <div class="reasons__content">
@@ -513,7 +513,7 @@ $APPLICATION->SetTitle("Studio12");
 
             <div class="metro-place__item"><img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img//metro-loc.png" alt="#"></div>
           </div>
-          <div class="about-lofts quarter-page">
+          <div class="about-lofts job-page">
             <div class="wrapper">
               <div class="inner">
                 <div class="about-lofts__row row">

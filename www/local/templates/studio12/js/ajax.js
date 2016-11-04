@@ -31,6 +31,7 @@ $(document).ready(function () {
                 action: action
             })
             .done(function (data) {
+                var $loftTypesTab = $('.loft-types__tab');
                 $('.loft-types__content').html(data);
                 $('.loft-types__tabs').slick({
                     dots: false,
