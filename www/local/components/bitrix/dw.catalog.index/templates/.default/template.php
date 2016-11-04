@@ -262,86 +262,30 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
 
                 </div>
+
                 <div class="lofts__list">
-
-
-                    <div class="lofts__item" tabindex="-1" role="option" aria-describedby="slick-slide00" style="">
+                    <div class="lofts__item">
                         <div class="loft loft--1" data-loft="1">
                             <div class="loft__number">1</div>
-                            <div class="loft__info">
-                                <div class="loft__detail level-1">
-                                    <div class="loft__label">1 эт.</div>
-                                    <div class="loft__value">1 свободно</div>
-                                </div>
-                                <div class="loft__detail level-2">
-                                    <div class="loft__label">2 эт.</div>
-                                    <div class="loft__value">12 свободно</div>
-                                </div>
-                                <div class="loft__detail level-3">
-                                    <div class="loft__label">3 эт.</div>
-                                    <div class="loft__value">1 бронь</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="lofts__item" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
+                    <div class="lofts__item">
                         <div class="loft loft--2-3" data-loft="2-3">
                             <div class="loft__number">2-3</div>
-                            <div class="loft__info">
-                                <div class="loft__detail level-1">
-                                    <div class="loft__label">1 эт.</div>
-                                    <div class="loft__value">1 свободно</div>
-                                </div>
-                                <div class="loft__detail level-2">
-                                    <div class="loft__label">2 эт.</div>
-                                    <div class="loft__value">12 свободно</div>
-                                </div>
-                                <div class="loft__detail level-3">
-                                    <div class="loft__label">3 эт.</div>
-                                    <div class="loft__value">1 бронь</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="lofts__item" tabindex="-1" role="option" aria-describedby="slick-slide02" style="">
+                    <div class="lofts__item">
                         <div class="loft loft--3" data-loft="3">
                             <div class="loft__number">3</div>
-                            <div class="loft__info">
-                                <div class="loft__detail level-1">
-                                    <div class="loft__label">1 эт.</div>
-                                    <div class="loft__value">1 свободно</div>
-                                </div>
-                                <div class="loft__detail level-2">
-                                    <div class="loft__label">2 эт.</div>
-                                    <div class="loft__value">12 свободно</div>
-                                </div>
-                                <div class="loft__detail level-3">
-                                    <div class="loft__label">3 эт.</div>
-                                    <div class="loft__value">1 бронь</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="lofts__item" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
+                    <div class="lofts__item">
                         <div class="loft loft--2-2" data-loft="2-2">
                             <div class="loft__number">2-2</div>
-                            <div class="loft__info">
-                                <div class="loft__detail level-1">
-                                    <div class="loft__label">1 эт.</div>
-                                    <div class="loft__value">1 свободно</div>
-                                </div>
-                                <div class="loft__detail level-2">
-                                    <div class="loft__label">2 эт.</div>
-                                    <div class="loft__value">12 свободно</div>
-                                </div>
-                                <div class="loft__detail level-3">
-                                    <div class="loft__label">3 эт.</div>
-                                    <div class="loft__value">1 бронь</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="lots-infographics">
                     <div class="lots-infographics__number">72</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
