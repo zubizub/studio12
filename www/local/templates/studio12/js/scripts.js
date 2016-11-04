@@ -444,12 +444,6 @@ $(function () {
         return false;
     });
 
-
-    $('.offer__act').on('click', function() {
-        $.fn.fullpage.moveTo('s-lofts');
-        return false;
-    });
-
     $(".section--about .wrapper").backstretch([
         "http://dev12.korovets.ru/local/templates/studio12/dist/img/about-bg.png",
         "http://dl.dropbox.com/u/515046/www/outside.jpg",
@@ -539,6 +533,51 @@ $(function () {
                     $('#fp-nav').addClass('intro-anim--visible');
                     $.fn.fullpage.moveSectionDown();    //$(window).trigger('resize');
                 });
+            });
+
+            $('.offer__act').on('click', function() {
+                $.fn.fullpage.moveTo('s-lofts');
+                TweenLite.to($tagline, 8, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($tagline2, 5, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($tagline3, 3, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($building, 2.5, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($building2, 3, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($building3, 3, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                setTimeout(function () {
+                    $('.house1').fadeIn(500);
+                }, 800);
+                //10000 = 10 секунд
+                setTimeout(function () {
+                    $('.house2').fadeIn(500);
+                }, 1200);
+                //10000 = 10 секунд
+                setTimeout(function () {
+                    $('.house3').fadeIn(500);
+                }, 1700);
+                //10000 = 10 секунд
+                setTimeout(function () {
+                    $('.house4').fadeIn(500);
+                }, 2000);    //10000 = 10 секунд
+                $('.lots-infographics__number').animateNumber({ number: 72 });
+                return false;
             });
             $('.fullpage').fullpage({
                 autoplay: false,
