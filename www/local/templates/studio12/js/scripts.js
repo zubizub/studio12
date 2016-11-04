@@ -348,6 +348,18 @@ $(function () {
                                                       //});
         });
     }());
+
+    $(".js-phone-mask").mask("+7 (999) 999-99-99");
+
+    $('.form__select').each(function () {
+        var $cont = $(this).closest('.form__select-wrap');
+
+        $(this).select2({
+            placeholder: 'Не выбран',
+            dropdownParent: $cont,
+            minimumResultsForSearch: Infinity
+        });
+    });
     (function () {
         $('.photo-gallery').each(function () {
             $('.photo-gallery__content', this).slick({
@@ -415,7 +427,7 @@ $(function () {
     }());
 
 
-    $('.btn-callback').add('.btn-callback-room').on('click', function () {
+    $('.btn-callback').on('click', function () {
 
         $('.popup--callback').bPopup({
             closeClass: 'popup__close',
@@ -458,11 +470,13 @@ $(function () {
        return false;
     });
 
-    //$('.more-items').click(function () {
-    //    setTimeout(function () {
-    //
-    //    }, 200);
-    //});
+    $('.btn-callback-room').on('click', function () {
+        $('.popup--showroom').bPopup({
+            closeClass: 'popup__close'
+        });
+        return false;
+    });
+
     setTimeout(function () {
         $('.line-house').fadeIn(1000);
     }, 2400);    //10000 = 10 секунд
