@@ -195,10 +195,7 @@ $APPLICATION->SetTitle("Studio12");
                                                     пр. Марьиной Рощи&nbsp;8</a></div>
                                             </div>
                                             <div class="footer__info">
-                                                <div class="footer__cell">+7 495 780-40-40<span
-                                                        class="hidden-lg-xl-down"> | </span><br><a class="link"
-                                                                                                   href="#">Заказать
-                                                    обратный звонок</a></div>
+                                                <div class="footer__cell">+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br><a class="link btn-callback" href="#">Заказать обратный звонок</a></div>
                                             </div>
                                         </div>
                                     </div>

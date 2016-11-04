@@ -2093,7 +2093,7 @@ sub, sup {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -2363,11 +2363,11 @@ sub, sup {
 }
 @media screen and (min-width: 1601px) {
   .nav__inner {
-    margin: 0 4rem 0 28.2rem;
+    margin: 0 4rem 0 22rem;
   }
 }
 .sidebar-open .nav__inner {
-  margin: 0 4rem 0 27.6rem;
+  margin: 0 4rem 0 22rem;
 }
 .nav__inner:after {
   content: '';
@@ -5074,29 +5074,25 @@ a.btn, a.btn:hover {
   background-color: #63469c;
 }
 .loft--2-2 {
-  top: 40%;
-  left: 30%;
-  background-image: url(img/loft-slide-4.jpg);
+  top: 34%;
+  left: 32%;
 }
 .loft--2-3 {
-  top: 70%;
-  left: 40%;
-  background-image: url(img/loft-slide-2.jpg);
+  top: 68%;
+  left: 45%;
 }
 .loft--1 {
-  top: 50%;
-  left: 65%;
-  background-image: url(img/loft-slide-1.jpg);
+  top: 47%;
+  left: 59%;
 }
 .loft--3 {
-  top: 20%;
+  top: 10%;
   left: 70%;
-  background-image: url(img/loft-slide-3.jpg);
 }
 
 .lots {
   padding-bottom: 10rem;
-  background: #343434;
+  /*background: #343434;*/
   color: #000;
 }
 .lots__inner {
@@ -6540,3 +6536,5 @@ a.btn, a.btn:hover {
 .fp-controlArrow {
   display: none;
 }
+
+.section--lofts .box {}

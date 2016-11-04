@@ -12,7 +12,6 @@ IncludeTemplateLangFile(__FILE__);
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?$APPLICATION->ShowTitle()?></title>
     <meta name="description" content="Studio21">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link(rel='apple-touch-icon', href='apple-touch-icon.png')-->
     <?$APPLICATION->ShowHead()?>
     <!--[if (gt IE 9)|!(IE)]><!-->
@@ -25,7 +24,7 @@ IncludeTemplateLangFile(__FILE__);
     </script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.1.1.min.js" type="text/javascript"></script>
     <!--<script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
-    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/main.js" type="text/javascript"></script>-->
+//    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/main.js" type="text/javascript"></script>-->
     <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
     
 </head>
@@ -39,7 +38,7 @@ IncludeTemplateLangFile(__FILE__);
         <div class="container__inner">
             <div class="sidebar">
                 <div class="sidebar__inner">
-                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src=""<?=SITE_TEMPLATE_PATH?>/dist/imgside-logo.png"></a></div>
+                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
                     <div class="sidebar__body">
               <!--.component menu-->
                <?$APPLICATION->IncludeComponent(

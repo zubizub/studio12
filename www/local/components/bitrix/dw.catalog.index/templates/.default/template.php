@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 ?>
 
-<div class="section section--lofts is-colored">
+<div class="section section--lofts is-colored" id="loftSection">
     <div class="box" style="">
         <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
             <path class="path" id="building"></path>
@@ -500,7 +500,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             </div>
                         </div>
                         <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br class="hidden-lg-xl-up"><a class="link" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
-                        <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a class="link" href="#">Заказать обратный звонок</a></span></div>
+                        <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a class="link btn-callback" href="#">Заказать обратный звонок</a></span></div>
                     </div>
                 </div>
             </div>
