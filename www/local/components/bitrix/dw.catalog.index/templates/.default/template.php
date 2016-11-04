@@ -498,7 +498,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                 </div>
                             </div>
                         </div>
-                        <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br class="hidden-lg-xl-up"><a class="link" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
+                        <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br class="hidden-lg-xl-up"><a class="link btn-map-get" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
                         <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a class="link btn-callback" href="#">Заказать обратный звонок</a></span></div>
                     </div>
                 </div>
