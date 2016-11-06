@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Studio12");
 
 
 <div class="fullpage">
-
+asd
 
     <div class="section section--start" data-anchor="s-start">
         <div class="box box--start">
