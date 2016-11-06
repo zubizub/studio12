@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Studio12");
 
     <div class="section section--intro">
         <div class="box" style="text-align: center;">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1165" height="5000" viewbox="0 0 1165 5000">
                 <path class="path" id="intro"></path>
                 <image class="line-house" style="display: none;" xmlns='http://www.w3.org/2000/svg' ,
                        xmlns:xlink='http://www.w3.org/1999/xlink' , overflow='visible' , width='335' , height='261' ,
