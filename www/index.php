@@ -3,16 +3,13 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
 
-<button class="nav-toggle" type="button">
-    <div class="nav-toggle__bar"></div>
-</button>
 
 <div class="fullpage">
 
 
     <div class="section section--start" data-anchor="s-start">
         <div class="box box--start">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1165px" height="5000px" viewbox="0 0 1165 5000">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
                 <path class="path" id="start"></path>
             </svg>
         </div>
@@ -20,7 +17,7 @@ $APPLICATION->SetTitle("Studio12");
 
     <div class="section section--intro">
         <div class="box" style="text-align: center;">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1165px" height="5000px" viewbox="0 0 1165 5000">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
                 <path class="path" id="intro"></path>
                 <image class="line-house" style="display: none;" xmlns='http://www.w3.org/2000/svg' ,
                        xmlns:xlink='http://www.w3.org/1999/xlink' , overflow='visible' , width='335' , height='261' ,
@@ -33,7 +30,7 @@ $APPLICATION->SetTitle("Studio12");
         <div class="wrapper">
             <div class="section__inner">
                 <div class="box">
-                    <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1165px" height="5000px" viewbox="0 0 1165 5000">
+                    <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
                         <path class="path" id="head"></path>
                     </svg>
                     <svg class="logo__front" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1165px" height="509px" viewbox="0 0 1165 509" enable-background="new 0 0 1165 509" xml:space="preserve">
@@ -198,7 +195,9 @@ $APPLICATION->SetTitle("Studio12");
                                                     пр. Марьиной Рощи&nbsp;8</a></div>
                                             </div>
                                             <div class="footer__info">
-                                                <div class="footer__cell">+7 495 780-40-40<span class="hidden-lg-xl-down"> | </span><br><a class="link btn-callback" href="#">Заказать обратный звонок</a></div>
+                                                <div class="footer__cell">+7 495 780-40-40<span
+                                                        class="hidden-lg-xl-down"> | </span><br><a class="link btn-callback" href="#">Заказать
+                                                    обратный звонок</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -255,7 +254,7 @@ $APPLICATION->SetTitle("Studio12");
             </div>
         </div>
         <div class="box">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1165px" height="5000px" viewbox="0 0 1165 5000"
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"
                  style="width: 100%; height: auto">
                 <path class="path" id="tagline"></path>
                 <path class="path" id="tagline2"></path>
