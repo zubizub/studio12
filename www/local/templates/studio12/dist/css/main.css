@@ -6792,3 +6792,8 @@ a.btn, a.btn:hover {
   -o-background-size: cover !important;
   background-size: cover !important;
 }
+
+.about-bg .slick-list,
+.about-bg .slick-track {
+  height: 100%;
+}
