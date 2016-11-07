@@ -107,291 +107,115 @@ $APPLICATION->SetTitle("Studio12");
 		</div>
 	</div>
 </div>
+
+
+
 <div class="loft-types">
 	<div class="wrapper">
 		<div class="inner">
 			<div class="loft-types__inner">
 				<div class="loft-types__content">
 					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Классические  брутальные лофты</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 1<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 2<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 3<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
 						</div>
 					</div>
 					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Просторные уютные студии</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 1<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 2<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 3<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
 						</div>
 					</div>
 					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Комфортные двухуровневые лофты</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 1<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 2<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 3<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
 						</div>
 					</div>
 					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Лофты с личным  входоми двориком</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 1<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 2<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 3<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
 						</div>
 					</div>
 					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Залитые солнцем мансарды</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 1<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-2.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 2<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item">
- <img src="/local/templates/studio12/dist/img//loft-type-1.jpg" class="loft-types__img" alt="#">
-								<div class="loft-types__row">
-									<div class="loft-types__caption">
-										<div class="loft-types__title">
-											 Все виды лофтов <br>
-											 в одном вдохновляющем <br>
-											 пространстве!
-										</div>
-										<div class="loft-types__page">
-											 3<span class="yellow">–3</span>
-										</div>
-									</div>
-								</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+								<div class="loft-types__row"></div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="loft-types__desc">
 					<div class="loft-types__tabs">
-
-
-							 <?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"loft-menu",
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "loftmenu",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "loft-menu"
-	),
-	false
-);?>
-					</div>
- <a class="loft-types__act" href="#">
-					<div class="loft-types__label">
-						 Выбрать
-					</div>
- <img src="/local/templates/studio12/dist/img/intro-offer.png" class="loft-types__icon" alt="#"></a>
+						<div class="loft-types__tab">Классические  брутальные лофты</div>
+						<div class="loft-types__tab">Просторные уютные студии</div>
+						<div class="loft-types__tab">Комфортные двухуровневые лофты</div>
+						<div class="loft-types__tab">Лофты с личным  входоми двориком</div>
+						<div class="loft-types__tab">Залитые солнцем мансарды</div>
+					</div><a class="loft-types__act" href="#">
+					<div class="loft-types__label">Супер-маркет лофтов</div><img class="loft-types__icon" src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png" alt="#"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
           <div class="reasons">
             <div class="wrapper">
               <div class="inner">

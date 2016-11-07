@@ -37,8 +37,8 @@ IncludeTemplateLangFile(__FILE__);
                     <div class="sidebar__body">
               <!--.component menu-->
                <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"mainmenu", 
+	"bitrix:menu",
+	"mainmenu",
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "",

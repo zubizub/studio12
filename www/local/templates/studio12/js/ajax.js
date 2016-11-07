@@ -20,53 +20,6 @@ $(document).ready(function () {
 
     });
 
-    $('.loft-types__tab').on('click', function () {
-        var filter = $(this).attr('filter');
-        console.log(filter);
-        var action = 'loftGroup';
-
-
-        $.post("/quarters/ajax.php", {
-                filter: filter,
-                action: action
-            })
-            .done(function (data) {
-                var $loftTypesTab = $('.loft-types__tab');
-                $('.loft-types__content').html(data);
-                $('.loft-types__tabs').slick({
-                    dots: false,
-                    arrows: false,
-                    infinite: false,
-                    slidesToShow: $loftTypesTab.length,
-                    //slidesToScroll: 1,
-                    speed: 0,
-                    asNavFor: '.loft-types__content',
-                    focusOnSelect: true,
-                    vertical: true,
-                    //variableWidth: true,
-                    verticalSwiping: true,
-                    swipe: false,
-                    touchMove: false,
-                    responsive: [
-                        {
-                            breakpoint: 1100,
-                            settings: {
-                                speed: 150,
-                                slidesToShow: 1,
-                                vertical: false,
-                                verticalSwiping: false,
-                                variableWidth: true,
-                                //centerMode: true,
-                                centerPadding: '0px',
-                                swipe: true,
-                                touchMove: true
-                            }
-                        }
-                    ]
-                });
-            });
-    });
-
 
     $('.ajaxLotItem').on('click', function () {
         var el = $(this).attr('el');
