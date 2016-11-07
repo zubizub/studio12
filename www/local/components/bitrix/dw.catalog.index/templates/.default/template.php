@@ -61,10 +61,12 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
                                         <ellipse class="st0 house house1" fill="#4B4745" cx="104.38" cy="59.25" rx="34.38" ry="9.25"></ellipse>
 <g class="house house3">
+    <a class="lofts__link" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#" data-loft="1">
                                         <polygon fill="#2D2E2E" points="150.089,177.459 139.792,156.792 129.495,158.292 129.495,169.334 150.089,189.923 	"></polygon>
                                         <polygon fill="#1E1F1F" points="150.089,189.923 200.014,139.801 200.014,127.529 150.089,177.459 	"></polygon>
                                         <polygon fill="#444444" points="150.089,177.459 200.014,127.529 189.717,106.696 139.792,156.792 	"></polygon>
                                         <polygon fill="#606060" points="139.792,156.792 189.718,106.696 179.421,108.196 129.495,158.292 	"></polygon>
+    </a>
 </g>
 <g display="none">
                                         <polygon display="inline" fill="#2D2E2E" points="113.542,214.084 103.245,193.417 92.948,194.917 92.948,205.959 113.542,226.549
@@ -148,34 +150,36 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 	</g>
 </g>
 <g class="house house1">
-                                        <g>
-                                        <polygon fill="#8E8F8F" points="128.477,129.727 138.773,109.061 149.07,110.561 149.07,121.602 128.477,142.191 		"></polygon>
-                                        <polygon fill="#757777" points="128.477,142.191 99.791,113.307 99.791,101.036 128.477,129.727 		"></polygon>
-                                        <polygon fill="#ABAAAA" points="128.477,129.727 99.791,101.036 110.088,80.203 138.773,109.061 		"></polygon>
-                                        <polygon fill="#C9C7C7" points="138.773,109.061 110.087,80.203 120.384,81.703 149.07,110.561 		"></polygon>
-	</g>
-                                        <g>
+    <a class="lofts__link" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#" data-loft="2-2">
+        <g>
+                                            <polygon fill="#8E8F8F" points="128.477,129.727 138.773,109.061 149.07,110.561 149.07,121.602 128.477,142.191 		"></polygon>
+                                            <polygon fill="#757777" points="128.477,142.191 99.791,113.307 99.791,101.036 128.477,129.727 		"></polygon>
+                                            <polygon fill="#ABAAAA" points="128.477,129.727 99.791,101.036 110.088,80.203 138.773,109.061 		"></polygon>
+                                            <polygon fill="#C9C7C7" points="138.773,109.061 110.087,80.203 120.384,81.703 149.07,110.561 		"></polygon>
+        </g>
+                                            <g>
 
-                                        <rect x="103.271" y="115.899" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 274.1151 132.7054)" fill="#ABAAAA" width="12.607" height="14.445"></rect>
-                                        <polygon fill="#8E8F8F" points="110.17,141.787 119.131,132.881 119.131,123.764 110.169,132.67 		"></polygon>
-	</g>
-                                        <g>
-                                        <polygon fill="#8E8F8F" points="99.704,158.5 110.001,137.834 120.297,139.334 120.297,150.375 99.704,170.965 		"></polygon>
-                                        <polygon fill="#757777" points="99.704,170.965 37.375,108.438 37.375,96.167 99.704,158.5 		"></polygon>
-                                        <polygon fill="#ABAAAA" points="99.704,158.5 37.375,96.167 47.672,75.333 110.001,137.834 		"></polygon>
-                                        <polygon fill="#C9C7C7" points="110,137.834 47.671,75.333 57.968,76.833 120.297,139.334 		"></polygon>
-	</g>
-                                        <g>
+                                            <rect x="103.271" y="115.899" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 274.1151 132.7054)" fill="#ABAAAA" width="12.607" height="14.445"></rect>
+                                            <polygon fill="#8E8F8F" points="110.17,141.787 119.131,132.881 119.131,123.764 110.169,132.67 		"></polygon>
+        </g>
+                                            <g>
+                                            <polygon fill="#8E8F8F" points="99.704,158.5 110.001,137.834 120.297,139.334 120.297,150.375 99.704,170.965 		"></polygon>
+                                            <polygon fill="#757777" points="99.704,170.965 37.375,108.438 37.375,96.167 99.704,158.5 		"></polygon>
+                                            <polygon fill="#ABAAAA" points="99.704,158.5 37.375,96.167 47.672,75.333 110.001,137.834 		"></polygon>
+                                            <polygon fill="#C9C7C7" points="110,137.834 47.671,75.333 57.968,76.833 120.297,139.334 		"></polygon>
+        </g>
+                                            <g>
 
-                                        <rect x="38.844" y="108.972" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 159.23 166.4381)" fill="#ABAAAA" width="12.606" height="14.445"></rect>
-                                        <polygon fill="#8E8F8F" points="45.743,134.86 54.704,125.953 54.704,116.836 45.742,125.743 		"></polygon>
-	</g>
-                                        <g>
-                                        <polygon fill="#8E8F8F" points="35.517,152.096 45.813,131.429 56.11,132.929 56.11,143.971 35.517,164.56 		"></polygon>
-                                        <polygon fill="#757777" points="35.517,164.56 6.831,135.676 6.831,123.404 35.517,152.096 		"></polygon>
-                                        <polygon fill="#ABAAAA" points="35.517,152.096 6.831,123.404 17.128,102.571 45.813,131.429 		"></polygon>
-                                        <polygon fill="#C9C7C7" points="45.813,131.429 17.127,102.571 27.424,104.071 56.11,132.929 		"></polygon>
-	</g>
+                                            <rect x="38.844" y="108.972" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 159.23 166.4381)" fill="#ABAAAA" width="12.606" height="14.445"></rect>
+                                            <polygon fill="#8E8F8F" points="45.743,134.86 54.704,125.953 54.704,116.836 45.742,125.743 		"></polygon>
+        </g>
+                                            <g>
+                                            <polygon fill="#8E8F8F" points="35.517,152.096 45.813,131.429 56.11,132.929 56.11,143.971 35.517,164.56 		"></polygon>
+                                            <polygon fill="#757777" points="35.517,164.56 6.831,135.676 6.831,123.404 35.517,152.096 		"></polygon>
+                                            <polygon fill="#ABAAAA" points="35.517,152.096 6.831,123.404 17.128,102.571 45.813,131.429 		"></polygon>
+                                            <polygon fill="#C9C7C7" points="45.813,131.429 17.127,102.571 27.424,104.071 56.11,132.929 		"></polygon>
+        </g>
+    </a>
 </g>
                                         <polygon display="none" fill="none" stroke="#FFF200" stroke-width="9" stroke-miterlimit="10" points="133.875,224.625
 	62.25,152.75 50.5,164.5 21.874,135.876 69.991,88.312 147.272,88.264 179.201,56.201 241.125,117.875 "></polygon>
@@ -187,10 +191,14 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                         <polygon display="inline" fill="#606060" points="139.792,156.792 189.718,106.696 179.421,108.196 129.495,158.292 	"></polygon>
 </g>
 <g class="house house2">
+    <a class="lofts__link" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#" data-loft="2-3">
+
                                         <polygon fill="#2D2E2E" points="113.542,214.084 103.245,193.417 92.948,194.917 92.948,205.959 113.542,226.549 	"></polygon>
                                         <polygon fill="#1E1F1F" points="113.542,226.549 142.227,197.664 142.227,185.393 113.542,214.084 	"></polygon>
                                         <polygon fill="#444444" points="113.542,214.084 142.227,185.393 131.93,164.56 103.245,193.417 	"></polygon>
                                         <polygon fill="#606060" points="103.245,193.417 131.93,164.56 121.633,166.06 92.948,194.917 	"></polygon>
+    </a>
+
 </g>
 <g display="none">
                                         <g display="inline">
@@ -253,18 +261,20 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                         <polygon display="inline" fill="#606060" points="103.245,193.417 131.93,164.56 121.633,166.06 92.948,194.917 	"></polygon>
 </g>
 <g class="house house4">
-                                        <g>
-                                        <polygon fill="#2D2E2E" points="220.061,107.479 230.357,86.812 240.653,88.312 240.653,99.354 220.061,119.943 		"></polygon>
-                                        <polygon fill="#1E1F1F" points="220.061,119.943 157.731,57.417 157.731,45.146 220.061,107.479 		"></polygon>
-                                        <polygon fill="#444444" points="220.061,107.479 157.731,45.146 168.028,24.312 230.357,86.812 		"></polygon>
-                                        <polygon fill="#606060" points="230.356,86.812 168.028,24.312 178.325,25.812 240.653,88.312 		"></polygon>
-	</g>
-                                        <g>
+    <a class="lofts__link" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#" data-loft="3">
+        <g>
+                                            <polygon fill="#2D2E2E" points="220.061,107.479 230.357,86.812 240.653,88.312 240.653,99.354 220.061,119.943 		"></polygon>
+                                            <polygon fill="#1E1F1F" points="220.061,119.943 157.731,57.417 157.731,45.146 220.061,107.479 		"></polygon>
+                                            <polygon fill="#444444" points="220.061,107.479 157.731,45.146 168.028,24.312 230.357,86.812 		"></polygon>
+                                            <polygon fill="#606060" points="230.356,86.812 168.028,24.312 178.325,25.812 240.653,88.312 		"></polygon>
+        </g>
+                                            <g>
 
-                                        <rect x="174.223" y="66.771" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 364.7447 8.9134)" fill="#444444" width="12.606" height="26.447"></rect>
-                                        <polygon fill="#2D2E2E" points="185.377,102.916 194.338,94.009 194.338,84.892 185.377,93.799 		"></polygon>
-                                        <polygon fill="#1E1F1F" points="185.393,102.842 166.685,84.187 166.685,75.07 185.393,93.725 		"></polygon>
-	</g>
+                                            <rect x="174.223" y="66.771" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 364.7447 8.9134)" fill="#444444" width="12.606" height="26.447"></rect>
+                                            <polygon fill="#2D2E2E" points="185.377,102.916 194.338,94.009 194.338,84.892 185.377,93.799 		"></polygon>
+                                            <polygon fill="#1E1F1F" points="185.393,102.842 166.685,84.187 166.685,75.07 185.393,93.725 		"></polygon>
+        </g>
+    </a>
 </g>
 <g display="none">
                                         <g display="inline">
@@ -305,21 +315,37 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                     <div class="lofts__item">
                         <div class="loft loft--1" data-loft="1">
                             <div class="loft__number">1</div>
+                            <div class="loft-popup">
+                                <div class="loft-popup__desc">Очередь:</div>
+                                <div class="loft-popup__title">Сентябрь <span>2017</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="lofts__item">
                         <div class="loft loft--2-3" data-loft="2-3">
                             <div class="loft__number">2-3</div>
+                            <div class="loft-popup">
+                                <div class="loft-popup__desc">Очередь:</div>
+                                <div class="loft-popup__title">Октябрь <span>2017</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="lofts__item">
                         <div class="loft loft--3" data-loft="3">
                             <div class="loft__number">3</div>
+                            <div class="loft-popup">
+                                <div class="loft-popup__desc">Очередь:</div>
+                                <div class="loft-popup__title">Май <span>2018</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="lofts__item">
                         <div class="loft loft--2-2" data-loft="2-2">
                             <div class="loft__number">2-2</div>
+                            <div class="loft-popup loft-popup-ready">
+                                <div class="loft-popup__title">73</div>
+                                <div class="loft-popup__desc">Доступно</div>
+                            </div>
                         </div>
                     </div>
                 </div>

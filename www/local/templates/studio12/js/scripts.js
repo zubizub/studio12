@@ -399,6 +399,17 @@ $(function () {
         $('.sidebar').perfectScrollbar();
     }());
     (function () {
+        var $loft = $('.loft');
+        $('.lofts__link').on('mouseenter', function () {
+            var loft = $(this).data('loft');
+            $loft.removeClass('active').filter('[data-loft=' + loft + ']').addClass('active');
+            return false;
+        }).on('mouseleave', function () {
+            $loft.removeClass('active');
+            return false;
+        });
+    }());
+    (function () {
         $('.slogan__title').typeIt({
             cursor: false,
             speed: 150,

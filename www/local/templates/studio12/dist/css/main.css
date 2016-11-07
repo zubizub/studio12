@@ -4995,12 +4995,13 @@ a.btn, a.btn:hover {
 
 .loft {
   position: absolute;
-  width: 100%;
+  /*width: 100%;*/
   -moz-background-size: cover;
     -o-background-size: cover;
        background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  pointer-events: none;
 }
 .loft:before {
   position: absolute;
@@ -5025,27 +5026,117 @@ a.btn, a.btn:hover {
   }
 }
 .loft__number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3.875rem;
-  height: 3.875rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 69px;
+  height: 69px;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
   background-color: #010002;
-  color: #ffe500;
+  color: #fff;
   font-size: 1.75rem;
-  line-height: 3.875rem;
+  line-height: 69px;
   text-align: center;
   pointer-events: none;
+  transition: all .15s ease;
 }
+
+.loft.active .loft__number {
+  background-color: #fff200;
+  color: #000000;
+}
+
+.loft--2-2 .loft__number {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 40px;
+}
+
+.loft--2-2.active .loft__number {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 @media screen and (max-width: 1000px) {
   .loft__number {
     top: 4.375rem;
     left: 3.125rem;
   }
 }
+
+.loft-popup {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  background: #000000;
+  position: relative;
+  color: #ffffff;
+  margin-left: 15px;
+  min-width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .15s ease;
+}
+
+.loft.active .loft-popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.loft-popup:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #000000 transparent transparent;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.loft-popup__desc {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.30;
+  margin-bottom: 6px;
+}
+
+.loft-popup__title {
+  font-size: 24px;
+}
+
+.loft-popup__title span {
+  font-size: 30px;
+  display: block;
+  line-height: 1;
+}
+
+.loft-popup-ready {
+  background-color: #ffffff;
+  color: #000000;
+  min-width: auto;
+}
+
+.loft-popup-ready:before {
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.loft-popup-ready .loft-popup__desc {
+  margin-bottom: 0;
+  color: #000000;
+  opacity: 1;
+}
+
+.loft-popup-ready .loft-popup__title {
+  font-size: 80px;
+  line-height: 1;
+}
+
 .loft__info {
   position: absolute;
   left: 3.125rem;
