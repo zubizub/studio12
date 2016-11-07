@@ -468,10 +468,10 @@ $(function () {
     });
 
     $(".section--about .wrapper").backstretch([
-        "http://dev12.korovets.ru/local/templates/studio12/dist/img/about-bg.png",
-        "http://dl.dropbox.com/u/515046/www/outside.jpg",
-        "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg",
-        "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+        "local/templates/studio12/img/1.jpg",
+        "local/templates/studio12/img/2.jpg",
+        "local/templates/studio12/img/3.jpg",
+        "local/templates/studio12/img/4.jpg"
     ], {duration: 5000, fade: 750});
 
     $('.btn-map-get').on('click', function() {
