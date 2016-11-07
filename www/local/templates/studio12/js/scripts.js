@@ -492,6 +492,13 @@ $(function () {
         $('.line-house').fadeIn(1000);
     }, 2400);    //10000 = 10 секунд
 
+    $(".loft-btn").on("click", function(){
+        var anchor = $(this).attr("href");
+        $("html, body").stop().animate({
+            scrollTop: $(anchor).offset().top
+        }, 300);
+        return false;
+    });
 
     (function () {
         (function () {
@@ -560,7 +567,7 @@ $(function () {
                 });
             });
 
-            $('.offer__act').on('click', function() {
+            $('.offer__act').add('.queue__act').on('click', function() {
                 $.fn.fullpage.moveTo('s-lofts');
                 TweenLite.to($tagline, 8, {
                     strokeDashoffset: 0,
