@@ -35,26 +35,24 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="sidebar__inner">
                     <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
                     <div class="sidebar__body">
-              <!--.component menu-->
-               <?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"mainmenu",
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "left",
-		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => "mainmenu"
-	),
-	false
-);?>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/">#Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/quarters">#Лофтквартал</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/job">#Работавлофте</a>
+                    </li>
+                    <li class="menu__item">
+                        <?if ($APPLICATION->GetCurPage()== '/'): ?>
+                            <a class="menu__link queue__act" href="#">#Выбратьлофт</a>
+                            <?else:?>
+                            <a class="menu__link loft-btn" href="#loft-table">#Выбратьлофт</a>
+                        <? endif; ?>
+                    </li>
+                </ul>
                 <div class="note">
                             <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="#">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="#">#РАБОТЫ</a>.</div>
                             <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
