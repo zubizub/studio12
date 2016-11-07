@@ -6797,3 +6797,7 @@ a.btn, a.btn:hover {
 .about-bg .slick-track {
   height: 100%;
 }
+
+.about-lofts__list {
+  margin-top: 20px;
+}

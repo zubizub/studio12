@@ -60,23 +60,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала #Живи и <?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"pagemenu",
-	Array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "pagemenu",
-		"COMPONENT_TEMPLATE" => "pagemenu",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "pagemenu",
-		"USE_EXT" => "N"
-	)
-);?>
+						 Концепция квартала #Живи и <a class="link" href="/job">#Работай</a>
 					</div>
 				</div>
 				<div class="concept__col col-1-3">
@@ -208,7 +192,7 @@ $APPLICATION->SetTitle("Studio12");
 						<div class="loft-types__tab">Комфортные двухуровневые лофты</div>
 						<div class="loft-types__tab">Лофты с личным  входоми двориком</div>
 						<div class="loft-types__tab">Залитые солнцем мансарды</div>
-					</div><a class="loft-types__act" href="#">
+					</div><a class="loft-types__act loft-btn" href="#loft-table">
 					<div class="loft-types__label">Супер-маркет лофтов</div><img class="loft-types__icon" src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png" alt="#"></a>
 				</div>
 			</div>

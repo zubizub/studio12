@@ -60,23 +60,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала #Живи и <?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"pagemenu",
-	Array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "pagemenu",
-		"COMPONENT_TEMPLATE" => "pagemenu",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "1",
-		"MENU_CACHE_GET_VARS" => array(),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "pagemenu",
-		"USE_EXT" => "N"
-	)
-);?>
+						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> и #Работай
 					</div>
 				</div>
 				<div class="concept__col col-1-3">

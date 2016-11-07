@@ -54,7 +54,7 @@ IncludeTemplateLangFile(__FILE__);
                     </li>
                 </ul>
                 <div class="note">
-                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="#">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="#">#РАБОТЫ</a>.</div>
+                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="/job">#РАБОТЫ</a>.</div>
                             <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
                         </div>
                     </div>
