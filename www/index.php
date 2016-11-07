@@ -127,11 +127,13 @@ $APPLICATION->SetTitle("Studio12");
     </div><!-- .section--main -->
 
     <div class="section section--about is-colored" data-anchor="s-about">
-        <!-- <div class="slide">Slide 1</div>
-        <div class="slide">Slide 2</div>
-        <div class="slide">Slide</div>
-        <div class="slide">Slide 4</div>-->
         <div class="wrapper">
+            <div class="about-bg">
+                <div class="about-bg__item" style="background: url('local/templates/studio12/img/1.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item" style="background: url('local/templates/studio12/img/2.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item" style="background: url('local/templates/studio12/img/3.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item" style="background: url('local/templates/studio12/img/4.jpg') no-repeat 0 0"></div>
+            </div>
             <div class="section__inner">
                 <div class="section__content">
                     <div class="about">
