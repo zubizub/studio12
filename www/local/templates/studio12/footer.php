@@ -5,7 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-
+<div class="logo-fix"></div>
 <div class="controls">
     <a class="controls__photos" href="#"></a>
     <a class="controls__queue" href="#"></a>

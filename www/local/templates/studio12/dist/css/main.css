@@ -6801,3 +6801,16 @@ a.btn, a.btn:hover {
 .about-lofts__list {
   margin-top: 20px;
 }
+
+.concept__head {
+  color: #000;
+}
+
+.logo-fix {
+  width: 61px;
+  height: 142px;
+  background: url("../img/menu-logo.png") no-repeat 0 0;
+  position: fixed;
+  top: 80px;
+  left: 5px;
+}

@@ -60,7 +60,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> и #Работай
+						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> и <span style="color: #ffffff">#Работай</span>
 					</div>
 				</div>
 				<div class="concept__col col-1-3">

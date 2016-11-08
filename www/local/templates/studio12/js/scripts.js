@@ -615,7 +615,7 @@ $(function () {
                 //10000 = 10 секунд
                 setTimeout(function () {
                     $('.house4').fadeIn(500);
-                }, 2000);    //10000 = 10 секунд
+                }, 500);    //10000 = 10 секунд
                 $('.lots-infographics__number').animateNumber({ number: 72 });
                 return false;
             });
@@ -701,7 +701,7 @@ $(function () {
                             //var offers = $('.ajaxLotItem ').length;
 
                             $('.lots-infographics__number').animateNumber({ number: 72 });
-                        }, 2000);
+                        }, 500);
                     } else {
                         $('.lots-infographics__number').animateNumber({ number: 0 });
                     }
