@@ -92,6 +92,54 @@ $APPLICATION->SetTitle("Studio12");
 	</div>
 </div>
 
+
+<div class="loft-types">
+	<div class="wrapper">
+		<div class="inner">
+			<div class="loft-types__inner">
+				<div class="loft-types__content">
+					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Лофт-квартал Studio#12</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
+						</div>
+						<div class="loft-types__list">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam01.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam02.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam03.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam04.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam05.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam06.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam07.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="loft-types__desc">
+					<div class="loft-types__tabs">
+						<div class="loft-types__tab">Лофт-квартал Studio#12</div>
+					</div><a class="loft-types__act loft-btn" href="#loft-table">
+					<div class="loft-types__label">Супер-маркет лофтов</div><img class="loft-types__icon" src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png" alt="#"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
           <div class="reasons reasons--dark">
             <div class="wrapper">
               <div class="inner">

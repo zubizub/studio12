@@ -712,7 +712,7 @@ $(function () {
                         $('.number142').animateNumber({ number: 142 });
                         $('.number40').animateNumber({ number: 40 });
                         $('.number300').animateNumber({ number: 300 });
-                        $('.number6').animateNumber({ number: 6 });
+                        $('.number6').animateNumber({ number: 8 });
                     } else {
                         $('.number').animateNumber({ number: 0 });
                     }

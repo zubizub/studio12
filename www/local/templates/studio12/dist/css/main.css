@@ -6814,3 +6814,18 @@ a.btn, a.btn:hover {
   top: 80px;
   left: 5px;
 }
+
+.metro-place__slider-item {
+  position: relative;
+}
+
+.metro-place__desc {
+  font-size: 36px;
+  bottom: 50px;
+  line-height: 1;
+  text-align: center;
+  color: #ffe500;
+  position: absolute;
+  left: 0;
+  right: 0;
+}

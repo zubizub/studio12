@@ -138,9 +138,9 @@ $APPLICATION->SetTitle("Studio12");
                 <div class="section__content">
                     <div class="about">
                         <div class="about__items">
-                            <div class="about__item"><a class="about__link" href="#">Лофт<br>квартал<br><span>Строки описания от 2 до 3 строк для резины может быть 4</span></a>
+                            <div class="about__item"><a class="about__link" href="/quarters">Лофт<br>квартал<br><span>Строки описания от 2 до 3 строк для резины может быть 4</span></a>
                             </div>
-                            <div class="about__item"><a class="about__link" href="#">Работа<br>в лофте<br><span>Строки описания от 2 до 3 строк для резины может быть 4</span></a>
+                            <div class="about__item"><a class="about__link" href="/job">Работа<br>в лофте<br><span>Строки описания от 2 до 3 строк для резины может быть 4</span></a>
                             </div>
                             <div class="about__item about__desc"><span>Креативный лофт-квартал Studio#12 — <br
                                     class="mobile-br"> это уникальное пространство <br class="mobile-br"> для <a

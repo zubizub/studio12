@@ -102,16 +102,28 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Классические  брутальные лофты</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam01.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam02.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam03.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam04.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam05.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam06.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam07.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>
@@ -119,16 +131,37 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Просторные уютные студии</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">10</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam1.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam2.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam3.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam4.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam5.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam6.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam7.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam8.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam9.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam10.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>
@@ -136,16 +169,40 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Комфортные двухуровневые лофты</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">11</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam01.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam02.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam03.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam04.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam05.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam06.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam07.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam08.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam09.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam10.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam11.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>
@@ -153,16 +210,37 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Лофты с личным  входоми двориком</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">10</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam02.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam03.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam04.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam05.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam06.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam07.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam08.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam09.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam10.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam11.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>
@@ -170,16 +248,34 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Залитые солнцем мансарды</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">3</span></span></div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">9</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam1.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-2.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam2.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/loft-type-1.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam3.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam4.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam5.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam6.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam7.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam8.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam9.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>
@@ -303,23 +399,29 @@ $APPLICATION->SetTitle("Studio12");
 
           <div class="metro-place">
 
-          	  <?$APPLICATION->IncludeComponent(
-	"bitrix:dw.catalog.index",
-	"mini-slider",
-	array(
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000",
-		"CACHE_TYPE" => "A",
-		"IBLOCK_BINDING" => "element",
-		"IBLOCK_ID" => "5",
-		"LIMIT" => "50",
-		"IBLOCK_TYPE" => "quarters",
-		"COMPONENT_TEMPLATE" => "mini-slider"
-	),
-	false
-);?>
+			  <div class="metro-place__item">
+				  <div class="metro-place__slider">
+					  <div class="metro-place__slider-item">
+						  <a href="/job">
+							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" alt="#">
+							  <span class="metro-place__desc">#Работать в лофте</span>
+						  </a>
+					  </div>
+				  </div>
+				  <div class="wrapper metro-place__text">
+					  <div class="inner">
+						  <div class="about-lofts__row row">
+							  <div class="col-1">
+								  <div class=""><div class="metro-place__title">Все виды лофтов<br>в одном вдохновляющем<br>пространстве!</div></div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
 
-            <div class="metro-place__item"><img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img//metro-loc.png" alt="#"></div>
+
+
+            <div class="metro-place__item"><img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="#"></div>
           </div>
           <div class="about-lofts quarter-page">
             <div class="wrapper">
