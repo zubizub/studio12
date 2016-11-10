@@ -37,7 +37,7 @@ IncludeTemplateLangFile(__FILE__);
     <div class="header__inner">
         <div class="nav">
             <div class="nav__inner">
-                <div class="nav__item nav__item--photos"><span class="nav__item-text">Фотографии лофтов</span>
+                <div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link get-gallery-block" href="#">Фотографии</a> лофтов</span>
                 </div>
                 <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a class="link nav__link queue__act" href="#">Корпус 2-2</a></span></div>
                 <div class="nav__item nav__item--shoowroom"><span class="nav__item-text">Shoowroom: <a
@@ -127,6 +127,282 @@ IncludeTemplateLangFile(__FILE__);
     </div>
     <button class="popup__close"></button>
 </div>
+
+
+<div class="gallery-block">
+    <button class="gallery-block__close"></button>
+    <div class="loft-types">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="loft-types__inner">
+                    <div class="loft-types__content">
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam01.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam02.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam03.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam04.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam05.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam06.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam07.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">10</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam1.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam2.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam3.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam4.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam5.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam6.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam7.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam8.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam9.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/pcam10.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">11</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam01.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam02.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam03.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam04.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam05.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam06.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam07.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam08.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam09.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam10.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/kcam11.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">10</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam02.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam03.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam04.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam05.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam06.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam07.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam08.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam09.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam10.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lcam11.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">9</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam1.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam2.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam3.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam4.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam5.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam6.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam7.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam8.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/zcam9.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">6</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_1.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_2.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_3.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_4.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_5.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_6.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam01.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam02.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam03.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam04.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam05.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam06.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam07.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loft-types__slide">
+                            <div class="loft-types__caption">
+                                <div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">4</span></span></div>
+                            </div>
+                            <div class="loft-types__list">
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam1.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam2.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam3.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                                <div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam4.jpg" alt="#">
+                                    <div class="loft-types__row"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loft-types__desc popup-gallery">
+                        <div class="loft-types__tabs">
+                            <div class="loft-types__tab">Классические  брутальные лофты</div>
+                            <div class="loft-types__tab">Просторные уютные студии</div>
+                            <div class="loft-types__tab">Комфортные двухуровневые лофты</div>
+                            <div class="loft-types__tab">Лофты с личным  входоми двориком</div>
+                            <div class="loft-types__tab">Залитые солнцем мансарды</div>
+                            <div class="loft-types__tab">Лофт-квартал Studio#12</div>
+                            <div class="loft-types__tab">Лофты с личным входом и двориком</div>
+                            <div class="loft-types__tab">Входная группа</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </div>
 <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>

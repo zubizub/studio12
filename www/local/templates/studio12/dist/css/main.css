@@ -2073,16 +2073,17 @@ sub, sup {
   margin: 0 7.625rem;
   position: relative;
 }
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
   .inner {
     margin: 0 -webkit-calc(0px + (100vw - 800px) * 0.305);
     margin: 0 -moz-calc(0px + (100vw - 800px) * 0.305);
     margin: 0 calc(0px + (100vw - 800px) * 0.305);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .inner {
     margin: 0 0px;
+    margin-left: 48px;
   }
 }
 
@@ -2758,6 +2759,10 @@ sub, sup {
 @media screen and (max-width: 1000px) {
   .section--about .section__content {
     margin: 0 7.625rem;
+  }
+
+  .section--main {
+    display: none;
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 800px) and (max-width: 1200px) {
@@ -4823,30 +4828,31 @@ a.btn, a.btn:hover {
   right: 0;
   bottom: 0;
 }
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
   .loft-types__caption {
     left: -webkit-calc(0px + (100vw - 800px) * 0.305);
     left: -moz-calc(0px + (100vw - 800px) * 0.305);
     left: calc(0px + (100vw - 800px) * 0.305);
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .loft-types__caption {
-    left: 0px;
+    left: 35px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1200px) {
-  .loft-types__caption {
-    margin-left: -webkit-calc(18px + (100vw - 320px) * 0.01136);
-    margin-left: -moz-calc(18px + (100vw - 320px) * 0.01136);
-    margin-left: calc(18px + (100vw - 320px) * 0.01136);
-  }
-}
-@media screen and (max-width: 320px) {
-  .loft-types__caption {
-    margin-left: 18px;
-  }
-}
+/*}*/
+/*@media screen and (min-width: 320px) and (max-width: 1200px) {*/
+  /*.loft-types__caption {*/
+    /*margin-left: -webkit-calc(18px + (100vw - 320px) * 0.01136);*/
+    /*margin-left: -moz-calc(18px + (100vw - 320px) * 0.01136);*/
+    /*margin-left: calc(18px + (100vw - 320px) * 0.01136);*/
+  /*}*/
+/*}*/
+/*@media screen and (max-width: 320px) {*/
+  /*.loft-types__caption {*/
+    /*margin-left: 18px;*/
+  /*}*/
+/*}*/
 .loft-types__title {
   font-size: 2.25rem;
   line-height: 1.11;
@@ -6861,4 +6867,119 @@ a.btn, a.btn:hover {
 
 .detail__link {
   display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .metro-place__desc {
+    left: 90px;
+  }
+
+  .loft-types .inner {
+    margin-left: -5px;
+  }
+}
+
+.gallery-block {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  transition: all 0.15s ease-in;
+}
+
+@media screen and (min-width: 1601px) {
+  .gallery-block {
+    padding-left: 300px;
+  }
+}
+
+.sidebar-open   .gallery-block {
+  padding-left: 300px;
+}
+
+.gallery-block .wrapper {
+  padding: 0;
+}
+
+.gallery-block .inner {
+  margin: 0;
+}
+
+.gallery-block .loft-types,
+.gallery-block .inner,
+.gallery-block .loft-types__inner,
+.gallery-block .loft-types__desc,
+.gallery-block .wrapper {
+  height: 100%;
+}
+
+.gallery-block .loft-types__desc {
+  background-color: #ffe500;
+}
+
+.gallery-block .loft-types__tab {
+  color: #000000;
+}
+
+.gallery-block .loft-types__tab + .loft-types__tab {
+  margin-top: 20px;
+}
+
+.gallery-block .loft-types__desc {
+  padding-left: 15px;
+  padding-right: 20px;
+  width: 300px;
+}
+
+.gallery-block .loft-types__tab:before {
+  content: '←';
+}
+
+.gallery-block .loft-types__caption {
+  margin-left: 0;
+  left: 40px;
+}
+
+.loft-types__list .slick-arrow {
+  display: none;
+}
+
+.gallery-block .loft-types__list .slick-arrow {
+  position: absolute;
+  width: 104px;
+  height: 55px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 100;
+  display: block !important;
+}
+
+.gallery-block .loft-types__list .slick-prev {
+  left: 60px;
+  background: url("../img/arrow-left-2.png") no-repeat 0 0;
+}
+
+.gallery-block .loft-types__list .slick-next {
+  right: 360px;
+  background: url("../img/arrow-right-2.png") no-repeat 0 0;
+}
+
+
+.gallery-block .loft-types__inner {
+  margin-left: 0 !important;
+}
+
+.gallery-block__close {
+  position: absolute;
+  right: 300px;
+  top: 0;
+  width: 60px;
+  height: 56px;
+  z-index: 100;
+  background: url("../img/close-btn.png") no-repeat 0 0;
 }

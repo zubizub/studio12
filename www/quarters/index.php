@@ -11,8 +11,7 @@ $APPLICATION->SetTitle("Studio12");
 			<div class="header__inner">
 				<div class="nav nav--light">
 					<div class="nav__inner">
-						<div class="nav__item nav__item--photos">
- <span class="nav__item-text">Фотографии лофтов</span>
+						<div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link get-gallery-block" href="#">Фотографии</a> лофтов</span>
 						</div>
 						<div class="nav__item nav__item--queue">
 							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
@@ -104,6 +103,8 @@ $APPLICATION->SetTitle("Studio12");
 							<div class="loft-types__title">Классические  брутальные лофты</div>
 							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
 						</div>
+						<button class="loft-types__list-prev"></button>
+						<button class="loft-types__list-next"></button>
 						<div class="loft-types__list">
 							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam01.jpg" alt="#">
 								<div class="loft-types__row"></div>

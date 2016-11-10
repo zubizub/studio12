@@ -244,7 +244,9 @@ $(function () {
             var $list = $('.loft-types__list', this), $items = $('.loft-types__item', this), $num = $('.loft-types__page-num', this);
             $list.slick({
                 dots: false,
-                arrows: false,
+                arrows: true,
+                //prevArrow: $('.loft-types__list-prev', this),
+                //nextArrow: $('.loft-types__list-next', this),
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
@@ -412,6 +414,7 @@ $(function () {
     }());
     (function () {
         $('.sidebar').perfectScrollbar();
+        $('.popup-gallery').perfectScrollbar();
     }());
     (function () {
         var $loft = $('.loft');
@@ -487,6 +490,17 @@ $(function () {
            closeClass: 'popup__close'
        });
        return false;
+    });
+
+    $('.get-gallery-block').on('click', function () {
+        $('.gallery-block').fadeIn(150);
+        $(window).trigger("resize");
+        return false;
+    });
+
+    $('.gallery-block__close').on('click', function () {
+        $('.gallery-block').fadeOut(150);
+        return false;
     });
 
     $('.btn-callback-room').on('click', function () {
