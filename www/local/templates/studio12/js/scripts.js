@@ -494,16 +494,15 @@ $(function () {
     });
 
     $('.get-gallery-block').on('click', function () {
-        $('.gallery-block').show(150);
+        $('.gallery-block').show();
         setTimeout(function () {
             $(window).trigger("resize");
-            $('.gal-preload').fadeOut(150);
-        }, 300);
+        }, 10);
         return false;
     });
 
     $('.gallery-block__close').on('click', function () {
-        $('.gallery-block').hide(150);
+        $('.gallery-block').hide();
         return false;
     });
 
