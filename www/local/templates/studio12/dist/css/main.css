@@ -7002,3 +7002,35 @@ a.btn, a.btn:hover {
   z-index: 100;
   top: 0;
 }
+
+@media screen and (max-width: 1000px) {
+
+  .gallery-block .loft-types__desc {
+    width: 100%;
+    height: 20vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .gallery-block__close {
+    right: 0;
+  }
+
+  .gallery-block .loft-types__list .slick-next {
+    right: 60px;
+  }
+
+  .gallery-block .loft-types__content {
+    height: 80vh;
+  }
+
+  .loft-types__tab {
+    max-width: 100%;
+    padding-left: 0;
+    font-size: 1.875rem !important;
+  }
+
+  .loft-types__tab:before {
+    content: none;
+  }
+}
