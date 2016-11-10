@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 ?>
 
-<div id="loft" class="section section--lofts is-colored">
+<div id="loft-table" class="section section--lofts is-colored">
     <div class="box" style="">
         <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"
              style="width: 100%; height: auto">
