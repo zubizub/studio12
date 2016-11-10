@@ -131,6 +131,7 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="gallery-block">
     <button class="gallery-block__close"></button>
+    <div class="gal-preload"></div>
     <div class="loft-types">
         <div class="wrapper">
             <div class="inner">

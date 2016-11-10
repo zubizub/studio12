@@ -226,17 +226,18 @@ $(function () {
             swipe: false,
             touchMove: false,
             responsive: [{
-                    breakpoint: 1100,
+                    breakpoint: 1001,
                     settings: {
                         speed: 150,
                         slidesToShow: 1,
                         vertical: false,
                         verticalSwiping: false,
                         variableWidth: true,
-                        //centerMode: true,
+                        centerMode: true,
                         centerPadding: '0px',
                         swipe: true,
-                        touchMove: true
+                        touchMove: true,
+                        infinite: true
                     }
                 }]
         });
@@ -493,13 +494,16 @@ $(function () {
     });
 
     $('.get-gallery-block').on('click', function () {
-        $('.gallery-block').fadeIn(150);
-        $(window).trigger("resize");
+        $('.gallery-block').show(150);
+        setTimeout(function () {
+            $(window).trigger("resize");
+            $('.gal-preload').fadeOut(150);
+        }, 300);
         return false;
     });
 
     $('.gallery-block__close').on('click', function () {
-        $('.gallery-block').fadeOut(150);
+        $('.gallery-block').hide(150);
         return false;
     });
 

@@ -4750,7 +4750,7 @@ a.btn, a.btn:hover {
     margin-left: calc((100vw - 100% - 19rem) / -2  - 1px);
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .loft-types__inner {
     width: 100vw;
   }
@@ -4769,7 +4769,7 @@ a.btn, a.btn:hover {
 .loft-types__content .slick-track {
   height: 100% !important;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .loft-types__content {
     height: 25rem;
     position: relative;
@@ -4882,7 +4882,7 @@ a.btn, a.btn:hover {
   z-index: 500;
   z-index: 0;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .loft-types__desc {
     float: none;
     width: auto;
@@ -4912,7 +4912,7 @@ a.btn, a.btn:hover {
   -o-transition: 150ms ease;
   -moz-transition: 150ms ease;
   transition: 150ms ease;
-  clear: both;
+  /*clear: both;*/
 }
 .loft-types__tab + .loft-types__tab {
   margin-top: 1.8125rem;
@@ -6819,8 +6819,16 @@ a.btn, a.btn:hover {
   position: fixed;
   top: 80px;
   left: 5px;
+  z-index: 1500;
 }
-
+.sidebar-open .logo-fix {
+  display: none;
+}
+@media screen and (min-width: 1601px)  {
+  .logo-fix {
+    display: none;
+  }
+}
 .metro-place__slider-item {
   position: relative;
 }
@@ -6935,6 +6943,7 @@ a.btn, a.btn:hover {
   width: 300px;
 }
 
+
 .gallery-block .loft-types__tab:before {
   content: '←';
 }
@@ -6969,7 +6978,6 @@ a.btn, a.btn:hover {
   background: url("../img/arrow-right-2.png") no-repeat 0 0;
 }
 
-
 .gallery-block .loft-types__inner {
   margin-left: 0 !important;
 }
@@ -6982,4 +6990,37 @@ a.btn, a.btn:hover {
   height: 56px;
   z-index: 100;
   background: url("../img/close-btn.png") no-repeat 0 0;
+}
+
+.gal-preload {
+  background: url("../img/preloader.gif") no-repeat 50% 50%;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 300px;
+  z-index: 100;
+  top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .gallery-block .loft-types__desc {
+    width: 100%;
+    height: 20vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .gallery-block__close {
+    right: 0;
+  }
+
+  .gallery-block .loft-types__list .slick-next {
+    right: 60px;
+  }
+
+  .gallery-block .loft-types__content {
+    height: 80vh;
+  }
 }
