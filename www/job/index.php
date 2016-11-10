@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="nav nav--light">
 					<div class="nav__inner">
 						<div class="nav__item nav__item--photos">
- <span class="nav__item-text"><a class="link nav__link" href="#">Фотографии</a> лофтов</span>
+ <span class="nav__item-text">Фотографии лофтов</span>
 						</div>
 						<div class="nav__item nav__item--queue">
 							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
@@ -101,10 +101,25 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Лофт-квартал Studio#12</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">1</span></span></div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">6</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_cam08.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_1.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_2.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_3.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_4.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_5.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_6.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>

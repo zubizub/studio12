@@ -6852,3 +6852,17 @@ a.btn, a.btn:hover {
 .sidebar-open .metro-place__desc {
   left: 45px;
 }
+
+.metro-fsz {
+  font-size: -webkit-calc(18px + (100vw - 1200px) * 0.005);
+  font-size: -moz-calc(18px + (100vw - 1200px) * 0.005);
+  font-size: calc(18px + (100vw - 1200px) * 0.005);
+}
+
+.detail__link {
+  display: none !important;
+}
+
+.popup--showroom .popup__inner {
+  padding-bottom: 0 !important;
+}

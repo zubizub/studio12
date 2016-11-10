@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 ?>
 
-<div id="loft-table" class="section section--lofts is-colored">
+<div id="loft" class="section section--lofts is-colored">
     <div class="box" style="">
         <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"
              style="width: 100%; height: auto">
@@ -343,7 +343,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         <div class="loft loft--2-2" data-loft="2-2">
                             <div class="loft__number">2-2</div>
                             <div class="loft-popup loft-popup-ready">
-                                <div class="loft-popup__title">73</div>
+                                <div class="loft-popup__title">72</div>
                                 <div class="loft-popup__desc">Доступно</div>
                             </div>
                         </div>
@@ -556,7 +556,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                                 <div class="metro__icon"></div>
                                 <div class="metro__caption">
                                     <div class="metro__hint">10 мин. от метро:</div>
-                                    <a class="metro__station link btn-map-get" href="#">Марьина Роща</a>
+                                   <span class="nav__item--place-yellow hidden-lg-xl-up metro-fsz">Марьина Роща </span>
                                 </div>
                                 <div class="metro__map">
                                     <div class="metro__loc"><img class="metro__location" src="img/metro-map.png"
@@ -565,7 +565,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             </div>
                         </div>
                         <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br
-                                class="hidden-lg-xl-up"><a class="link btn-map-get" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span>
+                                class="hidden-lg-xl-up">12-й пр. Марьиной Рощи&nbsp;8</span>
                         </div>
                         <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span
                                 class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a

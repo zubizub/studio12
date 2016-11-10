@@ -133,14 +133,15 @@ $APPLICATION->SetTitle("Studio12");
                 <div class="about-bg__item" style="background: url('local/templates/studio12/img/2.jpg') no-repeat 0 0"></div>
                 <div class="about-bg__item" style="background: url('local/templates/studio12/img/3.jpg') no-repeat 0 0"></div>
                 <div class="about-bg__item" style="background: url('local/templates/studio12/img/4.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item" style="background: url('local/templates/studio12/img/5.jpg') no-repeat 0 0"></div>
             </div>
             <div class="section__inner">
                 <div class="section__content">
                     <div class="about">
                         <div class="about__items">
-                            <div class="about__item"><a class="about__link" href="/quarters">Лофт<br>квартал<br><span>Строки описания от 2 до 3 строк для резины может быть 4</span></a>
+                            <div class="about__item"><a class="about__link" href="/quarters">Лофт<br>квартал<br><span>Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</span></a>
                             </div>
-                            <div class="about__item"><a class="about__link" href="/job">Работа<br>в лофте<br><span>Строки описания от 2 до 3 строк для резины может быть 4</span></a>
+                            <div class="about__item"><a class="about__link" href="/job">Работа<br>в лофте<br><span>Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</span></a>
                             </div>
                             <div class="about__item about__desc"><span>Креативный лофт-квартал Studio#12 — <br
                                     class="mobile-br"> это уникальное пространство <br class="mobile-br"> для <a
@@ -233,13 +234,13 @@ $APPLICATION->SetTitle("Studio12");
                 <div class="general__item general__item--quarter">
                     <div class="general__title">Лофт <br> квартал</div>
                     <div class="general__desc">
-                        <div class="general__desc-text">Строки описания от 2 до 3 строк для резины может быть 4</div>
+                        <div class="general__desc-text">Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</div>
                     </div>
                 </div>
                 <div class="general__item general__item--job">
                     <div class="general__title">Работа <br> в лофте</div>
                     <div class="general__desc">
-                        <div class="general__desc-text">Строки описания от 2 до 3 строк для резины может быть 4</div>
+                        <div class="general__desc-text">Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</div>
                     </div>
                 </div>
             </div>

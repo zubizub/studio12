@@ -37,8 +37,7 @@ IncludeTemplateLangFile(__FILE__);
     <div class="header__inner">
         <div class="nav">
             <div class="nav__inner">
-                <div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link"
-                                                                                         href="#">Фотографии</a> лофтов</span>
+                <div class="nav__item nav__item--photos"><span class="nav__item-text">Фотографии лофтов</span>
                 </div>
                 <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a class="link nav__link queue__act" href="#">Корпус 2-2</a></span></div>
                 <div class="nav__item nav__item--shoowroom"><span class="nav__item-text">Shoowroom: <a
@@ -52,8 +51,7 @@ IncludeTemplateLangFile(__FILE__);
     <div class="footer__inner">
         <div class="nav">
             <div class="nav__inner">
-                <div class="nav__item nav__item--place-yellow"><span class="nav__item-text">Москва, СВАО, <br><a
-                        class="link nav__link btn-map-get" href="#">12-й пр. Марьиной Рощи&nbsp;8</a></span></div>
+                <div class="nav__item nav__item--place-yellow"><span class="nav__item-text">Москва, СВАО, <br>12-й пр. Марьиной Рощи&nbsp;8</span></div>
                 <div class="nav__item nav__item--phone-yellow"><span class="nav__item-text">+7 495 780-40-40<span
                         class="hidden-lg-xl-down"> | </span><br><a class="link nav__link btn-callback" href="#">Заказать
                     обратный
@@ -112,69 +110,8 @@ IncludeTemplateLangFile(__FILE__);
                     <div class="form__field">
                         <input class="form__input js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
                     </div>
-                    <div class="form__group form__group--inner">
-                        <div class="form__col">
-                            <div class="form__field form__select-wrap">
-                                <select class="form__select" name="fromClock" data-placeholder="С" required>
-                                    <option value=""></option>
-                                    <option value="0:00">0:00</option>
-                                    <option value="1:00">1:00</option>
-                                    <option value="2:00">2:00</option>
-                                    <option value="3:00">3:00</option>
-                                    <option value="4:00">4:00</option>
-                                    <option value="5:00">5:00</option>
-                                    <option value="6:00">6:00</option>
-                                    <option value="7:00">7:00</option>
-                                    <option value="8:00">8:00</option>
-                                    <option value="9:00">9:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form__col">
-                            <div class="form__field form__select-wrap">
-                                <select class="form__select" name="toClock" data-placeholder="До" required>
-                                    <option value=""></option>
-                                    <option value="0:00">0:00</option>
-                                    <option value="1:00">1:00</option>
-                                    <option value="2:00">2:00</option>
-                                    <option value="3:00">3:00</option>
-                                    <option value="4:00">4:00</option>
-                                    <option value="5:00">5:00</option>
-                                    <option value="6:00">6:00</option>
-                                    <option value="7:00">7:00</option>
-                                    <option value="8:00">8:00</option>
-                                    <option value="9:00">9:00</option>
-                                    <option value="10:00">10:00</option>
-                                    <option value="11:00">11:00</option>
-                                    <option value="12:00">12:00</option>
-                                    <option value="13:00">13:00</option>
-                                    <option value="14:00">14:00</option>
-                                    <option value="15:00">15:00</option>
-                                    <option value="16:00">16:00</option>
-                                    <option value="17:00">17:00</option>
-                                    <option value="18:00">18:00</option>
-                                    <option value="19:00">19:00</option>
-                                    <option value="20:00">20:00</option>
-                                    <option value="21:00">21:00</option>
-                                    <option value="22:00">22:00</option>
-                                    <option value="23:00">23:00</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="form__field">
+                        <input class="form__input" type="email" name="email" placeholder="Введите ваш Email" required>
                     </div>
                 </div>
                 <div class="form__col">

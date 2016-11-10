@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="nav nav--light">
 					<div class="nav__inner">
 						<div class="nav__item nav__item--photos">
- <span class="nav__item-text"><a class="link nav__link" href="#">Фотографии</a> лофтов</span>
+ <span class="nav__item-text">Фотографии лофтов</span>
 						</div>
 						<div class="nav__item nav__item--queue">
 							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
