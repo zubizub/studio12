@@ -7023,4 +7023,14 @@ a.btn, a.btn:hover {
   .gallery-block .loft-types__content {
     height: 80vh;
   }
+
+  .loft-types__tab {
+    max-width: 100%;
+    padding-left: 0;
+    font-size: 1.875rem !important;
+  }
+
+  .loft-types__tab:before {
+    content: none;
+  }
 }

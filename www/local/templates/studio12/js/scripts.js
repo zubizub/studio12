@@ -230,10 +230,11 @@ $(function () {
                     settings: {
                         speed: 150,
                         slidesToShow: 1,
+                        slidesToScroll: 1,
                         vertical: false,
                         verticalSwiping: false,
-                        variableWidth: true,
-                        centerMode: true,
+                        variableWidth: false,
+                        centerMode: false,
                         centerPadding: '0px',
                         swipe: true,
                         touchMove: true,
