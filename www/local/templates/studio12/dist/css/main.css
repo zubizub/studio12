@@ -6825,8 +6825,12 @@ a.btn, a.btn:hover {
   line-height: 1;
   color: #ffe500;
   position: absolute;
-  left: 50px;
+  left: 165px;
   right: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .loft-types__item {
@@ -6843,4 +6847,8 @@ a.btn, a.btn:hover {
   z-index: 100;
   background: rgba(0, 0, 0, 0.2);
   transition: all 0.25s ease-in;
+}
+
+.sidebar-open .metro-place__desc {
+  left: 45px;
 }
