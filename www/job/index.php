@@ -101,28 +101,59 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="loft-types__slide">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">Лофт-квартал Studio#12</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">1</span></span></div>
+						</div>
+						<div class="loft-types__list">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_cam08.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+						</div>
+					</div>
+					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Лофты с личным входом и двориком</div>
 							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
 						</div>
 						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam01.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam01.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam02.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam02.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam03.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam03.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam04.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam04.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam05.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam05.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam06.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam06.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/cam07.jpg" alt="#">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam07.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+						</div>
+					</div>
+					<div class="loft-types__slide">
+						<div class="loft-types__caption">
+							<div class="loft-types__title">Входная группа</div>
+							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">4</span></span></div>
+						</div>
+						<div class="loft-types__list">
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam1.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam2.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam3.jpg" alt="#">
+								<div class="loft-types__row"></div>
+							</div>
+							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam4.jpg" alt="#">
 								<div class="loft-types__row"></div>
 							</div>
 						</div>
@@ -132,6 +163,8 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="loft-types__desc">
 					<div class="loft-types__tabs">
 						<div class="loft-types__tab">Лофт-квартал Studio#12</div>
+						<div class="loft-types__tab">Лофты с личным входом и двориком</div>
+						<div class="loft-types__tab">Входная группа</div>
 					</div><a class="loft-types__act loft-btn" href="#loft-table">
 					<div class="loft-types__label">Супер-маркет лофтов</div><img class="loft-types__icon" src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png" alt="#"></a>
 				</div>
@@ -249,23 +282,28 @@ $APPLICATION->SetTitle("Studio12");
 
           <div class="metro-place">
 
-          	  <?$APPLICATION->IncludeComponent(
-	"bitrix:dw.catalog.index",
-	"mini-slider",
-	array(
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000",
-		"CACHE_TYPE" => "A",
-		"IBLOCK_BINDING" => "element",
-		"IBLOCK_ID" => "5",
-		"LIMIT" => "50",
-		"IBLOCK_TYPE" => "quarters",
-		"COMPONENT_TEMPLATE" => "mini-slider"
-	),
-	false
-);?>
+			  <div class="metro-place__item">
+				  <div class="metro-place__slider">
+					  <div class="metro-place__slider-item">
+						  <a href="/quarters">
+							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Life_1.jpg" alt="#">
+							  <span class="metro-place__desc">#Жить в лофте</span>
+						  </a>
+					  </div>
+				  </div>
+				  <div class="wrapper metro-place__text">
+					  <div class="inner">
+						  <div class="about-lofts__row row">
+							  <div class="col-1">
+								  <div class=""><div class="metro-place__title">Все виды лофтов<br>в одном вдохновляющем<br>пространстве!</div></div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
 
-            <div class="metro-place__item"><img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img//metro-loc.png" alt="#"></div>
+
+			  <div class="metro-place__item"><img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img//metro-loc.png" alt="#"></div>
           </div>
           <div class="about-lofts job-page">
             <div class="wrapper">
