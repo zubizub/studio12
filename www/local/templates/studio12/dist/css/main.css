@@ -6862,7 +6862,3 @@ a.btn, a.btn:hover {
 .detail__link {
   display: none !important;
 }
-
-.popup--showroom .popup__inner {
-  padding-bottom: 0 !important;
-}
