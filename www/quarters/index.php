@@ -383,7 +383,17 @@ $APPLICATION->SetTitle("Studio12");
 	)
 );?>
 </div>
-                  <a class="about-lofts__more" href="#">Презентация Studio#12</a>
+
+    <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "presentation.php"
+	)
+);?>
                   </div>
                   <div class="col-1-3">
                     <div class="about-lofts__subtitle">Месторасположение <br> квартала:</div>
