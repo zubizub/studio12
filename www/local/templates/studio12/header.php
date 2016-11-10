@@ -9,6 +9,7 @@ IncludeTemplateLangFile(__FILE__);
 <head>
        
     <meta charset="utf-8">
+    <meta name="viewport" content="width=1100">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?$APPLICATION->ShowTitle()?></title>
     <meta name="description" content="Studio21">
