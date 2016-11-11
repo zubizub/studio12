@@ -7122,6 +7122,11 @@ a.btn, a.btn:hover {
   background-color: #000000;
 }
 
+.offer-mobile {
+  display: none;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 1000px) {
 
   .gallery-block .loft-types__desc {
@@ -7198,6 +7203,10 @@ a.btn, a.btn:hover {
   .about {
     padding-left: 65px !important;
   }
+
+  .offer-mobile {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7220,5 +7229,9 @@ a.btn, a.btn:hover {
 
   .metro-place__item:first-child {
     display: none;
+  }
+
+  .infographics__text {
+    text-align: left;
   }
 }
