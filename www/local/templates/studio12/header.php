@@ -54,6 +54,12 @@ IncludeTemplateLangFile(__FILE__);
                         <? endif; ?>
                     </li>
                 </ul>
+                <div class="mobile-note">
+                    <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
+                    <div class="mobile-note__phone">+7 495 780-40-40</div>
+                    <a href="#" class="mobile-note__phone-link btn-callback">Обратный звонок</a>
+                    <span class="mobile-note__sr-link btn-callback-room">Showroom: <a href="#">Studio#8</a></span>
+                </div>
                 <div class="note">
                             <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="/job">#РАБОТЫ</a>.</div>
                             <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
