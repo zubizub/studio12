@@ -395,9 +395,9 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             </span>
                                 </div>
                                 <div class="lot__value-3"
-                                     data-lot-value="Этаж"><?=$arItem['PROPS']['STAGE']['VALUE'];?></div>
+                                     data-lot-value="Этаж"><?=$arItem['PROPS']['AREA']['VALUE'];?></div>
                                 <div class="lot__value-4"
-                                     data-lot-value="Площадь, М2"><?=$arItem['PROPS']['AREA']['VALUE'];?></div>
+                                     data-lot-value="Площадь, М2"><?=$arItem['PROPS']['STAGE']['VALUE'];?></div>
                                 <div class="lot__value-5"
                                      data-lot-value="Цена за М2"><?=$arItem['PROPS']['SQUARE_COST']['VALUE'];?></div>
                                 <div class="lot__value-6"
