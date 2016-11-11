@@ -7125,6 +7125,7 @@ a.btn, a.btn:hover {
 .offer-mobile {
   display: none;
   margin-right: 20px;
+  max-width: 400px;
 }
 
 @media screen and (max-width: 1000px) {
