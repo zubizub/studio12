@@ -408,7 +408,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             <? if ($i >= 6) :?>
 
                         </div>
-                        <?endif;$i++;$count++;?>
+                        <?$count++;endif;$i++;?>
                         <?
 	endforeach;
 ?>
