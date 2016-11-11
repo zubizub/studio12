@@ -148,6 +148,9 @@ $APPLICATION->SetTitle("Studio12");
                                     class="link" href="/quarters">#жизни</a>, и <a class="link" href="/job">#работы</a>.</span>
                             </div>
                         </div>
+                        <div class="about-logo">
+                            <img src="/local/templates/studio12/dist/img/logo.png" alt="#S12">
+                        </div>
                         <div class="about__caption infographics">
                             <div class="about__desc">Креативный лофт-квартал Studio#12 — это уникальное пространство для
                                 <a class="link" href="/quarters">#жизни</a>, и <a class="link" href="/job">#работы</a>.

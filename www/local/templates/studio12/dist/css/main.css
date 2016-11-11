@@ -7128,6 +7128,11 @@ a.btn, a.btn:hover {
   max-width: 400px;
 }
 
+.about-logo {
+  margin-bottom: 20px;
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
 
   .gallery-block .loft-types__desc {
@@ -7208,6 +7213,10 @@ a.btn, a.btn:hover {
   .offer-mobile {
     display: block;
   }
+
+  .about-logo {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7234,5 +7243,9 @@ a.btn, a.btn:hover {
 
   .infographics__text {
     text-align: left;
+  }
+
+  .about__item {
+    margin-bottom: 20px;
   }
 }
