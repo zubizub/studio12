@@ -5047,16 +5047,23 @@ a.btn, a.btn:hover {
   -moz-transition: background 0.35s ease-in;
   transition: background 0.35s ease-in;
 }
-@media screen and (max-width: 1000px) {
-  .loft {
-    position: relative;
-    height: 400px;
-    top: auto !important;
-    left: auto !important;
+
+@media screen and (max-width: 767px) {
+  .lofts__list {
+    display: none;
   }
-  .loft:before {
-    content: "";
+  .lofts__scheme {
+    display: none;
   }
+  /*.loft {*/
+    /*position: relative;*/
+    /*height: 400px;*/
+    /*top: auto !important;*/
+    /*left: auto !important;*/
+  /*}*/
+  /*.loft:before {*/
+    /*content: "";*/
+  /*}*/
 }
 .loft__number {
   display: inline-block;
@@ -5078,6 +5085,15 @@ a.btn, a.btn:hover {
   transition: all .15s ease;
 }
 
+@media screen and (max-width: 1000px) {
+  .loft__number {
+    width: 5vw;
+    height: 5vw;
+    line-height: 5vw;
+    font-size: 3vh;
+  }
+}
+
 .loft.active .loft__number {
   background-color: #fff200;
   color: #000000;
@@ -5088,6 +5104,15 @@ a.btn, a.btn:hover {
   height: 90px;
   line-height: 90px;
   font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .loft--2-2 .loft__number {
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+    font-size: 5vh;
+  }
 }
 
 .loft--2-2.active .loft__number {
@@ -5252,6 +5277,21 @@ a.btn, a.btn:hover {
   left: 70%;
 }
 
+@media screen and (max-width: 1000px) {
+  .loft--2-2 {
+    top: 30%;
+  }
+  .loft--2-3 {
+    top: 64%;
+  }
+  .loft--1 {
+    top: 42%;
+  }
+  .loft--3 {
+    top: 4%;
+  }
+}
+
 .lots {
   padding-bottom: 10rem;
   /*background: #343434;*/
@@ -5347,7 +5387,12 @@ a.btn, a.btn:hover {
 }
 @media screen and (max-width: 1000px) {
   .lots-infographics {
-    bottom: 40%;
+    bottom: 7%;
+    /*position: static;*/
+    margin-left: 4.375rem;
+    margin-right: 1.25rem;
+    left: auto;
+    /*margin-bottom: 30px;*/
   }
 }
 .lots-infographics__number {
@@ -5355,9 +5400,26 @@ a.btn, a.btn:hover {
   font-weight: bold;
   line-height: 1;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1000px) {
   .lots-infographics__number {
-    font-size: 500%;
+    font-size: 15vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lots-infographics {
+    position: static;
+    border-bottom: 1px solid #383838;
+    padding-bottom: 0.9375rem;
+    margin-bottom: 0.9375rem;
+  }
+
+  .offers-loft {
+    padding-top: 20px;
+  }
+
+  #loft-table .box {
+    display: none;
   }
 }
 
@@ -6157,7 +6219,11 @@ a.btn, a.btn:hover {
   display: table-cell;
   vertical-align: middle;
   white-space: nowrap;
+  height: 90px;
   background: #535359;
+}
+.popup__cell:first-child {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .popup__cell {
@@ -6214,8 +6280,10 @@ a.btn, a.btn:hover {
 .popup__cell--callback {
   background: #ffe500;
   padding: 0 1.25rem;
-  text-align: center;
+  /*text-align: center;*/
   white-space: nowrap;
+  text-align: left;
+  padding-left: 30px;
 }
 @media screen and (max-width: 767px) {
   .popup__cell--callback {
@@ -7050,6 +7118,10 @@ a.btn, a.btn:hover {
   top: 10px;
 }
 
+.loft-types__content {
+  background-color: #000000;
+}
+
 @media screen and (max-width: 1000px) {
 
   .gallery-block .loft-types__desc {
@@ -7113,11 +7185,40 @@ a.btn, a.btn:hover {
   .loft-types__desc {
     padding-right: 70px;
   }
+
+  .section__content {
+    margin-left: 4px !important;
+  }
+
+  .infographics,
+  .infographics__list {
+    width: auto;
+  }
+
+  .about {
+    padding-left: 65px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
 
   .feature {
+    display: none;
+  }
+
+  .infographics {
+    margin-left: 0;
+  }
+
+  .heading__word {
+    white-space: nowrap;
+  }
+
+  .head {
+    padding-top: 20px;
+  }
+
+  .metro-place__item:first-child {
     display: none;
   }
 }

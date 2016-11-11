@@ -145,12 +145,12 @@ $APPLICATION->SetTitle("Studio12");
                             </div>
                             <div class="about__item about__desc"><span>Креативный лофт-квартал Studio#12 — <br
                                     class="mobile-br"> это уникальное пространство <br class="mobile-br"> для <a
-                                    class="link" href="#">#жизни</a>, и <a class="link" href="#">#работы</a>.</span>
+                                    class="link" href="/quarters">#жизни</a>, и <a class="link" href="/job">#работы</a>.</span>
                             </div>
                         </div>
                         <div class="about__caption infographics">
                             <div class="about__desc">Креативный лофт-квартал Studio#12 — это уникальное пространство для
-                                <a class="link" href="#">#жизни</a>, и <a class="link" href="#">#работы</a>.
+                                <a class="link" href="/quarters">#жизни</a>, и <a class="link" href="/job">#работы</a>.
                             </div>
                         </div>
                         <div class="about__items infographics__list">
@@ -231,18 +231,22 @@ $APPLICATION->SetTitle("Studio12");
         </div>
         <div class="general">
             <div class="general__inner">
-                <div class="general__item general__item--quarter">
-                    <div class="general__title">Лофт <br> квартал</div>
-                    <div class="general__desc">
-                        <div class="general__desc-text">Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</div>
+                <a href="/quarters">
+                    <div class="general__item general__item--quarter">
+                        <div class="general__title">Лофт <br> квартал</div>
+                        <div class="general__desc">
+                            <div class="general__desc-text">Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="general__item general__item--job">
-                    <div class="general__title">Работа <br> в лофте</div>
-                    <div class="general__desc">
-                        <div class="general__desc-text">Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</div>
+                </a>
+                <a href="/job">
+                    <div class="general__item general__item--job">
+                        <div class="general__title">Работа <br> в лофте</div>
+                        <div class="general__desc">
+                            <div class="general__desc-text">Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div><!-- .section--about -->

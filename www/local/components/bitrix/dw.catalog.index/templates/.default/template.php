@@ -343,14 +343,14 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         <div class="loft loft--2-2" data-loft="2-2">
                             <div class="loft__number">2-2</div>
                             <div class="loft-popup loft-popup-ready">
-                                <div class="loft-popup__title">72</div>
+                                <div class="loft-popup__title">76</div>
                                 <div class="loft-popup__desc">Доступно</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="lots-infographics">
-                    <div class="lots-infographics__number">72</div>
+                    <div class="lots-infographics__number">76</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
                 </div>
             </div>
@@ -416,7 +416,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
                     <div class="lots__inner">
                         <div class="lots__inner">
-                            <div class="lots__control"><a class="more-items" href="#">Еще <span><?=$count;?></span></a>
+                            <div class="lots__control"><a class="more-items">Еще <span><?=$count;?></span></a>
                             </div>
                         </div>
                     </div>

@@ -435,8 +435,8 @@ $APPLICATION->SetTitle("Studio12");
             <div class="wrapper">
               <div class="inner">
                 <div class="about-lofts__row row">
-                  <div class="sadf">
-					  <div class="col-1-3">
+                  <div class="col-1-3">
+					  <div class="about-slider-bub">
 						  <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
 							  "bitrix:main.include",
 							  "",
