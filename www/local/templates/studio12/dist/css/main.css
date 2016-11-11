@@ -7003,6 +7003,53 @@ a.btn, a.btn:hover {
   top: 0;
 }
 
+.controls--our .controls__phone {
+  background-image: url("../img/phone-yellow.png");
+}
+
+.controls--our .controls__photos {
+  background-image: url("../img/photos.png");
+}
+
+.copyright {
+  display: none;
+}
+
+.mobile-note {
+  color: #fee333;
+  margin-top: 40px;
+  display: none;
+}
+
+.mobile-note a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.mobile-note__phone {
+  font-size: 30px;
+  color: #fee333;
+  margin: 30px 0;
+}
+
+.mobile-note__phone-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.loft-types-slide-go {
+  display: none;
+  position: absolute;
+  top: 21px;
+  right: 10px;
+  font-size: 50px;
+  z-index: 50;
+}
+
+.gallery-block .loft-types-slide-go {
+  top: 10px;
+}
+
 @media screen and (max-width: 1000px) {
 
   .gallery-block .loft-types__desc {
@@ -7028,9 +7075,49 @@ a.btn, a.btn:hover {
     max-width: 100%;
     padding-left: 0;
     font-size: 1.875rem !important;
+    margin-left: 0;
   }
 
   .loft-types__tab:before {
     content: none;
+  }
+
+  .about-slider-bub {
+    display: none;
+  }
+
+  .logo-fix {
+    display: none;
+  }
+
+  .note {
+    display: none;
+  }
+
+  .mobile-note {
+    display: block;
+  }
+
+  .loft-types__desc {
+    padding-left: 88px;
+  }
+
+  .loft-types__act {
+    left: 88px;
+  }
+
+  .loft-types-slide-go {
+    display: block;
+  }
+
+  .loft-types__desc {
+    padding-right: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .feature {
+    display: none;
   }
 }

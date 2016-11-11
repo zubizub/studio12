@@ -242,6 +242,10 @@ $(function () {
                     }
                 }]
         });
+        $('.loft-types-slide-go').on('click', function () {
+            $('.loft-types__tabs').slick('slickNext');
+            return false;
+        });
         $('.loft-types__slide').each(function () {
             var $list = $('.loft-types__list', this), $items = $('.loft-types__item', this), $num = $('.loft-types__page-num', this);
             $list.slick({

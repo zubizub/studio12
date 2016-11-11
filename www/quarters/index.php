@@ -283,6 +283,7 @@ $APPLICATION->SetTitle("Studio12");
 					</div>
 				</div>
 				<div class="loft-types__desc">
+					<a href="#" class="loft-types-slide-go">→</a>
 					<div class="loft-types__tabs">
 						<div class="loft-types__tab">Классические  брутальные лофты</div>
 						<div class="loft-types__tab">Просторные уютные студии</div>
@@ -434,41 +435,43 @@ $APPLICATION->SetTitle("Studio12");
             <div class="wrapper">
               <div class="inner">
                 <div class="about-lofts__row row">
-                  <div class="col-1-3">
-                    <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "about-loft-title.php"
-	)
-);?>
-                    </div><div class="about-lofts__demo">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "about-loft-img.php"
-	)
-);?></div>
+                  <div class="sadf">
+					  <div class="col-1-3">
+						  <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
+							  "bitrix:main.include",
+							  "",
+							  Array(
+							  "AREA_FILE_SHOW" => "file",
+							  "AREA_FILE_SUFFIX" => "inc",
+							  "EDIT_TEMPLATE" => "",
+							  "PATH" => "about-loft-title.php"
+							  )
+							  );?>
+						  </div><div class="about-lofts__demo">
+						  <?$APPLICATION->IncludeComponent(
+						  "bitrix:main.include",
+						  "",
+						  Array(
+						  "AREA_FILE_SHOW" => "file",
+						  "AREA_FILE_SUFFIX" => "inc",
+						  "EDIT_TEMPLATE" => "",
+						  "PATH" => "about-loft-img.php"
+						  )
+						  );?></div>
 
-                    <div class="about-lofts__access">
-                    	<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "about-loft-desc.php"
-	)
-);?></div>
-                  </div>
+						  <div class="about-lofts__access">
+							  <?$APPLICATION->IncludeComponent(
+							  "bitrix:main.include",
+							  "",
+							  Array(
+							  "AREA_FILE_SHOW" => "file",
+							  "AREA_FILE_SUFFIX" => "inc",
+							  "EDIT_TEMPLATE" => "",
+							  "PATH" => "about-loft-desc.php"
+							  )
+							  );?></div>
+					  </div>
+				  </div>
                   <div class="col-1-3">
                     <div class="about-lofts__subtitle">
                     	<?$APPLICATION->IncludeComponent(

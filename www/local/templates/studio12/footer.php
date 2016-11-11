@@ -6,13 +6,18 @@ IncludeTemplateLangFile(__FILE__);
 </div></div></div>
 
 <div class="logo-fix"></div>
+
+<?if ($APPLICATION->GetCurPage()== '/'): ?>
 <div class="controls">
-    <a class="controls__photos" href="#"></a>
-    <a class="controls__queue" href="#"></a>
-    <a class="controls__shoowroom" href="#"></a>
-    <a class="controls__phone" href="#"></a>
-    <a class="controls__place" href="#"></a>
-    <a class="controls__metro-nav" href="#"></a>
+<?else:?>
+<div class="controls controls--our">
+<? endif; ?>
+    <a class="controls__phone btn-callback" href="#"></a>
+    <a class="controls__photos get-gallery-block" href="#"></a>
+    <!--<a class="controls__queue" href="#"></a>-->
+    <!--<a class="controls__shoowroom" href="#"></a>-->
+    <!--<a class="controls__place" href="#"></a>-->
+    <!--<a class="controls__metro-nav" href="#"></a>-->
 </div>
 
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
@@ -386,6 +391,7 @@ IncludeTemplateLangFile(__FILE__);
                         </div>
                     </div>
                     <div class="loft-types__desc popup-gallery">
+                        <a href="#" class="loft-types-slide-go">→</a>
                         <div class="loft-types__tabs">
                             <div class="loft-types__tab">Классические  брутальные лофты</div>
                             <div class="loft-types__tab">Просторные уютные студии</div>
