@@ -237,7 +237,7 @@
 				Комментарий: $output[comments].";
 
 				//mail("nobody@example.com", $subject, $text, "From: webmaster@$SERVER_NAME", "-fwebmaster@$SERVER_NAME");
-				mail("zubizubwork@gmail.com, sergokorovets@gmail.com", $subject, $text, $headers);
+				mail("zubizubwork@gmail.com, sergokorovets@gmail.com, r.antonovskiy@kr-pro.ru", $subject, $text, $headers);
 				
 
 				?>
@@ -281,7 +281,7 @@
 
 
 				//mail("nobody@example.com", $subject, $text, "From: webmaster@$SERVER_NAME", "-fwebmaster@$SERVER_NAME");
-				mail("zubizubwork@gmail.com, sergokorovets@gmail.com", $subject, $text, $headers);
+				mail("zubizubwork@gmail.com, sergokorovets@gmail.com, r.antonovskiy@kr-pro.ru", $subject, $text, $headers);
 				
 
 				?>
