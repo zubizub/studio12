@@ -225,11 +225,11 @@
 				print_r($output);
 				//$output[]
 
-				$subject = "Перезвонить. S#12: $output[lot]";
+				$subject = "Обратный звонок. S#12: $output[lot]";
 				$headers= "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type: text/html; charset=utf-8\r\n";
 
-				$text = "Обратный звонок.<br/>
+				$text = "Перезвонить.<br/>
 				Studio#12: $output[lot]<br/>
 				Имя: $output[name]<br/>
 				Телефон:$output[phone]<br/>
