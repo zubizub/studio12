@@ -7138,6 +7138,14 @@ a.btn, a.btn:hover {
   display: none;
 }
 
+.loft-types .wrapper {
+  padding-left: 0 !important;
+}
+
+.loft-types .inner {
+  margin-left: 0 !important;
+}
+
 @media screen and (max-width: 1000px) {
 
   .gallery-block .loft-types__desc {
