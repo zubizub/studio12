@@ -22,7 +22,7 @@ $this->setFrameMode(true);?>
       </div>
       <div class="infograph">
         <div class="item">
-          <h4><span class="num"><?=$arResult['PROPERTIES']['AREA']['VALUE'];?></span> м<sup>2</sup></h4>
+          <h4><span class="num"><?=$arResult['PROPERTIES']['STAGE']['VALUE'];?></span> м<sup>2</sup></h4>
           <p class="text">Площадь</p>
         </div>
         <div class="item">
@@ -35,7 +35,7 @@ $this->setFrameMode(true);?>
         </div>
         
         <div class="item">
-          <h4><span class="num"><?=$arResult['PROPERTIES']['STAGE']['VALUE'];?></span></h4>
+          <h4><span class="num"><?=$arResult['PROPERTIES']['AREA']['VALUE'];?></span></h4>
           <p class="text">Этаж</p>
         </div>
       </div>
