@@ -753,6 +753,11 @@ $(function () {
                     //}
                 }
             });
+
+            //var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            //if( isMobile ) {
+            //    $.fn.fullpage.destroy('all');
+            //}
             //$(window).resize(function () {
             //    var height = $('body').innerHeight();
             //    var width = $('body').innerWidth();
