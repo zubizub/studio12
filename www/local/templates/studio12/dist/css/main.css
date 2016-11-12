@@ -2673,6 +2673,9 @@ sub, sup {
     padding: 1.875rem 0;
   }
 }
+.section {
+  position: relative;
+}
 .section .fp-scroller {
   overflow: hidden !important;
 }
@@ -7181,11 +7184,6 @@ a.btn, a.btn:hover {
 
   .about-logo {
     display: block;
-  }
-
-  html {
-    overflow-y: scroll !important; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch !important;
   }
 }
 
