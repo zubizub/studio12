@@ -521,6 +521,10 @@ $(function () {
         return false;
     });
 
+    $('[data-loft]').on('click', function () {
+        return false;
+    });
+
     setTimeout(function () {
         $('.line-house').fadeIn(1000);
     }, 2400);    //10000 = 10 секунд

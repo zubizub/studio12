@@ -14,7 +14,8 @@ $APPLICATION->SetTitle("Studio12");
 							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
 						</div>
 						<div class="nav__item nav__item--shoowroom">
- <span class="nav__item-text">Shoowroom: <a class="link nav__link btn-callback-room" href="#">Studio#8</a></span>
+							<span class="nav__item-text">Shoowroom: Studio#8</span>
+							<!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
 						</div>
 					</div>
 				</div>

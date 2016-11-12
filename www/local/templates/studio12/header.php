@@ -9,7 +9,7 @@ IncludeTemplateLangFile(__FILE__);
 <head>
        
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?$APPLICATION->ShowTitle()?></title>
     <meta name="description" content="Studio21">
@@ -62,7 +62,7 @@ IncludeTemplateLangFile(__FILE__);
                 </div>
                 <div class="note">
                             <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="/job">#РАБОТЫ</a>.</div>
-                            <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба <br> <a class="link yellow" href="#">на карте Москвы.</a></div>
+                            <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба.</div>
                         </div>
                     </div>
                     <div class="sidebar__footer">

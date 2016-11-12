@@ -68,60 +68,6 @@ $APPLICATION->SetTitle("Studio12");
 										</g>
 									</svg>
                 </div>
-                <div class="footer footer_mobile">
-                    <div class="footer__inner">
-                        <div class="footer__main">
-                            <div class="footer__bar">
-                                <div class="footer__content">
-                                    <div class="footer__lead">
-                                        <div class="footer__cell">
-                                            <div class="metro">
-                                                <div class="metro__caption">
-                                                    <div class="metro__icon"></div>
-                                                    <div class="metro__hint">10 мин. от метро:</div>
-                                                    <a class="metro__station link" href="#">Марьина Роща</a>
-                                                </div>
-                                                <div class="metro__map">
-                                                    <div class="metro__loc"><img class="metro__location"
-                                                                                 src="img/metro-map.png" alt="#"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer__info">
-                                        <div class="footer__cell">Москва, СВАО, <br><a class="link" href="#">12-й пр.
-                                            Марьиной Рощи&nbsp;8</a></div>
-                                    </div>
-                                    <div class="footer__info">
-                                        <div class="footer__cell">+7 495 780-40-40<span
-                                                class="hidden-lg-xl-down"> | </span><br><a class="link" href="#">Заказать
-                                            обратный звонок</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer__side">
-                            <div class="offer">
-                                <div class="offer__title">
-                                    <span class="offer__title-desktop">Супер-маркет лофтов</span><span
-                                        class="offer__title-mobile">Креативный <br>лофт-квартал</span>
-
-                                    <div class="bubble">
-                                        <div class="bubble__label">Акция</div>
-                                        <div class="bubble__value">-10%</div>
-                                        <div class="bubble__explain">от цены <br> лофта</div>
-                                        <div class="bubble__pointer"></div>
-                                    </div>
-                                </div>
-                                <a class="offer__act" href="#">
-                                    <div class="offer__label offer__label--desktop">Выбрать лофт</div>
-                                    <div class="offer__label offer__label--mobile">Супер-маркет лофтов</div>
-                                    <img class="offer__img" src="img/intro-offer.png" alt="#">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div><!-- .section--main -->
@@ -173,7 +119,7 @@ $APPLICATION->SetTitle("Studio12");
                                 </div>
                             </div>
                         </div>
-                        <a class="offer__act offer-mobile" href="#">
+                        <a class="offer__act offer-mobile loft-btn" href="#loft-table">
                             <div class="offer__label">Супер-маркет лофтов
                             </div>
                             <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#">
