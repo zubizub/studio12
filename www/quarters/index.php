@@ -2,9 +2,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
-<button class="nav-toggle" type="button">
-    <div class="nav-toggle__bar nav-toggle__bar_test"></div>
-</button>
   <div class="wrapper quarter-page">
 	<div class="inner">
 		<div class="header header_stabled">

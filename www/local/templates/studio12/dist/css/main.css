@@ -3818,20 +3818,17 @@ a.btn, a.btn:hover {
 }
 @media screen and (max-width: 1899px) {
   .controls {
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: -o-transform 0.3s ease;
-    -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
-    -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease, all 0.3s ease;
+    -o-transition: all 0.3s ease, all 0.3s ease;
+    transition: all 0.3s ease;
+    transition: all 0.3s ease, all 0.3s ease, all 0.3s ease, all 0.3s ease;
   }
   .sidebar-open .controls {
-    -webkit-transform: translateX(18.75rem);
-    -moz-transform: translateX(18.75rem);
-    -ms-transform: translateX(18.75rem);
-    -o-transform: translateX(18.75rem);
-    transform: translateX(18.75rem);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @media screen and (min-width: 1601px) {

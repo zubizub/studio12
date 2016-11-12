@@ -502,6 +502,7 @@ $(function () {
         $('.gallery-block').show();
         $(".loft-types__content").slick('setPosition');
         $(".loft-types__list").slick('setPosition');
+        $(".loft-types__tabs").slick('setPosition');
         setTimeout(function () {
             $(window).trigger("resize");
         }, 10);
