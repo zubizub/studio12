@@ -3,9 +3,9 @@ define("BX_USE_MYSQLI", true);
 define("DBPersistent", false);
 $DBType = "mysql";
 $DBHost = "localhost";
-$DBLogin = "root";
-$DBPassword = "";
-$DBName = "studio12";
+$DBLogin = "loftstudio12-ru";
+$DBPassword = "mX9XiRik7879";
+$DBName = "loftstudio12-ru";
 $DBDebug = false;
 $DBDebugToFile = false;
 

@@ -88,3 +88,9 @@
 2016-11-12 19:14:09 -  - exec CUpdateClientPartner::GetHTTPPage
 2016-11-12 19:14:09 -  - TIME GetUpdatesList(request) 0.285 sec
 2016-11-12 19:14:09 -  - exec CUpdateClientPartner::ParseServerData
+2016-11-12 21:08:42 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 21:08:42 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 21:08:42 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=loftstudio12.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=E&CLIENT_PHPVER=5.5.9-1ubuntu4.14&NGINX=Y&dbv=5.5.46&instm=main%2C16.5.6%2CN%3Biblock%2C16.5.6%2CN%3Bperfmon%2C16.5.0%2CN%3Bbitrixcloud%2C16.0.1%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C16.5.5%2CN%3Bclouds%2C16.5.2%2CN%3Bmobileapp%2C16.0.8%2CN%3Bsubscribe%2C16.5.0%2CN%3Bforum%2C16.5.3%2CN%3Bsearch%2C16.5.0%2CN%3Bsecurity%2C16.5.0%2CN%3Bbitrix.sitepersonal%2C15.0.0%2CN%3Bseo%2C16.0.3%2CN%3Bphotogallery%2C16.0.1%2CN%3Btranslate%2C14.5.0%2CN%3Bsocialservices%2C16.5.5%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bblog%2C16.5.6%2CN%3Bbitrix.siteinfoportal%2C15.0.0%2CN%3Bvote%2C15.5.0%2CN%3Bscale%2C16.5.0%2CN%3Bhighloadblock%2C16.5.0%2CN%3Bform%2C15.0.2%2CN&reqm=bitrix.sitepersonal%2Cbitrix.sitecorporate%2Cbitrix.siteinfoportal&SUPD_SRS=RU&SUPD_CMP=N
+2016-11-12 21:08:42 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-11-12 21:08:48 -  - TIME GetUpdatesList(request) 5.305 sec
+2016-11-12 21:08:48 -  - exec CUpdateClientPartner::ParseServerData

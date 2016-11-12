@@ -45,9 +45,9 @@ return array (
       array (
         'className' => '\\Bitrix\\Main\\DB\\MysqliConnection',
         'host' => 'localhost',
-        'database' => 'studio12',
-        'login' => 'root',
-        'password' => '',
+        'database' => 'loftstudio12-ru',
+        'login' => 'loftstudio12-ru',
+        'password' => 'mX9XiRik7879',
         'options' => 2,
       ),
     ),
