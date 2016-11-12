@@ -3818,6 +3818,7 @@ a.btn, a.btn:hover {
   -o-transition-property: transform, left, top, -o-transform !important;
   transition-property: transform, left, top !important;
   transition-property: transform, left, top, -webkit-transform, -moz-transform, -o-transform !important;
+  z-index: 499;
 }
 @media screen and (max-width: 1899px) {
   .controls {
