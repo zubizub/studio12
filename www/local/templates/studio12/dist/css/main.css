@@ -7182,6 +7182,11 @@ a.btn, a.btn:hover {
   .about-logo {
     display: block;
   }
+
+  html {
+    overflow-y: scroll !important; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
