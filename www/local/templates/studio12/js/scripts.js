@@ -500,6 +500,9 @@ $(function () {
 
     $('.get-gallery-block').on('click', function () {
         $('.gallery-block').show();
+        $(".loft-types__content").slick('setPosition');
+        $(".loft-types__list").slick('setPosition');
+        $(".loft-types__tabs").slick('setPosition');
         setTimeout(function () {
             $(window).trigger("resize");
         }, 10);
@@ -638,7 +641,7 @@ $(function () {
                 setTimeout(function () {
                     $('.house4').fadeIn(500);
                 }, 500);    //10000 = 10 секунд
-                $('.lots-infographics__number').animateNumber({ number: 72 });
+                $('.lots-infographics__number').animateNumber({ number: 76 });
                 return false;
             });
             $('.fullpage').fullpage({
@@ -722,7 +725,7 @@ $(function () {
                         setTimeout(function () {
                             //var offers = $('.ajaxLotItem ').length;
 
-                            $('.lots-infographics__number').animateNumber({ number: 72 });
+                            $('.lots-infographics__number').animateNumber({ number: 76 });
                         }, 500);
                     } else {
                         $('.lots-infographics__number').animateNumber({ number: 0 });

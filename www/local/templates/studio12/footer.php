@@ -8,23 +8,6 @@ IncludeTemplateLangFile(__FILE__);
 <div class="logo-fix"></div>
 
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
-<div class="controls">
-<?else:?>
-<div class="controls controls--our">
-<? endif; ?>
-    <a class="controls__phone btn-callback" href="#"></a>
-    <a class="controls__photos get-gallery-block" href="#"></a>
-    <!--<a class="controls__queue" href="#"></a>-->
-    <!--<a class="controls__shoowroom" href="#"></a>-->
-    <!--<a class="controls__place" href="#"></a>-->
-    <!--<a class="controls__metro-nav" href="#"></a>-->
-</div>
-
-<?if ($APPLICATION->GetCurPage()== '/'): ?>
-<button class="nav-toggle" type="button">
-    <div class="nav-toggle__bar"></div>
-</button>
-
 <div class="mouse">
     <div class="mouse__item">
         <img style="margin-bottom: 9px;" src="<?=SITE_TEMPLATE_PATH?>/dist/img/scrollme.png" alt=""/><br/>
@@ -409,8 +392,29 @@ IncludeTemplateLangFile(__FILE__);
     </div>
 </div>
 
-
 </div>
+
+<button class="nav-toggle" type="button">
+    <?if ($APPLICATION->GetCurPage()== '/'): ?>
+    <div class="nav-toggle__bar"></div>
+    <?else:?>
+    <div class="nav-toggle__bar nav-toggle__bar_test"></div>
+    <? endif; ?>
+</button>
+
+<?if ($APPLICATION->GetCurPage()== '/'): ?>
+<div class="controls">
+<?else:?>
+<div class="controls controls--our">
+    <? endif; ?>
+    <a class="controls__phone btn-callback" href="#"></a>
+    <a class="controls__photos get-gallery-block" href="#"></a>
+    <!--<a class="controls__queue" href="#"></a>-->
+    <!--<a class="controls__shoowroom" href="#"></a>-->
+    <!--<a class="controls__place" href="#"></a>-->
+    <!--<a class="controls__metro-nav" href="#"></a>-->
+</div>
+
 <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.backstretch.min.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
