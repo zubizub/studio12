@@ -395,7 +395,7 @@ $APPLICATION->SetTitle("Studio12");
                   </div>
                   <div class="col-1-3">
                     <div class="about-lofts__subtitle">Месторасположение <br> квартала:</div>
-                    <div class="about-lofts__p">Москва, СВАО, <br><a class="link yellow" href="#">12-й пр. Марьиной Рощи 8 <br></a><small>10 мин. от метро “Марьина Роща”</small></div>
+                    <div class="about-lofts__p">Москва, СВАО, <br>12-й пр. Марьиной Рощи 8 <br><small>10 мин. от метро “Марьина Роща”</small></div>
                     <div class="about-lofts__p">
                       <div class="about-lofts__pos">Комплекс апартаментов «Studio 12»  находится вблизи:</div>
                       <div class="about-lofts__in">→  1,5 км от ТТК</div>

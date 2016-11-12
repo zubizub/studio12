@@ -152,8 +152,8 @@ $APPLICATION->SetTitle("Studio12");
                             <img src="/local/templates/studio12/dist/img/logo.png" alt="#S12">
                         </div>
                         <div class="about__caption infographics">
-                            <div class="about__desc">Креативный лофт-квартал Studio#12 — это уникальное пространство для
-                                <a class="link" href="/quarters">#жизни</a>, и <a class="link" href="/job">#работы</a>.
+                            <div class="about__desc">Креативный лофт-квартал Studio#12 — <br>это уникальное пространство <br>для
+                                <a class="link" href="/quarters">#жизни</a>,<br> и <a class="link" href="/job">#работы</a>.
                             </div>
                         </div>
                         <div class="about__items infographics__list">

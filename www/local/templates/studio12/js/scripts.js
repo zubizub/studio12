@@ -533,10 +533,15 @@ $(function () {
         return false;
     });
 
-    var isMobile = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if( isMobile ) {
         $('.section--slogan').add('.section--start').add('.section--intro').add('.slogan-page').remove().css('display', 'none');
-
+        $('.lots-infographics__number').animateNumber({ number: 76 });
+        $('.number72').animateNumber({ number: 72 });
+        $('.number142').animateNumber({ number: 142 });
+        $('.number40').animateNumber({ number: 40 });
+        $('.number300').animateNumber({ number: 300 });
+        $('.number6').animateNumber({ number: 8 });
         $.fn.fullpage.destroy('all');
     }
 
