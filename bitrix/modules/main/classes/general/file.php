@@ -126,7 +126,7 @@ class CAllFile
 		return "";
 	}
 
-	public static function SaveFile($arFile, $strSavePath, $bForceMD5=false, $bSkipExt=false)
+	public static function SaveFile($arFile, $strSavePath, $bForceMD5=false, $bSkipExt=false, $dirAdd='')
 	{
 		$strFileName = GetFileName($arFile["name"]);	/* filename.gif */
 
@@ -185,7 +185,7 @@ class CAllFile
 		$bExternalStorage = false;
 		foreach(GetModuleEvents("main", "OnFileSave", true) as $arEvent)
 		{
-			if(ExecuteModuleEventEx($arEvent, array(&$arFile, $strFileName, $strSavePath, $bForceMD5, $bSkipExt)))
+			if(ExecuteModuleEventEx($arEvent, array(&$arFile, $strFileName, $strSavePath, $bForceMD5, $bSkipExt, $dirAdd)))
 			{
 				$bExternalStorage = true;
 				break;
@@ -198,9 +198,9 @@ class CAllFile
 			$io = CBXVirtualIo::GetInstance();
 			if($bForceMD5 != true && COption::GetOptionString("main", "save_original_file_name", "N")=="Y")
 			{
-				$dir_add = '';
+				$dir_add = $dirAdd;
 				$i=0;
-				while(true)
+				while(true && empty($dir_add))
 				{
 					$dir_add = substr(md5(uniqid("", true)), 0, 3);
 					if(!$io->FileExists($_SERVER["DOCUMENT_ROOT"]."/".$upload_dir."/".$strSavePath."/".$dir_add."/".$strFileName))
@@ -2099,7 +2099,7 @@ function ImgShw(ID, width, height, alt)
 		if (class_exists("imagick") && function_exists('memory_get_usage'))
 		{
 			//When memory limit reached we'll try to use ImageMagic
-			$memoryNeeded = $arSourceFileSizeTmp[0] * $arSourceFileSizeTmp[1] * 4 * 2;
+			$memoryNeeded = $arSourceFileSizeTmp[0] * $arSourceFileSizeTmp[1] * 4 * 3;
 			$memoryLimit = CUtil::Unformat(ini_get('memory_limit'));
 			if ((memory_get_usage() + $memoryNeeded) > $memoryLimit)
 			{

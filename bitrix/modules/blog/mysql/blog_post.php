@@ -170,11 +170,11 @@ class CBlogPost extends CAllBlogPost
 							if($arUser = $dbUser->Fetch())
 							{
 								$arTmpUser = array(
-										"NAME" => $arUser["NAME"],
-										"LAST_NAME" => $arUser["LAST_NAME"],
-										"SECOND_NAME" => $arUser["SECOND_NAME"],
-										"LOGIN" => $arUser["LOGIN"],
-									);
+									"NAME" => $arUser["NAME"],
+									"LAST_NAME" => $arUser["LAST_NAME"],
+									"SECOND_NAME" => $arUser["SECOND_NAME"],
+									"LOGIN" => $arUser["LOGIN"],
+								);
 								$authorName = CUser::FormatName(CSite::GetNameFormat(), $arTmpUser, false, false);
 								if(strlen($authorName) > 0)
 									$searchContent .= "\r\n".$authorName;
@@ -247,7 +247,7 @@ class CBlogPost extends CAllBlogPost
 
 	public static function Update($ID, $arFields, $bSearchIndex = true)
 	{
-		global $DB, $USER_FIELD_MANAGER;
+		global $DB, $USER_FIELD_MANAGER, $CACHE_MANAGER;
 
 		$ID = IntVal($ID);
 		if(strlen($arFields["PATH"]) > 0)
@@ -462,8 +462,8 @@ class CBlogPost extends CAllBlogPost
 						"PARAM2" => $arNewPost["BLOG_ID"],
 						"PARAM3" => $arNewPost["ID"],
 						"PERMISSIONS" => array(2),
-						"TITLE" => $arNewPost["TITLE"],
-						"BODY" => $searchContent,
+						"TITLE" => CSearch::KillTags($arNewPost["MICRO"] == "Y" ? $arNewPost["TITLE"] : htmlspecialcharsEx($arNewPost["TITLE"])),
+						"BODY" => CSearch::KillTags($searchContent),
 						"TAGS" => $tag,
 						"USER_ID" => $arNewPost["AUTHOR_ID"],
 						"ENTITY_TYPE_ID" => "BLOG_POST",
@@ -527,7 +527,7 @@ class CBlogPost extends CAllBlogPost
 							"BLOG_ID" => $arBlog["ID"],
 							"POST_ID" => $ID,
 							"SITE_ID" => $arGroup["SITE_ID"],
-							"PATH" => $arPostSite[$arGroup["SITE_ID"]]."?commentId=#comment_id###comment_id#",
+							"PATH" => $arPostSite[$arGroup["SITE_ID"]]."?commentId=#comment_id##com#comment_id#",
 							"BLOG_URL" => $arBlog["URL"],
 							"OWNER_ID" => $arBlog["OWNER_ID"],
 							"SOCNET_GROUP_ID" => $arBlog["SOCNET_GROUP_ID"],
@@ -543,7 +543,7 @@ class CBlogPost extends CAllBlogPost
 		BXClearCache(true, '/blog/socnet_post/gen/'.intval($ID / 100)."/".$ID);
 		if(defined("BX_COMP_MANAGED_CACHE"))
 		{
-			$GLOBALS["CACHE_MANAGER"]->ClearByTag("blog_post_".$ID);
+			$CACHE_MANAGER->ClearByTag("blog_post_".$ID);
 		}
 
 		return $ID;

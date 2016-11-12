@@ -568,6 +568,15 @@ if (defined('B_ADMIN_SUBELEMENTS_LIST') && true === B_ADMIN_SUBELEMENTS_LIST)
 				}
 				unset($arCatalogGroupList);
 			}
+
+			if ($intSubPropValue > 0)
+			{
+				$productIblock = CIBlockElement::GetIBlockByID($intSubPropValue);
+				$ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($productIblock, $intSubPropValue);
+				$ipropValues->clearValues();
+				\Bitrix\Iblock\PropertyIndex\Manager::updateElementIndex($productIblock, $intSubPropValue);
+				unset($productIblock);
+			}
 		}
 	}
 
@@ -2462,7 +2471,7 @@ function ShowSkuGenerator(id)
 	PostParams.sessid = BX.bitrix_sessid();
 
 	(new BX.CAdminDialog({
-		'content_url': '/bitrix/admin/iblock_subelement_generator.php?subIBlockId=<? echo $intSubIBlockID; ?>&subPropValue=<? echo $intSubPropValue; ?>&subTmpId=<? echo $strSubTMP_ID; ?>&iBlockId=<? echo $arSubCatalog['PRODUCT_IBLOCK_ID']; ?>',
+		'content_url': '/bitrix/tools/catalog/iblock_subelement_generator.php?subIBlockId=<? echo $intSubIBlockID; ?>&subPropValue=<? echo $intSubPropValue; ?>&subTmpId=<? echo $strSubTMP_ID; ?>&iBlockId=<? echo $arSubCatalog['PRODUCT_IBLOCK_ID']; ?>',
 		'content_post': PostParams,
 		'draggable': true,
 		'resizable': true,
@@ -2478,7 +2487,9 @@ function ShowSkuGenerator(id)
 					this.disableUntilError();
 					this.parentWindow.Submit();
 				}
-			}, BX.CAdminDialog.btnCancel]
+			},
+			BX.CAdminDialog.btnCancel
+		]
 	})).Show();
 	}
 }

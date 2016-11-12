@@ -847,6 +847,7 @@ if($lAdmin->EditAction())
 
 				$ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($IBLOCK_ID, $elID);
 				$ipropValues->clearValues();
+				\Bitrix\Iblock\PropertyIndex\Manager::updateElementIndex($IBLOCK_ID, $elID);
 			}
 			unset($arCatalogGroupList);
 		}
@@ -1812,10 +1813,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	{
 		$arViewHTML = array();
 		$arEditHTML = array();
-		if(strlen($aProp["USER_TYPE"])>0)
-			$arUserType = CIBlockProperty::GetUserType($aProp["USER_TYPE"]);
-		else
-			$arUserType = array();
+		$arUserType = (strlen($aProp["USER_TYPE"])>0 ? CIBlockProperty::GetUserType($aProp["USER_TYPE"]) : array());
 
 		$last_property_id = false;
 		foreach($arProperties[$aProp["ID"]] as $prop_id => $prop)
@@ -2393,9 +2391,9 @@ foreach($arRows as $f_ID => $row)
 	/** @var CAdminListRow $row */
 
 	if(array_key_exists("PREVIEW_TEXT", $arSelectedFieldsMap))
-		$row->AddViewField("PREVIEW_TEXT", ($row->arRes["PREVIEW_TEXT_TYPE"]=="text" ? htmlspecialcharsex($row->arRes["PREVIEW_TEXT"]) : HTMLToTxt($row->arRes["PREVIEW_TEXT"])));
+		$row->AddViewField("PREVIEW_TEXT", ($row->arRes["PREVIEW_TEXT_TYPE"]=="text" ? htmlspecialcharsEx($row->arRes["PREVIEW_TEXT"]) : HTMLToTxt($row->arRes["PREVIEW_TEXT"])));
 	if(array_key_exists("DETAIL_TEXT", $arSelectedFieldsMap))
-		$row->AddViewField("DETAIL_TEXT", ($row->arRes["DETAIL_TEXT_TYPE"]=="text" ? htmlspecialcharsex($row->arRes["DETAIL_TEXT"]) : HTMLToTxt($row->arRes["DETAIL_TEXT"])));
+		$row->AddViewField("DETAIL_TEXT", ($row->arRes["DETAIL_TEXT_TYPE"]=="text" ? htmlspecialcharsEx($row->arRes["DETAIL_TEXT"]) : HTMLToTxt($row->arRes["DETAIL_TEXT"])));
 
 	if(isset($arElementOps[$f_ID]) && isset($arElementOps[$f_ID]["element_edit"]))
 	{
@@ -2421,13 +2419,13 @@ foreach($arRows as $f_ID => $row)
 		$row->AddCheckField("WF_NEW", false);
 		$row->AddCheckField("ACTIVE");
 		$row->AddInputField("NAME", array('size'=>'35'));
-		$row->AddViewField("NAME", '<a href="'.$row->arRes["edit_url"].'" title="'.GetMessage("IBEL_A_EDIT_TITLE").'">'.htmlspecialcharsex($row->arRes["NAME"]).'</a>');
+		$row->AddViewField("NAME", '<a href="'.$row->arRes["edit_url"].'" title="'.GetMessage("IBEL_A_EDIT_TITLE").'">'.htmlspecialcharsEx($row->arRes["NAME"]).'</a>');
 		$row->AddInputField("SORT", array('size'=>'3'));
 		$row->AddInputField("CODE");
 		$row->AddInputField("EXTERNAL_ID");
 		if ($bSearch)
 		{
-			$row->AddViewField("TAGS", htmlspecialcharsex($row->arRes["TAGS"]));
+			$row->AddViewField("TAGS", htmlspecialcharsEx($row->arRes["TAGS"]));
 			$row->AddEditField("TAGS", InputTags("FIELDS[".$f_ID."][TAGS]", $row->arRes["TAGS"], $arIBlock["SITE_ID"]));
 		}
 		else
@@ -2440,12 +2438,12 @@ foreach($arRows as $f_ID => $row)
 		if(!empty($arWFStatusPerm))
 			$row->AddSelectField("WF_STATUS_ID", $arWFStatusPerm);
 		if($row->arRes['orig']['WF_NEW']=='Y' || $row->arRes['WF_STATUS_ID']=='1')
-			$row->AddViewField("WF_STATUS_ID", htmlspecialcharsex($arWFStatusAll[$row->arRes['WF_STATUS_ID']]));
+			$row->AddViewField("WF_STATUS_ID", htmlspecialcharsEx($arWFStatusAll[$row->arRes['WF_STATUS_ID']]));
 		else
-			$row->AddViewField("WF_STATUS_ID", '<a href="'.$row->arRes["edit_url"].'" title="'.GetMessage("IBEL_A_ED_TITLE").'">'.htmlspecialcharsex($arWFStatusAll[$row->arRes['WF_STATUS_ID']]).'</a> / <a href="'.htmlspecialcharsbx(CIBlock::GetAdminElementEditLink($IBLOCK_ID, $row->arRes['orig']['ID'], array(
+			$row->AddViewField("WF_STATUS_ID", '<a href="'.$row->arRes["edit_url"].'" title="'.GetMessage("IBEL_A_ED_TITLE").'">'.htmlspecialcharsEx($arWFStatusAll[$row->arRes['WF_STATUS_ID']]).'</a> / <a href="'.htmlspecialcharsbx(CIBlock::GetAdminElementEditLink($IBLOCK_ID, $row->arRes['orig']['ID'], array(
 				"find_section_section" => $find_section_section,
 				'view' => (!isset($arElementOps[$f_ID]) || !isset($arElementOps[$f_ID]["element_edit_any_wf_status"])? 'Y': null)
-			))).'" title="'.GetMessage("IBEL_A_ED2_TITLE").'">'.htmlspecialcharsex($arWFStatusAll[$row->arRes['orig']['WF_STATUS_ID']]).'</a>');
+			))).'" title="'.GetMessage("IBEL_A_ED2_TITLE").'">'.htmlspecialcharsEx($arWFStatusAll[$row->arRes['orig']['WF_STATUS_ID']]).'</a>');
 
 		if (array_key_exists("PREVIEW_PICTURE", $arSelectedFieldsMap))
 		{
@@ -2616,14 +2614,14 @@ foreach($arRows as $f_ID => $row)
 	else
 	{
 		$row->AddCheckField("ACTIVE", false);
-		$row->AddViewField("NAME", '<a href="'.$row->arRes["edit_url"].'" title="'.GetMessage("IBEL_A_EDIT_TITLE").'">'.htmlspecialcharsex($row->arRes["NAME"]).'</a>');
+		$row->AddViewField("NAME", '<a href="'.$row->arRes["edit_url"].'" title="'.GetMessage("IBEL_A_EDIT_TITLE").'">'.htmlspecialcharsEx($row->arRes["NAME"]).'</a>');
 		$row->AddInputField("SORT", false);
 		$row->AddInputField("CODE", false);
 		$row->AddInputField("EXTERNAL_ID", false);
-		$row->AddViewField("TAGS", htmlspecialcharsex($row->arRes["TAGS"]));
+		$row->AddViewField("TAGS", htmlspecialcharsEx($row->arRes["TAGS"]));
 		$row->AddCalendarField("DATE_ACTIVE_FROM", false);
 		$row->AddCalendarField("DATE_ACTIVE_TO", false);
-		$row->AddViewField("WF_STATUS_ID", htmlspecialcharsex($arWFStatusAll[$row->arRes['WF_STATUS_ID']]));
+		$row->AddViewField("WF_STATUS_ID", htmlspecialcharsEx($arWFStatusAll[$row->arRes['WF_STATUS_ID']]));
 
 		if ($bCatalog)
 		{
@@ -3239,7 +3237,7 @@ if(!defined("CATALOG_PRODUCT"))
 	if($arIBTYPE["SECTIONS"]=="Y")
 	{
 		$chain->AddItem(array(
-			"TEXT" => htmlspecialcharsex($arIBlock["NAME"]),
+			"TEXT" => htmlspecialcharsEx($arIBlock["NAME"]),
 			"LINK" => htmlspecialcharsbx(CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>0))),
 		));
 		$lastSectionId[] = 0;
@@ -3503,7 +3501,7 @@ $oFilter->Begin();
 ?>
 	<tr>
 		<td><b><?=GetMessage("MAIN_ADMIN_LIST_FILTER_1ST_NAME")?></b></td>
-		<td><input type="text" name="find_el" title="<?=GetMessage("MAIN_ADMIN_LIST_FILTER_1ST")?>" value="<?echo htmlspecialcharsex($find_el)?>" size="30">
+		<td><input type="text" name="find_el" title="<?=GetMessage("MAIN_ADMIN_LIST_FILTER_1ST")?>" value="<?echo htmlspecialcharsEx($find_el)?>" size="30">
 			<select name="find_el_type">
 				<option value="name"<?if($find_el_type=="name") echo " selected"?>><?echo GetMessage("IBEL_A_F_NAME")?></option>
 				<option value="desc"<?if($find_el_type=="desc") echo " selected"?>><?echo GetMessage("IBEL_A_F_DESC")?></option>
@@ -3513,9 +3511,9 @@ $oFilter->Begin();
 	<tr>
 		<td><?echo GetMessage("IBLOCK_FILTER_FROMTO_ID")?></td>
 		<td nowrap>
-			<input type="text" name="find_el_id_start" size="10" value="<?echo htmlspecialcharsex($find_el_id_start)?>">
+			<input type="text" name="find_el_id_start" size="10" value="<?echo htmlspecialcharsEx($find_el_id_start)?>">
 			...
-			<input type="text" name="find_el_id_end" size="10" value="<?echo htmlspecialcharsex($find_el_id_end)?>">
+			<input type="text" name="find_el_id_end" size="10" value="<?echo htmlspecialcharsEx($find_el_id_end)?>">
 		</td>
 	</tr>
 
@@ -3540,7 +3538,7 @@ $oFilter->Begin();
 
 	<tr>
 		<td><?echo GetMessage("IBLOCK_FIELD_TIMESTAMP_X")?>:</td>
-		<td><?echo CalendarPeriod("find_el_timestamp_from", htmlspecialcharsex($find_el_timestamp_from), "find_el_timestamp_to", htmlspecialcharsex($find_el_timestamp_to), "find_form", "Y")?></font></td>
+		<td><?echo CalendarPeriod("find_el_timestamp_from", htmlspecialcharsEx($find_el_timestamp_from), "find_el_timestamp_to", htmlspecialcharsEx($find_el_timestamp_to), "find_form", "Y")?></font></td>
 	</tr>
 
 	<tr>
@@ -3562,7 +3560,7 @@ $oFilter->Begin();
 
 	<tr>
 		<td><?echo GetMessage("IBLOCK_EL_ADMIN_DCREATE")?>:</td>
-		<td><?echo CalendarPeriod("find_el_created_from", htmlspecialcharsex($find_el_created_from), "find_el_created_to", htmlspecialcharsex($find_el_created_to), "find_form", "Y")?></td>
+		<td><?echo CalendarPeriod("find_el_created_from", htmlspecialcharsEx($find_el_created_from), "find_el_created_to", htmlspecialcharsEx($find_el_created_to), "find_form", "Y")?></td>
 	</tr>
 
 	<tr>
@@ -3585,7 +3583,7 @@ $oFilter->Begin();
 	<?if($bWorkFlow):?>
 	<tr>
 		<td><?=GetMessage("IBLOCK_FIELD_STATUS")?></td>
-		<td><input type="text" name="find_el_status_id" value="<?echo htmlspecialcharsex($find_el_status_id)?>" size="3">
+		<td><input type="text" name="find_el_status_id" value="<?echo htmlspecialcharsEx($find_el_status_id)?>" size="3">
 		<select name="find_el_status">
 		<option value=""><?=GetMessage("IBLOCK_VALUE_ANY")?></option>
 		<?
@@ -3601,41 +3599,41 @@ $oFilter->Begin();
 
 	<tr>
 		<td><?echo GetMessage("IBEL_A_ACTFROM")?>:</td>
-		<td><?echo CalendarPeriod("find_el_date_active_from_from", htmlspecialcharsex($find_el_date_active_from_from), "find_el_date_active_from_to", htmlspecialcharsex($find_el_date_active_from_to), "find_form")?></td>
+		<td><?echo CalendarPeriod("find_el_date_active_from_from", htmlspecialcharsEx($find_el_date_active_from_from), "find_el_date_active_from_to", htmlspecialcharsEx($find_el_date_active_from_to), "find_form")?></td>
 	</tr>
 
 	<tr>
 		<td><?echo GetMessage("IBEL_A_ACTTO")?>:</td>
-		<td><?echo CalendarPeriod("find_el_date_active_to_from", htmlspecialcharsex($find_el_date_active_to_from), "find_el_date_active_to_to", htmlspecialcharsex($find_el_date_active_to_to), "find_form")?></td>
+		<td><?echo CalendarPeriod("find_el_date_active_to_from", htmlspecialcharsEx($find_el_date_active_to_from), "find_el_date_active_to_to", htmlspecialcharsEx($find_el_date_active_to_to), "find_form")?></td>
 	</tr>
 
 	<tr>
 		<td><?echo GetMessage("IBLOCK_FIELD_ACTIVE")?>:</td>
 		<td>
 			<select name="find_el_active">
-				<option value=""><?=htmlspecialcharsex(GetMessage('IBLOCK_VALUE_ANY'))?></option>
-				<option value="Y"<?if($find_el_active=="Y")echo " selected"?>><?=htmlspecialcharsex(GetMessage("IBLOCK_YES"))?></option>
-				<option value="N"<?if($find_el_active=="N")echo " selected"?>><?=htmlspecialcharsex(GetMessage("IBLOCK_NO"))?></option>
+				<option value=""><?=htmlspecialcharsEx(GetMessage('IBLOCK_VALUE_ANY'))?></option>
+				<option value="Y"<?if($find_el_active=="Y")echo " selected"?>><?=htmlspecialcharsEx(GetMessage("IBLOCK_YES"))?></option>
+				<option value="N"<?if($find_el_active=="N")echo " selected"?>><?=htmlspecialcharsEx(GetMessage("IBLOCK_NO"))?></option>
 			</select>
 		</td>
 	</tr>
 
 	<tr>
 		<td><?echo GetMessage("IBLOCK_FIELD_NAME")?>:</td>
-		<td><input type="text" name="find_el_name" value="<?echo htmlspecialcharsex($find_el_name)?>" size="30">&nbsp;<?=ShowFilterLogicHelp()?></td>
+		<td><input type="text" name="find_el_name" value="<?echo htmlspecialcharsEx($find_el_name)?>" size="30">&nbsp;<?=ShowFilterLogicHelp()?></td>
 	</tr>
 	<tr>
 		<td><?echo GetMessage("IBLOCK_EL_ADMIN_DESC")?></td>
-		<td><input type="text" name="find_el_intext" value="<?echo htmlspecialcharsex($find_el_intext)?>" size="30">&nbsp;<?=ShowFilterLogicHelp()?></td>
+		<td><input type="text" name="find_el_intext" value="<?echo htmlspecialcharsEx($find_el_intext)?>" size="30">&nbsp;<?=ShowFilterLogicHelp()?></td>
 	</tr>
 
 	<tr>
 		<td><?=GetMessage("IBEL_A_CODE")?>:</td>
-		<td><input type="text" name="find_el_code" value="<?echo htmlspecialcharsex($find_el_code)?>" size="30"></td>
+		<td><input type="text" name="find_el_code" value="<?echo htmlspecialcharsEx($find_el_code)?>" size="30"></td>
 	</tr>
 	<tr>
 		<td><?=GetMessage("IBEL_A_EXTERNAL_ID")?>:</td>
-		<td><input type="text" name="find_el_external_id" value="<?echo htmlspecialcharsex($find_el_external_id)?>" size="30"></td>
+		<td><input type="text" name="find_el_external_id" value="<?echo htmlspecialcharsEx($find_el_external_id)?>" size="30"></td>
 	</tr>
 	<tr>
 		<td><?=GetMessage("IBEL_A_TAGS")?>:</td>
@@ -3645,7 +3643,7 @@ $oFilter->Begin();
 				echo InputTags("find_el_tags", $find_el_tags, $arIBlock["SITE_ID"]);
 			else:
 			?>
-				<input type="text" name="find_el_tags" value="<?echo htmlspecialcharsex($find_el_tags)?>" size="30">
+				<input type="text" name="find_el_tags" value="<?echo htmlspecialcharsEx($find_el_tags)?>" size="30">
 			<?endif?>
 		</td>
 	</tr>
@@ -3656,13 +3654,13 @@ if ($bCatalog)
 		<td><?=GetMessage("IBEL_CATALOG_TYPE"); ?>:</td>
 		<td>
 			<select name="find_el_catalog_type[]" multiple>
-				<option value=""><?=htmlspecialcharsex(GetMessage('IBLOCK_VALUE_ANY'))?></option>
+				<option value=""><?=htmlspecialcharsEx(GetMessage('IBLOCK_VALUE_ANY'))?></option>
 				<?
 				$catalogTypes = (!empty($find_el_catalog_type) ? $find_el_catalog_type : array());
 				foreach ($productTypeList as $productType => $productTypeName)
 				{
 					?>
-					<option value="<? echo $productType; ?>"<? echo (in_array($productType, $catalogTypes) ? ' selected' : ''); ?>><? echo htmlspecialcharsex($productTypeName); ?></option><?
+					<option value="<? echo $productType; ?>"<? echo (in_array($productType, $catalogTypes) ? ' selected' : ''); ?>><? echo htmlspecialcharsEx($productTypeName); ?></option><?
 				}
 				unset($productType, $productTypeName, $catalogTypes);
 				?>
@@ -3673,9 +3671,9 @@ if ($bCatalog)
 		<td><?echo GetMessage("IBEL_CATALOG_BUNDLE")?>:</td>
 		<td>
 			<select name="find_el_catalog_bundle">
-				<option value=""><?=htmlspecialcharsex(GetMessage('IBLOCK_VALUE_ANY'))?></option>
-				<option value="Y"<?if($find_el_catalog_bundle=="Y")echo " selected"?>><?=htmlspecialcharsex(GetMessage("IBLOCK_YES"))?></option>
-				<option value="N"<?if($find_el_catalog_bundle=="N")echo " selected"?>><?=htmlspecialcharsex(GetMessage("IBLOCK_NO"))?></option>
+				<option value=""><?=htmlspecialcharsEx(GetMessage('IBLOCK_VALUE_ANY'))?></option>
+				<option value="Y"<?if($find_el_catalog_bundle=="Y")echo " selected"?>><?=htmlspecialcharsEx(GetMessage("IBLOCK_YES"))?></option>
+				<option value="N"<?if($find_el_catalog_bundle=="N")echo " selected"?>><?=htmlspecialcharsEx(GetMessage("IBLOCK_NO"))?></option>
 			</select>
 		</td>
 	</tr>
@@ -3683,9 +3681,9 @@ if ($bCatalog)
 		<td><?echo GetMessage("IBEL_CATALOG_AVAILABLE")?>:</td>
 		<td>
 			<select name="find_el_catalog_available">
-				<option value=""><?=htmlspecialcharsex(GetMessage('IBLOCK_VALUE_ANY'))?></option>
-				<option value="Y"<?if($find_el_catalog_available=="Y")echo " selected"?>><?=htmlspecialcharsex(GetMessage("IBLOCK_YES"))?></option>
-				<option value="N"<?if($find_el_catalog_available=="N")echo " selected"?>><?=htmlspecialcharsex(GetMessage("IBLOCK_NO"))?></option>
+				<option value=""><?=htmlspecialcharsEx(GetMessage('IBLOCK_VALUE_ANY'))?></option>
+				<option value="Y"<?if($find_el_catalog_available=="Y")echo " selected"?>><?=htmlspecialcharsEx(GetMessage("IBLOCK_YES"))?></option>
+				<option value="N"<?if($find_el_catalog_available=="N")echo " selected"?>><?=htmlspecialcharsEx(GetMessage("IBLOCK_NO"))?></option>
 			</select>
 		</td>
 	</tr>
@@ -3733,9 +3731,9 @@ foreach($arProps as $arProp):
 				),
 			));
 		elseif($arProp["PROPERTY_TYPE"]=='S'):?>
-			<input type="text" name="find_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsex(${"find_el_property_".$arProp["ID"]})?>" size="30">&nbsp;<?=ShowFilterLogicHelp()?>
+			<input type="text" name="find_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsEx(${"find_el_property_".$arProp["ID"]})?>" size="30">&nbsp;<?=ShowFilterLogicHelp()?>
 		<?elseif($arProp["PROPERTY_TYPE"]=='N' || $arProp["PROPERTY_TYPE"]=='E'):?>
-			<input type="text" name="find_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsex(${"find_el_property_".$arProp["ID"]})?>" size="30">
+			<input type="text" name="find_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsEx(${"find_el_property_".$arProp["ID"]})?>" size="30">
 		<?elseif($arProp["PROPERTY_TYPE"]=='L'):?>
 			<select name="find_el_property_<?=$arProp["ID"]?>">
 				<option value=""><?echo GetMessage("IBLOCK_VALUE_ANY")?></option>
@@ -3778,11 +3776,11 @@ if ($boolSKU && $boolSKUFiltrable)
 		}
 		elseif($arProp["PROPERTY_TYPE"]=='S')
 		{
-			?><input type="text" name="find_sub_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsex(${"find_sub_el_property_".$arProp["ID"]})?>" size="30">&nbsp;<?=ShowFilterLogicHelp(); ?><?
+			?><input type="text" name="find_sub_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsEx(${"find_sub_el_property_".$arProp["ID"]})?>" size="30">&nbsp;<?=ShowFilterLogicHelp(); ?><?
 		}
 		elseif($arProp["PROPERTY_TYPE"]=='N' || $arProp["PROPERTY_TYPE"]=='E')
 		{
-			?><input type="text" name="find_sub_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsex(${"find_sub_el_property_".$arProp["ID"]})?>" size="30"><?
+			?><input type="text" name="find_sub_el_property_<?=$arProp["ID"]?>" value="<?echo htmlspecialcharsEx(${"find_sub_el_property_".$arProp["ID"]})?>" size="30"><?
 		}
 		elseif($arProp["PROPERTY_TYPE"]=='L')
 		{

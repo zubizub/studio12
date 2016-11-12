@@ -715,16 +715,12 @@ class CBitrixCatalogSmartFilter extends CBitrixComponent
 
 	public function _sort($v1, $v2)
 	{
-		if ($v1["SORT"] > $v2["SORT"])
-			return 1;
-		elseif ($v1["SORT"] < $v2["SORT"])
+		if ($v1["SORT"] < $v2["SORT"])
 			return -1;
-		elseif ($v1["UPPER"] > $v2["UPPER"])
+		elseif ($v1["SORT"] > $v2["SORT"])
 			return 1;
-		elseif ($v1["UPPER"] < $v2["UPPER"])
-			return -1;
 		else
-			return 0;
+			return strcmp($v1["UPPER"], $v2["UPPER"]);
 	}
 
 	/*

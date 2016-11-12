@@ -129,7 +129,7 @@ class CForumMessage extends CAllForumMessage
 					"TITLE" => $arMessage["TOPIC_INFO"]["TITLE"].($arMessage["NEW_TOPIC"] == "Y" && !empty($arMessage["TOPIC_INFO"]["DESCRIPTION"]) ?
 						", ".$arMessage["TOPIC_INFO"]["DESCRIPTION"] : ""),
 					"TAGS" => ($arMessage["NEW_TOPIC"] == "Y" ? $arMessage["TOPIC_INFO"]["TAGS"] : ""),
-					"BODY" => GetMessage("AVTOR_PREF")." ".$arMessage["AUTHOR_NAME"].". ".(forumTextParser::clearAllTags($arMessage["POST_MESSAGE"])),
+					"BODY" => GetMessage("AVTOR_PREF")." ".$arMessage["AUTHOR_NAME"].". ".(CSearch::KillTags(forumTextParser::clearAllTags($arMessage["POST_MESSAGE"]))),
 					"URL" => "",
 					"INDEX_TITLE" => $arMessage["NEW_TOPIC"] == "Y",
 				);

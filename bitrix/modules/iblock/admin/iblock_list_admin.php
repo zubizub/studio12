@@ -853,6 +853,7 @@ if($lAdmin->EditAction())
 
 				$ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($IBLOCK_ID, $elID);
 				$ipropValues->clearValues();
+				\Bitrix\Iblock\PropertyIndex\Manager::updateElementIndex($IBLOCK_ID, $elID);
 			}
 			unset($arCatalogGroupList);
 		}

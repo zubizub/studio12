@@ -34,7 +34,7 @@ define('DEF_LIST_VALUE_COUNT',5);
 * 		MULTIPLE = Y/N
 * )
 */
-function __AddListValueIDCell($intPropID,$arPropInfo)
+function __AddListValueIDCell($intPropID)
 {
 	return ((int)$intPropID > 0 ? $intPropID : '&nbsp;');
 }
@@ -59,9 +59,9 @@ function __AddListValueDefCell($intPropID,$arPropInfo)
 	return '<input type="'.('Y' == $arPropInfo['MULTIPLE'] ? 'checkbox' : 'radio').'" name="PROPERTY_VALUES_DEF'.('Y' == $arPropInfo['MULTIPLE'] ? '[]' : '').'" id="PROPERTY_VALUES_DEF_'.$arPropInfo['ID'].'" value="'.$arPropInfo['ID'].'" '.('Y' == $arPropInfo['DEF'] ? 'checked="checked"' : '').'>';
 }
 
-function __AddListValueRow($intPropID,$arPropInfo)
+function __AddListValueRow($intPropID, $arPropInfo)
 {
-	return '<tr><td class="bx-digit-cell">'.__AddListValueIDCell($intPropID,$arPropInfo).'</td>
+	return '<tr><td class="bx-digit-cell">'.__AddListValueIDCell($intPropID).'</td>
 	<td>'.__AddListValueXmlIDCell($intPropID,$arPropInfo).'</td>
 	<td>'.__AddListValueValueCell($intPropID,$arPropInfo).'</td>
 	<td style="text-align:center">'.__AddListValueSortCell($intPropID,$arPropInfo).'</td>
@@ -76,7 +76,7 @@ $arDisabledPropFields = array(
 	'VERSION',
 );
 
-$arDefPropInfo = array(
+$defaultListValueSettings = array(
 	'ID' => 'ntmp_xxx',
 	'XML_ID' => '',
 	'VALUE' => '',
@@ -95,11 +95,11 @@ $arDefPropInfo = array(
 	'LINK_IBLOCK_ID' => '0',
 	'DEFAULT_VALUE' => '',
 	'USER_TYPE_SETTINGS' => false,
-	'WITH_DESCRIPTION' => '',
-	'SEARCHABLE' => '',
-	'FILTRABLE' => '',
+	'WITH_DESCRIPTION' => 'N',
+	'SEARCHABLE' => 'N',
+	'FILTRABLE' => 'N',
 	'ACTIVE' => 'Y',
-	'MULTIPLE_CNT' => '5',
+	'MULTIPLE_CNT' => Iblock\PropertyTable::DEFAULT_MULTIPLE_CNT,
 	'XML_ID' => '',
 	'PROPERTY_TYPE' => Iblock\PropertyTable::TYPE_STRING,
 	'NAME' => '',
@@ -111,7 +111,7 @@ $arDefPropInfo = array(
 	'CODE' => '',
 	'SHOW_DEL' => 'N',
 	'VALUES' => false,
-	'SECTION_PROPERTY' => $bSectionPopup? "N": "Y",
+	'SECTION_PROPERTY' => $bSectionPopup? 'N': 'Y',
 	'SMART_FILTER' => 'N',
 	'DISPLAY_TYPE' => '',
 	'DISPLAY_EXPANDED' => 'N',
@@ -618,7 +618,9 @@ elseif(!$bReload && $_SERVER["REQUEST_METHOD"] == "POST" && (isset($_POST["save"
 							"'.CUtil::JSEscape($type).'",
 							'.intval($arFields["SORT"]).',
 							"'.CUtil::JSEscape($arFields['PROPERTY_TYPE']).'",
-							"'.CUtil::JSEscape($arFields['USER_TYPE']).'"
+							"'.CUtil::JSEscape($arFields['USER_TYPE']).'",
+							"'.CUtil::JSEscape($arFields['CODE']).'",
+							""
 						);
 						top.BX.closeWait();
 						top.BX.WindowManager.Get().AllowClose();
@@ -713,7 +715,7 @@ if (isset($_REQUEST['saveresult']))
 	}
 	$arProperty['MULTIPLE_CNT'] = (int)$arProperty['MULTIPLE_CNT'];
 	if ($arProperty['MULTIPLE_CNT'] <= 0)
-		$arProperty['MULTIPLE_CNT'] = DEF_LIST_VALUE_COUNT;;
+		$arProperty['MULTIPLE_CNT'] = Iblock\PropertyTable::DEFAULT_MULTIPLE_CNT;
 	$arProperty['WITH_DESCRIPTION'] = ($arProperty['WITH_DESCRIPTION'] == 'Y' ? 'Y' : 'N');
 
 	if(!empty($arListValues))
@@ -786,7 +788,7 @@ if(!$bFullForm)
 	$arProperty['SMART_FILTER'] = ('Y' == $arProperty['SMART_FILTER'] ? 'Y' : 'N');
 	$arProperty['MULTIPLE_CNT'] = (int)$arProperty['MULTIPLE_CNT'];
 	if ($arProperty['MULTIPLE_CNT'] <= 0)
-		$arProperty['MULTIPLE_CNT'] = DEF_LIST_VALUE_COUNT;;
+		$arProperty['MULTIPLE_CNT'] = Iblock\PropertyTable::DEFAULT_MULTIPLE_CNT;
 	$arProperty['WITH_DESCRIPTION'] = ($arProperty['WITH_DESCRIPTION'] == 'Y' ? 'Y' : 'N');
 
 	$arProperty['USER_TYPE'] = '';
@@ -930,14 +932,7 @@ else
 	if ('L' == $arProperty['PROPERTY_TYPE'])
 		$arDefPropInfo['MULTIPLE'] = $arProperty['MULTIPLE'];
 
-	$arTypesList = array(
-		"S" => GetMessage("BT_ADM_IEP_PROP_TYPE_S"),
-		"N" => GetMessage("BT_ADM_IEP_PROP_TYPE_N"),
-		"L" => GetMessage("BT_ADM_IEP_PROP_TYPE_L"),
-		"F" => GetMessage("BT_ADM_IEP_PROP_TYPE_F"),
-		"G" => GetMessage("BT_ADM_IEP_PROP_TYPE_G"),
-		"E" => GetMessage("BT_ADM_IEP_PROP_TYPE_E"),
-	);
+	$arTypesList = Iblock\Helpers\Admin\Property::getBaseTypeList(true);
 
 	$aMenu = array(
 		array(
@@ -1057,14 +1052,12 @@ else
 				{
 					?><optgroup label="<? echo GetMessage('BT_ADM_IEP_PROPERTY_BASE_TYPE_GROUP'); ?>"><?
 				}
-				?>
-				<option value="S" <?if($PROPERTY_TYPE=="S")echo " selected"?>><?echo GetMessage("IBLOCK_PROP_S")?></option>
-				<option value="N" <?if($PROPERTY_TYPE=="N")echo " selected"?>><?echo GetMessage("IBLOCK_PROP_N")?></option>
-				<option value="L" <?if($PROPERTY_TYPE=="L")echo " selected"?>><?echo GetMessage("IBLOCK_PROP_L")?></option>
-				<option value="F" <?if($PROPERTY_TYPE=="F")echo " selected"?>><?echo GetMessage("IBLOCK_PROP_F")?></option>
-				<option value="G" <?if($PROPERTY_TYPE=="G")echo " selected"?>><?echo GetMessage("IBLOCK_PROP_G")?></option>
-				<option value="E" <?if($PROPERTY_TYPE=="E")echo " selected"?>><?echo GetMessage("IBLOCK_PROP_E")?></option>
-				<?
+				foreach ($arTypesList as $typeId => $typeTitle)
+				{
+					?><option value="<?=$typeId; ?>" <?=($PROPERTY_TYPE==$typeId ? ' selected' : '');?>><?=htmlspecialcharsbx($typeTitle); ?></option><?
+				}
+				unset($typeTitle);
+				unset($typeId);
 				if ($boolUserPropExist)
 				{
 				?></optgroup><optgroup label="<? echo GetMessage('BT_ADM_IEP_PROPERTY_USER_TYPE_GROUP'); ?>"><?
@@ -1691,26 +1684,26 @@ function add_list_row()
 	newRow = window.oPropSet.pTypeTbl.insertRow(window.oPropSet.pTypeTbl.rows.length);
 
 	oCell = newRow.insertCell(-1);
-	strContent = '<? echo CUtil::JSEscape(__AddListValueIDCell('ntmp_xxx',$arDefPropInfo)); ?>';
+	strContent = '<? echo CUtil::JSEscape(__AddListValueIDCell($defaultListValueSettings['ID'])); ?>';
 	strContent = strContent.replace(/tmp_xxx/ig, id);
 	oCell.innerHTML = strContent;
 
 	oCell = newRow.insertCell(-1);
-	strContent = '<? echo CUtil::JSEscape(__AddListValueXmlIDCell('ntmp_xxx',$arDefPropInfo)); ?>';
+	strContent = '<? echo CUtil::JSEscape(__AddListValueXmlIDCell($defaultListValueSettings['ID'], $defaultListValueSettings)); ?>';
 	strContent = strContent.replace(/tmp_xxx/ig, id);
 	oCell.innerHTML = strContent;
 	oCell = newRow.insertCell(-1);
-	strContent = '<? echo CUtil::JSEscape(__AddListValueValueCell('ntmp_xxx',$arDefPropInfo)); ?>';
-	strContent = strContent.replace(/tmp_xxx/ig, id);
-	oCell.innerHTML = strContent;
-
-	oCell = newRow.insertCell(-1);
-	strContent = '<? echo CUtil::JSEscape(__AddListValueSortCell('ntmp_xxx',$arDefPropInfo)); ?>';
+	strContent = '<? echo CUtil::JSEscape(__AddListValueValueCell($defaultListValueSettings['ID'], $defaultListValueSettings)); ?>';
 	strContent = strContent.replace(/tmp_xxx/ig, id);
 	oCell.innerHTML = strContent;
 
 	oCell = newRow.insertCell(-1);
-	strContent = '<? echo CUtil::JSEscape(__AddListValueDefCell('ntmp_xxx',$arDefPropInfo)); ?>';
+	strContent = '<? echo CUtil::JSEscape(__AddListValueSortCell($defaultListValueSettings['ID'], $defaultListValueSettings)); ?>';
+	strContent = strContent.replace(/tmp_xxx/ig, id);
+	oCell.innerHTML = strContent;
+
+	oCell = newRow.insertCell(-1);
+	strContent = '<? echo CUtil::JSEscape(__AddListValueDefCell($defaultListValueSettings['ID'], $defaultListValueSettings)); ?>';
 	strContent = strContent.replace(/tmp_xxx/ig, id);
 	oCell.innerHTML = strContent;
 	oCell.setAttribute('align','center');

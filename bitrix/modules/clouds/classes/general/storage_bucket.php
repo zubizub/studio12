@@ -329,6 +329,24 @@ class CCloudStorageBucket extends CAllCloudStorageBucket
 		return $result;
 	}
 	/**
+	 * @param string $sourcePath
+	 * @param string $targetPath
+	 * @param bool $overwrite
+	 * @return bool
+	*/
+	function FileRename($sourcePath, $targetPath, $overwrite = true)
+	{
+		$result = $this->service->FileRename($this->arBucket, $sourcePath, $targetPath, $overwrite);
+		if ($result)
+		{
+			foreach(GetModuleEvents("clouds", "OnAfterRenameFile", true) as $arEvent)
+			{
+				ExecuteModuleEventEx($arEvent, array($this, $sourcePath, $targetFile));
+			}
+		}
+		return $result;
+	}
+	/**
 	 * @param string $filePath
 	 * @param bool $bRecursive
 	 * @return array[string][int]string
@@ -739,7 +757,7 @@ class CCloudStorageBucket extends CAllCloudStorageBucket
 	 * @param array[string][int]string $arPOST
 	 * @return array[int][string]string
 	*/
-	function ConvertPOST($arPOST)
+	static function ConvertPOST($arPOST)
 	{
 		$arRules =/*.(array[int][string]string).*/array();
 

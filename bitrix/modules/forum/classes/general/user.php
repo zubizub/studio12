@@ -974,7 +974,6 @@ class CAllForumUser
 			$arUserFields["IP_ADDRESS"] = $arMessage["AUTHOR_IP"];
 			$arUserFields["REAL_IP_ADDRESS"] = $arMessage["AUTHOR_REAL_IP"];
 			$arUserFields["LAST_POST"] = intVal($arMessage["ID"]);
-			$arUserFields["LAST_POST_DATE"] = $arMessage["POST_DATE"];
 			$arUserFields["=NUM_POSTS"] = "NUM_POSTS+".$arParams["POSTS"];
 			$arUserFields["POINTS"] = intVal(CForumUser::GetUserPoints($USER_ID, array("INCREMENT" => $arParams["POSTS"])));
 		endif;
@@ -982,8 +981,7 @@ class CAllForumUser
 		if (empty($arUserFields))
 		{
 			$arUserFields = Array(
-				"LAST_POST" => false,
-				"LAST_POST_DATE" => false);
+				"LAST_POST" => false);
 			if ($bNeedCreateUser == false)
 				$arUser = CForumUser::GetByUSER_IDEx($USER_ID);
 			if (empty($arUser) || $bNeedCreateUser == true):
@@ -996,7 +994,6 @@ class CAllForumUser
 				$arUserFields["IP_ADDRESS"] = $arMessage["AUTHOR_IP"];
 				$arUserFields["REAL_IP_ADDRESS"] = $arMessage["AUTHOR_REAL_IP"];
 				$arUserFields["LAST_POST"] = intVal($arMessage["ID"]);
-				$arUserFields["LAST_POST_DATE"] = $arMessage["POST_DATE"];
 			endif;
 			$arUserFields["NUM_POSTS"] = intVal($arUser["CNT"]);
 			$arUserFields["POINTS"] = intVal(CForumUser::GetUserPoints($USER_ID, array("NUM_POSTS" => $arUserFields["NUM_POSTS"])));

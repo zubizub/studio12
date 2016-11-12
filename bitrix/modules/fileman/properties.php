@@ -1974,7 +1974,7 @@ tr.bx-prop-sub-title td{background: #E2E1E0! important; color: #525355! importan
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_BUFFER')?>:</td>
 	<td>
-		<input type="text" name="<?= $name?>[BUFFER_LENGTH]" size="10" value="<?= $val["BUFFER_LENGTH"]?>"/>
+		<input type="text" name="<?= $name?>[BUFFER_LENGTH]" size="10" value="<?= intval($val["BUFFER_LENGTH"])?>"/>
 	</td>
 </tr>
 <tr>
@@ -1995,22 +1995,22 @@ tr.bx-prop-sub-title td{background: #E2E1E0! important; color: #525355! importan
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_VOLUME')?>:</td>
 	<td>
-		<input type="text" name="<?= $name?>[VOLUME]" size="10" value="<?= $val["VOLUME"]?>"/>
+		<input type="text" name="<?= $name?>[VOLUME]" size="10" value="<?= intval($val["VOLUME"])?>"/>
 	</td>
 </tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SIZE')?></td>
 	<td>
-		<input type="text" name="<?= $name?>[WIDTH]" style="width: 70px;" size="10" value="<?= $val["WIDTH"]?>"/>
+		<input type="text" name="<?= $name?>[WIDTH]" style="width: 70px;" size="10" value="<?= intval($val["WIDTH"])?>"/>
 		x
-		<input type="text" name="<?= $name?>[HEIGHT]" style="width: 70px;" size="10" value="<?= $val["HEIGHT"]?>"/>
+		<input type="text" name="<?= $name?>[HEIGHT]" style="width: 70px;" size="10" value="<?= intval($val["HEIGHT"])?>"/>
 	</td>
 </tr>
 <tr class="heading"><td colSpan="2"><?= GetMessage('IBLOCK_PROP_VIDEO_FLV_SET')?></td></tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_SKIN')?>:</td>
 	<td id="bx_player_skin_cell">
-		<input id="bx_player_skin_input" type="hidden" name="<?= $name?>[SKIN]" value="<?= $val["SKIN"]?>" />
+		<input id="bx_player_skin_input" type="hidden" name="<?= $name?>[SKIN]" value="<?= htmlspecialcharsbx($val["SKIN"])?>" />
 <script>
 jsUtils.loadCSSFile("/bitrix/components/bitrix/player/js/skin_selector.css");
 jsUtils.loadJSFile("/bitrix/components/bitrix/player/js/prop_skin_selector.js", function()
@@ -2033,7 +2033,7 @@ jsUtils.loadJSFile("/bitrix/components/bitrix/player/js/prop_skin_selector.js", 
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_FLASHVARS')?>:</td>
 	<td>
-		<textarea cols="25"  name="<?= $name?>[FLASHVARS]"><?= $val["FLASHVARS"]?></textarea>
+		<textarea cols="25"  name="<?= $name?>[FLASHVARS]"><?= htmlspecialcharsbx($val["FLASHVARS"])?></textarea>
 	</td>
 </tr>
 <tr>
@@ -2049,24 +2049,24 @@ jsUtils.loadJSFile("/bitrix/components/bitrix/player/js/prop_skin_selector.js", 
 <tr class="heading"><td colSpan="2"><?= GetMessage('IBLOCK_PROP_VIDEO_WMV_SET')?></td></tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_BGCOLOR')?>:</td>
-	<td><input type="text" name="<?= $name?>[BGCOLOR]" size="10" value="<?= $val["BGCOLOR"]?>"/></td>
+	<td><input type="text" name="<?= $name?>[BGCOLOR]" size="10" value="<?= htmlspecialcharsbx($val["BGCOLOR"])?>"/></td>
 </tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_COLOR')?>:</td>
-	<td><input type="text" name="<?= $name?>[COLOR]" size="10" value="<?= $val["COLOR"]?>"/></td>
+	<td><input type="text" name="<?= $name?>[COLOR]" size="10" value="<?= htmlspecialcharsbx($val["COLOR"])?>"/></td>
 </tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_OVER_COLOR')?>:</td>
-	<td><input type="text" name="<?= $name?>[OVER_COLOR]" size="10" value="<?= $val["OVER_COLOR"]?>"/></td>
+	<td><input type="text" name="<?= $name?>[OVER_COLOR]" size="10" value="<?= htmlspecialcharsbx($val["OVER_COLOR"])?>"/></td>
 </tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_SCREEN_COLOR')?>:</td>
-	<td><input type="text" name="<?= $name?>[SCREEN_COLOR]" size="10" value="<?= $val["SCREEN_COLOR"]?>"/ ></td>
+	<td><input type="text" name="<?= $name?>[SCREEN_COLOR]" size="10" value="<?= htmlspecialcharsbx($val["SCREEN_COLOR"])?>"/ ></td>
 </tr>
 <tr>
 	<td><?= GetMessage('IBLOCK_PROP_VIDEO_SET_SILVERVARS')?>:</td>
 	<td>
-		<textarea cols="25"  name="<?= $name?>[SILVERVARS]"><?= $val["SILVERVARS"]?></textarea>
+		<textarea cols="25"  name="<?= $name?>[SILVERVARS]"><?= htmlspecialcharsbx($val["SILVERVARS"])?></textarea>
 	</td>
 </tr>
 <tr>
@@ -2090,10 +2090,10 @@ jsUtils.loadJSFile("/bitrix/components/bitrix/player/js/prop_skin_selector.js", 
 		$id = str_replace(array("[","]",":"), "_", $name);
 		$path = $val["path"];
 
-		if (intVal($val['width']) <= 0)
-			$val['width'] = $set['WIDTH'];
-		if (intVal($val['height']) <= 0)
-			$val['height'] = $set['HEIGHT'];
+		if (intval($val['width']) <= 0)
+			$val['width'] = intval($set['WIDTH']);
+		if (intval($val['height']) <= 0)
+			$val['height'] = intval($set['HEIGHT']);
 
 		ob_start();
 ?>
@@ -2241,9 +2241,9 @@ table.bx-video-prop-tbl img.spacer{display:block;float:left;height:1px;margin-to
 	<tr>
 		<td class="bx-pr-title"><?= GetMessage('IBLOCK_PROP_VIDEO_SIZE')?>:</td>
 		<td>
-			<input  id="bx_video_width_<?= $id?>" type="text" size="10" style="width: 70px;" value="<?= $val['width']?>" name= "<?= $name?>[WIDTH]" />
+			<input  id="bx_video_width_<?= $id?>" type="text" size="10" style="width: 70px;" value="<?= htmlspecialcharsbx($val['width'])?>" name= "<?= $name?>[WIDTH]" />
 			x
-			<input id="bx_video_height_<?= $id?>" type="text" size="10" style="width: 70px;" value="<?= $val['height']?>" name= "<?= $name?>[HEIGHT]" />
+			<input id="bx_video_height_<?= $id?>" type="text" size="10" style="width: 70px;" value="<?= htmlspecialcharsbx($val['height'])?>" name= "<?= $name?>[HEIGHT]" />
 		</td>
 	</tr>
 	<tr class="heading"><td colSpan="2"><?= GetMessage('IBLOCK_PROP_VIDEO_PARAMS_TITLE_INFO')?></td></tr>
@@ -2253,7 +2253,7 @@ table.bx-video-prop-tbl img.spacer{display:block;float:left;height:1px;margin-to
 	</tr>
 	<tr>
 		<td class="bx-pr-title"><?= GetMessage('IBLOCK_PROP_VIDEO_DURATION')?>:</td>
-		<td><input id="bx_video_duration_<?= $id?>" type="text" size="30" value="<?= $val['duration']?>" name="<?= $name?>[DURATION]"/></td>
+		<td><input id="bx_video_duration_<?= $id?>" type="text" size="30" value="<?= htmlspecialcharsbx($val['duration'])?>" name="<?= $name?>[DURATION]"/></td>
 	</tr>
 	<tr>
 		<td class="bx-pr-title"><?= GetMessage('IBLOCK_PROP_VIDEO_AUTHOR')?>:</td>
@@ -2261,7 +2261,7 @@ table.bx-video-prop-tbl img.spacer{display:block;float:left;height:1px;margin-to
 	</tr>
 	<tr>
 		<td class="bx-pr-title"><?= GetMessage('IBLOCK_PROP_VIDEO_DATE')?>:</td>
-		<td><input id="bx_video_date_<?= $id?>" type="text" size="30" value="<?= $val['date']?>" name="<?= $name?>[DATE]" /></td>
+		<td><input id="bx_video_date_<?= $id?>" type="text" size="30" value="<?= htmlspecialcharsbx($val['date'])?>" name="<?= $name?>[DATE]" /></td>
 	</tr>
 	<tr>
 		<td class="bx-pr-title"><?= GetMessage('IBLOCK_PROP_VIDEO_DESC')?>:</td>

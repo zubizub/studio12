@@ -368,7 +368,7 @@ class CAllBlogComment
 								$url1 = $url."&amp;";
 							else
 								$url1 = $url."?";
-							$url1 .= "commentId=".$arComments["ID"]."#".$arComments["ID"];
+							$url1 .= "commentId=".$arComments["ID"]."#com".$arComments["ID"];
 
 							$authorURL = "";
 							if(IntVal($arComments["AUTHOR_ID"]) > 0)
@@ -465,7 +465,7 @@ class CAllBlogComment
 		return $rssText;
 	}
 
-	function _IndexPostComments($arParams = Array())
+	public static function _IndexPostComments($arParams = Array())
 	{
 		if(IntVal($arParams["BLOG_ID"]) <= 0 || IntVal($arParams["POST_ID"]) <= 0 || !CModule::IncludeModule("search"))
 			return false;
@@ -608,7 +608,7 @@ class CAllBlogComment
 							INNER JOIN b_blog_socnet_rights SR ON (C.POST_ID = SR.POST_ID AND SR.ENTITY_TYPE='".$type."' AND SR.ENTITY_ID=".$entity_id." AND SR.ENTITY = '".$type2.$entity_id."')", false, "File: ".__FILE__."<br>Line: ".__LINE__);
 	}
 
-	function GetSocNetCommentPerms($postID = 0)
+	public static function GetSocNetCommentPerms($postID = 0)
 	{
 		$postID = IntVal($postID);
 		if($postID <= 0)
@@ -855,7 +855,7 @@ class CAllBlogComment
 		return $perms;
 	}
 
-	function GetMentionedUserID($arFields)
+	public static function GetMentionedUserID($arFields)
 	{
 		$arMentionedUserID = array();
 

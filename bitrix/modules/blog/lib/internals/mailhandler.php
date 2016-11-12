@@ -190,6 +190,7 @@ final class MailHandler
 
 				if ($log = $res->fetch())
 				{
+					$extranetSiteId = false;
 					if (Loader::includeModule('extranet'))
 					{
 						$extranetSiteId = \CExtranet::getExtranetSiteId();
@@ -365,6 +366,7 @@ final class MailHandler
 		}
 
 		$pathToPost = Config\Option::get("socialnetwork", "userblogpost_page", '', $siteId);
+		$blog = $postId = false;
 
 		if ($blogGroupId = Config\Option::get("socialnetwork", "userbloggroup_id", false, $siteId))
 		{
@@ -487,10 +489,11 @@ final class MailHandler
 				"/\[ATTACHMENT\s*=\s*([^\]]*)\]/is".BX_UTF_PCRE_MODIFIER,
 				function ($matches) use ($attachmentRelations)
 				{
-					if (isset($attachmentRelations[$matches[1]]))
-					{
-						return "[DISK FILE ID=".$attachmentRelations[$matches[1]]."]";
-					}
+					return (
+						isset($attachmentRelations[$matches[1]])
+							? "[DISK FILE ID=".$attachmentRelations[$matches[1]]."]"
+							: ""
+					);
 				},
 				$fields["DETAIL_TEXT"]
 			);

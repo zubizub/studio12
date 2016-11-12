@@ -317,7 +317,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 				$uniqType = 0;
 				foreach ($arParams['VOTE_UNIQUE'] as $k => $v)
 					$uniqType |= intval($v);
-				$uniqType += 5;
 
 				list($uniqDelay, $uniqDelayType) = explode(" ", $arParams['VOTE_UNIQUE_IP_DELAY']);
 

@@ -2783,6 +2783,11 @@ $tabControl->EndCustomField("DETAIL_TEXT",
 	{
 		var form = BX('<?echo CUtil::JSEscape($tabControl->GetFormName())?>');
 		var url = '<?echo CUtil::JSEscape($APPLICATION->GetCurPageParam())?>';
+		var selectedTab = BX(s='<?echo CUtil::JSEscape("form_element_".$IBLOCK_ID."_active_tab")?>');
+		if (selectedTab && selectedTab.value)
+		{
+			url += '&<?echo CUtil::JSEscape("form_element_".$IBLOCK_ID."_active_tab")?>=' + selectedTab.value;
+		}
 		<?if($arIBlock["SECTION_PROPERTY"] === "Y" || defined("CATALOG_PRODUCT")):?>
 		var groupField = new JCIBlockGroupField(form, 'tr_IBLOCK_ELEMENT_PROPERTY', url);
 		groupField.reload();

@@ -47,9 +47,6 @@ MobileWebrtc = function ()
 			},this)
 		});
 	}
-	else
-
-
 
 	webrtc.setEventListeners(
 		{
@@ -441,6 +438,7 @@ MobileWebrtc.prototype.onClose = function ()
 MobileWebrtc.prototype.onDisconnect = function ()
 {
 	this.peerConnectionInited = false;
+	//send reconnect
 };
 
 MobileWebrtc.prototype.onIceCandidateDiscovered = function (params)
@@ -603,6 +601,11 @@ BX.addCustomEvent("onPullEvent-im", BX.proxy(function (command, params)
 		}
 		else if (!isTooLate && (params.command == 'invite' || params.command == 'invite_join'))
 		{
+			if(params.callToGroup)
+			{
+				console.log("Call to group");
+				return;
+			}
 
 			if (!this.callInit)
 			{
@@ -619,7 +622,6 @@ BX.addCustomEvent("onPullEvent-im", BX.proxy(function (command, params)
 			}
 			else if (params.command == 'invite')
 			{
-
 				if (this.callChatId == params.chatId)
 				{
 					this.callCommand(params.chatId, 'busy_self');

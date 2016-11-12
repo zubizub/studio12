@@ -377,7 +377,7 @@ class Broadcast
 
 				$CPushManager->addQueue(Array(
 					'USER_ID' => $userIdListPush,
-					'SEND_IMMEDIATELY' => 'N',
+					'SEND_DEFERRED' => 'Y',
 				));
 
 				$offlineUserIdList = array();

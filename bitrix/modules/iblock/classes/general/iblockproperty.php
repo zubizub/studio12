@@ -208,7 +208,12 @@ class CAllIBlockProperty
 		$seq = new CIBlockSequence($arProperty["IBLOCK_ID"], $ID);
 		$seq->Drop();
 
-		return $DB->Query("DELETE FROM b_iblock_property WHERE ID=".$ID, true);
+		$res = $DB->Query("DELETE FROM b_iblock_property WHERE ID=".$ID, true);
+
+		foreach (GetModuleEvents("iblock", "OnAfterIBlockPropertyDelete", true) as $arEvent)
+			ExecuteModuleEventEx($arEvent, array($arProperty));
+
+		return $res;
 	}
 	///////////////////////////////////////////////////////////////////
 	// Update
@@ -1117,6 +1122,7 @@ class CAllIBlockProperty
 			"GetPropertyFieldHtmlMulty" => array('CIBlockPropertyElementAutoComplete','GetPropertyFieldHtmlMulty'),
 			"GetAdminListViewHTML" => array("CIBlockPropertyElementAutoComplete","GetAdminListViewHTML"),
 			"GetPublicViewHTML" => array("CIBlockPropertyElementAutoComplete", "GetPublicViewHTML"),
+			"GetPublicEditHTML" => array("CIBlockPropertyElementAutoComplete", "GetPublicEditHTML"),
 			"GetAdminFilterHTML" => array('CIBlockPropertyElementAutoComplete','GetAdminFilterHTML'),
 			"GetSettingsHTML" => array('CIBlockPropertyElementAutoComplete','GetSettingsHTML'),
 			"PrepareSettings" => array('CIBlockPropertyElementAutoComplete','PrepareSettings'),
@@ -1133,6 +1139,7 @@ class CAllIBlockProperty
 			"GetPropertyFieldHtml" => array("CIBlockPropertySKU", "GetPropertyFieldHtml"),
 			"GetPropertyFieldHtmlMulty" => array("CIBlockPropertySKU", "GetPropertyFieldHtml"),
 			"GetPublicViewHTML" => array("CIBlockPropertySKU", "GetPublicViewHTML"),
+			"GetPublicEditHTML" => array("CIBlockPropertySKU", "GetPublicEditHTML"),
 			"GetAdminListViewHTML" => array("CIBlockPropertySKU","GetAdminListViewHTML"),
 			"GetAdminFilterHTML" => array('CIBlockPropertySKU','GetAdminFilterHTML'),
 			"GetSettingsHTML" => array('CIBlockPropertySKU','GetSettingsHTML'),
@@ -1151,6 +1158,7 @@ class CAllIBlockProperty
 			"GetPropertyFieldHtmlMulty" => array('CIBlockPropertySectionAutoComplete','GetPropertyFieldHtmlMulty'),
 			"GetAdminListViewHTML" => array("CIBlockPropertySectionAutoComplete","GetAdminListViewHTML"),
 			"GetPublicViewHTML" => array("CIBlockPropertySectionAutoComplete", "GetPublicViewHTML"),
+			"GetPublicEditHTML" => array("CIBlockPropertySectionAutoComplete", "GetPublicEditHTML"),
 			"GetAdminFilterHTML" => array('CIBlockPropertySectionAutoComplete','GetAdminFilterHTML'),
 			"GetSettingsHTML" => array('CIBlockPropertySectionAutoComplete','GetSettingsHTML'),
 			"PrepareSettings" => array('CIBlockPropertySectionAutoComplete','PrepareSettings'),

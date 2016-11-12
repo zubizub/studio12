@@ -2270,7 +2270,7 @@ REQ
 		return str_replace("%", "\\%", str_replace("_", "\\_", $DB->ForSQL($str)));
 	}
 
-	function FilterCreateEx($fname, $vals, $type, &$bFullJoin, $cOperationType=false, $bSkipEmpty = true)
+	public static function FilterCreateEx($fname, $vals, $type, &$bFullJoin, $cOperationType=false, $bSkipEmpty = true)
 	{
 		/** @global CDatabase $DB */
 		global $DB;
@@ -3551,8 +3551,7 @@ REQ
 			$DB->DDL("create index ix_iblock_section_code on b_iblock_section (IBLOCK_ID, CODE)");
 	}
 
-
-	function GetAuditTypes()
+	public static function GetAuditTypes()
 	{
 		return array(
 			"IBLOCK_SECTION_ADD" => "[IBLOCK_SECTION_ADD] ".GetMessage("IBLOCK_SECTION_ADD"),

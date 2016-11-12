@@ -1,0 +1,498 @@
+2016-11-07 15:42:56 -  - exec CUpdateClient::GetUpdatesList
+2016-11-07 15:42:56 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:42:56 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.0.12&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&bith_ru=&bith_en=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:42:56 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:42:56 -  - TIME GetUpdatesList(request) 0.35 sec
+2016-11-07 15:42:56 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:43:42 -  - exec CUpdateClient::GetUpdatesList
+2016-11-07 15:43:42 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:43:42 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.0.12&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&bith_ru=&bith_en=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:43:42 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:43:42 -  - TIME GetUpdatesList(request) 0.52 sec
+2016-11-07 15:43:42 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:43:47 -  - exec CUpdateClient::UpdateUpdate
+2016-11-07 15:43:47 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:43:47 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.0.12&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&bith_ru=&bith_en=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&query_type=updateupdate
+2016-11-07 15:43:47 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:43:49 -  - TIME UpdateUpdate(request) 1.88 sec
+2016-11-07 15:43:49 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:43:49 -  - TIME UnGzipArchive 0.066 sec
+2016-11-07 15:43:49 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:43:49 - CURV - Update updated successfully!
+2016-11-07 15:43:49 - UPD_SUCCESS - Update system updated
+2016-11-07 15:43:50 -  - exec CUpdateClient::UpdateUpdate
+2016-11-07 15:43:50 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:43:50 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&query_type=updateupdate
+2016-11-07 15:43:50 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:43:52 -  - TIME UpdateUpdate(request) 1.937 sec
+2016-11-07 15:43:52 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:43:52 -  - TIME UnGzipArchive 0.036 sec
+2016-11-07 15:43:52 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:43:52 - CURV - Update updated successfully!
+2016-11-07 15:43:52 - UPD_SUCCESS - Update system updated
+2016-11-07 15:43:53 -  - exec CUpdateClient::GetUpdatesList
+2016-11-07 15:43:53 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:43:53 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:43:53 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:44:02 -  - TIME GetUpdatesList(request) 8.638 sec
+2016-11-07 15:44:02 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:44:04 -  - exec CUpdateClient::executeCounters
+2016-11-07 15:44:04 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:44:07 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&query_type=counter&cntr_result[3]=5.6
+2016-11-07 15:44:07 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:44:07 -  - TIME executeCounters 3.339 sec
+2016-11-07 15:47:55 -  - exec CUpdateClient::GetUpdatesList
+2016-11-07 15:47:55 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:47:55 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:47:55 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:47:55 -  - TIME GetUpdatesList(request) 0.233 sec
+2016-11-07 15:47:55 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:47:59 -  - exec CUpdateClient::RegisterVersion
+2016-11-07 15:47:59 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:47:59 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.4&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&query_type=register
+2016-11-07 15:47:59 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:09 -  - TIME RegisterVersion(request) 9.54 sec
+2016-11-07 15:48:09 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:09 -  - TIME UnGzipArchive 0.114 sec
+2016-11-07 15:48:09 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:10 - CURV - Product registered successfully!
+2016-11-07 15:48:10 - UPD_SUCCESS - Registered
+2016-11-07 15:48:29 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:29 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:30 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.4&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.4&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:30 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:30 -  - TIME LoadModulesUpdates(request) 0.226 sec
+2016-11-07 15:48:30 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:30 - S - STEP
+2016-11-07 15:48:30 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:31 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:31 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:31 -  - loadFile
+2016-11-07 15:48:31 - U - RETURN
+2016-11-07 15:48:31 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:31 -  - TIME UnGzipArchive 0.016 sec
+2016-11-07 15:48:31 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522911/main/updater16.5.5.php'
+2016-11-07 15:48:31 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522911/main/updater16.5.5.php': CopyFiles(install/js, js)
+2016-11-07 15:48:31 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522911/main/updater16.5.5.php': CopyFiles(install/css, css)
+2016-11-07 15:48:31 -  - TIME UpdateStepModules 0.055 sec
+2016-11-07 15:48:31 - UPD_SUCCESS - Updated: main (16.5.5)<br><li>Незначительные исправления и улучшения.
+2016-11-07 15:48:32 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:32 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:32 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.5&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.5&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:32 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:32 -  - TIME LoadModulesUpdates(request) 0.211 sec
+2016-11-07 15:48:32 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:32 - S - STEP
+2016-11-07 15:48:32 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:32 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:32 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:33 -  - loadFile
+2016-11-07 15:48:36 - U - RETURN
+2016-11-07 15:48:36 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:37 -  - TIME UnGzipArchive 0.007 sec
+2016-11-07 15:48:37 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522916/main/updater16.5.6.php'
+2016-11-07 15:48:37 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522916/main/updater16.5.6.php': CopyFiles(install/components, components)
+2016-11-07 15:48:37 -  - TIME UpdateStepModules 0.02 sec
+2016-11-07 15:48:37 - UPD_SUCCESS - Updated: main (16.5.6)<br><li>Исправлена проблема безопасности в пользовательском поле типа \"список\".
+2016-11-07 15:48:37 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:37 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:37 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.4&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:37 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:37 -  - TIME LoadModulesUpdates(request) 0.269 sec
+2016-11-07 15:48:37 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:37 - S - STEP
+2016-11-07 15:48:37 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:38 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:38 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:38 -  - loadFile
+2016-11-07 15:48:38 - U - RETURN
+2016-11-07 15:48:38 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:38 -  - TIME UnGzipArchive 0.009 sec
+2016-11-07 15:48:38 -  - TIME UpdateStepModules 0.014 sec
+2016-11-07 15:48:39 - UPD_SUCCESS - Updated: fileman (16.5.5)<br><li>Исправлены проблемы безопасности в пользовательском поле типа \"видео\". 
+2016-11-07 15:48:41 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:41 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:41 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.2&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:41 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:41 -  - TIME LoadModulesUpdates(request) 0.234 sec
+2016-11-07 15:48:41 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:42 - S - STEP
+2016-11-07 15:48:42 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:42 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:42 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:42 -  - loadFile
+2016-11-07 15:48:43 - U - RETURN
+2016-11-07 15:48:43 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:43 -  - TIME UnGzipArchive 0.051 sec
+2016-11-07 15:48:43 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522923/forum/updater16.5.3.php'
+2016-11-07 15:48:43 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522923/forum/updater16.5.3.php': CopyFiles(install/components, components)
+2016-11-07 15:48:44 -  - TIME UpdateStepModules 0.964 sec
+2016-11-07 15:48:44 - UPD_SUCCESS - Updated: forum (16.5.3)<br><li>Служебное обновление для поддержки изменений в модуле \"Веб-мессенджер\". <li>Исправление ошибок.
+2016-11-07 15:48:45 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:45 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:45 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.2&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:45 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:45 -  - TIME LoadModulesUpdates(request) 0.257 sec
+2016-11-07 15:48:45 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:46 - S - STEP
+2016-11-07 15:48:46 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:46 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:46 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:46 -  - loadFile
+2016-11-07 15:48:47 - U - RETURN
+2016-11-07 15:48:47 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:47 -  - TIME UnGzipArchive 0.153 sec
+2016-11-07 15:48:47 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522927/iblock/updater16.5.3/index.php'
+2016-11-07 15:48:47 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522927/iblock/updater16.5.3/index.php': CopyFiles(install/components, components)
+2016-11-07 15:48:48 -  - TIME UpdateStepModules 0.788 sec
+2016-11-07 15:48:48 - UPD_SUCCESS - Updated: iblock (16.5.3)<br><li>Поддержка округления цен. <li>Улучшена совместимость с PHP 7. <li>Компонент catalog.comments обращается к VKontakte только по https. <li>Разработчикам: метод CIBlockElement::GetList объявлен статическим.
+2016-11-07 15:48:48 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:48 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:48 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.3&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:48 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:49 -  - TIME LoadModulesUpdates(request) 0.252 sec
+2016-11-07 15:48:49 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:49 - S - STEP
+2016-11-07 15:48:49 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:49 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:49 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:49 -  - loadFile
+2016-11-07 15:48:49 - U - RETURN
+2016-11-07 15:48:49 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:49 -  - TIME UnGzipArchive 0.004 sec
+2016-11-07 15:48:49 -  - TIME UpdateStepModules 0.007 sec
+2016-11-07 15:48:49 - UPD_SUCCESS - Updated: iblock (16.5.4)<br><li>Исправлена ошибка группировки элементов в CIBlockElement::GetList. 
+2016-11-07 15:48:50 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:50 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:50 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.4&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:50 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:51 -  - TIME LoadModulesUpdates(request) 0.245 sec
+2016-11-07 15:48:51 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:51 - S - STEP
+2016-11-07 15:48:51 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:51 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:51 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:51 -  - loadFile
+2016-11-07 15:48:51 - U - RETURN
+2016-11-07 15:48:51 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:51 -  - TIME UnGzipArchive 0.027 sec
+2016-11-07 15:48:51 -  - TIME UpdateStepModules 0.01 sec
+2016-11-07 15:48:51 - UPD_SUCCESS - Updated: iblock (16.5.5)<br><li>Исправлена ошибка фильтрации в методе CIBlockElement::GetList при использовании метода SubQuery. 
+2016-11-07 15:48:52 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:52 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:52 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.5&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:52 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:53 -  - TIME LoadModulesUpdates(request) 0.235 sec
+2016-11-07 15:48:53 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:53 - S - STEP
+2016-11-07 15:48:53 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:53 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:53 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:53 -  - loadFile
+2016-11-07 15:48:54 - U - RETURN
+2016-11-07 15:48:54 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:54 -  - TIME UnGzipArchive 0.003 sec
+2016-11-07 15:48:54 -  - TIME UpdateStepModules 0.007 sec
+2016-11-07 15:48:54 - UPD_SUCCESS - Updated: iblock (16.5.6)<br><li>Исправлена работа фасетного индекса.
+2016-11-07 15:48:54 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:54 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:54 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.0.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:54 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:54 -  - TIME LoadModulesUpdates(request) 0.225 sec
+2016-11-07 15:48:54 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:54 - S - STEP
+2016-11-07 15:48:54 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:55 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:55 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:55 -  - loadFile
+2016-11-07 15:48:55 - U - RETURN
+2016-11-07 15:48:55 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:55 -  - TIME UnGzipArchive 0.051 sec
+2016-11-07 15:48:55 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522935/search/updater16.5.0.php'
+2016-11-07 15:48:55 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522935/search/updater16.5.0.php': CopyFiles(install/components, components)
+2016-11-07 15:48:56 -  - TIME UpdateStepModules 0.212 sec
+2016-11-07 15:48:56 - UPD_SUCCESS - Updated: search (16.5.0)<br><li>В объявления некоторых методов добавлено ключевое слово static. <li>Улучшен стемминг некоторых слов. <li>Добавлена поддержка sphinx 2.2.10 и php 7.0. <li>В компоненты добавлена поддержка фильтрации модуля \"Диск\". 
+2016-11-07 15:48:56 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:56 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:56 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.0.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:56 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:57 -  - TIME LoadModulesUpdates(request) 0.228 sec
+2016-11-07 15:48:57 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:57 - S - STEP
+2016-11-07 15:48:57 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:48:58 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:58 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:58 -  - loadFile
+2016-11-07 15:48:58 - U - RETURN
+2016-11-07 15:48:58 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:48:58 -  - TIME UnGzipArchive 0.012 sec
+2016-11-07 15:48:58 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522938/subscribe/updater16.5.0.php'
+2016-11-07 15:48:58 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522938/subscribe/updater16.5.0.php': CopyFiles(install/components, components)
+2016-11-07 15:48:58 -  - TIME UpdateStepModules 0.04 sec
+2016-11-07 15:48:58 - UPD_SUCCESS - Updated: subscribe (16.5.0)<br><li>В объявления некоторых методов добавлено ключевое слово static. <li>Исправлено кодирование заголовка получателя письма. <li>Добавлена возможность размещать шаблоны рассылок в папке /local/php_interface/subscribe/templates.
+2016-11-07 15:48:59 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:48:59 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:48:59 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.4&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:48:59 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:48:59 -  - TIME LoadModulesUpdates(request) 0.247 sec
+2016-11-07 15:48:59 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:48:59 - S - STEP
+2016-11-07 15:48:59 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:00 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:00 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:00 -  - loadFile
+2016-11-07 15:49:00 - U - RETURN
+2016-11-07 15:49:00 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:00 -  - TIME UnGzipArchive 0.068 sec
+2016-11-07 15:49:00 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522940/blog/updater16.5.5.php'
+2016-11-07 15:49:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522940/blog/updater16.5.5.php': CopyFiles(install/components, components)
+2016-11-07 15:49:01 -  - TIME UpdateStepModules 0.523 sec
+2016-11-07 15:49:01 - UPD_SUCCESS - Updated: blog (16.5.5)<br><li>Исправлена ошибка некорректного расчета прав на доступ к проиндексированному поисковому контенту сообщений рабочих групп для их владельцев и модераторов. <li>Поддержка использования контактов CRM, как почтовых пользователей.
+2016-11-07 15:49:07 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:07 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:08 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.5&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:08 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:08 -  - TIME LoadModulesUpdates(request) 0.274 sec
+2016-11-07 15:49:08 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:10 - S - STEP
+2016-11-07 15:49:10 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:25 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:25 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:25 -  - loadFile
+2016-11-07 15:49:25 - U - RETURN
+2016-11-07 15:49:25 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:25 -  - TIME UnGzipArchive 0.006 sec
+2016-11-07 15:49:25 -  - TIME UpdateStepModules 0.011 sec
+2016-11-07 15:49:25 - UPD_SUCCESS - Updated: blog (16.5.6)<br><li>Служебное обновление для поддержки изменений в модуле \"Веб-мессенджер\".
+2016-11-07 15:49:27 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:27 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:27 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.0.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:27 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:27 -  - TIME LoadModulesUpdates(request) 0.225 sec
+2016-11-07 15:49:27 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:27 - S - STEP
+2016-11-07 15:49:27 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:28 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:28 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:28 -  - loadFile
+2016-11-07 15:49:28 - U - RETURN
+2016-11-07 15:49:28 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:28 -  - TIME UnGzipArchive 0.031 sec
+2016-11-07 15:49:28 -  - TIME UpdateStepModules 0.076 sec
+2016-11-07 15:49:28 - UPD_SUCCESS - Updated: perfmon (16.5.0)<br><li>Исправлена ошибка определения наличия InnoDB. <li>В объявления некоторых методов добавлено ключевое слово static. <li>Добавлены дополнительные возможности фильтрации записей таблиц. <li>Для форм редактирования записей изменён идентификатор формы для различения в обработчиках событий. <li>Исправлена ошибка теста масштабируемости при включенной смене идентификатора сессии. <li>Улучшена диагностика настроек акселераторов: xcache, opcache и apc. <li>Добавлена группировка на странице списка компонентов. 
+2016-11-07 15:49:29 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:29 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.0.3&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:29 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:29 -  - TIME LoadModulesUpdates(request) 0.248 sec
+2016-11-07 15:49:29 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:29 - S - STEP
+2016-11-07 15:49:29 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:30 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:30 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:30 -  - loadFile
+2016-11-07 15:49:30 - U - RETURN
+2016-11-07 15:49:30 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:30 -  - TIME UnGzipArchive 0.024 sec
+2016-11-07 15:49:30 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522970/security/updater16.5.0.php'
+2016-11-07 15:49:30 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522970/security/updater16.5.0.php': CopyFiles(install/components, components)
+2016-11-07 15:49:30 -  - TIME UpdateStepModules 0.078 sec
+2016-11-07 15:49:30 - UPD_SUCCESS - Updated: security (16.5.0)<br><li>В объявления некоторых методов добавлено ключевое слово static. <li>Улучшена защита редиректов. <li>Улучшена работа контроля целостности файлов. 
+2016-11-07 15:49:31 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:31 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:31 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.4&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:31 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:31 -  - TIME LoadModulesUpdates(request) 0.241 sec
+2016-11-07 15:49:31 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:31 - S - STEP
+2016-11-07 15:49:31 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:32 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:32 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:32 -  - loadFile
+2016-11-07 15:49:32 - U - RETURN
+2016-11-07 15:49:32 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:32 -  - TIME UnGzipArchive 0.017 sec
+2016-11-07 15:49:32 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522972/socialservices/updater16.5.5.php'
+2016-11-07 15:49:32 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522972/socialservices/updater16.5.5.php': CopyFiles(install/components, components)
+2016-11-07 15:49:32 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522972/socialservices/updater16.5.5.php': CopyFiles(install/tools, tools)
+2016-11-07 15:49:34 -  - TIME UpdateStepModules 2.06 sec
+2016-11-07 15:49:34 - UPD_SUCCESS - Updated: socialservices (16.5.5)<br><li>Класс для работы с Dropbox теперь использует новую версию Dropbox API. <li>Клиент для интеграции \"Управление сайтом\" и \"Битрикс24\". <li>Исправлена ошибка авторизации через Битрикс24.Нетворк. 
+2016-11-07 15:49:35 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:35 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:35 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.0.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:35 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:36 -  - TIME LoadModulesUpdates(request) 0.25 sec
+2016-11-07 15:49:36 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:36 - S - STEP
+2016-11-07 15:49:36 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:36 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:36 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:37 -  - loadFile
+2016-11-07 15:49:37 - U - RETURN
+2016-11-07 15:49:37 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:37 -  - TIME UnGzipArchive 0.009 sec
+2016-11-07 15:49:37 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522977/clouds/updater16.5.0.php'
+2016-11-07 15:49:37 -  - TIME UpdateStepModules 0.516 sec
+2016-11-07 15:49:38 - UPD_SUCCESS - Updated: clouds (16.5.0)<br><li>В базовый класс сервисов добавлен метод переименования файлов. <li>В объявления некоторых методов добавлено ключевое слово static. <li>Для контейнеров Amazon S3, содержащих в названии точку, изменены правила формирования URL для протокола https. 
+2016-11-07 15:49:39 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:39 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:39 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.5.0&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:39 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:39 -  - TIME LoadModulesUpdates(request) 0.229 sec
+2016-11-07 15:49:39 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:39 - S - STEP
+2016-11-07 15:49:39 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:39 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:40 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:40 -  - loadFile
+2016-11-07 15:49:40 - U - RETURN
+2016-11-07 15:49:40 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:40 -  - TIME UnGzipArchive 0.005 sec
+2016-11-07 15:49:40 -  - TIME UpdateStepModules 0.014 sec
+2016-11-07 15:49:40 - UPD_SUCCESS - Updated: clouds (16.5.1)<br><li>Незначительные исправления административного интерфейса. 
+2016-11-07 15:49:40 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:40 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:40 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.5.1&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:40 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:41 -  - TIME LoadModulesUpdates(request) 0.282 sec
+2016-11-07 15:49:41 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:41 - S - STEP
+2016-11-07 15:49:41 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:41 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:41 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:41 -  - loadFile
+2016-11-07 15:49:42 - U - RETURN
+2016-11-07 15:49:42 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:42 -  - TIME UnGzipArchive 0.005 sec
+2016-11-07 15:49:42 -  - TIME UpdateStepModules 0.012 sec
+2016-11-07 15:49:42 - UPD_SUCCESS - Updated: clouds (16.5.2)<br><li>Оптимизировано количество обращений в облако при ресайзе картинок. 
+2016-11-07 15:49:42 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:42 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:42 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.0&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:42 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:42 -  - TIME LoadModulesUpdates(request) 0.229 sec
+2016-11-07 15:49:42 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:43 - S - STEP
+2016-11-07 15:49:43 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:43 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:43 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:44 -  - loadFile
+2016-11-07 15:49:44 - U - RETURN
+2016-11-07 15:49:44 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:44 -  - TIME UnGzipArchive 0.03 sec
+2016-11-07 15:49:44 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522984/bitrixcloud/updater16.0.1.php'
+2016-11-07 15:49:44 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522984/bitrixcloud/updater16.0.1.php': CopyFiles(install/components, components)
+2016-11-07 15:49:44 -  - TIME UpdateStepModules 0.101 sec
+2016-11-07 15:49:44 - UPD_SUCCESS - Updated: bitrixcloud (16.0.1)<br><li>Добавлены операции и уровни доступа. <li>В объявления некоторых методов добавлено ключевое слово static. 
+2016-11-07 15:49:45 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:45 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:45 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.5&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:45 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:45 -  - TIME LoadModulesUpdates(request) 0.226 sec
+2016-11-07 15:49:45 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:45 - S - STEP
+2016-11-07 15:49:45 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:46 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:46 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:46 -  - loadFile
+2016-11-07 15:49:46 - U - RETURN
+2016-11-07 15:49:46 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:46 -  - TIME UnGzipArchive 0.013 sec
+2016-11-07 15:49:46 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522986/mobileapp/updater16.0.6.php'
+2016-11-07 15:49:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522986/mobileapp/updater16.0.6.php': CopyFiles(install/js, js)
+2016-11-07 15:49:46 -  - TIME UpdateStepModules 0.041 sec
+2016-11-07 15:49:46 - UPD_SUCCESS - Updated: mobileapp (16.0.6)<br><li>Исправлены незначительные ошибки.
+2016-11-07 15:49:46 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:46 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.6&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:46 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:47 -  - TIME LoadModulesUpdates(request) 0.339 sec
+2016-11-07 15:49:47 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:47 - S - STEP
+2016-11-07 15:49:47 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:47 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:47 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:47 -  - loadFile
+2016-11-07 15:49:47 - U - RETURN
+2016-11-07 15:49:47 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:47 -  - TIME UnGzipArchive 0.011 sec
+2016-11-07 15:49:47 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522987/mobileapp/updater16.0.7.php'
+2016-11-07 15:49:47 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522987/mobileapp/updater16.0.7.php': CopyFiles(install/js, js)
+2016-11-07 15:49:48 -  - TIME UpdateStepModules 0.029 sec
+2016-11-07 15:49:48 - UPD_SUCCESS - Updated: mobileapp (16.0.7)<br><li>Исправлены незначительные ошибки.
+2016-11-07 15:49:48 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:48 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:48 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.7&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:48 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:48 -  - TIME LoadModulesUpdates(request) 0.231 sec
+2016-11-07 15:49:48 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:48 - S - STEP
+2016-11-07 15:49:48 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:49 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:49 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:49 -  - loadFile
+2016-11-07 15:49:49 - U - RETURN
+2016-11-07 15:49:49 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:49 -  - TIME UnGzipArchive 0.03 sec
+2016-11-07 15:49:49 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522989/mobileapp/updater16.0.8.php'
+2016-11-07 15:49:49 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522989/mobileapp/updater16.0.8.php': CopyFiles(install/js, js)
+2016-11-07 15:49:49 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1478522989/mobileapp/updater16.0.8.php': CopyFiles(install/components, components)
+2016-11-07 15:49:49 -  - TIME UpdateStepModules 0.128 sec
+2016-11-07 15:49:49 - UPD_SUCCESS - Updated: mobileapp (16.0.8)<br><li>Добавлен параметр меню страницы useNavigationBarColor. <li>Исправлены незначительные ошибки в конструкторе мобильных приложений.
+2016-11-07 15:49:50 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:50 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:50 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.0.2&bitm_iblock=16.5.6&bitm_mobileapp=16.0.8&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:50 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:51 -  - TIME LoadModulesUpdates(request) 0.245 sec
+2016-11-07 15:49:51 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:51 - S - STEP
+2016-11-07 15:49:51 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:51 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:51 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:51 -  - loadFile
+2016-11-07 15:49:51 - U - RETURN
+2016-11-07 15:49:51 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:51 -  - TIME UnGzipArchive 0.008 sec
+2016-11-07 15:49:51 - CSURUS1 - Run updater '/bitrix/updates/update_m1478522991/highloadblock/updater16.5.0/index.php'
+2016-11-07 15:49:51 -  - TIME UpdateStepModules 0.025 sec
+2016-11-07 15:49:51 - UPD_SUCCESS - Updated: highloadblock (16.5.0)<br><li>Для пользовательского типа свойств инфоблоков \"Справочник\" добавлен метод GetPublicEditHTML. <li>Исправления незначительных ошибок.
+2016-11-07 15:49:52 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:52 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:52 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.5.0&bitm_iblock=16.5.6&bitm_mobileapp=16.0.8&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.0.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:52 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:52 -  - TIME LoadModulesUpdates(request) 0.218 sec
+2016-11-07 15:49:52 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:52 - S - STEP
+2016-11-07 15:49:52 - LMU01 - LoadModulesUpdates-Step
+2016-11-07 15:49:53 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:53 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:53 -  - loadFile
+2016-11-07 15:49:53 - U - RETURN
+2016-11-07 15:49:53 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:49:53 -  - TIME UnGzipArchive 0.01 sec
+2016-11-07 15:49:53 -  - TIME UpdateStepModules 0.01 sec
+2016-11-07 15:49:53 - UPD_SUCCESS - Updated: scale (16.5.0)<br><li>Исправлена ошибка, при которой в панели управления показывались не все данные об использовании ресурсов.
+2016-11-07 15:49:54 -  - exec CUpdateClient::LoadModulesUpdates
+2016-11-07 15:49:54 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:49:54 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.5.0&bitm_iblock=16.5.6&bitm_mobileapp=16.0.8&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.5.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:49:54 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:49:54 -  - TIME LoadModulesUpdates(request) 0.222 sec
+2016-11-07 15:49:54 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:49:54 - STEP - Finish - NOUPDATES
+2016-11-07 15:49:54 - STEP - Finish - NOUPDATES
+2016-11-07 15:51:33 -  - exec CUpdateClient::RegisterVersion
+2016-11-07 15:51:33 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:51:33 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.5.0&bitm_iblock=16.5.6&bitm_mobileapp=16.0.8&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.5.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&query_type=register
+2016-11-07 15:51:33 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:51:33 -  - TIME RegisterVersion(request) 0.236 sec
+2016-11-07 15:51:33 -  - exec CUpdateClient::UnGzipArchive
+2016-11-07 15:51:33 -  - TIME UnGzipArchive 0.008 sec
+2016-11-07 15:51:33 -  - exec CUpdateClient::ParseServerData
+2016-11-07 15:51:34 - CURV - Product registered successfully!
+2016-11-07 15:51:34 - UPD_SUCCESS - Registered
+2016-11-07 15:52:47 -  - exec CUpdateClient::GetUpdatesList
+2016-11-07 15:52:47 -  - exec CUpdateClient::CollectRequestData
+2016-11-07 15:52:47 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=16.5.7&VERSION=16.5.6&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.dev12.korovets.ru&CHHB=www.dev12.korovets.ru&CSAB=127.0.0.1&CANGZIP=Y&CLIENT_PHPVER=5.6.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=16.5.6&bitm_bitrixcloud=16.0.1&bitm_blog=16.5.6&bitm_clouds=16.5.2&bitm_compression=16.0.0&bitm_fileman=16.5.5&bitm_form=15.0.2&bitm_forum=16.5.3&bitm_highloadblock=16.5.0&bitm_iblock=16.5.6&bitm_mobileapp=16.0.8&bitm_perfmon=16.5.0&bitm_photogallery=16.0.1&bitm_scale=16.5.0&bitm_search=16.5.0&bitm_security=16.5.0&bitm_seo=16.0.3&bitm_socialservices=16.5.5&bitm_subscribe=16.5.0&bitm_translate=14.5.0&bitm_vote=15.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2016-11-07 15:52:47 -  - exec CUpdateClient::GetHTTPPage
+2016-11-07 15:52:48 -  - TIME GetUpdatesList(request) 0.444 sec
+2016-11-07 15:52:48 -  - exec CUpdateClient::ParseServerData
