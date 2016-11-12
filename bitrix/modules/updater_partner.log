@@ -1,0 +1,34 @@
+2016-11-12 13:46:53 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 13:46:53 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 13:46:53 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=s12&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=D&CLIENT_PHPVER=5.5.37&NGINX=Y&dbv=5.5.50&instm=main%2C16.5.4%2CY%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bbitrix.siteinfoportal%2C15.0.0%2CN%3Bbitrix.sitepersonal%2C15.0.0%2CN%3Bbitrixcloud%2C16.0.0%2CN%3Bblog%2C16.5.4%2CN%3Bclouds%2C16.0.1%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C16.5.4%2CN%3Bform%2C15.0.2%2CN%3Bforum%2C16.5.2%2CN%3Bhighloadblock%2C16.0.2%2CN%3Biblock%2C16.5.2%2CN%3Bmobileapp%2C16.0.5%2CN%3Bperfmon%2C16.0.0%2CN%3Bphotogallery%2C16.0.1%2CN%3Bscale%2C16.0.0%2CN%3Bsearch%2C16.0.0%2CN%3Bsecurity%2C16.0.3%2CN%3Bseo%2C16.0.3%2CN%3Bsocialservices%2C16.5.4%2CN%3Bsubscribe%2C16.0.0%2CN%3Btranslate%2C14.5.0%2CN%3Bvote%2C15.5.0%2CN&reqm=bitrix.sitecorporate%2Cbitrix.siteinfoportal%2Cbitrix.sitepersonal&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2016-11-12 13:46:53 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-11-12 13:48:56 -  - TIME GetUpdatesList(request) 122.55 sec
+2016-11-12 13:48:56 -  - exec CUpdateClientPartner::ParseServerData
+2016-11-12 13:48:56 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 13:48:56 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 13:49:44 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 13:49:44 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 13:49:44 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=s12&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=D&CLIENT_PHPVER=5.5.37&NGINX=Y&dbv=5.5.50&instm=main%2C16.5.4%2CY%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bbitrix.siteinfoportal%2C15.0.0%2CN%3Bbitrix.sitepersonal%2C15.0.0%2CN%3Bbitrixcloud%2C16.0.0%2CN%3Bblog%2C16.5.4%2CN%3Bclouds%2C16.0.1%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C16.5.4%2CN%3Bform%2C15.0.2%2CN%3Bforum%2C16.5.2%2CN%3Bhighloadblock%2C16.0.2%2CN%3Biblock%2C16.5.2%2CN%3Bmobileapp%2C16.0.5%2CN%3Bperfmon%2C16.0.0%2CN%3Bphotogallery%2C16.0.1%2CN%3Bscale%2C16.0.0%2CN%3Bsearch%2C16.0.0%2CN%3Bsecurity%2C16.0.3%2CN%3Bseo%2C16.0.3%2CN%3Bsocialservices%2C16.5.4%2CN%3Bsubscribe%2C16.0.0%2CN%3Btranslate%2C14.5.0%2CN%3Bvote%2C15.5.0%2CN&reqm=bitrix.sitecorporate%2Cbitrix.siteinfoportal%2Cbitrix.sitepersonal&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2016-11-12 13:49:44 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-11-12 13:51:49 -  - TIME GetUpdatesList(request) 125.441 sec
+2016-11-12 13:51:49 -  - exec CUpdateClientPartner::ParseServerData
+2016-11-12 13:51:51 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 13:51:51 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 13:51:51 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=s12&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=D&CLIENT_PHPVER=5.5.37&NGINX=Y&dbv=5.5.50&instm=main%2C16.5.4%2CY%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bbitrix.siteinfoportal%2C15.0.0%2CN%3Bbitrix.sitepersonal%2C15.0.0%2CN%3Bbitrixcloud%2C16.0.0%2CN%3Bblog%2C16.5.4%2CN%3Bclouds%2C16.0.1%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C16.5.4%2CN%3Bform%2C15.0.2%2CN%3Bforum%2C16.5.2%2CN%3Bhighloadblock%2C16.0.2%2CN%3Biblock%2C16.5.2%2CN%3Bmobileapp%2C16.0.5%2CN%3Bperfmon%2C16.0.0%2CN%3Bphotogallery%2C16.0.1%2CN%3Bscale%2C16.0.0%2CN%3Bsearch%2C16.0.0%2CN%3Bsecurity%2C16.0.3%2CN%3Bseo%2C16.0.3%2CN%3Bsocialservices%2C16.5.4%2CN%3Bsubscribe%2C16.0.0%2CN%3Btranslate%2C14.5.0%2CN%3Bvote%2C15.5.0%2CN&reqm=bitrix.sitecorporate%2Cbitrix.siteinfoportal%2Cbitrix.sitepersonal&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2016-11-12 13:51:51 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-11-12 13:53:54 -  - TIME GetUpdatesList(request) 123.185 sec
+2016-11-12 13:53:54 -  - exec CUpdateClientPartner::ParseServerData
+2016-11-12 13:53:54 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 13:53:54 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 16:55:43 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 16:55:43 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 16:55:43 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=s12&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=D&CLIENT_PHPVER=5.5.37&NGINX=Y&dbv=5.5.50&instm=main%2C16.5.4%2CY%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bbitrix.siteinfoportal%2C15.0.0%2CN%3Bbitrix.sitepersonal%2C15.0.0%2CN%3Bbitrixcloud%2C16.0.0%2CN%3Bblog%2C16.5.4%2CN%3Bclouds%2C16.0.1%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C16.5.4%2CN%3Bform%2C15.0.2%2CN%3Bforum%2C16.5.2%2CN%3Bhighloadblock%2C16.0.2%2CN%3Biblock%2C16.5.2%2CN%3Bmobileapp%2C16.0.5%2CN%3Bperfmon%2C16.0.0%2CN%3Bphotogallery%2C16.0.1%2CN%3Bscale%2C16.0.0%2CN%3Bsearch%2C16.0.0%2CN%3Bsecurity%2C16.0.3%2CN%3Bseo%2C16.0.3%2CN%3Bsocialservices%2C16.5.4%2CN%3Bsubscribe%2C16.0.0%2CN%3Btranslate%2C14.5.0%2CN%3Bvote%2C15.5.0%2CN&reqm=bitrix.sitecorporate%2Cbitrix.siteinfoportal%2Cbitrix.sitepersonal&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2016-11-12 16:55:43 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-11-12 16:57:45 -  - TIME GetUpdatesList(request) 121.906 sec
+2016-11-12 16:57:45 -  - exec CUpdateClientPartner::ParseServerData
+2016-11-12 16:57:45 -  - exec CUpdateClientPartner::GetUpdatesList
+2016-11-12 16:57:45 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-11-12 16:57:45 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=s12&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=D&CLIENT_PHPVER=5.5.37&NGINX=Y&dbv=5.5.50&instm=main%2C16.5.4%2CY%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bbitrix.siteinfoportal%2C15.0.0%2CN%3Bbitrix.sitepersonal%2C15.0.0%2CN%3Bbitrixcloud%2C16.0.0%2CN%3Bblog%2C16.5.4%2CN%3Bclouds%2C16.0.1%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C16.5.4%2CN%3Bform%2C15.0.2%2CN%3Bforum%2C16.5.2%2CN%3Bhighloadblock%2C16.0.2%2CN%3Biblock%2C16.5.2%2CN%3Bmobileapp%2C16.0.5%2CN%3Bperfmon%2C16.0.0%2CN%3Bphotogallery%2C16.0.1%2CN%3Bscale%2C16.0.0%2CN%3Bsearch%2C16.0.0%2CN%3Bsecurity%2C16.0.3%2CN%3Bseo%2C16.0.3%2CN%3Bsocialservices%2C16.5.4%2CN%3Bsubscribe%2C16.0.0%2CN%3Btranslate%2C14.5.0%2CN%3Bvote%2C15.5.0%2CN&reqm=bitrix.sitecorporate%2Cbitrix.siteinfoportal%2Cbitrix.sitepersonal&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2016-11-12 16:57:45 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-11-12 16:59:50 -  - TIME GetUpdatesList(request) 124.582 sec
+2016-11-12 16:59:50 -  - exec CUpdateClientPartner::ParseServerData
