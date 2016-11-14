@@ -56,7 +56,7 @@ IncludeTemplateLangFile(__FILE__);
                 </ul>
                 <div class="mobile-note">
                     <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
-                    <div class="mobile-note__phone">+7 495 780-40-40</div>
+                    <div class="mobile-note__phone call_phone_1">+7 495 780-40-40</div>
                     <a href="#" class="mobile-note__phone-link btn-callback">Обратный звонок</a>
                     <span class="mobile-note__sr-link btn-callback-room">Showroom: Studio#8</span>
                 </div>

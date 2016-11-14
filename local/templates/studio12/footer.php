@@ -42,7 +42,7 @@ IncludeTemplateLangFile(__FILE__);
         <div class="nav">
             <div class="nav__inner">
                 <div class="nav__item nav__item--place-yellow"><span class="nav__item-text">Москва, СВАО, <br>12-й пр. Марьиной Рощи&nbsp;8</span></div>
-                <div class="nav__item nav__item--phone-yellow"><span class="nav__item-text">+7 495 780-40-40<span
+                <div class="nav__item nav__item--phone-yellow"><span class="nav__item-text"> <span class="call_phone_1">+7 495 780-40-40</span><span
                         class="hidden-lg-xl-down"> | </span><br><a class="link nav__link btn-callback" href="#">Заказать
                     обратный
                     звонок</a></span></div>
@@ -416,6 +416,36 @@ IncludeTemplateLangFile(__FILE__);
     <!--<a class="controls__place" href="#"></a>-->
     <!--<a class="controls__metro-nav" href="#"></a>-->
 </div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter37374330 = new Ya.Metrika({
+                    id:37374330,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37374330" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.backstretch.min.js" type="text/javascript"></script>
