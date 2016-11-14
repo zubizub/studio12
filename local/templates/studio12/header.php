@@ -30,12 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TDW2RL');</script>
 <!-- End Google Tag Manager -->
 
-Также вставьте непосредственно после открывающего тега <body> следующий фрагмент:
-
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDW2RL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript)-->
 
 </head>
 
@@ -44,6 +39,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  
   <body class="home-page">
         <?$APPLICATION->ShowPanel();?>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDW2RL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="container__inner">
             <div class="sidebar">
