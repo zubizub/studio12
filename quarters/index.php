@@ -369,7 +369,7 @@ $APPLICATION->SetTitle("Studio12");
 			1 => "",
 		),
 		"SECTION_CODE" => "",
-		"SECTION_ID" => "11",
+		"SECTION_ID" => "7",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
 		"SECTION_USER_FIELDS" => array(
