@@ -8,7 +8,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"#ЛОФТКВАРТАЛ", 
+		"#ЖИТЬВЛОФТЕ", 
 		"/", 
 		Array(), 
 		Array(), 

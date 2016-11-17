@@ -54,12 +54,12 @@ IncludeTemplateLangFile(__FILE__);
                                                 <!--<span class="offer__title-desktop">Супер-маркет лофтов</span>--><span
                                                     class="offer__title-mobile">Креативный <br>лофт-квартал</span>
 
-                                                <div class="bubble">
+                                              <!--   <div class="bubble">
                                                     <div class="bubble__label">Акция</div>
                                                     <div class="bubble__value">-10%</div>
                                                     <div class="bubble__explain">от цены <br> лофта</div>
                                                     <div class="bubble__pointer"></div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <a class="offer__act" href="#s">
                                                 <div class="offer__label offer__label--desktop">Супер-маркет лофтов
@@ -461,6 +461,13 @@ IncludeTemplateLangFile(__FILE__);
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript">
+var __cs = __cs || [];
+__cs.push(["setCsAccount", "u0pg8kOvRIvqObWccVyAQDruqDaNgLVL"]);
+__cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
+</script>
+<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
 </body>
 </html>
 

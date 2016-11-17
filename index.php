@@ -1,5 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "......");
+$APPLICATION->SetPageProperty("keywords", ".......");
 $APPLICATION->SetTitle("Studio12");
 ?>
 
@@ -85,7 +87,7 @@ $APPLICATION->SetTitle("Studio12");
                 <div class="section__content">
                     <div class="about">
                         <div class="about__items">
-                            <div class="about__item"><a class="about__link" href="/quarters">Лофт<br>квартал<br><span>Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</span></a>
+                            <div class="about__item"><a class="about__link" href="/quarters">Жить<br>в лофте<br><span>Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</span></a>
                             </div>
                             <div class="about__item"><a class="about__link" href="/job">Работа<br>в лофте<br><span>Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</span></a>
                             </div>
