@@ -17,7 +17,6 @@ IncludeTemplateLangFile(__FILE__);
     <?$APPLICATION->ShowHead()?>
     <!--[if (gt IE 9)|!(IE)]><!-->
     <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
-    <link href="<?=SITE_TEMPLATE_PATH?>/youbiznes/style.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script>

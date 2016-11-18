@@ -22,7 +22,7 @@ $APPLICATION->SetTitle("Studio12");
 			</div>
 		</div>
 		<div class="head">
-			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Жить</span></span><span class="heading__line"><span class="heading__word invisible">в лофте</span>
+			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Лофт</span></span><span class="heading__line"><span class="heading__word invisible">квартал</span>
 			<div class="feature invisible">
 				<div class="feature__inner">
 					<div class="feature__top">
