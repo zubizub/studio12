@@ -1,0 +1,157 @@
+.googleStatic, .googleMap {
+
+  top: -1000px;
+}
+
+.currentMap { 
+top:0px; }
+
+.btn-showroom {
+  color: #ffe500;
+  text-decoration: underline;
+}
+
+
+.gallery-block .loft-types__list .slick-prev {
+    left: 85px;
+    background: url(../img/arrow-left-2.png) no-repeat 0 0;
+}
+
+.gallery-block .loft-types__caption {
+    margin-left: 0;
+    left: 65px;
+}
+
+.fp-viewing-s-main .header_fixed,
+.fp-viewing-s-main .footer_fixed {
+    display: none;
+}
+
+.sidebar .mobile-note__phone {
+  display: block;
+  text-decoration: none !important;
+  color: #fee333 !important;
+}
+
+.popup--callback .mobile-note__phone {
+    color: #000;
+    font-size: 32px;
+}
+
+.popup--callback .mobile-note {
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.general__map {
+  position: relative;
+  height: 19.375rem;
+  overflow: hidden;
+}
+
+.general__map .googleStatic {
+  height: 19.375rem;
+}
+
+.general__image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .general__map {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .popup--callback .mobile-note__phone {
+      font-size: 48px;
+  }
+
+}
+
+
+
+.feature__def.quarters-bubble {
+    font-size: 53px;
+    line-height: 56px;
+}
+
+.feature__top .feature__term {
+    margin-bottom: 0.67778em;
+}
+
+.feature {
+  cursor: pointer;
+}
+
+.lofts-pdf-link {
+    /*position: absolute;
+    right: 3%;
+    top: 85%;*/
+    background-color: #fff;
+margin-top: 30px;
+}
+
+.lofts-pdf-link .offer__label {
+    color: #000;
+    
+}
+
+ .offer__plan {
+    
+    background-color: #fff;
+    
+    
+}
+
+a.offer__plan
+ {
+    
+    color: #000 !important;
+    
+
+}
+
+.loft-popup.loft-popup-ready.loft-black-popup {
+    position: absolute;
+    background: #000;
+    top: 0px;
+    right: -118px;
+    height: 134px;
+    color: #fff;
+    
+}
+
+ 
+.upper { text-transform: uppercase; }
+
+.fs14 { font-size: 14px; }
+
+.grey { color: #747474; }
+
+.lh26 { line-height: 26px; }
+
+
+@media only screen and (max-width: 1000px) {
+  
+    .lofts-pdf-link .offer__label--desktop {
+      display: block;
+
+  }
+
+
+  .lofts-pdf-link {
+      width: 185px;
+      height: 35px;
+      position: absolute;
+      right: 6%;
+      top: -20px;
+  }
+
+}

@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
-  <div class="wrapper quarter-page">
+  <div class="wrapper job-page">
 	<div class="inner">
 		<div class="header header_stabled">
 			<div class="header__inner">
@@ -14,8 +14,8 @@ $APPLICATION->SetTitle("Studio12");
 							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
 						</div>
 						<div class="nav__item nav__item--shoowroom">
-							<span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
-							<!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
+ <span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
+ <!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
 							<!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
 						</div>
 					</div>
@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Studio12");
 			</div>
 		</div>
 		<div class="head">
-			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Жить</span></span><span class="heading__line"><span class="heading__word invisible">в лофте</span>
+			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Работа </span></span><span class="heading__line"><span class="heading__word invisible"> в лофте</span>
 			<div class="feature invisible">
 				<div class="feature__inner">
 					<div class="feature__top">
@@ -31,23 +31,22 @@ $APPLICATION->SetTitle("Studio12");
 							<div class="feature__term">
 								 Свой лофт
 							</div>
-							<div class="feature__def quarters-bubble">
-								 от<br>40 м<sup>2</sup>
+							<div class="feature__def">
+								 от 30 м<sup>2</sup>
 							</div>
 						</div>
 					</div>
-					<!-- <div class="feature__bottom">
+					<div class="feature__bottom">
 						<div class="feature__item">
 							<div class="feature__term">
-								 Окупаемость всего<br>
-								 несколько лет
+								 Окупаемость
 							</div>
-							<!-- <div class="feature__def">
+							<div class="feature__def">
 								 менее <br>
 								 7 лет!
-							</div> 
+							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 				<div class="feature__pointer">
 				</div>
@@ -59,7 +58,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <span style="color: #ffffff">#Живи</span> и <a style="color: #ffe500;" class="link" href="/job">#Работай</a>
+						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> и <span style="color: #ffffff">#Работай</span>
 					</div>
 				</div>
 				<div class="concept__col col-1-3">
@@ -91,15 +90,13 @@ $APPLICATION->SetTitle("Studio12");
 	</div>
 </div>
 
-			
 
 <div class="loft-types">
 	<div class="wrapper">
 		<div class="inner">
 			<div class="loft-types__inner">
-				
-
-		<?$APPLICATION->IncludeComponent(
+									
+					<?$APPLICATION->IncludeComponent(
 	"bitrix:dw.catalog.categories", 
 	"mini-slider", 
 	array(
@@ -111,21 +108,21 @@ $APPLICATION->SetTitle("Studio12");
 		"LIMIT" => "50",
 		"IBLOCK_TYPE" => "info",
 		"COMPONENT_TEMPLATE" => "mini-slider",
-		"SECTION" => "9"
+		"SECTION" => "6"
 	),
 	false
 );?>
-		
+				
 			</div>
 		</div>
 	</div>
 </div>
 
-          <div class="reasons">
+          <div class="reasons reasons--dark">
             <div class="wrapper">
               <div class="inner">
                 <div class="reasons__content">
-                  <div class="reasons__title">5 причин #Жить в&nbsp;своем лофте:</div>
+                  <div class="reasons__title">5 причин #Работать в&nbsp;своем лофте:</div>
                   <div class="reasons__row">
                     <div class="row">
 
@@ -194,7 +191,7 @@ $APPLICATION->SetTitle("Studio12");
 			1 => "",
 		),
 		"SECTION_CODE" => "",
-		"SECTION_ID" => "7",
+		"SECTION_ID" => "8",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
 		"SECTION_USER_FIELDS" => array(
@@ -228,6 +225,7 @@ $APPLICATION->SetTitle("Studio12");
             </div>
           </div>
 
+  
           <div class="metro-place" style="position: relative;">
 
 			  <div class="metro-place__item">
@@ -267,47 +265,47 @@ $APPLICATION->SetTitle("Studio12");
 
             </div>
           </div>
-          <div class="about-lofts quarter-page">
+          <div class="about-lofts job-page">
             <div class="wrapper">
               <div class="inner">
                 <div class="about-lofts__row row">
                   <div class="col-1-3">
-					  <div class="about-slider-bub">
-						  <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
-							  "bitrix:main.include",
-							  "",
-							  Array(
-							  "AREA_FILE_SHOW" => "file",
-							  "AREA_FILE_SUFFIX" => "inc",
-							  "EDIT_TEMPLATE" => "",
-							  "PATH" => "about-loft-title.php"
-							  )
-							  );?>
-						  </div><div class="about-lofts__demo">
-						  <?$APPLICATION->IncludeComponent(
-						  "bitrix:main.include",
-						  "",
-						  Array(
-						  "AREA_FILE_SHOW" => "file",
-						  "AREA_FILE_SUFFIX" => "inc",
-						  "EDIT_TEMPLATE" => "",
-						  "PATH" => "about-loft-img.php"
-						  )
-						  );?></div>
+                   	<div class="about-slider-bub">
+					   <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
+						   "bitrix:main.include",
+						   "",
+						   Array(
+						   "AREA_FILE_SHOW" => "file",
+						   "AREA_FILE_SUFFIX" => "inc",
+						   "EDIT_TEMPLATE" => "",
+						   "PATH" => "about-loft-title.php"
+						   )
+						   );?>
+					   </div><div class="about-lofts__demo">
+					   <?$APPLICATION->IncludeComponent(
+					   "bitrix:main.include",
+					   "",
+					   Array(
+					   "AREA_FILE_SHOW" => "file",
+					   "AREA_FILE_SUFFIX" => "inc",
+					   "EDIT_TEMPLATE" => "",
+					   "PATH" => "about-loft-img.php"
+					   )
+					   );?></div>
 
-						  <div class="about-lofts__access">
-							  <?$APPLICATION->IncludeComponent(
-							  "bitrix:main.include",
-							  "",
-							  Array(
-							  "AREA_FILE_SHOW" => "file",
-							  "AREA_FILE_SUFFIX" => "inc",
-							  "EDIT_TEMPLATE" => "",
-							  "PATH" => "about-loft-desc.php"
-							  )
-							  );?></div>
-					  </div>
-				  </div>
+					   <div class="about-lofts__access">
+						   <?$APPLICATION->IncludeComponent(
+						   "bitrix:main.include",
+						   "",
+						   Array(
+						   "AREA_FILE_SHOW" => "file",
+						   "AREA_FILE_SUFFIX" => "inc",
+						   "EDIT_TEMPLATE" => "",
+						   "PATH" => "about-loft-desc.php"
+						   )
+						   );?></div>
+				   	</div>
+				   </div>
                   <div class="col-1-3">
                     <div class="about-lofts__subtitle">
                     	<?$APPLICATION->IncludeComponent(
@@ -331,8 +329,7 @@ $APPLICATION->SetTitle("Studio12");
 	)
 );?>
 </div>
-
-    <?$APPLICATION->IncludeComponent(
+                  <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
@@ -342,6 +339,7 @@ $APPLICATION->SetTitle("Studio12");
 		"PATH" => "presentation.php"
 	)
 );?>
+
                   </div>
                   <div class="col-1-3">
                     <div class="about-lofts__subtitle">Месторасположение <br> квартала:</div>
@@ -381,8 +379,8 @@ $APPLICATION->SetTitle("Studio12");
 
 
          <?$APPLICATION->IncludeComponent(
-	"bitrix:dw.catalog.index", 
-	".default", 
+	"bitrix:dw.catalog.index",
+	".default",
 	array(
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000",
@@ -391,11 +389,8 @@ $APPLICATION->SetTitle("Studio12");
 		"IBLOCK_ID" => "5",
 		"LIMIT" => "50",
 		"IBLOCK_TYPE" => "quarters",
-		"COMPONENT_TEMPLATE" => ".default",
-		"SECTION" => ""
+		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false
 );?>
           <? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
-
-     

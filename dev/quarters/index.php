@@ -31,23 +31,22 @@ $APPLICATION->SetTitle("Studio12");
 							<div class="feature__term">
 								 Свой лофт
 							</div>
-							<div class="feature__def quarters-bubble">
-								 от<br>40 м<sup>2</sup>
+							<div class="feature__def">
+								 от 30 м<sup>2</sup>
 							</div>
 						</div>
 					</div>
-					<!-- <div class="feature__bottom">
+					<div class="feature__bottom">
 						<div class="feature__item">
 							<div class="feature__term">
-								 Окупаемость всего<br>
-								 несколько лет
+								 Окупаемость
 							</div>
-							<!-- <div class="feature__def">
+							<div class="feature__def">
 								 менее <br>
 								 7 лет!
-							</div> 
+							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 				<div class="feature__pointer">
 				</div>

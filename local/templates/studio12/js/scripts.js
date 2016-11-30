@@ -274,8 +274,8 @@ $(function () {
             dots: false,
             infinite: true,
             arrows: false,
-            speed: 300,
-            fade: true,
+            // speed: 300,
+            // fade: true,
             autoplay: true,
             autoplaySpeed: 5000,
             slidesToShow: 1,
@@ -489,10 +489,49 @@ $(function () {
 
         });
         return false;
-    });
+    }); 
+
+
+
+/*
+    $('.btn-showroom').on('click', function () {
+
+        $('.popup--showroom').bPopup({
+            closeClass: 'popup__close',
+            onOpen: function () {
+                //console.log('callback-me');
+                var action = 'showroomForm';
+                $.post("/quarters/ajax.php", {action: action})
+                    .done(function (data) {
+                        $('.popup--callback').html(data);
+                        $(".js-phone-mask").mask("+7 (999) 999-99-99");
+
+                        $('.form__select').each(function () {
+                            var $cont = $(this).closest('.form__select-wrap');
+
+                            $(this).select2({
+                                placeholder: 'Не выбран',
+                                dropdownParent: $cont,
+                                minimumResultsForSearch: Infinity
+                            });
+                        });
+                    });
+            }
+
+
+        });
+        return false;
+    });*/
 
     $('.btn-map-get').on('click', function() {
        $('.popup--map').bPopup({
+           closeClass: 'popup__close'
+       });
+       return false;
+    });
+
+    $('.btn-showroom').on('click', function() {
+       $('.popup--showroom').bPopup({
            closeClass: 'popup__close'
        });
        return false;
@@ -551,9 +590,28 @@ $(function () {
 
     (function () {
         (function () {
-            var wh = window.outerHeight, ww = window.innerWidth, wIh = window.innerHeight / 4, wIh1 = window.innerHeight, bw = $('.box').width() / 2, sectionHeight = $('.section--slogan .box').height(), shStart = 1500, shIntro = 1500, sh = 1500, speed = 0, $start = $('#start'), $intro = $('#intro'), $head = $('#head'), $tagline = $('#tagline'), $tagline2 = $('#tagline2'), $tagline3 = $('#tagline3'), $building = $('#building'), $building2 = $('#building2'), $building3 = $('#building3');
+            var wh = window.outerHeight,
+                ww = window.innerWidth,
+                wIh = window.innerHeight / 4,
+                wIh1 = window.innerHeight,
+                bw = $('.box').width() / 2, sectionHeight = $('.section--slogan .box').height(),
+                shStart = 1500,
+                shIntro = 1500,
+                sh = 1500,
+                speed = 0,
+                $start = $('#start'),
+                $intro = $('#intro'),
+                $head = $('#head'),
+                $tagline = $('#tagline'),
+                $tagline2 = $('#tagline2'),
+                $tagline3 = $('#tagline3'),
+                $building = $('#building'),
+                $building2 = $('#building2'),
+                $building3 = $('#building3');
+            
             if ($start.length && $intro.length && $head.length && $tagline.length && $tagline2.length && $tagline3.length && $building.length && $building2.length && $building3.length) {
             }
+            
             $start.attr({ 'd': 'M0,16 H582.5 V' + (700 + wIh) });
             $intro.attr({ 'd': 'M582.5,0 582.5,80 742.5,250 742.5,290 387.5,290 387.5,370 582.5,560 582.5,' + (wIh * 2 + 8000) });
             $head.attr({ 'd': 'M582.5,0 V7000' });
@@ -613,6 +671,7 @@ $(function () {
                 introEnd.eventCallback('onComplete', function () {
                     $('#fp-nav').addClass('intro-anim--visible');
                     $.fn.fullpage.moveSectionDown();    //$(window).trigger('resize');
+                    //$.fn.fullpage.moveSectionDown();    //2
                 });
             });
 
@@ -736,7 +795,9 @@ $(function () {
                         }, 2000);    //10000 = 10 секунд
                     } else if (nextIndex == 2 && direction == 'up') {
                         return false;
-                    }
+                    } else if (nextIndex == 3 && direction == 'up') {
+                       return false;
+                   }
                     if (index == 5) {
                         setTimeout(function () {
                             //var offers = $('.ajaxLotItem ').length;
@@ -756,6 +817,12 @@ $(function () {
                         $('.number6').animateNumber({ number: 8 });
                     } else {
                         $('.number').animateNumber({ number: 0 });
+                    }
+                    
+                    if (index == 3) {
+                      setTimeout(function() {
+                        $.fn.fullpage.moveSectionDown(); 
+                      }, 1500);
                     }
                     //var height = $('body').innerHeight();
                     //var width = $('body').innerWidth();

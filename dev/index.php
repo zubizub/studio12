@@ -1,9 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Studio#12 Лофт-квартал в центре Москвы");
-$APPLICATION->SetPageProperty("keywords", "Лофты, Работа в лофте, Жить в лофте, Креативный квартал, Студио12");
-$APPLICATION->SetPageProperty("title", "Лофт-квартал Studio#12");
-$APPLICATION->SetTitle("Studio#12");
+$APPLICATION->SetTitle("Studio12");
 ?>
 
 
@@ -87,67 +84,13 @@ $APPLICATION->SetTitle("Studio#12");
                 <div class="about-bg__item" style="background: url('/local/templates/studio12/img/5.jpg') no-repeat 0 0"></div>
             </div>
             <!-- ./end -->
-                      <div class="section__inner">
+            <div class="section__inner">
                 <div class="section__content">
                     <div class="about">
                         <div class="about__items">
-                            <div class="about__item"><a class="about__link" href="/quarters">
-
- <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "jobH.php"
-    )
-);?>
-                          <span>
-                           <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "jobSH.php"
-    )
-);?>
-       
-
-                          
-                          </span>
-                          </a>
+                            <div class="about__item"><a class="about__link" href="/quarters">Лофт<br>квартал<br><span>Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</span></a>
                             </div>
-                            <div class="about__item">
-                                <a class="about__link" href="/job">
-                                
- <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "qH.php"
-    )
-);?>
-                             
-                                <span>
-                                 <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "qSH.php"
-    )
-);?>
-                               
-                                </span>
-                                </a>
+                            <div class="about__item"><a class="about__link" href="/job">Работа<br>в лофте<br><span>Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</span></a>
                             </div>
                             <div class="about__item about__desc"><span>Креативный лофт-квартал Studio#12 — <br
                                     class="mobile-br"> это уникальное пространство <br class="mobile-br"> для <a
@@ -180,7 +123,7 @@ $APPLICATION->SetTitle("Studio#12");
                             </div>
                         </div>
                         <a class="offer__act offer-mobile loft-btn" href="#loft-table">
-                            <div class="offer__label">Выбрать лофт
+                            <div class="offer__label">Супер-маркет лофтов
                             </div>
                             <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#">
                         </a>
@@ -206,18 +149,6 @@ $APPLICATION->SetTitle("Studio#12");
                         </div>
                     </div>
                 </a>
-                <div class="general__map">
-                  <div class="googleStatic currentMap">
-                    <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
-                  </div>
-                  
-                  <div class="googleMap" style="position: absolute;">
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script><div style='overflow:hidden;height:360px;width:750px;'><div id='gmap_canvas' style='height:360px;width:750px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>adding google maps to website</a> <script type='text/javascript' src=''></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(55.79981942842895,37.620396735473605),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.79981942842895,37.620396735473605)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-                  </div>
-                  
-                  <div style="background: #fee333; padding: 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer; color: #000;" class="toogleMap">#Переключить</div>
-
-                </div>
             </div>
         </div>
     </div><!-- .section--about -->
