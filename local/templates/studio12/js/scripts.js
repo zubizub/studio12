@@ -195,12 +195,13 @@ $(function () {
         });
     }());
     (function () {
+
         var $loftTypesTab = $('.loft-types__tab');
         $('.loft-types__content').slick({
             dots: false,
             arrows: false,
-            infinite: false,
-            speed: 150,
+            infinite: true,
+            speed: 0,
             slidesToShow: 1,
             adaptiveHeight: false,
             swipe: false,
@@ -213,7 +214,7 @@ $(function () {
         $('.loft-types__tabs').slick({
             dots: false,
             arrows: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: $loftTypesTab.length,
             //slidesToScroll: 1,
             speed: 0,
