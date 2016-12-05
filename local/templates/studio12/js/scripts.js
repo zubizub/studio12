@@ -613,7 +613,7 @@ $(function () {
             if ($start.length && $intro.length && $head.length && $tagline.length && $tagline2.length && $tagline3.length && $building.length && $building2.length && $building3.length) {
             }
             
-            $start.attr({ 'd': 'M0,16 H582.5 V' + (700 + wIh) });
+            $start.attr({ 'd': 'M0,16 H582.5 V500' });
             $intro.attr({ 'd': 'M582.5,0 582.5,80 742.5,250 742.5,290 387.5,290 387.5,370 582.5,560 582.5,' + (wIh * 2 + 8000) });
             $head.attr({ 'd': 'M582.5,0 V7000' });
             $tagline.attr({ 'd': 'M480.5,0 480.5,' + wIh + ' 743.61111,' + wIh * 2 + ' 743.61111,' + (wIh + 600 + 5245) });
@@ -625,7 +625,7 @@ $(function () {
             $building3.attr({ 'd': 'M1050.5,0 1050,100 1200,250 880.5,580 1500,1200' });
             $(window).on('resize.dynamics', function () {
                 var wIh = window.innerHeight / 4;
-                $start.attr({ 'd': 'M0,16 H582.5 V' + (700 + wIh) });
+                $start.attr({ 'd': 'M0,16 H582.5 V500' });
                 $intro.attr({ 'd': 'M582.5,0 582.5,80 742.5,250 742.5,290 387.5,290 387.5,370 582.5,560 582.5,' + (wIh * 2 + 8000) });
                 $head.attr({ 'd': 'M582.5,0 V7000' });
                 $tagline.attr({ 'd': 'M480.5,0 480.5,' + wIh + ' 743.61111,' + wIh * 2 + ' 743.61111,' + (wIh + 600 + 5245) });
