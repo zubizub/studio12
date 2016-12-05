@@ -18,7 +18,7 @@ $APPLICATION->SetTitle("Studio#12");
 
     <div class="section section--intro">
         <div class="box" style="text-align: center;">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" height="5000px" width="1165px" preserveAspectRatio="xMinYMin meet">
                 <path class="path" id="intro"></path>
                 <image class="line-house" style="display: none;" xmlns='http://www.w3.org/2000/svg' ,
                        xmlns:xlink='http://www.w3.org/1999/xlink' , overflow='visible' , width='335' , height='261' ,
@@ -31,7 +31,7 @@ $APPLICATION->SetTitle("Studio#12");
         <div class="wrapper">
             <div class="section__inner">
                 <div class="box">
-                    <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
+                    <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" height="5000px" width="1165px" preserveAspectRatio="xMinYMin meet">
                         <path class="path" id="head"></path>
                     </svg>
                     <svg class="logo__front" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1165px" height="509px" viewbox="0 0 1165 509" enable-background="new 0 0 1165 509" xml:space="preserve">
@@ -230,8 +230,7 @@ $APPLICATION->SetTitle("Studio#12");
             </div>
         </div>
         <div class="box">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"
-                 style="width: 100%; height: auto">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"  height="5000px" width="1165px" preserveAspectRatio="xMinYMin meet" style="width: 100%; height: auto">
                 <path class="path" id="tagline"></path>
                 <path class="path" id="tagline2"></path>
                 <path class="path" id="tagline3"></path>
