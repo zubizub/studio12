@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Studio#12");
 <div class="fullpage">
     <div class="section section--start" data-anchor="s-start">
         <div class="box box--start">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1165 5000" height="5000px" width="1165px" enable-background="new 0 0 1165 5000" xml:space="preserve" style="position: absolute">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1165 500" height="500px" width="1165px" enable-background="new 0 0 1165 500" xml:space="preserve" style="position: absolute">
                 <path class="path" id="start"></path>
             </svg>
         </div>
