@@ -60,7 +60,10 @@ $this->setFrameMode(true);?>
   <? } ?>
     <div class="detail__inner">
       <div class="detail__text">лофт с отдельным входом/двухуровневый</div>
-      <!-- <div class="detail__about"><a class="detail__more" href="#"><span>Подробнее о предложении</span></a> -->
+      <div class="detail__about"><a class="detail__more" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>"><span>Подробнее о предложении</span></a>
+<? if (!$_GET['ELEMENT_ID']) { ?>
+      <!-- <a class="detail__link__" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>" target="_blank">Открыть в новом окне</a> -->
+<? } ?>
         <div class="detail__hidden">
           <div class="detail__info">
             <div class="detail__label">Площадь</div>
@@ -71,13 +74,13 @@ $this->setFrameMode(true);?>
             <div class="detail__value">Значение</div>
           </div>
         </div>
-        <a class="detail__link" href="/object/<?=$arResult['ID'];?>" target="_blank">Открыть в новом окне</a>
+        
       </div>
     </div>
   </div>
 <div class="popup__footer">
   <div class="popup__cell"><span><a href="#">Распечатать</a></span><span><a class="send_me_email" href="#">Выслать на почту</a></span></div>
-  <div class="popup__cell popup__cell--callback"><a class="popup__number" href="tel:7(495)7804040">7 (495) 780-40-40</a>
+  <div class="popup__cell popup__cell--callback"><a class="popup__number" href="tel:+74957804040">7 (495) 780-40-40</a>
     <p><a class="callback-me" href="#">Обратный звонок</a></p>
   </div>
 </div>

@@ -14,7 +14,8 @@ $APPLICATION->SetTitle("Studio12");
 							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
 						</div>
 						<div class="nav__item nav__item--shoowroom">
- <span class="nav__item-text">Shoowroom: Studio#8</span>
+ <span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
+ <!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
 							<!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
 						</div>
 					</div>
@@ -31,19 +32,20 @@ $APPLICATION->SetTitle("Studio12");
 								 Свой лофт
 							</div>
 							<div class="feature__def">
-								 от 30 м<sup>2</sup>
+								 от 45 м<sup>2</sup>
 							</div>
 						</div>
 					</div>
 					<div class="feature__bottom">
 						<div class="feature__item">
 							<div class="feature__term">
-								 Окупаемость
+								 Окупаемость всего<br>
+								 несколько лет
 							</div>
-							<div class="feature__def">
+							<!-- <div class="feature__def">
 								 менее <br>
 								 7 лет!
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -94,93 +96,24 @@ $APPLICATION->SetTitle("Studio12");
 	<div class="wrapper">
 		<div class="inner">
 			<div class="loft-types__inner">
-				<div class="loft-types__content">
-					<div class="loft-types__slide">
-						<div class="loft-types__caption">
-							<div class="loft-types__title">Лофт-квартал Studio#12</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">6</span></span></div>
-						</div>
-						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_1.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_2.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_3.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_4.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_5.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/studio12_6.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-						</div>
-					</div>
-					<div class="loft-types__slide">
-						<div class="loft-types__caption">
-							<div class="loft-types__title">Лофты с личным входом и двориком</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">7</span></span></div>
-						</div>
-						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam01.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam02.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam03.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam04.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam05.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam06.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/lgam07.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-						</div>
-					</div>
-					<div class="loft-types__slide">
-						<div class="loft-types__caption">
-							<div class="loft-types__title">Входная группа</div>
-							<div class="loft-types__page"><span class="loft-types__page-num">1</span><span class="yellow">–<span class="loft-types__page-total">4</span></span></div>
-						</div>
-						<div class="loft-types__list">
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam1.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam2.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam3.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=SITE_TEMPLATE_PATH?>/img/vcam4.jpg" alt="#">
-								<div class="loft-types__row"></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="loft-types__desc">
-					<a href="#" class="loft-types-slide-go">→</a>
-					<div class="loft-types__tabs">
-						<div class="loft-types__tab">Лофт-квартал Studio#12</div>
-						<div class="loft-types__tab">Лофты с личным входом и двориком</div>
-						<div class="loft-types__tab">Входная группа</div>
-					</div><a class="loft-types__act loft-btn" href="#loft-table">
-					<div class="loft-types__label">Супер-маркет лофтов</div><img class="loft-types__icon" src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png" alt="#"></a>
-				</div>
+									
+					<?$APPLICATION->IncludeComponent(
+	"bitrix:dw.catalog.categories", 
+	"mini-slider", 
+	array(
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000",
+		"CACHE_TYPE" => "A",
+		"IBLOCK_BINDING" => "element",
+		"IBLOCK_ID" => "7",
+		"LIMIT" => "50",
+		"IBLOCK_TYPE" => "info",
+		"COMPONENT_TEMPLATE" => "mini-slider",
+		"SECTION" => "6"
+	),
+	false
+);?>
+				
 			</div>
 		</div>
 	</div>
@@ -190,7 +123,7 @@ $APPLICATION->SetTitle("Studio12");
             <div class="wrapper">
               <div class="inner">
                 <div class="reasons__content">
-                  <div class="reasons__title">5 причин #жить в&nbsp;своем лофте:</div>
+                  <div class="reasons__title">5 причин #Работать в&nbsp;своем лофте:</div>
                   <div class="reasons__row">
                     <div class="row">
 
@@ -259,7 +192,7 @@ $APPLICATION->SetTitle("Studio12");
 			1 => "",
 		),
 		"SECTION_CODE" => "",
-		"SECTION_ID" => "12",
+		"SECTION_ID" => "8",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
 		"SECTION_USER_FIELDS" => array(
@@ -293,16 +226,19 @@ $APPLICATION->SetTitle("Studio12");
             </div>
           </div>
 
-          <div class="metro-place">
+  
+          <div class="metro-place" style="position: relative;">
 
 			  <div class="metro-place__item">
 				  <div class="metro-place__slider">
 					  <div class="metro-place__slider-item">
-						  <a href="/quarters">
-							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Life_1.jpg" alt="#">
-							  <span class="metro-place__desc">#Жить в лофте</span>
+						  <a href="/job">
+							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" alt="#">
+							  <span class="metro-place__desc">#Работать в лофте</span>
 						  </a>
-					  </div>
+					</div>
+
+					  
 				  </div>
 				  <div class="wrapper metro-place__text">
 					  <div class="inner">
@@ -316,7 +252,19 @@ $APPLICATION->SetTitle("Studio12");
 			  </div>
 
 
-			  <div class="metro-place__item"><img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img//metro-loc.png" alt="#"></div>
+
+            <div class="metro-place__item" style="position: relative;">
+            <div class="googleStatic currentMap">
+            <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="#">
+            </div>
+            	<div class="googleMap" style="position: absolute;"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script><div style='overflow:hidden;height:360px;width:750px;'><div id='gmap_canvas' style='height:360px;width:750px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>adding google maps to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a90bc41cd9bcbbd99887264c593b8a1dfa64aaf3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(55.79981942842895,37.620396735473605),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.79981942842895,37.620396735473605)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+
+					<div style="background: #fee333; padding: 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer;" class="toogleMap">#Переключить</div>
+
+
+
+            </div>
           </div>
           <div class="about-lofts job-page">
             <div class="wrapper">

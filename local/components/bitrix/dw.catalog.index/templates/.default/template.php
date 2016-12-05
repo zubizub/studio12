@@ -345,6 +345,11 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             <div class="loft-popup loft-popup-ready">
                                 <div class="loft-popup__title">76</div>
                                 <div class="loft-popup__desc">Доступно</div>
+                                <div class="loft-popup loft-popup-ready loft-black-popup">
+                                    <span class="fs14 grey lh26 upper">Готовность<br></span>
+                                    <span class="fs24 lh26">Конец<br>
+                                    2017</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -352,7 +357,16 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                 <div class="lots-infographics">
                     <div class="lots-infographics__number">76</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
+                    <!-- <div class="lots-infographics-black">ГОТОВНОСТЬ:<br>Конец<br>2017</div> -->
+                    <div class="lofts-pdf-link">
+                    <a class="offer__plan" href="/upload/plan.pdf" target="_blank">
+                        <div class="offer__label offer__label--desktop">Планировки
+                        </div>
+                       <!--  <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#"> -->
+                    </a>
+                </div> 
                 </div>
+                
             </div>
             <div class="lots">
                 <div class="lots__list">
@@ -567,7 +581,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         <div class="nav__item nav__item--place-yellow"><span>Москва, СВАО, <br
                                 class="hidden-lg-xl-up">12-й пр. Марьиной Рощи&nbsp;8</span>
                         </div>
-                        <div class="nav__item nav__item--phone-yellow"><span><span class="call_phone_1">+7 495 780-40-40</span><span
+                        <div class="nav__item nav__item--phone-yellow"><span>+7 495 780-40-40<span
                                 class="hidden-lg-xl-down"> | </span><br class="hidden-lg-xl-up"><a
                                 class="link btn-callback" href="#">Заказать обратный звонок</a></span></div>
                     </div>
