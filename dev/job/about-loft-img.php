@@ -1,0 +1,1 @@
+ <img class="about-lofts__demo" src="<?=SITE_TEMPLATE_PATH?>/dist/img//loft-demo.png">
