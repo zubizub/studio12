@@ -82,7 +82,7 @@ function callBackComagic (formData) {
 
 
  
-  <body class="home-page">
+  <body class="home-page no-scroll">
 		  <!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP4D8R4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

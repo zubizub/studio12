@@ -2092,11 +2092,11 @@ sub, sup {
   padding-left: 1.1875rem;
 }
 /*@media screen and (min-width: 320px) and (max-width: 590px) {*/
-  /*.head {*/
-    /*padding-left: -webkit-calc(0px + (100vw - 320px) * 0.07037);*/
-    /*padding-left: -moz-calc(0px + (100vw - 320px) * 0.07037);*/
-    /*padding-left: calc(0px + (100vw - 320px) * 0.07037);*/
-  /*}*/
+/*.head {*/
+/*padding-left: -webkit-calc(0px + (100vw - 320px) * 0.07037);*/
+/*padding-left: -moz-calc(0px + (100vw - 320px) * 0.07037);*/
+/*padding-left: calc(0px + (100vw - 320px) * 0.07037);*/
+/*}*/
 /*}*/
 @media screen and (max-width: 320px) {
 
@@ -2817,6 +2817,8 @@ sub, sup {
 }
 .section--about {
   position: relative;
+  min-height: 700px;
+  height:100vh;
 }
 .section--about .wrapper {
   /*background: url("../img/about-bg.png") center top no-repeat;*/
@@ -2847,8 +2849,9 @@ sub, sup {
   height: auto;
 }
 .section--intro {
-  height: 1000px !important;
-  overflow: hidden;
+  position: relative;
+  min-height: 700px;
+  height:100vh;
 }
 @media screen and (max-width: 1000px) {
   .section--intro {
@@ -3830,11 +3833,15 @@ a.btn, a.btn:hover {
 @media screen and (max-width: 1899px) {
   .controls {
     -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease, all 0.3s ease;
     -o-transition: all 0.3s ease, all 0.3s ease;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease, all 0.3s ease, all 0.3s ease, all 0.3s ease;
+    -moz-transition: all 0.3s ease, all 0.3s ease, all 0.3s ease, all 0.3s ease;
+    -o-transition: all 0.3s ease, all 0.3s ease, all 0.3s ease, all 0.3s ease;
     transition: all 0.3s ease, all 0.3s ease, all 0.3s ease, all 0.3s ease;
   }
   .sidebar-open .controls {
@@ -5302,7 +5309,7 @@ a.btn, a.btn:hover {
 }
 
 .lots {
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
   /*background: #343434;*/
   color: #000;
 }
@@ -7377,4 +7384,20 @@ a.btn, a.btn:hover {
   line-height: 1;
   padding: 10px;
   margin-top: 20px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.fade-animate {
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
 }
