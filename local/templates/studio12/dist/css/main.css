@@ -2846,7 +2846,6 @@ sub, sup {
   width: 100%;
   height: auto;
 }
-.section--main,
 .section--intro {
   height: 1000px !important;
   overflow: hidden;
