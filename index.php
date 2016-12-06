@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Studio#12");
 <div class="fullpage">
     <div class="section section--start" data-anchor="s-start">
         <div class="box box--start">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1165 500" height="500px" width="1165px" enable-background="new 0 0 1165 500" xml:space="preserve" preserveAspectRatio="xMinYMin meet" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
                 <path class="path" id="start"></path>
             </svg>
         </div>
@@ -18,7 +18,7 @@ $APPLICATION->SetTitle("Studio#12");
 
     <div class="section section--intro">
         <div class="box" style="text-align: center;">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1165 1000" height="1000px" width="1165px" enable-background="new 0 0 1000 500" xml:space="preserve" preserveAspectRatio="xMinYMin meet" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
                 <path class="path" id="intro"></path>
                 <image class="line-house" style="display: none;" xmlns='http://www.w3.org/2000/svg' ,
                        xmlns:xlink='http://www.w3.org/1999/xlink' , overflow='visible' , width='335' , height='261' ,
@@ -31,7 +31,7 @@ $APPLICATION->SetTitle("Studio#12");
         <div class="wrapper">
             <div class="section__inner">
                 <div class="box">
-                    <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1165 1000" height="1000px" width="1165px" enable-background="new 0 0 1000 500" xml:space="preserve" preserveAspectRatio="xMinYMin meet" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+                    <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000">
                         <path class="path" id="head"></path>
                     </svg>
                     <svg class="logo__front" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1165px" height="509px" viewbox="0 0 1165 509" enable-background="new 0 0 1165 509" xml:space="preserve">
@@ -230,7 +230,8 @@ $APPLICATION->SetTitle("Studio#12");
             </div>
         </div>
         <div class="box">
-            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"  height="5000px" width="1165px" preserveAspectRatio="xMinYMin meet" style="width: 100%; height: auto">
+            <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000"
+                 style="width: 100%; height: auto">
                 <path class="path" id="tagline"></path>
                 <path class="path" id="tagline2"></path>
                 <path class="path" id="tagline3"></path>
