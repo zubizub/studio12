@@ -207,9 +207,9 @@ $(function () {
             swipe: false,
             touchMove: false,
             fade: true,
-            asNavFor: '.loft-types__tabs',
-            autoplay: true,
-            autoplaySpeed: 10000
+            asNavFor: '.loft-types__tabs'
+            //autoplay: true,
+            //autoplaySpeed: 10000
         });
         $('.loft-types__tabs').slick({
             dots: false,

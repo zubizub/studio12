@@ -7261,6 +7261,10 @@ a.btn, a.btn:hover {
   .controls__photos {
     background-image: url("../img/photos.png");
   }
+
+  .loft-types .wrapper {
+    padding: 0 !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
