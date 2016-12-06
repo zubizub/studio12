@@ -2124,6 +2124,10 @@ sub, sup {
 .fp-viewing-s-slogan .header_fixed {
   display: block;
 }
+
+.section--lofts {
+  overflow: inherit !important;
+}
 .section--lofts.is-colored.fp-section.active.fp-completely .header_fixed {
   display: none;
 }

@@ -16,7 +16,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
     </div>
     <div class="section__inner">
         <div class="offers-loft">
-            <div class="lofts <?if ($APPLICATION->GetCurPage()== '/'): ?>lofts--main<? endif; ?>">
+            <div class="lofts lofts--main">
                 <div class="lofts__scheme">
 
                     <svg version="1.1" id="Layer_2" class="dynamic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 255.12 255.12" enable-background="new 0 0 255.12 255.12" xml:space="preserve">
