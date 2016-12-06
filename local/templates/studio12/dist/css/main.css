@@ -7364,3 +7364,13 @@ a.btn, a.btn:hover {
     font-size: 36px;
   }
 }
+
+.btn-download {
+  display: inline-block;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffe500;
+  line-height: 1;
+  padding: 10px;
+  margin-top: 20px;
+}
