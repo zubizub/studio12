@@ -80,6 +80,30 @@ IncludeTemplateLangFile(__FILE__);
 
 </div>
 
+<div class="top fade-animate fade-in">
+    <ul class="top__list">
+        <li class="top__item">
+            <span class="top__text">Москва, СВАО,</span><br>
+            <a href="#" class="top__link">12-й пр. Марьиной Рощи 8</a>
+        </li>
+        <li class="top__item">
+            <span class="top__text">+7 495 780-40-40</span><br>
+            <a href="#" class="top__link">Обратный звонок</a>
+        </li>
+        <li class="top__item">
+            <span class="top__text">Фотографии</span><br>
+            <a href="#" class="top__link">лофтов</a>
+        </li>
+        <li class="top__item">
+            <span class="top__text">Как проехать</span><br>
+            <a href="#" class="top__link">в Showroom</a>
+        </li>
+        <li class="top__item">
+            <span class="top__text">1-ая очередь:</span><br>
+            <a href="#" class="top__link">Корпус 2-2</a>
+        </li>
+    </ul>
+</div>
 <button class="nav-toggle fade-animate fade-in" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
 </button>

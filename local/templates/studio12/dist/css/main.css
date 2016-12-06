@@ -1995,18 +1995,18 @@ sub, sup {
 .main {
   position: relative;
 }
+/*@media screen and (max-width: 1899px) {*/
+  /*.main {*/
+    /*-webkit-transition: margin 0.3s ease;*/
+    /*-o-transition: margin 0.3s ease;*/
+    /*-moz-transition: margin 0.3s ease;*/
+    /*transition: margin 0.3s ease;*/
+  /*}*/
+  /*.sidebar-open .main {*/
+    /*margin-left: 18.75rem;*/
+  /*}*/
+/*}*/
 @media screen and (max-width: 1899px) {
-  .main {
-    -webkit-transition: margin 0.3s ease;
-    -o-transition: margin 0.3s ease;
-    -moz-transition: margin 0.3s ease;
-    transition: margin 0.3s ease;
-  }
-  .sidebar-open .main {
-    margin-left: 18.75rem;
-  }
-}
-@media screen and (max-width: 1000px) {
   .main {
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
@@ -2016,6 +2016,8 @@ sub, sup {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
   }
+  .sidebar-open .nav-toggle,
+  .sidebar-open .top,
   .sidebar-open .main {
     -webkit-transform: translateX(18.75rem);
     -moz-transform: translateX(18.75rem);
@@ -2026,7 +2028,8 @@ sub, sup {
   }
 }
 @media screen and (min-width: 1601px) {
-  .main {
+  .main,
+  .top {
     margin-left: 18.75rem;
   }
 }
@@ -5782,21 +5785,21 @@ a.btn, a.btn:hover {
 }
 
 .nav-toggle {
-  width: 35em;
-  height: 28em;
+  width: 64em;
+  height: 64em;
   position: fixed;
-  top: 1.5625rem;
-  left: 32px;
-  background-color: transparent;
+  background-color: #fee248;
+  top: 0;
+  left: 0;
   cursor: pointer;
   font-size: 0.0625rem;
-  -webkit-transition-property: left, top, -webkit-transform !important;
-  transition-property: left, top, -webkit-transform !important;
-  -o-transition-property: left, top, -o-transform !important;
-  -moz-transition-property: transform, left, top, -moz-transform !important;
-  -o-transition-property: transform, left, top, -o-transform !important;
-  transition-property: transform, left, top !important;
-  transition-property: transform, left, top, -webkit-transform, -moz-transform, -o-transform !important;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
   z-index: 1500;
 }
 @media screen and (max-width: 1899px) {
@@ -5817,13 +5820,13 @@ a.btn, a.btn:hover {
     transform: translateX(18.75rem);
   }
 }
-@media screen and (max-width: 1899px) {
-  .sidebar-open .nav-toggle {
-    left: -3.875rem;
-    top: 1.8rem;
-    font-size: 0.05375rem;
-  }
-}
+/*@media screen and (max-width: 1899px) {*/
+  /*.sidebar-open .nav-toggle {*/
+    /*left: -3.875rem;*/
+    /*top: 1.8rem;*/
+    /*font-size: 0.05375rem;*/
+  /*}*/
+/*}*/
 @media screen and (min-width: 1601px) {
   .nav-toggle {
     display: none;
@@ -5842,9 +5845,12 @@ a.btn, a.btn:hover {
   }
 }
 .nav-toggle__bar {
-  height: 0.25rem;
+  height: 4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   background-color: #63469c;
-  width: 100%;
+  width: 31px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -5858,7 +5864,7 @@ a.btn, a.btn:hover {
   transition: 0.3s ease;
 }
 .fp-viewing-s-about .nav-toggle__bar, .fp-viewing-s-lofts .nav-toggle__bar {
-  background-color: #ffe500;
+  background-color: #000;
 }
 .nav-toggle__bar:before, .nav-toggle__bar:after {
   content: '';
@@ -5881,7 +5887,7 @@ a.btn, a.btn:hover {
   transition: 0.3s ease;
 }
 .fp-viewing-s-about .nav-toggle__bar:before, .fp-viewing-s-lofts .nav-toggle__bar:before, .fp-viewing-s-about .nav-toggle__bar:after, .fp-viewing-s-lofts .nav-toggle__bar:after {
-  background-color: #ffe500;
+  background-color: #000;
 }
 .nav-toggle__bar:before {
   top: -webkit-calc((28em - 0.25rem) / -2);
@@ -5894,10 +5900,10 @@ a.btn, a.btn:hover {
   bottom: calc((28em - 0.25rem) / -2);
 }
 .nav-toggle__bar_test {
-  background-color: #ffe500;
+  background-color: #000;
 }
 .nav-toggle__bar_test:before, .nav-toggle__bar_test:after {
-  background-color: #ffe500;
+  background-color: #000;
 }
 .sidebar-open .nav-toggle__bar {
   background: transparent;
@@ -7400,4 +7406,70 @@ a.btn, a.btn:hover {
 .fade-in {
   opacity: 0;
   visibility: hidden;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: #000000;
+  font-size: 16px;
+  z-index: 500;
+}
+
+.top,
+.nav-toggle {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
+}
+.top__list {
+  position: relative;
+  top: 50%;
+  margin-left: 115px;
+  transform: translateY(-50%);
+}
+.top__list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top__item {
+  float: left;
+  width: 20%;
+}
+.top__text {
+  color: #ffffff;
+}
+.top__link {
+  position: relative;
+  display: inline-block;
+  color: #fee333;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.top__link:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fee333;
+  -webkit-transition: width 0.25s ease-out;
+  -moz-transition: width 0.25s ease-out;
+  -o-transition: width 0.25s ease-out;
+  transition: width 0.25s ease-out;
+}
+
+.top__link:hover:after {
+  width: 100%;
 }
