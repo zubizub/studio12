@@ -4773,6 +4773,7 @@ a.btn, a.btn:hover {
   white-space: nowrap;
   overflow: hidden;
   font-size: 0;
+  z-index: 0;
 }
 .loft-types__content .slick-list,
 .loft-types__content .slick-track {
@@ -4889,7 +4890,7 @@ a.btn, a.btn:hover {
   float: right;
   position: relative;
   z-index: 500;
-  z-index: 0;
+  /*z-index: 0;*/
 }
 @media screen and (max-width: 1000px) {
   .loft-types__desc {
