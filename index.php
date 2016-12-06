@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Studio#12");
     </div>
 </div><!-- .section--intro -->
 
-<div class="fullpage fade-animate fade-in">
+<div class="fullpage fade-in">
 
     <div class="section section--about is-colored" data-anchor="s-about">
         <div class="wrapper">

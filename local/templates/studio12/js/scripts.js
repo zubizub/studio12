@@ -525,12 +525,12 @@ $(function () {
             ease: Linear.easeNone
         });
         introEnd.eventCallback('onComplete', function () {
-
-            $('.fade-animate').removeClass('fade-in');
+            $('.section--intro').slideUp(1000);
+            $('.fullpage').removeClass('fade-in');
             setTimeout(function () {
                 $('body').removeClass('no-scroll');
+                $('.fade-animate').removeClass('fade-in');
             }, 1000);
-            $('.section--intro').slideUp(1000);
         });
 
         setTimeout(function () {
