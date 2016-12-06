@@ -525,13 +525,12 @@ $(function () {
             ease: Linear.easeNone
         });
         introEnd.eventCallback('onComplete', function () {
-            $('html, body').animate({
-                scrollTop: $(".fullpage").offset().top
-            }, 1000);
+
             $('.fade-animate').removeClass('fade-in');
             setTimeout(function () {
                 $('body').removeClass('no-scroll');
             }, 1000);
+            $('.section--intro').slideUp(1000);
         });
 
         setTimeout(function () {
@@ -553,7 +552,7 @@ $(function () {
                     ease: Linear.easeNone
                 });
             }.bind(this), {
-                offset: '100%'
+                offset: '80%'
             });
         });
 
@@ -588,7 +587,7 @@ $(function () {
                 }, 2000);
                 $('.lots-infographics__number').animateNumber({ number: 76 });
             }.bind(this), {
-                offset: '100%'
+                offset: '80%'
             });
         });
     }());
