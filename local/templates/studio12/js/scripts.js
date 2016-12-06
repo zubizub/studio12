@@ -552,7 +552,7 @@ $(function () {
                     ease: Linear.easeNone
                 });
             }.bind(this), {
-                offset: '80%'
+                offset: '150%'
             });
         });
 
@@ -587,7 +587,7 @@ $(function () {
                 }, 2000);
                 $('.lots-infographics__number').animateNumber({ number: 76 });
             }.bind(this), {
-                offset: '80%'
+                offset: '150%'
             });
         });
     }());
