@@ -24,10 +24,10 @@ $(function () {
     }());
     (function () {
         var speed = 80, timeout = 100, typeItOptions = {
-                cursor: false,
-                speed: speed,
-                autoStart: true
-            }, $feature = $('.feature'), $heading = $('.heading'), $headingLine = $('.heading__line'), $words = $('.heading__word'), $firstWord = $words.filter(':first'), $lastWord = $words.filter(':last');
+            cursor: false,
+            speed: speed,
+            autoStart: true
+        }, $feature = $('.feature'), $heading = $('.heading'), $headingLine = $('.heading__line'), $words = $('.heading__word'), $firstWord = $words.filter(':first'), $lastWord = $words.filter(':last');
         $heading.height($heading.outerHeight());
         $firstWord.removeClass('invisible').typeIt($.extend({}, typeItOptions, {
             callback: function () {
@@ -75,7 +75,7 @@ $(function () {
             if (!$.Tween || !$.Tween.propHooks) {
                 $.fx.step.number = handle;
             } else {
-                $.Tween.propHooks.number = { set: handle };
+                $.Tween.propHooks.number = {set: handle};
             }
             var extract_number_parts = function (separated_number, group_length) {
                 var numbers = separated_number.split('').reverse(), number_parts = [], current_number_part, current_index, q;
@@ -100,18 +100,18 @@ $(function () {
             $.animateNumber = {
                 numberStepFactories: {
                     /**
-       * Creates numberStep handler, which appends string to floored animated number on each step.
-       *
-       * @example
-       * // will animate to 100 with "1 %", "2 %", "3 %", ...
-       * $('#someid').animateNumber({
+                     * Creates numberStep handler, which appends string to floored animated number on each step.
+                     *
+                     * @example
+                     * // will animate to 100 with "1 %", "2 %", "3 %", ...
+                     * $('#someid').animateNumber({
        *   number: 100,
        *   numberStep: $.animateNumber.numberStepFactories.append(' %')
        * });
-       *
-       * @params {String} suffix string to append to animated number
-       * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
-       */
+                     *
+                     * @params {String} suffix string to append to animated number
+                     * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
+                     */
                     append: function (suffix) {
                         return function (now, tween) {
                             var floored_number = Math.floor(now), target = $(tween.elem);
@@ -119,26 +119,26 @@ $(function () {
                         };
                     },
                     /**
-       * Creates numberStep handler, which format floored numbers by separating them to groups.
-       *
-       * @example
-       * // will animate with 1 ... 217,980 ... 95,217,980 ... 7,095,217,980
-       * $('#world-population').animateNumber({
+                     * Creates numberStep handler, which format floored numbers by separating them to groups.
+                     *
+                     * @example
+                     * // will animate with 1 ... 217,980 ... 95,217,980 ... 7,095,217,980
+                     * $('#world-population').animateNumber({
        *    number: 7095217980,
        *    numberStep: $.animateNumber.numberStepFactories.separator(',')
        * });
-       * @example
-       * // will animate with 1% ... 217,980% ... 95,217,980% ... 7,095,217,980%
-       * $('#salesIncrease').animateNumber({
+                     * @example
+                     * // will animate with 1% ... 217,980% ... 95,217,980% ... 7,095,217,980%
+                     * $('#salesIncrease').animateNumber({
        *   number: 7095217980,
        *   numberStep: $.animateNumber.numberStepFactories.separator(',', 3, '%')
        * });
-       *
-       * @params {String} [separator=' '] string to separate number groups
-       * @params {String} [group_length=3] number group length
-       * @params {String} [suffix=''] suffix to append to number
-       * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
-       */
+                     *
+                     * @params {String} [separator=' '] string to separate number groups
+                     * @params {String} [group_length=3] number group length
+                     * @params {String} [suffix=''] suffix to append to number
+                     * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
+                     */
                     separator: function (separator, group_length, suffix) {
                         separator = separator || ' ';
                         group_length = group_length || 3;
@@ -227,21 +227,21 @@ $(function () {
             swipe: false,
             touchMove: false,
             responsive: [{
-                    breakpoint: 1001,
-                    settings: {
-                        speed: 150,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        vertical: false,
-                        verticalSwiping: false,
-                        variableWidth: false,
-                        centerMode: false,
-                        centerPadding: '0px',
-                        swipe: true,
-                        touchMove: true,
-                        infinite: true
-                    }
-                }]
+                breakpoint: 1001,
+                settings: {
+                    speed: 150,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    vertical: false,
+                    verticalSwiping: false,
+                    variableWidth: false,
+                    centerMode: false,
+                    centerPadding: '0px',
+                    swipe: true,
+                    touchMove: true,
+                    infinite: true
+                }
+            }]
         });
         $('.loft-types-slide-go').on('click', function () {
             $('.loft-types__tabs').slick('slickNext');
@@ -284,20 +284,20 @@ $(function () {
             touchThreshold: 10
         });
     }());
-        $('.section--lofts').each(function () {
-            var self = this,
-                $box = $('.lots', self),
-                $hidden = $('.lots__hidden', self),
-                $more = $('.more-items', self);
-            $more.on('click', function () {
-                var offers = $('.ajaxLotItem ').length;
-                var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
-                $box.toggleClass('is-open');
-                $hidden.slideToggle(300);
-                $(this).text(moreText);
-                return false;
-            });
-        });    //
+    $('.section--lofts').each(function () {
+        var self = this,
+            $box = $('.lots', self),
+            $hidden = $('.lots__hidden', self),
+            $more = $('.more-items', self);
+        $more.on('click', function () {
+            var offers = $('.ajaxLotItem ').length;
+            var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
+            $box.toggleClass('is-open');
+            $hidden.slideToggle(300);
+            $(this).text(moreText);
+            return false;
+        });
+    });    //
     (function () {
         $('.nav-toggle').on('click', function () {
             var timer;
@@ -327,18 +327,18 @@ $(function () {
                 arrows: true,
                 slide: '.photo-gallery__item',
                 infinite: true    //adaptiveHeight: true,
-                        //responsive: [
-                        //    {
-                        //        breakpoint: 800,
-                        //        settings: {
-                        //            slidesToShow: 1,
-                        //            slidesToScroll: 1,
-                        //            variableWidth: false,
-                        //            centerMode: false,
-                        //            adaptiveHeight: true
-                        //        }
-                        //    }
-                        //]
+                //responsive: [
+                //    {
+                //        breakpoint: 800,
+                //        settings: {
+                //            slidesToShow: 1,
+                //            slidesToScroll: 1,
+                //            variableWidth: false,
+                //            centerMode: false,
+                //            adaptiveHeight: true
+                //        }
+                //    }
+                //]
             });
         });
     }());
@@ -425,18 +425,18 @@ $(function () {
         return false;
     });
 
-    $('.btn-map-get').on('click', function() {
-       $('.popup--map').bPopup({
-           closeClass: 'popup__close'
-       });
-       return false;
+    $('.btn-map-get').on('click', function () {
+        $('.popup--map').bPopup({
+            closeClass: 'popup__close'
+        });
+        return false;
     });
 
-    $('.btn-showroom').on('click', function() {
-       $('.popup--showroom').bPopup({
-           closeClass: 'popup__close'
-       });
-       return false;
+    $('.btn-showroom').on('click', function () {
+        $('.popup--showroom').bPopup({
+            closeClass: 'popup__close'
+        });
+        return false;
     });
 
     $('.get-gallery-block').on('click', function () {
@@ -466,7 +466,7 @@ $(function () {
         return false;
     });
 
-    $(".loft-btn").on("click", function(){
+    $(".loft-btn").on("click", function () {
         var anchor = $(this).attr("href");
         $("html, body").stop().animate({
             scrollTop: $(anchor).offset().top
@@ -483,13 +483,13 @@ $(function () {
             $building2 = $('#building2'),
             $building3 = $('#building3');
 
-        $tagline.attr({ 'd': 'M480.5,0 480.5,' + wIh + ' 743.61111,' + wIh * 2 + ' 743.61111,' + (wIh + 600 + 5245) });
+        $tagline.attr({'d': 'M480.5,0 480.5,' + wIh + ' 743.61111,' + wIh * 2 + ' 743.61111,' + (wIh + 600 + 5245)});
         // $tagline.attr({ 'd': 'M742.5,0 742.5,' + wIh + ' 419.5,500 419.5,' + (wIh + 500 + 145) });
-        $tagline2.attr({ 'd': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 200.5,450 200.5,1500' });
-        $tagline3.attr({ 'd': 'M2042.5,1200 1130.5,70 950.5,250 950.5,400 1050.5,500 1050.5,1500' });
-        $building.attr({ 'd': 'M743.61111,0L743.61111,79.86111L633.83333,191.11111L373.83333,193.33332L195.55556,364.44443L312.22223,484.55555L350,444.44444L592.22223,682.22222L971.11112,306.66666L743.61112,82.33334' });
-        $building2.attr({ 'd': 'M200.5,0 200.5,100 -10,300' });
-        $building3.attr({ 'd': 'M1050.5,0 1050,100 1200,250 880.5,580 1500,1200' });
+        $tagline2.attr({'d': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 200.5,450 200.5,1500'});
+        $tagline3.attr({'d': 'M2042.5,1200 1130.5,70 950.5,250 950.5,400 1050.5,500 1050.5,1500'});
+        $building.attr({'d': 'M743.61111,0L743.61111,79.86111L633.83333,191.11111L373.83333,193.33332L195.55556,364.44443L312.22223,484.55555L350,444.44444L592.22223,682.22222L971.11112,306.66666L743.61112,82.33334'});
+        $building2.attr({'d': 'M200.5,0 200.5,100 -10,300'});
+        $building3.attr({'d': 'M1050.5,0 1050,100 1200,250 880.5,580 1500,1200'});
 
         function pathPrepare($el) {
             var lineLength = $el[0].getTotalLength();
@@ -504,8 +504,8 @@ $(function () {
         pathPrepare($building2);
         pathPrepare($building3);
 
-        $('.slogan-page').each(function() {
-            $(this).waypoint(function(direction) {
+        $('.slogan-page').each(function () {
+            $(this).waypoint(function (direction) {
                 TweenLite.to($tagline, 8, {
                     strokeDashoffset: 0,
                     ease: Linear.easeNone
@@ -523,8 +523,8 @@ $(function () {
             });
         });
 
-        $('.lofts').each(function() {
-            $(this).waypoint(function(direction) {
+        $('.lofts').each(function () {
+            $(this).waypoint(function (direction) {
                 TweenLite.to($building, 2.5, {
                     strokeDashoffset: 0,
                     ease: Linear.easeNone
@@ -552,7 +552,7 @@ $(function () {
                 setTimeout(function () {
                     $('.house4').fadeIn(500);
                 }, 2000);
-                $('.lots-infographics__number').animateNumber({ number: 76 });
+                $('.lots-infographics__number').animateNumber({number: 76});
             }.bind(this), {
                 offset: '130%'
             });
