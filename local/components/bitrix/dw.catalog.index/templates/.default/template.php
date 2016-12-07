@@ -18,7 +18,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
             <div class="lofts lofts--main">
                 <div class="lofts__scheme">
 
-                    <svg version="1.1" id="Layer_2" class="dynamic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 255.12 255.12" enable-background="new 0 0 255.12 255.12" xml:space="preserve">
+                    <svg version="1.1" id="Layer_2" class="dynamic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255.12px" height="255.12px" viewBox="0 0 255.12 255.12" enable-background="new 0 0 255.12 255.12" xml:space="preserve">
 
 <polygon display="none" fill="none" stroke="#FFF200" stroke-width="9" stroke-miterlimit="10" points="133.875,224.625
 	62.25,152.75 50.5,164.5 21.874,135.876 69.991,88.312 147.272,88.264 179.201,56.201 241.125,117.875 "></polygon>
@@ -353,7 +353,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         </div>
                     </div>
                 </div>
-                <div class="lots-infographics">
+                <div class="lots-infographics js-vertical-anim">
                     <div class="lots-infographics__number">76</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
                     <!-- <div class="lots-infographics-black">ГОТОВНОСТЬ:<br>Конец<br>2017</div> -->

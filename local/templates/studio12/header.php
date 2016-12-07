@@ -26,6 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <?$APPLICATION->ShowHead()?>
     <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
     <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->

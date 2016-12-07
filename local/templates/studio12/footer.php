@@ -80,7 +80,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div>
 
-<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
+<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<? endif; ?>">
     <ul class="top__list">
         <li class="top__item">
             <span class="top__text">Москва, СВАО,</span><br>
@@ -104,11 +104,11 @@ IncludeTemplateLangFile(__FILE__);
         </li>
     </ul>
 </div>
-<button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>" type="button">
+<button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>load-animate<? endif; ?>" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
 </button>
-<div class="logo-fix <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>"></div>
-<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
+<div class="logo-fix <?if ($APPLICATION->GetCurPage()== '/'): ?>load-animate<? endif; ?>"></div>
+<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>load-animate<? endif; ?>">
     <a class="controls__phone btn-callback" href="#"></a>
     <!--<a class="controls__photos get-gallery-block" href="#"></a>-->
     <!--<a class="controls__queue" href="#"></a>-->
