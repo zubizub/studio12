@@ -1,4 +1,13 @@
 $(function () {
+
+    (function () {
+        $('.number72').animateNumber({ number: 72 });
+        $('.number142').animateNumber({ number: 142 });
+        $('.number40').animateNumber({ number: 40 });
+        $('.number300').animateNumber({ number: 300 });
+        $('.number6').animateNumber({ number: 8 });
+    }());
+
     (function () {
         var wIh = window.innerHeight / 4,
             $intro = $('#intro');
