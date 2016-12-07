@@ -7,7 +7,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
 <div id="loft-table" class="section section--lofts is-colored">
     <div class="box" style="">
-        <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1165 5000" style="width: 100%; height: auto">
+        <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1165px" height="1500px" viewbox="0 0 1165 1500" enable-background="new 0 0 1165 1500" xml:space="preserve" preserveAspectRatio="xMinYMin meet" style='width: 100%; height: 5000px;'>
             <path class="path" id="building"></path>
             <path class="path" id="building2"></path>
             <path class="path" id="building3"></path>
