@@ -80,7 +80,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div>
 
-<div class="top fade-animate fade-in">
+<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
     <ul class="top__list">
         <li class="top__item">
             <span class="top__text">Москва, СВАО,</span><br>
@@ -104,11 +104,11 @@ IncludeTemplateLangFile(__FILE__);
         </li>
     </ul>
 </div>
-<button class="nav-toggle fade-animate fade-in" type="button">
+<button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
 </button>
-<div class="logo-fix fade-animate fade-in"></div>
-<div class="controls controls--our fade-animate fade-in">
+<div class="logo-fix <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>"></div>
+<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
     <a class="controls__phone btn-callback" href="#"></a>
     <!--<a class="controls__photos get-gallery-block" href="#"></a>-->
     <!--<a class="controls__queue" href="#"></a>-->
@@ -148,10 +148,12 @@ IncludeTemplateLangFile(__FILE__);
 <!-- /Yandex.Metrika counter -->
 
 <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.backstretch.min.js" type="text/javascript"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
+<?if ($APPLICATION->GetCurPage()== '/'): ?>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
+<? endif; ?>
    
 
 <script>

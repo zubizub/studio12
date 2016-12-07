@@ -2016,6 +2016,7 @@ sub, sup {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
   }
+  .sidebar-open .logo-fix,
   .sidebar-open .nav-toggle,
   .sidebar-open .top,
   .sidebar-open .main {
@@ -2091,7 +2092,7 @@ sub, sup {
 }
 
 .head {
-  padding-top: 3.8125rem;
+  padding-top: 5.8125rem;
   padding-left: 1.1875rem;
 }
 /*@media screen and (min-width: 320px) and (max-width: 590px) {*/
@@ -3820,7 +3821,7 @@ a.btn, a.btn:hover {
 .controls {
   left: 30px;
   position: fixed;
-  top: 4.6875rem;
+  top: 4rem;
   left: 30px;
   width: 2.1875rem;
   display: none;
@@ -3848,8 +3849,8 @@ a.btn, a.btn:hover {
     transition: all 0.3s ease, all 0.3s ease, all 0.3s ease, all 0.3s ease;
   }
   .sidebar-open .controls {
-    opacity: 0;
-    visibility: hidden;
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
   }
 }
 @media screen and (min-width: 1601px) {
@@ -5812,6 +5813,7 @@ a.btn, a.btn:hover {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
   }
+  .sidebar-open .controls,
   .sidebar-open .nav-toggle {
     -webkit-transform: translateX(18.75rem);
     -moz-transform: translateX(18.75rem);
@@ -5832,18 +5834,18 @@ a.btn, a.btn:hover {
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
-  .nav-toggle {
-    top: 1.25rem;
-    left: 22px;
-    font-size: 0.06rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .nav-toggle {
-    left: 0.875rem;
-  }
-}
+/*@media screen and (max-width: 1000px) {*/
+  /*.nav-toggle {*/
+    /*top: 1.25rem;*/
+    /*left: 22px;*/
+    /*font-size: 0.06rem;*/
+  /*}*/
+/*}*/
+/*@media screen and (max-width: 767px) {*/
+  /*.nav-toggle {*/
+    /*left: 0.875rem;*/
+  /*}*/
+/*}*/
 .nav-toggle__bar {
   height: 4px;
   margin: 0 auto;
@@ -6909,10 +6911,17 @@ a.btn, a.btn:hover {
   position: fixed;
   top: 80px;
   left: 5px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: -o-transform 0.3s ease;
+  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
   z-index: 1500;
 }
 .sidebar-open .logo-fix {
-  display: none;
+  /*display: none;*/
 }
 @media screen and (min-width: 1601px)  {
   .logo-fix {
@@ -7261,10 +7270,9 @@ a.btn, a.btn:hover {
     display: none;
   }
 
-  .nav-toggle__bar,
-  .nav-toggle__bar:before,
-  .nav-toggle__bar:after {
-    background-color: #ffe500;
+  .nav-toggle {
+    width: 50px;
+    height: 50px;
   }
 
   .controls__phone {
@@ -7277,6 +7285,19 @@ a.btn, a.btn:hover {
 
   .loft-types .wrapper {
     padding: 0 !important;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .fade-in {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .no-scroll {
+    overflow: inherit !important;
   }
 }
 
@@ -7420,6 +7441,7 @@ a.btn, a.btn:hover {
 }
 
 .top,
+.logo-fix,
 .nav-toggle {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;

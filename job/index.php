@@ -4,24 +4,6 @@ $APPLICATION->SetTitle("Studio12");
 ?>
   <div class="wrapper job-page">
 	<div class="inner">
-		<div class="header header_stabled">
-			<div class="header__inner">
-				<div class="nav nav--light">
-					<div class="nav__inner">
-						<div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link get-gallery-block" href="#">Фотографии</a> лофтов</span>
-						</div>
-						<div class="nav__item nav__item--queue">
-							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
-						</div>
-						<div class="nav__item nav__item--shoowroom">
- <span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
- <!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
-							<!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="head">
 			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Работа </span></span><span class="heading__line"><span class="heading__word invisible"> в лофте</span>
 			<div class="feature invisible">
@@ -59,7 +41,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> и <span style="color: #ffffff">#Работай</span>
+						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> <br>и <span style="color: #ffffff">#Работай</span>
 					</div>
 					<a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a>
 				</div>

@@ -4,24 +4,6 @@ $APPLICATION->SetTitle("Studio12");
 ?>
   <div class="wrapper quarter-page">
 	<div class="inner">
-		<div class="header header_stabled">
-			<div class="header__inner">
-				<div class="nav nav--light">
-					<div class="nav__inner">
-						<div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link get-gallery-block" href="#">Фотографии</a> лофтов</span>
-						</div>
-						<div class="nav__item nav__item--queue">
-							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
-						</div>
-						<div class="nav__item nav__item--shoowroom">
-							<span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
-							<!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
-							<!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="head">
 			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Жить</span></span><span class="heading__line"><span class="heading__word invisible">в лофте</span>
 			<div class="feature invisible">
@@ -36,18 +18,6 @@ $APPLICATION->SetTitle("Studio12");
 							</div>
 						</div>
 					</div>
-					<!-- <div class="feature__bottom">
-						<div class="feature__item">
-							<div class="feature__term">
-								 Окупаемость всего<br>
-								 несколько лет
-							</div>
-							<!-- <div class="feature__def">
-								 менее <br>
-								 7 лет!
-							</div> 
-						</div>
-					</div> -->
 				</div>
 				<div class="feature__pointer">
 				</div>
@@ -59,7 +29,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <span style="color: #ffffff">#Живи</span> и <a style="color: #ffe500;" class="link" href="/job">#Работай</a>
+						 Концепция квартала <span style="color: #ffffff">#Живи</span> <br>и <a style="color: #ffe500;" class="link" href="/job">#Работай</a>
 					</div>
 				</div>
 				<div class="concept__col col-1-3">

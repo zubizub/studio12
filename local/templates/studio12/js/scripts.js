@@ -474,20 +474,14 @@ $(function () {
         return false;
     });
 
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    if( isMobile ) {
-        $('.section--slogan').add('.section--start').add('.section--intro').add('.slogan-page').remove().css('display', 'none');
-        $('.lots-infographics__number').animateNumber({ number: 76 });
-        $('.number72').animateNumber({ number: 72 });
-        $('.number142').animateNumber({ number: 142 });
-        $('.number40').animateNumber({ number: 40 });
-        $('.number300').animateNumber({ number: 300 });
-        $('.number6').animateNumber({ number: 8 });
-    }
+    $('.number72').animateNumber({ number: 72 });
+    $('.number142').animateNumber({ number: 142 });
+    $('.number40').animateNumber({ number: 40 });
+    $('.number300').animateNumber({ number: 300 });
+    $('.number6').animateNumber({ number: 8 });
 
     (function () {
         var wIh = window.innerHeight / 4,
-            $intro = $('#intro'),
             $tagline = $('#tagline'),
             $tagline2 = $('#tagline2'),
             $tagline3 = $('#tagline3'),
@@ -495,9 +489,6 @@ $(function () {
             $building2 = $('#building2'),
             $building3 = $('#building3');
 
-        if ($intro.length && $tagline.length && $tagline2.length && $tagline3.length && $building.length && $building2.length && $building3.length) {
-        }
-        $intro.attr({ 'd': 'M582.5,0 582.5,200 742.5,370 742.5,410 387.5,410 387.5,490 582.5,680 582.5,1500'});
         $tagline.attr({ 'd': 'M480.5,0 480.5,' + wIh + ' 743.61111,' + wIh * 2 + ' 743.61111,' + (wIh + 600 + 5245) });
         // $tagline.attr({ 'd': 'M742.5,0 742.5,' + wIh + ' 419.5,500 419.5,' + (wIh + 500 + 145) });
         $tagline2.attr({ 'd': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 200.5,450 200.5,1500' });
@@ -512,30 +503,12 @@ $(function () {
             $el.css('stroke-dashoffset', lineLength);
         }
 
-        pathPrepare($intro);
         pathPrepare($tagline);
         pathPrepare($tagline2);
         pathPrepare($tagline3);
         pathPrepare($building);
         pathPrepare($building2);
         pathPrepare($building3);
-
-        var introEnd = TweenLite.to($intro, 2, {
-            strokeDashoffset: 0,
-            ease: Linear.easeNone
-        });
-        introEnd.eventCallback('onComplete', function () {
-            $('.section--intro').slideUp(1000);
-            $('.fullpage').removeClass('fade-in');
-            setTimeout(function () {
-                $('body').removeClass('no-scroll');
-                $('.fade-animate').removeClass('fade-in');
-            }, 1000);
-        });
-
-        setTimeout(function () {
-            $('.line-house').fadeIn(1000);
-        }, 500);
 
         $('.slogan-page').each(function() {
             $(this).waypoint(function(direction) {
@@ -552,7 +525,7 @@ $(function () {
                     ease: Linear.easeNone
                 });
             }.bind(this), {
-                offset: '150%'
+                offset: '130%'
             });
         });
 
@@ -587,7 +560,7 @@ $(function () {
                 }, 2000);
                 $('.lots-infographics__number').animateNumber({ number: 76 });
             }.bind(this), {
-                offset: '150%'
+                offset: '130%'
             });
         });
     }());
