@@ -110,11 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a class="menu__link" href="/job">#Работавлофте</a>
                     </li>
                     <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/'): ?>
-                            <a class="menu__link queue__act" href="#">#Выбратьлофт</a>
-                            <?else:?>
-                            <a class="menu__link loft-btn" href="#loft-table">#Выбратьлофт</a>
-                        <? endif; ?>
+                        <a class="menu__link queue__act" href="#">#Выбратьлофт</a>
                     </li>
                 </ul>
                 <div class="mobile-note">
@@ -125,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="mobile-note__sr-link btn-callback-room">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
                 </div>
                 <div class="note">
-                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="/job">#РАБОТЫ</a>.</div>
+                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow link-animate" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow link-animate" href="/job">#РАБОТЫ</a>.</div>
                             <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба.</div>
                         </div>
                     </div>

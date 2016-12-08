@@ -501,6 +501,21 @@ $(function () {
         return false;
     });
 
+    $('.toogleMap').click(function () {
+        $('.googleStatic, .googleMap').toggleClass("currentMap");
+    });
+
+    (function() {
+        var topHeight = $(".top").outerHeight();
+
+        $('.lofts__link, .lofts, .queue__act, .house1, .feature').click(function () {
+            $('html,body').animate({
+                    scrollTop: $(".lots").offset().top - topHeight
+                }, 'slow');
+            return false;
+        });
+    })();
+
     (function () {
         var wIh = window.innerHeight / 4,
             isIE = /*@cc_on!@*/false || !!document.documentMode,

@@ -29,7 +29,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <span style="color: #ffffff">#Живи</span> <br>и <a style="color: #ffe500;" class="link" href="/job">#Работай</a>
+						 Концепция квартала <span style="color: #ffffff">#Живи</span> <br>и <a style="color: #ffe500;" class="link link-animate" href="/job">#Работай</a>
 					</div>
 				</div>
 				<div class="concept__col col-1-3">
@@ -91,7 +91,7 @@ $APPLICATION->SetTitle("Studio12");
 	</div>
 </div>
 
-          <div class="reasons">
+          <div class="reasons reasons--dark">
             <div class="wrapper">
               <div class="inner">
                 <div class="reasons__content">

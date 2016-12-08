@@ -82,25 +82,25 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<? endif; ?>">
     <ul class="top__list">
-        <li class="top__item">
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Москва, СВАО,</span><br>
-            <a href="#" class="top__link">12-й пр. Марьиной Рощи 8</a>
+            <a href="#" class="top__link link-animate">12-й пр. Марьиной Рощи 8</a>
         </li>
-        <li class="top__item">
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">+7 495 780-40-40</span><br>
-            <a href="#" class="top__link">Обратный звонок</a>
+            <a href="#" class="top__link link-animate btn-callback">Обратный звонок</a>
         </li>
-        <li class="top__item">
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Фотографии</span><br>
-            <a href="#" class="top__link">лофтов</a>
+            <a href="#" class="top__link link-animate get-gallery-block">лофтов</a>
         </li>
-        <li class="top__item">
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Как проехать</span><br>
-            <a href="#" class="top__link">в Showroom</a>
+            <a href="#" class="top__link link-animate btn-showroom">в Showroom</a>
         </li>
-        <li class="top__item">
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">1-ая очередь:</span><br>
-            <a href="#" class="top__link">Корпус 2-2</a>
+            <a href="#" class="top__link link-animate queue__act">Корпус 2-2</a>
         </li>
     </ul>
 </div>

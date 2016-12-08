@@ -2028,13 +2028,13 @@ sub, sup {
     font-size: 1.625rem;
 }
 
-.wrapper {
-    padding: 0 1.75rem;
-    margin: 0 auto;
-    position: relative;
-}
+/*.wrapper {*/
+    /*padding: 0 1.75rem;*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+/*}*/
 
-@media screen and (min-width: 320px) and (max-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 1000px) {
     .wrapper {
         padding: 0 -webkit-calc(18px + (100vw - 320px) * 0.01136);
         padding: 0 -moz-calc(18px + (100vw - 320px) * 0.01136);
@@ -2059,7 +2059,7 @@ sub, sup {
 }
 
 .inner {
-    margin: 0 7.625rem;
+    margin: 0 7.625rem 0 115px;
     position: relative;
 }
 
@@ -2082,6 +2082,13 @@ sub, sup {
     padding-top: 5.8125rem;
     padding-left: 1.1875rem;
 }
+
+@media screen and (min-width: 1000px)  {
+    .head {
+        padding-left: 0;
+    }
+}
+
 
 /*@media screen and (min-width: 320px) and (max-width: 590px) {*/
 /*.head {*/
@@ -2866,7 +2873,8 @@ sub, sup {
 }
 
 .section--about .section__content {
-    margin: 0 -1rem 0 9.5rem;
+    margin: 0 -1rem 0 115px;
+    top: 45%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -2893,13 +2901,13 @@ sub, sup {
     }
 }
 
-.sidebar-open .section--about .section__content {
-    margin: 0px 3rem 0 8.8rem;
-}
+/*.sidebar-open .section--about .section__content {*/
+    /*margin: 0px 3rem 0 8.8rem;*/
+/*}*/
 
 @media screen and (min-width: 1601px) {
     .section--about .section__content {
-        margin: 0 3rem 0 9.5rem;
+        /*margin: 0 3rem 0 9.5rem;*/
     }
 }
 
@@ -2929,7 +2937,7 @@ sub, sup {
 
 .section--about {
     position: relative;
-    min-height: 700px;
+    min-height: 800px;
     height: 100vh;
 }
 
@@ -3995,6 +4003,18 @@ a.btn, a.btn:hover {
     line-height: 1.33;
     margin-bottom: 2.75rem;
 }
+
+.concept .link-animate:after {
+    height: 2px;
+}
+
+@media screen and (min-width: 1000px)  {
+
+    .concept__col:first-child {
+        padding-left: 0;
+    }
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 590px) {
     /*.concept__col {*/
@@ -5313,7 +5333,7 @@ a.btn, a.btn:hover {
     background: #fff;
     float: right;
     position: relative;
-    z-index: 500;
+    z-index: 400;
     /*z-index: 0;*/
 }
 
@@ -5360,7 +5380,7 @@ a.btn, a.btn:hover {
 }
 
 .loft-types__tab:before {
-    content: '\2014';
+    content: '←';
     position: absolute;
     top: 0;
     left: 0;
@@ -5455,7 +5475,7 @@ a.btn, a.btn:hover {
 
 .lofts__scheme svg {
     width: 80%;
-    min-height: 1100px;
+    height: 100%;
     margin-top: -10%;
     margin-bottom: -40px;
     overflow: visible;
@@ -5774,11 +5794,11 @@ a.btn, a.btn:hover {
     /*background: #343434;*/
     color: #000;
     position: relative;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .lots__inner {
-    padding: 0 6.25rem;
+    padding: 0 6.25rem 0 80px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -5878,10 +5898,10 @@ a.btn, a.btn:hover {
 }
 
 .lots-infographics {
-    color: #ffe500;
+    color: #ffffff;
     position: absolute;
     bottom: 7%;
-    left: 8.75rem;
+    left: 115px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -6154,10 +6174,15 @@ a.btn, a.btn:hover {
     text-transform: uppercase;
 }
 
+.menu__item {
+    margin-top: 10px;
+}
+
 .menu__link {
     font-size: 1.875rem;
-    color: #ffffff;
+    color: #ffe500;
     line-height: 1;
+    margin-top: 10px;
 }
 
 .menu__link:hover {
@@ -7049,6 +7074,17 @@ a.btn, a.btn:hover {
     margin-left: 1.1875rem;
 }
 
+@media screen and (min-width: 1000px)  {
+
+    .reasons .col-1-5:first-child {
+        padding-left: 0;
+    }
+
+    .reasons__title {
+        margin-left: 0;
+    }
+}
+
 @media screen and (min-width: 1900px) {
     .reasons__title {
         display: table-cell;
@@ -7058,10 +7094,6 @@ a.btn, a.btn:hover {
         line-height: 0.9;
         font-size: 2.375rem;
     }
-}
-
-.reasons--dark .reasons__title {
-    color: #ffe500;
 }
 
 @media screen and (min-width: 1900px) {
@@ -7572,7 +7604,7 @@ a.btn, a.btn:hover {
 }
 
 .st3 {
-    fill: #FCEE22;
+    fill: #ffffff;
 }
 
 .st4 {
@@ -7645,7 +7677,7 @@ a.btn, a.btn:hover {
     line-height: 1;
     color: #ffe500;
     position: absolute;
-    left: 165px;
+    left: 115px;
     right: 0;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -7884,6 +7916,12 @@ a.btn, a.btn:hover {
     margin-left: 0 !important;
 }
 
+@media screen and (min-width: 1000px) {
+    .about-lofts .col-1-3:first-child {
+        padding-left: 0;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     .gallery-block .loft-types__desc {
@@ -8004,6 +8042,10 @@ a.btn, a.btn:hover {
 
     .no-scroll {
         overflow: inherit !important;
+    }
+
+    .actions {
+        display: none;
     }
 }
 
@@ -8144,7 +8186,7 @@ a.btn, a.btn:hover {
     height: 64px;
     background-color: #000000;
     font-size: 16px;
-    z-index: 500;
+    z-index: 450;
 }
 
 .top,
@@ -8186,16 +8228,20 @@ a.btn, a.btn:hover {
 }
 
 .top__link {
-    position: relative;
     display: inline-block;
     color: #fee333;
+}
+
+.link-animate  {
+    position: relative;
+    text-decoration: none !important;
     -webkit-transition: all 0.15s ease-in;
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 }
 
-.top__link:after {
+.link-animate:after {
     content: '';
     position: absolute;
     height: 1px;
@@ -8209,6 +8255,38 @@ a.btn, a.btn:hover {
     transition: width 0.25s ease-out;
 }
 
-.top__link:hover:after {
+.link-animate:hover:after {
     width: 100%;
+}
+
+.actions {
+    position: absolute;
+    bottom: 10%;
+    left: 115px;
+    right: 0;
+}
+
+.actions * {
+    margin: 0 !important;
+}
+
+.actions:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.actions__item {
+    float: left;
+    width: 33%;
+}
+
+.actions a.btn-download {
+    color: #000000;
+}
+
+.actions .lofts-pdf-link,
+.actions .btn-download {
+    height: 36px;
+    width: 281px;
 }
