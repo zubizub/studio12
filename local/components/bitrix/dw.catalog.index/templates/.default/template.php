@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 ?>
 
-<? print_r($arResult['AJAX']);?>
+<? //print_r($arResult['AJAX']);?>
 
 <? //if (!$arResult['AJAX'])) : ?>
 
