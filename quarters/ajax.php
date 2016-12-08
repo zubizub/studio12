@@ -226,7 +226,7 @@
         //print_r($_REQUEST);
         parse_str($_REQUEST['data'], $output);
 
-        print_r($output);
+        //print_r($output);
         //$output[]
 
         $subject = "Обратный звонок. S#12: $output[lot]";
@@ -256,7 +256,7 @@
         //print_r($_REQUEST);
         parse_str($_REQUEST['data'], $output);
 
-        print_r($output);
+        //print_r($output);
         //$output[]
 
         $subject = "Приехать в Shoowroom: Studio#8";
