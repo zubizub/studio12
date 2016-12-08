@@ -8,13 +8,19 @@ $(function () {
     }());
     (function () {
         var wIh = window.innerHeight / 4,
+            isIE = /*@cc_on!@*/false || !!document.documentMode,
             $intro = $('#intro');
-        $intro.attr({ 'd': 'M582.5,0 582.5,200 742.5,370 742.5,410 387.5,410 387.5,490 582.5,680 582.5,1500'});
+            $intro.attr({ 'd': 'M582.5,0 582.5,200 742.5,370 742.5,410 387.5,410 387.5,490 582.5,680 582.5,1500'});
 
         function pathPrepare($el) {
             var lineLength = $el[0].getTotalLength();
             $el.css('stroke-dasharray', lineLength);
             $el.css('stroke-dashoffset', lineLength);
+
+            if( isIE ) {
+                $el.css('stroke-dasharray', 0);
+                $el.css('stroke-dashoffset', 0);
+            }
         }
 
         pathPrepare($intro);
@@ -37,11 +43,6 @@ $(function () {
         setTimeout(function () {
             $('.line-house').fadeIn(1000);
         }, 500);
-
-        var isIE = /*@cc_on!@*/false || !!document.documentMode;
-        if( isIE ) {
-            alert('Salam');
-        }
 
     }());
 });
