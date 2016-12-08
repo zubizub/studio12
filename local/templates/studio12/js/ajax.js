@@ -166,7 +166,7 @@ $.fn.serializeObject = function()
         var sortBy = $(this).attr('data-sort');
         $('.lots .lot-sort').removeClass('active');
         $('.lots .lot-sort').attr('data-direction','');
-        $(this).addClass('active);
+        $(this).addClass('active');
         var direction = $(this).attr('data-direction');
         $(this).attr('data-direction','desc');
 
