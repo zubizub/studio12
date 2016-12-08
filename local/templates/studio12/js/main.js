@@ -38,5 +38,10 @@ $(function () {
             $('.line-house').fadeIn(1000);
         }, 500);
 
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        if( isIE ) {
+            alert('Salam');
+        }
+
     }());
 });
