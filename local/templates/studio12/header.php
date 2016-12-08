@@ -101,16 +101,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="sidebar__body">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link" href="/">#Главная</a>
+                        <a class="menu__link link-animate" href="/">#Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/quarters">#ЖИТЬВЛОФТЕ</a>
+                        <a class="menu__link link-animate" href="/quarters">#ЖИТЬВЛОФТЕ</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/job">#Работавлофте</a>
+                        <a class="menu__link link-animate" href="/job">#Работавлофте</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link queue__act" href="#">#Выбратьлофт</a>
+                        <a class="menu__link link-animate queue__act" href="#">#Выбратьлофт</a>
                     </li>
                 </ul>
                 <div class="mobile-note">

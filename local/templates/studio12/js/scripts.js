@@ -508,7 +508,7 @@ $(function () {
     (function() {
         var topHeight = $(".top").outerHeight();
 
-        $('.lofts__link, .lofts, .queue__act, .house1, .feature').click(function () {
+        $('.lofts__link, .queue__act, .house1, .feature').click(function () {
             $('html,body').animate({
                     scrollTop: $(".lots").offset().top - topHeight
                 }, 'slow');
@@ -567,7 +567,7 @@ $(function () {
                     ease: Linear.easeNone
                 });
             }.bind(this), {
-                offset: '130%'
+                offset: '150%%'
             });
         });
 
@@ -602,7 +602,7 @@ $(function () {
                 }, 2000);
                 $('.lots-infographics__number').animateNumber({number: 76});
             }.bind(this), {
-                offset: '130%'
+                offset: '160%'
             });
         });
     }());
