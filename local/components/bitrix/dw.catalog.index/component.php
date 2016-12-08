@@ -59,6 +59,7 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 
 
 		$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID']);
+		if ($ajaxFlag) { $arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], '!=PROPERTY_STATUS' => "Продано"); }
 		//$arSelect = Array("ID", "IBLOCK_ID", "*", "PROPERTY_*");
 		$arSelect = Array("*", "PROPERTY_*");
 		//$dbRes = CIBlockElement::GetList(array('SORT' => 'ASC'), $arFilter);
