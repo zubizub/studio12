@@ -13,8 +13,8 @@ $(function () {
 
         function pathPrepare($el) {
             var lineLength = $el[0].getTotalLength();
-            $el.css('stroke-dasharray', lineLength);
-            $el.css('stroke-dashoffset', lineLength);
+            $el.css('stroke-dasharray', 0);
+            $el.css('stroke-dashoffset', 0);
         }
 
         pathPrepare($intro);
