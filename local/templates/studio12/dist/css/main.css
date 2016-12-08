@@ -6022,6 +6022,10 @@ a.btn, a.btn:hover {
     color: #ffe500;
 }
 
+.lot--header .link-animate:after {
+    background-color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
     .lot--header {
         display: none;
