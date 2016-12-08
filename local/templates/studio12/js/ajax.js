@@ -169,7 +169,7 @@ $.fn.serializeObject = function()
         console.log(sortBy);
 
 
-         $.post("/quarters/ajax.php", {
+         $.post("/quarters/ajax.php?AJAX=1", {
 
                 sortBy: sortBy,
                 action: action,
