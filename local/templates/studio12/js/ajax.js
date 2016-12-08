@@ -1,21 +1,20 @@
 $(document).ready(function () {
 
-$.fn.serializeObject = function()
-{
-    var o = {};
-    var a = this.serializeArray();
-    $.each(a, function() {
-        if (o[this.name] !== undefined) {
-            if (!o[this.name].push) {
-                o[this.name] = [o[this.name]];
+    $.fn.serializeObject = function () {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name] !== undefined) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
             }
-            o[this.name].push(this.value || '');
-        } else {
-            o[this.name] = this.value || '';
-        }
-    });
-    return o;
-};
+        });
+        return o;
+    };
 
 
     $(document).on('submit', '.popup .form', function () {
@@ -25,14 +24,14 @@ $.fn.serializeObject = function()
         console.log(action);
 
 
-         $.post("/quarters/ajax.php", {
+        $.post("/quarters/ajax.php", {
 
                 data: data,
                 action: action
             })
             .done(function (data) {
-               console.log(data);
-               // $('.loft-types__content').html(data);
+                console.log(data);
+                // $('.loft-types__content').html(data);
                 var bPopup = $('.popup--callback').bPopup();
                 var bPopup2 = $('.popup--email').bPopup();
                 var bPopup3 = $('.popup--showroom').bPopup();
@@ -114,11 +113,11 @@ $.fn.serializeObject = function()
                                 onOpen: function () {
                                     console.log(el);
                                     var action = 'send_me_email';
-                                    $.post("/quarters/ajax.php", {  ELEMENT_ID: el, action: action})
+                                    $.post("/quarters/ajax.php", {ELEMENT_ID: el, action: action})
                                         .done(function (data) {
                                             $('.popup--email').html(data);
-                                });
-                            }
+                                        });
+                                }
                             });
                             return false;
                         });
@@ -158,20 +157,5 @@ $.fn.serializeObject = function()
         });
         return false;
     });
-
-
-    $('.toogleMap').click(function() {
-        //console.log( '123');
-        $('.googleStatic, .googleMap').toggleClass( "currentMap" );
-    });
-
-    $('.lofts__link, .lofts, .queue__act, .house1, .feature').click(function() {
-        //console.log('123');
-        $('html,body').animate({
-            scrollTop: $(".lots").offset().top},
-            'slow');
-    });
-
-
 
 });
