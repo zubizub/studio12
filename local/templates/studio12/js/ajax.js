@@ -172,6 +172,37 @@ $.fn.serializeObject = function()
             'slow');
     });
 
+ $('.lots .lot-sort').click(function() {
+        var action = 'sort';
+        var data = $(this).attr('data-');
+
+        console.log(action);
+
+
+         $.post("/quarters/ajax.php", {
+
+                data: data,
+                action: action
+            })
+            .done(function (data) {
+               console.log(data);
+               // $('.loft-types__content').html(data);
+                var bPopup = $('.popup--callback').bPopup();
+                var bPopup2 = $('.popup--email').bPopup();
+                var bPopup3 = $('.popup--showroom').bPopup();
+                bPopup.close();
+                bPopup2.close();
+                bPopup3.close();
+                $('.popup .form').trigger('reset');
+                $(".form__select").val(null).trigger("change");
+            });
+
+        return false;
+
+    });
+
+
+
 
 
 });
