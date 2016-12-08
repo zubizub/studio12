@@ -93,8 +93,12 @@ top:0px; }
     /*position: absolute;
     right: 3%;
     top: 85%;*/
-    background-color: #fff;
+    background-color: #ffe500;
 margin-top: 30px;
+}
+
+.lofts-pdf-link  .offer__label--desktop:after {
+    background-image: url(../img/arrow-right.png);
 }
 
 .lofts-pdf-link .offer__label {

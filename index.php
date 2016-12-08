@@ -133,7 +133,7 @@ $APPLICATION->SetTitle("Studio#12");
                     <div class="actions__item">
                         <div class="lofts-pdf-link">
                             <a class="offer__plan" href="/upload/plan.pdf" target="_blank">
-                                <div class="offer__label offer__label--desktop">Планировки</div>
+                                <div class="offer__label offer__label--desktop">Планировки (PDF)</div>
                             </a>
                         </div>
                     </div>
