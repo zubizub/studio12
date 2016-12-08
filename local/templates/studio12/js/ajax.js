@@ -187,6 +187,8 @@ $.fn.serializeObject = function()
 
                 sortBy: sortBy,
                 action: action
+                AJAX: 1
+
             })
             .done(function (data) {
                console.log(data);
