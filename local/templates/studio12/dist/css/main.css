@@ -5940,6 +5940,10 @@ a.btn, a.btn:hover {
     }
 }
 
+.lot-sort.active {
+    font-weight: bold;
+}
+
 .lot {
     display: block;
     color: #ffffff;
@@ -8235,6 +8239,11 @@ a.btn, a.btn:hover {
 .top__link {
     display: inline-block;
     color: #fee333;
+    white-space: nowrap;
+}
+
+.sidebar-open .top__link {
+    font-size: 12px;
 }
 
 .link-animate  {
