@@ -426,31 +426,31 @@ $(function () {
     });
 
 
-    $(window).on('load', function(){
-        $('[class*=js-vertical-anim]').each(function() {
-            $(this).waypoint(function(direction) {
-                $(this).addClass('animated fadeInUp');
-            }.bind(this), {
-                offset: '100%'
-            });
-        });
-
-        $('.js-left-anim').each(function() {
-            $(this).waypoint(function(direction) {
-                $(this).addClass('animated fadeInLeft');
-            }.bind(this), {
-                offset: '100%'
-            });
-        });
-
-        $('.js-right-anim').each(function() {
-            $(this).waypoint(function(direction) {
-                $(this).addClass('animated fadeInRight');
-            }.bind(this), {
-                offset: '100%'
-            });
-        });
-    });
+    //$(window).on('load', function(){
+    //    $('[class*=js-vertical-anim]').each(function() {
+    //        $(this).waypoint(function(direction) {
+    //            $(this).addClass('animated fadeInUp');
+    //        }.bind(this), {
+    //            offset: '100%'
+    //        });
+    //    });
+    //
+    //    $('.js-left-anim').each(function() {
+    //        $(this).waypoint(function(direction) {
+    //            $(this).addClass('animated fadeInLeft');
+    //        }.bind(this), {
+    //            offset: '100%'
+    //        });
+    //    });
+    //
+    //    $('.js-right-anim').each(function() {
+    //        $(this).waypoint(function(direction) {
+    //            $(this).addClass('animated fadeInRight');
+    //        }.bind(this), {
+    //            offset: '100%'
+    //        });
+    //    });
+    //});
 
     $('.btn-map-get').on('click', function () {
         $('.popup--map').bPopup({
