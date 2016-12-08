@@ -5469,6 +5469,8 @@ a.btn, a.btn:hover {
 
 .lofts__scheme svg {
     width: 80%;
+    min-height: 1000px;
+    max-height: 1500px;
     height: 100%;
     margin-top: -10%;
     margin-bottom: -40px;
