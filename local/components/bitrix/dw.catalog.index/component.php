@@ -10,6 +10,32 @@ if (!$arParams['IBLOCK_ID'])
 
 $arParams['IBLOCK_BINDING'] = $arParams['IBLOCK_BINDING'] == 'element' ? 'element' : 'section';
 
+$ajaxFlag = $_REQUEST['AJAX'];
+$sortBy = $_REQUEST['sortBy'];
+$direction = $_REQUEST['direction'];
+
+function ajaxSort ($sortBy,$direction = 'asc') {
+
+	
+		switch ($sortBy) {
+			case 'area':
+				
+			$arSort = array('PROPERTY_AREA' => $direction);
+
+			break;
+			
+			default:
+				$arSort = array();
+				break;
+		}
+
+		print_r($arSort);
+	return $arSort;
+
+}
+
+ajaxSort($sortBy);
+
 if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER->GetGroups())))
 {
 	if(!CModule::IncludeModule("iblock"))
@@ -18,14 +44,21 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 		return;
 	}
 	
+	$arResult["AJAX"] = $ajaxFlag;
+
 	$arResult["ITEMS"] = array();
 	if ($arParams['IBLOCK_BINDING'] == 'element')
 	{
+		
+
+
+
+
 		$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID']);
 		//$arSelect = Array("ID", "IBLOCK_ID", "*", "PROPERTY_*");
 		$arSelect = Array("*", "PROPERTY_*");
 		//$dbRes = CIBlockElement::GetList(array('SORT' => 'ASC'), $arFilter);
-		$dbRes = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>150), $arSelect);
+		$dbRes = CIBlockElement::GetList(ajaxSort($sortBy), $arFilter, false, Array("nPageSize"=>150), $arSelect);
 		
 
 		while ($arRes = $dbRes->GetNextElement())
