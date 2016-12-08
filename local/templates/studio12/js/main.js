@@ -13,8 +13,8 @@ $(function () {
 
         function pathPrepare($el) {
             var lineLength = $el[0].getTotalLength();
-            $el.css('stroke-dasharray', 0);
-            $el.css('stroke-dashoffset', 0);
+            $el.css('stroke-dasharray', lineLength);
+            $el.css('stroke-dashoffset', lineLength);
         }
 
         pathPrepare($intro);
@@ -24,15 +24,15 @@ $(function () {
             ease: Linear.easeNone
         });
 
-        //introEnd.eventCallback('onComplete', function () {
-        //    $('.section--intro').slideUp(1000);
-        //    $('.fullpage').removeClass('fade-in');
-        //    setTimeout(function () {
-        //        $('body').removeClass('no-scroll');
-        //        $('.load-animate').addClass('animated fadeInUp');
-        //        $('.load-top-animate').addClass('animated fadeInLeft');
-        //    }, 1000);
-        //});
+        introEnd.eventCallback('onComplete', function () {
+            $('.section--intro').slideUp(1000);
+            $('.fullpage').removeClass('fade-in');
+            setTimeout(function () {
+                $('body').removeClass('no-scroll');
+                $('.load-animate').addClass('animated fadeInUp');
+                $('.load-top-animate').addClass('animated fadeInLeft');
+            }, 1000);
+        });
 
         setTimeout(function () {
             $('.line-house').fadeIn(1000);
