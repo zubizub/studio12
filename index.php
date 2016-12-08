@@ -9,8 +9,8 @@ $APPLICATION->SetTitle("Studio#12");
 
 <div class="section section--intro">
     <div class="box" style="text-align: center;">
-        <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1165" overflow='visible' height="1500" viewbox="0 0 1165 1500" enable-background="new 0 0 1165 1500" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
-            <path class="path" id="intro"></path>
+        <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="1165" height="1500" overflow='visible'  viewbox="0 0 1165 1500" enable-background="new 0 0 1165 1500" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+            <path class="path" id="intro" overflow='visible'></path>
             <image class="line-house" style="display: none;" xmlns='http://www.w3.org/2000/svg' , xmlns:xlink='http://www.w3.org/1999/xlink' , overflow='visible' , width='335' , height='261' , xlink:href='/img/intro.png' , transform='matrix(1 0 0 1 391.6875 133)'/>
         </svg>
     </div>
