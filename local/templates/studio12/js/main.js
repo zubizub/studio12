@@ -24,6 +24,9 @@ $(function () {
             ease: Linear.easeNone
         });
 
+        $('body').removeClass('no-scroll');
+        $('.fullpage').removeClass('fade-in');
+
         //introEnd.eventCallback('onComplete', function () {
         //    $('.section--intro').slideUp(1000);
         //    $('.fullpage').removeClass('fade-in');
