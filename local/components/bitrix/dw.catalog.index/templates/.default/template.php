@@ -87,7 +87,7 @@ endif;
                     </div>
 
                     <div class="lots__inner">
-                        <div class="lots__inner">
+                        <div class="lots__inner lots__inner--controls">
                             <div class="lots__control"><a class="more-items">Еще <span><?=$count;?></span></a>
                             </div>
                         </div>
