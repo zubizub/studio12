@@ -2987,11 +2987,12 @@ sub, sup {
 
 .section--intro .box {
     position: relative;
-
+    height: 1500px;
 }
 
 .section--intro .box svg {
-
+    width: 1165px;
+    height: 1500px;
 }
 
 .section--start .fp-scrollable,
