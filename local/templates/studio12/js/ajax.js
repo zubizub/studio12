@@ -158,7 +158,7 @@ $.fn.serializeObject = function()
         });
         return false;
     });
-    
+
 
     $('.lots .lot-sort').click(function(event) {
         event.preventDefault();

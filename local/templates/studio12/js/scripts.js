@@ -508,7 +508,7 @@ $(function () {
     (function() {
         var topHeight = $(".top").outerHeight();
 
-        $('.lofts__link, .queue__act, .house1, .feature').click(function () {
+        $('.queue__act, .house1, .feature').click(function () {
             $('html,body').animate({
                     scrollTop: $(".lots").offset().top - topHeight
                 }, 'slow');
