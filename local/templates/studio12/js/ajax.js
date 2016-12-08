@@ -164,6 +164,12 @@ $.fn.serializeObject = function()
         event.preventDefault();
         var action = 'loft-sort';
         var sortBy = $(this).attr('data-sort');
+        $('.lots .lot-sort').removeClass('active');
+        $('.lots .lot-sort').attr('data-direction','');
+        $(this).addClass('active);
+        var direction = $(this).attr('data-direction');
+        $(this).attr('data-direction','desc');
+
 
         console.log(action);
         console.log(sortBy);
@@ -172,6 +178,7 @@ $.fn.serializeObject = function()
          $.post("/quarters/ajax.php?AJAX=1", {
 
                 sortBy: sortBy,
+                direction: direction,
                 action: action,
                 AJAX: 1
 
