@@ -29,7 +29,7 @@ $(function () {
             $('.fullpage').removeClass('fade-in');
             setTimeout(function () {
                 $('body').removeClass('no-scroll');
-                $('.load-animate').addClass('animated fadeInUp');
+                $('.fade-animate').removeClass('fade-in');
                 $('.load-top-animate').addClass('animated fadeInLeft');
             }, 1000);
         });
