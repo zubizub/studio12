@@ -2991,7 +2991,7 @@ sub, sup {
 
 .section--intro .box svg {
     width: 1165px;
-    height: 1500px;
+    min-height: 1500px;
 }
 
 .section--start .fp-scrollable,
