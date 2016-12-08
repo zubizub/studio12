@@ -24,13 +24,13 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                 <div class="lots__list">
                     <div class="lots__inner">
                         <div class="lot lot--header">
-                            <div class="lot__value-1"><a href="#" class="lot-sort" data-sort="number">Лот</a></div>
-                            <div class="lot__value-2"><a href="#" class="lot-sort" data-sort="type">Тип</a></div>
-                            <div class="lot__value-3"><a href="#" class="lot-sort" data-sort="floor">Этаж</a></div>
-                            <div class="lot__value-4"><a href="#" class="lot-sort" data-sort="area">Площадь, М2</a></div>
-                            <div class="lot__value-5"><a href="#" class="lot-sort" data-sort="price">Цена за М2</a></div>
-                            <div class="lot__value-6"><a href="#" class="lot-sort" data-sort="cost">Стоимость</a></div>
-                            <div class="lot__value-7"><a href="#" class="lot-sort" data-sort="status">Статус</a></div>
+                            <div class="lot__value-1"><a href="#" class="lot-sort link-animate" data-sort="number">Лот</a></div>
+                            <div class="lot__value-2"><a href="#" class="lot-sort link-animate" data-sort="type">Тип</a></div>
+                            <div class="lot__value-3"><a href="#" class="lot-sort link-animate" data-sort="floor">Этаж</a></div>
+                            <div class="lot__value-4"><a href="#" class="lot-sort link-animate" data-sort="area">Площадь, М2</a></div>
+                            <div class="lot__value-5"><a href="#" class="lot-sort link-animate" data-sort="price">Цена за М2</a></div>
+                            <div class="lot__value-6"><a href="#" class="lot-sort link-animate" data-sort="cost">Стоимость</a></div>
+                            <div class="lot__value-7"><a href="#" class="lot-sort link-animate" data-sort="status">Статус</a></div>
                         </div>
                         <div class="ajaxLofts" id="ajaxLofts">
 
