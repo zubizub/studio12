@@ -158,21 +158,7 @@ $.fn.serializeObject = function()
         });
         return false;
     });
-
-
-    $('.toogleMap').click(function() {
-        //console.log( '123');
-        $('.googleStatic, .googleMap').toggleClass( "currentMap" );
-    });
-
-    $('.lofts__link, .lofts, .queue__act, .house1, .feature').click(function() {
-        //console.log('123');
-        $('html,body').animate({
-            scrollTop: $(".lots").offset().top},
-            'slow');
-    });
-
-
+    
 
     $('.lots .lot-sort').click(function(event) {
         event.preventDefault();
