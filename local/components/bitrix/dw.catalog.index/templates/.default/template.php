@@ -353,7 +353,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         </div>
                     </div>
                 </div>
-                <div class="lots-infographics js-vertical-anim">
+                <div class="lots-infographics">
                     <div class="lots-infographics__number">76</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
                     <!-- <div class="lots-infographics-black">ГОТОВНОСТЬ:<br>Конец<br>2017</div> -->
