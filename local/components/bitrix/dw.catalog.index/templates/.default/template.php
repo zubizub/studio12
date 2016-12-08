@@ -7,7 +7,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
 <? //print_r($arResult['AJAX']);?>
 
-<? //if (!$arResult['AJAX'])) : ?>
+<? if (!$arResult['AJAX']) : ?>
 
 <div id="loft-table" class="section section--lofts is-colored">
     <div class="box" style="">
@@ -32,9 +32,12 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             <div class="lot__value-6"><a href="#" class="lot-sort" data-sort="cost">Стоимость</a></div>
                             <div class="lot__value-7"><a href="#" class="lot-sort" data-sort="status">Статус</a></div>
                         </div>
+                        <div class="ajaxLofts" id="ajaxLofts">
 
 
                         <?
+endif;
+
   $i = 0;
   $count = 0;
   foreach ($arResult['ITEMS'] as $arItem):
@@ -78,6 +81,9 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         <?
 	endforeach;
 ?>
+
+<? if (!$arResult['AJAX']) : ?>
+                        </div>
                     </div>
 
                     <div class="lots__inner">
@@ -218,5 +224,6 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
     <div>
         <?
+    endif;
 endif;
 ?>

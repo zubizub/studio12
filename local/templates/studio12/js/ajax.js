@@ -191,8 +191,8 @@ $.fn.serializeObject = function()
 
             })
             .done(function (data) {
-               console.log(data);
-               // $('.loft-types__content').html(data);
+               //console.log(data);
+               $('#ajaxLofts').html(data);
                 
                 
             });

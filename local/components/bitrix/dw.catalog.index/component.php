@@ -18,23 +18,27 @@ function ajaxSort ($sortBy,$direction = 'asc') {
 
 	
 		switch ($sortBy) {
-			case 'area':
-				
-			$arSort = array('PROPERTY_AREA' => $direction);
-
-			break;
+			
+			case 'number': 	$arSort = array('PROPERTY_LOT' => $direction);   	break;
+			case 'area':   	$arSort = array('PROPERTY_AREA' => $direction);  	break;
+			case 'type':	$arSort = array('PROPERTY_TYPE' => $direction);		break;
+			case 'floor':	$arSort = array('PROPERTY_FLOOR' => $direction);	break;
+			case 'price':	$arSort = array('PROPERTY_SQUARE_COST' => $direction);	break;
+			case 'cost':	$arSort = array('PROPERTY_PRICE' => $direction);	break;
+			case 'status':	$arSort = array('PROPERTY_STATUS' => $direction);	break;
+		
 			
 			default:
 				$arSort = array();
 				break;
 		}
 
-		print_r($arSort);
+//		print_r($arSort);
 	return $arSort;
 
 }
 
-ajaxSort($sortBy);
+//ajaxSort($sortBy);
 
 if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER->GetGroups())))
 {
