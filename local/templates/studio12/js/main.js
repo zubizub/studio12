@@ -19,26 +19,24 @@ $(function () {
 
         pathPrepare($intro);
 
-        $(window).on('load', function(){
-            var introEnd = TweenLite.to($intro, 2, {
-                strokeDashoffset: 0,
-                ease: Linear.easeNone
-            });
-
-            introEnd.eventCallback('onComplete', function () {
-                $('.section--intro').slideUp(1000);
-                $('.fullpage').removeClass('fade-in');
-                setTimeout(function () {
-                    $('body').removeClass('no-scroll');
-                    $('.load-animate').addClass('animated fadeInUp');
-                    $('.load-top-animate').addClass('animated fadeInLeft');
-                }, 1000);
-            });
-
-            setTimeout(function () {
-                $('.line-house').fadeIn(1000);
-            }, 500);
+        var introEnd = TweenLite.to($intro, 2, {
+            strokeDashoffset: 0,
+            ease: Linear.easeNone
         });
+
+        //introEnd.eventCallback('onComplete', function () {
+        //    $('.section--intro').slideUp(1000);
+        //    $('.fullpage').removeClass('fade-in');
+        //    setTimeout(function () {
+        //        $('body').removeClass('no-scroll');
+        //        $('.load-animate').addClass('animated fadeInUp');
+        //        $('.load-top-animate').addClass('animated fadeInLeft');
+        //    }, 1000);
+        //});
+
+        setTimeout(function () {
+            $('.line-house').fadeIn(1000);
+        }, 500);
 
     }());
 });
