@@ -5380,7 +5380,7 @@ a.btn, a.btn:hover {
 }
 
 .loft-types__tab:before {
-    content: '\2014';
+    content: '←';
     position: absolute;
     top: 0;
     left: 0;
@@ -8234,7 +8234,7 @@ a.btn, a.btn:hover {
 
 .link-animate  {
     position: relative;
-    text-decoration: none;
+    text-decoration: none !important;
     -webkit-transition: all 0.15s ease-in;
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
