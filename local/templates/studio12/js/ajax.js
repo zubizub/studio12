@@ -161,18 +161,30 @@ $.fn.serializeObject = function()
 
 
     $('.lots .lot-sort').click(function(event) {
+    
         event.preventDefault();
         var action = 'loft-sort';
         var sortBy = $(this).attr('data-sort');
-        $('.lots .lot-sort').removeClass('active');
-        $('.lots .lot-sort').attr('data-direction','');
-        $(this).addClass('active');
         var direction = $(this).attr('data-direction');
-        $(this).attr('data-direction','desc');
+        
+
+
+        $('.lots .lot-sort').attr('data-direction','asc');
+        if (direction == 'desc') { 
+            $(this).attr('data-direction','asc');
+        } else { 
+            $(this).attr('data-direction','desc');
+        }
+        
+        $('.lots .lot-sort').removeClass('active');
+        $(this).addClass('active');
+
+        
 
 
         console.log(action);
         console.log(sortBy);
+        console.log(direction);
 
 
          $.post("/quarters/ajax.php?AJAX=1", {
