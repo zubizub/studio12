@@ -33,7 +33,7 @@ function ajaxSort ($sortBy,$direction = 'asc') {
 				break;
 		}
 
-//		print_r($arSort);
+		//print_r($arSort);
 	return $arSort;
 
 }
@@ -63,7 +63,7 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 		//$arSelect = Array("ID", "IBLOCK_ID", "*", "PROPERTY_*");
 		$arSelect = Array("*", "PROPERTY_*");
 		//$dbRes = CIBlockElement::GetList(array('SORT' => 'ASC'), $arFilter);
-		$dbRes = CIBlockElement::GetList(ajaxSort($sortBy), $arFilter, false, Array("nPageSize"=>150), $arSelect);
+		$dbRes = CIBlockElement::GetList(ajaxSort($sortBy,$direction), $arFilter, false, Array("nPageSize"=>150), $arSelect);
 		
 
 		while ($arRes = $dbRes->GetNextElement())
