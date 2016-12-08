@@ -5451,12 +5451,11 @@ a.btn, a.btn:hover {
 .lofts__scheme {
     text-align: center;
     position: relative;
-    overflow: hidden;
 }
 
 .lofts__scheme svg {
     width: 80%;
-    min-height: 1000px;
+    min-height: 1100px;
     margin-top: -10%;
     margin-bottom: -40px;
     overflow: visible;
@@ -5774,6 +5773,8 @@ a.btn, a.btn:hover {
     padding-bottom: 4rem;
     /*background: #343434;*/
     color: #000;
+    position: relative;
+    z-index: 1000;
 }
 
 .lots__inner {
