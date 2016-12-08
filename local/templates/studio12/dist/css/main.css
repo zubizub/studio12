@@ -5451,6 +5451,7 @@ a.btn, a.btn:hover {
 .lofts__scheme {
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .lofts__scheme svg {

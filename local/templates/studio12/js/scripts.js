@@ -503,6 +503,7 @@ $(function () {
 
     (function () {
         var wIh = window.innerHeight / 4,
+            isIE = /*@cc_on!@*/false || !!document.documentMode,
             $tagline = $('#tagline'),
             $tagline2 = $('#tagline2'),
             $tagline3 = $('#tagline3'),
@@ -522,6 +523,11 @@ $(function () {
             var lineLength = $el[0].getTotalLength();
             $el.css('stroke-dasharray', lineLength);
             $el.css('stroke-dashoffset', lineLength);
+
+            if( isIE ) {
+                $el.css('stroke-dasharray', 0);
+                $el.css('stroke-dashoffset', 0);
+            }
         }
 
         pathPrepare($tagline);
