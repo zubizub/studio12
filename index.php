@@ -18,167 +18,135 @@ $APPLICATION->SetTitle("Studio#12");
 
 <div class="fullpage fade-in">
 
-    <div class="section section--about is-colored" data-anchor="s-about">
+    <div class="section section--about" data-anchor="s-about">
         <div class="wrapper">
-            
-<!-- ./dw.index begin -->
             <div class="about-bg">
-                <div class="about-bg__item" style="background: url('/local/templates/studio12/img/1.jpg') no-repeat 0 0"></div>
-                <div class="about-bg__item" style="background: url('/local/templates/studio12/img/2.jpg') no-repeat 0 0"></div>
-                <div class="about-bg__item" style="background: url('/local/templates/studio12/img/3.jpg') no-repeat 0 0"></div>
-                <div class="about-bg__item" style="background: url('/local/templates/studio12/img/4.jpg') no-repeat 0 0"></div>
-                <div class="about-bg__item" style="background: url('/local/templates/studio12/img/5.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item"
+                     style="background: url('/local/templates/studio12/img/1.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item"
+                     style="background: url('/local/templates/studio12/img/2.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item"
+                     style="background: url('/local/templates/studio12/img/3.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item"
+                     style="background: url('/local/templates/studio12/img/4.jpg') no-repeat 0 0"></div>
+                <div class="about-bg__item"
+                     style="background: url('/local/templates/studio12/img/5.jpg') no-repeat 0 0"></div>
             </div>
-            <!-- ./end -->
             <div class="section__inner">
                 <div class="section__content">
-                    <div class="about">
-                        <div class="about__items">
-                            <div class="about__item"><a class="about__link" href="/quarters">
-
- <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "jobH.php"
-    )
-);?>
-                          <span>
-                           <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "jobSH.php"
-    )
-);?>
-       
-
-                          
-                          </span>
-                          </a>
+                    <div class="info">
+                        <div class="info__left">
+                            <div class="info__text">Креативный<br> лофт-квартал<br> Studio#12 —<br> это уникальное<br>
+                                пространство<br> на карте<br> <span class="yellow">Москвы.</span>
                             </div>
-                            <div class="about__item">
-                                <a class="about__link" href="/job">
-                                
- <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "qH.php"
-    )
-);?>
-                             
-                                <span>
-                                 <?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "qSH.php"
-    )
-);?>
-                               
-                                </span>
+                        </div>
+                        <div class="info__right">
+                            <div class="count">
+                                <div class="count__numbers">
+                                    <span class="count__number yellow number number72">0</span>
+                                    <span class="count__text">из</span>
+                                    <span class="count__number number number142">0</span>
+                                </div>
+                                <div class="count__desc">Лотов в продаже</div>
+                            </div>
+                            <div class="count">
+                                <div class="count__numbers">
+                                    <span class="count__text yellow">от</span>
+                                    <span class="count__number yellow number number40">0</span>
+                                    <span class="count__text">до</span>
+                                    <span class="count__number number number300">0</span>
+                                    <span class="count__text">м2</span>
+                                </div>
+                                <div class="count__desc">Площадь лотов</div>
+                            </div>
+                            <div class="count">
+                                <div class="count__numbers">
+                                    <span class="count__text yellow">от</span>
+                                    <span class="count__number yellow number number6">0</span>
+                                    <span class="count__text">млн. руб.</span>
+                                </div>
+                                <div class="count__desc">Площадь лотов</div>
+                            </div>
+                            <div class="offer">
+                                <a class="offer__act queue__act" href="#">
+                                    <div class="offer__label offer__label--desktop">Выбрать лофт
+                                    </div>
+                                    <img class="offer__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png"
+                                         alt="#">
                                 </a>
                             </div>
-                            <div class="about__item about__desc"><span>Креативный лофт-квартал Studio#12 — <br
-                                    class="mobile-br"> это уникальное пространство <br class="mobile-br"> для <a
-                                    class="link" href="/quarters">#жизни</a>, и <a class="link" href="/job">#работы</a>.</span>
-                            </div>
-                        </div>
-                        <div class="about-logo">
-                            <img src="/local/templates/studio12/dist/img/logo.png" alt="#S12">
-                        </div>
-                        <div class="about__caption infographics">
-                            <div class="about__desc">Креативный лофт-квартал Studio#12 — <br>это уникальное пространство <br>для
-                                <a class="link" href="/quarters">#жизни</a>,<br> и <a class="link" href="/job">#работы</a>.
-                            </div>
-                        </div>
-                        <div class="about__items infographics__list">
-                            <div class="about__item infographics__item">
-                                <div class="infographics__text"><span><span class="number number72">0</span> из <span
-                                        class="number number142">0</span></span><br>Лотов в продаже
-                                </div>
-                            </div>
-                            <div class="about__item infographics__item">
-                                <div class="infographics__text"><span>от <span class="number number40">0</span> до <span
-                                        class="number number300">0</span> м2</span><br>Площадь лотов
-                                </div>
-                            </div>
-                            <div class="about__item infographics__item">
-                                <div class="infographics__text"><span>от <span class="number number6">0</span> млн. руб.</span><br>Стоимость
-                                    лотов
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <div class="actions__item">
-                        <div class="lofts-pdf-link">
-                            <a class="offer__plan" href="/upload/plan.pdf" target="_blank">
-                                <div class="offer__label offer__label--desktop">Планировки (PDF)</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="actions__item">
-                        <a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a>
-                    </div>
-                    <div class="actions__item">
-                        <div class="offer">
-                            <div class="offer__title">
-                            </div>
-                            <a class="offer__act queue__act" href="#">
-                                <div class="offer__label offer__label--desktop">Выбрать лофт
-                                </div>
-                                <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#">
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="dep-wrap">
+            <div class="dep-wrap__col">
+                <a href="/quarters" class="dep dep--loft">
+                    <div class="dep__title yellow">
+                        <span class="dep__text">Живи</span><br><span class="dep__text">в лофте</span>
+                    </div>
+                    <div class="dep__desc">Единственный<br>трехэтажный<br>жилой комплекс<br>недалеко от центра<br>Москвы.</div>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                    <span class="line line-4"></span>
+                </a>
+            </div>
+            <div class="dep-wrap__col">
+                <a href="/job" class="dep dep--job">
+                    <div class="dep__title yellow">
+                        <span class="dep__text">Работай</span><br><span class="dep__text">в лофте</span>
+                    </div>
+                    <div class="dep__desc">Просторные<br>светлые офисы<br>в формате лофт<br>идеально подойдут<br>для бизнеса.</div>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                    <span class="line line-4"></span>
+                </a>
+            </div>
+        </div>
         <div class="general">
-            <div class="general__inner">
-                <a href="/quarters">
-                    <div class="general__item general__item--quarter">
-                        <div class="general__title">Лофт <br> квартал</div>
-                        <div class="general__desc">
-                            <div class="general__desc-text">Единственный трехэтажный жилой комплекс недалеко от центра Москвы.</div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/job">
-                    <div class="general__item general__item--job">
-                        <div class="general__title">Работа <br> в лофте</div>
-                        <div class="general__desc">
-                            <div class="general__desc-text">Просторные светлые офисы в формате лофт, идеально подойдут для бизнеса.</div>
-                        </div>
-                    </div>
-                </a>
-                <div class="general__map">
-                  <div class="googleStatic currentMap">
+            <div class="general__map">
+                <div class="googleStatic currentMap">
                     <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
-                  </div>
-                  
-                  <div class="googleMap" style="position: absolute;">
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script><div style='overflow:hidden;height:360px;width:750px;'><div id='gmap_canvas' style='height:360px;width:750px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>adding google maps to website</a> <script type='text/javascript' src=''></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(55.79981942842895,37.620396735473605),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.79981942842895,37.620396735473605)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-                  </div>
-                  
-                  <div style="background: #fee333; padding: 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer; color: #000;" class="toogleMap">#Переключить</div>
-
                 </div>
+
+                <div class="googleMap" style="position: absolute;">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script>
+                    <div style='overflow:hidden;height:360px;width:750px;'>
+                        <div id='gmap_canvas' style='height:360px;width:750px;'></div>
+                        <style>#gmap_canvas img {
+                            max-width: none !important;
+                            background: none !important
+                        }</style>
+                    </div>
+                    <a href='https://www.add-map.net/'>adding google maps to website</a>
+                    <script type='text/javascript' src=''></script>
+                    <script type='text/javascript'>function init_map() {
+                        var myOptions = {
+                            zoom: 15,
+                            center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
+                            mapTypeId: google.maps.MapTypeId.TERRAIN
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
+                        });
+                        infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);</script>
+                </div>
+
+                <div style="background: #fee333; padding: 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer; color: #000;"
+                     class="toogleMap">#Переключить
+                </div>
+
             </div>
         </div>
     </div><!-- .section--about -->
@@ -215,7 +183,6 @@ $APPLICATION->SetTitle("Studio#12");
     ),
     false
     );?>
-
 
 
     <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
