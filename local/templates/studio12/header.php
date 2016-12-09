@@ -99,32 +99,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="sidebar__inner">
                     <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
                     <div class="sidebar__body">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/'): ?>
-                            <span class="menu__link active" href="/">#Главная</span>
-                        <?else:?>
-                            <a class="menu__link link-animate" href="/">#Главная</a>
-                        <? endif; ?>
-                    </li>
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/quarters/'): ?>
-                            <span class="menu__link active" href="/">#ЖИТЬВЛОФТЕ</span>
-                        <?else:?>
-                            <a class="menu__link link-animate" href="/quarters">#ЖИТЬВЛОФТЕ</a>
-                        <? endif; ?>
-                    </li>
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/job/'): ?>
-                            <span class="menu__link active" href="/">#Работавлофте</span>
-                        <?else:?>
-                            <a class="menu__link link-animate" href="/job">#Работавлофте</a>
-                        <? endif; ?>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link link-animate queue__act" href="#">#Выбратьлофт</a>
-                    </li>
-                </ul>
+
+                    <?$APPLICATION->IncludeComponent(
+                     "bitrix:menu",
+                     "mainmenu",
+                     Array(
+                      "ALLOW_MULTI_SELECT" => "N",
+                      "CHILD_MENU_TYPE" => "left",
+                      "DELAY" => "N",
+                      "MAX_LEVEL" => "1",
+                      "MENU_CACHE_GET_VARS" => array(""),
+                      "MENU_CACHE_TIME" => "3600",
+                      "MENU_CACHE_TYPE" => "N",
+                      "MENU_CACHE_USE_GROUPS" => "Y",
+                      "ROOT_MENU_TYPE" => "top",
+                      "USE_EXT" => "Y"
+                     )
+                    );?>
+
                 <div class="mobile-note">
                     <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
                     <a class="mobile-note__phone call_phone_1" href="tel:74957804040">+7 495 780-40-40</a>
