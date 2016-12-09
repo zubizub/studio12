@@ -107,7 +107,13 @@ IncludeTemplateLangFile(__FILE__);
 <button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
 </button>
-<div class="logo-fix <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>"></div>
+
+<?if ($APPLICATION->GetCurPage()== '/'): ?>
+<div class="logo-fix fade-animate fade-in"></div>
+<?else:?>
+<a class="logo-fix" href="/"></a>
+<? endif; ?>
+
 <div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
     <a class="controls__phone btn-callback" href="#"></a>
     <!--<a class="controls__photos get-gallery-block" href="#"></a>-->

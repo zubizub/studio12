@@ -1,1 +1,1 @@
-<a class="about-lofts__more" href="#">Презентация Studio#12</a>
+<a class="about-lofts__more offer__label--desktop" href="#">Презентация Studio#12 (PDF</a>
