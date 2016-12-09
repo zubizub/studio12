@@ -8338,6 +8338,10 @@ a.btn, a.btn:hover {
     right: 0;
 }
 
+.actions__text {
+    display: block;
+}
+
 .actions * {
     margin: 0 !important;
 }
@@ -8388,6 +8392,7 @@ a.btn, a.btn:hover {
 .actions .btn-download {
     height: 36px;
     width: 281px;
+    display: block;
 }
 
 .layout {
