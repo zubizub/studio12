@@ -41,7 +41,7 @@ $(function () {
             }, 1000);
 
             setTimeout(function () {
-                $('.vertical-anim.js-vertical-anim').addClass('animated fadeInUp');
+                $('.top__item.js-vertical-anim').addClass('animated fadeInUp');
             }, 1850);
         });
 

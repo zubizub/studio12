@@ -124,26 +124,25 @@ $APPLICATION->SetTitle("Studio#12");
                         </div>
                     </div>
                 </div>
-                <div class="actions load-top-animate">
+                <div class="actions">
                     <div class="actions__item">
                         <div class="lofts-pdf-link">
                             <a class="offer__plan" href="/upload/plan.pdf" target="_blank">
-                                <div class="offer__label offer__label--desktop vertical-anim js-vertical-anim">Планировки (PDF)</div>
+                                <div class="offer__label offer__label--desktop">Планировки (PDF)</div>
                             </a>
                         </div>
                     </div>
                     <div class="actions__item">
-                        <a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">
-                            <span class="actions__text vertical-anim js-vertical-anim">Инвестиционное предложение</span>
-                        </a>
+                        <a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a>
                     </div>
                     <div class="actions__item">
                         <div class="offer">
+                            <div class="offer__title">
+                            </div>
                             <a class="offer__act queue__act" href="#">
-                                <div class="vertical-anim js-vertical-anim">
-                                    <div class="offer__label offer__label--desktop">Выбрать лофт</div>
-                                    <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#">
+                                <div class="offer__label offer__label--desktop">Выбрать лофт
                                 </div>
+                                <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#">
                             </a>
                         </div>
                     </div>
