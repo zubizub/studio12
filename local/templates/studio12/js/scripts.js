@@ -357,17 +357,6 @@ $(function () {
         $('.popup-gallery').perfectScrollbar();
     }());
     (function () {
-        var $loft = $('.loft');
-        $('.lofts__link').on('mouseenter', function () {
-            var loft = $(this).data('loft');
-            $loft.removeClass('active').filter('[data-loft=' + loft + ']').addClass('active');
-            return false;
-        }).on('mouseleave', function () {
-            $loft.removeClass('active');
-            return false;
-        });
-    }());
-    (function () {
         $('.slogan__title').typeIt({
             cursor: false,
             speed: 150,
@@ -586,19 +575,19 @@ $(function () {
                     ease: Linear.easeNone
                 });
                 setTimeout(function () {
-                    $('.house1').fadeIn(500);
+                    $('.house1').addClass('house-fade-in');
                 }, 800);
                 //10000 = 10 секунд
                 setTimeout(function () {
-                    $('.house2').fadeIn(500);
+                    $('.house2').addClass('house-fade-in');
                 }, 1200);
                 //10000 = 10 секунд
                 setTimeout(function () {
-                    $('.house3').fadeIn(500);
+                    $('.house3').addClass('house-fade-in');
                 }, 1700);
                 //10000 = 10 секунд
                 setTimeout(function () {
-                    $('.house4').fadeIn(500);
+                    $('.house4').addClass('house-fade-in');
                 }, 2000);
                 $('.lots-infographics__number').animateNumber({number: 76});
             }.bind(this), {
