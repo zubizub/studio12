@@ -26,6 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <?$APPLICATION->ShowHead()?>
     <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
     <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->
@@ -65,7 +66,11 @@ function callBackComagic (formData) {
 
           'goal': 'call'
 
+<<<<<<< HEAD
         }; 
+=======
+        };
+>>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
 
         var options = {
 
@@ -125,7 +130,11 @@ function callBackComagic (formData) {
         obj['name']=formData[0].value
         obj['phone']=formData[1].value;
         obj['message']=formData[3].value;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
         console.log(formData);
         console.log(JSON.stringify(obj));
 
@@ -143,10 +152,11 @@ function callBackComagic (formData) {
 
 </head>
 
-
-
- 
-  <body class="home-page">
+ <?if ($APPLICATION->GetCurPage()== '/'): ?>
+ <body class="home-page no-scroll">
+ <?else:?>
+ <body>
+ <? endif; ?>
 		  <!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP4D8R4"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -159,26 +169,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container__inner">
             <div class="sidebar">
                 <div class="sidebar__inner">
-                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
+                    <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
                     <div class="sidebar__body">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="/">#Главная</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/quarters">#ЖИТЬВЛОФТЕ</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/job">#Работавлофте</a>
-                    </li>
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/'): ?>
-                            <a class="menu__link queue__act" href="#">#Выбратьлофт</a>
-                            <?else:?>
-                            <a class="menu__link loft-btn" href="#loft-table">#Выбратьлофт</a>
-                        <? endif; ?>
-                    </li>
-                </ul>
+
+                    <?$APPLICATION->IncludeComponent(
+                     "bitrix:menu",
+                     "mainmenu",
+                     Array(
+                      "ALLOW_MULTI_SELECT" => "N",
+                      "CHILD_MENU_TYPE" => "left",
+                      "DELAY" => "N",
+                      "MAX_LEVEL" => "1",
+                      "MENU_CACHE_GET_VARS" => array(""),
+                      "MENU_CACHE_TIME" => "3600",
+                      "MENU_CACHE_TYPE" => "N",
+                      "MENU_CACHE_USE_GROUPS" => "Y",
+                      "ROOT_MENU_TYPE" => "top",
+                      "USE_EXT" => "Y"
+                     )
+                    );?>
+
                 <div class="mobile-note">
                     <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
                     <a class="mobile-note__phone call_phone_1" href="tel:74957804040">+7 495 780-40-40</a>
@@ -187,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="mobile-note__sr-link btn-callback-room">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
                 </div>
                 <div class="note">
-                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow" href="/job">#РАБОТЫ</a>.</div>
+                            <div class="note__item">Креативный <br> лофт-квартал Studio#12 <br> — это уникальное <br> пространство  для <a class="link yellow link-animate" href="/quarters">#ЖИЗНИ</a>, <br> и <a class="link yellow link-animate" href="/job">#РАБОТЫ</a>.</div>
                             <div class="note__item">Это первый <br> креативный кластер <br> европейского масштаба.</div>
                         </div>
                     </div>

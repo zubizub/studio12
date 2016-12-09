@@ -10,6 +10,36 @@ if (!$arParams['IBLOCK_ID'])
 
 $arParams['IBLOCK_BINDING'] = $arParams['IBLOCK_BINDING'] == 'element' ? 'element' : 'section';
 
+$ajaxFlag = $_REQUEST['AJAX'];
+$sortBy = $_REQUEST['sortBy'];
+$direction = $_REQUEST['direction'];
+
+function ajaxSort ($sortBy,$direction = 'asc') {
+
+	
+		switch ($sortBy) {
+			
+			case 'number': 	$arSort = array('PROPERTY_LOT' => $direction);   	break;
+			case 'area':   	$arSort = array('PROPERTY_AREA' => $direction);  	break;
+			case 'type':	$arSort = array('PROPERTY_TYPE' => $direction);		break;
+			case 'floor':	$arSort = array('PROPERTY_FLOOR' => $direction);	break;
+			case 'price':	$arSort = array('PROPERTY_SQUARE_COST' => $direction);	break;
+			case 'cost':	$arSort = array('PROPERTY_PRICE' => $direction);	break;
+			case 'status':	$arSort = array('PROPERTY_STATUS' => $direction);	break;
+		
+			
+			default:
+				$arSort = array();
+				break;
+		}
+
+		//print_r($arSort);
+	return $arSort;
+
+}
+
+//ajaxSort($sortBy);
+
 if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER->GetGroups())))
 {
 	if(!CModule::IncludeModule("iblock"))
@@ -18,14 +48,22 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 		return;
 	}
 	
+	$arResult["AJAX"] = $ajaxFlag;
+
 	$arResult["ITEMS"] = array();
 	if ($arParams['IBLOCK_BINDING'] == 'element')
 	{
+		
+
+
+
+
 		$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID']);
+		if ($ajaxFlag) { $arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], '!=PROPERTY_STATUS' => "Продано"); }
 		//$arSelect = Array("ID", "IBLOCK_ID", "*", "PROPERTY_*");
 		$arSelect = Array("*", "PROPERTY_*");
 		//$dbRes = CIBlockElement::GetList(array('SORT' => 'ASC'), $arFilter);
-		$dbRes = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>150), $arSelect);
+		$dbRes = CIBlockElement::GetList(ajaxSort($sortBy,$direction), $arFilter, false, Array("nPageSize"=>150), $arSelect);
 		
 
 		while ($arRes = $dbRes->GetNextElement())

@@ -226,7 +226,7 @@
         //print_r($_REQUEST);
         parse_str($_REQUEST['data'], $output);
 
-        print_r($output);
+        //print_r($output);
         //$output[]
 
         $subject = "Обратный звонок. S#12: $output[lot]";
@@ -256,7 +256,7 @@
         //print_r($_REQUEST);
         parse_str($_REQUEST['data'], $output);
 
-        print_r($output);
+        //print_r($output);
         //$output[]
 
         $subject = "Приехать в Shoowroom: Studio#8";
@@ -321,7 +321,29 @@
 
         ?>
 
-    <?break;
+    <?  break;
+
+    case 'loft-sort':?>
+
+      <?$APPLICATION->IncludeComponent(
+  "bitrix:dw.catalog.index", 
+  ".default", 
+  array(
+    "CACHE_GROUPS" => "Y",
+    "CACHE_TIME" => "36000",
+    "CACHE_TYPE" => "A",
+    "IBLOCK_BINDING" => "element",
+    "IBLOCK_ID" => "5",
+    "LIMIT" => "50",
+    "IBLOCK_TYPE" => "quarters",
+    "COMPONENT_TEMPLATE" => ".default",
+    "SECTION" => ""
+  ),
+  false
+);?>
+
+    <? break;
+
 }
 
 

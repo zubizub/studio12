@@ -4,24 +4,6 @@ $APPLICATION->SetTitle("Studio12");
 ?>
   <div class="wrapper job-page">
 	<div class="inner">
-		<div class="header header_stabled">
-			<div class="header__inner">
-				<div class="nav nav--light">
-					<div class="nav__inner">
-						<div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link get-gallery-block" href="#">Фотографии</a> лофтов</span>
-						</div>
-						<div class="nav__item nav__item--queue">
-							<span class="nav__item-text">1-ая очередь: <a class="link nav__link loft-btn" href="#loft-table">Корпус 2-2</a></span>
-						</div>
-						<div class="nav__item nav__item--shoowroom">
- <span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
- <!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
-							<!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="head">
 			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Работа </span></span><span class="heading__line"><span class="heading__word invisible"> в лофте</span>
 			<div class="feature invisible">
@@ -59,7 +41,7 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <a style="color: #ffe500;" class="link" href="/quarters">#Живи</a> и <span style="color: #ffffff">#Работай</span>
+						 Концепция квартала <a style="color: #ffe500;" class="link link-animate" href="/quarters">#Живи</a> <br>и <span style="color: #ffffff">#Работай</span>
 					</div>
 					<a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a>
 				</div>
@@ -233,7 +215,7 @@ $APPLICATION->SetTitle("Studio12");
 			  <div class="metro-place__item">
 				  <div class="metro-place__slider">
 					  <div class="metro-place__slider-item">
-						  <a href="/job">
+						  <a href="#" class="queue__act metro-place__link">
 							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" alt="#">
 							  <span class="metro-place__desc">#Работать в лофте</span>
 						  </a>
@@ -261,7 +243,7 @@ $APPLICATION->SetTitle("Studio12");
             	<div class="googleMap" style="position: absolute;"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script><div style='overflow:hidden;height:360px;width:750px;'><div id='gmap_canvas' style='height:360px;width:750px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>adding google maps to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a90bc41cd9bcbbd99887264c593b8a1dfa64aaf3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(55.79981942842895,37.620396735473605),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.79981942842895,37.620396735473605)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 				</div>
 
-					<div style="background: #fee333; padding: 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer;" class="toogleMap">#Переключить</div>
+				<div style="background: #fee333; padding: 0 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer; height: 36px; line-height: 36px;" class="toogleMap">#Переключить</div>
 
 
 

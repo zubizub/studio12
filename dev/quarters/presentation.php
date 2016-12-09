@@ -1,1 +1,0 @@
-<a class="about-lofts__more" href="#">Презентация Studio#12</a>

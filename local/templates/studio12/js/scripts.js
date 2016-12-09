@@ -24,10 +24,10 @@ $(function () {
     }());
     (function () {
         var speed = 80, timeout = 100, typeItOptions = {
-                cursor: false,
-                speed: speed,
-                autoStart: true
-            }, $feature = $('.feature'), $heading = $('.heading'), $headingLine = $('.heading__line'), $words = $('.heading__word'), $firstWord = $words.filter(':first'), $lastWord = $words.filter(':last');
+            cursor: false,
+            speed: speed,
+            autoStart: true
+        }, $feature = $('.feature'), $heading = $('.heading'), $headingLine = $('.heading__line'), $words = $('.heading__word'), $firstWord = $words.filter(':first'), $lastWord = $words.filter(':last');
         $heading.height($heading.outerHeight());
         $firstWord.removeClass('invisible').typeIt($.extend({}, typeItOptions, {
             callback: function () {
@@ -75,7 +75,7 @@ $(function () {
             if (!$.Tween || !$.Tween.propHooks) {
                 $.fx.step.number = handle;
             } else {
-                $.Tween.propHooks.number = { set: handle };
+                $.Tween.propHooks.number = {set: handle};
             }
             var extract_number_parts = function (separated_number, group_length) {
                 var numbers = separated_number.split('').reverse(), number_parts = [], current_number_part, current_index, q;
@@ -100,18 +100,18 @@ $(function () {
             $.animateNumber = {
                 numberStepFactories: {
                     /**
-       * Creates numberStep handler, which appends string to floored animated number on each step.
-       *
-       * @example
-       * // will animate to 100 with "1 %", "2 %", "3 %", ...
-       * $('#someid').animateNumber({
+                     * Creates numberStep handler, which appends string to floored animated number on each step.
+                     *
+                     * @example
+                     * // will animate to 100 with "1 %", "2 %", "3 %", ...
+                     * $('#someid').animateNumber({
        *   number: 100,
        *   numberStep: $.animateNumber.numberStepFactories.append(' %')
        * });
-       *
-       * @params {String} suffix string to append to animated number
-       * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
-       */
+                     *
+                     * @params {String} suffix string to append to animated number
+                     * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
+                     */
                     append: function (suffix) {
                         return function (now, tween) {
                             var floored_number = Math.floor(now), target = $(tween.elem);
@@ -119,26 +119,26 @@ $(function () {
                         };
                     },
                     /**
-       * Creates numberStep handler, which format floored numbers by separating them to groups.
-       *
-       * @example
-       * // will animate with 1 ... 217,980 ... 95,217,980 ... 7,095,217,980
-       * $('#world-population').animateNumber({
+                     * Creates numberStep handler, which format floored numbers by separating them to groups.
+                     *
+                     * @example
+                     * // will animate with 1 ... 217,980 ... 95,217,980 ... 7,095,217,980
+                     * $('#world-population').animateNumber({
        *    number: 7095217980,
        *    numberStep: $.animateNumber.numberStepFactories.separator(',')
        * });
-       * @example
-       * // will animate with 1% ... 217,980% ... 95,217,980% ... 7,095,217,980%
-       * $('#salesIncrease').animateNumber({
+                     * @example
+                     * // will animate with 1% ... 217,980% ... 95,217,980% ... 7,095,217,980%
+                     * $('#salesIncrease').animateNumber({
        *   number: 7095217980,
        *   numberStep: $.animateNumber.numberStepFactories.separator(',', 3, '%')
        * });
-       *
-       * @params {String} [separator=' '] string to separate number groups
-       * @params {String} [group_length=3] number group length
-       * @params {String} [suffix=''] suffix to append to number
-       * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
-       */
+                     *
+                     * @params {String} [separator=' '] string to separate number groups
+                     * @params {String} [group_length=3] number group length
+                     * @params {String} [suffix=''] suffix to append to number
+                     * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
+                     */
                     separator: function (separator, group_length, suffix) {
                         separator = separator || ' ';
                         group_length = group_length || 3;
@@ -227,21 +227,21 @@ $(function () {
             swipe: false,
             touchMove: false,
             responsive: [{
-                    breakpoint: 1001,
-                    settings: {
-                        speed: 150,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        vertical: false,
-                        verticalSwiping: false,
-                        variableWidth: false,
-                        centerMode: false,
-                        centerPadding: '0px',
-                        swipe: true,
-                        touchMove: true,
-                        infinite: true
-                    }
-                }]
+                breakpoint: 1001,
+                settings: {
+                    speed: 150,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    vertical: false,
+                    verticalSwiping: false,
+                    variableWidth: false,
+                    centerMode: false,
+                    centerPadding: '0px',
+                    swipe: true,
+                    touchMove: true,
+                    infinite: true
+                }
+            }]
         });
         $('.loft-types-slide-go').on('click', function () {
             $('.loft-types__tabs').slick('slickNext');
@@ -284,92 +284,25 @@ $(function () {
             touchThreshold: 10
         });
     }());
-    //(function () {
-    //    var $loft = $('.loft');
-    //    $('.lofts__link').on('mouseenter', function () {
-    //        var loft = $(this).data('loft');
-    //        $loft.removeClass('active').filter('[data-loft=' + loft + ']').addClass('active');
-    //        return false;
-    //    }).on('mouseleave', function () {
-    //        $loft.removeClass('active');
-    //        return false;
-    //    });
-    //    $slick_slider = $('.lofts__list');
-    //    settings = {
-    //        prevArrow: $('.lofts__list-prev'),
-    //        nextArrow: $('.lofts__list-next')
-    //    };
-    //    $slick_slider.slick(settings);
-    //    $(window).on('load resize', function () {
-    //        if ($(window).width() > 1000) {
-    //            if ($slick_slider.hasClass('slick-initialized')) {
-    //                $slick_slider.slick('unslick');
-    //            }
-    //            return;
-    //        }
-    //        if (!$slick_slider.hasClass('slick-initialized')) {
-    //            return $slick_slider.slick(settings);
-    //        }
-    //    });
-    //    $('.section--lofts').each(function () {
-    //        var self = this, $box = $('.lots', self), $hidden = $('.lots__hidden', self), $more = $('.more-items', self);
-    //        $more.on('click', function () {
-    //            var moreText = $hidden.is(':visible') ? 'Еще 9' : 'Свернуть';
-    //            $box.toggleClass('is-open');
-    //            $hidden.slideToggle(300);
-    //            $(this).text(moreText);
-    //            return false;
-    //        });
-    //    });    //
-    //           //$('.lot').on('click', function() {
-    //           //    $(window).trigger("resize");
-    //           //    $('.popup--loft').bPopup({
-    //           //        closeClass: 'popup__close'
-    //           //    });
-    //           //    return false;
-    //           //});
-    //           //
-    //           //$('.send_me_email').on('click', function() {
-    //           //    $('.popup--email').bPopup({
-    //           //        closeClass: 'popup__close'
-    //           //    });
-    //           //    return false;
-    //           //});
-    //           //
-    //           //$('.callback-me').on('click', function() {
-    //           //    $('.popup--callback').bPopup({
-    //           //        closeClass: 'popup__close'
-    //           //    });
-    //           //    return false;
-    //           //});
-    //}());
-        $('.section--lofts').each(function () {
-            var self = this,
-                $box = $('.lots', self),
-                $hidden = $('.lots__hidden', self),
-                $more = $('.more-items', self);
-            $more.on('click', function () {
-                var offers = $('.ajaxLotItem ').length;
-                var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
-                $box.toggleClass('is-open');
-                $hidden.slideToggle(300);
-                $(this).text(moreText);
-                $.fn.fullpage.reBuild();
-                return false;
-            });
-        });    //
+    $('.section--lofts').each(function () {
+        var self = this,
+            $box = $('.lots', self),
+            $hidden = $('.lots__hidden', self),
+            $more = $('.more-items', self);
+        $more.on('click', function () {
+            var offers = $('.ajaxLotItem ').length;
+            var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
+            $box.toggleClass('is-open');
+            $hidden.slideToggle(300);
+            $(this).text(moreText);
+            return false;
+        });
+    });    //
     (function () {
         $('.nav-toggle').on('click', function () {
             var timer;
             $('body').toggleClass('sidebar-open');
             $(window).trigger('resize');
-            $.fn.fullpage.reBuild();
-            //timer = setInterval( function() {
-                                                      //    $(window).trigger('resize');
-                                                      //}, 1);
-                                                      //$('.sidebar').one('transitionend', function() {
-                                                      //    clearInterval(timer);
-                                                      //});
         });
     }());
 
@@ -394,18 +327,18 @@ $(function () {
                 arrows: true,
                 slide: '.photo-gallery__item',
                 infinite: true    //adaptiveHeight: true,
-                        //responsive: [
-                        //    {
-                        //        breakpoint: 800,
-                        //        settings: {
-                        //            slidesToShow: 1,
-                        //            slidesToScroll: 1,
-                        //            variableWidth: false,
-                        //            centerMode: false,
-                        //            adaptiveHeight: true
-                        //        }
-                        //    }
-                        //]
+                //responsive: [
+                //    {
+                //        breakpoint: 800,
+                //        settings: {
+                //            slidesToShow: 1,
+                //            slidesToScroll: 1,
+                //            variableWidth: false,
+                //            centerMode: false,
+                //            adaptiveHeight: true
+                //        }
+                //    }
+                //]
             });
         });
     }());
@@ -422,17 +355,6 @@ $(function () {
     (function () {
         $('.sidebar').perfectScrollbar();
         $('.popup-gallery').perfectScrollbar();
-    }());
-    (function () {
-        var $loft = $('.loft');
-        $('.lofts__link').on('mouseenter', function () {
-            var loft = $(this).data('loft');
-            $loft.removeClass('active').filter('[data-loft=' + loft + ']').addClass('active');
-            return false;
-        }).on('mouseleave', function () {
-            $loft.removeClass('active');
-            return false;
-        });
     }());
     (function () {
         $('.slogan__title').typeIt({
@@ -490,52 +412,47 @@ $(function () {
 
         });
         return false;
-    }); 
-
-
-
-/*
-    $('.btn-showroom').on('click', function () {
-
-        $('.popup--showroom').bPopup({
-            closeClass: 'popup__close',
-            onOpen: function () {
-                //console.log('callback-me');
-                var action = 'showroomForm';
-                $.post("/quarters/ajax.php", {action: action})
-                    .done(function (data) {
-                        $('.popup--callback').html(data);
-                        $(".js-phone-mask").mask("+7 (999) 999-99-99");
-
-                        $('.form__select').each(function () {
-                            var $cont = $(this).closest('.form__select-wrap');
-
-                            $(this).select2({
-                                placeholder: 'Не выбран',
-                                dropdownParent: $cont,
-                                minimumResultsForSearch: Infinity
-                            });
-                        });
-                    });
-            }
-
-
-        });
-        return false;
-    });*/
-
-    $('.btn-map-get').on('click', function() {
-       $('.popup--map').bPopup({
-           closeClass: 'popup__close'
-       });
-       return false;
     });
 
-    $('.btn-showroom').on('click', function() {
-       $('.popup--showroom').bPopup({
-           closeClass: 'popup__close'
-       });
-       return false;
+
+    //$(window).on('load', function(){
+    //    $('[class*=js-vertical-anim]').each(function() {
+    //        $(this).waypoint(function(direction) {
+    //            $(this).addClass('animated fadeInUp');
+    //        }.bind(this), {
+    //            offset: '100%'
+    //        });
+    //    });
+    //
+    //    $('.js-left-anim').each(function() {
+    //        $(this).waypoint(function(direction) {
+    //            $(this).addClass('animated fadeInLeft');
+    //        }.bind(this), {
+    //            offset: '100%'
+    //        });
+    //    });
+    //
+    //    $('.js-right-anim').each(function() {
+    //        $(this).waypoint(function(direction) {
+    //            $(this).addClass('animated fadeInRight');
+    //        }.bind(this), {
+    //            offset: '100%'
+    //        });
+    //    });
+    //});
+
+    $('.btn-map-get').on('click', function () {
+        $('.popup--map').bPopup({
+            closeClass: 'popup__close'
+        });
+        return false;
+    });
+
+    $('.btn-showroom').on('click', function () {
+        $('.popup--showroom').bPopup({
+            closeClass: 'popup__close'
+        });
+        return false;
     });
 
     $('.get-gallery-block').on('click', function () {
@@ -565,11 +482,7 @@ $(function () {
         return false;
     });
 
-    setTimeout(function () {
-        $('.line-house').fadeIn(1000);
-    }, 2400);    //10000 = 10 секунд
-
-    $(".loft-btn").on("click", function(){
+    $(".loft-btn").on("click", function () {
         var anchor = $(this).attr("href");
         $("html, body").stop().animate({
             scrollTop: $(anchor).offset().top
@@ -577,17 +490,110 @@ $(function () {
         return false;
     });
 
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    if( isMobile ) {
-        $('.section--slogan').add('.section--start').add('.section--intro').add('.slogan-page').remove().css('display', 'none');
-        $('.lots-infographics__number').animateNumber({ number: 76 });
-        $('.number72').animateNumber({ number: 72 });
-        $('.number142').animateNumber({ number: 142 });
-        $('.number40').animateNumber({ number: 40 });
-        $('.number300').animateNumber({ number: 300 });
-        $('.number6').animateNumber({ number: 8 });
-        $.fn.fullpage.destroy('all');
-    }
+    $('.toogleMap').click(function () {
+        $('.googleStatic, .googleMap').toggleClass("currentMap");
+    });
 
+    (function() {
+        var topHeight = $(".top").outerHeight();
+
+        $('.queue__act, .house1, .feature').click(function () {
+            $('html,body').animate({
+                    scrollTop: $(".lots").offset().top - topHeight
+                }, 'slow');
+            return false;
+        });
+    })();
+
+    (function () {
+        var wIh = window.innerHeight / 4,
+            isIE = /*@cc_on!@*/false || !!document.documentMode,
+            $tagline = $('#tagline'),
+            $tagline2 = $('#tagline2'),
+            $tagline3 = $('#tagline3'),
+            $building = $('#building'),
+            $building2 = $('#building2'),
+            $building3 = $('#building3');
+
+        $tagline.attr({'d': 'M480.5,0 480.5,' + wIh + ' 743.61111,' + wIh * 2 + ' 743.61111,' + (wIh + 600 + 5245)});
+        // $tagline.attr({ 'd': 'M742.5,0 742.5,' + wIh + ' 419.5,500 419.5,' + (wIh + 500 + 145) });
+        $tagline2.attr({'d': 'M242.5,-50 380.5,67 380.5,200 310.5,260 310.5,380 200.5,450 200.5,5500'});
+        $tagline3.attr({'d': 'M2042.5,1200 1130.5,70 950.5,250 950.5,400 1050.5,500 1050.5,5500'});
+        $building.attr({'d': 'M743.61111,0L743.61111,79.86111L633.83333,191.11111L373.83333,193.33332L195.55556,364.44443L312.22223,484.55555L350,444.44444L592.22223,682.22222L971.11112,306.66666L743.61112,82.33334'});
+        $building2.attr({'d': 'M200.5,0 200.5,100 -10,300'});
+        $building3.attr({'d': 'M1050.5,0 1050,100 1200,250 880.5,580 1500,1200'});
+
+        function pathPrepare($el) {
+            var lineLength = $el[0].getTotalLength();
+            $el.css('stroke-dasharray', lineLength);
+            $el.css('stroke-dashoffset', lineLength);
+
+            if( isIE ) {
+                $el.css('stroke-dasharray', 0);
+                $el.css('stroke-dashoffset', 0);
+            }
+        }
+
+        pathPrepare($tagline);
+        pathPrepare($tagline2);
+        pathPrepare($tagline3);
+        pathPrepare($building);
+        pathPrepare($building2);
+        pathPrepare($building3);
+
+        $('.slogan-page').each(function () {
+            $(this).waypoint(function (direction) {
+                TweenLite.to($tagline, 8, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($tagline2, 5, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($tagline3, 3, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+            }.bind(this), {
+                offset: '150%%'
+            });
+        });
+
+        $('.lofts').each(function () {
+            $(this).waypoint(function (direction) {
+                TweenLite.to($building, 2.5, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($building2, 3, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                TweenLite.to($building3, 3, {
+                    strokeDashoffset: 0,
+                    ease: Linear.easeNone
+                });
+                setTimeout(function () {
+                    $('.house1').addClass('house-fade-in');
+                }, 800);
+                //10000 = 10 секунд
+                setTimeout(function () {
+                    $('.house2').addClass('house-fade-in');
+                }, 1200);
+                //10000 = 10 секунд
+                setTimeout(function () {
+                    $('.house3').addClass('house-fade-in');
+                }, 1700);
+                //10000 = 10 секунд
+                setTimeout(function () {
+                    $('.house4').addClass('house-fade-in');
+                }, 2000);
+                $('.lots-infographics__number').animateNumber({number: 76});
+            }.bind(this), {
+                offset: '160%'
+            });
+        });
+    }());
 
 });

@@ -1,7 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <?if (!empty($arResult)):?>
-  <div class="menu">
+  <ul class="menu">
                
            
                     
@@ -12,21 +12,21 @@ foreach($arResult as $arItem):
 		continue;
 ?>
 	<?if($arItem["SELECTED"]):?>
-		  <div class="menu__item active"> 
-		  	<a href="<?=$arItem["LINK"]?>" class="menu__link"><?=$arItem["TEXT"]?></a>
-          </div>
+		  <li class="menu__item">
+		  	<span class="menu__link active"><?=$arItem["TEXT"]?></span>
+          </li>
 		<?else:?>
-		<div class="menu__item">
-			<a href="<?=$arItem["LINK"]?>" class="menu__link"><span><?=$arItem["TEXT"]?></span></a>
-        </div>
+		<li class="menu__item">
+			<a href="<?=$arItem["LINK"]?>" class="menu__link link-animate"><?=$arItem["TEXT"]?></a>
+        </li>
 		
 	<?endif?>
 	
 <?endforeach?>
-<div class="menu__item"><a class="menu__link" href="#">#блог</a></div>
+		<li class="menu__item"><a class="menu__link link-animate queue__act" href="#">#ВЫБРАТЬЛОФТ</a></li>
 
                   
-	</div>
+	</ul>
 
 
 <?endif?>

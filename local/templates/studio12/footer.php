@@ -5,82 +5,6 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<div class="logo-fix"></div>
-
-<? print_r($APPLICATION->GetCurPage());?>
-
-<?if ($APPLICATION->GetCurPage()== '/' || $APPLICATION->GetCurPage()== '/dev/'): ?>
-<div class="mouse">
-    <div class="mouse__item">
-        <img style="margin-bottom: 9px;" src="<?=SITE_TEMPLATE_PATH?>/dist/img/scrollme.png" alt=""/><br/>
-        <img style="margin-bottom: 13px;" src="<?=SITE_TEMPLATE_PATH?>/dist/img/scrollme.png" alt=""/>
-    </div>
-    <div class="mouse__item-img">
-        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/scrollme-anim.png" alt=""/>
-    </div>
-    <div class="mouse__item mouse__item-text">
-        крутите скролл
-    </div>
-</div>
-
-<div class="header header_fixed">
-    <div class="header__inner">
-        <div class="nav">
-            <div class="nav__inner">
-                <div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link get-gallery-block" href="#">Фотографии</a> лофтов</span>
-                </div>
-                <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a class="link nav__link queue__act" href="#">Корпус 2-2</a></span></div>
-                <div class="nav__item nav__item--shoowroom">
-                    <!-- <span class="nav__item-text">Shoowroom: Studio#8</span> -->
-                    <span class="nav__item-text">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>
-                    <!--<a class="link nav__link btn-callback-room" href="#">Studio#8</a>-->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="footer footer_fixed">
-    <div class="footer__inner">
-        <div class="nav">
-            <div class="nav__inner">
-                <div class="nav__item nav__item--place-yellow"><span class="nav__item-text">Москва, СВАО, <br>12-й пр. Марьиной Рощи&nbsp;8</span></div>
-                <div class="nav__item nav__item--phone-yellow"><span class="nav__item-text"> <span class="call_phone_1">+7 495 780-40-40</span><span
-                        class="hidden-lg-xl-down"> | </span><br><a class="link nav__link btn-callback" href="#">Заказать
-                    обратный
-                    звонок</a></span></div>
-                <div class="nav__item">
-                                <span class="nav__item-text">
-                                    <div class="footer__side">
-                                        <div class="offer">
-                                            <div class="offer__title">
-                                                <!--<span class="offer__title-desktop">Супер-маркет лофтов</span>--><span
-                                                    class="offer__title-mobile">Креативный <br>лофт-квартал</span>
-
-                                                <!-- <div class="bubble">
-                                                    <div class="bubble__label">Акция</div>
-                                                    <div class="bubble__value">-10%</div>
-                                                    <div class="bubble__explain">от цены <br> лофта</div>
-                                                    <div class="bubble__pointer"></div>
-                                                </div> -->
-                                            </div>
-                                            <a class="offer__act" href="#s">
-                                                <div class="offer__label offer__label--desktop">Выбрать лофт
-                                                </div>
-                                                <!--<div class="offer__label offer__label--mobile">Супер-маркет лофтов</div>-->
-                                                <img class="offer__img"
-                                                     src="<?=SITE_TEMPLATE_PATH?>/dist/img/intro-offer.png" alt="#">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<? endif; ?>
-
 <div class="modal popup--map">
     <div class="popup__inner">
         <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/test-map.jpg" alt="#">
@@ -156,19 +80,41 @@ IncludeTemplateLangFile(__FILE__);
 
 </div>
 
-<button class="nav-toggle" type="button">
-    <?if ($APPLICATION->GetCurPage()== '/'): ?>
-    <div class="nav-toggle__bar"></div>
-    <?else:?>
+<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<? endif; ?>">
+    <ul class="top__list">
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
+            <span class="top__text">Москва, СВАО,</span><br>
+            <span>12-й пр. Марьиной Рощи 8</span>
+        </li>
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
+            <span class="top__text">+7 495 780-40-40</span><br>
+            <a href="#" class="top__link link-animate btn-callback">Обратный звонок</a>
+        </li>
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
+            <span class="top__text">Фотографии</span><br>
+            <a href="#" class="top__link link-animate get-gallery-block">лофтов</a>
+        </li>
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
+            <span class="top__text">Как проехать</span><br>
+            <a href="#" class="top__link link-animate btn-showroom">в Showroom</a>
+        </li>
+        <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
+            <span class="top__text">1-ая очередь:</span><br>
+            <a href="#" class="top__link link-animate queue__act">Корпус 2-2</a>
+        </li>
+    </ul>
+</div>
+<button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
-    <? endif; ?>
 </button>
 
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
-<div class="controls">
+<div class="logo-fix fade-animate fade-in"></div>
 <?else:?>
-<div class="controls controls--our">
-    <? endif; ?>
+<a class="logo-fix" href="/"></a>
+<? endif; ?>
+
+<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
     <a class="controls__phone btn-callback" href="#"></a>
     <!--<a class="controls__photos get-gallery-block" href="#"></a>-->
     <!--<a class="controls__queue" href="#"></a>-->
@@ -208,12 +154,11 @@ IncludeTemplateLangFile(__FILE__);
 <!-- /Yandex.Metrika counter -->
 
 <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.backstretch.min.js" type="text/javascript"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
-<?else:?>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
 <? endif; ?>
    
 
@@ -272,6 +217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+<<<<<<< HEAD
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
 <script>
     (function () {
@@ -626,6 +572,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
 <? endif; ?>
 
+=======
+>>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
 
 </body>
 </html>

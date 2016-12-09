@@ -160,16 +160,52 @@ $.fn.serializeObject = function()
     });
 
 
-    $('.toogleMap').click(function() {
-        //console.log( '123');
-        $('.googleStatic, .googleMap').toggleClass( "currentMap" );
-    });
+    $('.lots .lot-sort').click(function(event) {
+    
+        event.preventDefault();
+        var action = 'loft-sort';
+        var sortBy = $(this).attr('data-sort');
+        var direction = $(this).attr('data-direction');
 
-    $('.lofts__link, .lofts, .queue__act, .house1, .feature').click(function() {
-        //console.log('123');
-        $('html,body').animate({
-            scrollTop: $(".lots").offset().top},
-            'slow');
+        $(this).attr('data-direction','asc');
+
+        if (direction == 'desc') { 
+            $(this).attr('data-direction','asc');
+        } else { 
+            $(this).attr('data-direction','desc');
+        }
+        
+        $(this).removeClass('active');
+        $(this).addClass('active');
+
+         $.post("/quarters/ajax.php?AJAX=1", {
+
+                sortBy: sortBy,
+                direction: direction,
+                action: action,
+                AJAX: 1
+
+            })
+            .done(function (data) {
+               $('#ajaxLofts').html(data);
+                $('.section--lofts').each(function () {
+                    var self = this,
+                        $box = $('.lots', self),
+                        $hidden = $('.lots__hidden', self),
+                        $more = $('.more-items', self);
+                    $more.on('click', function () {
+                        var offers = $('.ajaxLotItem ').length;
+                        var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
+                        $box.toggleClass('is-open');
+                        $hidden.slideToggle(300);
+                        $(this).text(moreText);
+                        return false;
+                    });
+                });
+            });
+
+        return false;
+
     });
 
 
