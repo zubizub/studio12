@@ -52,18 +52,82 @@ __cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
 
 <script type="text/javascript">
     
+
 function callBackComagic (formData) {
+
+  // Top100 (Kraken) Counter
+
+  (function (w, d, c) {
+
+    (w[c] = w[c] || []).push(function() {
+
+        var goals = {
+
+          'goal': 'call'
+
+        }; 
+
+        var options = {
+
+            project: 4457067,
+
+            custom_vars: goals
+
+        };
+
+        try {
+
+            w['t4457067'] = new top100(options);
+
+        } catch(e) { }
+
+    });
+
+
+    var n = d.getElementsByTagName("script")[0],
+
+        s = d.createElement("script"),
+
+        f = function () { n.parentNode.insertBefore(s, n); };
+
+    s.type = "text/javascript";
+
+    s.async = true;
+
+    s.src =
+
+        (d.location.protocol == "https:" ? "https:" : "http:") +
+
+        "//st.top100.ru/top100/top100.js";
+
+
+    if (w.opera == "[object Opera]") {
+
+        d.addEventListener("DOMContentLoaded", f, false);
+
+    } else { f(); }
+
+  })(window, document, "_top100q");
+
+  // END Top100 (Kraken) Counter
 
  var obj = {};
         var formData = $(formData).serializeArray();
 
-       obj[formData[0].name]=[formData[0].value]
+       /*obj[formData[0].name]=[formData[0].value]
         //obj['email']='';
         obj[formData[1].name]=[formData[1].value];
         obj['message']=[formData[4].value];
+        */
+
+        console.log('addOfflineRequest');
+
+        obj['name']=formData[0].value
+        obj['phone']=formData[1].value;
+        obj['message']=formData[3].value;
         
-        /*console.log(formData);
-        console.log(JSON.stringify(obj));*/
+        console.log(formData);
+        console.log(JSON.stringify(obj));
 
 
         Comagic.addOfflineRequest(obj);

@@ -270,37 +270,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- END Top100 (Kraken) Counter -->
 
 
-<!-- Top100 (Kraken) Counter -->
-<script>
-(function (w, d, c) {
-  (w[c] = w[c] || []).push(function() {
-      var goals = {
-        'goal': 'call'
-      };  
-      var options = {
-          project: 4450753,
-          custom_vars: goals
-      };
-      try {
-          w['t4450753'] = new top100(options);
-      } catch(e) { }
-  });
- 
-  var n = d.getElementsByTagName("script")[0],
-      s = d.createElement("script"),
-      f = function () { n.parentNode.insertBefore(s, n); };
-  s.type = "text/javascript";
-  s.async = true;
-  s.src =
-      (d.location.protocol == "https:" ? "https:" : "http:") +
-      "//st.top100.ru/top100/top100.js";
- 
-  if (w.opera == "[object Opera]") {
-      d.addEventListener("DOMContentLoaded", f, false);
-  } else { f(); }
-})(window, document, "_top100q");
-</script>
-<!-- END Top100 (Kraken) Counter -->
+
 
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
 <script>
@@ -531,7 +501,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     $('.number300').animateNumber({ number: 300 });
                     $('.number6').animateNumber({ number: 8 });
                 } else {
-                    $('.number').animateNumber({ number: 0 });
+                    //$('.number').animateNumber({ number: 0 });
                 }
 
                 if (index == 3) {
