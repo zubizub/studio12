@@ -178,12 +178,10 @@ $.fn.serializeObject = function()
         $(this).removeClass('active');
         $(this).addClass('active');
 
-        
 
-
-        console.log(action);
+/*        console.log(action);
         console.log(sortBy);
-        console.log(direction);
+        console.log(direction);*/
 
 
          $.post("/quarters/ajax.php?AJAX=1", {
@@ -197,7 +195,7 @@ $.fn.serializeObject = function()
             .done(function (data) {
                //console.log(data);
                $('#ajaxLofts').html(data);
-                
+                $('.lots__hidden').removeClass('lots__hidden');
                 
             });
 
