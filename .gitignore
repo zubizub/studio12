@@ -3,6 +3,6 @@
 node_modules
 bower_components
 build
-bitrix
+/bitrix
 upload
 lib
