@@ -66,7 +66,11 @@ function callBackComagic (formData) {
 
           'goal': 'call'
 
+<<<<<<< HEAD
+        }; 
+=======
         };
+>>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
 
         var options = {
 
@@ -126,7 +130,11 @@ function callBackComagic (formData) {
         obj['name']=formData[0].value
         obj['phone']=formData[1].value;
         obj['message']=formData[3].value;
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
         console.log(formData);
         console.log(JSON.stringify(obj));
 
