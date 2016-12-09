@@ -195,6 +195,10 @@ $.fn.serializeObject = function()
             .done(function (data) {
                //console.log(data);
                $('#ajaxLofts').html(data);
+               $('.more-items').click(function(){
+
+                   $('.lots__hidden').removeClass('lots__hidden');
+               });
             //   $('.lots__hidden').removeClass('lots__hidden');
                 
             });
