@@ -178,12 +178,6 @@ $.fn.serializeObject = function()
         $(this).removeClass('active');
         $(this).addClass('active');
 
-
-/*        console.log(action);
-        console.log(sortBy);
-        console.log(direction);*/
-
-
          $.post("/quarters/ajax.php?AJAX=1", {
 
                 sortBy: sortBy,
@@ -193,15 +187,21 @@ $.fn.serializeObject = function()
 
             })
             .done(function (data) {
-               //console.log(data);
                $('#ajaxLofts').html(data);
-               
-               /*$('.more-items').click(function(){
-
-                   $('.lots__hidden').removeClass('lots__hidden');
-               });*/
-            //   $('.lots__hidden').removeClass('lots__hidden');
-                
+                $('.section--lofts').each(function () {
+                    var self = this,
+                        $box = $('.lots', self),
+                        $hidden = $('.lots__hidden', self),
+                        $more = $('.more-items', self);
+                    $more.on('click', function () {
+                        var offers = $('.ajaxLotItem ').length;
+                        var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
+                        $box.toggleClass('is-open');
+                        $hidden.slideToggle(300);
+                        $(this).text(moreText);
+                        return false;
+                    });
+                });
             });
 
         return false;

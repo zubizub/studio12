@@ -97,17 +97,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container__inner">
             <div class="sidebar">
                 <div class="sidebar__inner">
-                    <div class="sidebar__header"><a class="side-logo" href="#"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
+                    <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
                     <div class="sidebar__body">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link link-animate" href="/">#Главная</a>
+                        <?if ($APPLICATION->GetCurPage()== '/'): ?>
+                            <span class="menu__link active" href="/">#Главная</span>
+                        <?else:?>
+                            <a class="menu__link link-animate" href="/">#Главная</a>
+                        <? endif; ?>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-animate" href="/quarters">#ЖИТЬВЛОФТЕ</a>
+                        <?if ($APPLICATION->GetCurPage()== '/quarters/'): ?>
+                            <span class="menu__link active" href="/">#ЖИТЬВЛОФТЕ</span>
+                        <?else:?>
+                            <a class="menu__link link-animate" href="/quarters">#ЖИТЬВЛОФТЕ</a>
+                        <? endif; ?>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-animate" href="/job">#Работавлофте</a>
+                        <?if ($APPLICATION->GetCurPage()== '/job/'): ?>
+                            <span class="menu__link active" href="/">#Работавлофте</span>
+                        <?else:?>
+                            <a class="menu__link link-animate" href="/job">#Работавлофте</a>
+                        <? endif; ?>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link link-animate queue__act" href="#">#Выбратьлофт</a>

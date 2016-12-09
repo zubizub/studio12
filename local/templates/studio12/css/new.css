@@ -26,11 +26,6 @@ top:0px; }
     display: none;
 }
 
-.sidebar .mobile-note__phone {
-  display: block;
-  text-decoration: none !important;
-  color: #fee333 !important;
-}
 
 .popup--callback .mobile-note__phone {
     color: #000;
@@ -97,6 +92,7 @@ top:0px; }
 margin-top: 30px;
 }
 
+.about-lofts__more.offer__label--desktop:after,
 .lofts-pdf-link  .offer__label--desktop:after {
     background-image: url(../img/arrow-right.png);
 }

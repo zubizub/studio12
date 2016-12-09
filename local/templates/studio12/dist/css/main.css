@@ -3349,12 +3349,13 @@ path {
 }
 
 .about-lofts__more {
-    display: block;
+    display: inline-block;
     line-height: 2.25rem;
     background-color: #ffe500;
     font-size: 1.125rem;
     padding: 0 0.625rem;
     margin-top: 3.625rem;
+    white-space: nowrap;
 }
 
 .about-lofts__slider-list {
@@ -5181,13 +5182,13 @@ a.btn, a.btn:hover {
 
 .loft-types__inner {
     position: relative;
-    margin-left: -webkit-calc((99vw - 100%) / -2 - 1px);
-    margin-left: -moz-calc((99vw - 100%) / -2 - 1px);
-    margin-left: calc((99vw - 100%) / -2 - 1px);
+    /*margin-left: -webkit-calc((99vw - 100%) / -2 - 1px);*/
+    /*margin-left: -moz-calc((99vw - 100%) / -2 - 1px);*/
+    /*margin-left: calc((99vw - 100%) / -2 - 1px);*/
 }
 
 .sidebar-open .loft-types__inner {
-    margin-left: -58px;
+    /*margin-left: -58px;*/
 }
 
 .loft-types__inner:after {
@@ -5197,11 +5198,11 @@ a.btn, a.btn:hover {
 }
 
 @media screen and (min-width: 1601px) {
-    .loft-types__inner {
-        margin-left: -webkit-calc((100vw - 100% - 19rem) / -2 - 1px);
-        margin-left: -moz-calc((100vw - 100% - 19rem) / -2 - 1px);
-        margin-left: calc((100vw - 100% - 19rem) / -2 - 1px);
-    }
+    /*.loft-types__inner {*/
+        /*margin-left: -webkit-calc((100vw - 100% - 19rem) / -2 - 1px);*/
+        /*margin-left: -moz-calc((100vw - 100% - 19rem) / -2 - 1px);*/
+        /*margin-left: calc((100vw - 100% - 19rem) / -2 - 1px);*/
+    /*}*/
 }
 
 @media screen and (max-width: 1000px) {
@@ -5285,9 +5286,7 @@ a.btn, a.btn:hover {
 }
 
 .loft-types__caption {
-    left: 7.625rem;
-    margin-left: 1.75rem;
-    border-left: 1.5rem solid transparent;
+    left: 115px;
     position: absolute;
     top: 0;
     right: 0;
@@ -5295,16 +5294,16 @@ a.btn, a.btn:hover {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-    .loft-types__caption {
-        left: -webkit-calc(0px + (100vw - 800px) * 0.305);
-        left: -moz-calc(0px + (100vw - 800px) * 0.305);
-        left: calc(0px + (100vw - 800px) * 0.305);
-    }
+    /*.loft-types__caption {*/
+        /*left: -webkit-calc(0px + (100vw - 800px) * 0.305);*/
+        /*left: -moz-calc(0px + (100vw - 800px) * 0.305);*/
+        /*left: calc(0px + (100vw - 800px) * 0.305);*/
+    /*}*/
 }
 
 @media screen and (max-width: 1000px) {
     .loft-types__caption {
-        left: 15px;
+        left: 68px;
     }
 }
 
@@ -5487,6 +5486,7 @@ a.btn, a.btn:hover {
 .lofts__scheme {
     position: relative;
     padding-bottom: 80px;
+    min-height: 850px;
 }
 
 .lofts__scheme svg {
@@ -6211,8 +6211,12 @@ a.btn, a.btn:hover {
     height: 3px;
 }
 
-.menu__item.active .menu__link {
-    color: #949494;
+.menu__link.active {
+    color: #ffffff;
+}
+
+.menu__link.active.link-animate:after {
+    display: none;
 }
 
 .menu__sub {
@@ -7645,6 +7649,7 @@ a.btn, a.btn:hover {
     left: 0;
     bottom: 0;
     right: 0;
+    background-color: #343434;
 }
 
 .about-bg__item {
@@ -7905,8 +7910,12 @@ a.btn, a.btn:hover {
     display: none;
 }
 
-.mobile-note a {
+.mobile-note__place {
     color: #ffffff;
+}
+
+.mobile-note a {
+    color: #fee333;
     text-decoration: underline;
 }
 
@@ -7914,11 +7923,22 @@ a.btn, a.btn:hover {
     font-size: 30px;
     color: #fee333;
     margin: 30px 0;
+    text-decoration: underline;
+    display: block;
 }
 
 .mobile-note__phone-link {
     display: block;
     margin-bottom: 20px;
+    color: #fee333;
+}
+
+.mobile-note__sr-link {
+    color: #ffffff;
+}
+
+.mobile-note__sr-link a {
+    color: #fee333;
 }
 
 .loft-types-slide-go {
