@@ -5487,6 +5487,7 @@ a.btn, a.btn:hover {
 .lofts__scheme {
     position: relative;
     padding-bottom: 80px;
+    min-height: 850px;
 }
 
 .lofts__scheme svg {
@@ -6211,8 +6212,12 @@ a.btn, a.btn:hover {
     height: 3px;
 }
 
-.menu__item.active .menu__link {
-    color: #949494;
+.menu__link.active {
+    color: #ffffff;
+}
+
+.menu__link.active.link-animate:after {
+    display: none;
 }
 
 .menu__sub {
@@ -7645,6 +7650,7 @@ a.btn, a.btn:hover {
     left: 0;
     bottom: 0;
     right: 0;
+    background-color: #343434;
 }
 
 .about-bg__item {

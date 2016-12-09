@@ -101,13 +101,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="sidebar__body">
                 <ul class="menu">
                     <li class="menu__item">
-                        <a class="menu__link link-animate" href="/">#Главная</a>
+                        <a class="menu__link link-animate <?if ($APPLICATION->GetCurPage()== '/'): ?>active<? endif; ?>" href="/">#Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-animate" href="/quarters">#ЖИТЬВЛОФТЕ</a>
+                        <a class="menu__link link-animate <?if ($APPLICATION->GetCurPage()== '/quarters/'): ?>active<? endif; ?>" href="/quarters">#ЖИТЬВЛОФТЕ</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-animate" href="/job">#Работавлофте</a>
+                        <a class="menu__link link-animate <?if ($APPLICATION->GetCurPage()== '/job/'): ?>active<? endif; ?>" href="/job">#Работавлофте</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link link-animate queue__act" href="#">#Выбратьлофт</a>
