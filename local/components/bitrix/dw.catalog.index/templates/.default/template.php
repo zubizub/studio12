@@ -34,17 +34,18 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                         </div>
                         <div class="ajaxLofts" id="ajaxLofts">
 
-
+ <!-- <pre><?//print_r($arItem['PROPS']);?></pre>  -->
                         <?
 endif;
 
   $i = 0;
   $count = 0;
+  
   foreach ($arResult['ITEMS'] as $arItem):
 ?>
-                        <!-- <pre><?//print_r($arItem['PROPS']);?></pre>  -->
+                       
                         <? unset ($additionClass);  if ($arItem['PROPS']['STATUS']['VALUE'] == 'Продано') { $additionClass = 'lot--disabled'; } ?>
-                        <? if ($i >= 6) :?>
+                        <? if ($i == 6) :?>
 
                         <div class="lots__hidden">
                             <?endif;?>
@@ -74,7 +75,7 @@ endif;
                                 <div class="lot__value-7"
                                      data-lot-value="Статус"><?=$arItem['PROPS']['STATUS']['VALUE'];?></div>
                             </a>
-                            <? if ($i >= 6) :?>
+                            <? if ($i == 6) :?>
 
                         </div>
                         <?$count++;endif;$i++;?>
