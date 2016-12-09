@@ -84,7 +84,7 @@ IncludeTemplateLangFile(__FILE__);
     <ul class="top__list">
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Москва, СВАО,</span><br>
-            <a href="#" class="top__link link-animate">12-й пр. Марьиной Рощи 8</a>
+            <span>12-й пр. Марьиной Рощи 8</span>
         </li>
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">+7 495 780-40-40</span><br>

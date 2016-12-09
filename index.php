@@ -122,11 +122,6 @@ $APPLICATION->SetTitle("Studio#12");
                                 </div>
                             </div>
                         </div>
-                        <a class="offer__act offer-mobile loft-btn" href="#loft-table">
-                            <div class="offer__label">Выбрать лофт
-                            </div>
-                            <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#">
-                        </a>
                     </div>
                 </div>
                 <div class="actions">

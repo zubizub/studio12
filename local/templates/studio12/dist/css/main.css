@@ -2066,6 +2066,7 @@ sub, sup {
 
 .section--about .wrapper {
     padding: 0;
+    position: relative;
 }
 
 .inner {
@@ -2795,6 +2796,7 @@ sub, sup {
 @media screen and (max-width: 1000px) {
     .section {
         height: auto !important;
+        min-height: inherit;
     }
 
     .section:not(.section--lofts, .section--start, .section--intro) {
@@ -3398,7 +3400,7 @@ path {
 
 @media screen and (max-width: 1000px) {
     .about {
-        padding: 3.75rem 0 7.8125rem 3.25rem;
+        padding: 3.75rem 0 0 3.25rem;
     }
 }
 
@@ -6675,12 +6677,6 @@ a.btn, a.btn:hover {
     z-index: 1;
 }
 
-@media screen and (max-width: 1000px) {
-    .offer__label--desktop {
-        display: none;
-    }
-}
-
 .offer__label--desktop:after {
     content: '';
     display: inline-block;
@@ -7709,11 +7705,29 @@ a.btn, a.btn:hover {
     color: #ffe500;
     position: absolute;
     left: 115px;
-    right: 0;
+    right: auto;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.metro-place__desc:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fee333;
+    -webkit-transition: width 0.25s ease-out;
+    -moz-transition: width 0.25s ease-out;
+    -o-transition: width 0.25s ease-out;
+    transition: width 0.25s ease-out;
+}
+
+.metro-place__link:hover .metro-place__desc:after {
+    width: 100%;
 }
 
 .loft-types__item {
@@ -8071,12 +8085,13 @@ a.btn, a.btn:hover {
         overflow: inherit !important;
     }
 
-    .actions {
-        display: none;
-    }
-
     .loft-types__inner {
         margin-left: 0 !important;
+    }
+
+    .actions__item {
+        float: none;
+        width: 100%;
     }
 }
 
@@ -8218,6 +8233,7 @@ a.btn, a.btn:hover {
     background-color: #000000;
     font-size: 16px;
     z-index: 450;
+    color: #ffffff;
 }
 
 .top,
@@ -8315,6 +8331,33 @@ a.btn, a.btn:hover {
 .actions__item {
     float: left;
     width: 33%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .actions {
+        display: table;
+        position: relative;
+        left: 65px !important;
+    }
+
+    .actions__item {
+        float: none;
+        width: 100%;
+        margin-top: 20px !important;
+    }
+
+    .actions__item:last-child {
+        display: table-header-group;
+    }
+
+    .actions .lofts-pdf-link {
+        position: static;
+    }
+
+    .section--about .wrapper {
+        padding-bottom: 40px;
+    }
 }
 
 .actions a.btn-download {

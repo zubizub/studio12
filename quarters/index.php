@@ -203,9 +203,9 @@ $APPLICATION->SetTitle("Studio12");
 			  <div class="metro-place__item">
 				  <div class="metro-place__slider">
 					  <div class="metro-place__slider-item">
-						  <a href="/job">
-							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" alt="#">
-							  <span class="metro-place__desc">#Работать в лофте</span>
+						  <a href="#" class="queue__act metro-place__link">
+							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Girl_12.jpg" alt="#">
+							  <span class="metro-place__desc">#Жить в лофте</span>
 						  </a>
 					</div>
 
