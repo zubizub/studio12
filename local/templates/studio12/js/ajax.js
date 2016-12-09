@@ -166,17 +166,16 @@ $.fn.serializeObject = function()
         var action = 'loft-sort';
         var sortBy = $(this).attr('data-sort');
         var direction = $(this).attr('data-direction');
-        
 
+        $(this).attr('data-direction','asc');
 
-        $('.lots .lot-sort').attr('data-direction','asc');
         if (direction == 'desc') { 
             $(this).attr('data-direction','asc');
         } else { 
             $(this).attr('data-direction','desc');
         }
         
-        $('.lots .lot-sort').removeClass('active');
+        $(this).removeClass('active');
         $(this).addClass('active');
 
 

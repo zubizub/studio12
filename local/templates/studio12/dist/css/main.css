@@ -1753,6 +1753,8 @@ sub, sup {
 
 .js-vertical-anim-2:nth-child(2n) {
     -webkit-animation-delay: 0.11s;
+    -moz-animation-delay: 0.11s;
+    -o-animation-delay: 0.11s;
     animation-delay: 0.11s;
 }
 
@@ -1762,11 +1764,15 @@ sub, sup {
 
 .js-vertical-anim-3:nth-child(3n - 1) {
     -webkit-animation-delay: 0.11s;
+    -moz-animation-delay: 0.11s;
+    -o-animation-delay: 0.11s;
     animation-delay: 0.11s;
 }
 
 .js-vertical-anim-3:nth-child(3n) {
     -webkit-animation-delay: 0.22s;
+    -moz-animation-delay: 0.22s;
+    -o-animation-delay: 0.22s;
     animation-delay: 0.22s;
 }
 
@@ -1776,16 +1782,22 @@ sub, sup {
 
 .js-vertical-anim-4:nth-child(4n - 2) {
     -webkit-animation-delay: 0.11s;
+    -moz-animation-delay: 0.11s;
+    -o-animation-delay: 0.11s;
     animation-delay: 0.11s;
 }
 
 .js-vertical-anim-4:nth-child(4n - 1) {
     -webkit-animation-delay: 0.22s;
+    -moz-animation-delay: 0.22s;
+    -o-animation-delay: 0.22s;
     animation-delay: 0.22s;
 }
 
 .js-vertical-anim-4:nth-child(4n) {
     -webkit-animation-delay: 0.33s;
+    -moz-animation-delay: 0.33s;
+    -o-animation-delay: 0.33s;
     animation-delay: 0.33s;
 }
 
@@ -2027,9 +2039,9 @@ sub, sup {
 }
 
 /*.wrapper {*/
-    /*padding: 0 1.75rem;*/
-    /*margin: 0 auto;*/
-    /*position: relative;*/
+/*padding: 0 1.75rem;*/
+/*margin: 0 auto;*/
+/*position: relative;*/
 /*}*/
 
 @media screen and (min-width: 320px) and (max-width: 1000px) {
@@ -2900,7 +2912,7 @@ sub, sup {
 }
 
 /*.sidebar-open .section--about .section__content {*/
-    /*margin: 0px 3rem 0 8.8rem;*/
+/*margin: 0px 3rem 0 8.8rem;*/
 /*}*/
 
 @media screen and (min-width: 1601px) {
@@ -5471,8 +5483,8 @@ a.btn, a.btn:hover {
 }
 
 .lofts__scheme {
-    text-align: center;
     position: relative;
+    padding-bottom: 80px;
 }
 
 .lofts__scheme svg {
@@ -5506,6 +5518,7 @@ a.btn, a.btn:hover {
 
 .loft {
     position: absolute;
+    white-space: nowrap;
     /*width: 100%;*/
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -5513,7 +5526,6 @@ a.btn, a.btn:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    pointer-events: none;
 }
 
 .loft:before {
@@ -5756,23 +5768,23 @@ a.btn, a.btn:hover {
 }
 
 .loft--2-2 {
-    top: 34%;
-    left: 32%;
+    top: 29.5%;
+    left: 44%;
 }
 
 .loft--2-3 {
-    top: 68%;
-    left: 45%;
+    top: 74.5%;
+    left: 39%;
 }
 
 .loft--1 {
-    top: 47%;
-    left: 59%;
+    top: 31%;
+    left: 38%;
 }
 
 .loft--3 {
-    top: 10%;
-    left: 70%;
+    top: 30%;
+    left: 37%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -7552,7 +7564,17 @@ a.btn, a.btn:hover {
 }
 
 .lofts--main .house {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+
+.house-fade-in {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .popup--showroom {
@@ -8303,4 +8325,92 @@ a.btn, a.btn:hover {
 .actions .btn-download {
     height: 36px;
     width: 281px;
+}
+
+.layout {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.layout__link:hover .loft-popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.layout__link:hover .loft__number {
+    background-color: #fff200;
+    color: #000000;
+}
+
+.layout__2-2.layout__link:hover .loft__number {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.layout__img {
+    width: 100%;
+    max-width: none;
+}
+
+.layout__2-2 {
+    width: 56.4%;
+    position: absolute;
+    top: 22%;
+    left: 3%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.layout__1 {
+    width: 28%;
+    position: absolute;
+    left: 50.8%;
+    top: 37.6%;
+    z-index: 8;
+}
+
+.layout__3{
+    width: 32.9%;
+    position: absolute;
+    left: 61.5%;
+    top: -2.8%;
+    z-index: 8;
+}
+
+.layout__2-3 {
+    position: relative;
+    display: block;
+    width: 19.5%;
+    padding-top: 52.2%;
+    margin-left: 36.5%;
+    z-index: 9;
+}
+
+.layout__street-1 {
+    width: 16.3%;
+    left: 83%;
+    top: 7%;
+    position: absolute;
+}
+
+.layout__street-2 {
+    width: 33.7%;
+    left: 61%;
+    top: 52%;
+    position: absolute;
+}
+
+.layout__entry {
+    position: absolute;
+    width: 4.2%;
+    top: 44%;
+    left: 79.4%;
+}
+
+.layout__lake {
+    width: 27.2%;
+    position: absolute;
+    top: 9.5%;
+    left: 28%;
 }
