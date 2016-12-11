@@ -5947,9 +5947,9 @@ a.btn, a.btn:hover {
 @media screen and (max-width: 1000px) {
     .lots-infographics {
         position: static;
-        border-bottom: 1px solid #383838;
-        padding-bottom: 0.9375rem;
-        margin-bottom: 0.9375rem;
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .offers-loft {
@@ -6558,7 +6558,7 @@ a.btn, a.btn:hover {
     width: 17.5625rem;
     position: relative;
     z-index: 400;
-    margin-top: 58px;
+    margin-top: 24px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -7666,12 +7666,12 @@ a.btn, a.btn:hover {
 }
 
 .logo-fix {
-    width: 61px;
+    width: 71px;
     height: 142px;
-    background: url("../img/menu-logo.png") no-repeat 0 0;
+    background: url("../img/menu-logo.svg") no-repeat 0 0;
     position: fixed;
     top: 80px;
-    left: 5px;
+    left: 0;
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     -o-transition: -o-transform 0.3s ease;
@@ -7680,6 +7680,7 @@ a.btn, a.btn:hover {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
     z-index: 500;
+    background-size: contain;
 }
 
 .sidebar-open .logo-fix {
@@ -8538,8 +8539,8 @@ a.btn, a.btn:hover {
     }
 }
 
-.count + .count {
-    margin-top: 25px;
+.count {
+    margin-bottom: 25px;
 }
 
 .count__text {
@@ -8556,6 +8557,20 @@ a.btn, a.btn:hover {
 
 .count__number {
     font-size: 56px;
+}
+
+.count__anim {
+    font-size: 0;
+    margin-right: 10px;
+}
+
+.count__anim.link-animate:after {
+    height: 2px;
+    bottom: -4px;
+}
+
+.count__spacing {
+    margin-left: 10px;
 }
 
 .dep-wrap:after {
@@ -8579,7 +8594,6 @@ a.btn, a.btn:hover {
 .dep {
     display: block;
     position: relative;
-    padding: 46px 0 0 115px;
     height: 322px;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
@@ -8588,8 +8602,26 @@ a.btn, a.btn:hover {
     background-color: #343434;
 }
 
+.dep:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.dep__inner {
+    position: relative;
+    padding: 46px 0 0 115px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
 @media screen and (max-width: 1000px) {
-    .dep {
+    .dep__inner {
         padding-left: 4.375rem;
     }
 }

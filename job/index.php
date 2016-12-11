@@ -301,7 +301,7 @@ $APPLICATION->SetTitle("Studio12");
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "about-loft-props-title.php"
 	)
-);?>
+);?></div>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -312,7 +312,6 @@ $APPLICATION->SetTitle("Studio12");
 		"PATH" => "about-loft-props.php"
 	)
 );?>
-</div>
                   <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -326,7 +325,7 @@ $APPLICATION->SetTitle("Studio12");
 
                   </div>
                   <div class="col-1-3">
-                    <div class="about-lofts__subtitle">Месторасположение <br> квартала:</div>
+                    <div class="about-lofts__subtitle">Место<span class="resp-br-dash"> -<br></span>расположение <br> квартала:</div>
                     <div class="about-lofts__p">Москва, СВАО, <br>12-й пр. Марьиной Рощи 8 <br><small>10 мин. от метро “Марьина Роща”</small></div>
                     <div class="about-lofts__p">
                       <div class="about-lofts__pos">Комплекс апартаментов «Studio 12»  находится вблизи:</div>

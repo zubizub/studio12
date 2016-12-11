@@ -64,14 +64,12 @@
                 <div class="lots-infographics">
                     <div class="lots-infographics__number">76</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
-                    <!-- <div class="lots-infographics-black">ГОТОВНОСТЬ:<br>Конец<br>2017</div> -->
                     <div class="lofts-pdf-link">
-                    <a class="offer__plan" href="/upload/plan.pdf<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" target="_blank">
-                        <div class="offer__label offer__label--desktop">Планировки (PDF)
-                        </div>
-                       <!--  <img class="offer__img" src="/local/templates/studio12/dist/img/intro-offer.png" alt="#"> -->
-                    </a>
-                </div> 
+                        <a class="offer__plan" href="/upload/plan.pdf<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" target="_blank">
+                            <div class="offer__label offer__label--desktop">Планировки (PDF)
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 
             </div>

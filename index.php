@@ -41,31 +41,39 @@ $APPLICATION->SetTitle("Studio#12");
                             </div>
                         </div>
                         <div class="info__right">
-                            <div class="count">
-                                <div class="count__numbers">
-                                    <span class="count__number yellow number number72">0</span>
-                                    <span class="count__text">из</span>
-                                    <span class="count__number number number142">0</span>
+                            <div class="count-slide">
+                                <div class="count">
+                                    <div class="count__numbers">
+                                        <a href="#" class="count__anim link-animate queue__act">
+                                            <span class="count__number yellow">72</span>
+                                        </a>
+                                        <span class="count__text">из</span>
+                                        <span class="count__number">142</span>
+                                    </div>
+                                    <div class="count__desc">Лотов в продаже</div>
                                 </div>
-                                <div class="count__desc">Лотов в продаже</div>
-                            </div>
-                            <div class="count">
-                                <div class="count__numbers">
-                                    <span class="count__text yellow">от</span>
-                                    <span class="count__number yellow number number40">0</span>
-                                    <span class="count__text">до</span>
-                                    <span class="count__number number number300">0</span>
-                                    <span class="count__text">м2</span>
+                                <div class="count">
+                                    <div class="count__numbers">
+                                        <a href="#" class="count__anim link-animate queue__act">
+                                            <span class="count__text yellow">от</span>
+                                            <span class="count__number count__spacing yellow">40</span>
+                                        </a>
+                                        <span class="count__text">до</span>
+                                        <span class="count__number">300</span>
+                                        <span class="count__text">м2</span>
+                                    </div>
+                                    <div class="count__desc">Площадь лотов</div>
                                 </div>
-                                <div class="count__desc">Площадь лотов</div>
-                            </div>
-                            <div class="count">
-                                <div class="count__numbers">
-                                    <span class="count__text yellow">от</span>
-                                    <span class="count__number yellow number number6">0</span>
-                                    <span class="count__text">млн. руб.</span>
+                                <div class="count">
+                                    <div class="count__numbers">
+                                        <a href="#" class="count__anim link-animate queue__act">
+                                            <span class="count__text yellow">от</span>
+                                            <span class="count__number count__spacing yellow">8</span>
+                                        </a>
+                                        <span class="count__text">млн. руб.</span>
+                                    </div>
+                                    <div class="count__desc">Площадь лотов</div>
                                 </div>
-                                <div class="count__desc">Площадь лотов</div>
                             </div>
                             <div class="offer">
                                 <a class="offer__act queue__act" href="#">
@@ -83,26 +91,30 @@ $APPLICATION->SetTitle("Studio#12");
         <div class="dep-wrap">
             <div class="dep-wrap__col">
                 <a href="/quarters" class="dep dep--loft">
-                    <div class="dep__title yellow">
-                        <span class="dep__text">Живи</span><br><span class="dep__text">в лофте</span>
+                    <div class="dep__inner">
+                        <div class="dep__title yellow">
+                            <span class="dep__text">Живи</span><br><span class="dep__text">в лофте</span>
+                        </div>
+                        <div class="dep__desc">Единственный<br>трехэтажный<br>жилой комплекс<br>недалеко от центра<br>Москвы.</div>
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                        <span class="line line-4"></span>
                     </div>
-                    <div class="dep__desc">Единственный<br>трехэтажный<br>жилой комплекс<br>недалеко от центра<br>Москвы.</div>
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                    <span class="line line-4"></span>
                 </a>
             </div>
             <div class="dep-wrap__col">
                 <a href="/job" class="dep dep--job">
-                    <div class="dep__title yellow">
-                        <span class="dep__text">Работай</span><br><span class="dep__text">в лофте</span>
+                    <div class="dep__inner">
+                        <div class="dep__title yellow">
+                            <span class="dep__text">Работай</span><br><span class="dep__text">в лофте</span>
+                        </div>
+                        <div class="dep__desc">Просторные<br>светлые офисы<br>в формате лофт<br>идеально подойдут<br>для бизнеса.</div>
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                        <span class="line line-4"></span>
                     </div>
-                    <div class="dep__desc">Просторные<br>светлые офисы<br>в формате лофт<br>идеально подойдут<br>для бизнеса.</div>
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                    <span class="line line-4"></span>
                 </a>
             </div>
         </div>

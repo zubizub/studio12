@@ -1,15 +1,15 @@
 .googleStatic, .googleMap {
 
-  top: -1000px;
+    top: -1000px;
 }
 
-.currentMap { 
-top:0px; }
+.currentMap {
+    top: 0px;
+}
 
 .btn-showroom {
-  color: #ffe500;
+    color: #ffe500;
 }
-
 
 .gallery-block .loft-types__list .slick-prev {
     left: 85px;
@@ -26,7 +26,6 @@ top:0px; }
     display: none;
 }
 
-
 .popup--callback .mobile-note__phone {
     color: #000;
     font-size: 32px;
@@ -38,38 +37,36 @@ top:0px; }
 }
 
 .general__map {
-  position: relative;
-  height: 19.375rem;
-  overflow: hidden;
+    position: relative;
+    height: 19.375rem;
+    overflow: hidden;
 }
 
 .general__map .googleStatic {
-  height: 19.375rem;
+    height: 19.375rem;
 }
 
 .general__image {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-  .general__map {
-    display: none;
-  }
+    .general__map {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 480px) {
-  .popup--callback .mobile-note__phone {
-      font-size: 48px;
-  }
+    .popup--callback .mobile-note__phone {
+        font-size: 48px;
+    }
 
 }
-
-
 
 .feature__def.quarters-bubble {
     font-size: 53px;
@@ -81,7 +78,7 @@ top:0px; }
 }
 
 .feature {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .lofts-pdf-link {
@@ -89,31 +86,28 @@ top:0px; }
     right: 3%;
     top: 85%;*/
     background-color: #ffe500;
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 .about-lofts__more.offer__label--desktop:after,
-.lofts-pdf-link  .offer__label--desktop:after {
+.lofts-pdf-link .offer__label--desktop:after {
     background-image: url(../img/arrow-right.png);
 }
 
 .lofts-pdf-link .offer__label {
     color: #000;
-    
+
 }
 
- .offer__plan {
-    
+.offer__plan {
+
     background-color: #fff;
-    
-    
+
 }
 
-a.offer__plan
- {
-    
+a.offer__plan {
+
     color: #000 !important;
-    
 
 }
 
@@ -124,33 +118,101 @@ a.offer__plan
     right: -118px;
     height: 134px;
     color: #fff;
-    
+
 }
 
- 
-.upper { text-transform: uppercase; }
+.upper {
+    text-transform: uppercase;
+}
 
-.fs14 { font-size: 14px; }
+.fs14 {
+    font-size: 14px;
+}
 
-.grey { color: #747474; }
+.grey {
+    color: #747474;
+}
 
-.lh26 { line-height: 26px; }
+.lh26 {
+    line-height: 26px;
+}
 
+.resp-br-dash {
+    display: none;
+}
 
 @media only screen and (max-width: 1000px) {
-  
+
     .lofts-pdf-link .offer__label--desktop {
-      display: block;
+        display: block;
 
-  }
+    }
+
+    .lofts-pdf-link {
+        height: 35px;
+        position: absolute;
+        right: 6%;
+        top: -20px;
+    }
+
+    .concept__head br {
+        display: none;
+    }
+
+    .loft-types__act {
+        max-width: 260px;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .concept__head br {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .toogleMap {
+        left: 68px !important;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .concept__head br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .about-lofts__subtitle br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .lofts-pdf-link {
+        position: static;
+    }
+
+    .sidebar__header {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .concept__head br {
+        display: block;
+    }
+}
 
 
-  .lofts-pdf-link {
-      width: 185px;
-      height: 35px;
-      position: absolute;
-      right: 6%;
-      top: -20px;
-  }
-
+@media only screen and (max-width: 400px) {
+    .resp-br-dash {
+        display: inline;
+    }
+    .about-lofts__subtitle br {
+        display: inline;
+    }
+    .count__number {
+        font-size: 38px;
+    }
 }

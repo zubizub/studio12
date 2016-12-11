@@ -66,11 +66,9 @@ function callBackComagic (formData) {
 
           'goal': 'call'
 
-<<<<<<< HEAD
-        }; 
-=======
+
         };
->>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
+
 
         var options = {
 
@@ -130,13 +128,6 @@ function callBackComagic (formData) {
         obj['name']=formData[0].value
         obj['phone']=formData[1].value;
         obj['message']=formData[3].value;
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> db0aace8ff4d2bfb5877f731bac5c8a8e706e766
-        console.log(formData);
-        console.log(JSON.stringify(obj));
 
 
         Comagic.addOfflineRequest(obj);
@@ -169,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container__inner">
             <div class="sidebar">
                 <div class="sidebar__inner">
-                    <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
+                    <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.svg"></a></div>
                     <div class="sidebar__body">
 
                     <?$APPLICATION->IncludeComponent(
