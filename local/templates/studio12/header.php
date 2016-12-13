@@ -15,6 +15,40 @@ IncludeTemplateLangFile(__FILE__);
     <title><?$APPLICATION->ShowTitle()?></title>
     <meta name="description" content="Studio21">
     <!--link(rel='apple-touch-icon', href='apple-touch-icon.png')-->
+    <?$APPLICATION->ShowHead()?>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
+    <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script>
+    <script>
+        function init_map() {
+            var myOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
+            });
+            infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+        }
+    </script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
+    <?if ($APPLICATION->GetCurPage()== '/'): ?>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
+    <? endif; ?>
 
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,14 +57,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WP4D8R4');</script>
 <!-- End Google Tag Manager -->
-
-    <?$APPLICATION->ShowHead()?>
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
-    <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
-    <!--<![endif]-->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script>
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
@@ -182,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="mobile-note">
                     <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
-                    <a class="mobile-note__phone call_phone_1" href="tel:74957804040">+7 495 780-40-40</a>
+                    <a class="mobile-note__phone call_phone_1 link-animate" href="tel:74957804040">+7 495 780-40-40</a>
                     <a href="#" class="mobile-note__phone-link btn-callback">Обратный звонок</a>
                     <!-- <span class="mobile-note__sr-link btn-callback-room">Showroom: Studio#8</span> -->
                     <span class="mobile-note__sr-link btn-callback-room">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>

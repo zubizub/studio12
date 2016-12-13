@@ -50,7 +50,7 @@ $APPLICATION->SetTitle("Studio#12");
                                         <span class="count__text">из</span>
                                         <span class="count__number">142</span>
                                     </div>
-                                    <div class="count__desc">Лотов в продаже</div>
+                                    <div class="count__desc">Лотов<br> в продаже</div>
                                 </div>
                                 <div class="count">
                                     <div class="count__numbers">
@@ -62,7 +62,7 @@ $APPLICATION->SetTitle("Studio#12");
                                         <span class="count__number">300</span>
                                         <span class="count__text">м2</span>
                                     </div>
-                                    <div class="count__desc">Площадь лотов</div>
+                                    <div class="count__desc">Площадь<br> лотов</div>
                                 </div>
                                 <div class="count">
                                     <div class="count__numbers">
@@ -72,7 +72,7 @@ $APPLICATION->SetTitle("Studio#12");
                                         </a>
                                         <span class="count__text">млн. руб.</span>
                                     </div>
-                                    <div class="count__desc">Площадь лотов</div>
+                                    <div class="count__desc">Стоимость<br> лотов</div>
                                 </div>
                             </div>
                             <div class="offer">
@@ -119,46 +119,17 @@ $APPLICATION->SetTitle("Studio#12");
             </div>
         </div>
         <div class="general">
-            <div class="general__map">
+            <div class="general__map map-wrapper">
                 <div class="googleStatic currentMap">
                     <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
                 </div>
-
-                <div class="googleMap" style="position: absolute;">
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script>
-                    <div style='overflow:hidden;height:360px;width:750px;'>
-                        <div id='gmap_canvas' style='height:360px;width:750px;'></div>
-                        <style>#gmap_canvas img {
-                            max-width: none !important;
-                            background: none !important
-                        }</style>
-                    </div>
-                    <a href='https://www.add-map.net/'>adding google maps to website</a>
-                    <script type='text/javascript' src=''></script>
-                    <script type='text/javascript'>function init_map() {
-                        var myOptions = {
-                            zoom: 15,
-                            center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
-                            mapTypeId: google.maps.MapTypeId.TERRAIN
-                        };
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                        marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
-                        });
-                        infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
-                        google.maps.event.addListener(marker, 'click', function () {
-                            infowindow.open(map, marker);
-                        });
-                        infowindow.open(map, marker);
-                    }
-                    google.maps.event.addDomListener(window, 'load', init_map);</script>
+                <div class="googleMap">
+                    <div id="gmap_canvas"></div>
+                    <script type='text/javascript'>
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
                 </div>
-
-                <div style="background: #fee333; padding: 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer; color: #000;"
-                     class="toogleMap">#Переключить
-                </div>
-
+                <div class="toggleMap">#Переключить</div>
             </div>
         </div>
     </div><!-- .section--about -->

@@ -163,11 +163,18 @@ $(function () {
             responsive: [{
                 breakpoint: 768,
                 settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    vertical: false
+                }
+            },
+            {
+                breakpoint: 501,
+                settings: {
                     speed: 150,
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    vertical: false,
                     swipe: true,
+                    vertical: false,
                     touchMove: true,
                     infinite: true,
                     autoplay: true,
@@ -333,13 +340,6 @@ $(function () {
     //    });
     //});
 
-    $('.btn-map-get').on('click', function () {
-        $('.popup--map').bPopup({
-            closeClass: 'popup__close'
-        });
-        return false;
-    });
-
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({
             closeClass: 'popup__close'
@@ -382,8 +382,27 @@ $(function () {
         return false;
     });
 
-    $('.toogleMap').click(function () {
-        $('.googleStatic, .googleMap').toggleClass("currentMap");
+    $('.map-wrapper').each(function () {
+        var self = this;
+        $('.toggleMap', this).on('click',  function(){
+            $('.googleStatic, .googleMap', self).toggleClass("currentMap");
+            $('.map-place__link').toggleClass("currentGmaps");
+            return false;
+        });
+    });
+
+    $('.popup--maps').each(function () {
+        $('.map-place__link', this).on('click', function () {
+            $('.toggleMap').trigger('click');
+            return false;
+        });
+    });
+
+    $('.get__maps').on('click', function () {
+        $('.popup--maps').bPopup({
+            closeClass: 'popup__close'
+        });
+        return false;
     });
 
     (function() {
