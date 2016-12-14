@@ -5,15 +5,34 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<div class="popup popup--maps map-wrapper">
+<div class="popup popup--maps map-wrapper" style="display: block">
     <div class="popup__cover">
         <div class="googleStatic currentMap">
             <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
         </div>
         <div class="googleMap">
-            <div id="gmap_canvas"></div>
+            <script>
+                function init_map_popup() {
+                    var myOptions = {
+                        zoom: 15,
+                        center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
+                        mapTypeId: google.maps.MapTypeId.TERRAIN
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas_popup'), myOptions);
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
+                    });
+                    infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+            </script>
+            <div id="gmap_canvas_popup" style="height: 100%;"></div>
             <script type='text/javascript'>
-                google.maps.event.addDomListener(window, 'load', init_map);
+                google.maps.event.addDomListener(window, 'load', init_map_popup);
             </script>
         </div>
         <div class="toggleMap">#Переключить</div>
