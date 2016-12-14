@@ -5,15 +5,99 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<div class="modal popup--map">
+<div class="popup popup--maps map-wrapper" style="display: block">
+    <div class="popup__cover">
+        <div class="googleStatic currentMap">
+            <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
+        </div>
+        <div class="googleMap">
+            <script>
+                function init_map_popup() {
+                    var myOptions = {
+                        zoom: 15,
+                        center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
+                        mapTypeId: google.maps.MapTypeId.TERRAIN
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas_popup'), myOptions);
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
+                    });
+                    infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+            </script>
+            <div id="gmap_canvas_popup" style="height: 100%;"></div>
+            <script type='text/javascript'>
+                google.maps.event.addDomListener(window, 'load', init_map_popup);
+            </script>
+        </div>
+        <div class="toggleMap">#Переключить</div>
+    </div>
     <div class="popup__inner">
-        <img src="<?=SITE_TEMPLATE_PATH?>/dist/img/test-map.jpg" alt="#">
+        <div class="popup__row">
+            <div class="popup__col">
+                <ul class="map-list googleStatic currentMap">
+                    <li class="map-list__item map-list__item--1">
+                        <span>ТЦ "Капитолий"</span>
+                    </li>
+                    <li class="map-list__item map-list__item--2">
+                        <span>Трц «Райкин плаза»</span>
+                    </li>
+                    <li class="map-list__item map-list__item--3">
+                        <span>Театр «Сатирикон»</span>
+                    </li>
+                    <li class="map-list__item map-list__item--4">
+                        <span>«Еврейский музей <br>и центр толерантности»</span>
+                    </li>
+                    <li class="map-list__item map-list__item--5">
+                        <span>World Class фитнес-клуб</span>
+                    </li>
+                    <li class="map-list__item map-list__item--6">
+                        <span>Терминал «Сити-бокс»</span>
+                    </li>
+                    <li class="map-list__item map-list__item--7">
+                        <span>Концертный зал «Планета КВН»</span>
+                    </li>
+                    <li class="map-list__item map-list__item--8">
+                        <span>Храм иконы Нечаяной Радости</span>
+                    </li>
+                </ul>
+                <ul class="map-address googleMap">
+                    <li class="map-address__item">
+                        <div class="map-address__title">Ближайшие автомагистрали:</div>
+                        <div class="map-address__desc">«Сущевский Вал» <br>«Проспект мира»</div>
+                    </li>
+                    <li class="map-address__item">
+                        <div class="map-address__title">Пассажиры общественного<br> транспорта доедут от квартала:</div>
+                        <div class="map-address__desc">5-7 минут до станции<br> метро «Марьина роща»</div>
+                    </li>
+                    <li class="map-address__item">
+                        <div class="map-address__title">за 20-25 минут:</div>
+                        <div class="map-address__desc">до «Рижского» вокзала<br> и «Савеловского» вокзала</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="popup__col">
+                <div class="map-place">
+                    <div class="map-place__title">Место:</div>
+                    <a href="#" class="map-place__link">
+                        <span>12-й проезд</span>
+                        <span>Марьиной Рощи, 8</span>
+                    </a>
+                    <div class="map-place__desc">в непосредственной близости<br> от Третьего транспортного кольца<br> и всего в нескольких минутах езды<br> от Садового кольца.</div>
+                </div>
+            </div>
+        </div>
     </div>
     <button class="popup__close"></button>
 </div>
 
 <div class="popup popup--showroom">
-    <div class="popup__cover">
+    <div class="popup__cover" style="background: url('<?=SITE_TEMPLATE_PATH?>/dist/img/showroom.jpg') no-repeat 0 0;">
         <span class="popup__cover-title">Посетить Showroom</span>
     </div>
     <div class="popup__inner">
@@ -45,7 +129,6 @@ IncludeTemplateLangFile(__FILE__);
     </div>
     <button class="popup__close"></button>
 </div>
-
 
 <div class="gallery-block">
     <button class="gallery-block__close"></button>
@@ -84,7 +167,7 @@ IncludeTemplateLangFile(__FILE__);
     <ul class="top__list">
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Москва, СВАО,</span><br>
-            <span>12-й пр. Марьиной Рощи 8</span>
+            <a href="#" class="top__link link-animate get__maps">12-й пр. Марьиной Рощи 8</a>
         </li>
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">+7 495 780-40-40</span><br>
@@ -152,15 +235,6 @@ IncludeTemplateLangFile(__FILE__);
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/37374330" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
-<script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
-<?if ($APPLICATION->GetCurPage()== '/'): ?>
-<script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
-<? endif; ?>
-   
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

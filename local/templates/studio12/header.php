@@ -15,6 +15,40 @@ IncludeTemplateLangFile(__FILE__);
     <title><?$APPLICATION->ShowTitle()?></title>
     <meta name="description" content="Studio21">
     <!--link(rel='apple-touch-icon', href='apple-touch-icon.png')-->
+    <?$APPLICATION->ShowHead()?>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
+    <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script>
+    <script>
+        function init_map() {
+            var myOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
+            });
+            infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
+            google.maps.event.addListener(marker, 'click', function () {
+                infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+        }
+    </script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
+    <?if ($APPLICATION->GetCurPage()== '/'): ?>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
+    <? endif; ?>
 
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,14 +57,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WP4D8R4');</script>
 <!-- End Google Tag Manager -->
-
-    <?$APPLICATION->ShowHead()?>
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
-    <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
-    <!--<![endif]-->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script>
         (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
     </script>
@@ -53,18 +79,81 @@ __cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
 
 <script type="text/javascript">
     
+
 function callBackComagic (formData) {
+
+  // Top100 (Kraken) Counter
+
+  (function (w, d, c) {
+
+    (w[c] = w[c] || []).push(function() {
+
+        var goals = {
+
+          'goal': 'call'
+
+
+        };
+
+
+        var options = {
+
+            project: 4457067,
+
+            custom_vars: goals
+
+        };
+
+        try {
+
+            w['t4457067'] = new top100(options);
+
+        } catch(e) { }
+
+    });
+
+
+    var n = d.getElementsByTagName("script")[0],
+
+        s = d.createElement("script"),
+
+        f = function () { n.parentNode.insertBefore(s, n); };
+
+    s.type = "text/javascript";
+
+    s.async = true;
+
+    s.src =
+
+        (d.location.protocol == "https:" ? "https:" : "http:") +
+
+        "//st.top100.ru/top100/top100.js";
+
+
+    if (w.opera == "[object Opera]") {
+
+        d.addEventListener("DOMContentLoaded", f, false);
+
+    } else { f(); }
+
+  })(window, document, "_top100q");
+
+  // END Top100 (Kraken) Counter
 
  var obj = {};
         var formData = $(formData).serializeArray();
 
-       obj[formData[0].name]=[formData[0].value]
+       /*obj[formData[0].name]=[formData[0].value]
         //obj['email']='';
         obj[formData[1].name]=[formData[1].value];
         obj['message']=[formData[4].value];
-        
-        /*console.log(formData);
-        console.log(JSON.stringify(obj));*/
+        */
+
+        console.log('addOfflineRequest');
+
+        obj['name']=formData[0].value
+        obj['phone']=formData[1].value;
+        obj['message']=formData[3].value;
 
 
         Comagic.addOfflineRequest(obj);
@@ -97,37 +186,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container__inner">
             <div class="sidebar">
                 <div class="sidebar__inner">
-                    <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.png"></a></div>
+                    <div class="sidebar__header"><a class="side-logo" href="/"><img class="side-logo__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.svg"></a></div>
                     <div class="sidebar__body">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/'): ?>
-                            <span class="menu__link active" href="/">#Главная</span>
-                        <?else:?>
-                            <a class="menu__link link-animate" href="/">#Главная</a>
-                        <? endif; ?>
-                    </li>
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/quarters/'): ?>
-                            <span class="menu__link active" href="/">#ЖИТЬВЛОФТЕ</span>
-                        <?else:?>
-                            <a class="menu__link link-animate" href="/quarters">#ЖИТЬВЛОФТЕ</a>
-                        <? endif; ?>
-                    </li>
-                    <li class="menu__item">
-                        <?if ($APPLICATION->GetCurPage()== '/job/'): ?>
-                            <span class="menu__link active" href="/">#Работавлофте</span>
-                        <?else:?>
-                            <a class="menu__link link-animate" href="/job">#Работавлофте</a>
-                        <? endif; ?>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link link-animate queue__act" href="#">#Выбратьлофт</a>
-                    </li>
-                </ul>
+
+                    <?$APPLICATION->IncludeComponent(
+                     "bitrix:menu",
+                     "mainmenu",
+                     Array(
+                      "ALLOW_MULTI_SELECT" => "N",
+                      "CHILD_MENU_TYPE" => "left",
+                      "DELAY" => "N",
+                      "MAX_LEVEL" => "1",
+                      "MENU_CACHE_GET_VARS" => array(""),
+                      "MENU_CACHE_TIME" => "3600",
+                      "MENU_CACHE_TYPE" => "N",
+                      "MENU_CACHE_USE_GROUPS" => "Y",
+                      "ROOT_MENU_TYPE" => "top",
+                      "USE_EXT" => "Y"
+                     )
+                    );?>
+
                 <div class="mobile-note">
                     <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
-                    <a class="mobile-note__phone call_phone_1" href="tel:74957804040">+7 495 780-40-40</a>
+                    <a class="mobile-note__phone call_phone_1 link-animate" href="tel:74957804040">+7 495 780-40-40</a>
                     <a href="#" class="mobile-note__phone-link btn-callback">Обратный звонок</a>
                     <!-- <span class="mobile-note__sr-link btn-callback-room">Showroom: Studio#8</span> -->
                     <span class="mobile-note__sr-link btn-callback-room">Как проехать в <a href="javascript:void(0);" class="btn-showroom">Showroom</a></span>

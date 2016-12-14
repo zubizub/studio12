@@ -1,15 +1,33 @@
-.googleStatic, .googleMap {
-
-  top: -1000px;
+#gmap_canvas {
+    width: 100%;
+    height: 100%;
 }
 
-.currentMap { 
-top:0px; }
+.googleStatic, .googleMap {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.currentMap {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+}
 
 .btn-showroom {
-  color: #ffe500;
+    color: #ffe500;
 }
-
 
 .gallery-block .loft-types__list .slick-prev {
     left: 85px;
@@ -26,7 +44,6 @@ top:0px; }
     display: none;
 }
 
-
 .popup--callback .mobile-note__phone {
     color: #000;
     font-size: 32px;
@@ -38,38 +55,36 @@ top:0px; }
 }
 
 .general__map {
-  position: relative;
-  height: 19.375rem;
-  overflow: hidden;
+    position: relative;
+    height: 19.375rem;
+    overflow: hidden;
 }
 
 .general__map .googleStatic {
-  height: 19.375rem;
+    height: 19.375rem;
 }
 
 .general__image {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-  .general__map {
-    display: none;
-  }
+    .general__map {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 480px) {
-  .popup--callback .mobile-note__phone {
-      font-size: 48px;
-  }
+    .popup--callback .mobile-note__phone {
+        font-size: 48px;
+    }
 
 }
-
-
 
 .feature__def.quarters-bubble {
     font-size: 53px;
@@ -81,7 +96,7 @@ top:0px; }
 }
 
 .feature {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .lofts-pdf-link {
@@ -89,31 +104,29 @@ top:0px; }
     right: 3%;
     top: 85%;*/
     background-color: #ffe500;
-margin-top: 30px;
+    margin-top: 30px;
+    display: inline-block;
 }
 
 .about-lofts__more.offer__label--desktop:after,
-.lofts-pdf-link  .offer__label--desktop:after {
+.lofts-pdf-link .offer__label--desktop:after {
     background-image: url(../img/arrow-right.png);
 }
 
 .lofts-pdf-link .offer__label {
     color: #000;
-    
+
 }
 
- .offer__plan {
-    
+.offer__plan {
+
     background-color: #fff;
-    
-    
+
 }
 
-a.offer__plan
- {
-    
+a.offer__plan {
+
     color: #000 !important;
-    
 
 }
 
@@ -124,33 +137,167 @@ a.offer__plan
     right: -118px;
     height: 134px;
     color: #fff;
-    
+
 }
 
- 
-.upper { text-transform: uppercase; }
+.upper {
+    text-transform: uppercase;
+}
 
-.fs14 { font-size: 14px; }
+.fs14 {
+    font-size: 14px;
+}
 
-.grey { color: #747474; }
+.grey {
+    color: #747474;
+}
 
-.lh26 { line-height: 26px; }
+.lh26 {
+    line-height: 26px;
+}
 
+.resp-br-dash {
+    display: none;
+}
 
 @media only screen and (max-width: 1000px) {
-  
+
     .lofts-pdf-link .offer__label--desktop {
-      display: block;
+        display: block;
 
-  }
+    }
+
+    .lofts-pdf-link {
+        height: 35px;
+        position: absolute;
+        right: 6%;
+        top: -20px;
+    }
+
+    .concept__head br {
+        display: none;
+    }
+
+    .loft-types__act {
+        max-width: 260px;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    .concept__head br {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .toggleMap {
+        left: 68px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 500px) {
+    .count__number {
+        font-size: -webkit-calc(28px + (100vw - 1200px) * 0.001);
+        font-size: -moz-calc(28px + (100vw - 1200px) * 0.001);
+        font-size: calc(28px + (100vw - 1200px) * 0.001);
+    }
+    .count__text {
+        font-size: -webkit-calc(16px + (100vw - 1200px) * 0.001);
+        font-size: -moz-calc(16px + (100vw - 1200px) * 0.001);
+        font-size: calc(16px + (100vw - 1200px) * 0.001);
+    }
+
+    .count__desc br {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .concept__head br {
+        display: none;
+    }
+
+    .popup__col {
+        float: none;
+        width: 100%;
+    }
+
+    .popup__col:first-child {
+        margin-bottom: 1.875rem;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .about-lofts__subtitle br {
+        display: none;
+    }
+    .loft-types__title {
+        word-wrap: break-word;
+    }
+    .about-lofts__more {
+        line-height: 1.5rem;
+        white-space: normal;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 50px;
+    }
+    .popup__title {
+        line-height: 1;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .lofts-pdf-link {
+        position: static;
+    }
+
+    .sidebar__header {
+        margin-bottom: 2rem;
+    }
+    .offer {
+        width: auto;
+        margin-right: 50px;
+    }
+    .offer__act {
+        height: auto;
+    }
+    .lofts-pdf-link {
+        height: auto;
+    }
+
+    .lots-infographics {
+        margin-right: 68px
+    }
+
+    .loft-types__act {
+        margin-right: 50px;
+    }
+
+    .btn-download {
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .concept__head br {
+        display: block;
+    }
+}
 
 
-  .lofts-pdf-link {
-      width: 185px;
-      height: 35px;
-      position: absolute;
-      right: 6%;
-      top: -20px;
-  }
+@media only screen and (max-width: 400px) {
+    .resp-br-dash {
+        display: inline;
+    }
+    .about-lofts__subtitle br {
+        display: inline;
+    }
+    .count__number {
+        font-size: 38px;
+    }
 
+    .about-lofts__list {
+        font-size: 15px;
+    }
 }
