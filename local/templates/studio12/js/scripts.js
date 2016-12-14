@@ -386,7 +386,7 @@ $(function () {
         var self = this;
         $('.toggleMap', this).on('click',  function(){
             $('.googleStatic, .googleMap', self).toggleClass("currentMap");
-            $('.map-place__link').toggleClass("currentGmaps");
+            $('.map-place__link').toggleClass('currentGmaps');
             return false;
         });
     });
@@ -394,6 +394,7 @@ $(function () {
     $('.popup--maps').each(function () {
         $('.map-place__link', this).on('click', function () {
             $('.toggleMap').trigger('click');
+            $(this).toggleClass('currentGmaps');
             return false;
         });
     });
