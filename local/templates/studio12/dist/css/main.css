@@ -7627,6 +7627,9 @@ a.btn, a.btn:hover {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
     z-index: 500;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
 }
 
@@ -8203,6 +8206,9 @@ a.btn, a.btn:hover {
     vertical-align: middle;
     width: 30px;
     height: 30px;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
     background-size: cover !important;
     margin-right: 15px;
 }
