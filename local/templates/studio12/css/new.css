@@ -306,12 +306,12 @@ a.offer__plan {
 
 /* ANIMATION */
 .anim {
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    -moz-transition: transform 0.5s ease-in-out, -moz-transform 0.5s ease-in-out;
-    -o-transition: transform 0.5s ease-in-out, -o-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -moz-transform 0.5s ease-in-out, -o-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99);
+    transition: -webkit-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99);
+    -moz-transition: transform 0.6s cubic-bezier(0, 0, 0.18, 0.99), -moz-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99);
+    -o-transition: transform 0.6s cubic-bezier(0, 0, 0.18, 0.99), -o-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99);
+    transition: transform 0.6s cubic-bezier(0, 0, 0.18, 0.99);
+    transition: transform 0.6s cubic-bezier(0, 0, 0.18, 0.99), -webkit-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99), -moz-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99), -o-transform 0.6s cubic-bezier(0, 0, 0.18, 0.99);
 }
 .anim--js-left {
     -webkit-transform: translateX(100%);
@@ -334,4 +334,17 @@ a.offer__plan {
     -o-transform: translate(0);
     transform: translate(0);
     opacity: 1;
+}
+
+.anim-dom {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+.anim-dom--run {
+    opacity: 1;
+    visibility: visible;
 }

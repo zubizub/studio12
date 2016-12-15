@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
   <div class="wrapper quarter-page anim anim--js-left">
-	<div class="inner">
+	<div class="inner anim-dom">
 		<div class="head">
 			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Жить</span></span><span class="heading__line"><span class="heading__word invisible">в лофте</span>
 			<div class="feature invisible">
@@ -64,7 +64,7 @@ $APPLICATION->SetTitle("Studio12");
 			
 
 <div class="loft-types anim anim--js-right">
-	<div class="wrapper">
+	<div class="wrapper anim-dom">
 		<div class="inner">
 			<div class="loft-types__inner">
 				
@@ -92,7 +92,7 @@ $APPLICATION->SetTitle("Studio12");
 </div>
 
           <div class="reasons reasons--dark anim anim--js-left">
-            <div class="wrapper">
+            <div class="wrapper anim-dom">
               <div class="inner">
                 <div class="reasons__content">
                   <div class="reasons__title">5 причин #Жить в&nbsp;своем лофте:</div>
@@ -200,7 +200,7 @@ $APPLICATION->SetTitle("Studio12");
 
           <div class="metro-place anim anim--js-right" style="position: relative;">
 
-			  <div class="metro-place__item">
+			  <div class="metro-place__item anim-dom">
 				  <div class="metro-place__slider">
 					  <div class="metro-place__slider-item">
 						  <a href="#" class="queue__act metro-place__link">
@@ -224,7 +224,7 @@ $APPLICATION->SetTitle("Studio12");
 
 
 
-            <div class="metro-place__item map-wrapper" style="position: relative;">
+            <div class="metro-place__item map-wrapper anim-dom" style="position: relative;">
 				<div class="googleStatic currentMap">
 					<img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
 				</div>
@@ -238,7 +238,7 @@ $APPLICATION->SetTitle("Studio12");
             </div>
           </div>
           <div class="about-lofts quarter-page anim anim--js-left">
-            <div class="wrapper">
+            <div class="wrapper anim-dom">
               <div class="inner">
                 <div class="about-lofts__row row">
                   <div class="col-1-3">
