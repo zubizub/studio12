@@ -32,16 +32,14 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 							<span class="loft-types__page-total"><?=$countElements; ?></span></span></div>
 						</div>
 						<button class="loft-types__list-prev"></button>
-						<button class="loft-types__list-next"></button>\
+						<button class="loft-types__list-next"></button>
 						<div class="loft-types__list">
 
 			<? foreach ($arSection as $key => $arItem) { ?>
 			<? //print_r($arItem); ?>
 	
 			
-							<div class="loft-types__item"><img class="loft-types__img" src="<?=$arItem['PICTURE']['SRC'];?>" alt="#">
-								<div class="loft-types__row"></div>
-							</div>	
+							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
 		<? } ?>
 </div>	 
 		</div>	 

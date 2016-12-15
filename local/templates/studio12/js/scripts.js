@@ -39,7 +39,7 @@ $(function () {
             dots: false,
             arrows: false,
             infinite: true,
-            speed: 0,
+            speed: 300,
             slidesToShow: 1,
             adaptiveHeight: false,
             swipe: false,
@@ -274,6 +274,10 @@ $(function () {
         return false;
     });
 
+
+    //$(window).on('load', function(){
+    //
+    //});
     $('[class*=anim--js-]').each(function() {
         var self = this;
         $(this).waypoint(function(direction) {
@@ -285,6 +289,10 @@ $(function () {
             offset: '100%'
         });
     });
+
+    setTimeout(function () {
+        $('.nav-toggle').add('.logo-fix').removeClass('anim');
+    }, 600);
 
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({

@@ -5,7 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<div class="popup popup--maps map-wrapper" style="display: b">
+<div class="popup popup--maps map-wrapper" style="d">
     <div class="popup__cover">
         <div class="googleStatic currentMap">
             <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
@@ -163,7 +163,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div>
 
-<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<? endif; ?><?if ($APPLICATION->GetCurPage()== '/anim/'): ?>anim<? endif; ?>">
+<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<?else:?>anim anim--js-right<? endif; ?>">
     <ul class="top__list">
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Москва, СВАО,</span><br>
@@ -187,17 +187,17 @@ IncludeTemplateLangFile(__FILE__);
         </li>
     </ul>
 </div>
-<button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>" type="button">
+<button class="nav-toggle <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<?else:?>anim anim--js-right<? endif; ?>" type="button">
     <div class="nav-toggle__bar nav-toggle__bar_test"></div>
 </button>
 
 <?if ($APPLICATION->GetCurPage()== '/'): ?>
 <div class="logo-fix fade-animate fade-in"></div>
 <?else:?>
-<a class="logo-fix" href="/"></a>
+<a class="logo-fix anim anim--js-right" href="/"></a>
 <? endif; ?>
 
-<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<? endif; ?>">
+<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<?else:?>anim anim--js-right<? endif; ?>">
     <a class="controls__phone btn-callback" href="#"></a>
     <!--<a class="controls__photos get-gallery-block" href="#"></a>-->
     <!--<a class="controls__queue" href="#"></a>-->

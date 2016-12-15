@@ -1973,9 +1973,9 @@ sub, sup {
 }
 
 @media screen and (max-width: 1899px) {
-    .logo-fix,
-    .nav-toggle,
-    .top,
+    /*.logo-fix,*/
+    /*.nav-toggle,*/
+    /*.top,*/
     .main {
         -webkit-transition: all 0.3s ease !important;
         -o-transition: all 0.3s ease !important;
@@ -1990,9 +1990,9 @@ sub, sup {
 }
 
 @media screen and (max-width: 1000px) {
-    .logo-fix,
-    .nav-toggle,
-    .top,
+    /*.logo-fix,*/
+    /*.nav-toggle,*/
+    /*.top,*/
     .main {
         -webkit-transition: -webkit-transform 0.3s ease;
         transition: -webkit-transform 0.3s ease;
@@ -5215,7 +5215,7 @@ a.btn, a.btn:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 20rem;
     height: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -5231,6 +5231,7 @@ a.btn, a.btn:hover {
 @media screen and (max-width: 1000px) {
     .loft-types__content {
         height: 25rem;
+        right: 0;
         position: relative;
     }
 }
@@ -5262,6 +5263,8 @@ a.btn, a.btn:hover {
     position: relative;
     width: 100%;
     height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .loft-types__img {
@@ -5291,7 +5294,6 @@ a.btn, a.btn:hover {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 200;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -7759,6 +7761,10 @@ a.btn, a.btn:hover {
     height: 100%;
 }
 
+.gallery-block .loft-types__content {
+    right: 300px;
+}
+
 .gallery-block .loft-types__desc {
     background-color: #ffe500;
 }
@@ -7802,12 +7808,11 @@ a.btn, a.btn:hover {
 }
 
 .gallery-block .loft-types__list .slick-prev {
-    left: 60px;
     background: url("../img/arrow-left-2.png") no-repeat 0 0;
 }
 
 .gallery-block .loft-types__list .slick-next {
-    right: 360px;
+    right: 20px;
     background: url("../img/arrow-right-2.png") no-repeat 0 0;
 }
 
@@ -8330,17 +8335,17 @@ a.btn, a.btn:hover {
     color: #ffffff;
 }
 
-.top,
-.logo-fix,
-.nav-toggle {
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: -o-transform 0.3s ease;
-    -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
-    -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
-}
+/*.top,*/
+/*.logo-fix,*/
+/*.nav-toggle {*/
+    /*-webkit-transition: -webkit-transform 0.3s ease;*/
+    /*transition: -webkit-transform 0.3s ease;*/
+    /*-o-transition: -o-transform 0.3s ease;*/
+    /*-moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;*/
+    /*-o-transition: transform 0.3s ease, -o-transform 0.3s ease;*/
+    /*transition: transform 0.3s ease;*/
+    /*transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;*/
+/*}*/
 
 .top__list {
     position: relative;
