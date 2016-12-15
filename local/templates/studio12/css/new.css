@@ -306,15 +306,32 @@ a.offer__plan {
 
 /* ANIMATION */
 .anim {
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out, -moz-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out, -o-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -moz-transform 0.5s ease-in-out, -o-transform 0.5s ease-in-out;
 }
 .anim--js-left {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
 }
 .anim--js-right {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 .anim--run {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
     transform: translate(0);
     opacity: 1;
 }
