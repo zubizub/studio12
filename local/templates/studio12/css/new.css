@@ -327,6 +327,15 @@ a.offer__plan {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+.anim--js-up {
+
+}
+.anim--js-down {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
 .anim--run {
     -webkit-transform: translate(0);
     -moz-transform: translate(0);

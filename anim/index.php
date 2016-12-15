@@ -2,11 +2,15 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
-  <div class="wrapper quarter-page anim anim--js-left">
+  <div class="wrapper quarter-page anim anim--js-down">
 	<div class="inner anim-dom">
 		<div class="head">
-			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Жить</span></span><span class="heading__line"><span class="heading__word invisible">в лофте</span>
-			<div class="feature invisible">
+			<h1 class="heading">
+				<span class="heading__line">
+					<span class="heading__word">Жить</span>
+				</span><span class="heading__line">
+				<span class="heading__word">в лофте</span>
+			<div class="feature">
 				<div class="feature__inner">
 					<div class="feature__top">
 						<div class="feature__item">
