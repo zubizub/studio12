@@ -274,10 +274,6 @@ $(function () {
         return false;
     });
 
-
-    //$(window).on('load', function(){
-    //
-    //});
     $('[class*=anim--js-]').each(function() {
         var self = this;
         $(this).waypoint(function(direction) {
