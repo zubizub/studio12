@@ -8837,3 +8837,52 @@ a.btn, a.btn:hover {
     -o-transition-delay: 0.60s;
     transition-delay: 0.60s;
 }
+
+.not-page {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    margin-top: 90px;
+}
+
+.not-page__title {
+    font-size: 302px;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .not-page__title {
+        font-size: 140px;
+    }
+}
+
+.not-page__lattice {
+    margin-right: -11px;
+}
+
+.not-page__desc {
+    font-size: 28px;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .not-page__desc {
+        font-size: 24px;
+    }
+}
+
+.not-page__desc br {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .not-page__desc br {
+        display: block;
+    }
+}
+
+.not-page__desc a {
+    color: #000000;
+    text-decoration: underline;
+}

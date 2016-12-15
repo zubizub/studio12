@@ -1,12 +1,15 @@
-<?
-include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/urlrewrite.php');
-
-CHTTP::SetStatus("404 Not Found");
-@define("ERROR_404","Y");
-
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-
-$APPLICATION->SetTitle("404 Not Found");
-
-
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Страница не найдена</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/local/templates/studio12/dist/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="not-page">
+        <div class="not-page__title"><span class="not-page__lattice yellow">#</span>404</div>
+        <div class="not-page__desc"><span class="yellow">Перейти на</span> <br><a href="/">Главную страницу</a></div>
+    </div>
+</body>
+</html>
