@@ -5,7 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<div class="popup popup--maps map-wrapper" style="display: block">
+<div class="popup popup--maps map-wrapper" style="display: b">
     <div class="popup__cover">
         <div class="googleStatic currentMap">
             <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
@@ -163,7 +163,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div>
 
-<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<? endif; ?>">
+<div class="top <?if ($APPLICATION->GetCurPage()== '/'): ?>load-top-animate<? endif; ?><?if ($APPLICATION->GetCurPage()== '/anim/'): ?>anim<? endif; ?>">
     <ul class="top__list">
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
             <span class="top__text">Москва, СВАО,</span><br>

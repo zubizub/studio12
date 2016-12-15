@@ -314,31 +314,15 @@ $(function () {
     });
 
 
-    //$(window).on('load', function(){
-    //    $('[class*=js-vertical-anim]').each(function() {
-    //        $(this).waypoint(function(direction) {
-    //            $(this).addClass('animated fadeInUp');
-    //        }.bind(this), {
-    //            offset: '100%'
-    //        });
-    //    });
-    //
-    //    $('.js-left-anim').each(function() {
-    //        $(this).waypoint(function(direction) {
-    //            $(this).addClass('animated fadeInLeft');
-    //        }.bind(this), {
-    //            offset: '100%'
-    //        });
-    //    });
-    //
-    //    $('.js-right-anim').each(function() {
-    //        $(this).waypoint(function(direction) {
-    //            $(this).addClass('animated fadeInRight');
-    //        }.bind(this), {
-    //            offset: '100%'
-    //        });
-    //    });
-    //});
+    $(window).on('load', function(){
+        $('[class*=anim--js-]').each(function() {
+            $(this).waypoint(function(direction) {
+                $(this).addClass('anim--run');
+            }.bind(this), {
+                offset: '100%'
+            });
+        });
+    });
 
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({
@@ -401,7 +385,8 @@ $(function () {
 
     $('.get__maps').on('click', function () {
         $('.popup--maps').bPopup({
-            closeClass: 'popup__close'
+            closeClass: 'popup__close',
+            easing: 'swing'
         });
         return false;
     });

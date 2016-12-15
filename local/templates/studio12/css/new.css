@@ -301,3 +301,20 @@ a.offer__plan {
         font-size: 15px;
     }
 }
+
+
+
+/* ANIMATION */
+.anim {
+    transition: transform 0.5s ease-in-out;
+}
+.anim--js-left {
+    transform: translateX(100%);
+}
+.anim--js-right {
+    transform: translateX(-100%);
+}
+.anim--run {
+    transform: translate(0);
+    opacity: 1;
+}
