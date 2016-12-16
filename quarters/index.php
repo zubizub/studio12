@@ -5,8 +5,12 @@ $APPLICATION->SetTitle("Studio12");
   <div class="wrapper quarter-page">
 	<div class="inner">
 		<div class="head">
-			<h1 class="heading"><span class="heading__line"><span class="heading__word invisible">Жить</span></span><span class="heading__line"><span class="heading__word invisible">в лофте</span>
-			<div class="feature invisible">
+			<h1 class="heading">
+				<span class="heading__line">
+					<span class="heading__word">Жить</span>
+				</span><span class="heading__line">
+				<span class="heading__word">в лофте</span>
+			<div class="feature">
 				<div class="feature__inner">
 					<div class="feature__top">
 						<div class="feature__item">
@@ -224,17 +228,17 @@ $APPLICATION->SetTitle("Studio12");
 
 
 
-            <div class="metro-place__item" style="position: relative;">
-            <div class="googleStatic currentMap">
-            <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="#">
-            </div>
-            	<div class="googleMap" style="position: absolute;"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCbLN91CEPgEXr7cSXbf2UYpKjzFQkD26k'></script><div style='overflow:hidden;height:360px;width:750px;'><div id='gmap_canvas' style='height:360px;width:750px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>adding google maps to website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a90bc41cd9bcbbd99887264c593b8a1dfa64aaf3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(55.79981942842895,37.620396735473605),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.79981942842895,37.620396735473605)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            <div class="metro-place__item map-wrapper" style="position: relative;">
+				<div class="googleStatic currentMap">
+					<img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
 				</div>
-
-					<div style="background: #fee333; padding: 0 15px; position: absolute; display: inline-block; left: 3.5%; bottom: 5%; cursor: pointer; height: 36px; line-height: 36px;" class="toogleMap">#Переключить</div>
-
-
-
+				<div class="googleMap">
+					<div id="gmap_canvas"></div>
+					<script type='text/javascript'>
+						google.maps.event.addDomListener(window, 'load', init_map);
+					</script>
+				</div>
+				<div class="toggleMap">#Переключить</div>
             </div>
           </div>
           <div class="about-lofts quarter-page">
@@ -289,7 +293,7 @@ $APPLICATION->SetTitle("Studio12");
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "about-loft-props-title.php"
 	)
-);?>
+);?></div>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -300,7 +304,7 @@ $APPLICATION->SetTitle("Studio12");
 		"PATH" => "about-loft-props.php"
 	)
 );?>
-</div>
+
 
     <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
@@ -314,7 +318,7 @@ $APPLICATION->SetTitle("Studio12");
 );?>
                   </div>
                   <div class="col-1-3">
-                    <div class="about-lofts__subtitle">Месторасположение <br> квартала:</div>
+                    <div class="about-lofts__subtitle">Место<span class="resp-br-dash"> -<br></span>расположение <br> квартала:</div>
                     <div class="about-lofts__p">Москва, СВАО, <br>12-й пр. Марьиной Рощи 8 <br><small>10 мин. от метро “Марьина Роща”</small></div>
                     <div class="about-lofts__p">
                       <div class="about-lofts__pos">Комплекс апартаментов «Studio 12»  находится вблизи:</div>

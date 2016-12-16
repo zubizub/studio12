@@ -18,169 +18,7 @@ $(function () {
             $(this).addClass('inited');
         });
     }());
-    (function () {
-    }());
-    (function () {
-    }());
-    (function () {
-        var speed = 80, timeout = 100, typeItOptions = {
-            cursor: false,
-            speed: speed,
-            autoStart: true
-        }, $feature = $('.feature'), $heading = $('.heading'), $headingLine = $('.heading__line'), $words = $('.heading__word'), $firstWord = $words.filter(':first'), $lastWord = $words.filter(':last');
-        $heading.height($heading.outerHeight());
-        $firstWord.removeClass('invisible').typeIt($.extend({}, typeItOptions, {
-            callback: function () {
-                $lastWord.removeClass('invisible').typeIt($.extend({}, typeItOptions, {
-                    callback: function () {
-                        setTimeout(function () {
-                            $(window).trigger('resize.heading');
-                            $feature.removeClass('invisible');
-                            $heading.height('auto');
-                        }, timeout);
-                    }
-                }));
-            }
-        }));
-        $(window).on('resize.heading', function () {
-            var rel = Math.round($heading.outerHeight() / $headingLine.outerHeight());
-            if (rel === 1) {
-                $feature.addClass('feature--down');
-            } else {
-                $feature.removeClass('feature--down');
-            }
-        });
-    }());
-    (function () {
-        (function ($) {
-            var reverse = function (value) {
-                return value.split('').reverse().join('');
-            };
-            var defaults = {
-                numberStep: function (now, tween) {
-                    var floored_number = Math.floor(now), target = $(tween.elem);
-                    target.text(floored_number);
-                }
-            };
-            var handle = function (tween) {
-                var elem = tween.elem;
-                if (elem.nodeType && elem.parentNode) {
-                    var handler = elem._animateNumberSetter;
-                    if (!handler) {
-                        handler = defaults.numberStep;
-                    }
-                    handler(tween.now, tween);
-                }
-            };
-            if (!$.Tween || !$.Tween.propHooks) {
-                $.fx.step.number = handle;
-            } else {
-                $.Tween.propHooks.number = {set: handle};
-            }
-            var extract_number_parts = function (separated_number, group_length) {
-                var numbers = separated_number.split('').reverse(), number_parts = [], current_number_part, current_index, q;
-                for (var i = 0, l = Math.ceil(separated_number.length / group_length); i < l; i++) {
-                    current_number_part = '';
-                    for (q = 0; q < group_length; q++) {
-                        current_index = i * group_length + q;
-                        if (current_index === separated_number.length) {
-                            break;
-                        }
-                        current_number_part = current_number_part + numbers[current_index];
-                    }
-                    number_parts.push(current_number_part);
-                }
-                return number_parts;
-            };
-            var remove_precending_zeros = function (number_parts) {
-                var last_index = number_parts.length - 1, last = reverse(number_parts[last_index]);
-                number_parts[last_index] = reverse(parseInt(last, 10).toString());
-                return number_parts;
-            };
-            $.animateNumber = {
-                numberStepFactories: {
-                    /**
-                     * Creates numberStep handler, which appends string to floored animated number on each step.
-                     *
-                     * @example
-                     * // will animate to 100 with "1 %", "2 %", "3 %", ...
-                     * $('#someid').animateNumber({
-       *   number: 100,
-       *   numberStep: $.animateNumber.numberStepFactories.append(' %')
-       * });
-                     *
-                     * @params {String} suffix string to append to animated number
-                     * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
-                     */
-                    append: function (suffix) {
-                        return function (now, tween) {
-                            var floored_number = Math.floor(now), target = $(tween.elem);
-                            target.prop('number', now).text(floored_number + suffix);
-                        };
-                    },
-                    /**
-                     * Creates numberStep handler, which format floored numbers by separating them to groups.
-                     *
-                     * @example
-                     * // will animate with 1 ... 217,980 ... 95,217,980 ... 7,095,217,980
-                     * $('#world-population').animateNumber({
-       *    number: 7095217980,
-       *    numberStep: $.animateNumber.numberStepFactories.separator(',')
-       * });
-                     * @example
-                     * // will animate with 1% ... 217,980% ... 95,217,980% ... 7,095,217,980%
-                     * $('#salesIncrease').animateNumber({
-       *   number: 7095217980,
-       *   numberStep: $.animateNumber.numberStepFactories.separator(',', 3, '%')
-       * });
-                     *
-                     * @params {String} [separator=' '] string to separate number groups
-                     * @params {String} [group_length=3] number group length
-                     * @params {String} [suffix=''] suffix to append to number
-                     * @returns {Function} numberStep-compatible function for use in animateNumber's parameters
-                     */
-                    separator: function (separator, group_length, suffix) {
-                        separator = separator || ' ';
-                        group_length = group_length || 3;
-                        suffix = suffix || '';
-                        return function (now, tween) {
-                            var floored_number = Math.floor(now), separated_number = floored_number.toString(), target = $(tween.elem);
-                            if (separated_number.length > group_length) {
-                                var number_parts = extract_number_parts(separated_number, group_length);
-                                separated_number = remove_precending_zeros(number_parts).join(separator);
-                                separated_number = reverse(separated_number);
-                            }
-                            target.prop('number', now).text(separated_number + suffix);
-                        };
-                    }
-                }
-            };
-            $.fn.animateNumber = function () {
-                var options = arguments[0], settings = $.extend({}, defaults, options), target = $(this), args = [settings];
-                for (var i = 1, l = arguments.length; i < l; i++) {
-                    args.push(arguments[i]);
-                }
-                // needs of custom step function usage
-                if (options.numberStep) {
-                    // assigns custom step functions
-                    var items = this.each(function () {
-                        this._animateNumberSetter = options.numberStep;
-                    });
-                    // cleanup of custom step functions after animation
-                    var generic_complete = settings.complete;
-                    settings.complete = function () {
-                        items.each(function () {
-                            delete this._animateNumberSetter;
-                        });
-                        if (generic_complete) {
-                            generic_complete.apply(this, arguments);
-                        }
-                    };
-                }
-                return target.animate.apply(target, args);
-            };
-        }(jQuery));
-    }());
+
     (function () {
         $('.metro-place__slider').slick({
             dots: false,
@@ -201,7 +39,7 @@ $(function () {
             dots: false,
             arrows: false,
             infinite: true,
-            speed: 0,
+            speed: 300,
             slidesToShow: 1,
             adaptiveHeight: false,
             swipe: false,
@@ -275,13 +113,46 @@ $(function () {
             dots: false,
             infinite: true,
             arrows: false,
-            // speed: 300,
-            // fade: true,
+            swipe: false,
+            touchMove: false,
             autoplay: true,
             autoplaySpeed: 5000,
             slidesToShow: 1,
-            adaptiveHeight: false,
-            touchThreshold: 10
+            adaptiveHeight: false
+        });
+    }());
+    (function () {
+        $('.count-slide').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 3,
+            speed: 0,
+            vertical: true,
+            touchThreshold: 10,
+            swipe: false,
+            touchMove: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    vertical: false
+                }
+            },
+            {
+                breakpoint: 501,
+                settings: {
+                    speed: 150,
+                    slidesToShow: 1,
+                    swipe: true,
+                    vertical: false,
+                    touchMove: true,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 5000
+                }
+            }]
         });
     }());
     $('.section--lofts').each(function () {
@@ -297,7 +168,7 @@ $(function () {
             $(this).text(moreText);
             return false;
         });
-    });    //
+    });
     (function () {
         $('.nav-toggle').on('click', function () {
             var timer;
@@ -360,17 +231,6 @@ $(function () {
         $('.slogan__title').typeIt({
             cursor: false,
             speed: 150,
-            autoStart: true,
-            loop: true,
-            breakLines: false,
-            breakDelay: 300
-        });
-    }());
-
-    (function () {
-        $('.slogan__title').typeIt({
-            cursor: false,
-            speed: 150,
             lifeLike: false,
             autoStart: true,
             loop: true
@@ -416,37 +276,23 @@ $(function () {
 
 
     //$(window).on('load', function(){
-    //    $('[class*=js-vertical-anim]').each(function() {
-    //        $(this).waypoint(function(direction) {
-    //            $(this).addClass('animated fadeInUp');
-    //        }.bind(this), {
-    //            offset: '100%'
-    //        });
-    //    });
     //
-    //    $('.js-left-anim').each(function() {
-    //        $(this).waypoint(function(direction) {
-    //            $(this).addClass('animated fadeInLeft');
-    //        }.bind(this), {
-    //            offset: '100%'
-    //        });
-    //    });
-    //
-    //    $('.js-right-anim').each(function() {
-    //        $(this).waypoint(function(direction) {
-    //            $(this).addClass('animated fadeInRight');
-    //        }.bind(this), {
-    //            offset: '100%'
-    //        });
-    //    });
     //});
-
-    $('.btn-map-get').on('click', function () {
-        $('.popup--map').bPopup({
-            closeClass: 'popup__close'
+    $('[class*=anim--js-]').each(function() {
+        var self = this;
+        $(this).waypoint(function(direction) {
+            $(this).addClass('anim--run');
+            setTimeout(function () {
+                $('.anim-dom', self).addClass('anim-dom--run');
+            }, 500);
+        }.bind(this), {
+            offset: '100%'
         });
-        return false;
     });
+
+    setTimeout(function () {
+        $('.nav-toggle').add('.logo-fix').removeClass('anim');
+    }, 600);
 
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({
@@ -490,8 +336,29 @@ $(function () {
         return false;
     });
 
-    $('.toogleMap').click(function () {
-        $('.googleStatic, .googleMap').toggleClass("currentMap");
+    $('.map-wrapper').each(function () {
+        var self = this;
+        $('.toggleMap', this).on('click',  function(){
+            $('.googleStatic, .googleMap', self).toggleClass("currentMap");
+            $('.map-place__link').toggleClass('currentGmaps');
+            return false;
+        });
+    });
+
+    $('.popup--maps').each(function () {
+        $('.map-place__link', this).on('click', function () {
+            $('.toggleMap').trigger('click');
+            $(this).toggleClass('currentGmaps');
+            return false;
+        });
+    });
+
+    $('.get__maps').on('click', function () {
+        $('.popup--maps').bPopup({
+            closeClass: 'popup__close',
+            easing: 'swing'
+        });
+        return false;
     });
 
     (function() {
@@ -589,7 +456,6 @@ $(function () {
                 setTimeout(function () {
                     $('.house4').addClass('house-fade-in');
                 }, 2000);
-                $('.lots-infographics__number').animateNumber({number: 76});
             }.bind(this), {
                 offset: '160%'
             });

@@ -2,15 +2,14 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
-  <div class="wrapper job-page">
-	<div class="inner">
+  <div class="wrapper quarter-page anim anim--js-down">
+	<div class="inner anim-dom">
 		<div class="head">
 			<h1 class="heading">
 				<span class="heading__line">
-					<span class="heading__word">Работа</span>
-				</span>
-				<span class="heading__line">
-					<span class="heading__word"> в лофте</span>
+					<span class="heading__word">Жить</span>
+				</span><span class="heading__line">
+				<span class="heading__word">в лофте</span>
 			<div class="feature">
 				<div class="feature__inner">
 					<div class="feature__top">
@@ -18,21 +17,9 @@ $APPLICATION->SetTitle("Studio12");
 							<div class="feature__term">
 								 Свой лофт
 							</div>
-							<div class="feature__def">
-								 от 45 м<sup>2</sup>
+							<div class="feature__def quarters-bubble">
+								 от<br>40 м<sup>2</sup>
 							</div>
-						</div>
-					</div>
-					<div class="feature__bottom">
-						<div class="feature__item">
-							<div class="feature__term">
-								 Окупаемость всего<br>
-								 несколько лет
-							</div>
-							<!-- <div class="feature__def">
-								 менее <br>
-								 7 лет!
-							</div> -->
 						</div>
 					</div>
 				</div>
@@ -46,9 +33,8 @@ $APPLICATION->SetTitle("Studio12");
 				<div class="concept__col col-1-3">
 					 <!-- <div class="concept__head">Концепция  квартала #Живи  и <a class="link" href="#">#Работай</a></div> -->
 					<div class="concept__head">
-						 Концепция квартала <a style="color: #ffe500;" class="link link-animate" href="/quarters">#Живи</a> <br>и <span style="color: #ffffff">#Работай</span>
+						 Концепция квартала <span style="color: #ffffff">#Живи</span> <br>и <a style="color: #ffe500;" class="link link-animate" href="/job">#Работай</a>
 					</div>
-					<!-- <a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a> -->
 				</div>
 				<div class="concept__col col-1-3">
 					 <?$APPLICATION->IncludeComponent(
@@ -79,13 +65,15 @@ $APPLICATION->SetTitle("Studio12");
 	</div>
 </div>
 
+			
 
-<div class="loft-types">
-	<div class="wrapper">
+<div class="loft-types anim anim--js-right">
+	<div class="wrapper anim-dom">
 		<div class="inner">
 			<div class="loft-types__inner">
-									
-					<?$APPLICATION->IncludeComponent(
+				
+
+		<?$APPLICATION->IncludeComponent(
 	"bitrix:dw.catalog.categories", 
 	"mini-slider", 
 	array(
@@ -97,21 +85,21 @@ $APPLICATION->SetTitle("Studio12");
 		"LIMIT" => "50",
 		"IBLOCK_TYPE" => "info",
 		"COMPONENT_TEMPLATE" => "mini-slider",
-		"SECTION" => "6"
+		"SECTION" => "9"
 	),
 	false
 );?>
-				
+		
 			</div>
 		</div>
 	</div>
 </div>
 
-          <div class="reasons reasons--dark">
-            <div class="wrapper">
+          <div class="reasons reasons--dark anim anim--js-left">
+            <div class="wrapper anim-dom">
               <div class="inner">
                 <div class="reasons__content">
-                  <div class="reasons__title">5 причин #Работать в&nbsp;своем лофте:</div>
+                  <div class="reasons__title">5 причин #Жить в&nbsp;своем лофте:</div>
                   <div class="reasons__row">
                     <div class="row">
 
@@ -180,7 +168,7 @@ $APPLICATION->SetTitle("Studio12");
 			1 => "",
 		),
 		"SECTION_CODE" => "",
-		"SECTION_ID" => "8",
+		"SECTION_ID" => "7",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
 		"SECTION_USER_FIELDS" => array(
@@ -214,15 +202,14 @@ $APPLICATION->SetTitle("Studio12");
             </div>
           </div>
 
-  
-          <div class="metro-place" style="position: relative;">
+          <div class="metro-place anim anim--js-right" style="position: relative;">
 
-			  <div class="metro-place__item">
+			  <div class="metro-place__item anim-dom">
 				  <div class="metro-place__slider">
 					  <div class="metro-place__slider-item">
 						  <a href="#" class="queue__act metro-place__link">
-							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" alt="#">
-							  <span class="metro-place__desc">#Работать в лофте</span>
+							  <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Girl_12.jpg" alt="#">
+							  <span class="metro-place__desc">#Жить в лофте</span>
 						  </a>
 					</div>
 
@@ -241,60 +228,60 @@ $APPLICATION->SetTitle("Studio12");
 
 
 
-			  <div class="metro-place__item map-wrapper" style="position: relative;">
-				  <div class="googleStatic currentMap">
-					  <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
-				  </div>
-				  <div class="googleMap">
-					  <div id="gmap_canvas"></div>
-					  <script type='text/javascript'>
-						  google.maps.event.addDomListener(window, 'load', init_map);
-					  </script>
-				  </div>
-				  <div class="toggleMap">#Переключить</div>
-			  </div>
+            <div class="metro-place__item map-wrapper anim-dom" style="position: relative;">
+				<div class="googleStatic currentMap">
+					<img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
+				</div>
+				<div class="googleMap">
+					<div id="gmap_canvas"></div>
+					<script type='text/javascript'>
+						google.maps.event.addDomListener(window, 'load', init_map);
+					</script>
+				</div>
+				<div class="toggleMap">#Переключить</div>
+            </div>
           </div>
-          <div class="about-lofts job-page">
-            <div class="wrapper">
+          <div class="about-lofts quarter-page anim anim--js-left">
+            <div class="wrapper anim-dom">
               <div class="inner">
                 <div class="about-lofts__row row">
                   <div class="col-1-3">
-                   	<div class="about-slider-bub">
-					   <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
-						   "bitrix:main.include",
-						   "",
-						   Array(
-						   "AREA_FILE_SHOW" => "file",
-						   "AREA_FILE_SUFFIX" => "inc",
-						   "EDIT_TEMPLATE" => "",
-						   "PATH" => "about-loft-title.php"
-						   )
-						   );?>
-					   </div><div class="about-lofts__demo">
-					   <?$APPLICATION->IncludeComponent(
-					   "bitrix:main.include",
-					   "",
-					   Array(
-					   "AREA_FILE_SHOW" => "file",
-					   "AREA_FILE_SUFFIX" => "inc",
-					   "EDIT_TEMPLATE" => "",
-					   "PATH" => "about-loft-img.php"
-					   )
-					   );?></div>
+					  <div class="about-slider-bub">
+						  <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
+							  "bitrix:main.include",
+							  "",
+							  Array(
+							  "AREA_FILE_SHOW" => "file",
+							  "AREA_FILE_SUFFIX" => "inc",
+							  "EDIT_TEMPLATE" => "",
+							  "PATH" => "about-loft-title.php"
+							  )
+							  );?>
+						  </div><div class="about-lofts__demo">
+						  <?$APPLICATION->IncludeComponent(
+						  "bitrix:main.include",
+						  "",
+						  Array(
+						  "AREA_FILE_SHOW" => "file",
+						  "AREA_FILE_SUFFIX" => "inc",
+						  "EDIT_TEMPLATE" => "",
+						  "PATH" => "about-loft-img.php"
+						  )
+						  );?></div>
 
-					   <div class="about-lofts__access">
-						   <?$APPLICATION->IncludeComponent(
-						   "bitrix:main.include",
-						   "",
-						   Array(
-						   "AREA_FILE_SHOW" => "file",
-						   "AREA_FILE_SUFFIX" => "inc",
-						   "EDIT_TEMPLATE" => "",
-						   "PATH" => "about-loft-desc.php"
-						   )
-						   );?></div>
-				   	</div>
-				   </div>
+						  <div class="about-lofts__access">
+							  <?$APPLICATION->IncludeComponent(
+							  "bitrix:main.include",
+							  "",
+							  Array(
+							  "AREA_FILE_SHOW" => "file",
+							  "AREA_FILE_SUFFIX" => "inc",
+							  "EDIT_TEMPLATE" => "",
+							  "PATH" => "about-loft-desc.php"
+							  )
+							  );?></div>
+					  </div>
+				  </div>
                   <div class="col-1-3">
                     <div class="about-lofts__subtitle">
                     	<?$APPLICATION->IncludeComponent(
@@ -306,7 +293,7 @@ $APPLICATION->SetTitle("Studio12");
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "about-loft-props-title.php"
 	)
-);?>
+);?></div>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -317,8 +304,9 @@ $APPLICATION->SetTitle("Studio12");
 		"PATH" => "about-loft-props.php"
 	)
 );?>
-</div>
-                  <?$APPLICATION->IncludeComponent(
+
+
+    <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
@@ -328,10 +316,9 @@ $APPLICATION->SetTitle("Studio12");
 		"PATH" => "presentation.php"
 	)
 );?>
-
                   </div>
                   <div class="col-1-3">
-                    <div class="about-lofts__subtitle">Месторасположение <br> квартала:</div>
+                    <div class="about-lofts__subtitle">Место<span class="resp-br-dash"> -<br></span>расположение <br> квартала:</div>
                     <div class="about-lofts__p">Москва, СВАО, <br>12-й пр. Марьиной Рощи 8 <br><small>10 мин. от метро “Марьина Роща”</small></div>
                     <div class="about-lofts__p">
                       <div class="about-lofts__pos">Комплекс апартаментов «Studio 12»  находится вблизи:</div>
@@ -368,8 +355,8 @@ $APPLICATION->SetTitle("Studio12");
 
 
          <?$APPLICATION->IncludeComponent(
-	"bitrix:dw.catalog.index",
-	".default",
+	"bitrix:dw.catalog.index", 
+	".default", 
 	array(
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000",
@@ -378,8 +365,11 @@ $APPLICATION->SetTitle("Studio12");
 		"IBLOCK_ID" => "5",
 		"LIMIT" => "50",
 		"IBLOCK_TYPE" => "quarters",
-		"COMPONENT_TEMPLATE" => ".default"
+		"COMPONENT_TEMPLATE" => ".default",
+		"SECTION" => ""
 	),
 	false
 );?>
           <? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+
+     
