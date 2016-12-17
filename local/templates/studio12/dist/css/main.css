@@ -7674,10 +7674,6 @@ a.btn, a.btn:hover {
     font-size: calc(18px + (100vw - 1200px) * 0.005);
 }
 
-.detail__link {
-    display: none !important;
-}
-
 @media screen and (max-width: 1200px) {
 
     .metro-place__desc {

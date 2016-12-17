@@ -379,3 +379,9 @@ a.offer__plan {
     opacity: 1;
     visibility: visible;
 }
+
+.lt-anim {
+    opacity: 0;
+    visibility: hidden;
+    animation: lt-anim 0.5s ease;
+}
