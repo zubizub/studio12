@@ -4248,7 +4248,6 @@ a.btn, a.btn:hover {
 
 .detail {
     overflow: hidden;
-    background-color: #ffffff;
 }
 
 .detail__head {
@@ -6817,12 +6816,8 @@ a.btn, a.btn:hover {
     transform: translateY(-50%) !important;
     margin: auto !important;
 }
-.popup .anim {
-    opacity: 0;
-    visibility: hidden;
-}
 .popup--loft {
-
+    overflow: hidden;
 }
 
 .popup--page {
@@ -6852,6 +6847,7 @@ a.btn, a.btn:hover {
 
 .popup__inner {
     padding: 1.875rem;
+    background: #ffffff;
 }
 
 .popup--loft .popup__inner, .popup--page .popup__inner {
@@ -6871,6 +6867,7 @@ a.btn, a.btn:hover {
 .popup__footer {
     display: table;
     width: 100%;
+    background: #ffe500;
 }
 
 .popup__cell {
@@ -6948,12 +6945,12 @@ a.btn, a.btn:hover {
 }
 
 .popup__cell--callback {
-    background: #ffe500;
     padding: 0 1.25rem;
     /*text-align: center;*/
     white-space: nowrap;
     text-align: left;
     padding-left: 30px;
+    background-color: #ffe500;
 }
 
 @media screen and (max-width: 500px) {

@@ -65,9 +65,12 @@ $.fn.serializeObject = function()
                     .done(function (data) {
                         $('.popup--loft').html(data);
                         $(window).trigger("resize");
-                        $('[class*=anim--js-]').each(function() {
+                        $('.popup [class*=anim--js-]').each(function() {
                             $(this).addClass('anim--run');
                         });
+                        setTimeout(function () {
+                            $('.popup .anim-dom').addClass('anim-dom--run');
+                        }, 500);
                         $('.callback-me').on('click', function () {
                             $('.popup--callback').bPopup({
                                 closeClass: 'popup__close',
@@ -116,6 +119,7 @@ $.fn.serializeObject = function()
                 $('.popup [class*=anim--js-]').each(function() {
                     $(this).removeClass('anim--run');
                 });
+                $('.popup .anim-dom').removeClass('anim-dom--run');
             }
         });
         return false;

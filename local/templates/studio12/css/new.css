@@ -361,7 +361,6 @@ a.offer__plan {
     -o-transform: translate(0);
     transform: translate(0);
     opacity: 1 !important;
-    visibility: visible !important;
 }
 
 .anim-dom {
