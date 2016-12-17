@@ -6621,6 +6621,7 @@ a.btn, a.btn:hover {
     background-color: #e51737;
     position: relative;
     display: block;
+    top: -1px;
 }
 
 .offer__label {
@@ -6628,6 +6629,7 @@ a.btn, a.btn:hover {
     font-size: 1.125rem;
     padding: 0.4375rem 0.625rem;
     position: relative;
+    top: -1px;
     z-index: 1;
 }
 

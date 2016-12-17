@@ -60,22 +60,22 @@ $this->setFrameMode(true);?>
   <? } ?>
     <div class="detail__inner">
       <div class="detail__text">лофт с отдельным входом/двухуровневый</div>
-      <div class="detail__about"><a class="detail__more" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>"><span>Подробнее о предложении</span></a>
-<? if (!$_GET['ELEMENT_ID']) { ?>
-      <!-- <a class="detail__link__" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>" target="_blank">Открыть в новом окне</a> -->
-<? } ?>
-        <div class="detail__hidden">
-          <div class="detail__info">
-            <div class="detail__label">Площадь</div>
-            <div class="detail__value">179,70 м2</div>
-          </div>
-          <div class="detail__info">
-            <div class="detail__label">Подпись</div>
-            <div class="detail__value">Значение</div>
-          </div>
-        </div>
-        
-      </div>
+      <!--<div class="detail__about"><a class="detail__more" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>"><span>Подробнее о предложении</span></a>-->
+<!--<? if (!$_GET['ELEMENT_ID']) { ?>-->
+      <!--&lt;!&ndash; <a class="detail__link__" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>" target="_blank">Открыть в новом окне</a> &ndash;&gt;-->
+<!--<? } ?>-->
+        <!--<div class="detail__hidden">-->
+          <!--<div class="detail__info">-->
+            <!--<div class="detail__label">Площадь</div>-->
+            <!--<div class="detail__value">179,70 м2</div>-->
+          <!--</div>-->
+          <!--<div class="detail__info">-->
+            <!--<div class="detail__label">Подпись</div>-->
+            <!--<div class="detail__value">Значение</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!---->
+      <!--</div>-->
     </div>
   </div>
 <div class="popup__footer">

@@ -39,8 +39,8 @@ $APPLICATION->SetTitle("Studio#12");
                         <div class="info__left">
                             <div class="info__text">Креативный<br> лофт-квартал<br> Studio#12 —<br> это уникальное<br>
                                 пространство<br> на карте<br>
-                                <a href="#" class="info__city-desktop yellow link-animate bold-animate get__maps">Москвы.</a>
-                                <a href="#" class="info__city-mobile yellow link-animate bold-animate scrollToMap">Москвы.</a>
+                                <a href="#" class="info__city-desktop yellow link-animate bold-animate get__maps">Москвы</a>
+                                <a href="#" class="info__city-mobile yellow link-animate bold-animate scrollToMap">Москвы</a>
                             </div>
                         </div>
                         <div class="info__right">

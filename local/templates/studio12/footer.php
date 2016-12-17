@@ -15,15 +15,15 @@ IncludeTemplateLangFile(__FILE__);
                 function init_map_popup() {
                     var myOptions = {
                         zoom: 15,
-                        center: new google.maps.LatLng(55.79981942842895, 37.620396735473605),
+                        center: new google.maps.LatLng(55.805049, 37.618918),
                         mapTypeId: google.maps.MapTypeId.TERRAIN
                     };
                     map = new google.maps.Map(document.getElementById('gmap_canvas_popup'), myOptions);
                     marker = new google.maps.Marker({
                         map: map,
-                        position: new google.maps.LatLng(55.79981942842895, 37.620396735473605)
+                        position: new google.maps.LatLng(55.805049, 37.618918)
                     });
-                    infowindow = new google.maps.InfoWindow({content: '<strong></strong><br>Марьина Роща 21 а<br> Moscow<br>'});
+                    infowindow = new google.maps.InfoWindow({content: '12-й Марьиной Рощи проезд, 8<br> Москва'});
                     google.maps.event.addListener(marker, 'click', function () {
                         infowindow.open(map, marker);
                     });

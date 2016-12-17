@@ -129,7 +129,6 @@ endif;
                             <div class="form__group">
                                 <div class="form__col">
                                     <div class="form__field">
-                                        http://dev12.korovets.ru/quarters/?bitrix_include_areas=Y&clear_cache_session=Y&clear_cache=Y
                                         <input class="form__input" type="text" name="name" placeholder="Как Вас зовут" required>
                                     </div>
                                     <div class="form__field">

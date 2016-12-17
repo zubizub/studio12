@@ -58,13 +58,13 @@
                         <span class="layout__lake house house1">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/lake.svg" alt="">
                         </span>
-                        <span class="layout__vr">
+                        <span class="layout__vr house house4">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/vr.svg" alt="">
                         </span>
-                        <span class="layout__world-class">
+                        <span class="layout__world-class house house3">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/world-class.svg" alt="">
                         </span>
-                        <span class="layout__capit">
+                        <span class="layout__capit house house3">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/capit.svg" alt="">
                         </span>
                     </div>
