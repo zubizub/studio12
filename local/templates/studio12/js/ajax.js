@@ -64,9 +64,11 @@ $.fn.serializeObject = function()
                     })
                     .done(function (data) {
                         $('.popup--loft').html(data);
-
+                        $(window).trigger("resize");
+                        $('[class*=anim--js-]').each(function() {
+                            $(this).addClass('anim--run');
+                        });
                         $('.callback-me').on('click', function () {
-
                             $('.popup--callback').bPopup({
                                 closeClass: 'popup__close',
                                 onOpen: function () {
@@ -94,7 +96,6 @@ $.fn.serializeObject = function()
                             });
                             return false;
                         });
-
                         $('.send_me_email').on('click', function () {
                             $('.popup--email').bPopup({
                                 closeClass: 'popup__close',
@@ -109,41 +110,6 @@ $.fn.serializeObject = function()
                             });
                             return false;
                         });
-
-
-                        $(".photo-gallery").each(function () {
-
-                            $('.photo-gallery__content', this).slick({
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                prevArrow: $('.photo-gallery__prev', this),
-                                nextArrow: $('.photo-gallery__next', this),
-                                arrows: true,
-                                slide: '.photo-gallery__item',
-                                infinite: true
-                                //adaptiveHeight: true,
-                                //responsive: [
-                                //    {
-                                //        breakpoint: 800,
-                                //        settings: {
-                                //            slidesToShow: 1,
-                                //            slidesToScroll: 1,
-                                //            variableWidth: false,
-                                //            centerMode: false,
-                                //            adaptiveHeight: true
-                                //        }
-                                //    }
-                                //]
-                            });
-
-                        });
-
-                        $(window).trigger("resize");
-
-                        $('[class*=anim--js-]').each(function() {
-                            $(this).addClass('anim--run');
-                        });
-
                     });
             },
             onClose: function () {
