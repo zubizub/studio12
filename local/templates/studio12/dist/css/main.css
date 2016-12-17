@@ -4489,6 +4489,10 @@ a.btn, a.btn:hover {
     background-clip: padding-box;
     text-align: center;
     background-color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out 2500ms, visibility 0.3s ease-out 2500ms;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1200px) {

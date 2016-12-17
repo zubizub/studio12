@@ -1,4 +1,17 @@
 $(function () {
+    $('.head').addClass('lt-anim-run');
+
+    $('[class*=anim--js-]').each(function() {
+        var self = this;
+        $(this).waypoint(function(direction) {
+            $(this).addClass('anim--run');
+            setTimeout(function () {
+                $('.anim-dom', self).addClass('anim-dom--run');
+            }, 500);
+        }.bind(this), {
+            offset: '100%'
+        });
+    });
     (function () {
         $('.about-lofts__slider-list').slick({
             dots: true,
@@ -274,26 +287,6 @@ $(function () {
         });
         return false;
     });
-
-
-    //$(window).on('load', function(){
-    //
-    //});
-    $('[class*=anim--js-]').each(function() {
-        var self = this;
-        $(this).waypoint(function(direction) {
-            $(this).addClass('anim--run');
-            setTimeout(function () {
-                $('.anim-dom', self).addClass('anim-dom--run');
-            }, 500);
-        }.bind(this), {
-            offset: '100%'
-        });
-    });
-
-    setTimeout(function () {
-        $('.nav-toggle').add('.logo-fix').removeClass('anim');
-    }, 600);
 
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({

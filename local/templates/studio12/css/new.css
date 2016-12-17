@@ -95,10 +95,6 @@
     margin-bottom: 0.67778em;
 }
 
-.feature {
-    cursor: pointer;
-}
-
 .lofts-pdf-link {
     /*position: absolute;
     right: 3%;
@@ -382,6 +378,47 @@ a.offer__plan {
 
 .lt-anim {
     opacity: 0;
-    visibility: hidden;
-    animation: lt-anim 0.5s ease;
+    transition: opacity 0.3s ease-out;
+}
+.heading__line:nth-child(1) .lt-anim:nth-child(1) {
+    transition-delay: 200ms;
+}
+.heading__line:nth-child(1) .lt-anim:nth-child(2) {
+    transition-delay: 400ms;
+}
+.heading__line:nth-child(1) .lt-anim:nth-child(3) {
+    transition-delay: 600ms;
+}
+.heading__line:nth-child(1) .lt-anim:nth-child(4) {
+    transition-delay: 800ms;
+}
+.heading__line:nth-child(1) .lt-anim:nth-child(5) {
+    transition-delay: 1000ms;
+}
+.heading__line:nth-child(1) .lt-anim:nth-child(6) {
+    transition-delay: 1200ms;
+}
+
+.heading__line:nth-child(2) .lt-anim:nth-child(1) {
+    transition-delay: 1400ms;
+}
+.heading__line:nth-child(2) .lt-anim:nth-child(2) {
+    transition-delay: 1600ms;
+}
+.heading__line:nth-child(2) .lt-anim:nth-child(3) {
+    transition-delay: 1800ms;
+}
+.heading__line:nth-child(2) .lt-anim:nth-child(4) {
+    transition-delay: 2000ms;
+}
+.heading__line:nth-child(2) .lt-anim:nth-child(5) {
+    transition-delay: 2200ms;
+}
+.heading__line:nth-child(2) .lt-anim:nth-child(6) {
+    transition-delay: 2400ms;
+}
+.lt-anim-run .lt-anim,
+.lt-anim-run .feature {
+    opacity: 1;
+    visibility: visible;
 }

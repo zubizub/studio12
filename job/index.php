@@ -7,12 +7,10 @@ $APPLICATION->SetTitle("Studio12");
         <div class="head">
             <h1 class="heading">
                 <div class="heading__line">
-					<div class="heading__word">
-						<span class="lt-anim">Р</span><span class="lt-anim">а</span><span class="lt-anim">б</span><span class="lt-anim">о</span><span class="lt-anim">т</span><span class="lt-anim">а</span>
-					</div>
+					<div class="heading__word"><span class="lt-anim">Р</span><span class="lt-anim">а</span><span class="lt-anim">б</span><span class="lt-anim">о</span><span class="lt-anim">т</span><span class="lt-anim">а</span></div>
                 </div>
 				<div class="heading__line">
-					<div class="heading__word"> в лофте</div>
+					<div class="heading__word"><span class="lt-anim">в</span> <span class="lt-anim">л</span><span class="lt-anim">о</span><span class="lt-anim">ф</span><span class="lt-anim">т</span><span class="lt-anim">е</span></div>
                     <div class="feature">
                         <div class="feature__inner">
                             <div class="feature__top">
