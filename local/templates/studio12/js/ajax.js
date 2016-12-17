@@ -138,14 +138,6 @@ $.fn.serializeObject = function()
                         setTimeout(function () {
                             $('.popup--callback .anim-dom').addClass('anim-dom--run');
                         }, 500);
-                        $('.popup').each(function () {
-                            var self = this;
-                            $('.popup__close', this).on('click', function(){
-                                $('.anim', self).removeClass('anim--run');
-                                $('.anim-dom', self).removeClass('anim-dom--run');
-                                $(this).removeClass('anim-dom--run');
-                            });
-                        });
                         $('#lot').val(lot);
                         $(".js-phone-mask").mask("+7 (999) 999-99-99");
                         $('.form__select').each(function () {
@@ -157,6 +149,10 @@ $.fn.serializeObject = function()
                             });
                         });
                     });
+            },
+            onClose: function() {
+                $('.popup--callback [class*=anim--js-]').removeClass('anim--run');
+                $('.popup--callback .anim-dom').removeClass('anim-dom--run');
             }
         });
         return false;
