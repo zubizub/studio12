@@ -3,18 +3,8 @@ $APPLICATION->SetTitle("Объект");
 ?>
 
 <div class="wrapper lot-page">
-            <div class="lot-page__inner">
-              <div class="header">
-                <div class="header__inner">
-                  <div class="nav">
-                    <div class="nav__inner">
-                      <div class="nav__item nav__item--photos"><span class="nav__item-text"><a class="link nav__link" href="#">Фотографии</a> лофтов</span></div>
-                      <div class="nav__item nav__item--queue"><span class="nav__item-text">1-ая очередь: <a class="link nav__link" href="#">Январь/2017 г.</a></span></div>
-                      <div class="nav__item nav__item--shoowroom"><span class="nav__item-text">Shoowroom: <a class="link nav__link" href="#">Studio#8</a></span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div class="lot-page__inner">
+
 <div class="popup popup--page">
 <?
 $APPLICATION->IncludeComponent("bitrix:catalog.element", "lot-item-static", Array(
@@ -103,18 +93,8 @@ $APPLICATION->IncludeComponent("bitrix:catalog.element", "lot-item-static", Arra
 	false
 );
 ?>
-		
-		</div>
 
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => "",
-		"PATH" => "object-footer.php"
-	)
-);?>
+</div>
+
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -527,14 +527,7 @@ th {
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  * Contribution by Jhony0311
  */
-html.fp-enabled,
-.fp-enabled body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /*Avoid flicker on slides transitions for mobile phones #336 */
-    -webkit-tap-highlight-color: transparent;
-}
+
 
 #superContainer {
     height: 100%;
@@ -1458,6 +1451,10 @@ html {
     font-size: 16px;
 }
 
+html.lot-single {
+    height: 100%;
+}
+
 @media screen and (min-width: 1601px) and (max-width: 1899px) {
     html {
         font-size: 1vw;
@@ -1477,6 +1474,17 @@ body {
     min-width: 320px;
     color: #000;
     background-color: #fff;
+}
+
+.lot-single body {
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+@media screen and (min-width: 1000px) {
+    .lot-single body {
+        padding-top: 64px;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -6818,7 +6826,6 @@ a.btn, a.btn:hover {
     -o-transform: none !important;
     transform: none !important;
     position: relative !important;
-    top: auto !important;
     left: auto !important;
     right: auto !important;
     float: none;

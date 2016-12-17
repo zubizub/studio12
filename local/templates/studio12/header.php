@@ -4,7 +4,7 @@ IncludeTemplateLangFile(__FILE__);
 ?>
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="<?if ($APPLICATION->GetCurPage()== '/object/'): ?>lot-single<? endif; ?>">
 
 <head>
 
