@@ -4492,6 +4492,9 @@ a.btn, a.btn:hover {
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: opacity 0.3s ease-out 2500ms, visibility 0.3s ease-out 2500ms;
+    -moz-transition: opacity 0.3s ease-out 2500ms, visibility 0.3s ease-out 2500ms;
+    -o-transition: opacity 0.3s ease-out 2500ms, visibility 0.3s ease-out 2500ms;
     transition: opacity 0.3s ease-out 2500ms, visibility 0.3s ease-out 2500ms;
 }
 
@@ -5224,6 +5227,8 @@ a.btn, a.btn:hover {
     width: 100%;
     height: 100%;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -5414,6 +5419,9 @@ a.btn, a.btn:hover {
     background: url('../img/arrow-right-yellow.svg') 0 0 no-repeat;
     width: 1.875rem;
     height: 1rem;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
     background-position: 0 0;
     content: '';
@@ -6647,6 +6655,9 @@ a.btn, a.btn:hover {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-image: url(../img/arrow-right-yellow.svg);
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
 }
 
@@ -8301,13 +8312,13 @@ a.btn, a.btn:hover {
 /*.top,*/
 /*.logo-fix,*/
 /*.nav-toggle {*/
-    /*-webkit-transition: -webkit-transform 0.3s ease;*/
-    /*transition: -webkit-transform 0.3s ease;*/
-    /*-o-transition: -o-transform 0.3s ease;*/
-    /*-moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;*/
-    /*-o-transition: transform 0.3s ease, -o-transform 0.3s ease;*/
-    /*transition: transform 0.3s ease;*/
-    /*transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;*/
+/*-webkit-transition: -webkit-transform 0.3s ease;*/
+/*transition: -webkit-transform 0.3s ease;*/
+/*-o-transition: -o-transform 0.3s ease;*/
+/*-moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;*/
+/*-o-transition: transform 0.3s ease, -o-transform 0.3s ease;*/
+/*transition: transform 0.3s ease;*/
+/*transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;*/
 /*}*/
 
 .top__list {

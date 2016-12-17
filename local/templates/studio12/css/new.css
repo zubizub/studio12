@@ -378,43 +378,82 @@ a.offer__plan {
 
 .lt-anim {
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
 }
 .heading__line:nth-child(1) .lt-anim:nth-child(1) {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
     transition-delay: 200ms;
 }
 .heading__line:nth-child(1) .lt-anim:nth-child(2) {
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
     transition-delay: 400ms;
 }
 .heading__line:nth-child(1) .lt-anim:nth-child(3) {
+    -webkit-transition-delay: 600ms;
+    -moz-transition-delay: 600ms;
+    -o-transition-delay: 600ms;
     transition-delay: 600ms;
 }
 .heading__line:nth-child(1) .lt-anim:nth-child(4) {
+    -webkit-transition-delay: 800ms;
+    -moz-transition-delay: 800ms;
+    -o-transition-delay: 800ms;
     transition-delay: 800ms;
 }
 .heading__line:nth-child(1) .lt-anim:nth-child(5) {
+    -webkit-transition-delay: 1000ms;
+    -moz-transition-delay: 1000ms;
+    -o-transition-delay: 1000ms;
     transition-delay: 1000ms;
 }
 .heading__line:nth-child(1) .lt-anim:nth-child(6) {
+    -webkit-transition-delay: 1200ms;
+    -moz-transition-delay: 1200ms;
+    -o-transition-delay: 1200ms;
     transition-delay: 1200ms;
 }
 
 .heading__line:nth-child(2) .lt-anim:nth-child(1) {
+    -webkit-transition-delay: 1400ms;
+    -moz-transition-delay: 1400ms;
+    -o-transition-delay: 1400ms;
     transition-delay: 1400ms;
 }
 .heading__line:nth-child(2) .lt-anim:nth-child(2) {
+    -webkit-transition-delay: 1600ms;
+    -moz-transition-delay: 1600ms;
+    -o-transition-delay: 1600ms;
     transition-delay: 1600ms;
 }
 .heading__line:nth-child(2) .lt-anim:nth-child(3) {
+    -webkit-transition-delay: 1800ms;
+    -moz-transition-delay: 1800ms;
+    -o-transition-delay: 1800ms;
     transition-delay: 1800ms;
 }
 .heading__line:nth-child(2) .lt-anim:nth-child(4) {
+    -webkit-transition-delay: 2000ms;
+    -moz-transition-delay: 2000ms;
+    -o-transition-delay: 2000ms;
     transition-delay: 2000ms;
 }
 .heading__line:nth-child(2) .lt-anim:nth-child(5) {
+    -webkit-transition-delay: 2200ms;
+    -moz-transition-delay: 2200ms;
+    -o-transition-delay: 2200ms;
     transition-delay: 2200ms;
 }
 .heading__line:nth-child(2) .lt-anim:nth-child(6) {
+    -webkit-transition-delay: 2400ms;
+    -moz-transition-delay: 2400ms;
+    -o-transition-delay: 2400ms;
     transition-delay: 2400ms;
 }
 .lt-anim-run .lt-anim,
