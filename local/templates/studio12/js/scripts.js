@@ -145,6 +145,7 @@ $(function () {
                 settings: {
                     speed: 150,
                     slidesToShow: 1,
+                    dots: true,
                     swipe: true,
                     vertical: false,
                     touchMove: true,
@@ -367,6 +368,13 @@ $(function () {
         $('.queue__act, .house1, .feature').click(function () {
             $('html,body').animate({
                     scrollTop: $(".lots").offset().top - topHeight
+                }, 'slow');
+            return false;
+        });
+
+        $('.scrollToMap').click(function () {
+            $('html,body').animate({
+                    scrollTop: $(".map-wrapper").offset().top
                 }, 'slow');
             return false;
         });

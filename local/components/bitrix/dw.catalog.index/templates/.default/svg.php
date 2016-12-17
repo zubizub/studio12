@@ -46,18 +46,27 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="layout__street-1 house house4">
-                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/street-1.svg" alt="">
-                        </a>
-                        <a href="#" class="layout__street-2 house house3">
+                        <span class="layout__street-3 house house2">
+                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/street-3.svg" alt="">
+                        </span>
+                        <span class="layout__street-2 house house3">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/street-2.svg" alt="">
-                        </a>
-                        <a href="#" class="layout__entry house house3">
+                        </span>
+                        <span class="layout__entry house house3">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/entry.svg" alt="">
-                        </a>
-                        <a href="#" class="layout__lake house house1">
+                        </span>
+                        <span class="layout__lake house house1">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/lake.svg" alt="">
-                        </a>
+                        </span>
+                        <span class="layout__vr">
+                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/vr.svg" alt="">
+                        </span>
+                        <span class="layout__world-class">
+                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/world-class.svg" alt="">
+                        </span>
+                        <span class="layout__capit">
+                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/capit.svg" alt="">
+                        </span>
                     </div>
                 </div>
 

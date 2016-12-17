@@ -5,7 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 
 </div></div></div>
 
-<div class="popup popup--maps map-wrapper" style="d">
+<div class="popup popup--maps map-wrapper" style="display: block">
     <div class="popup__cover">
         <div class="googleStatic currentMap">
             <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
@@ -99,6 +99,7 @@ IncludeTemplateLangFile(__FILE__);
 <div class="popup popup--showroom">
     <div class="popup__cover" style="background: url('<?=SITE_TEMPLATE_PATH?>/dist/img/showroom.jpg') no-repeat 0 0;">
         <span class="popup__cover-title">Посетить Showroom</span>
+        <span class="popup__cover-title popup__cover-title--sub">Проезд Аэропорта 8. <span>Лофт-квартал Studio#8</span></span>
     </div>
     <div class="popup__inner">
         <div class="popup__desc">Выберите время для посещения Showroom Studio#8</div>
@@ -170,7 +171,7 @@ IncludeTemplateLangFile(__FILE__);
             <a href="#" class="top__link link-animate get__maps">12-й пр. Марьиной Рощи 8</a>
         </li>
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
-            <span class="top__text">+7 495 780-40-40</span><br>
+            <span class="top__text call_phone_1">+7 495 780-40-40</span><br>
             <a href="#" class="top__link link-animate btn-callback">Обратный звонок</a>
         </li>
         <li class="top__item <?if ($APPLICATION->GetCurPage()== '/'): ?>js-vertical-anim<? endif; ?>">
@@ -197,7 +198,7 @@ IncludeTemplateLangFile(__FILE__);
 <a class="logo-fix anim anim--js-right" href="/"></a>
 <? endif; ?>
 
-<div class="controls controls--our <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<?else:?>anim anim--js-right<? endif; ?>">
+<div class="controls <?if ($APPLICATION->GetCurPage()== '/'): ?>fade-animate fade-in<?else:?>anim anim--js-right<? endif; ?>">
     <a class="controls__phone btn-callback" href="#"></a>
     <!--<a class="controls__photos get-gallery-block" href="#"></a>-->
     <!--<a class="controls__queue" href="#"></a>-->

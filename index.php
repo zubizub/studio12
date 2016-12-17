@@ -35,9 +35,12 @@ $APPLICATION->SetTitle("Studio#12");
             <div class="section__inner">
                 <div class="section__content">
                     <div class="info">
+                        <img class="info__logo" src="<?=SITE_TEMPLATE_PATH?>/dist/img/side-logo.svg">
                         <div class="info__left">
                             <div class="info__text">Креативный<br> лофт-квартал<br> Studio#12 —<br> это уникальное<br>
-                                пространство<br> на карте<br> <span class="yellow">Москвы.</span>
+                                пространство<br> на карте<br>
+                                <a href="#" class="info__city-desktop yellow link-animate bold-animate get__maps">Москвы.</a>
+                                <a href="#" class="info__city-mobile yellow link-animate bold-animate scrollToMap">Москвы.</a>
                             </div>
                         </div>
                         <div class="info__right">

@@ -110,7 +110,7 @@
 
 .about-lofts__more.offer__label--desktop:after,
 .lofts-pdf-link .offer__label--desktop:after {
-    background-image: url(../img/arrow-right.png);
+    background-image: url(../img/arrow-right.svg);
 }
 
 .lofts-pdf-link .offer__label {
@@ -284,6 +284,21 @@ a.offer__plan {
 
     .btn-download {
         margin-right: 50px;
+    }
+
+    .count-slide {
+        height: 74px;
+        overflow: hidden;
+        margin-left: -68px;
+        margin-right: -20px;
+    }
+
+    .count-slide.slick-initialized {
+        height: auto;;
+    }
+
+    .count {
+        padding-left: 68px;
     }
 }
 

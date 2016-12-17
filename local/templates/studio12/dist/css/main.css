@@ -4183,13 +4183,9 @@ a.btn, a.btn:hover {
 }
 
 .controls__phone {
-    background-image: url("../img/phone.png");
-    width: 1.375rem;
-    height: 1.875rem;
-}
-
-.fp-viewing-s-about .controls__phone, .fp-viewing-s-lofts .controls__phone {
-    background-image: url("../img/phone-yellow.png");
+    background-image: url("../img/call.svg");
+    width: 1.9rem;
+    height: 1.9rem;
 }
 
 .controls__place {
@@ -4198,19 +4194,12 @@ a.btn, a.btn:hover {
     height: 2.125rem;
 }
 
-.fp-viewing-s-about .controls__place, .fp-viewing-s-lofts .controls__place {
-    background-image: url("../img/place-yellow.png");
-}
-
 .controls__metro-nav {
     background-image: url("../img/metro-nav.png");
     width: 2rem;
     height: 1.5rem;
 }
 
-.fp-viewing-s-about .controls__metro-nav, .fp-viewing-s-lofts .controls__metro-nav {
-    background-image: url("../img/metro-nav-yellow.png");
-}
 
 .controls__photos {
     background-image: url("../img/photos-purple.png");
@@ -4218,9 +4207,6 @@ a.btn, a.btn:hover {
     height: 29px;
 }
 
-.fp-viewing-s-about .controls__photos, .fp-viewing-s-lofts .controls__photos {
-    background-image: url("../img/photos.png");
-}
 
 .controls__shoowroom {
     background-image: url("../img/shoowroom-purple.png");
@@ -4228,9 +4214,6 @@ a.btn, a.btn:hover {
     height: 31px;
 }
 
-.fp-viewing-s-about .controls__shoowroom, .fp-viewing-s-lofts .controls__shoowroom {
-    background-image: url("../img/shoowroom.png");
-}
 
 .controls__queue {
     background-image: url("../img/queue-purple.png");
@@ -4238,33 +4221,6 @@ a.btn, a.btn:hover {
     height: 32px;
 }
 
-.fp-viewing-s-about .controls__queue, .fp-viewing-s-lofts .controls__queue {
-    background-image: url("../img/queue.png");
-}
-
-.controls_test .controls__phone {
-    background-image: url("../img/phone-yellow.png");
-}
-
-.controls_test .controls__place {
-    background-image: url("../img/place-yellow.png");
-}
-
-.controls_test .controls__metro-nav {
-    background-image: url("../img/metro-nav-yellow.png");
-}
-
-.controls_test .controls__photos {
-    background-image: url("../img/photos.png");
-}
-
-.controls_test .controls__shoowroom {
-    background-image: url("../img/shoowroom.png");
-}
-
-.controls_test .controls__queue {
-    background-image: url("../img/queue.png");
-}
 
 .copyright {
     opacity: 0.5;
@@ -5451,13 +5407,10 @@ a.btn, a.btn:hover {
 }
 
 .loft-types__label:after {
-    background: url('../img/icons-sdc90cfc382.png') 0 0 no-repeat;
+    background: url('../img/arrow-right-yellow.svg') 0 0 no-repeat;
     width: 1.875rem;
     height: 1rem;
-    -moz-background-size: 2.375rem 47.75rem;
-    -o-background-size: 2.375rem 47.75rem;
-    -webkit-background-size: 2.375rem 47.75rem;
-    background-size: 2.375rem 47.75rem;
+    background-size: contain;
     background-position: 0 0;
     content: '';
     display: inline-block;
@@ -6687,7 +6640,8 @@ a.btn, a.btn:hover {
     margin-left: 0.5rem;
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-image: url(../img/arrow-right-yellow.png);
+    background-image: url(../img/arrow-right-yellow.svg);
+    background-size: contain;
 }
 
 .offer__label--mobile {
@@ -7538,8 +7492,20 @@ a.btn, a.btn:hover {
     font-size: 48px;
     position: absolute;
     left: 30px;
-    bottom: 20px;
+    top: 40px;
     line-height: 1;
+}
+
+.popup__cover-title--sub {
+    font-size: 30px;
+    bottom: 20px;
+    top: auto;
+}
+
+.popup__cover-title--sub span {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
 }
 
 .popup--showroom .form__submit {
@@ -8028,11 +7994,6 @@ a.btn, a.btn:hover {
         width: 50px;
         height: 50px;
     }
-
-    .controls__phone {
-        background-image: url("../img/phone-yellow.png");
-    }
-
     .controls__photos {
         background-image: url("../img/photos.png");
     }
@@ -8409,6 +8370,9 @@ a.btn, a.btn:hover {
 .link-animate:hover:after {
     width: 100%;
 }
+.bold-animate:after {
+    height: 3px;
+}
 
 .actions {
     position: absolute;
@@ -8461,6 +8425,12 @@ a.btn, a.btn:hover {
     .section--about .wrapper {
         padding-bottom: 50px;
         padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section--about .wrapper {
+        padding-top: 62px;
     }
 }
 
@@ -8543,9 +8513,16 @@ a.btn, a.btn:hover {
 }
 
 .layout__street-2 {
-    width: 33.7%;
+    width: 29.7%;
     left: 61%;
-    top: 52%;
+    top: 54%;
+    position: absolute;
+}
+
+.layout__street-3 {
+    width: 22%;
+    left: 21%;
+    top: 74%;
     position: absolute;
 }
 
@@ -8563,6 +8540,26 @@ a.btn, a.btn:hover {
     left: 28%;
 }
 
+.layout__vr {
+    width: 7.3%;
+    position: absolute;
+    top: 8%;
+    left: 85%;
+}
+
+.layout__world-class {
+    width: 11.7%;
+    left: 89%;
+    top: 70%;
+    position: absolute;
+}
+
+.layout__capit {
+    width: 14%;
+    position: absolute;
+    left: 95%;
+    top: 78%;
+}
 
 .info {
     color: #ffffff;
@@ -8580,6 +8577,13 @@ a.btn, a.btn:hover {
     clear: both;
 }
 
+.info__logo {
+    width: 165px;
+    height: 83px;
+    margin-bottom: 20px;
+    display: none;
+}
+
 .info__left {
     float: left;
     width: 50%;
@@ -8589,6 +8593,10 @@ a.btn, a.btn:hover {
     float: left;
     width: 50%;
     padding-left: 50px;
+}
+
+.info__city-mobile {
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -8604,6 +8612,17 @@ a.btn, a.btn:hover {
 
     .info__right {
         padding-left: 0;
+    }
+
+    .info__logo {
+        display: block;
+    }
+
+    .info__city-mobile {
+        display: inline-block;
+    }
+    .info__city-desktop {
+        display: none;
     }
 }
 
@@ -8666,6 +8685,34 @@ a.btn, a.btn:hover {
 
 .count__spacing {
     margin-left: 10px;
+}
+
+.count-slide .slick-dots {
+    font-size: 0;
+    margin-left: 68px;
+}
+
+.count-slide .slick-dots li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.count-slide .slick-dots li button {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffe500;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.count-slide .slick-dots li.slick-active button {
+    border: 3px solid #ffffff;
+    background: transparent;
+    width: 13px;
+    height: 13px;
 }
 
 .dep-wrap:after {
