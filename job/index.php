@@ -48,7 +48,7 @@ $APPLICATION->SetTitle("Studio12");
 					<div class="concept__head">
 						 Концепция квартала <a style="color: #ffe500;" class="link link-animate" href="/quarters">#Живи</a> <br>и <span style="color: #ffffff">#Работай</span>
 					</div>
-					<a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a>
+					<!-- <a href="/upload/investors-S12.pdf" class="btn-download" target="_blank">Инвестиционное предложение</a> -->
 				</div>
 				<div class="concept__col col-1-3">
 					 <?$APPLICATION->IncludeComponent(
