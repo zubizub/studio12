@@ -7887,7 +7887,7 @@ a.btn, a.btn:hover {
 }
 
 .mobile-note__phone-link {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
     color: #fee333;
 }

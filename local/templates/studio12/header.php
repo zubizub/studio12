@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="mobile-note">
                     <div class="mobile-note__place">Москва, СВАО,<br>12-й пр. Марьиной Рощи 8<br> м. Марьина Роща</div>
                     <a class="mobile-note__phone call_phone_1 link-animate" href="tel:74957804040">+7 495 780-40-40</a>
-                    <a href="#" class="mobile-note__phone-link btn-callback link-animate">Обратный звонок</a>
+                    <a href="#" class="mobile-note__phone-link btn-callback link-animate">Обратный звонок</a><br>
                     <!-- <span class="mobile-note__sr-link btn-callback-room">Showroom: Studio#8</span> -->
                     <span class="mobile-note__sr-link btn-callback-room">Как проехать в <a href="javascript:void(0);" class="btn-showroom link-animate">Showroom</a></span>
                 </div>
