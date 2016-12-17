@@ -6816,7 +6816,10 @@ a.btn, a.btn:hover {
     transform: translateY(-50%) !important;
     margin: auto !important;
 }
-.popup--loft {
+.popup--loft,
+.popup--maps,
+.popup--showroom,
+.popup--callback {
     overflow: hidden;
 }
 
@@ -6850,8 +6853,16 @@ a.btn, a.btn:hover {
     background: #ffffff;
 }
 
+.popup__in {
+    height: 100%;
+}
+
 .popup--loft .popup__inner, .popup--page .popup__inner {
     padding: 0;
+}
+
+.popup--callback .popup__inner {
+    opacity: 0;
 }
 
 .popup__title {
@@ -7014,6 +7025,7 @@ a.btn, a.btn:hover {
     right: 0;
     background: #ffe500;
     position: absolute;
+    opacity: 0;
 }
 
 .popup__close:before {
@@ -7507,6 +7519,15 @@ a.btn, a.btn:hover {
 
 .popup__cover {
     height: 334px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    background-color: #535359;
+}
+
+.popup__in {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -2,12 +2,12 @@ $(function () {
     $(window).on('load', function(){
         $('.head').addClass('lt-anim-run');
     });
-    $('[class*=anim--js-]').each(function() {
+    $('[class*=anim--js-]:not(.popup__inner):not(.popup__cover )').each(function() {
         var self = this;
         $(this).waypoint(function(direction) {
             $(this).addClass('anim--run');
             setTimeout(function () {
-                $('.anim-dom', self).addClass('anim-dom--run');
+                $('.anim-dom:not(.popup__close)', self).addClass('anim-dom--run');
             }, 500);
         }.bind(this), {
             offset: '100%'
@@ -259,40 +259,18 @@ $(function () {
         }).tiType('Меняй правила <br/> и устанавливай тенденции!').tiPause(1300).tiDelete().tiType('Меняй правила <br/> и взлетай!').tiPause(1500).tiDelete().tiType('Меняй правила <br/> и твори').tiPause(3000).tiDelete().tiType('Меняй правила <br/> и зарабатывай').tiPause(1500).tiDelete();
     }());
 
-
-    $('.btn-callback').on('click', function () {
-
-        $('.popup--callback').bPopup({
-            closeClass: 'popup__close',
-            onOpen: function () {
-                //console.log('callback-me');
-                var action = 'feedbackForm';
-                $.post("/quarters/ajax.php", {action: action})
-                    .done(function (data) {
-                        $('.popup--callback').html(data);
-                        $(".js-phone-mask").mask("+7 (999) 999-99-99");
-
-                        $('.form__select').each(function () {
-                            var $cont = $(this).closest('.form__select-wrap');
-
-                            $(this).select2({
-                                placeholder: 'Не выбран',
-                                dropdownParent: $cont,
-                                minimumResultsForSearch: Infinity
-                            });
-                        });
-                    });
-            }
-
-
-        });
-        return false;
-    });
-
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({
-            closeClass: 'popup__close'
+            closeClass: 'popup__close',
+            onClose: function() {
+                $('.popup--showroom [class*=anim--js-]').removeClass('anim--run');
+                $('.popup--showroom .anim-dom').removeClass('anim-dom--run');
+            }
         });
+        $('.popup--showroom [class*=anim--js-]').addClass('anim--run');
+        setTimeout(function () {
+            $('.popup--showroom .anim-dom').addClass('anim-dom--run');
+        }, 500);
         return false;
     });
 
@@ -312,12 +290,6 @@ $(function () {
         return false;
     });
 
-    $('.btn-callback-room').on('click', function () {
-        $('.popup--showroom').bPopup({
-            closeClass: 'popup__close'
-        });
-        return false;
-    });
 
     $('[data-loft]').on('click', function () {
         return false;
@@ -351,8 +323,15 @@ $(function () {
     $('.get__maps').on('click', function () {
         $('.popup--maps').bPopup({
             closeClass: 'popup__close',
-            easing: 'swing'
+            onClose: function() {
+                $('.popup--maps [class*=anim--js-]').removeClass('anim--run');
+                $('.popup--maps .anim-dom').removeClass('anim-dom--run');
+            }
         });
+        $('.popup--maps [class*=anim--js-]').addClass('anim--run');
+        setTimeout(function () {
+            $('.popup--maps .anim-dom').addClass('anim-dom--run');
+        }, 500);
         return false;
     });
 

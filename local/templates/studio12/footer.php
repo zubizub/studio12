@@ -6,129 +6,137 @@ IncludeTemplateLangFile(__FILE__);
 </div></div></div>
 
 <div class="popup popup--maps map-wrapper" style="display: block">
-    <div class="popup__cover">
-        <div class="googleStatic currentMap">
-            <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
-        </div>
-        <div class="googleMap">
-            <script>
-                function init_map_popup() {
-                    var myOptions = {
-                        zoom: 15,
-                        center: new google.maps.LatLng(55.805049, 37.618918),
-                        mapTypeId: google.maps.MapTypeId.TERRAIN
-                    };
-                    map = new google.maps.Map(document.getElementById('gmap_canvas_popup'), myOptions);
-                    marker = new google.maps.Marker({
-                        map: map,
-                        position: new google.maps.LatLng(55.805049, 37.618918)
-                    });
-                    infowindow = new google.maps.InfoWindow({content: '12-й Марьиной Рощи проезд, 8<br> Москва'});
-                    google.maps.event.addListener(marker, 'click', function () {
-                        infowindow.open(map, marker);
-                    });
-                    infowindow.open(map, marker);
-                }
-            </script>
-            <div id="gmap_canvas_popup" style="height: 100%;"></div>
-            <script type='text/javascript'>
-                google.maps.event.addDomListener(window, 'load', init_map_popup);
-            </script>
-        </div>
-        <div class="toggleMap">#Переключить</div>
-    </div>
-    <div class="popup__inner">
-        <div class="popup__row">
-            <div class="popup__col">
-                <ul class="map-list googleStatic currentMap">
-                    <li class="map-list__item map-list__item--1">
-                        <span>ТЦ "Капитолий"</span>
-                    </li>
-                    <li class="map-list__item map-list__item--2">
-                        <span>Трц «Райкин плаза»</span>
-                    </li>
-                    <li class="map-list__item map-list__item--3">
-                        <span>Театр «Сатирикон»</span>
-                    </li>
-                    <li class="map-list__item map-list__item--4">
-                        <span>«Еврейский музей <br>и центр толерантности»</span>
-                    </li>
-                    <li class="map-list__item map-list__item--5">
-                        <span>World Class фитнес-клуб</span>
-                    </li>
-                    <li class="map-list__item map-list__item--6">
-                        <span>Терминал «Сити-бокс»</span>
-                    </li>
-                    <li class="map-list__item map-list__item--7">
-                        <span>Концертный зал «Планета КВН»</span>
-                    </li>
-                    <li class="map-list__item map-list__item--8">
-                        <span>Храм иконы Нечаяной Радости</span>
-                    </li>
-                </ul>
-                <ul class="map-address googleMap">
-                    <li class="map-address__item">
-                        <div class="map-address__title">Ближайшие автомагистрали:</div>
-                        <div class="map-address__desc">«Сущевский Вал» <br>«Проспект мира»</div>
-                    </li>
-                    <li class="map-address__item">
-                        <div class="map-address__title">Пассажиры общественного<br> транспорта доедут от квартала:</div>
-                        <div class="map-address__desc">5-7 минут до станции<br> метро «Марьина роща»</div>
-                    </li>
-                    <li class="map-address__item">
-                        <div class="map-address__title">за 20-25 минут:</div>
-                        <div class="map-address__desc">до «Рижского» вокзала<br> и «Савеловского» вокзала</div>
-                    </li>
-                </ul>
+    <div class="popup__cover anim anim--js-right">
+        <div class="popup__in anim-dom">
+            <div class="googleStatic currentMap">
+                <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
             </div>
-            <div class="popup__col">
-                <div class="map-place">
-                    <div class="map-place__title">Место:</div>
-                    <a href="#" class="map-place__link">
-                        <span>12-й проезд</span>
-                        <span>Марьиной Рощи, 8</span>
-                    </a>
-                    <div class="map-place__desc">в непосредственной близости<br> от Третьего транспортного кольца<br> и всего в нескольких минутах езды<br> от Садового кольца.</div>
+            <div class="googleMap">
+                <script>
+                    function init_map_popup() {
+                        var myOptions = {
+                            zoom: 15,
+                            center: new google.maps.LatLng(55.805049, 37.618918),
+                            mapTypeId: google.maps.MapTypeId.TERRAIN
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas_popup'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(55.805049, 37.618918)
+                        });
+                        infowindow = new google.maps.InfoWindow({content: '12-й Марьиной Рощи <br>проезд, 8<br> Москва'});
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                </script>
+                <div id="gmap_canvas_popup" style="height: 100%;"></div>
+                <script type='text/javascript'>
+                    google.maps.event.addDomListener(window, 'load', init_map_popup);
+                </script>
+            </div>
+            <div class="toggleMap">#Переключить</div>
+        </div>
+    </div>
+    <div class="popup__inner anim anim--js-left">
+        <div class="popup__in anim-dom">
+            <div class="popup__row">
+                <div class="popup__col">
+                    <ul class="map-list googleStatic currentMap">
+                        <li class="map-list__item map-list__item--1">
+                            <span>ТЦ "Капитолий"</span>
+                        </li>
+                        <li class="map-list__item map-list__item--2">
+                            <span>Трц «Райкин плаза»</span>
+                        </li>
+                        <li class="map-list__item map-list__item--3">
+                            <span>Театр «Сатирикон»</span>
+                        </li>
+                        <li class="map-list__item map-list__item--4">
+                            <span>«Еврейский музей <br>и центр толерантности»</span>
+                        </li>
+                        <li class="map-list__item map-list__item--5">
+                            <span>World Class фитнес-клуб</span>
+                        </li>
+                        <li class="map-list__item map-list__item--6">
+                            <span>Терминал «Сити-бокс»</span>
+                        </li>
+                        <li class="map-list__item map-list__item--7">
+                            <span>Концертный зал «Планета КВН»</span>
+                        </li>
+                        <li class="map-list__item map-list__item--8">
+                            <span>Храм иконы Нечаяной Радости</span>
+                        </li>
+                    </ul>
+                    <ul class="map-address googleMap">
+                        <li class="map-address__item">
+                            <div class="map-address__title">Ближайшие автомагистрали:</div>
+                            <div class="map-address__desc">«Сущевский Вал» <br>«Проспект мира»</div>
+                        </li>
+                        <li class="map-address__item">
+                            <div class="map-address__title">Пассажиры общественного<br> транспорта доедут от квартала:</div>
+                            <div class="map-address__desc">5-7 минут до станции<br> метро «Марьина роща»</div>
+                        </li>
+                        <li class="map-address__item">
+                            <div class="map-address__title">за 20-25 минут:</div>
+                            <div class="map-address__desc">до «Рижского» вокзала<br> и «Савеловского» вокзала</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup__col">
+                    <div class="map-place">
+                        <div class="map-place__title">Место:</div>
+                        <a href="#" class="map-place__link">
+                            <span>12-й проезд</span>
+                            <span>Марьиной Рощи, 8</span>
+                        </a>
+                        <div class="map-place__desc">в непосредственной близости<br> от Третьего транспортного кольца<br> и всего в нескольких минутах езды<br> от Садового кольца.</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <button class="popup__close"></button>
+    <button class="popup__close anim-dom"></button>
 </div>
 
 <div class="popup popup--showroom">
-    <div class="popup__cover" style="background: url('<?=SITE_TEMPLATE_PATH?>/dist/img/showroom.jpg') no-repeat 0 0;">
-        <span class="popup__cover-title">Посетить Showroom</span>
-        <span class="popup__cover-title popup__cover-title--sub">Проезд Аэропорта 8. <span>Лофт-квартал Studio#8</span></span>
+    <div class="popup__cover anim anim--js-right">
+        <div class="popup__in anim-dom" style="background: url('<?=SITE_TEMPLATE_PATH?>/dist/img/showroom.jpg') no-repeat 0 0;">
+            <span class="popup__cover-title">Посетить Showroom</span>
+            <span class="popup__cover-title popup__cover-title--sub">Проезд Аэропорта 8. <span>Лофт-квартал Studio#8</span></span>
+        </div>
     </div>
-    <div class="popup__inner">
-        <div class="popup__desc">Выберите время для посещения Showroom Studio#8</div>
-        <form class="form" id="callbackFormShowRoom" action="">
-            <div class="form__group">
-                <div class="form__col">
-                    <div class="form__field">
-                        <input class="form__input" type="text" name="name" placeholder="Как Вас зовут" required>
+    <div class="popup__inner anim anim--js-left">
+        <div class="popup__in anim-dom">
+            <div class="popup__desc">Выберите время для посещения Showroom Studio#8</div>
+            <form class="form" id="callbackFormShowRoom" action="">
+                <div class="form__group">
+                    <div class="form__col">
+                        <div class="form__field">
+                            <input class="form__input" type="text" name="name" placeholder="Как Вас зовут" required>
+                        </div>
+                        <div class="form__field">
+                            <input class="form__input js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form__field">
+                            <input class="form__input" type="email" name="email" placeholder="Введите ваш Email" required>
+                        </div>
                     </div>
-                    <div class="form__field">
-                        <input class="form__input js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
-                    </div>
-                    <div class="form__field">
-                        <input class="form__input" type="email" name="email" placeholder="Введите ваш Email" required>
+                    <div class="form__col">
+                        <div class="form__field">
+                            <textarea class="form__textarea" name="comments" placeholder="Комментарий" required></textarea>
+                        </div>
+                        <div class="form__field">
+                            <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить"
+                                   onClick="callBackComagic($('#callbackFormShowRoom'));">
+                        </div>
                     </div>
                 </div>
-                <div class="form__col">
-                    <div class="form__field">
-                        <textarea class="form__textarea" name="comments" placeholder="Комментарий" required></textarea>
-                    </div>
-                    <div class="form__field">
-                        <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить" 
-                        onClick="callBackComagic($('#callbackFormShowRoom'));">
-                    </div>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-    <button class="popup__close"></button>
+    <button class="popup__close anim-dom"></button>
 </div>
 
 <div class="gallery-block">

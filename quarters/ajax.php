@@ -97,100 +97,102 @@
   case 'feedbackForm':?>
     
 
-<div class="popup__inner">
-                    <div class="mobile-note">
+<div class="popup__inner anim anim--js-right">
+                    <div class="popup__in anim-dom">
+                      <div class="mobile-note">
                         <a href="tel:74957804040" class="mobile-note__phone call_phone_1">+7 495 780-40-40</a>
-                    </div>
-                    <div class="popup__title">Обратный звонок</div>
-                    <div class="popup__desc">Укажите свой контактный телефон, и наш специалист свяжется с вами в удобное для вас время.</div>
-                    <form class="form" id="callbackForm" action="#">
-                      <div class="form__group">
-                        <div class="form__col">
-                          <div class="form__field">
-                            <input class="form__input" type="text" name="name" placeholder="Как Вас зовут" required>
-                          </div>
-                          <div class="form__field">
-                            <input class="form__input js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
-                          </div>
-                          <div class="form__group form__group--inner">
-                            <div class="form__col">
-                              <div class="form__field form__select-wrap">
-                                <select class="form__select" name="fromClock" data-placeholder="С" required>
-                                  <option value=""></option>
-                                  <option value="0:00">0:00</option>
-                                  <option value="1:00">1:00</option>
-                                  <option value="2:00">2:00</option>
-                                  <option value="3:00">3:00</option>
-                                  <option value="4:00">4:00</option>
-                                  <option value="5:00">5:00</option>
-                                  <option value="6:00">6:00</option>
-                                  <option value="7:00">7:00</option>
-                                  <option value="8:00">8:00</option>
-                                  <option value="9:00">9:00</option>
-                                  <option value="10:00">10:00</option>
-                                  <option value="11:00">11:00</option>
-                                  <option value="12:00">12:00</option>
-                                  <option value="13:00">13:00</option>
-                                  <option value="14:00">14:00</option>
-                                  <option value="15:00">15:00</option>
-                                  <option value="16:00">16:00</option>
-                                  <option value="17:00">17:00</option>
-                                  <option value="18:00">18:00</option>
-                                  <option value="19:00">19:00</option>
-                                  <option value="20:00">20:00</option>
-                                  <option value="21:00">21:00</option>
-                                  <option value="22:00">22:00</option>
-                                  <option value="23:00">23:00</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="form__col">
-                              <div class="form__field form__select-wrap">
-                                <select class="form__select" name="toClock" data-placeholder="До" required>
-                                  <option value=""></option>
-                                  <option value="0:00">0:00</option>
-                                  <option value="1:00">1:00</option>
-                                  <option value="2:00">2:00</option>
-                                  <option value="3:00">3:00</option>
-                                  <option value="4:00">4:00</option>
-                                  <option value="5:00">5:00</option>
-                                  <option value="6:00">6:00</option>
-                                  <option value="7:00">7:00</option>
-                                  <option value="8:00">8:00</option>
-                                  <option value="9:00">9:00</option>
-                                  <option value="10:00">10:00</option>
-                                  <option value="11:00">11:00</option>
-                                  <option value="12:00">12:00</option>
-                                  <option value="13:00">13:00</option>
-                                  <option value="14:00">14:00</option>
-                                  <option value="15:00">15:00</option>
-                                  <option value="16:00">16:00</option>
-                                  <option value="17:00">17:00</option>
-                                  <option value="18:00">18:00</option>
-                                  <option value="19:00">19:00</option>
-                                  <option value="20:00">20:00</option>
-                                  <option value="21:00">21:00</option>
-                                  <option value="22:00">22:00</option>
-                                  <option value="23:00">23:00</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form__col">
-                          <div class="form__field">
-                            <textarea class="form__textarea" name="comments" placeholder="Комментарий" required></textarea>
-                          </div>
-                          <div class="form__field">
-                            <input type="hidden" name="lot" value="" id="lot">
-                            <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить" 
-                            onClick="callBackComagic($('#callbackForm'));">
-                          </div>
-                        </div>
                       </div>
-                    </form>
-                  </div>
-                  <button class="popup__close"></button>
+                      <div class="popup__title">Обратный звонок</div>
+                      <div class="popup__desc">Укажите свой контактный телефон, и наш специалист свяжется с вами в удобное для вас время.</div>
+                      <form class="form" id="callbackForm" action="#">
+                        <div class="form__group">
+                          <div class="form__col">
+                            <div class="form__field">
+                              <input class="form__input" type="text" name="name" placeholder="Как Вас зовут" required>
+                            </div>
+                            <div class="form__field">
+                              <input class="form__input js-phone-mask" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form__group form__group--inner">
+                              <div class="form__col">
+                                <div class="form__field form__select-wrap">
+                                  <select class="form__select" name="fromClock" data-placeholder="С" required>
+                                    <option value=""></option>
+                                    <option value="0:00">0:00</option>
+                                    <option value="1:00">1:00</option>
+                                    <option value="2:00">2:00</option>
+                                    <option value="3:00">3:00</option>
+                                    <option value="4:00">4:00</option>
+                                    <option value="5:00">5:00</option>
+                                    <option value="6:00">6:00</option>
+                                    <option value="7:00">7:00</option>
+                                    <option value="8:00">8:00</option>
+                                    <option value="9:00">9:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form__col">
+                                <div class="form__field form__select-wrap">
+                                  <select class="form__select" name="toClock" data-placeholder="До" required>
+                                    <option value=""></option>
+                                    <option value="0:00">0:00</option>
+                                    <option value="1:00">1:00</option>
+                                    <option value="2:00">2:00</option>
+                                    <option value="3:00">3:00</option>
+                                    <option value="4:00">4:00</option>
+                                    <option value="5:00">5:00</option>
+                                    <option value="6:00">6:00</option>
+                                    <option value="7:00">7:00</option>
+                                    <option value="8:00">8:00</option>
+                                    <option value="9:00">9:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="23:00">23:00</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form__col">
+                            <div class="form__field">
+                              <textarea class="form__textarea" name="comments" placeholder="Комментарий" required></textarea>
+                            </div>
+                            <div class="form__field">
+                              <input type="hidden" name="lot" value="" id="lot">
+                              <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить"
+                                     onClick="callBackComagic($('#callbackForm'));">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    </div>
+<button class="popup__close anim-dom"></button>
 
     <?break;
 

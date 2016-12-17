@@ -65,27 +65,27 @@ $.fn.serializeObject = function()
                     .done(function (data) {
                         $('.popup--loft').html(data);
                         $(window).trigger("resize");
-                        $('.popup [class*=anim--js-]').each(function() {
-                            $(this).addClass('anim--run');
-                        });
+                        $('.popup--loft [class*=anim--js-]').addClass('anim--run');
                         setTimeout(function () {
-                            $('.popup .anim-dom').addClass('anim-dom--run');
+                            $('.popup--loft .anim-dom').addClass('anim-dom--run');
                         }, 500);
                         $('.callback-me').on('click', function () {
                             $('.popup--callback').bPopup({
                                 closeClass: 'popup__close',
                                 onOpen: function () {
-                                    //console.log('callback-me');
                                     var action = 'feedbackForm';
                                     $.post("/quarters/ajax.php", {lot: lot, action: action})
                                         .done(function (data) {
                                             $('.popup--callback').html(data);
+                                            $(window).trigger("resize");
+                                            $('.popup--callback [class*=anim--js-]').addClass('anim--run');
+                                            setTimeout(function () {
+                                                $('.popup--callback .anim-dom').addClass('anim-dom--run');
+                                            }, 500);
                                             $('#lot').val(lot);
                                             $(".js-phone-mask").mask("+7 (999) 999-99-99");
-
                                             $('.form__select').each(function () {
                                                 var $cont = $(this).closest('.form__select-wrap');
-
                                                 $(this).select2({
                                                     placeholder: 'Не выбран',
                                                     dropdownParent: $cont,
@@ -93,9 +93,11 @@ $.fn.serializeObject = function()
                                                 });
                                             });
                                         });
+                                },
+                                onClose: function() {
+                                    $('.popup--callback [class*=anim--js-]').removeClass('anim--run');
+                                    $('.popup--callback .anim-dom').removeClass('anim-dom--run');
                                 }
-
-
                             });
                             return false;
                         });
@@ -115,11 +117,46 @@ $.fn.serializeObject = function()
                         });
                     });
             },
-            onClose: function () {
-                $('.popup [class*=anim--js-]').each(function() {
-                    $(this).removeClass('anim--run');
-                });
-                $('.popup .anim-dom').removeClass('anim-dom--run');
+            onClose: function() {
+                $('.popup--loft [class*=anim--js-]').removeClass('anim--run');
+                $('.popup--loft .anim-dom').removeClass('anim-dom--run');
+            }
+        });
+        return false;
+    });
+
+    $('.btn-callback').on('click', function () {
+        $('.popup--callback').bPopup({
+            closeClass: 'popup__close',
+            onOpen: function () {
+                var action = 'feedbackForm';
+                $.post("/quarters/ajax.php", {action: action})
+                    .done(function (data) {
+                        $('.popup--callback').html(data);
+                        $(window).trigger("resize");
+                        $('.popup--callback [class*=anim--js-]').addClass('anim--run');
+                        setTimeout(function () {
+                            $('.popup--callback .anim-dom').addClass('anim-dom--run');
+                        }, 500);
+                        $('.popup').each(function () {
+                            var self = this;
+                            $('.popup__close', this).on('click', function(){
+                                $('.anim', self).removeClass('anim--run');
+                                $('.anim-dom', self).removeClass('anim-dom--run');
+                                $(this).removeClass('anim-dom--run');
+                            });
+                        });
+                        $('#lot').val(lot);
+                        $(".js-phone-mask").mask("+7 (999) 999-99-99");
+                        $('.form__select').each(function () {
+                            var $cont = $(this).closest('.form__select-wrap');
+                            $(this).select2({
+                                placeholder: 'Не выбран',
+                                dropdownParent: $cont,
+                                minimumResultsForSearch: Infinity
+                            });
+                        });
+                    });
             }
         });
         return false;
