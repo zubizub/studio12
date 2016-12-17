@@ -58,25 +58,12 @@ $.fn.serializeObject = function()
             followSpeed: 100,
             onOpen: function () {
 
-
                 $.post("/quarters/ajax.php", {
                         ELEMENT_ID: el,
                         action: action
                     })
                     .done(function (data) {
                         $('.popup--loft').html(data);
-                        $(window).trigger("resize");
-                        $('.detail').each(function () {
-                            var self = this,
-                                $box = $('.detail__about', self),
-                                $hidden = $('.detail__hidden', self),
-                                $more = $('.detail__more', self);
-                            $more.on('click', function () {
-                                $box.toggleClass('is-open');
-                                $hidden.slideToggle(150);
-                                return false;
-                            });
-                        });
 
                         $('.callback-me').on('click', function () {
 
@@ -153,7 +140,16 @@ $.fn.serializeObject = function()
 
                         $(window).trigger("resize");
 
+                        $('[class*=anim--js-]').each(function() {
+                            $(this).addClass('anim--run');
+                        });
+
                     });
+            },
+            onClose: function () {
+                $('.popup [class*=anim--js-]').each(function() {
+                    $(this).removeClass('anim--run');
+                });
             }
         });
         return false;

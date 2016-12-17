@@ -360,7 +360,8 @@ a.offer__plan {
     -ms-transform: translate(0);
     -o-transform: translate(0);
     transform: translate(0);
-    opacity: 1;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .anim-dom {
