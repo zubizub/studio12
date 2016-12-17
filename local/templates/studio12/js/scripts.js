@@ -1,6 +1,7 @@
 $(function () {
-    $('.head').addClass('lt-anim-run');
-
+    $(window).on('load', function(){
+        $('.head').addClass('lt-anim-run');
+    });
     $('[class*=anim--js-]').each(function() {
         var self = this;
         $(this).waypoint(function(direction) {
