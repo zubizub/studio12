@@ -97,8 +97,8 @@
   case 'feedbackForm':?>
     
 
-<div class="popup__inner anim anim--js-right">
-                    <div class="popup__in anim-dom">
+<div class="popup__inner popup-an popup-an--js-right">
+                    <div class="popup__in popup-an-dom">
                       <div class="mobile-note">
                         <a href="tel:74957804040" class="mobile-note__phone call_phone_1">+7 495 780-40-40</a>
                       </div>
@@ -191,8 +191,8 @@
                         </div>
                       </form>
                     </div>
+  <button class="popup__close popup-an-dom"></button>
                     </div>
-<button class="popup__close anim-dom"></button>
 
     <?break;
 

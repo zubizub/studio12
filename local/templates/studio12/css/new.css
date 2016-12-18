@@ -324,12 +324,14 @@ a.offer__plan {
 
 
 /* ANIMATION */
-.anim {
+.anim,
+.popup-an {
     -webkit-transition: all 0.6s cubic-bezier(0, 0, 0.18, 0.99);
     -moz-transition: all 0.6s cubic-bezier(0, 0, 0.18, 0.99);
     -o-transition: all 0.6s cubic-bezier(0, 0, 0.18, 0.99);
     transition: all 0.6s cubic-bezier(0, 0, 0.18, 0.99);
 }
+.popup-an--js-left,
 .anim--js-left {
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -337,6 +339,7 @@ a.offer__plan {
     -o-transform: translateX(100%);
     transform: translateX(100%);
 }
+.popup-an--js-right,
 .anim--js-right {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -347,6 +350,7 @@ a.offer__plan {
 .anim--js-up {
 
 }
+.popup-an--js-down,
 .anim--js-down {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -354,6 +358,7 @@ a.offer__plan {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
 }
+.popup-an--run,
 .anim--run {
     -webkit-transform: translate(0);
     -moz-transform: translate(0);
@@ -363,6 +368,7 @@ a.offer__plan {
     opacity: 1 !important;
 }
 
+.popup-an-dom,
 .anim-dom {
     opacity: 0;
     visibility: hidden;
@@ -371,6 +377,7 @@ a.offer__plan {
     -o-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
     transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
+.popup-an-dom--run,
 .anim-dom--run {
     opacity: 1;
     visibility: visible;

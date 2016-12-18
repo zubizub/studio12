@@ -65,9 +65,9 @@ $.fn.serializeObject = function()
                     .done(function (data) {
                         $('.popup--loft').html(data);
                         $(window).trigger("resize");
-                        $('.popup--loft [class*=anim--js-]').addClass('anim--run');
+                        $('.popup--loft [class*=popup-an--js-]').addClass('popup-an--run');
                         setTimeout(function () {
-                            $('.popup--loft .anim-dom').addClass('anim-dom--run');
+                            $('.popup--loft .popup-an-dom').addClass('popup-an-dom--run');
                         }, 500);
                         $('.callback-me').on('click', function () {
                             $('.popup--callback').bPopup({
@@ -78,9 +78,9 @@ $.fn.serializeObject = function()
                                         .done(function (data) {
                                             $('.popup--callback').html(data);
                                             $(window).trigger("resize");
-                                            $('.popup--callback [class*=anim--js-]').addClass('anim--run');
+                                            $('.popup--callback [class*=popup-an--js-]').addClass('popup-an--run');
                                             setTimeout(function () {
-                                                $('.popup--callback .anim-dom').addClass('anim-dom--run');
+                                                $('.popup--callback .popup-an-dom').addClass('popup-an-dom--run');
                                             }, 500);
                                             $('#lot').val(lot);
                                             $(".js-phone-mask").mask("+7 (999) 999-99-99");
@@ -95,8 +95,8 @@ $.fn.serializeObject = function()
                                         });
                                 },
                                 onClose: function() {
-                                    $('.popup--callback [class*=anim--js-]').removeClass('anim--run');
-                                    $('.popup--callback .anim-dom').removeClass('anim-dom--run');
+                                    $('.popup--callback [class*=popup-an--js-]').removeClass('popup-an--run');
+                                    $('.popup--callback .popup-an-dom').removeClass('popup-an-dom--run');
                                 }
                             });
                             return false;
@@ -118,8 +118,8 @@ $.fn.serializeObject = function()
                     });
             },
             onClose: function() {
-                $('.popup--loft [class*=anim--js-]').removeClass('anim--run');
-                $('.popup--loft .anim-dom').removeClass('anim-dom--run');
+                $('.popup--loft [class*=popup-an--js-]').removeClass('popup-an--run');
+                $('.popup--loft .popup-an-dom').removeClass('popup-an-dom--run');
             }
         });
         return false;
@@ -134,9 +134,9 @@ $.fn.serializeObject = function()
                     .done(function (data) {
                         $('.popup--callback').html(data);
                         $(window).trigger("resize");
-                        $('.popup--callback [class*=anim--js-]').addClass('anim--run');
+                        $('.popup--callback [class*=popup-an--js-]').addClass('popup-an--run');
                         setTimeout(function () {
-                            $('.popup--callback .anim-dom').addClass('anim-dom--run');
+                            $('.popup--callback .popup-an-dom').addClass('popup-an-dom--run');
                         }, 500);
                         $('#lot').val(lot);
                         $(".js-phone-mask").mask("+7 (999) 999-99-99");
@@ -151,8 +151,8 @@ $.fn.serializeObject = function()
                     });
             },
             onClose: function() {
-                $('.popup--callback [class*=anim--js-]').removeClass('anim--run');
-                $('.popup--callback .anim-dom').removeClass('anim-dom--run');
+                $('.popup--callback [class*=popup-an--js-]').removeClass('popup-an--run');
+                $('.popup--callback .popup-an-dom').removeClass('popup-an-dom--run');
             }
         });
         return false;

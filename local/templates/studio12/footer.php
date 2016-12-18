@@ -6,8 +6,8 @@ IncludeTemplateLangFile(__FILE__);
 </div></div></div>
 
 <div class="popup popup--maps map-wrapper" style="display: block">
-    <div class="popup__cover anim anim--js-right">
-        <div class="popup__in anim-dom">
+    <div class="popup__cover popup-an popup-an--js-right">
+        <div class="popup__in popup-an-dom">
             <div class="googleStatic currentMap">
                 <img class="general__image" src="<?=SITE_TEMPLATE_PATH?>/dist/img/metro-loc.png" alt="">
             </div>
@@ -39,8 +39,8 @@ IncludeTemplateLangFile(__FILE__);
             <div class="toggleMap">#Переключить</div>
         </div>
     </div>
-    <div class="popup__inner anim anim--js-left">
-        <div class="popup__in anim-dom">
+    <div class="popup__inner popup-an popup-an--js-left">
+        <div class="popup__in popup-an-dom">
             <div class="popup__row">
                 <div class="popup__col">
                     <ul class="map-list googleStatic currentMap">
@@ -97,18 +97,18 @@ IncludeTemplateLangFile(__FILE__);
             </div>
         </div>
     </div>
-    <button class="popup__close anim-dom"></button>
+    <button class="popup__close popup-an-dom"></button>
 </div>
 
 <div class="popup popup--showroom">
-    <div class="popup__cover anim anim--js-right">
-        <div class="popup__in anim-dom" style="background: url('<?=SITE_TEMPLATE_PATH?>/dist/img/showroom.jpg') no-repeat 0 0;">
+    <div class="popup__cover popup-an popup-an--js-right">
+        <div class="popup__in popup-an-dom" style="background: url('<?=SITE_TEMPLATE_PATH?>/dist/img/showroom.jpg') no-repeat 0 0;">
             <span class="popup__cover-title">Посетить Showroom</span>
             <span class="popup__cover-title popup__cover-title--sub">Проезд Аэропорта 8. <span>Лофт-квартал Studio#8</span></span>
         </div>
     </div>
-    <div class="popup__inner anim anim--js-left">
-        <div class="popup__in anim-dom">
+    <div class="popup__inner popup-an popup-an--js-left">
+        <div class="popup__in popup-an-dom">
             <div class="popup__desc">Выберите время для посещения Showroom Studio#8</div>
             <form class="form" id="callbackFormShowRoom" action="">
                 <div class="form__group">
@@ -136,7 +136,7 @@ IncludeTemplateLangFile(__FILE__);
             </form>
         </div>
     </div>
-    <button class="popup__close anim-dom"></button>
+    <button class="popup__close popup-an-dom"></button>
 </div>
 
 <div class="gallery-block">

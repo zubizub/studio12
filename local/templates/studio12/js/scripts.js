@@ -2,12 +2,12 @@ $(function () {
     $(window).on('load', function(){
         $('.head').addClass('lt-anim-run');
     });
-    $('[class*=anim--js-]:not(.popup__inner):not(.popup__cover )').each(function() {
+    $('[class*=anim--js-]').each(function() {
         var self = this;
         $(this).waypoint(function(direction) {
             $(this).addClass('anim--run');
             setTimeout(function () {
-                $('.anim-dom:not(.popup__close)', self).addClass('anim-dom--run');
+                $('.anim-dom', self).addClass('anim-dom--run');
             }, 500);
         }.bind(this), {
             offset: '100%'
@@ -263,13 +263,13 @@ $(function () {
         $('.popup--showroom').bPopup({
             closeClass: 'popup__close',
             onClose: function() {
-                $('.popup--showroom [class*=anim--js-]').removeClass('anim--run');
-                $('.popup--showroom .anim-dom').removeClass('anim-dom--run');
+                $('.popup--showroom [class*=popup-an--js-]').removeClass('popup-an--run');
+                $('.popup--showroom .popup-an-dom').removeClass('popup-an-dom--run');
             }
         });
-        $('.popup--showroom [class*=anim--js-]').addClass('anim--run');
+        $('.popup--showroom [class*=popup-an--js-]').addClass('popup-an--run');
         setTimeout(function () {
-            $('.popup--showroom .anim-dom').addClass('anim-dom--run');
+            $('.popup--showroom .popup-an-dom').addClass('popup-an-dom--run');
         }, 500);
         return false;
     });
@@ -324,13 +324,13 @@ $(function () {
         $('.popup--maps').bPopup({
             closeClass: 'popup__close',
             onClose: function() {
-                $('.popup--maps [class*=anim--js-]').removeClass('anim--run');
-                $('.popup--maps .anim-dom').removeClass('anim-dom--run');
+                $('.popup--maps [class*=popup-an--js-]').removeClass('popup-an--run');
+                $('.popup--maps .popup-an-dom').removeClass('popup-an-dom--run');
             }
         });
-        $('.popup--maps [class*=anim--js-]').addClass('anim--run');
+        $('.popup--maps [class*=popup-an--js-]').addClass('popup-an--run');
         setTimeout(function () {
-            $('.popup--maps .anim-dom').addClass('anim-dom--run');
+            $('.popup--maps .popup-an-dom').addClass('popup-an-dom--run');
         }, 500);
         return false;
     });

@@ -14,8 +14,8 @@ $this->setFrameMode(true);?>
 <!-- <pre>
 <?// print_r($arResult);?>
 </pre> -->
-<div class="popup__inner anim anim--js-right">
-  <div class="detail anim-dom">
+<div class="popup__inner popup-an popup-an--js-right">
+  <div class="detail popup-an-dom">
     <div class="detail__inner">
       <div class="detail__head">
         <h2>Studio #12</h2>
@@ -80,8 +80,8 @@ $this->setFrameMode(true);?>
     </div>
   </div>
 </div>
-<div class="popup__footer anim anim--js-left">
-  <div class="popup__in anim-dom">
+<div class="popup__footer popup-an popup-an--js-left">
+  <div class="popup__in popup-an-dom">
     <div class="popup__cell"><span><a href="#">Распечатать</a></span><span><a class="send_me_email" href="#">Выслать на почту</a></span></div>
     <div class="popup__cell popup__cell--callback">
       <a class="popup__number" href="tel:+74957804040">7 (495) 780-40-40</a>
@@ -89,4 +89,4 @@ $this->setFrameMode(true);?>
     </div>
   </div>
 </div>
-<button class="popup__close anim-dom"></button>
+<button class="popup__close popup-an-dom"></button>
