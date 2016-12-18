@@ -42,19 +42,9 @@ $this->setFrameMode(true);?>
       <div class="detail__message">Информационное сообщение</div>
     </div>
     <div class="photo-gallery">
-      <div class="photo-gallery__content">
         <div class="photo-gallery__item">
           <div class="image" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/dist/img/loft-slide-1.jpg)"></div>
         </div>
-        <div class="photo-gallery__item">
-          <div class="image" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/dist/img/loft-slide-2.jpg)"></div>
-        </div>
-        <div class="photo-gallery__item">
-          <div class="image" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/dist/img/loft-slide-3.jpg)"></div>
-        </div>
-      </div>
-      <button class="photo-gallery__prev"></button>
-      <button class="photo-gallery__next"></button>
     </div>
     <div class="detail__inner">
       <div class="detail__text">лофт с отдельным входом/двухуровневый</div>
