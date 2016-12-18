@@ -138,7 +138,6 @@ $.fn.serializeObject = function()
                         setTimeout(function () {
                             $('.popup--callback .popup-an-dom').addClass('popup-an-dom--run');
                         }, 500);
-                        $('#lot').val(lot);
                         $(".js-phone-mask").mask("+7 (999) 999-99-99");
                         $('.form__select').each(function () {
                             var $cont = $(this).closest('.form__select-wrap');

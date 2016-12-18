@@ -262,15 +262,19 @@ $(function () {
     $('.btn-showroom').on('click', function () {
         $('.popup--showroom').bPopup({
             closeClass: 'popup__close',
+            onOpen: function() {
+                setTimeout (function () {
+                    $('.popup--showroom [class*=popup-an--js-]').addClass('popup-an--run');
+                    setTimeout(function () {
+                        $('.popup--showroom .popup-an-dom').addClass('popup-an-dom--run');
+                    }, 500);
+                }, 10);
+            },
             onClose: function() {
                 $('.popup--showroom [class*=popup-an--js-]').removeClass('popup-an--run');
                 $('.popup--showroom .popup-an-dom').removeClass('popup-an-dom--run');
             }
         });
-        $('.popup--showroom [class*=popup-an--js-]').addClass('popup-an--run');
-        setTimeout(function () {
-            $('.popup--showroom .popup-an-dom').addClass('popup-an-dom--run');
-        }, 500);
         return false;
     });
 
@@ -323,15 +327,19 @@ $(function () {
     $('.get__maps').on('click', function () {
         $('.popup--maps').bPopup({
             closeClass: 'popup__close',
+            onOpen: function() {
+                setTimeout (function () {
+                    $('.popup--maps [class*=popup-an--js-]').addClass('popup-an--run');
+                    setTimeout(function () {
+                        $('.popup--maps .popup-an-dom').addClass('popup-an-dom--run');
+                    }, 500);
+                }, 10);
+            },
             onClose: function() {
                 $('.popup--maps [class*=popup-an--js-]').removeClass('popup-an--run');
                 $('.popup--maps .popup-an-dom').removeClass('popup-an-dom--run');
             }
         });
-        $('.popup--maps [class*=popup-an--js-]').addClass('popup-an--run');
-        setTimeout(function () {
-            $('.popup--maps .popup-an-dom').addClass('popup-an-dom--run');
-        }, 500);
         return false;
     });
 
