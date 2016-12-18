@@ -39,11 +39,10 @@ $this->setFrameMode(true);?>
           <p class="text">Этаж</p>
         </div>
       </div>
-      <div class="detail__message">Информационное сообщение</div>
     </div>
     <div class="photo-gallery">
         <div class="photo-gallery__item">
-          <div class="image" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/dist/img/loft-slide-1.jpg)"></div>
+          <div class="image" style="background-image: url(<?= $arResult['DETAIL_PICTURE']['SRC'];  ?>)"></div>
         </div>
     </div>
     <div class="detail__inner">
