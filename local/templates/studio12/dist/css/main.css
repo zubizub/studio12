@@ -7662,6 +7662,9 @@ a.btn, a.btn:hover {
     background-color: #343434;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
@@ -8397,6 +8400,30 @@ a.btn, a.btn:hover {
     -o-transition: all 0.35s ease-in;
     transition: all 0.35s ease-in;
     opacity: 0;
+    visibility: hidden;
+}
+
+.load-top-animate {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.load-top-animate.fadeInLeft {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.top__item.js-vertical-anim.fadeInUp {
+    visibility: visible;
+    opacity: 1;
 }
 
 .fade-in {
@@ -8448,6 +8475,10 @@ a.btn, a.btn:hover {
 .top__item {
     float: left;
     width: 20%;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
 }
 
 .top__text {
@@ -9068,6 +9099,9 @@ a.btn, a.btn:hover {
 }
 
 .bg-slide {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;

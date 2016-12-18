@@ -17,7 +17,6 @@ IncludeTemplateLangFile(__FILE__);
     <!--link(rel='apple-touch-icon', href='apple-touch-icon.png')-->
     <?$APPLICATION->ShowHead()?>
     <!--[if (gt IE 9)|!(IE)]><!-->
-    <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="<?=SITE_TEMPLATE_PATH?>/dist/css/main.css" rel="stylesheet" type="text/css">
     <link href="<?=SITE_TEMPLATE_PATH?>/css/new.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->

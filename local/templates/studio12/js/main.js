@@ -30,12 +30,12 @@ $(function () {
             setTimeout(function () {
                 $('body').removeClass('no-scroll');
                 $('.fade-animate').removeClass('fade-in');
-                $('.load-top-animate').addClass('animated fadeInLeft');
+                $('.load-top-animate').addClass('fadeInLeft');
                 $(window).trigger("resize");
             }, 1000);
 
             setTimeout(function () {
-                $('.top__item.js-vertical-anim').addClass('animated fadeInUp');
+                $('.top__item.js-vertical-anim').addClass('fadeInUp');
             }, 1850);
         });
 
