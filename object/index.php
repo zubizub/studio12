@@ -96,5 +96,9 @@ $APPLICATION->IncludeComponent("bitrix:catalog.element", "lot-item-static", Arra
 
 </div>
 
+<div id="ajaxPopup">
+	<div class="popup popup--callback"></div>
+</div>
+
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -41,7 +41,6 @@ $this->setFrameMode(true);?>
       </div>
       <div class="detail__message">Информационное сообщение</div>
     </div>
-    <? if (!empty($arResult['PROPERTIES']['PHOTOS']['VALUE'])) { ?>
     <div class="photo-gallery">
       <div class="photo-gallery__content">
         <div class="photo-gallery__item">
@@ -57,7 +56,6 @@ $this->setFrameMode(true);?>
       <button class="photo-gallery__prev"></button>
       <button class="photo-gallery__next"></button>
     </div>
-  <? } ?>
     <div class="detail__inner">
       <div class="detail__text">лофт с отдельным входом/двухуровневый</div>
       <div class="detail__about">
