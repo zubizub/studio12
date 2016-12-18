@@ -170,6 +170,33 @@ $(function () {
             }]
         });
     }());
+    (function () {
+        $('.concept-wrap__content').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 2,
+            speed: 0,
+            touchThreshold: 10,
+            swipe: false,
+            touchMove: false,
+            responsive: [{
+                breakpoint: 591,
+                settings: {
+                    speed: 150,
+                    slidesToShow: 1,
+                    dots: true,
+                    swipe: true,
+                    vertical: false,
+                    touchMove: true,
+                    infinite: true,
+                    autoplay: true,
+                    adaptiveHeight: true,
+                    autoplaySpeed: 5000
+                }
+            }]
+        });
+    }());
     $('.section--lofts').each(function () {
         var self = this,
             $box = $('.lots', self),
@@ -189,6 +216,7 @@ $(function () {
             var timer;
             $('body').toggleClass('sidebar-open');
             $(window).trigger('resize');
+            $('popup__close').trigger('click');
         });
     }());
 

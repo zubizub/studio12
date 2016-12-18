@@ -4018,6 +4018,21 @@ a.btn, a.btn:hover {
     border-color: #17a382 transparent transparent transparent;
 }
 
+.concept-wrap {
+    float: left;
+    width: 66.33333%;
+}
+.concept-wrap:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.concept-wrap__col {
+    width: 50%;
+    float: left;
+    padding-left: 3rem;
+}
+
 .concept {
     color: #fff;
     line-height: 1.33;
@@ -6376,7 +6391,7 @@ a.btn, a.btn:hover {
     -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
-    z-index: 1500;
+    z-index: 10000;
 }
 
 @media screen and (max-width: 1899px) {
@@ -8732,17 +8747,24 @@ a.btn, a.btn:hover {
     margin-left: 10px;
 }
 
-.count-slide .slick-dots {
+.count-slide .slick-dots,
+.concept-wrap .slick-dots {
     font-size: 0;
     margin-left: 68px;
 }
 
+.concept-wrap .slick-dots {
+    margin-top: 30px;
+}
+
+.concept-wrap .slick-dots li,
 .count-slide .slick-dots li {
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
 }
 
+.concept-wrap .slick-dots li button,
 .count-slide .slick-dots li button {
     display: block;
     width: 8px;
@@ -8753,6 +8775,7 @@ a.btn, a.btn:hover {
     border-radius: 50%;
 }
 
+.concept-wrap .slick-dots li.slick-active button,
 .count-slide .slick-dots li.slick-active button {
     border: 3px solid #ffffff;
     background: transparent;

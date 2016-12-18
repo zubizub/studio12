@@ -39,29 +39,33 @@ $APPLICATION->SetTitle("Studio12");
                                                                                               href="/job">#Работай</a>
                     </div>
                 </div>
-                <div class="concept__col col-1-3">
-                    <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                    "AREA_FILE_SHOW" => "file",
-                    "AREA_FILE_SUFFIX" => "inc",
-                    "EDIT_TEMPLATE" => "",
-                    "PATH" => "desc.php"
-                    )
-                    );?>
-                </div>
-                <div class="concept__col col-1-3">
-                    <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                    "AREA_FILE_SHOW" => "file",
-                    "AREA_FILE_SUFFIX" => "inc",
-                    "EDIT_TEMPLATE" => "",
-                    "PATH" => "desc2.php"
-                    )
-                    );?>
+                <div class="concept-wrap">
+                    <div class="concept-wrap__content">
+                        <div class="concept-wrap__col">
+                            <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "desc.php"
+                            )
+                            );?>
+                        </div>
+                        <div class="concept-wrap__col">
+                            <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "desc2.php"
+                            )
+                            );?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

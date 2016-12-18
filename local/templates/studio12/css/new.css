@@ -185,6 +185,20 @@ a.offer__plan {
     .gallery-block .loft-types__list .slick-prev {
         left: 65px;
     }
+
+    .concept-wrap {
+        width: auto;
+        float: none;
+    }
+
+    .concept-wrap__col {
+        padding-left: 36px;
+        padding-right: 10px;
+    }
+
+    .concept__col {
+        float: none;
+    }
 }
 
 @media only screen and (max-width: 835px) {
@@ -248,6 +262,22 @@ a.offer__plan {
     .popup__title {
         line-height: 1;
         font-size: 2.5rem;
+    }
+    .concept-wrap {
+        margin-top: 1.875rem;
+        margin-left: -36px;
+        margin-right: -6px;
+    }
+    .concept-wrap__col {
+        padding-left: 68px;
+        padding-right: 30px;
+        width: 100%;
+    }
+    .concept-wrap__col:last-child {
+        display: none;
+    }
+    .concept-wrap__content.slick-initialized .concept-wrap__col:last-child  {
+        display: block !important;
     }
 }
 
