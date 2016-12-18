@@ -21,7 +21,7 @@ $(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: dataAnim
                 }, {
-                    duration: 4000,
+                    duration: 2000,
                     easing: 'swing',
                     step: function (now) {
                         $(this).text(Math.ceil(now));
@@ -32,6 +32,7 @@ $(function () {
             offset: '100%'
         });
     });
+
     (function () {
         $('.about-lofts__slider-list').slick({
             dots: true,

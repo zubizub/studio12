@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Studio#12");
 <div class="fullpage fade-in">
 
     <div class="section section--about count-section">
-        <div class="wrapper">
+        <div class="wrapper bg-slide">
             <div class="about-bg">
                 <div class="about-bg__item"
                      style="background: url('/local/templates/studio12/img/1.jpg') no-repeat 0 0"></div>

@@ -7660,6 +7660,14 @@ a.btn, a.btn:hover {
     bottom: 0;
     right: 0;
     background-color: #343434;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+}
+
+.about-bg.slick-initialized {
+    opacity: 1;
+    visibility: visible;
 }
 
 .about-bg__item {
@@ -9057,4 +9065,11 @@ a.btn, a.btn:hover {
 .not-page__desc a {
     color: #000000;
     text-decoration: underline;
+}
+
+.bg-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('/local/templates/studio12/img/1.jpg');
 }
