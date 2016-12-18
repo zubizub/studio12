@@ -6839,6 +6839,20 @@ a.btn, a.btn:hover {
     overflow: hidden;
 }
 
+.popup--loft {
+    top: 0 !important;
+    bottom: 0 !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
+
+.popup--scroll {
+    overflow-y: scroll !important;
+}
+
 .popup--page {
     -webkit-transform: none !important;
     -moz-transform: none !important;
@@ -7164,57 +7178,81 @@ a.btn, a.btn:hover {
     }
 }
 
-.scrollme {
-    position: absolute;
-    top: 50%;
-    left: 2.1875rem;
-    width: 2.0625rem;
-    -webkit-transform: translateY(-75%);
-    -moz-transform: translateY(-75%);
-    -ms-transform: translateY(-75%);
-    -o-transform: translateY(-75%);
-    transform: translateY(-75%);
+.reason-slide  {
+
 }
 
-.scrollme__icon {
-    width: 0.9375rem;
-    height: 1.3125rem;
-    margin: 0 auto;
-    background: url("../img/scrollme.png") center center no-repeat;
+.reason-slide .slick-dots {
+    margin-left: 68px;
+    margin-top: 30px;
 }
 
-.scrollme__icon + .scrollme__icon {
-    margin-top: 0.625rem;
+.reason-slide .slick-dots li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
-.scrollme__icon--anim {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.625rem;
-    background-image: url("../img/scrollme-anim.png");
+.reason-slide .slick-dots li button {
+    display: block;
+    background: transparent;
+    font-size: 18px;
+    color: #fee333;
+}
+.reason-slide .slick-dots li button:before {
+    content: '№';
 }
 
-.scrollme__bubble {
-    position: relative;
-    height: 3.8125rem;
-    margin-top: 0.9375rem;
-    background-color: #ffe500;
-    -webkit-border-radius: 1.0625rem;
-    -moz-border-radius: 1.0625rem;
-    border-radius: 1.0625rem;
+.reason-slide .slick-dots li.slick-active button {
+    color: #ffffff;
+    font-size: 24px;
 }
 
-.scrollme__desc {
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    white-space: nowrap;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    margin-top: 1.375rem;
+.reason-slide__col {
+    padding: 0;
+    float: left;
+    width: 20%;
+    padding-right: 3rem;
+}
+
+@media screen and (max-width: 1000px)  and (min-width: 768px) {
+    .reason-slide {
+        margin-left: 18px;
+    }
+    .reason-slide__col {
+        width: 33.3333% !important;
+        margin-bottom: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 591px) {
+    .reason-slide {
+        margin-left: 18px;
+    }
+
+    .reason-slide__col {
+        width: 50% !important;
+        margin-bottom: 1.875rem;
+    }
+
+    .reason-slide__col:nth-child(2n+1) {
+        clear: left;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .reason-slide {
+        margin-left: -51px;
+        margin-right: -21px;
+    }
+    .reason-slide__col {
+        padding-right: 30px;
+        padding-left: 68px;
+    }
+
+    .reasons__title {
+        color: #858585;
+    }
 }
 
 .side-logo {
@@ -7952,6 +7990,13 @@ a.btn, a.btn:hover {
     margin-left: 0 !important;
 }
 
+.present-mobile {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: 68px;
+}
+
 @media screen and (min-width: 1000px) {
     .about-lofts .col-1-3:first-child {
         padding-left: 0;
@@ -7988,10 +8033,6 @@ a.btn, a.btn:hover {
 
     .loft-types__tab:before {
         content: none;
-    }
-
-    .about-slider-bub {
-        display: none;
     }
 
     .logo-fix {
@@ -8034,6 +8075,10 @@ a.btn, a.btn:hover {
     .about {
         padding-left: 65px !important;
         padding-top: 20px;
+    }
+
+    .about-lofts__col-1 {
+        display: none;
     }
 
     .offer-mobile {
@@ -8082,6 +8127,13 @@ a.btn, a.btn:hover {
     .actions__item {
         float: none;
         width: 100%;
+    }
+
+    .present-desktop {
+        display: none;
+    }
+    .present-mobile {
+        display: inline-block;
     }
 }
 

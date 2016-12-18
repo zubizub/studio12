@@ -18,7 +18,7 @@ $APPLICATION->SetTitle("Studio#12");
 
 <div class="fullpage fade-in">
 
-    <div class="section section--about" data-anchor="s-about">
+    <div class="section section--about count-section">
         <div class="wrapper">
             <div class="about-bg">
                 <div class="about-bg__item"
@@ -48,10 +48,10 @@ $APPLICATION->SetTitle("Studio#12");
                                 <div class="count">
                                     <div class="count__numbers">
                                         <a href="#" class="count__anim link-animate queue__act">
-                                            <span class="count__number yellow">72</span>
+                                            <span class="count__number yellow count-anim" data-number="72">0</span>
                                         </a>
                                         <span class="count__text">из</span>
-                                        <span class="count__number">142</span>
+                                        <span class="count__number count-anim" data-number="142">0</span>
                                     </div>
                                     <div class="count__desc">Лотов<br> в продаже</div>
                                 </div>
@@ -59,10 +59,10 @@ $APPLICATION->SetTitle("Studio#12");
                                     <div class="count__numbers">
                                         <a href="#" class="count__anim link-animate queue__act">
                                             <span class="count__text yellow">от</span>
-                                            <span class="count__number count__spacing yellow">40</span>
+                                            <span class="count__number count__spacing yellow count-anim" data-number="40">0</span>
                                         </a>
                                         <span class="count__text">до</span>
-                                        <span class="count__number">300</span>
+                                        <span class="count__number count-anim" data-number="300">0</span>
                                         <span class="count__text">м2</span>
                                     </div>
                                     <div class="count__desc">Площадь<br> лотов</div>
@@ -71,7 +71,7 @@ $APPLICATION->SetTitle("Studio#12");
                                     <div class="count__numbers">
                                         <a href="#" class="count__anim link-animate queue__act">
                                             <span class="count__text yellow">от</span>
-                                            <span class="count__number count__spacing yellow">8</span>
+                                            <span class="count__number count__spacing yellow count-anim" data-number="8">0</span>
                                         </a>
                                         <span class="count__text">млн. руб.</span>
                                     </div>

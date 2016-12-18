@@ -107,7 +107,7 @@ $APPLICATION->SetTitle("Studio12");
             <div class="reasons__content">
                 <div class="reasons__title">5 причин #Жить в&nbsp;своем лофте:</div>
                 <div class="reasons__row">
-                    <div class="row">
+                    <div class="row reason-slide">
 
                         <?$APPLICATION->IncludeComponent(
                         "bitrix:catalog.section",
@@ -253,7 +253,7 @@ $APPLICATION->SetTitle("Studio12");
     <div class="wrapper">
         <div class="inner">
             <div class="about-lofts__row row">
-                <div class="col-1-3">
+                <div class="col-1-3 about-lofts__col-1">
                     <div class="about-slider-bub">
                         <div class="about-lofts__subtitle"> <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
@@ -293,59 +293,64 @@ $APPLICATION->SetTitle("Studio12");
                         </div>
                     </div>
                 </div>
-                <div class="col-1-3">
-                    <div class="about-lofts__subtitle">
-                        <?$APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        Array(
-                        "AREA_FILE_SHOW" => "file",
-                        "AREA_FILE_SUFFIX" => "inc",
-                        "EDIT_TEMPLATE" => "",
-                        "PATH" => "about-loft-props-title.php"
-                        )
-                        );?>
-                    </div>
-                    <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                    "AREA_FILE_SHOW" => "file",
-                    "AREA_FILE_SUFFIX" => "inc",
-                    "EDIT_TEMPLATE" => "",
-                    "PATH" => "about-loft-props.php"
-                    )
-                    );?>
+                <div class="concept-wrap">
+                    <a class="about-lofts__more offer__label--desktop present-mobile" href="#">Презентация Studio#12 (PDF</a>
+                    <div class="concept-wrap__content">
+                        <div class="concept-wrap__col">
+                            <div class="about-lofts__subtitle">
+                                <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "about-loft-props-title.php"
+                                )
+                                );?>
+                            </div>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "about-loft-props.php"
+                                )
+                            );?>
 
 
-                    <?$APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    Array(
-                    "AREA_FILE_SHOW" => "file",
-                    "AREA_FILE_SUFFIX" => "inc",
-                    "EDIT_TEMPLATE" => "",
-                    "PATH" => "presentation.php"
-                    )
-                    );?>
-                </div>
-                <div class="col-1-3">
-                    <div class="about-lofts__subtitle">Место<span class="resp-br-dash"> -<br></span>расположение <br>
-                        квартала:
-                    </div>
-                    <div class="about-lofts__p">Москва, СВАО, <br>12-й пр. Марьиной Рощи 8 <br>
-                        <small>10 мин. от метро “Марьина Роща”</small>
-                    </div>
-                    <div class="about-lofts__p">
-                        <div class="about-lofts__pos">Комплекс апартаментов «Studio 12» находится вблизи:</div>
-                        <div class="about-lofts__in">→ 1,5 км от ТТК</div>
-                        <div class="about-lofts__in">→ ближайшие крупные автомагистрали Сущевский вал и Проспект Мира.
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "presentation.php"
+                                )
+                            );?>
                         </div>
-                    </div>
-                    <div class="about-lofts__p">
-                        <div class="about-lofts__pos">Пассажиры общественного транспорта доедут от квартала:</div>
-                        <div class="about-lofts__in">→ 5-7 минут до станции метро «Марьина Роща»</div>
-                        <div class="about-lofts__in">→ за 20-25 минут – до Рижского или Савёловского вокзалов.</div>
+                        <div class="concept-wrap__col">
+                            <div class="about-lofts__subtitle">Место<span class="resp-br-dash"> -<br></span>расположение <br>
+                                квартала:
+                            </div>
+                            <div class="about-lofts__p">Москва, СВАО, <br>12-й пр. Марьиной Рощи 8 <br>
+                                <small>10 мин. от метро “Марьина Роща”</small>
+                            </div>
+                            <div class="about-lofts__p">
+                                <div class="about-lofts__pos">Комплекс апартаментов «Studio 12» находится вблизи:</div>
+                                <div class="about-lofts__in">→ 1,5 км от ТТК</div>
+                                <div class="about-lofts__in">→ ближайшие крупные автомагистрали Сущевский вал и Проспект Мира.
+                                </div>
+                            </div>
+                            <div class="about-lofts__p">
+                                <div class="about-lofts__pos">Пассажиры общественного транспорта доедут от квартала:</div>
+                                <div class="about-lofts__in">→ 5-7 минут до станции метро «Марьина Роща»</div>
+                                <div class="about-lofts__in">→ за 20-25 минут – до Рижского или Савёловского вокзалов.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

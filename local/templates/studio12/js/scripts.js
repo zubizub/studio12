@@ -13,6 +13,25 @@ $(function () {
             offset: '100%'
         });
     });
+    $('.count-section').each(function() {
+        var self = this;
+        $(this).waypoint(function(direction) {
+            $('.count-anim', self).each(function () {
+                var dataAnim = $(this).attr('data-number');
+                $(this).prop('Counter', 0).animate({
+                    Counter: dataAnim
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        }.bind(this), {
+            offset: '100%'
+        });
+    });
     (function () {
         $('.about-lofts__slider-list').slick({
             dots: true,
@@ -171,11 +190,40 @@ $(function () {
         });
     }());
     (function () {
-        $('.concept-wrap__content').slick({
+        $('.concept-wrap').each(function () {
+            $('.concept-wrap__content', this).slick({
+                dots: false,
+                arrows: false,
+                infinite: true,
+                slidesToShow: 2,
+                speed: 0,
+                touchThreshold: 10,
+                swipe: false,
+                touchMove: false,
+                responsive: [{
+                    breakpoint: 591,
+                    settings: {
+                        speed: 150,
+                        slidesToShow: 1,
+                        dots: true,
+                        swipe: true,
+                        vertical: false,
+                        touchMove: true,
+                        infinite: true,
+                        autoplay: true,
+                        adaptiveHeight: true,
+                        autoplaySpeed: 5000
+                    }
+                }]
+            });
+        });
+    }());
+    (function () {
+        $('.reason-slide').slick({
             dots: false,
             arrows: false,
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 5,
             speed: 0,
             touchThreshold: 10,
             swipe: false,
@@ -213,10 +261,11 @@ $(function () {
     });
     (function () {
         $('.nav-toggle').on('click', function () {
-            var timer;
             $('body').toggleClass('sidebar-open');
-            $(window).trigger('resize');
-            $('popup__close').trigger('click');
+            setTimeout(function() {
+                $(".concept-wrap__content").slick('setPosition');
+                $(".reason-slide").slick('setPosition');
+            }, 300);
         });
     }());
 

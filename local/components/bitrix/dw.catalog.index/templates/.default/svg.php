@@ -1,4 +1,4 @@
-<div class="lofts lofts--main">
+<div class="lofts lofts--main count-section">
                 <div class="lofts__scheme">
 
                     <div class="layout">
@@ -71,10 +71,10 @@
                 </div>
 
                 <div class="lots-infographics">
-                    <div class="lots-infographics__number">76</div>
+                    <div class="lots-infographics__number count-anim" data-number="76">0</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
                     <div class="lofts-pdf-link">
-                        <a class="offer__plan" href="/upload/plan.pdf<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" target="_blank">
+                        <a class="offer__plan" href="/upload/plan.pdf" target="_blank">
                             <div class="offer__label offer__label--desktop">Планировки (PDF)
                             </div>
                         </a>

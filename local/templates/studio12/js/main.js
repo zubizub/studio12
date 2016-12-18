@@ -31,6 +31,7 @@ $(function () {
                 $('body').removeClass('no-scroll');
                 $('.fade-animate').removeClass('fade-in');
                 $('.load-top-animate').addClass('animated fadeInLeft');
+                $(window).trigger("resize");
             }, 1000);
 
             setTimeout(function () {

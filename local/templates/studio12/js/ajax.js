@@ -68,6 +68,7 @@ $.fn.serializeObject = function()
                         $('.popup--loft [class*=popup-an--js-]').addClass('popup-an--run');
                         setTimeout(function () {
                             $('.popup--loft .popup-an-dom').addClass('popup-an-dom--run');
+                            $('.popup--loft').addClass('popup--scroll ');
                         }, 500);
                         $('.callback-me').on('click', function () {
                             $('.popup--callback').bPopup({
@@ -120,6 +121,7 @@ $.fn.serializeObject = function()
             onClose: function() {
                 $('.popup--loft [class*=popup-an--js-]').removeClass('popup-an--run');
                 $('.popup--loft .popup-an-dom').removeClass('popup-an-dom--run');
+                $('.popup--loft').removeClass('popup--scroll ');
             }
         });
         return false;
@@ -138,6 +140,7 @@ $.fn.serializeObject = function()
                         setTimeout(function () {
                             $('.popup--callback .popup-an-dom').addClass('popup-an-dom--run');
                         }, 500);
+
                         $(".js-phone-mask").mask("+7 (999) 999-99-99");
                         $('.form__select').each(function () {
                             var $cont = $(this).closest('.form__select-wrap');
