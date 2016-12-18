@@ -333,7 +333,7 @@ $(function () {
                     setTimeout(function () {
                         $('.popup--maps .popup-an-dom').addClass('popup-an-dom--run');
                     }, 500);
-                }, 10);
+                }, 100);
             },
             onClose: function() {
                 $('.popup--maps [class*=popup-an--js-]').removeClass('popup-an--run');
