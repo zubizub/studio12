@@ -6391,7 +6391,7 @@ a.btn, a.btn:hover {
     -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
-    z-index: 10000;
+    z-index: 1500;
 }
 
 @media screen and (max-width: 1899px) {
