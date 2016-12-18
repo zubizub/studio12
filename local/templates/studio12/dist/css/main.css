@@ -6819,6 +6819,7 @@ a.btn, a.btn:hover {
 .popup--loft,
 .popup--maps,
 .popup--showroom,
+.popup--page,
 .popup--callback {
     overflow: hidden;
 }

@@ -14,8 +14,8 @@ $this->setFrameMode(true);?>
 <!-- <pre>
 <?// print_r($arResult);?>
 </pre> -->
-<div class="popup__inner popup-an popup-an--js-right">
-  <div class="detail popup-an-dom">
+<div class="popup__inner <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim anim--js-right<?else:?>popup-an popup-an--js-right<? endif; ?>">
+  <div class="detail  <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>">
     <div class="detail__inner">
       <div class="detail__head">
         <h2>Studio #12</h2>
@@ -80,8 +80,8 @@ $this->setFrameMode(true);?>
     </div>
   </div>
 </div>
-<div class="popup__footer popup-an popup-an--js-left">
-  <div class="popup__in popup-an-dom">
+<div class="popup__footer <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim anim--js-left<?else:?>popup-an popup-an--js-left<? endif; ?>">
+  <div class="popup__in <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>">
     <div class="popup__cell"><span><a href="#">Распечатать</a></span><span><a class="send_me_email" href="#">Выслать на почту</a></span></div>
     <div class="popup__cell popup__cell--callback">
       <a class="popup__number" href="tel:+74957804040">7 (495) 780-40-40</a>
@@ -89,4 +89,4 @@ $this->setFrameMode(true);?>
     </div>
   </div>
 </div>
-<button class="popup__close popup-an-dom"></button>
+<button class="popup__close <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>"></button>
