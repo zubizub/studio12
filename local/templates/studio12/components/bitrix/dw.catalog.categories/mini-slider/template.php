@@ -50,24 +50,24 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 							<? } else { ?>
 
 									
-				<div class="loft-types__item" style="background-image: url('<?=$croped?>');">
-									<div class="loft-types__item" data-bg="<?=$croped;?>"></div>
+				<div class="loft-types__item" data-bg="<?=$croped;?>"></div>
 							<? } ?>
 		<? } ?>
 </div>	 
 		</div>	 
+		</div>
 <?
 	}
 ?>
 
 
-</div>
+
 				<div class="loft-types__desc">
 					<a href="#" class="loft-types-slide-go">→</a>
 
 					<div class="loft-types__tabs">
 					<? foreach ($arResult['ITEMS'] as $key => $value) { ?>
-
+					<?  print_r($value);?>
 					<div class="loft-types__tab">
 					<? 	$res = CIBlockSection::GetByID($key);
 						if($ar_res = $res->GetNext())

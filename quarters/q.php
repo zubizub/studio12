@@ -2,6 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Studio12");
 ?>
+ </div></div></div>
 
 <div class="gallery-block" style="display: block;">
     <button class="gallery-block__close"></button>
@@ -12,7 +13,7 @@ $APPLICATION->SetTitle("Studio12");
                     
   <?$APPLICATION->IncludeComponent(
     "bitrix:dw.catalog.categories", 
-    "mini-slider", 
+    "big-slider", 
     array(
         "CACHE_GROUPS" => "Y",
         "CACHE_TIME" => "36000",
@@ -103,4 +104,3 @@ $APPLICATION->SetTitle("Studio12");
 
  <br><?// require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
 
- </div></div></div>
