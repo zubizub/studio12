@@ -67,7 +67,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 
 					<div class="loft-types__tabs">
 					<? foreach ($arResult['ITEMS'] as $key => $value) { ?>
-					<?  print_r($value);?>
+					
 					<div class="loft-types__tab">
 					<? 	$res = CIBlockSection::GetByID($key);
 						if($ar_res = $res->GetNext())
