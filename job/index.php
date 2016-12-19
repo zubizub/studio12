@@ -227,9 +227,13 @@ $APPLICATION->SetTitle("Studio12");
     <div class="metro-place__item">
         <div class="metro-place__slider">
             <div class="metro-place__slider-item">
-                <a href="#" class="queue__act metro-place__link">
+                <a href="#" class="queue__act metro-place__link line-block">
                     <img class="metro-place__img" src="<?=SITE_TEMPLATE_PATH?>/img/Work_1.jpg" alt="#">
                     <span class="metro-place__desc">#Работать в лофте</span>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                    <span class="line line-4"></span>
                 </a>
             </div>
 

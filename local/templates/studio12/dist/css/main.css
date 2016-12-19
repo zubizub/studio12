@@ -8980,6 +8980,12 @@ a.btn, a.btn:hover {
     line-height: 1.1;
 }
 
+.line-block {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
 .line {
     position: absolute;
     background-color: #fee333;
@@ -8996,7 +9002,7 @@ a.btn, a.btn:hover {
     transition: width 0.15s ease-out 0.60s;
 }
 
-.dep:hover .line-1 {
+.line-block:hover .line-1 {
     width: 100%;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
@@ -9015,7 +9021,7 @@ a.btn, a.btn:hover {
     transition: height 0.15s ease-out 0.40s;
 }
 
-.dep:hover .line-2 {
+.line-block:hover .line-2 {
     height: 100%;
     -webkit-transition-delay: 0.20s;
     -moz-transition-delay: 0.20s;
@@ -9034,7 +9040,7 @@ a.btn, a.btn:hover {
     transition: left 0.15s ease-out 0.20s;
 }
 
-.dep:hover .line-3 {
+.line-block:hover .line-3 {
     left: 0;
     -webkit-transition-delay: 0.40s;
     -moz-transition-delay: 0.40s;
@@ -9053,7 +9059,7 @@ a.btn, a.btn:hover {
     transition: top 0.15s ease-out 0s;
 }
 
-.dep:hover .line-4 {
+.line-block:hover .line-4 {
     top: 0;
     -webkit-transition-delay: 0.60s;
     -moz-transition-delay: 0.60s;
