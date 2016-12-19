@@ -6806,10 +6806,10 @@ a.btn, a.btn:hover {
 }
 
 .photo-gallery .image {
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
     height: 37.5rem;
