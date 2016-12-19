@@ -5038,6 +5038,10 @@ a.btn, a.btn:hover {
     color: #000;
 }
 
+.heading__line:nth-child(1) {
+    margin-right: 55px;
+}
+
 .heading__line + .heading__line {
     margin-top: -3em;
 }
@@ -6876,6 +6880,12 @@ a.btn, a.btn:hover {
         left: auto !important;
         right: auto !important;
     }
+
+    .popup--callback .popup__close,
+    .popup--loft .popup__close {
+        position: fixed;
+        top: 0;
+    }
 }
 
 .popup__inner {
@@ -7179,7 +7189,7 @@ a.btn, a.btn:hover {
 }
 
 .reason-slide  {
-
+    margin-left: 0;
 }
 
 .reason-slide .slick-dots {

@@ -184,8 +184,8 @@ $(function () {
                     vertical: false,
                     touchMove: true,
                     infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 5000
+                    //autoplay: true,
+                    //autoplaySpeed: 5000
                 }
             }]
         });
@@ -211,9 +211,9 @@ $(function () {
                         vertical: false,
                         touchMove: true,
                         infinite: true,
-                        autoplay: true,
                         adaptiveHeight: true,
-                        autoplaySpeed: 5000
+                        //autoplay: true,
+                        //autoplaySpeed: 5000
                     }
                 }]
             });
@@ -239,9 +239,9 @@ $(function () {
                     vertical: false,
                     touchMove: true,
                     infinite: true,
-                    autoplay: true,
                     adaptiveHeight: true,
-                    autoplaySpeed: 5000
+                    //autoplay: true,
+                    //autoplaySpeed: 5000
                 }
             }]
         });
