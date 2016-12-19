@@ -48,7 +48,7 @@ $.fn.serializeObject = function()
     });
 
 
-$(document).on('click', '.loft-types__tab a', function () {
+/*$(document).on('click', '.loft-types__tab a', function () {
         var action = 'loadGallerySection';
         var section = $(this).attr('data-section');
 
@@ -88,7 +88,7 @@ $(document).on('click', '.loft-types__tab a', function () {
         return false;
 
     });
-
+*/
 
     $('.ajaxLotItem').on('click', function () {
         var el = $(this).attr('el');
