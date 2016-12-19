@@ -41,8 +41,11 @@ IncludeTemplateLangFile(__FILE__);
             infowindow.open(map, marker);
         }
     </script>
-    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/no-plugins.js" type="text/javascript"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/waypoints.js" type="text/javascript"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>
     <?if ($APPLICATION->GetCurPage()== '/'): ?>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
