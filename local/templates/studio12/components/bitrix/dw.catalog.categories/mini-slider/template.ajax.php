@@ -37,10 +37,19 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 			<? $i =0;?>
 			<? foreach ($arSection as $key => $arItem) { ?>
 			<? //print_r($arItem); ?>
-				<? if (!$i) { ?>
-			
-							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
-				<? }; $i++;?>
+				<? /*if (!$i) { ?>
+							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&h=660&w=620';?>
+							<!-- <div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div> -->
+							<div class="loft-types__item" 
+							style="background-image: url('<?=$croped; ?>');"></div>
+				<? }; $i++; */?>
+
+
+				<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&h=660&w=620';?>
+				
+							<div class="loft-types__item" 
+							style="background-image: url('<?=$croped; ?>');"></div>
+				
 		<? } ?>
 </div>	 
 		</div>	 
@@ -54,10 +63,10 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 					<a href="#" class="loft-types-slide-go">→</a>
 
 					<div class="loft-types__tabs">
-					<? foreach ($arResult['ITEMS'] as $key => $value) { ?>
+					<? foreach ($arResult['SECTIONS'] as $key => $value) { ?>
 
 					<div class="loft-types__tab">
-					<? 	$res = CIBlockSection::GetByID($key);
+					<? 	$res = CIBlockSection::GetByID($value['ID']);
 						if($ar_res = $res->GetNext())
 						  echo '<a href="javascript:void(0);" data-section="'.$ar_res[ID].'">'.
 						$ar_res['NAME']. '</a>'	?>

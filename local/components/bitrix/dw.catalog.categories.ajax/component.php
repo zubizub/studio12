@@ -8,7 +8,10 @@ $arParams['IBLOCK_ID'] = intval($arParams['IBLOCK_ID']);
 if (!$arParams['IBLOCK_ID'])
 	return;
 
-$arParams['IBLOCK_BINDING'] = $arParams['IBLOCK_BINDING'] == 'element' ? 'element' : 'section';
+//$arParams['IBLOCK_BINDING'] = $arParams['IBLOCK_BINDING'] == 'element' ? 'element' : 'section';
+//print_r($arParams);
+
+$SECTION_ID = $_REQUEST['section'];
 
 if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER->GetGroups())))
 {
@@ -35,24 +38,30 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 			  while($ar_result = $db_list->GetNext())
 			  {
 			    $arSubsections[]["ID"] = $ar_result['ID'];
-			    $arSubsections[]["NAME"] = $ar_result['NAME'];
+			    //$arSubsections[]["NAME"] = $ar_result['NAME'];
 			  }
 			$sections = '';
-			foreach ($arSubsections as $key => $section) {
+			//print_r($arSubsections);
+			//print_r($arParams);
+			/*foreach ($arSubsections as $key => $section) {*/
 				
-				$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], 'SECTION_ID' =>$section['ID']);
+				/*$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], 'SECTION_ID' =>$section['ID']);*/
+				$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], 'SECTION_ID' =>$arSubsections[0]['ID']);
 				$arSelect = Array("*", "PROPERTY_*");	
-				$dbRes = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>150), $arSelect);	
+				$dbRes = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>1), $arSelect);	
+				$arResult['SECTIONS'] = $arSubsections;
+
 
 				while ($arRes = $dbRes->GetNextElement())
 				{
 		 				$arFields = $arRes->GetFields();  
 						$arProps = $arRes->GetProperties();
 						
-					  
+					  	//print_r($arFields);
 				
 		 					
-					$arResult['ITEMS'][$section['ID']][] = array(
+					//$arResult['ITEMS'][$section['ID']][] = array(
+					$arResult['ITEMS'][$arSubsections[0][ID]][] = array(
 						'ID' => $arFields['ID'],
 						'NAME' => $arFields['NAME'],
 						'DESCRIPTION' => $arFields['DESCRIPTION'],
@@ -65,7 +74,7 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 						'MAIN_PHOTO' => ($arProps['MAIN_PHOTO']['VALUE']) ? CFile::GetFileArray($arProps['MAIN_PHOTO']['VALUE']): array(),
 					);
 				}
-			}
+			
 			
 			
 	//print_r('<pre>');print_r($arResult);print_r('</pre>');
@@ -74,29 +83,13 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 
 			}
 
-		if ($arParams['IBLOCK_BINDING'] == 'section')
+		if ($arParams['IBLOCK_BINDING'] == 'section-images')
 	{
 
-			  //$arFilter = Array('IBLOCK_ID'=>$arParams['IBLOCK_ID'] , 'GLOBAL_ACTIVE'=>'Y', 'SECTION_ID' => '9,6');
-			  $arFilter = Array('IBLOCK_ID'=>$arParams['IBLOCK_ID'] , 'GLOBAL_ACTIVE'=>'Y', "ACTIVE"=>"Y");
-			  //$db_list = CIBlockSection::GetList(Array("ID"=>"DESC"), $arFilter, true);
-			  $db_list = CIBlockSection::GetList(Array("SORT"=>"ASC"), $arFilter, true);
 
+
+			$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], 'SECTION_ID' =>intval($arParams["SECTION"]));
 			
-			 $excludeSection = array('6,9');
-			  while($ar_result = $db_list->GetNext())
-			  {
-			  	if ($ar_result['ID'] !='9') {
-				    $arSubsections[]["ID"] = $ar_result['ID'];
-				    $arSubsections[]["NAME"] = $ar_result['NAME'];
-			    }
-			  }
-			//$sections = '';
-
-			//print_r($arSubsections);
-			foreach ($arSubsections as $key => $section) {
-				
-				$arFilter = array('ACTIVE' => 'Y', 'IBLOCK_ID' => $arParams['IBLOCK_ID'], 'SECTION_ID' =>$section['ID']);
 				$arSelect = Array("*", "PROPERTY_*");	
 				$dbRes = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>150), $arSelect);	
 
@@ -105,10 +98,11 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 		 				$arFields = $arRes->GetFields();  
 						$arProps = $arRes->GetProperties();
 						
-					  
+				//print_r($arFields);
 				
-		 					
-					$arResult['ITEMS'][$section['ID']][] = array(
+		 			$arResult['SECTION_ID'] = $arParams["SECTION"];
+					//$arResult['ITEMS'][$section['ID']][] = array(
+					$arResult['ITEMS'][] = array(
 						'ID' => $arFields['ID'],
 						'NAME' => $arFields['NAME'],
 						'DESCRIPTION' => $arFields['DESCRIPTION'],
@@ -128,7 +122,7 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 			
 
 
-			}
+			
 		
 
 	

@@ -52,6 +52,7 @@ if ($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USE
 					  
 				
 		 					
+					//$arResult['ITEMS'][$section['ID']][] = array(
 					$arResult['ITEMS'][$section['ID']][] = array(
 						'ID' => $arFields['ID'],
 						'NAME' => $arFields['NAME'],
