@@ -126,7 +126,7 @@ $(function () {
                 //prevArrow: $('.loft-types__list-prev', this),
                 //nextArrow: $('.loft-types__list-next', this),
                 infinite: true,
-                speed: 100,
+                speed: 300,
                 slidesToShow: 1,
                 fade: true,
                 adaptiveHeight: false,
