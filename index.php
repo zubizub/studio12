@@ -140,7 +140,7 @@ $APPLICATION->SetTitle("Studio#12");
     <div class="section section--slogan slogan-page">
         <div class="section__content">
             <div class="slogan">
-                <div class="slogan__title">asdasd</div>
+                <div class="slogan__title"></div>
                 <div class="slogan__translation"></div>
             </div>
         </div>
