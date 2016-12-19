@@ -55,13 +55,13 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 		<? } ?>
 </div>	 
 		</div>	 
-		</div>
+		
 <?
 	}
 ?>
 
 
-
+</div>
 				<div class="loft-types__desc">
 					<a href="#" class="loft-types-slide-go">→</a>
 
