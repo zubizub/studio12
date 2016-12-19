@@ -43,10 +43,10 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 				<? }; $i++; */?>
 			
 			
-							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&w=700h=340&zc=1';?>
+							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&w=620&h=660&zc=1';?>
 
 							<? if (!$key) { ?>
-							<div class="loft-types__item" data-bg="<?=$croped;?>" style="background: url(<?=$croped;?>)"></div>
+							<div class="loft-types__item" data-bg="<?=$croped;?>" style="background-image: url(<?=$croped;?>)"></div>
 							<? } else { ?>
 
 									
