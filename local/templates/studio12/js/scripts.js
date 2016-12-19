@@ -150,6 +150,9 @@ $(function () {
             }).on('init', function (slick) {
                 console.log(slick);
             });
+            $items.on('click', function () {
+                $list.slick('slickNext');
+            });
         });
     }());
     (function () {
