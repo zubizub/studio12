@@ -39,7 +39,8 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 			<? //print_r($arItem); ?>
 				<?/* if (!$i) { ?>
 			
-							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
+							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');">
+							</div>
 				<? }; $i++; */?>
 			
 			
@@ -50,7 +51,8 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 							<? } else { ?>
 
 									
-				<div class="loft-types__item" data-bg="<?=$croped;?>"></div>
+							<div class="loft-types__item" data-bg="<?=$croped;?>">
+								<a href="#" style="color:#ffffff; position: absolute; z-index: 400; top: 30px; right: 30px;">click-me-please</a></div>
 							<? } ?>
 		<? } ?>
 </div>	 
