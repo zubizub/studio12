@@ -39,7 +39,8 @@ $arComponentParameters = array(
 			'NAME' => GetMessage('IBLOCK_BINDING'),
 			'TYPE' => 'LIST',
 			'VALUES' => array(
-				'section' => GetMessage('IBLOCK_BINDING_SECTION'),
+				'section-images' => GetMessage('IBLOCK_BINDING_SECTION'),
+				'element' => GetMessage('IBLOCK_BINDING_ELEMENT')
 				'element' => GetMessage('IBLOCK_BINDING_ELEMENT')
 			),
 			'MULTIPLE' => 'N',

@@ -48,6 +48,48 @@ $.fn.serializeObject = function()
     });
 
 
+$(document).on('click', '.loft-types__tab a', function () {
+        var action = 'loadGallerySection';
+        var section = $(this).attr('data-section');
+
+        console.log(action);
+
+
+         $.post("/quarters/ajax.php?SECTION="+section, {
+
+                data: section,
+                action: action,
+                
+            })
+            .done(function (data) {
+               console.log(data);
+               //$('#slide'+section).slick('unslick');
+               //$('#slide'+section+' .loft-types__list').html(data);
+               $('.loft-types__content').html(data);
+               //$('#slide'+section).slick('reinit');
+
+                  $('#slide'+section+' .loft-types__list').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: false,
+            swipe: true,
+            touchMove: true,
+            fade: true,
+           // asNavFor: '.loft-types__tabs'
+            //autoplay: true,
+            //autoplaySpeed: 10000
+        });
+
+            });
+
+        return false;
+
+    });
+
+
     $('.ajaxLotItem').on('click', function () {
         var el = $(this).attr('el');
         var lot = $(this).attr('lot');
