@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Studio12");
                     
   <?$APPLICATION->IncludeComponent(
     "bitrix:dw.catalog.categories", 
-    "mini-slider-ajax", 
+    "mini-slider", 
     array(
         "CACHE_GROUPS" => "Y",
         "CACHE_TIME" => "36000",
