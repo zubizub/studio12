@@ -80,21 +80,21 @@ $APPLICATION->SetTitle("Studio12");
 
 
                 <?$APPLICATION->IncludeComponent(
-                "bitrix:dw.catalog.categories",
-                "mini-slider",
-                array(
-                "CACHE_GROUPS" => "Y",
-                "CACHE_TIME" => "36000",
-                "CACHE_TYPE" => "A",
-                "IBLOCK_BINDING" => "element",
-                "IBLOCK_ID" => "7",
-                "LIMIT" => "50",
-                "IBLOCK_TYPE" => "info",
-                "COMPONENT_TEMPLATE" => "mini-slider",
-                "SECTION" => "9"
-                ),
-                false
-                );?>
+	"bitrix:dw.catalog.categories", 
+	"mini-slider", 
+	array(
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000",
+		"CACHE_TYPE" => "A",
+		"IBLOCK_BINDING" => "element",
+		"IBLOCK_ID" => "7",
+		"LIMIT" => "50",
+		"IBLOCK_TYPE" => "info",
+		"COMPONENT_TEMPLATE" => "mini-slider",
+		"SECTION" => "9"
+	),
+	false
+);?>
 
             </div>
         </div>
@@ -380,20 +380,20 @@ $APPLICATION->SetTitle("Studio12");
 
 
 <?$APPLICATION->IncludeComponent(
-"bitrix:dw.catalog.index",
-".default",
-array(
-"CACHE_GROUPS" => "Y",
-"CACHE_TIME" => "36000",
-"CACHE_TYPE" => "A",
-"IBLOCK_BINDING" => "element",
-"IBLOCK_ID" => "5",
-"LIMIT" => "50",
-"IBLOCK_TYPE" => "quarters",
-"COMPONENT_TEMPLATE" => ".default",
-"SECTION" => ""
-),
-false
+	"bitrix:dw.catalog.index", 
+	".default", 
+	array(
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000",
+		"CACHE_TYPE" => "A",
+		"IBLOCK_BINDING" => "element",
+		"IBLOCK_ID" => "5",
+		"LIMIT" => "50",
+		"IBLOCK_TYPE" => "quarters",
+		"COMPONENT_TEMPLATE" => ".default",
+		"SECTION" => ""
+	),
+	false
 );?>
 <? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
 

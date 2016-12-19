@@ -345,6 +345,30 @@
   false
 );?>
 
+    <? break;  
+    case 'loadGallerySection':?>
+
+    <? $SECTION = $_REQUEST['SECTION'];?>
+
+  <? //print_r($SECTION);?>
+
+      <?$APPLICATION->IncludeComponent(
+  "bitrix:dw.catalog.categories", 
+  "mini-slider-section", 
+  array(
+    "CACHE_GROUPS" => "Y",
+    "CACHE_TIME" => "36000",
+    "CACHE_TYPE" => "A",
+    "IBLOCK_BINDING" => "section-images",
+    "IBLOCK_ID" => "7",
+    "LIMIT" => "50",
+    "IBLOCK_TYPE" => "info",
+    "COMPONENT_TEMPLATE" => ".default",
+    "SECTION" => $SECTION,
+  ),
+  false
+);?>
+
     <? break;
 
 }
