@@ -127,13 +127,26 @@ $(function () {
                 //prevArrow: $('.loft-types__list-prev', this),
                 //nextArrow: $('.loft-types__list-next', this),
                 infinite: true,
-                speed: 300,
+                speed: 100,
                 slidesToShow: 1,
                 adaptiveHeight: false,
                 touchThreshold: 10
             }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-                // console.log($num, currentSlide, nextSlide);
+                //console.log($num, currentSlide, nextSlide);
+                bg = $(slick.$slides.get(nextSlide)).attr('data-bg');
+                
+
                 $num.text(nextSlide + 1);
+                // On before slide change
+
+
+            }).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+                
+                 
+                
+                //$(slick.$slides.get(currentSlide)).css('background-image', 'url("' + bg + '")');
+                
+
             }).on('init', function (slick) {
                 console.log(slick);
             });

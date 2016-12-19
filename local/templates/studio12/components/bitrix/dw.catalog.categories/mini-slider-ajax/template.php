@@ -43,7 +43,13 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 				<? }; $i++; */?>
 			
 			
-							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
+							<? if (!$key) { ?>
+							<div class="loft-types__item" data-bg="<?=$arItem['PICTURE']['SRC'];?>" style="background: url(<?=$arItem['PICTURE']['SRC'];?>"></div>
+							<? } else { ?>
+
+									<div class="loft-types__item" data-bg="<?=$arItem['PICTURE']['SRC'];?>"></div>
+							<? } ?>
+
 				
 		<? } ?>
 </div>	 

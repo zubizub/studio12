@@ -13,15 +13,13 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 
 			
 
-<?
-	foreach ($arResult['ITEMS'] as $key => $arSection) {
-?>
+
 <? $countElements = count($arSection);?>
 
- <div class="loft-types__slide" id="slide<? print_r($key); ?>">
+ <div class="loft-types__slide" id="slide<? print_r($arParams[SECTION]); ?>">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">
-		<? 	$res = CIBlockSection::GetByID($key);
+		<? 	$res = CIBlockSection::GetByID($arParams['SECTION']);
 			if($ar_res = $res->GetNext())
 			  echo $ar_res['NAME'];	?>
 		
@@ -35,33 +33,31 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 						<button class="loft-types__list-next"></button>
 						<div class="loft-types__list">
 			<? $i =0;?>
-			<? foreach ($arSection as $key => $arItem) { ?>
+			<? foreach ($arResult["ITEMS"] as $key => $arItem) { ?>
 			<? //print_r($arItem); ?>
-				<?/* if (!$i) { ?>
+				
 			
-							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
-				<? }; $i++; */?>
-			
-			
-							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
+							<? if (!$key) { ?>
+							<div class="loft-types__item" data-bg="<?=$arItem['PICTURE']['SRC'];?>" style="background: url(<?=$arItem['PICTURE']['SRC'];?>"></div>
+							<? } else { ?>
+
+									<div class="loft-types__item" data-bg="<?=$arItem['PICTURE']['SRC'];?>"></div>
+							<? } ?>
+
 				
 		<? } ?>
 </div>	 
 		</div>	 
-<?
-	}
-?>
-
 
 </div>
 				<div class="loft-types__desc">
 					<a href="#" class="loft-types-slide-go">→</a>
 
 					<div class="loft-types__tabs">
-					<? foreach ($arResult['ITEMS'] as $key => $value) { ?>
+					<? foreach ($arResult['SECTION_ID'] as $key => $value) { ?>
 
 					<div class="loft-types__tab">
-					<? 	$res = CIBlockSection::GetByID($key);
+					<? 	$res = CIBlockSection::GetByID($value);
 						if($ar_res = $res->GetNext())
 						  /*echo '<a href="javascript:void(0);" data-section="'.$ar_res[ID].'">'.
 						$ar_res['NAME']. '</a>';*/

@@ -353,8 +353,8 @@
   <? //print_r($SECTION);?>
 
       <?$APPLICATION->IncludeComponent(
-  "bitrix:dw.catalog.categories", 
-  "mini-slider-section", 
+  "bitrix:dw.catalog.categories.ajax", 
+  "element", 
   array(
     "CACHE_GROUPS" => "Y",
     "CACHE_TIME" => "36000",
