@@ -388,9 +388,9 @@ $APPLICATION->SetTitle("Studio12");
 		"CACHE_TIME" => "36000",
 		"CACHE_TYPE" => "A",
 		"IBLOCK_BINDING" => "element",
-		"IBLOCK_ID" => "7",
+		"IBLOCK_ID" => "5",
 		"LIMIT" => "50",
-		"IBLOCK_TYPE" => "info",
+		"IBLOCK_TYPE" => "quarters",
 		"COMPONENT_TEMPLATE" => ".default",
 		"SECTION" => ""
 	),
