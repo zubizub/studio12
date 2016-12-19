@@ -6843,7 +6843,8 @@ a.btn, a.btn:hover {
     overflow: hidden;
 }
 
-.popup--loft {
+.popup--scroll {
+    overflow-y: scroll !important;
     top: 0 !important;
     bottom: 0 !important;
     -webkit-transform: none !important;
@@ -6851,10 +6852,6 @@ a.btn, a.btn:hover {
     -ms-transform: none !important;
     -o-transform: none !important;
     transform: none !important;
-}
-
-.popup--scroll {
-    overflow-y: scroll !important;
 }
 
 .popup--page {
