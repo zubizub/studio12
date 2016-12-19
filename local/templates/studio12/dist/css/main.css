@@ -6745,6 +6745,10 @@ a.btn, a.btn:hover {
     position: relative;
 }
 
+.photo-gallery__item img {
+    width: 100%;
+}
+
 .photo-gallery__item:before {
     content: '';
     width: 100%;

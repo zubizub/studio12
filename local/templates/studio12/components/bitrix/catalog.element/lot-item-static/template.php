@@ -43,9 +43,8 @@ $this->setFrameMode(true);?>
     <? if (!empty($arResult['DETAIL_PICTURE'])) { ?>
     <div class="photo-gallery">
       <div class="photo-gallery__item">
-        <div class="image" style="background-image: url(<?= $arResult['DETAIL_PICTURE']['SRC'];  ?>)"></div>
+        <img src="<?= $arResult['DETAIL_PICTURE']['SRC'];  ?>" alt="">
       </div>
-
     </div>
 
     <? } ?>
