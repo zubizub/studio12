@@ -47,7 +47,9 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&w=620&h=660&zc=1';?>
 
 							<? if (!$key) { ?>
-							<div class="loft-types__item" data-bg="<?=$croped;?>" style="background-image: url(<?=$croped;?>)"></div>
+							<div class="loft-types__item" data-bg="<?=$croped;?>" style="background-image: url(<?=$croped;?>)">
+								<a href="#" style="color:#ffffff; font-size: 20px;  position: absolute; z-index: 400; top: 30px; right: 30px;">click-me-please</a>
+							</div>
 							<? } else { ?>
 
 									
