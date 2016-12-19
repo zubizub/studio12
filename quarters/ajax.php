@@ -191,8 +191,9 @@
                         </div>
                       </form>
                     </div>
-  <button class="popup__close popup-an-dom"></button>
+
                     </div>
+<button class="popup__close popup-an-dom"></button>
 
     <?break;
 
