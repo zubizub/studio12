@@ -10,6 +10,7 @@ IncludeTemplateLangFile(__FILE__);
 
        
     <meta charset="utf-8">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?$APPLICATION->ShowTitle()?></title>
@@ -41,6 +42,7 @@ IncludeTemplateLangFile(__FILE__);
             infowindow.open(map, marker);
         }
     </script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/dist/js/vendor.js" type="text/javascript"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.waypoints.min.js" type="text/javascript"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/ajax.js" type="text/javascript"></script>

@@ -94,7 +94,7 @@ $APPLICATION->SetTitle("Studio#12");
         <div class="dep-wrap">
             <div class="dep-wrap__col">
                 <a href="/quarters" class="dep dep--loft">
-                    <div class="dep__inner">
+                    <div class="dep__inner line-block">
                         <div class="dep__title yellow">
                             <span class="dep__text">Живи</span><br><span class="dep__text">в лофте</span>
                         </div>
@@ -108,7 +108,7 @@ $APPLICATION->SetTitle("Studio#12");
             </div>
             <div class="dep-wrap__col">
                 <a href="/job" class="dep dep--job">
-                    <div class="dep__inner">
+                    <div class="dep__inner line-block">
                         <div class="dep__title yellow">
                             <span class="dep__text">Работай</span><br><span class="dep__text">в лофте</span>
                         </div>

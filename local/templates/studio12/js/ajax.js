@@ -110,7 +110,7 @@ $(document).on('click', '.loft-types__tab a', function () {
                         $('.popup--loft [class*=popup-an--js-]').addClass('popup-an--run');
                         setTimeout(function () {
                             $('.popup--loft .popup-an-dom').addClass('popup-an-dom--run');
-                            $('.popup--loft').addClass('popup--scroll ');
+                            $('.popup--loft').has('.photo-gallery').addClass('popup--scroll');
                         }, 500);
                         $('.callback-me').on('click', function () {
                             $('.popup--callback').bPopup({

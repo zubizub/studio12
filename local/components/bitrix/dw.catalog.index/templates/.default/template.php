@@ -100,6 +100,7 @@ endif;
 
             <div id="ajaxPopup">
 
+
                 <div class="popup popup--loft"></div>
                 <div class="popup popup--email">
                     <div class="popup__inner">
