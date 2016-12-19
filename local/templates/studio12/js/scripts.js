@@ -78,7 +78,6 @@ $(function () {
             adaptiveHeight: false,
             swipe: false,
             touchMove: false,
-            fade: true,
             asNavFor: '.loft-types__tabs'
             //autoplay: true,
             //autoplaySpeed: 10000
@@ -129,6 +128,7 @@ $(function () {
                 infinite: true,
                 speed: 100,
                 slidesToShow: 1,
+                fade: true,
                 adaptiveHeight: false,
                 touchThreshold: 10
             }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
