@@ -64,8 +64,11 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 					<div class="loft-types__tab">
 					<? 	$res = CIBlockSection::GetByID($key);
 						if($ar_res = $res->GetNext())
-						  echo '<a href="javascript:void(0);" data-section="'.$ar_res[ID].'">'.
-						$ar_res['NAME']. '</a>'	?>
+						  /*echo '<a href="javascript:void(0);" data-section="'.$ar_res[ID].'">'.
+						$ar_res['NAME']. '</a>';*/
+
+						  echo $ar_res['NAME'];
+							?>
 					</div>			
 					<? } ?>
 
