@@ -37,10 +37,15 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 			<? $i =0;?>
 			<? foreach ($arSection as $key => $arItem) { ?>
 			<? //print_r($arItem); ?>
-				<? if (!$i) { ?>
+				<?/* if (!$i) { ?>
 			
 							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
-				<? }; $i++;?>
+				<? }; $i++; */?>
+
+				
+			
+							<div class="loft-types__item" style="background-image: url('<?=$arItem['PICTURE']['SRC'];?>');"></div>
+				
 		<? } ?>
 </div>	 
 		</div>	 
