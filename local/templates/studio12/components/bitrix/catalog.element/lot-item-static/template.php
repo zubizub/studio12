@@ -40,11 +40,15 @@ $this->setFrameMode(true);?>
         </div>
       </div>
     </div>
-    <!--<div class="photo-gallery">-->
-        <!--<div class="photo-gallery__item">-->
-          <!--<div class="image" style="background-image: url(<?= $arResult['DETAIL_PICTURE']['SRC'];  ?>)"></div>-->
-        <!--</div>-->
-    <!--</div>-->
+    <? if (!empty($arResult['DETAIL_PICTURE'])) { ?>
+    <div class="photo-gallery">
+      <div class="photo-gallery__item">
+        <div class="image" style="background-image: url(<?= $arResult['DETAIL_PICTURE']['SRC'];  ?>)"></div>
+      </div>
+
+    </div>
+
+    <? } ?>
     <div class="detail__inner">
       <div class="detail__text">лофт с отдельным входом/двухуровневый</div>
       <div class="detail__about">

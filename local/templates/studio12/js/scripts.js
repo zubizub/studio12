@@ -132,7 +132,6 @@ $(function () {
                 adaptiveHeight: false,
                 touchThreshold: 10
             }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-                // console.log($num, currentSlide, nextSlide);
                 $num.text(nextSlide + 1);
             }).on('init', function (slick) {
                 console.log(slick);
