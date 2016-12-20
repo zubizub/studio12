@@ -84,10 +84,7 @@ $.fn.serializeObject = function()
 
         setTimeout(function () {
             $(window).trigger("resize");
-            $(".loft-types__content").slick('setPosition');
-            $(".loft-types__list").slick('setPosition');
-            $(".loft-types__tabs").slick('setPosition');
-        }, 10);
+        }, 100);
 
     });
 
