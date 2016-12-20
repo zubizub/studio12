@@ -1,4 +1,29 @@
+
+
+
 $(document).ready(function () {
+
+$(document).on('click','.fullscreen-by-hash', function(){
+
+        hash = $(this).attr('href');
+       $('.gallery-block').show();
+        arHash = hash.split('-');
+       sectionCode = arHash[0].slice(1);
+       slideIndex = parseInt(arHash[1]);
+       //$(".loft-types__tab.slick-slide.slick-active[data-code='" + sectionCode + "']").click();
+       $(".loft-types__tab.slick-slide[data-code='" + sectionCode + "']").click();
+       //console.log(section);
+       console.log(slideIndex);
+    
+
+        $('.loft-types__content').slick({
+                slickGoTo: slideIndex
+        });
+
+});
+
+
+
 
 $.fn.serializeObject = function()
 {
@@ -48,6 +73,22 @@ $.fn.serializeObject = function()
     });
 
 
+    
+    $('.fullscreen-hash').click(function(){
+
+        var hash = window.location.hash;
+        $('ul'+hash+':first').show();
+
+
+ window.location.hash = id;
+
+
+
+    })
+
+
+
+      
 /*$(document).on('click', '.loft-types__tab a', function () {
         var action = 'loadGallerySection';
         var section = $(this).attr('data-section');

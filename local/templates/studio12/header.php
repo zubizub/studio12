@@ -49,6 +49,7 @@ IncludeTemplateLangFile(__FILE__);
     <?if ($APPLICATION->GetCurPage()== '/'): ?>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js" type="text/javascript"></script>
     <? endif; ?>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.hashchange.min.js" type="text/javascript"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/scripts.js" type="text/javascript"></script>
 
     <!-- Google Tag Manager -->

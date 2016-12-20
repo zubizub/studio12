@@ -17,13 +17,19 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 	foreach ($arResult['ITEMS'] as $key => $arSection) {
 ?>
 <? $countElements = count($arSection);?>
-
- <div class="loft-types__slide" id="slide<? print_r($key); ?>">
+<? 	$res = CIBlockSection::GetByID($key);
+			if($ar_res = $res->GetNext()){
+			  echo $ar_res['NAME'];	
+			  $code = $ar_res['CODE'];
+			}
+			  ?>
+ 
+ <!-- <div class="loft-types__slide" id="slide<? print_r($key); ?>"> -->
+ <div class="loft-types__slide" id="section-<?=$code; ?>">
 						<div class="loft-types__caption">
 							<div class="loft-types__title">
-		<? 	$res = CIBlockSection::GetByID($key);
-			if($ar_res = $res->GetNext())
-			  echo $ar_res['NAME'];	?>
+		
+			
 		
 			</div>
 							<div class="loft-types__page">
@@ -33,7 +39,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 						</div>
 						<button class="loft-types__list-prev"></button>
 						<button class="loft-types__list-next"></button>
-						<div class="loft-types__list">
+						<div class="loft-types__list" id="slideList<?=$code;?>">
 			<? $i =0;?>
 			<? foreach ($arSection as $key => $arItem) { ?>
 			<? //print_r($arItem); ?>
@@ -46,15 +52,17 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 			
 							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&w=620&h=660&zc=1';?>
 
+							<?$hash = $code.'-'.$key; ?>
+
 							<? if (!$key) { ?>
 							<div class="loft-types__item" data-bg="<?=$croped;?>" style="background-image: url(<?=$croped;?>)">
-								<a href="#" style="color:#ffffff; font-size: 20px;  position: absolute; z-index: 400; top: 30px; right: 30px;">click-me-please</a>
+								<a href="#<?=$hash;?>"  class="fullscreen-by-hash"style="color:#ffffff; font-size: 20px;  position: absolute; z-index: 400; top: 30px; right: 30px;">click-me-please</a>
 							</div>
 							<? } else { ?>
 
 									
 							<div class="loft-types__item" data-bg="<?=$croped;?>">
-								<a href="#" style="color:#ffffff; font-size: 20px;  position: absolute; z-index: 400; top: 30px; right: 30px;">click-me-please</a></div>
+								<a href="#<?=$hash;?>" class="fullscreen-by-hash" style="color:#ffffff; font-size: 20px;  position: absolute; z-index: 400; top: 30px; right: 30px;">click-me-please</a></div>
 							<? } ?>
 		<? } ?>
 </div>	 
@@ -71,17 +79,18 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 
 					<div class="loft-types__tabs">
 					<? foreach ($arResult['ITEMS'] as $key => $value) { ?>
-					
-					<div class="loft-types__tab">
-					<? 	$res = CIBlockSection::GetByID($key);
-						if($ar_res = $res->GetNext())
-						  /*echo '<a href="javascript:void(0);" data-section="'.$ar_res[ID].'">'.
-						$ar_res['NAME']. '</a>';*/
 
-						  echo $ar_res['NAME'];
-							?>
+					<? $res = CIBlockSection::GetByID($key);
+						if($ar_res = $res->GetNext()){
+							$CODE = $ar_res['CODE'];
+							$NAME = $ar_res['NAME'];
+
+							} ?>
+					<div class="loft-types__tab" data-code="<?=$CODE;?>">
+						<?=$NAME;?>
 					</div>			
 					<? } ?>
+
 
 					</div>
 					

@@ -114,6 +114,8 @@ $(function () {
                 }
             }]
         });
+
+
         $('.loft-types-slide-go').on('click', function () {
             $('.loft-types__tabs').slick('slickNext');
             return false;

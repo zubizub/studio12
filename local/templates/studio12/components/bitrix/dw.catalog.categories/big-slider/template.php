@@ -22,9 +22,11 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 						<div class="loft-types__caption">
 							<div class="loft-types__title">
 		<? 	$res = CIBlockSection::GetByID($key);
-			if($ar_res = $res->GetNext())
-			  echo $ar_res['NAME'];	?>
-		
+			if($ar_res = $res->GetNext()){
+			  echo $ar_res['NAME'];	
+			  $code= $ar_res["CODE"];
+			}
+		?>
 			</div>
 							<div class="loft-types__page">
 							<span class="loft-types__page-num">1</span><span class="yellow">–
@@ -62,10 +64,14 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 					<div class="loft-types__tabs">
 					<? foreach ($arResult['ITEMS'] as $key => $value) { ?>
 
-					<div class="loft-types__tab">
-					<? 	$res = CIBlockSection::GetByID($key);
-						if($ar_res = $res->GetNext())
-						  echo $ar_res['NAME'];	?>
+					<? $res = CIBlockSection::GetByID($key);
+						if($ar_res = $res->GetNext()){
+							$CODE = $ar_res['CODE'];
+							$NAME = $ar_res['NAME'];
+
+							} ?>
+					<div class="loft-types__tab fullscreen-hash" data-code="<?=$CODE;?>">
+						<?=//$NAME;?>
 					</div>			
 					<? } ?>
 
