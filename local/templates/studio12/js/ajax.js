@@ -82,18 +82,21 @@ $.fn.serializeObject = function()
 
  window.location.hash = id;
 
+        setTimeout(function () {
+            $(window).trigger("resize");
+            $(".loft-types__content").slick('setPosition');
+            $(".loft-types__list").slick('setPosition');
+            $(".loft-types__tabs").slick('setPosition');
+        }, 10);
 
-
-    })
+    });
 
 
 
       
 /*$(document).on('click', '.loft-types__tab a', function () {
         var action = 'loadGallerySection';
-        var section = $(this).attr('data-section');
-
-        console.log(action);
+     '.popup--loft' = $(t'.photo-gallery'seaddClass('popup--scroll'e.log(action);
 
 
          $.post("/quarters/ajax.php?SECTION="+section, {
