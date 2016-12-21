@@ -50,7 +50,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0) {
 				<? }; $i++; */?>
 			
 			
-							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&w=620&h=660&zc=1';?>
+							<? $croped = '/lib/p/index.php?src='.$arItem["PICTURE"]["SRC"].'&w=1000&h=660&zc=1';?>
 
 							<?$hash = $code.'-'.$key; ?>
 <? global $USER; ?>
