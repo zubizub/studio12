@@ -148,7 +148,7 @@ IncludeTemplateLangFile(__FILE__);
                     
   <?$APPLICATION->IncludeComponent(
     "bitrix:dw.catalog.categories", 
-    "mini-slider", 
+    "mini-slider-2", 
     array(
         "CACHE_GROUPS" => "Y",
         "CACHE_TIME" => "36000",
