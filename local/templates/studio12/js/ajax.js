@@ -43,7 +43,37 @@ $.fn.serializeObject = function()
 };
 
 
-    $(document).on('submit', '.popup .form', function () {
+    $(document).on('submit', '#sendEmailFormPdf', function () {
+        var action = $(this).attr('id');
+        var data = $(this).serialize();
+
+        console.log(action);
+
+
+         $.post("/lib/dompdf/my.php", {
+
+                data: data,
+                action: action
+            })
+            .done(function (data) {
+               console.log(data);
+               // $('.loft-types__content').html(data);
+                var bPopup = $('.popup--callback').bPopup();
+                var bPopup2 = $('.popup--email').bPopup();
+                var bPopup3 = $('.popup--showroom').bPopup();
+                bPopup.close();
+                bPopup2.close();
+                bPopup3.close();
+                $('.popup .form').trigger('reset');
+                $(".form__select").val(null).trigger("change");
+            });
+
+        return false;
+
+    });
+
+
+ $(document).on('submit', '.popup .form', function () {
         var action = $(this).attr('id');
         var data = $(this).serialize();
 

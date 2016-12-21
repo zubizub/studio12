@@ -288,7 +288,7 @@
   <div class="popup__in <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>">
     <div class="popup__title">Отправить письмо</div>
       <div class="popup__desc">Укажите адрес электронной почты,<br> на который необходимо отправить письмо.</div>
-      <form class="form" id="sendEmailForm" action="#">
+      <form class="form_" id="sendEmailFormPdf" action="#">
         <div class="form__row">
           <input class="form__input" type="email" name="email" placeholder="E-mail" required>
         </div>
@@ -303,32 +303,7 @@
 
 <?break; ?>
 
-<? case 'sendEmailForm':?>
-        <?
-        
-        parse_str($_REQUEST['data'], $output);				 
-        print_r($output);
-        
-        $subject = "Studio#12: лот $output[element]";
-        $headers= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-type: text/html; charset=utf-8\r\n";
-
-        $text = "Здравствуйте.<br/>
-        Высылаем по вашему запросу информацию по Studio#12: лот $output[element]<br/><br/>
-        Спасибо за проявленный интерес.<br/>
-        KR Properties - девелопер уникальных проектов";
-
-
-        //mail("nobody@example.com", $subject, $text, "From: webmaster@$SERVER_NAME", "-fwebmaster@$SERVER_NAME");
-        //mail("zz-work1982@yandex.ru, sergokorovets@gmail.com, r.antonovskiy@kr-pro.ru", $subject, $text, $headers);
-        mail("zz-work1982@yandex.ru, sergokorovets@gmail.com, lease@kr-pro.ru, info@kr-pro.ru", $subject, $text, $headers);
-        
-
-        ?>
-
-    <?  break;
-
-    case 'loft-sort':?>
+<? case 'loft-sort':?>
 
       <?$APPLICATION->IncludeComponent(
   "bitrix:dw.catalog.index", 
