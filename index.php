@@ -4,7 +4,21 @@ $APPLICATION->SetPageProperty("description", "Studio#12 Лофт-квартал 
 $APPLICATION->SetPageProperty("keywords", "Лофты, Работа в лофте, Жить в лофте, Креативный квартал, Студио12");
 $APPLICATION->SetPageProperty("title", "Лофт-квартал Studio#12");
 $APPLICATION->SetTitle("Studio#12");
+
+CModule::IncludeModule('iblock');
+
 ?>
+
+
+<?
+
+$arFilter = Array("IBLOCK_ID"=>IntVal(5), "ACTIVE"=>"Y");
+$res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, Array("DATE_ACTIVE_FROM"));
+while($ar_fields = $res->GetNext())
+{
+ $countLofts = $ar_fields["CNT"];
+}
+?> 
 
 
 <div class="section section--intro">
@@ -48,7 +62,7 @@ $APPLICATION->SetTitle("Studio#12");
                                 <div class="count">
                                     <div class="count__numbers">
                                         <a href="#" class="count__anim link-animate queue__act">
-                                            <span class="count__number yellow count-anim" data-number="72">0</span>
+                                            <span class="count__number yellow count-anim" data-number="<?=$countLofts;?>">0</span>
                                         </a>
                                         <span class="count__text">из</span>
                                         <span class="count__number count-anim" data-number="142">0</span>

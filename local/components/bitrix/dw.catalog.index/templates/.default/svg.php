@@ -1,3 +1,6 @@
+
+
+
 <div class="lofts lofts--main count-section">
                 <div class="lofts__scheme">
 
@@ -7,7 +10,10 @@
                             <div class="loft loft--2-2">
                                 <div class="loft__number">2-2</div>
                                 <div class="loft-popup loft-popup-ready">
-                                    <div class="loft-popup__title">76</div>
+                                    <div class="loft-popup__title">
+                                    <?= count($arResult['ITEMS']);?>
+                                        
+                                    </div>
                                     <div class="loft-popup__desc">Доступно</div>
                                     <div class="loft-popup loft-popup-ready loft-black-popup">
                                         <span class="fs14 grey lh26 upper">Готовность<br></span>
@@ -71,7 +77,7 @@
                 </div>
 
                 <div class="lots-infographics">
-                    <div class="lots-infographics__number count-anim" data-number="76">0</div>
+                    <div class="lots-infographics__number count-anim" data-number="<?= count($arResult['ITEMS']);?>">0</div>
                     <div class="lots-infographics__text">Доступных предложений</div>
                     <div class="lofts-pdf-link">
                         <a class="offer__plan" href="/upload/S12Plan.pdf" target="_blank">
