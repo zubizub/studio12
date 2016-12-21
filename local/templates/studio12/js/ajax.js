@@ -194,8 +194,17 @@ $.fn.serializeObject = function()
                                     $.post("/quarters/ajax.php", {  ELEMENT_ID: el, action: action})
                                         .done(function (data) {
                                             $('.popup--email').html(data);
-                                });
-                            }
+                                            $(window).trigger("resize");
+                                            $('.popup--email [class*=popup-an--js-]').addClass('popup-an--run');
+                                            setTimeout(function () {
+                                                $('.popup--email .popup-an-dom').addClass('popup-an-dom--run');
+                                            }, 500);
+                                    });
+                                },
+                                onClose: function() {
+                                    $('.popup--email [class*=popup-an--js-]').removeClass('popup-an--run');
+                                    $('.popup--email .popup-an-dom').removeClass('popup-an-dom--run');
+                                }
                             });
                             return false;
                         });

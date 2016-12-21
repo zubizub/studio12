@@ -284,20 +284,22 @@
     
 <? $element = $_REQUEST['ELEMENT_ID'];?>
 
-<div class="popup__inner">
-  <div class="popup__title">Отправить письмо</div>
-  <div class="popup__desc">Укажите адрес электронной почты,<br> на который необходимо отправить письмо.</div>
-  <form class="form" id="sendEmailForm" action="#">
-    <div class="form__row">
-      <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+<div class="popup__inner <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim anim--js-right<?else:?>popup-an popup-an--js-right<? endif; ?>">
+  <div class="popup__in <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>">
+    <div class="popup__title">Отправить письмо</div>
+      <div class="popup__desc">Укажите адрес электронной почты,<br> на который необходимо отправить письмо.</div>
+      <form class="form" id="sendEmailForm" action="#">
+        <div class="form__row">
+          <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="form__row">
+          <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить">
+        </div>
+        <input type="hidden" id="emailElement" name="element" value="<?=$element;?>">
+      </form>
     </div>
-    <div class="form__row">
-      <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить">
-    </div>
-    <input type="hidden" id="emailElement" name="element" value="<?=$element;?>">
-  </form>
-</div>
-<button class="popup__close"></button>
+  </div>
+<button class="popup__close <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>"></button>
 
 <?break; ?>
 

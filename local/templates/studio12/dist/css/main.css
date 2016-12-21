@@ -6843,6 +6843,7 @@ a.btn, a.btn:hover {
 .popup--loft,
 .popup--maps,
 .popup--showroom,
+.popup--email,
 .popup--page,
 .popup--callback {
     overflow: hidden;
@@ -6932,12 +6933,17 @@ a.btn, a.btn:hover {
 }
 
 .popup__cell:first-child {
+    /*display: none;*/
+}
+
+.popup--page .popup__cell:first-child {
     display: none;
 }
 
 @media screen and (max-width: 500px) {
     .popup__cell {
         display: block;
+        height: auto;
     }
 }
 
@@ -6976,16 +6982,16 @@ a.btn, a.btn:hover {
     }
 }
 
-.popup__cell span:first-child a:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: 0.625rem 0;
-    width: 0.0625rem;
-    background: #000;
-}
+/*.popup__cell span:first-child a:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*margin: 0.625rem 0;*/
+    /*width: 0.0625rem;*/
+    /*background: #000;*/
+/*}*/
 
 @media screen and (max-width: 500px) {
     .popup__cell span:first-child a:after {
@@ -8260,6 +8266,8 @@ a.btn, a.btn:hover {
     .infographics__item span .number {
         font-size: 36px;
     }
+
+
 }
 
 .btn-download {

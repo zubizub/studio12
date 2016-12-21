@@ -102,23 +102,7 @@ endif;
 
 
                 <div class="popup popup--loft"></div>
-                <div class="popup popup--email">
-                    <div class="popup__inner">
-                        <div class="popup__title">Отправить письмо</div>
-                        <div class="popup__desc">Укажите адрес электронной почты,<br> на который необходимо отправить
-                            письмо.
-                        </div>
-                        <form class="form" id="sendEmailForm" action="#">
-                            <div class="form__row">
-                                <input class="form__input" type="email" name="email" placeholder="E-mail" required>
-                            </div>
-                            <div class="form__row">
-                                <input class="form__submit btn btn--md btn--yellow" type="submit" value="Отправить">
-                            </div>
-                        </form>
-                    </div>
-                    <button class="popup__close"></button>
-                </div>
+                <div class="popup popup--email"></div>
                 <div class="popup popup--callback"></div>
 
             </div>

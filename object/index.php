@@ -98,6 +98,7 @@ $APPLICATION->IncludeComponent("bitrix:catalog.element", "lot-item-static", Arra
 
 <div id="ajaxPopup">
 	<div class="popup popup--callback"></div>
+	<div class="popup popup--email"></div>
 </div>
 
 

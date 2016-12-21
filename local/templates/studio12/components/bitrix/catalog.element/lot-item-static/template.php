@@ -72,7 +72,7 @@ $this->setFrameMode(true);?>
 </div>
 <div class="popup__footer <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim anim--js-left<?else:?>popup-an popup-an--js-left<? endif; ?>">
   <div class="popup__in <?if ($APPLICATION->GetCurPage()== '/object/'): ?>anim-dom<?else:?>popup-an-dom<? endif; ?>">
-    <div class="popup__cell"><span><a href="#">Распечатать</a></span><span><a class="send_me_email" href="#">Выслать на почту</a></span></div>
+    <div class="popup__cell"><span><a class="send_me_email" href="#">Выслать на почту</a></span></div>
     <div class="popup__cell popup__cell--callback">
       <a class="popup__number" href="tel:+74957804040">7 (495) 780-40-40</a>
       <p><a class="callback-me" href="#">Обратный звонок</a></p>
