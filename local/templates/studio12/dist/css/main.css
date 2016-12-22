@@ -5960,6 +5960,20 @@ a.btn, a.btn:hover {
         display: none;
     }
 }
+.lot-sort-mobile {
+    display: none;
+    color: #ffe500;
+    background: transparent;
+    border: none;
+}
+@media screen and (max-width: 767px) {
+    .lot-sort-wrap {
+        display: none;
+    }
+    .lot-sort-mobile {
+        display: block;
+    }
+}
 
 .lot-sort.active {
     font-weight: bold;
@@ -6047,11 +6061,6 @@ a.btn, a.btn:hover {
     color: #ffe500;
 }
 
-@media screen and (max-width: 767px) {
-    .lot--header {
-        display: none;
-    }
-}
 
 .lot--disabled {
     color: #5c5c5c !important;
