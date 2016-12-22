@@ -43,37 +43,7 @@ $.fn.serializeObject = function()
 };
 
 
-    $(document).on('submit', '#sendEmailFormPdf', function () {
-        var action = $(this).attr('id');
-        var data = $(this).serialize();
-
-        console.log(action);
-
-
-         $.post("/lib/dompdf/my.php", {
-
-                data: data,
-                action: action
-            })
-            .done(function (data) {
-               console.log(data);
-               // $('.loft-types__content').html(data);
-                var bPopup = $('.popup--callback').bPopup();
-                var bPopup2 = $('.popup--email').bPopup();
-                var bPopup3 = $('.popup--showroom').bPopup();
-                bPopup.close();
-                bPopup2.close();
-                bPopup3.close();
-                $('.popup .form').trigger('reset');
-                $(".form__select").val(null).trigger("change");
-            });
-
-        return false;
-
-    });
-
-
- $(document).on('submit', '.popup .form', function () {
+    $(document).on('submit', '.popup .form', function () {
         var action = $(this).attr('id');
         var data = $(this).serialize();
 
@@ -112,18 +82,18 @@ $.fn.serializeObject = function()
 
  window.location.hash = id;
 
-        setTimeout(function () {
-            $(window).trigger("resize");
-        }, 100);
 
-    });
+
+    })
 
 
 
       
 /*$(document).on('click', '.loft-types__tab a', function () {
         var action = 'loadGallerySection';
-     '.popup--loft' = $(t'.photo-gallery'seaddClass('popup--scroll'e.log(action);
+        var section = $(this).attr('data-section');
+
+        console.log(action);
 
 
          $.post("/quarters/ajax.php?SECTION="+section, {
@@ -224,17 +194,8 @@ $.fn.serializeObject = function()
                                     $.post("/quarters/ajax.php", {  ELEMENT_ID: el, action: action})
                                         .done(function (data) {
                                             $('.popup--email').html(data);
-                                            $(window).trigger("resize");
-                                            $('.popup--email [class*=popup-an--js-]').addClass('popup-an--run');
-                                            setTimeout(function () {
-                                                $('.popup--email .popup-an-dom').addClass('popup-an-dom--run');
-                                            }, 500);
-                                    });
-                                },
-                                onClose: function() {
-                                    $('.popup--email [class*=popup-an--js-]').removeClass('popup-an--run');
-                                    $('.popup--email .popup-an-dom').removeClass('popup-an-dom--run');
-                                }
+                                });
+                            }
                             });
                             return false;
                         });
