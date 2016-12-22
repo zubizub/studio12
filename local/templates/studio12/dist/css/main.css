@@ -5956,20 +5956,18 @@ a.btn, a.btn:hover {
     }
 }
 
-/*.lot-sort-mobile {*/
-/*display: none;*/
-/*color: #ffe500;*/
-/*background: transparent;*/
-/*border: none;*/
-/*}*/
-/*@media screen and (max-width: 1000px) {*/
-/*.lot-sort-wrap {*/
-/*display: none;*/
-/*}*/
-/*.lot-sort-mobile {*/
-/*display: block;*/
-/*}*/
-/*}*/
+.lot-sort-mobile {
+    display: none;
+    color: #ffe500;
+    background: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .lot-sort-mobile {
+        display: block;
+    }
+}
 
 .lot-sort.active {
     font-weight: bold;
