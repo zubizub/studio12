@@ -106,9 +106,10 @@ $this->setFrameMode(true);?>
     }
     .table {
         margin-bottom: 25px;
+        width: 100%;
     }
     .desc {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: bold;
     }
     .about {
@@ -173,25 +174,25 @@ $this->setFrameMode(true);?>
         </table>
         <table class="table">
             <tr>
-                <td style="width: 220px">
-                    <div class="desc"><?=$arResult['PROPERTIES']['AREA']['VALUE'];?></span> м<sup>2</sup></div>
+                <td style="width: 25%">
+                    <div class="desc"><?=$arResult['PROPERTIES']['AREA']['VALUE'];?> м<sup>2</sup></div>
                     <div class="title">Площадь</div>
                 </td>
-                <td style="padding-right: 35px">
+                <td style="width: 25%;">
                     <div class="desc">
                     <?= number_format(filter_var ($arResult['PROPERTIES']['SQUARE_COST']['VALUE'], FILTER_SANITIZE_NUMBER_FLOAT,  FILTER_FLAG_ALLOW_THOUSAND), 2, ',', ' ');?>                  
                       
                     </div>
                     <div class="title">Цена за м2</div>
                 </td>
-                <td style="padding-right: 35px">
+                <td style="width: 35%;">
                     <div class="desc">
                     <?= number_format(filter_var ($arResult['PROPERTIES']['PRICE']['VALUE'],FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_THOUSAND), 2, ',', ' ');?>
                                          
                     </div>
                     <div class="title">Общая стоимость</div>
                 </td>
-                <td style="padding-right: 35px">
+                <td style="width: 15%;">
                     <div class="desc"><?=$arResult['PROPERTIES']['STAGE']['VALUE'];?></div>
                     <div class="title">Этаж</div>
                 </td>
@@ -202,13 +203,9 @@ $this->setFrameMode(true);?>
     <div class="about">
         <table style="width: 100%;">
             <tr>
-                <td style="width: 50%; vertical-align: top; border-right: solid 4px #fbfbfb">
+                <td>
                     <div class="text"><?=$arResult['PROPERTIES']['TYPE']['VALUE'];?></div>
                     <div class="text"><?=$arResult['PROPERTIES']['ENTER']['VALUE'];?></div>
-                </td>
-                <td style="width: 50%; vertical-align: top; padding-left: 30px">
-                    <div style="font-size: 14px; font-weight: bold; color: #ffffff; margin-bottom: 10px;">Описание</div>
-                    <div style="font-size: 14px;">лофт с отдельным входом/двухуровневый</div>
                 </td>
             </tr>
         </table>
