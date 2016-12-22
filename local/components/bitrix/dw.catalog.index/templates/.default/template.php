@@ -9,7 +9,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 
 <? if (!$arResult['AJAX']) : ?>
 
-<div id="loft-table" class="section section--lofts is-colored">
+<div id="loft-table" class="section section--lofts">
     <div class="box" style="">
         <svg class="dynamic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1165px" height="1500px" viewbox="0 0 1165 1500" enable-background="new 0 0 1165 1500" xml:space="preserve" preserveAspectRatio="xMinYMin meet" style='width: 100%; height: 5000px;'>
             <path class="path" id="building"></path>
@@ -57,37 +57,48 @@ endif;
 ?>
                         <!-- <pre><?//print_r($arItem['PROPS']);?></pre>  -->
                         <? unset ($additionClass);  if ($arItem['PROPS']['STATUS']['VALUE'] == 'Продано') { $additionClass = 'lot--disabled'; } ?>
-                       
+
 
                         <? if ($i == 6) :?>
 
                         <div class="lots__hidden">
                             <?endif;?>
 
-                            <a
-                                    class="lot ajaxLotItem <?=$additionClass;?>"
-                                    href="<?=$arItem['DETAIL_URL']?>"
-                                    el="<?=$arItem['ID'];?>"
-                                    lot="<?=$arItem['PROPS']['LOT']['VALUE'];?>"
-                                    object-id="<?=$arItem['PROPS']['SITE_ID']['VALUE'];?>">
-                                <div class="lot__value-1"
-                                     data-lot-value="Лот"><?=$arItem['PROPS']['LOT']['VALUE'];?></div>
-                                <div class="lot__value-2" data-lot-value="Тип">
-                            <span class="lot__styles">
-                              <span class="lot__style-1"><?=$arItem['PROPS']['TYPE']['VALUE'];?></span>
-                              <span class="lot__style-2"><?=$arItem['PROPS']['ENTER']['VALUE'];?></span>
-                            </span>
+                            <a class="lot ajaxLotItem <?=$additionClass;?>" href="<?=$arItem['DETAIL_URL']?>" el="<?=$arItem['ID'];?>" lot="<?=$arItem['PROPS']['LOT']['VALUE'];?>" object-id="<?=$arItem['PROPS']['SITE_ID']['VALUE'];?>">
+                                <div class="lot__inner">
+                                    <div class="lot__value-1">
+                                        <span class="lot__number"><?=$arItem['PROPS']['LOT']['VALUE'];?></span>
+                                        <span class="lot__desc">Лот</span>
+                                    </div>
+                                    <div class="lot__value-2">
+                                        <span class="lot__styles">
+                                          <span class="lot__style-1"><?=$arItem['PROPS']['TYPE']['VALUE'];?></span>
+                                          <span class="lot__style-2"><?=$arItem['PROPS']['ENTER']['VALUE'];?></span>
+                                        </span>
+                                    </div>
+                                    <div class="lot__group">
+                                        <div class="lot__value-3">
+                                            <span class="lot__desc">Этаж</span>
+                                            <?=$arItem['PROPS']['STAGE']['VALUE'];?>
+                                        </div>
+                                        <div class="lot__value-4">
+                                            <span class="lot__desc">Площадь М2</span>
+                                            <?=$arItem['PROPS']['AREA']['VALUE'];?>
+                                        </div>
+                                        <div class="lot__value-5">
+                                            <span class="lot__desc">За М2</span>
+                                            <?=$arItem['PROPS']['SQUARE_COST']['VALUE'];?>
+                                        </div>
+                                    </div>
+                                    <div class="lot__value-6">
+                                        <span class="lot__desc">Стоимость</span>
+                                        <span class="lot__price"><?=$arItem['PROPS']['PRICE']['VALUE'];?></span>
+                                    </div>
+                                    <div class="lot__value-7">
+                                        <span class="lot__desc">Статус</span>
+                                        <?=$arItem['PROPS']['STATUS']['VALUE'];?>
+                                    </div>
                                 </div>
-                                <div class="lot__value-3"
-                                     data-lot-value="Этаж"><?=$arItem['PROPS']['STAGE']['VALUE'];?></div>
-                                <div class="lot__value-4"
-                                     data-lot-value="Площадь, М2"><?=$arItem['PROPS']['AREA']['VALUE'];?></div>
-                                <div class="lot__value-5"
-                                     data-lot-value="Цена за М2"><?=$arItem['PROPS']['SQUARE_COST']['VALUE'];?></div>
-                                <div class="lot__value-6"
-                                     data-lot-value="Стоимость"><?=$arItem['PROPS']['PRICE']['VALUE'];?></div>
-                                <div class="lot__value-7"
-                                     data-lot-value="Статус"><?=$arItem['PROPS']['STATUS']['VALUE'];?></div>
                             </a>
                             <? if ($i == $hideCount) :?>
 

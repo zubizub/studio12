@@ -5961,7 +5961,7 @@ a.btn, a.btn:hover {
     }
 }
 .lot-sort-mobile {
-    /*display: none;*/
+    display: none;
     color: #ffe500;
     background: transparent;
     border: none;
@@ -5979,6 +5979,12 @@ a.btn, a.btn:hover {
     font-weight: bold;
 }
 
+.ajaxLofts:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .lot {
     display: block;
     color: #ffffff;
@@ -5987,12 +5993,21 @@ a.btn, a.btn:hover {
     border-bottom: 1px solid #383838;
 }
 
+.lot__inner {
+    position: relative;
+}
+
 .lot:after {
     content: "";
     display: table;
     clear: both;
 }
 
+.lot__inner:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 @media screen and (max-width: 1000px) {
     .lot {
         font-size: 1rem;
@@ -6100,6 +6115,140 @@ a.btn, a.btn:hover {
 .lot__value-7 {
     width: 18%;
 }
+.lot__desc {
+    display: none;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #949494;
+    margin-bottom: 3px;
+}
+
+.lots-card {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 15px;
+}
+.lots-card .lot {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    color: #000000;
+    margin-bottom: 30px;
+    border-bottom: none;
+}
+.lots-card .lot:hover {
+    background-color: transparent !important;
+}
+.lots-card .lot [class^="lot__value-"] {
+    float: none;
+}
+.lots-card .lot__inner {
+    background-color: #ffffff;
+    height: 265px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+.lots-card .lot__desc {
+    display: block;
+}
+.lots-card .lot__number {
+    display: block;
+    color: #fff100;
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin-bottom: -1px;
+}
+.lots-card .lot__value-1 {
+    width: 64px;
+    height: 60px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 17px;
+    padding-top: 6px;
+}
+.lots-card .lot__value-2 {
+    width: 100%;
+    height: 60px;
+    padding-left: 67px;
+}
+.lots-card .lot__styles {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lots-card .lot__style-1 {
+    margin-bottom: 2px;
+}
+.lots-card .lot__group {
+    margin-top: 18px;
+}
+.lots-card .lot__group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.lots-card .lot .lot__group [class^="lot__value-"] {
+    float: left;
+}
+.lots-card .lot__value-3 {
+    width: 20%;
+}
+.lots-card .lot__value-4 {
+    width: 30%;
+}
+.lots-card .lot__value-5 {
+    width: 50%;
+}
+.lots-card .lot__value-6 {
+    width: 100%;
+    margin-top: 15px;
+}
+.lots-card .lot__price {
+    display: block;
+    background-color: #fee248;
+    line-height: 1;
+    padding: 10px 15px;
+    margin-top: 6px;
+    font-size: 30px;
+}
+.lots-card .lot__value-7 {
+    width: 100%;
+    margin-top: 18px;
+    text-transform: uppercase;
+}
+
+.lot-view {
+    position: absolute;
+    bottom: 7%;
+    right: 115px;
+
+}
+
+.lot-view__link {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    height: 44px;
+    line-height: 40px;
+    padding: 0 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+.lot-view__link:hover {
+    border-color: #ffe500;
+    color: #ffe500;
+}
+.lot-view__link.active {
+    color: #000000;
+    border-color: #ffe500;
+    background-color: #ffe500;
+}
+
 
 .more-items {
     line-height: 1;
