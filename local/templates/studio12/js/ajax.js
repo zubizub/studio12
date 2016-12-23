@@ -269,7 +269,7 @@ $.fn.serializeObject = function()
             $(this).attr('data-direction','desc');
         }
         
-        $(this).removeClass('active');
+        $('.lots .lot-sort').removeClass('active');
         $(this).addClass('active');
 
          $.post("/quarters/ajax.php?AJAX=1", {
