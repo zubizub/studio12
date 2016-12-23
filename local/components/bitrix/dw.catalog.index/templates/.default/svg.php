@@ -86,5 +86,10 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="lot-view">
+                    <button id="loft-view-table" class="lot-view__link active">Таблицей</button>
+                    <button id="loft-view-card" class="lot-view__link">Карточками</button>
+                </div>
                 
             </div>

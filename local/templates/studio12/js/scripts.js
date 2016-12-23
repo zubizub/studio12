@@ -454,6 +454,25 @@ $(function () {
         });
     })();
 
+    (function() {
+        var $link = $('.lot-view__link'),
+            $lots = $('.ajaxLofts');
+
+        $('#loft-view-card').on('click', function() {
+            $link.removeClass('active');
+            $(this).addClass('active');
+            $lots.addClass('lots-card');
+            return false;
+        });
+
+        $('#loft-view-table').on('click', function() {
+            $link.removeClass('active');
+            $(this).addClass('active');
+            $lots.removeClass('lots-card');
+            return false;
+        });
+    })();
+
     (function () {
         var wIh = window.innerHeight / 4,
             isIE = /*@cc_on!@*/false || !!document.documentMode,
