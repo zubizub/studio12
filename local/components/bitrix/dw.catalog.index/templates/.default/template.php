@@ -88,12 +88,17 @@ endif;
                                         </div>
                                         <div class="lot__value-5">
                                             <span class="lot__desc">За М2</span>
-                                            <?=$arItem['PROPS']['SQUARE_COST']['VALUE'];?>
+                                            <?= number_format($arItem['PROPS']['SQUARE_COST']['VALUE'], 2, ',', ' ');?>
+                                            <?=//$arItem['PROPS']['SQUARE_COST']['VALUE'];?>
                                         </div>
                                     </div>
                                     <div class="lot__value-6">
                                         <span class="lot__desc">Стоимость</span>
-                                        <span class="lot__price"><?=$arItem['PROPS']['PRICE']['VALUE'];?></span>
+                                        <span class="lot__price">
+                                        <?= number_format($arItem['PROPS']['PRICE']['VALUE'], 2, ',', ' ');?>
+                                        <?=//$arItem['PROPS']['PRICE']['VALUE'];?>
+                                            
+                                        </span>
                                     </div>
                                     <div class="lot__value-7">
                                         <span class="lot__desc">Статус</span>
