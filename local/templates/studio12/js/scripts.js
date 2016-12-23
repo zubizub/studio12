@@ -146,7 +146,7 @@ $(function () {
                 
                  
                 
-                $(slick.$slides.get(currentSlide)).css('background-image', 'url("' + bg + '")');
+                //$(slick.$slides.get(currentSlide)).css('background-image', 'url("' + bg + '")');
                 
 
             }).on('init', function (slick) {
