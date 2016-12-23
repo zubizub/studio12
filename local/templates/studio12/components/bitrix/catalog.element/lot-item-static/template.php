@@ -49,7 +49,7 @@ $this->setFrameMode(true);?>
 
     <? } ?>
     <div class="detail__inner">
-      <div class="detail__text">лофт с отдельным входом/двухуровневый</div>
+      <div class="detail__text"><?=$arResult['PROPERTIES']['TYPE']['VALUE'];?> <?=$arResult['PROPERTIES']['ENTER']['VALUE'];?></div>
       <div class="detail__about">
         <!--<a class="detail__more" href="/object/?ELEMENT_ID=<?=$arResult['ID'];?>"><span>Подробнее о предложении</span></a>-->
 <? if (!$_GET['ELEMENT_ID']) { ?>
