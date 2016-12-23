@@ -79,7 +79,7 @@ $.fn.serializeObject = function()
         console.log(action);
 
 
-         $.post("/lib/dompfg/my.php", {
+         $.post("/lib/dompdf/my.php", {
 
                 data: data,
                 action: action
