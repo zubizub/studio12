@@ -60,7 +60,7 @@ endif;
                         <? unset ($additionClass);  if ($arItem['PROPS']['STATUS']['VALUE'] == 'Продано') { $additionClass = 'lot--disabled'; } ?>
 
 
-                        <? if ($i == 6) :?>
+                        <? if ($i == 7) :?>
 
                         <div class="lots__hidden">
                             <?endif;?>
