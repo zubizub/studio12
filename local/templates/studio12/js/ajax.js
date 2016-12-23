@@ -331,6 +331,4 @@ $.fn.serializeObject = function()
 
     });
 
-
-
 });
