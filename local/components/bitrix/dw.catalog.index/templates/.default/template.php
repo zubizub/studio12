@@ -52,7 +52,7 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
 endif;
 
   $i = 1;
-  $count = 1;
+  $count = 0;
   $hideCount = count($arResult['ITEMS']);
   foreach ($arResult['ITEMS'] as $arItem):
 ?>
@@ -115,7 +115,7 @@ endif;
 
                     <div class="lots__inner">
                         <div class="lots__inner lots__inner--controls">
-                            <div class="lots__control"><a class="more-items">Еще <span><?=$count;?></span></a>
+                            <div class="lots__control"><a class="more-items">Еще <span><?=$count-6;?></span></a>
                             </div>
                         </div>
                     </div>
