@@ -6372,8 +6372,11 @@ a.btn, a.btn:hover {
     .lot--header {
         display: none;
     }
+    .lot .lot__group [class^="lot__value-"] {
+        width: 33.33% !important;
+    }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 550px) {
     .lot {
         width: 100%;
     }

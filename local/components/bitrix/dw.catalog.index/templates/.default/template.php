@@ -25,13 +25,10 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                     <div class="lots__inner">
                         <select class="lot-sort-mobile">
                             <option selected>Сортировать лоты</option>
-                            <option data-sort="number" data-direction="asc">По номеру лота</option>
                             <option data-sort="type" data-direction="asc">По типу</option>
-                            <option data-sort="floor" data-direction="asc">Этаж</option>
                             <option data-sort="area" data-direction="asc">Площадь, М2</option>
                             <option data-sort="price" data-direction="asc">Цена за М2</option>
                             <option data-sort="cost" data-direction="asc">По стоимости</option>
-                            <option data-sort="status" data-direction="asc">Статус</option>
                         </select>
                         <div class="lot lot--header">
                             <div class="lot-sort-wrap">
