@@ -300,6 +300,7 @@ $.fn.serializeObject = function()
         
         $('.lots .lot-sort').removeClass('active');
         $(this).addClass('active');
+        $('.sort-mobile').fadeOut(100);
 
          $.post("/quarters/ajax.php?AJAX=1", {
 
@@ -311,6 +312,52 @@ $.fn.serializeObject = function()
             })
             .done(function (data) {
                $('#ajaxLofts').html(data);
+                $('.section--lofts').each(function () {
+                    var self = this,
+                        $box = $('.lots', self),
+                        $hidden = $('.lots__hidden', self),
+                        $more = $('.more-items', self);
+                    $more.on('click', function () {
+                        var offers = $('.ajaxLotItem ').length;
+                        var moreText = $hidden.is(':visible') ? 'Еще ' + offers : 'Свернуть';
+                        $box.toggleClass('is-open');
+                        $hidden.slideToggle(300);
+                        $(this).text(moreText);
+                        return false;
+                    });
+                });
+            });
+
+        return false;
+
+    });
+
+    $('.lot-sort-mobile').change(function(event) {
+
+
+        event.preventDefault();
+        var action = 'loft-sort';
+
+        var sortBy = $(this).find('option:selected').attr('data-sort');
+        var direction = $(this).find('option:selected').attr('data-direction');
+
+        if (direction == 'desc') {
+            $(this).find('option:selected').attr('data-direction','asc');
+        } else {
+            $(this).find('option:selected').attr('data-direction','desc');
+        }
+
+
+        $.post("/quarters/ajax.php?AJAX=1", {
+
+                sortBy: sortBy,
+                direction: direction,
+                action: action,
+                AJAX: 1
+
+            })
+            .done(function (data) {
+                $('#ajaxLofts').html(data);
                 $('.section--lofts').each(function () {
                     var self = this,
                         $box = $('.lots', self),

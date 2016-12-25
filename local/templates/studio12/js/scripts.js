@@ -473,6 +473,35 @@ $(function () {
         });
     })();
 
+    $(function () {
+        var width = $(window).width(),
+            overlay = $('.lot-sort-overlay');
+        if (width < 1000) {
+            overlay.addClass('sort-mobile');
+            overlay.css('display', 'none')
+        } else {
+            overlay.removeClass('sort-mobile');
+            overlay.css('display', 'block')
+        }
+        $(window).on('resize',function () {
+            var width = $(window).width();
+            if (width < 1000) {
+                overlay.addClass('sort-mobile');
+                overlay.css('display', 'none')
+            } else {
+                overlay.removeClass('sort-mobile');
+                overlay.css('display', 'block')
+            }
+        });
+    });
+
+    (function() {
+        $('.sort-mobile-text').on('click', function() {
+            $('.lot-sort-overlay').fadeIn(100);
+            return false;
+        });
+    })();
+
     (function () {
         var wIh = window.innerHeight / 4,
             isIE = /*@cc_on!@*/false || !!document.documentMode,

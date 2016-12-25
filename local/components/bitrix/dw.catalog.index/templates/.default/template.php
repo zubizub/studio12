@@ -23,7 +23,9 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
             <div class="lots">
                 <div class="lots__list">
                     <div class="lots__inner">
-                       <!--  <select class="lot-sort-mobile">
+                        <? global $USER;?>
+                        <? if ($USER->GetID() == 1) { ?>
+                        <select class="lot-sort-mobile">
                             <option selected>Сортировать лоты</option>
                             <option data-sort="number" data-direction="asc">По номеру лота</option>
                             <option data-sort="type" data-direction="asc">По типу</option>
@@ -32,17 +34,20 @@ if (is_array($arResult['ITEMS']) && count($arResult['ITEMS']) > 0):
                             <option data-sort="price" data-direction="asc">Цена за М2</option>
                             <option data-sort="cost" data-direction="asc">По стоимости</option>
                             <option data-sort="status" data-direction="asc">Статус</option>
-                        </select> -->
+                        </select>
+                        <? } ?>
                         <div class="lot lot--header">
-
-                            <div class="lot-sort-wrap">
-                                <div class="lot__value-1"><a href="#" class="lot-sort link-animate" data-sort="number" data-direction="asc">Лот</a></div>
-                                <div class="lot__value-2"><a href="#" class="lot-sort link-animate" data-sort="type" data-direction="asc">Тип</a></div>
-                                <div class="lot__value-3"><a href="#" class="lot-sort link-animate" data-sort="floor" data-direction="asc">Этаж</a></div>
-                                <div class="lot__value-4"><a href="#" class="lot-sort link-animate" data-sort="area" data-direction="asc">Площадь, М2</a></div>
-                                <div class="lot__value-5"><a href="#" class="lot-sort link-animate" data-sort="price" data-direction="asc">Цена за М2</a></div>
-                                <div class="lot__value-6"><a href="#" class="lot-sort link-animate" data-sort="cost" data-direction="asc">Стоимость</a></div>
-                                <div class="lot__value-7"><a href="#" class="lot-sort link-animate" data-sort="status" data-direction="asc">Статус</a></div>
+                            <div class="sort-mobile-text">Сортировать лоты</div>
+                            <div class="lot-sort-overlay">
+                                <div class="lot-sort-wrap">
+                                    <div class="lot__value-1"><a href="#" class="lot-sort link-animate" data-sort="number" data-direction="asc">Лот</a></div>
+                                    <div class="lot__value-2"><a href="#" class="lot-sort link-animate" data-sort="type" data-direction="asc">Тип</a></div>
+                                    <div class="lot__value-3"><a href="#" class="lot-sort link-animate" data-sort="floor" data-direction="asc">Этаж</a></div>
+                                    <div class="lot__value-4"><a href="#" class="lot-sort link-animate" data-sort="area" data-direction="asc">Площадь, М2</a></div>
+                                    <div class="lot__value-5"><a href="#" class="lot-sort link-animate" data-sort="price" data-direction="asc">Цена за М2</a></div>
+                                    <div class="lot__value-6"><a href="#" class="lot-sort link-animate" data-sort="cost" data-direction="asc">Стоимость</a></div>
+                                    <div class="lot__value-7"><a href="#" class="lot-sort link-animate" data-sort="status" data-direction="asc">Статус</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="ajaxLofts" id="ajaxLofts">
