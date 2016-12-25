@@ -6385,13 +6385,13 @@ a.btn, a.btn:hover {
         height: auto;
         padding-bottom: 18px;
     }
-    .lot .lot__group [class^="lot__value-"] + [class^="lot__value-"] {
-        margin-top: 10px;
-        width: 100% !important;
-    }
-    .lot .lot__group [class^="lot__value-"] {
-        float: none;
-    }
+    /*.lot .lot__group [class^="lot__value-"] + [class^="lot__value-"] {*/
+        /*margin-top: 10px;*/
+        /*width: 100% !important;*/
+    /*}*/
+    /*.lot .lot__group [class^="lot__value-"] {*/
+        /*float: none;*/
+    /*}*/
 }
 
 .lot-view__link {
