@@ -6226,7 +6226,7 @@ a.btn, a.btn:hover {
 
 .lots-card .lot__price {
     display: block;
-    background-color: #fee248;
+    background-color: #ffe500;
     line-height: 1;
     padding: 10px 15px;
     margin-top: 6px;
@@ -6345,7 +6345,7 @@ a.btn, a.btn:hover {
 
     .lot__price {
         display: block;
-        background-color: #fee248;
+        background-color: #ffe500;
         line-height: 1;
         padding: 10px 15px !important;
         margin-top: 6px;
@@ -6709,7 +6709,7 @@ a.btn, a.btn:hover {
     width: 64em;
     height: 64em;
     position: fixed;
-    background-color: #fee248;
+    background-color: #ffe500;
     top: 0;
     left: 0;
     cursor: pointer;
