@@ -6244,10 +6244,6 @@ a.btn, a.btn:hover {
     bottom: 7%;
     right: 115px;
 }
-.sort-mobile-text {
-    display: none;
-    color: #ffe500;
-}
 @media screen and (max-width: 1000px) {
     .ajaxLofts {
         margin-left: -15px;
@@ -6374,51 +6370,6 @@ a.btn, a.btn:hover {
         text-transform: uppercase;
     }
     .lot--header {
-        padding: 0 !important;
-        float: none !important;
-    }
-    .sort-mobile-text {
-        display: block;
-    }
-    .lot-sort-overlay {
-        display: none;
-        content: '';
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 500;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-    .lot-sort-wrap {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: 300px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-color: #ffffff;
-        z-index: 500;
-        padding: 20px;
-    }
-    .lot-sort-wrap [class^="lot__value-"] {
-        background: transparent;
-        width: 100% !important;
-        position: static !important;
-        padding: 0 !important;
-        height: auto !important;
-    }
-    .lot-sort-wrap [class^="lot__value-"] + [class^="lot__value-"] {
-        margin-top: 10px;
-    }
-    .lot-sort-wrap [class^="lot__value-"] .lot-sort {
-        color: #000000;
-        font-size: 20px;
-        text-transform: lowercase;
-    }
-    .lot-sort-wrap .link-animate:after {
         display: none;
     }
 }

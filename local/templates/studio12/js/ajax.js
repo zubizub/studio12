@@ -300,7 +300,7 @@ $.fn.serializeObject = function()
         
         $('.lots .lot-sort').removeClass('active');
         $(this).addClass('active');
-        $('.sort-mobile').fadeOut(100);
+        //$('.sort-mobile').fadeOut(100);
 
          $.post("/quarters/ajax.php?AJAX=1", {
 
