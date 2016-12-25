@@ -6361,7 +6361,7 @@ a.btn, a.btn:hover {
         display: none;
     }
     .lot__value-3 {
-        width: 15% !important;
+        width: 20% !important;
     }
 
     .lot__value-4 {
@@ -6369,7 +6369,7 @@ a.btn, a.btn:hover {
     }
 
     .lot__value-5 {
-        width: 45% !important;
+        width: 40% !important;
     }
     .lot__price {
         font-size: 20px;
