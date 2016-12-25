@@ -6338,18 +6338,6 @@ a.btn, a.btn:hover {
         float: left;
     }
 
-    .lot__value-3 {
-        width: 20% !important;
-    }
-
-    .lot__value-4 {
-        width: 30% !important;
-    }
-
-    .lot__value-5 {
-        width: 50% !important;
-    }
-
     .lot__value-6 {
         width: 100% !important;
         margin-top: 15px;
@@ -6372,8 +6360,16 @@ a.btn, a.btn:hover {
     .lot--header {
         display: none;
     }
-    .lot .lot__group [class^="lot__value-"] {
-        width: 33.33% !important;
+    .lot__value-3 {
+        width: 15% !important;
+    }
+
+    .lot__value-4 {
+        width: 40% !important;
+    }
+
+    .lot__value-5 {
+        width: 45% !important;
     }
     .lot__price {
         font-size: 20px;
