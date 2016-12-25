@@ -6375,6 +6375,9 @@ a.btn, a.btn:hover {
     .lot .lot__group [class^="lot__value-"] {
         width: 33.33% !important;
     }
+    .lot__price {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 550px) {
     .lot {
@@ -6392,9 +6395,6 @@ a.btn, a.btn:hover {
     }
     .lot .lot__group [class^="lot__value-"] {
         float: none;
-    }
-    .lot__price {
-        font-size: 20px;
     }
 }
 
