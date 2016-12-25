@@ -6448,23 +6448,24 @@ a.btn, a.btn:hover {
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
-    height: 44px;
-    line-height: 40px;
+    height: 35px;
+    line-height: 31px;
     padding: 0 15px;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    background-color: transparent;
+    color: #000000;
+    border: 2px solid #ffe500;
+    background-color: #ffe500;
 }
 
 .lot-view__link:hover {
     border-color: #ffe500;
     color: #ffe500;
+    background-color: transparent;
 }
 
 .lot-view__link.active {
-    color: #000000;
-    border-color: #ffe500;
-    background-color: #ffe500;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent;
 }
 
 .more-items {
@@ -7471,7 +7472,7 @@ a.btn, a.btn:hover {
 }
 
 .popup--maps {
-    width: 724px;
+    /*width: 724px;*/
     opacity: 0;
     z-index: -1000;
 }
