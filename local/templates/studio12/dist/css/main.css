@@ -6417,11 +6417,11 @@ a.btn, a.btn:hover {
         padding-bottom: 18px;
     }
     /*.lot .lot__group [class^="lot__value-"] + [class^="lot__value-"] {*/
-        /*margin-top: 10px;*/
-        /*width: 100% !important;*/
+    /*margin-top: 10px;*/
+    /*width: 100% !important;*/
     /*}*/
     /*.lot .lot__group [class^="lot__value-"] {*/
-        /*float: none;*/
+    /*float: none;*/
     /*}*/
 }
 
@@ -9085,7 +9085,12 @@ a.btn, a.btn:hover {
     width: 51px;
     height: 51px;
     position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
     background-size: cover !important;
     white-space: nowrap;
 }
@@ -9121,9 +9126,16 @@ a.btn, a.btn:hover {
     color: #ffffff;
     padding: 7px 10px 8px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
+    -moz-transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
+    -o-transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
     transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
 }
 .layout__item:hover .layout__caption {
@@ -9134,6 +9146,10 @@ a.btn, a.btn:hover {
     content: '';
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 0;
     height: 0;
