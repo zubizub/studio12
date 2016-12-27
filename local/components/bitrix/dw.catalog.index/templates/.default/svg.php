@@ -61,18 +61,36 @@
                         <span class="layout__entry house house3">
                             <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/entry.svg" alt="">
                         </span>
+                        <span class="layout__item layout__vr house house2">
+                            <span class="layout__caption">
+                                <span class="layout__caption-desc">АЗС</span>
+                                <span class="layout__caption-title">British Petroleum</span>
+                            </span>
+                        </span>
+                        <span class="layout__item layout__world-class house house3">
+                            <span class="layout__caption">
+                                <span class="layout__caption-desc">фитнес-клуб</span>
+                                <span class="layout__caption-title">World Class</span>
+                            </span>
+                        </span>
+                        <span class="layout__item layout__capit house house3">
+                            <span class="layout__caption">
+                                <span class="layout__caption-desc">трц</span>
+                                <span class="layout__caption-title">Капитолий</span>
+                            </span>
+                        </span>
                         <!--<span class="layout__lake house house1">-->
                             <!--<img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/lake.svg" alt="">-->
                         <!--</span>-->
-                        <span class="layout__vr house house4">
-                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/vr.svg" alt="">
-                        </span>
-                        <span class="layout__world-class house house3">
-                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/world-class.svg" alt="">
-                        </span>
-                        <span class="layout__capit house house3">
-                            <img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/capit.svg" alt="">
-                        </span>
+                        <!--<span class="layout__vr house house4">-->
+                            <!--<img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/vr.svg" alt="">-->
+                        <!--</span>-->
+                        <!--<span class="layout__world-class house house3">-->
+                            <!--<img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/world-class.svg" alt="">-->
+                        <!--</span>-->
+                        <!--<span class="layout__capit house house3">-->
+                            <!--<img class="layout__img" src="<?=SITE_TEMPLATE_PATH?>/dist/img/capit.svg" alt="">-->
+                        <!--</span>-->
                     </div>
                 </div>
 
